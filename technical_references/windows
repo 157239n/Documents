@@ -1,0 +1,10 @@
+Disabled startup services:
+- Akamai NetSession Client
+- 
+
+SFTP automation (more here https://winscp.net/eng/docs/scripting):
+- open sftp://root@kelvinho.org -privatekey="C:\Users\Lenovo-1\.ssh\id_rsa.ppk"
+- put localFile1 localFile2 localFile3 remoteFile
+- exit
+- command line: winscp script.txt
+

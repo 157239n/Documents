@@ -1,0 +1,147 @@
+
+
+ARPAnet
+HOSTS.TXT problem
+DNS specs = RFC 882, 883
+NIS = Sun's Network Information Service
+
+You might have 10 different hosts, each of them on a different network and perhaps even in different countries, all in the same domain.
+
+Resource records = data associated with domain names (the strings). They are divided into classes. There are classes for different type of network or software, like Chaosnet, or internet (any network using TCP/IP)
+
+Within a class, records come in several types, which correspond to the different varieties of data that may be stored in the domain namespace
+
+Zone datafiles
+Primary and secondary master nameserver, "master nameserver" that controls a zone
+Resolvers are clients that ask the nameservers
+
+In BIND, the resolver is a set of library routines that is linked to programs such as ssh or ftp.
+Hell, the resolver sounds really incredibly easy to program, even I can do that. "stub resolvers"
+
+Name resolution = resolution
+
+...in-addr.arpa:
+- https://support.opendns.com/hc/en-us/articles/227988467-What-is-in-addr-arpa-
+- https://docs.oracle.com/cd/E19683-01/806-4077/dnsintro-84/index.html
+
+Registry: org responsible for maintaining top-level domains's (zones, technically) datafiles, which contains information on how to delegate.
+Registrar: interface between registries and customers, providing registration
+
+DSO = Dynamic Shared Object, like Dynamic Link Library in win
+
+Subnet mask:
+- https://www.iplocation.net/subnet-mask
+
+GET request:
+- https://docs.couchdb.org/en/stable/intro/curl.html
+
+Code in "Apache the definitive guide":
+- https://resources.oreilly.com/examples/9780596002039/
+
+Another source for learning apache2:
+- https://www.systemcodegeeks.com/web-servers/apache/apache-http-server-tutorial/
+
+systemctl start apache2
+
+PHP the right way: https://phptherightway.com/
+
+
+
+
+
+
+
+
+
+
+A records: allow you to point subdomains to another ip address
+
+
+service record
+- service (E.g LDap)
+- target (host that offer service)
+- port
+- priority
+
+start of authority
+- 1 per zone
+- primary name server
+- email of admin
+- serial number, like an identifying hash
+- refresh time
+
+nameserver:
+- authority dns server for that domain
+
+
+
+dhcp server
+
+
+mx stuff: https://www.hostinger.vn/huong-dan/giai-thich-giao-thuc-pop3-smtp-imap-la-gi-va-port-cua-chung/
+
+"A socket looks and behaves much like a low-level file descriptor. This is because commands such as read() and write() work with sockets in the same way they do with files and pipes"
+Socket types (processes assume they communicate in 1 socker type only, but there are no hard rules):
+- Stream socket: standard, TCP, delivery guaranteed
+- Datagram socket: standard, UDP, delivery not guaranteed
+- Raw socket: not intended for general user. They are primarily used in developing new communication protocols
+- Sequenced Packet Sockets
+
+
+how lan stuff works
+
+
+dns records:
+- https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts
+- https://www.liquidweb.com/kb/understanding-the-dns-process/
+
+private@kelvinho.org
+
+
+
+socket()
+send()
+recv()
+Stream sockets, SOCK_STREAM, TCP, send(), recv()
+Datagram sockets, SOCK_DGRAM, connectionless socket, UDP, sendto()
+
+OSI consistent with Unix:
+- Application layer (telnet, ftp)
+- Host-to-host Transport Layer (TCP, UDP)
+- Internet Layer (IP and routing)
+- Network Access Layer (Ethernet, wifi)
+
+also how to transform the site into using ipv6?
+loopback address: 127.0.0.1, ::1, ::ffff:192.0.2.33
+telnet 22
+smtp 25
+doom 666
+<1024 is special
+
+byte order madness:
+Host Byte order
+Network Byte Order
+htons(): host to network short
+htonl(): host to network long
+ntohs(): network to host short
+ntohl(): network to host long
+
+AF_INET: internet
+AF_UNIX: local
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lshw -class network

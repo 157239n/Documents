@@ -1,0 +1,101 @@
+var="value for that variable"
+echo $var
+read -p "Prompt" var1 # reads user interaction from console
+read -sp "Silented prompt" passwd
+read car1 car2 car3 # reads in ModelS Model3 ModelX separated with space on the same line
+
+cat /dev/stdin | cut -d' ' -f 2,3 | sort
+let a=5+4
+let "a = 5 + 4"
+let a++
+let "a = $1 + 30"
+
+a=$(( 2 + 3 ))
+((b++))
+
+a="Hello, world"
+echo ${#a} # get length of a, which is 12
+
+if [ $1 -gt 100 ] || [ -s $1 ]
+then
+    echo "Hey that's a large number"
+    pwd
+fi
+
+Conditionals:
+!expr
+-n string # string not emoty
+-z string # string empty
+string1 = string2
+string1 != string2
+int1 -eq int2
+int1 -gt int2
+int1 -lt int2
+-d file # file exists and is a directory
+-e file # file exists
+-s file # file exists and not empty
+-r file # file exists and has read permission
+-w file # file exists and has write permission
+-x file # file exists and has execute permission
+
+Checking an expression in a conditional:
+if (( $1 % 2 == 0 ))
+then
+    echo "Is an even number"
+elif [<some other test>]
+then
+    echo "Nth here dude"
+else
+    echo "Is an odd number"
+fi
+
+
+while [ $counter -le 10 ]
+do
+    echo $counter
+    (($counter++))
+done
+
+# Same as while loops, but the condition negated (what's even the point lol)
+until [ <test> ]
+do
+    echo "Stuff"
+done
+
+names="Stan Kyle Cartman"
+for name in $names
+do
+    echo $name
+done
+
+for number in [1..5..2]
+do
+    echo $number
+    break
+    continue
+done
+
+# Selection
+select name in $names
+do
+    if [ $name == 'Quit' ]
+    then
+        break
+    fi
+    echo Hello $name
+done
+
+print_something() {
+    echo "Okay, first argument is $1"
+    return 4 # must be a number and a number only. You can return strings, but bash will complain
+}
+print_something "Mars"
+echo "Previous function has a return value of $?"
+
+
+# Overriding
+ls () {
+    command ls -lh
+}
+
+# tput, see ~/repos/bash/test/center

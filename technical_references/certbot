@@ -1,0 +1,21 @@
+
+Preparing the repositories:
+apt-get update
+apt-get install software-properties-common
+add-apt-repository universe
+add-apt-repository ppa:certbot/certbot
+apt-get update
+
+Installing:
+apt-get install certbot python-certbot-apache
+
+Getting the certificates:
+certbot --apache
+certbot
+
+Deleting the certificates:
+certbot delete
+
+certificates installed at /etc/letsencrypt/live. But to preserve states across container instances, use /etc/letsencrypt
+
+Non-interactively renew all certificates: certbot renew

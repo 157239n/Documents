@@ -1,0 +1,136 @@
+
+Environment:
+- File type: .m
+- All bash shell functionality
+- Manual: help command
+- Var_dump: who, whos for more detailed view
+- dealloc: clear featureX, clear to clear all
+- %SYSTEMROOT%\system32\wscript.exe "C:\Octave\Octave-5.1.0.0\octave.vbs" --no-gui
+- %SYSTEMROOT%\system32\wscript.exe "C:\Octave\Octave-5.1.0.0\octave.vbs" --force-gui
+
+Basics:
+- Basic arithmetic: +, -, *, /, ^, sqrt(), log(), exp(), abs(), floor()
+- Types: double, logical, char
+- Comment: % (like, why??? Why can't you be just like everything else)
+- Strings: single quotes
+- Comparisons: ==, ~= (again, why??), &&, ||, xor(,)
+- Printing: disp(something)
+- Formatting: sprintf('2 decimals: %0.2f', a)
+- Variables: a = 3, semicolon optional, b = pi
+
+Traps:
+- There are no actual true or false. It's C-like
+- Indexes always starts from 1
+
+Configs:
+- Getting rid of long prompt: PS1('>> ');
+
+Matrix:
+- Matrix: A = [1 2; 3 4; 5 6] generates 3 * 2 matrix. Each splits of ; is a line. ones(2, 3), 2*ones(2, 3), zeros(5, 6), rand(3, 3), randn(1, 3) for gaussian, mean 0, sd 1, eye(4) for 4 * 4 identity matrix
+- Vectors are the same as matrix
+- Sequence: v = 1:0.1:2 creates a matrix of numbers including bounds from 1 to 2 increment 0.1 each time (oh god why)
+- Slicing: size(A) = [3 2], A(3,2) for element access, A(2,:) for second row, A([1, 3],:) for 1st and 3rd rows. Can do things like A(:,2) = [10; 11; 12]
+- Serialize: size(A) = [3 2], size(A(:)) = [6, 1]
+- Extending matrix: C = [A B], given A and B have the same number of rows, or [A; B] for aligning it upside down instead of side by side, which I agree, makes sense
+- Dot product: *
+- Pairwise product: .*, "." usually means pairwise. There're things like A .^ 2, or 1 ./ A
+- Transpose: A'
+- Magic squares: size(magic(3)) = [3 3]
+- Flip up down: flipud(A)
+- Inverse: pinv(A)
+
+Map, Filter and Reduce functions:
+- Matrix size: size(matrix[, 1 for first dimension, 2 for second dimension]) (again, fuck you for starting from 1), length(matrix) gives length of longest dimension
+- Max: A is a vector. value = max(A), [value, index] = max(A). A is a matrix, then column-wise maximum
+- Max: A is a matrix, max(A, [], 1) return maxes of each column, and max(A, [], 2) returns maxes of each row. max(A) defaults to max(A, [], 1)
+- Find: find(a < 3), picks out indexes where it's true
+- Commons: sum(), prod(), for matrices, sum(A, 1) for summing all elements in a column, or compressing rows, and vice versa
+
+Displaying data:
+- Histogram: hist(1 * n vector [, bins])
+- Plots: x = [0:0.01:0.98], y = sin(2*pi*4*x), plot(x, y [, 'r' for red]). "hold on" to keep previous graphs
+- Plot others: xlabel(), ylabel(), legend("first y", "second y"), title(), figure(1); plot(things) for controlling separate graphs, axis(xSmall, xLarge, ySmall, yLarge), clf for clearing figure, 
+- imagesc(A) for displaying matrix A as an image, "imagesc(A), colorbar, colormap grey;" is a nice combo
+
+File system:
+- Loading: load featuresX.dat, or load('featureX.dat')
+- Saving: save file.mat featureY [-ascii];
+
+Common programming structures:
+- For loops: for i = 1:10, [\n] v(i) = 2^i; [\n] end;
+- Flow modifier: break; continue;
+- While loops: i = 1; while i <= 5, [\n] v(i) = 100; i = i + 1; end;
+- If statements: if v(1) == 1, disp("Value is 1); elseif v(1) == 2, disp("Value is 2"); else disp("Value is neither"); end;
+
+Functions:
+- Each function is stored separately in a file, which kinda looks like this: function y = square(x) \n y = x^2;
+- Octave will find all .m files in the working directory
+- To add automatic paths, addpath('path to folder')
+- Returning multiple values: function [y1, y2] = squareAndCube(x) \n y1 = x^2; \n y2 = x^3;
+
+
+
+
+
+
+Field specific codes:
+
+Optimize some functions:
+options = optimset('GradObj', 'on', 'MaxIter', '100'); % Gradient objective on, Max iterations of 100
+[theta, functionValue, exitFlag] = fminunc(costFunction, initialTheta = zeros(2, 1), options) % function minimum unconstrained
+
+Overall scheme of what Andrew is doing is quite different from the deep layers I'm used to. There are no layers at all. Everything is clean cut, direct and less mysterious. So, h_theta(x) = g(theta0 * x0 + theta1 * x1 + ... + thetan * xn). The x's can vary hugely, like x5 can be log(x1), x6 can be x^2. This is what makes this direct method really powerful, and that we are mostly in control of what the system is doing. So that seems to suggest that the field of deep neural networks has advanced so, so much that even this one layer, damn simple but multiple feature enabling capability like this does not solve all the problems out there.
+
+Underfit = High bias, looks like theta0 + theta1 * x
+Overfit = High variance, looks like theta0 + theta1 * x + ... + thetan * x^n
+
+
+
+Normal equation, basically just basic matrix multiplication lol
+There can be millions of features, so basic matrix multiplication which includes finding the inverse of n * n matrix, is undesirable compared to GD. Cost of inversing a matrix: O(n^3). General rule is that use the basic method for less than 10k features
+
+data:
+- nominal: labels. Can calculate mode
+- ordinal: labels that have order, like movie rating. Can calculate mode and median
+- interval: order and distance, no absolute zero, like degrees Celsius. Can calculate mode, median and mean
+- ratio: like interval, but with an absolute zero and things scale nicely. Allow more complicated statistical measures such as t-test
+
+"Principle component analysis is perhaps the most widely used data reduction technique on the planet"
+reframe, move it a bit around
+
+so, finding a principle component from a number of attributes
+
+iris dataset, classic one, everyone uses it
+
+Sets:
+- training, may be 70%
+- validation, not used for training, but for monitoring the training process, to make sure that it's heading towards the correct location, may be 15%
+- testing, for humans, may be 15%
+
+Classifying data:
+- 0R: just always classify it as 1 and only 1 category, the category that has the most frequency
+- 1R: classification based on 1 variable only
+- KNN (K nearest neighbor): examine k nearest neighbor in the space. If they are mostly 1 then outputs 1, if they are mostly 2 then outputs 2
+- Decision tree: for each attribute (dimension in the space), generate an if-else rule that best separates the data (7 output groups, then have if and else if for 7 times) to form a layer. Then group together all of the attributes (which comes with the layers) to form a quite quick decision tree
+- Support vector machines
+- Neural networks
+
+Measure of how well are the classification:
+- Recall: How well algo is spotting a particular class
+- Precision: Of the ones we classify as a particular class, how much of them is actually correct
+
+5Vs of Big Data (2001), or standards that people identify Big Data with:
+- Volume, how large
+- Velocity
+- Variety, old systems just have a single relational database. Now we need to store stuff like click events
+- Value
+- Veracity, or accuracy
+
+Methods:
+- Ingest data, Apache Kafka, Apache Flume. Other software mentioned, like Apache Flink. Man, Apache do a lot of shit these days
+- Storage, distributed across a cluster, may be skipped
+- Preprocess
+- Process. 1 goal of all of this is to limit data movement. So it's important to design algorithms that limit data movement around, fancily called "data locality" where you want to make the computation close to the data. Don't move the data around
+
+
+

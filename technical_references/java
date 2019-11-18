@@ -1,0 +1,35 @@
+
+// requesting from websites
+
+        URLConnection connection = new URL("http://sgn.kelvinho.org/echo.php?ynesGet=something").openConnection();
+        connection.setDoOutput(true);
+        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+        writer.write("ynesPut=okayLol");// this is for setting the POST request variables
+        writer.close();
+        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        String inputLine;
+        while ((inputLine = in.readLine()) != null) {
+            System.out.println(inputLine);
+        }
+        in.close();
+
+for URL escaping stuff, use URLEncoder.encode("message", "UTF-8")
+
+SwingUtilities.invokeLater();
+
+layouts
+- BorderLayout: Widgets at borders
+- BoxLayout: Widgets in single row or column
+- CardLayout: Pluggable (don't understand lol')
+- FlowLayout: default, single row
+- GridBagLayout: grid of cells, https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html
+- GridLayout: make components equal-sized and display them in requested #rows and #columns
+- SpringLayout: kinda like ConstraintLayout
+
+
+for color sake
+public static void main(String[] args) {
+    System.out.println("something")
+}
+
+Swing widgets: http://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html

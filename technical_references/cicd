@@ -1,0 +1,11 @@
+A lot of ppl say drone.io is great
+Also concourse
+
+So I get the feeling that CircleCI is Gradle and Jenkins is Maven
+
+Jobs:
+- building and compiling
+- running unit tests
+- deploying the binary to some server
+
+Sequential Jobs are called a pipeline

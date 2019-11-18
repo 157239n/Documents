@@ -1,0 +1,36 @@
+
+
+- RD-191: familiar, high performance staged combustion cycle
+- RD-68A: highest thrust to weight of H2/O2 engine, advanced gas generator cycle
+- RD-0124: upper stage engine, 4 thrust chambers, 1 turbopump
+
+Propulsion devices:
+- (chemical nuclear solar). D/P: developed, practical. TFD: technical feasibility demonstrated. TFND: technical feasibility not demonstrated
+- (D/P) Turbojet
+- (TFD) Turbo-ramjet
+- (D/P TFD) Ramjet (hydrocarbon)
+- (TFD) Ramjet (H2 cooled)
+- (D/P TFD) Rocket
+- (TFD) Ducted rocket
+- (D/P . D/P) Electric rocket
+- (. TFD) Nuclear fission rocket
+- (. . TFD) Solar-heated rocket
+- (. TFND) Photon rocket
+- (. . TFD) Solar sail
+
+Criterias:
+- Thrust to weight ratio
+- Specific fuel consumption (lbs of prop per hour per lbs of thrust, which tbh sounds like specific impulse)
+- Specific thrust (N/m^2)
+- Specific impulse (thrust per unit prop or fuel weight flow per sec)
+- Thrust change with altitude
+- Thrust vs. flight speed
+- Thrust vs. air temperature
+- Flight speed vs. exhaust velocity
+- Altitude limitation
+
+So, ramjets are jets with subsonic combustion, while scramjets are jets with supersonic combustion
+
+Definitions:
+- Total impulse (It): int 0->t F * dt. Thrust force integrated over the time of its application t. Constant thrust, then I = F * t. Have same units as momentum. Is proportional to total energy of the reaction
+- Specific impulse (Is): thrust per unit propellant "weight" flow rate. Is = It / (g0 * int 0->t mdot dt), g0 being earth's gravitational constant of 9.8. Time-averaged specific impulse in seconds. Useful when thrust varies with time. For short time intervals, Is = It / (mp * g0)

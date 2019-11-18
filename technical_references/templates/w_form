@@ -1,0 +1,9 @@
+<div id = "loginForm" class = "w3-container" style = "padding: 16px;">
+    <div>Username</div>
+    <input id = "loginUsername" class = "w3-input" type = "text"><br>
+    <div>Password</div>
+    <input id = "loginPassword" class = "w3-input" type = "password"><br>
+    <div id = "loginMessage"></div><br>
+    <div class = "w3-button w3-red" onclick = "login()">Login</div>
+</div>
+

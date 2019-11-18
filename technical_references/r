@@ -1,0 +1,74 @@
+3d graphing lib: install.package("plotrix")
+myString <- "Hello, world"
+print(myString)
+# comments
+
+Types:
+logical: v <- TRUE
+numeric: v <- 23.5
+integer: v <- 2L
+complex: v <- 2 + 5i
+character: v <- "TRUE"
+raw: v <- charToRaw("Hello")
+vector: v <- c("red", "green", "blue")
+list: v <- list(c(5, 3, 2), 21.3, sin)
+matrix (2d): v <- matrix(c('a', 'a', 'b', 'c', 'b', 'a'), nrow = 2, ncol = 3, byrow = TRUE)
+array: v <- array(c('green', 'yellow'), dim = c(3, 3, 2))
+factors: v <- factor(c('green', 'green', 'yellow', 'red', 'red', 'red', 'green'))
+dataframe: v <- data.frame(
+    gender = c("Male", "Male", "Female"),
+    height = c(152, 171.5, 165),
+    weight = c(81, 93, 78),
+    Age = c(42, 38, 26)
+)
+
+Syntax:
+List all variables: ls(pattern = "var"), ls()
+Deallocate variable: rm(variable), rm(list = ls())
+
+Operators (v, v -> v): +, -, *, /, %% (%), %/% (div), ^
+Relational operators (v, v -> v(bool)): >, <, ==, <=, >=, !=
+Logical operators (v, v -> v(bool)): &, |, !, && (first element), || (first element)
+Assignment: <-, <<-, =, ->, ->>
+Misc:
+- 2:8 == c(2, 3, 4, 5, 6, 7, 8)
+- %in% == in
+- %*% == .dot
+- t(M) == M.T()
+- print(), class()
+- LETTERS[1:4] = c("A", "B", "C", "D")
+
+Conditional: like Java without semicolons
+Switch: v <- switch(expr, case...)
+Loops: infinite: repeat {}, for (number in vector) {}, next
+Functions: name <- function(args...) {}, with default arguments
+Strings:
+- paste(string...) == concat(string..., sep = " ", collapse = NULL), sep is the separation token
+- format(vector, digits, nsmall (minimum digits to the right), scientific (bool, mode), width (int, padding), justify (string, "l", "c", "r"))
+- toupper(), tolower(), substring(string/array, first position, inclusive last position), nchar() for number of characters
+Vectors:
+- seq(begining, inclusive end, by = step), seq(2.3, 6.8, 1) == 2.3:6.8
+- t[-1, -5], everything except at index 1 and 5. It is s 1-based, not 0-based btw
+- vector <- sort(vector, descending = TRUE)
+Data frames:
+emp.data <- data.frame(
+    emp_id = c(1:5),
+    emp_name = c("Rick", "Dan", "Michelle", "Ryan", "Gary"),
+    salary = c(623.3, 515.2, 611.0, 729.0, 843.25),
+    start_date = as.Date(c("2012-01-01", "2013-09-23", "2014-11-15", "2014-05-11",
+      "2015-03-27")),
+    dept = c("IT", "Operations", "IT", "HR", "Finance"),
+    stringsAsFactors = FALSE
+)
+emp.finalData <- rbind(emp.data, emp.newdata) // joins to form a single table
+Lists:
+- lst = list(2, 5+3i, c(5, 3))
+- name(lst) <- c("Integer", "Complex number", "Inner list")
+- merge: mergedList <- c(list, list)
+Casting: list(vector) -> list, unlist(list) -> vector
+Matricies: M[, 2]
+Arrays: array(vector, dim = c(3, 3, 2), dimnames = list("row names", "column names", "matrix names"))
+Environment:
+- getwd() == pwd
+Statistics:
+- mean(vector, na.rm = TRUE), median()

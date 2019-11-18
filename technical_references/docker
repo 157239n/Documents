@@ -1,0 +1,558 @@
+Killer commands (commands that I use sooooo frequently):
+- Typical webserver: docker container run -it --name webServer --publish 80:80 --publish 443:443 --volume /dockerVolumes/webServer:/hostVolume ubuntu:latest /bin/bash
+- Mail server:
+- Stops container from exiting: tail -f /dev/null
+- Usual daemon ip address (run ip a to make sure): 172.17.0.1/16
+- Non-interactive: ENV DEBIAN_FRONTEND noninteractive
+- Dockerfile flags:
+  - 
+
+Real world information
+- Open Container Initiative - standards body for container technology
+- Parts of Docker is now turned into "Moby project"
+- Docker Certified Associate
+- Docker hub contain "repositories", owned by users, like ubuntu. Each repo has several images, like latest
+
+System:
+- Overall information: docker system info
+- Pruning: docker system prune, prune unused stuff
+- Logging: journalctl -u docker.service
+- Version: docker version
+
+Resources. Now that I have read docker deep dive, these resources should be a breeze to bust into and finish in like 3 days or so:
+- Building: https://docs.docker.com/engine/reference/builder/
+- https://docs.docker.com/compose/
+- https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+- Mounting volumes to a running container: https://medium.com/kokster/mount-volumes-into-a-running-container-65a967bee3b5
+- Microservices: https://microservices.io/
+- Swarm: https://www.aquasec.com/wiki/display/containers/Docker+Swarm+101
+- https://training.play-with-docker.com/alacart/
+- https://diveintodocker.com/
+- Not free, but free trial and reviews are good: https://www.lynda.com/Docker-tutorials/Learning-Docker-REVISION-Q3-2018/721901-2.html
+- https://leanpub.com/dockerfordevs
+- play-with-docker.com
+- The Docker Book: Containerization is the new virtualization
+- Painless Docker
+- Docker Up and Running
+- Docker in Practice
+- https://docs.docker.com/
+
+References:
+- Libnetwork's thought process/specs sheet: https://github.com/docker/libnetwork/blob/master/docs/design.md
+
+Binaries:
+- docker
+  - Upgrading:
+    - apt-get remove docker docker-engine docker-ce docker.io -y
+    - Download shell script from get.docker.com: wget -qO- https://get.docker.com | sh
+    - Run it
+- docker-compose: is a compiled python binary available on github
+- docker-machine
+- notary
+
+Images:
+- Pulling an image: 
+  - Famous: docker pull ubuntu
+  - Normal: docker pull username/repo:version
+  - Pulling everything: docker pull -a username/repo
+- Listing:
+  - Vanilla: docker image ls
+  - All: docker image ls -a
+  - With digests: docker image ls --digests
+  - ID-filtered of all: docker image ls -aq
+- Removing: can remove only if all containers started from the image has stopped and destroyed
+  - Vanilla: docker image rm <id>
+  - Vanilla: docker image rm <tag name>
+  - All: docker image rm $(docker image ls -aq) -f, "-f" for forced removal
+  - All dangling images: docker image prune
+- History:
+  - Version 1: docker history <tag name>
+  - Version 2: docker image history <tag name>
+- Building:
+  - Typical syntax: docker image build <options> <path to Dockerfile>
+  - Vanilla: docker image build --tag test:latest .
+- Inspecting: docker image inspect <tag name>
+- Retagging:
+  - Format: docker image tag <current tag> <new tag>
+  - Vanilla: docker image tag repo:latest user/newRepo:latest
+- Pushing:
+  - Before: docker login
+  - Vanilla: docker image push user/repo:version. This refers to docker.io/user/repo
+
+Containers:
+- Listing:
+  - Vanilla: docker container ls
+  - All: docker container ls -a
+  - ID-filtered of all: docker container ls -aq
+- Running:
+  - Typical syntax: docker container run [<options>] <tag name> [<entry point>]
+  - Typical container: docker container run -it ubuntu:latest /bin/bash (-it connects with the container's shell)
+  - With webserver: docker container run -d --name webserver --publish 8080:8080 test:latest. "-d" for detached
+  - Damn simple example from book: docker container run -d --publish 80:8080 nigelpoulton/pluralsight-docker-ci
+- Running options:
+  - Restart mode: --restart always|unless-stopped|on-failed
+  - Detached: -d
+  - Attach: -it
+  - Mount with a volume: -v $(pwd):/hostVolume
+  - Mount with an existing volume: --mount source=<volume>,target=/vol (seems to be deprecated)
+  - Publish ports: --publish 80:8080
+  - Name: --name ynes
+  - Environmental variables: -e variable=value
+- Exiting without killing: <C-PQ>, only needed to be this way when starting up sort of an empty container
+- Attaching:
+  - New process: docker container exec -it <name> bash
+  - PID 1: docker attach <name>
+- Stopping: docker container stop <name>
+- Removing:
+  - Vanilla: docker container rm <name>
+  - Forced: docker container rm <name> -f
+  - All: docker container rm $(docker container ls -aq) -f
+- Inspecting: docker container inspect <name>
+- Logging: docker container logs <name>
+
+Networks:
+- Listing: docker network ls
+- Creating:
+  - Bridge: docker network create -d bridge <name>
+  - Overlay: docker network create -d overlay <name>. This connects to the current Docker host only. When creating a service and attaching the overlay network, the network automatically spans to other Docker nodes
+- Inspecting: docker network inspect <name>
+- Removing: docker network prune
+
+Volumes:
+- Listing:
+  - Vanilla: docker volume ls
+- Creating:
+  - Vanilla: docker volume create <volume name>, creates built-in local driver
+- Removing: docker volume prune
+- Mounting: can be mounted to a container
+- Inspecting:
+  - Vanilla: docker volume inspect <name>
+  - Interesting parts (used with grep):
+    - Mount
+- Plugins/Drivers (over 25 of them, and are categorized into these category):
+  - Block storage: small-block random access workloads
+  - File storage: systems that use NFS and SMB protocols, good for high performance workloads
+  - Object storage: long term storage of large data blobs that do not change frequently
+
+Docker Compose: "builds all required images, creates all required networks and volumes, and start all required containers"
+- Default config file: docker-compose.yml
+- docker-compose build
+- Up:
+  - docker-compose up & # to give us terminal window back, showing logs (&, HTTP 200 response codes) and what not
+  - docker-compose up -d # to bring the app up in the background, short for detached
+- docker-compose stop, stop the containers but don't remove them
+- docker-compose down, stop the containers and remove them. Volumes and images will not be deleted. "-v --rmi all" switch to remove.
+- docker-compose rm, remove a stopped container
+- docker-compose ps
+- docker-compose top
+- docker-compose restart
+
+Docker logging drivers:
+- json-file (default)
+- journald (Linux hosts running systemd)
+- syslog
+- splunk
+- gelf
+
+Workflow:
+- write php code
+- run composer container, install dependencies, remove the container
+- docker-compose
+- Profit
+
+Swarm:
+- Best practices:
+  - Odd numbers of managers
+  - 3 or 5 managers only. 7 might be fine. More than 7 is discouraged
+  - This is because "split brain" phenomenon. More here: https://docs.docker.com/engine/swarm/raft/. Also more about raft consensus algorithm: https://raft.github.io/
+- Joining instructions:
+  - Worker: docker swarm join-token worker
+  - Manager: docker swarm join-token manager
+- Creating: docker swarm init --advertise-addr 192.168.0.38:2377 --listen-addr 192.168.0.38:2377
+- Leaving the swarm: docker swarm leave
+- Autolock: when a node is shutdown, it is required to have a key to join in again. Cuz old nodes and volumes are volatile.
+  - Enable. After running, a key will be printed to the screen. Keep the key with your life:
+    - On creation: docker swarm init --autolock
+    - When running: docker swarm update --autolock=true
+  - Unlocking to join: docker swarm unlock
+- Replication:
+  - Modes:
+    - replicated, deploy a desired number of replicas and distribute them evenly
+    - global, runs 1 replica on every node in the swarm. Why do ppl want this mode?
+- Parts:
+  - Cluster of Docker hosts
+  - Microservices orchestration engine, like K8S
+- Perks of cluster:
+  - Encrypted distributed cluster store
+  - Encrypted networks
+  - Mutual TLS
+  - Secure cluster join tokens
+  - PKI (private key infrastructure???)
+  - Non-disruptively add and remove nodes
+  - Easy certificate rotation
+- TLS roles:
+  - Encrypt communications
+  - Authenticate nodes
+  - Authorize roles
+  - Automatic key rotation
+- Port information, all of these needs to be open:
+  - 2377/tcp: client to swarm communication
+  - 7946/tcp and 7946/udp: control plane gossip
+  - 4789/udp: VXLAN-based overlay networks (again, wtf is VXLAN?? Wtf are overlay networks???)
+
+Nodes:
+- Listing: docker node ls
+- Requirements: networked, is a computer, like VM, Pis, cloud instances
+- Adding labels: docker node update --label-add <label name>=<label value> <node name>
+
+Services (used in Docker Swarm only):
+- Listing: docker service ls, list every services
+- Logging: docker service logs <name>
+- Processes: docker service ps <name>, list every replica in a service
+- Tasks: docker service tasks <name>, basically the same as above lol
+- Inspecting: docker service inpsect --pretty <service name>
+- Creating: docker service create --name <service name> --publish <port mappings> --replicas <number of replicas> <image name>
+- Scaling: docker service scale <name>=<number of replicas>
+- Removing: docker service rm <name>
+- Properties:
+  - More flexible than a container, can modify config, networks, volumes without manually restarting
+- Capabilities:
+  - Scaling
+  - Rolling updates
+  - Simple rollbacks
+
+Secrets:
+- Listing: docker secret ls
+- Creating:
+  - From input stream: echo file | docker secret create <secret name> -
+  - From file: docker secret create <secret name> <file name>
+
+Docker Stacks: exactly like Docker Compose, but buffed
+- Before deploying:
+  - Define all secrets
+  - Define all node-specific-soon-to-be-swarm-knowledge labels
+  - Deploy
+- Deploying/Redeploying: docker stack deploy -c <path to docker stack yml file, including the file> <stack name>
+- Processes: docker stack ps <name>
+- Listing: docker stack ls
+- Removing: docker stack rm <name>. Secrets and top-level volumes will not be deleted
+
+Storage drivers, for container's filesystem:
+- RHEL: overlay2, devicemapper with older versions
+- Ubuntu: overlay2 or aufs
+- SUSE Linux Enterprise Server: btrfs
+- Windows: has 1 driver only, configured by default
+
+Default network drivers (Linux), can plug into libnetwork to provide different network topologies:
+- "bridge driver", single-host bridge networks, seems to be the container-to-container networks
+- "overlay driver", multi-host overlay networks
+- "macvlan", vlans
+
+Default network drivers (Windows):
+- nat, single-host bridge networks
+- overlay
+- transarent, vlans
+- l2bridge
+
+Remote network drivers (aka 3rd party):
+- calico
+- contiv
+- kuryr
+- weave
+
+Warnings:
+- Everything is case sensitive
+
+Other details I don't quite understand the significance of:
+- Storage drivers (Linux): aufs, overlay2, devicemapper, btrfs, zfs
+
+Random:
+- ip link show docker0
+- brctl show
+
+Samples:
+- From the book: https://github.com/nigelpoulton/psweb
+- JDK8 on top of alpine image
+
+Inner workings:
+- Components:
+  - docker daemon: dockerd
+  - containerd: docker-containerd
+  - runc: docker-runc
+  - docker client
+  - shim: parent of runc, child of containerd: docker-containerd-shim
+
+Directives:
+- FROM alpine [as stageName]
+- LABEL key=value // maintainer="157239q@gmail.com"
+- RUN command
+- COPY [--from=stageName] hostDir containerDir
+- WORKDIR containerDir
+- EXPOSE port
+- ENTRYPOINT ["program", "file"]
+- CMD
+- ENV
+
+
+
+
+
+
+
+
+Sample dockerfiles:
+#1:
+
+FROM alpine
+LABEL maintainer="nigelpoulton@hotmail.com"
+RUN apk add --update nodejs nodejs-npm # Install Node and NPM
+COPY . /src # Copy app to /src
+WORKDIR /src
+RUN  npm install # Install dependencies
+EXPOSE 8080
+ENTRYPOINT ["node", "./app.js"]
+
+#2:
+
+FROM node:latest AS storefront
+WORKDIR /usr/src/atsea/app/react-app
+COPY react-app .
+RUN npm install
+RUN npm run build
+# ----------------------------------------------------------------------------------------
+FROM maven:latest AS appserver
+WORKDIR /usr/src/atsea
+COPY pom.xml .
+RUN mvn -B -f pom.xml -s /usr/share/maven/ref/settings-docker.xml dependency:resolve
+COPY . .
+RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package -DskipTests
+# ----------------------------------------------------------------------------------------
+FROM java:8-jdk-alpine
+RUN adduser -Dh /home/gordon gordon
+WORKDIR /static
+COPY --from=storefront /usr/src/atsea/app/react-app/build/ .
+WORKDIR /app
+COPY --from=appserver /usr/src/atsea/target/AtSea-0.0.1-SNAPSHOT.jar .
+ENTRYPOINT ["java", "-jar", "/app/AtSea-0.0.1-SNAPSHOT.jar"]
+CMD ["--spring.profiles.active=postgres"]
+
+also Docker Stacks
+
+#3:
+
+Flask app:
+version: "3.5"
+services: # service definitions. Compose will deploy 2 containers that will have web-fe and redis in their names (why not just their names directly?)
+  web-fe: # short for web front end, just a name
+    build: . # tells Docker to build a new image using the instructions in the Dockerfile in the current directory (.)
+    command: python app.py # tells Docker to run a Python app called app.py as the main app of the container. There isn't anything special about this "main" app. It's just a normal program but runs indefinitely, may be listening to ports
+    ports: # tells Docker to map port 5000 inside the container (target) to port 5000 on the host
+      - target: 5000
+        published: 5000
+    networks:
+      - counter-net
+    volumes:
+      - type: volume
+        source: counter-vol # mount counter-vol,
+        target: /code # as a mount in /code
+  redis: # in-memory database, just a name
+    image: "redis:alpine" # start a standalone container called redis based on redis:alpine image
+    networks:
+      counter-net: # connects to counter-net network, which is interesting
+networks: # hey Docker, create new networks for me would ya. By default, "bridge" networks will be created
+  counter-net: # this is just a name
+volumes: # hey Docker, create new volumes, which I guess is some sort of official storage mechanism. Yeah this is exciting stuff
+  counter-vol: # this is also just a name
+
+overlay network (whatever that is), allows standalone containers to connect to it (aka attachable, the stuff with switch -it):
+networks:
+  over-net:
+  driver: overlay
+  attachable: true
+
+4 top-level keys: version (mandatory), services, networks, and volumes, secrets and config
+
+#4:
+
+FROM alpine:3.7
+RUN apk add --no-cache mysql-client
+ENTRYPOINT ["mysql"]
+
+apparently there are more than those 1 top-level keys. This is just a fast way to declare services
+
+web:
+  build: .
+  ports:
+    - "8000:80"
+  links:
+    - db
+  volumes:
+    - .:/code
+db:
+  image: "mysql:5"
+  volumes:
+    - ./mysql:/etc/mysql/conf.d
+  environment:
+    MYSQL_ROOT_PASSWORD: phpapptest
+    MYSQL_DATABASE: phpapp
+
+Mysql:
+
+Dockerfile (this is just for the interface between mysql and php):
+FROM php:apache
+RUN docker-php-source extract && docker-php-ext-install mysqli && docker-php-source delete
+
+Those weird ad-hoc symbols are "helper scripts", built right into the image
+- docker-php-source extract: extract tar. This is needed cuz PHP's extra functionality and source is kept in a compressed tar file
+- docker-php-source delete: delete extracted sources
+- docker-php-ext-configure
+- docker-php-ext-install
+- docker-php-ext-enable
+
+Effects:
+- Adds PHP extensions we need (mysqli functions)
+
+Running (does not work with more up to date MYSQL, see why):
+- docker run -d --rm --name weather_db -e MYSQL_USER=admin -e MYSQL_DATABASE=weather -e MYSQL_PASSWORD=password -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql:5.7
+
+Switch "-e" is for environmental variables
+
+
+
+libnetwork building blocks:
+- sandboxes: isolated network stack. Includes Ethernet interfaces, ports, routing tables, dns config
+- endpoints: virtual network interfaces (Eg. veth). Job is to connect sandbox to a network
+- networks: implementation of 802.1d bridge (???), aka layer 2 switch
+
+libnetwork also natively implement these stuff:
+- service discovery
+- ingress-based container load balancing. I still don't understand the ingress stuff
+
+"spanning trees enabled"???
+can ping <container name> inside another container. The container name will be automatically resolved to a local address. Just like a DNS server. But here, docker manages this, not an actual DNS server. Fun fact, the OS does not resolve this the name.
+
+In multihost stuff, each container in a private (also physical) network is given a mac and ip address
+macvlan requires the host NIC (possibly Network Interface Computer) to be in promiscuous mode (???), which isn't allowed on most public cloud platforms
+
+libnetwork also provides important network services:
+- service discovery, dns for services
+
+
+
+
+Containers are excellent for microservices design patterns
+Microservices are all about stateless and ephemeral (lasting a long time) workloads, and containers are great microservices
+
+
+
+
+
+Docker Stacks
+
+motive: deploying and managing multi-service apps at scale is hard. Docker Stacks simplify application management by providing:
+- desired state
+- rolling updates
+- simple scaling operations
+- health checks
+all of these inside a declarative model (meaning yml lol)
+
+Key word here is multi-service. Or simply a glue big app that contains many insider apps considered as services
+
+lifecycle: initial deployment --> health checks --> scaling --> updates --> rollbacks
+process:
+- define app in a compose file. Sounds familiar
+- deploy and manage it with docker stack deploy command. Also sounds familiar
+
+Stacks build on top of Swarm, with all of its TLS.
+
+In many ways, Stacks are what we always wished Compose was - fully integrated into Docker, and able to manage the entire lifecycle of applications. So there are some downsides too using Compose???
+
+The stack file is a Docker Compose file (lol????? :v). The only requirement is that the version: key specify a value of "3.0" or higher.
+
+Default network is overlay (lol? So my networking knowledge is really that bad rite?)
+
+atsea stuff:
+payment network requires encrypted ***data*** plane
+By default, control plane of all overlay networks is encrypted
+To encrypt data plane (10% overhead):
+- docker network create -o encrypted
+- specify encrypted: 'yes' under driver_opts in Compose file
+
+Secrets, top-level objects. "external" means they must already exist before the stack can be deployed.
+Stacks do not support builds
+Secrets are mounted into service replicas as a regular file at /run/secrets
+
+placement constraint defined under the deploy key as "- 'node.role == worker'" will ensure replicas for this service will always run on Swarm worker nodes. Placement constraints are a form of topology-aware scheduling, can be a great way to influence scheduling decisions. Swarm allows scheduling against these:
+- Node ID: node.id == o2p4kw2uuw2a
+- Node name: node.hostname == wrk-12
+- Role: node.role != manager
+- Engine labels: engine.labels.operatingsystem == ubuntu 16.04
+- Custom node labels: node.labels.zone == prod1
+
+Can specify desired number of deploy replicas right in the stack file. Can change this by changing the file and redeploying the stack, which is a continuous operation and does not need something to be shut down. Can also specify additional instructions (well, it's yml, so config, not instructions) that specify how fast should the updates be, what happens when something gone wrong (usually a rollback)
+
+Important note: docker service scale is not the recommended method to scaling apps specified by Stacks, cuz the change would go unnoticed, and then, what's the difference between that and handle everything else manually?
+
+Best practices for multi production environments is that you should just maintain different docker stack files.
+
+
+
+
+Security
+- Docker platform security technologies
+  - Secrets Management:
+    - Get stored in encrypted cluster store
+    - Encrypted in-flight when delivered to containers
+    - Stored in in-memory filesystems (like redis)
+    - Operate a least-privilege model
+  - Docker Content Trust: let owner sign images and verify integrity and publisher of pulled images
+  - Security Scanning:
+    - Analyzes Docker images
+    - Detect known vulnerabilities
+    - Provide detailed reports
+  - Swarm Mode: secure by default with all the TLS, with no config required
+    - Cryptographic node ID
+    - Mutual authentication
+    - Automatic CA configuration
+    - Automatic certificate rotation
+    - Encrypted cluster store
+    - Encrypted networks
+- Linux security technologies
+  - seccomp
+  - Mandatory Access Control (MAC)
+  - Capabilities
+  - Control groups (cgroups)
+  - Kernel namespaces
+
+Seemless, moderately secure out-of-the-box experience
+
+
+
+
+
+
+Proxying:
+a2enmod proxy
+a2enmod proxy_http
+
+Site:
+<VirtualHost *:80>
+  ServerName subdomain.domain.tdn
+  ProxyPass / http://172.17.0.1:8080/
+</VirtualHost>
+
+Self standards for proxying:
+- ports: 8001:80, 44301:443 (deprecated), counting up
+- certificates should be configured on the proxy one
+- services ports:
+  - phpMyAdmin: 50001:5000, counting up. Can't really be 500001:5000, although we want it
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+$_SERVER["PHP_SELF"]
+if (isset($_GET["query"])); // checks first time here
+hash('md5, $string');
+
+header('Location: login.php'); // redirect from server side
+
+$_SESSION["firstTime"]
+session_start();
+session_unset();
+session_destroy();
+True, False
+
+$fh = fopen('filename.txt', 'r');
+while ($line = fgets($fh)) {
+    // do things
+}
+fclose($fh);
+
+file_put_contents("file.txt", data)
+file_get_contents("file.txt")
+
+
+
+
+Composer:
+
+Normal usage:
+composer.json:
+{
+    "require": {
+        "vendor/package": "1.3.2",
+        "vendor/package2": "1.*",
+        "vendor/package3": ">=2.0.3"
+    }
+}
+
+Publish:
+composer.json:
+{
+    "name": "your-vendor-name/package-name",
+    "require": {
+        "php": ">=5.3.0",
+        "another-vendor/package": "1.*"
+    }
+}
+
+composer install
+composer update
+require __DIR__ . "/vendor/autoload.php"
+
+
+Install composer without apt:
+RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
+
+
+
+
+class php {
+    public $abc;
+    static $def;
+    __construct() {
+        self::$def++;
+        $this->abc = 56;
+    }
+}
+
+namespaces:
+namespace my\name;
+class MyClass {}
+$a = new MyClass();
+$b = new \my\name\MyClass();
+
+standards:
+- https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
+- https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+- https://www.php-fig.org/psr/psr-1/
+
+capturing echo's output:
+ob_start();
+echo "something";
+ob_get_clean();
+
+evaluate a string as if it's a file and use include: eval()
+

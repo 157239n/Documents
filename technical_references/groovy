@@ -1,0 +1,41 @@
+
+Characteristics:
+- Strongly typed
+- Most Java code would work
+
+Types:
+- String: "something"
+- Character: 'H' as char
+- Byte: 0 as byte, -12 as byte
+- Long: 0L
+- BigInteger: 0G, -12G
+- Float: 0.0F
+- Double: 0.0D
+- BigDecimal: 0.0
+- List: [1, 2, 3]
+- Set: [1, 2, 3] as Set
+- Map: [one: 1, two: 2]
+- groovy.lang.IntRange: 0..<10, 0..100
+
+Stuff:
+def s = [1, 2, 3, 4] as Set
+def s = [1, 2, 3, 4] as int[]
+for (int i in 0..<10) {}
+List<String> listOfNames = ...; for (name in listOfNames) {}
+class Person {
+    String name
+    Date dateOfBirth
+
+    int getAge() {
+        return (new Date() - dateOfBirth).intdiv(365)
+    }
+
+    String getDisplayDetails() {
+        return "${name} (${dateOfBirth})"
+    }
+}
+def p = new Person()
+def p = new Person(name: "John Doe", dateOfBirth: ...)
+println p.displayDetails
+
+When adding public, the default getters and setters go away

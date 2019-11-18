@@ -1,0 +1,738 @@
+
+So, plan to deal with this whole problem:
+- (done) Learn about the remaining IT stuff: Docker and Gradle
+- (low priority) Learn about networking and possibly wiggle around the Raspberry Py to understand more
+- Learn about some mechanical engineering stuff, to the point that I have a feeling and intuition for stresses and strains
+- (low priority) Learn about some fluid dynamics and thermodynamics, for understanding the applicability of science
+- Switch major to mechanical engineering, and get into a machine/hardware shop. Ask for contacts for students that are actually building hardware products for customers, from scratch. I remember Khue's friend used to do that.
+- Buy Tesla stocks once I get the SSN
+
+Old ipcc stuff: https://arctic-news.blogspot.com/2018/10/ipcc-keeps-feeding-the-addiction.html?fbclid=IwAR1ImdFF2KAzwHX4zLaLGHGVLflRVFJo2QdxaFldFPqAoJLesRFtbiasm8k
+
+Bookmarked books (local paths!!):
+- Understanding earth: file:///C:/Users/Lenovo-1/Downloads/John%20Grotzinger,%20Thomas%20H.%20Jordan,%20Frank%20Press,%20Raymond%20Siever%20-%20Understanding%20Earth%205th%20Ed..pdf
+- Drawdown on phone
+- Ignition on gg books
+
+Okay, path from now:
+- finish all documentaries, one every day!!!
+- learn AI stuff, david silver's markov chains: https://www.youtube.com/watch?v=lfHX2hHRMVQ
+- read understanding earth
+- read rocket propulsion elements
+- daimun: https://www.facebook.com/daimun.official/posts/2291266651120317?__tn__=K-R
+- ml-class.org
+
+primers:
+- business
+- diplomacy
+- united nations
+- crawler
+
+Rewatch this talk about AI alignment problem, why it's hard and important: https://www.youtube.com/watch?v=EUjc1WuyPT8
+
+AI & logical induction: https://www.youtube.com/watch?v=gDqkCxYYDGk
+
+try brilliant
+
+Research about the viability of nuclear. So tech seems okay. What about the money? Profile several nuclear plants
+
+Tweak julia sets
+
+UN stuff:
+- https://www.youtube.com/user/unitednations/playlists
+- https://en.wikipedia.org/wiki/Group_of_Seven
+- non governmental organizations (list)
+- https://www.reddit.com/r/explainlikeimfive/comments/6zsfzi/eli5_whats_the_so_called_deep_state/
+- https://www.mymiv.org/
+- https://www.un.org/en/sections/un-charter/un-charter-full-text/
+- https://en.wikipedia.org/wiki/Charter_of_the_United_Nations
+- G20: https://g20.org/en/summit/
+- https://www.reddit.com/r/explainlikeimfive/comments/6q0qnv/eli5_what_is_the_difference_between_a_referendum/
+
+Also look into shark tank
+Crash Course Government and Politics
+
+ocean related climate stuff:
+- Ocean Science Podcast (prob can't do much in, cause it's a podcast, meaning long)
+- Speak Up for Blue
+
+https://www.dawdlersphilosophy.com/e7-summer-at-aphelion/
+
+"carbon sequestration through ecosystem restoration", another term for CCUS
+
+why was there apparently no action against climate in the gov area? Why has tries over the past couple of decades seemingly vanish?
+ecotourism
+
+watch that documentary about earth history again
+
+"business cases for mitigation and adaption in climate"
+
+control engineering
+
+Climate change stuff to process:
+- https://medium.com/literate-science/hey-scientist-are-you-ready-to-talk-to-the-media-dd18f0872d34
+- https://www.aaas.org/events/reddit-ama-jessica-hellmann-and-tessa-hill-improving-how-scientists-can-talk-public-about
+- https://sharingscience.agu.org/reddit-science-ask-anything/
+- https://www.youtube.com/watch?v=f6_OVfrc_5A
+
+https://whydoesitsuck.com/
+
+Elon on video games: https://www.youtube.com/watch?v=XHUCGNDoWp4
+
+Dive deep into starlink's business case:
+- https://www.reddit.com/r/spacex/comments/brfbic/rspacex_starlink_official_launch_discussion/
+- https://www.reddit.com/r/Starlink/comments/ayec7p/starlink_faq_2019_edition/
+- https://www.reddit.com/r/Starlink/
+
+Py: https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started/4
+
+Global thermostat, Prometheus, Carbon engineering
+
+GPG apache build verification: http://httpd.apache.org/dev/verification.html
+
+Extra credits:
+- Money: https://www.youtube.com/watch?v=GKtNuzakzMA&list=PLhyKYa0YJ_5CL-krstYn532QY1Ayo27s1&index=3
+- Games: https://www.youtube.com/watch?v=lHcTKWiZ8sI&list=PLhyKYa0YJ_5AAbhb9A_CxOEGsdORotH48
+- Politics: https://www.youtube.com/watch?v=Xm-L9cIRdmY&list=PLhyKYa0YJ_5BMjoxHASNb0uGK_XQrUx9D
+
+More SSL/TLS details: http://httpd.apache.org/docs/2.4/ssl/ssl_intro.html
+
+For dummies: https://www.goodreads.com/list/show/2683.For_Dummies_Series
+- Managing money: file:///C:/Users/Lenovo-1/Downloads/(For%20Dummies)%20Benna%20T.,%20Bucci%20S.R.,%20Caher%20J.P.,%20Caher%20J.M.,%20Caverly%20N.B.,%20Economy%20P.,%20Hungelmann%20J.,%20Lucas%20J.E.,%20Lyons%20S.G.,%20Munro%20M.A.,%20Newmann%20B.W.,%20Reed%20M.,%20Simon%20J.S.,%20Sindell%20K.,%20Taylor-Hough%20D.,.pdf
+
+Science funding:
+- https://en.wikipedia.org/wiki/Funding_of_science
+- https://www.acsh.org/news/2017/02/07/how-science-funded-united-states-10816
+- https://www.sciencedaily.com/terms/science_policy.htm
+
+Books on money: "virtual environment to experiment with business"
+- http://gen.lib.rus.ec/book/index.php?md5=85B13B5F090A4890572C5698B3575563
+- http://gen.lib.rus.ec/book/index.php?md5=8AA6343D7F4E6117B7316C7069E99D02
+- http://gen.lib.rus.ec/book/index.php?md5=10DF87D2CAF65BCA13B3E7440E41FEAD
+- http://gen.lib.rus.ec/book/index.php?md5=635FF4858EF42C1DF8B93B2578482C13
+
+see the business case for docker: https://www.docker.com/taxonomy/term/4949. This includes lots of companies with high speed demands, like VISA.
+
+Dry electrode coating technology: http://www.powersourcesconference.com/Power%20Sources%202018%20Digest/docs/3-1.pdf
+
+Look over CircleCI:
+- https://circleci.com/docs/2.0/tutorials/
+- https://circleci.com/docs/2.0/project-walkthrough/
+
+Old electrical stuff from MIT:
+- https://www.youtube.com/watch?v=3GdMaDzIUeQ&list=PL9F74AFA03AA06A11&index=18
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/
+
+Rocket propulsion elements to process: file:///C:/Users/Lenovo-1/Downloads/George%20P.%20Sutton,%20Oscar%20Biblarz%20-%20Rocket%20Propulsion%20Elements-Wiley%20(2016).pdf
+
+andrew stuff: https://www.coursera.org/learn/machine-learning
+
+So what's the carrying capacity for the human race?
+
+Now it kinda feels the whole field is a bit toxic, because like, it appears that we have exceeded our carrying capacity and further advocacy might as well tank the world's economy
+
+"pentesting and auditing tools"
+
+green new deal: https://www.youtube.com/watch?v=GxIDJWCbk6I
+
+question to ask chi:
+- what are all the toys, how can they be used? How about an example of a different research direction using those same types of toys?
+- what are the equivalent of these toys that are used in the industry? How about an example outside of academic research that use these toys? Do they even use these toys at all?
+- what's the research exactly about? Get into the nitty gritty details
+- now suppose that the research has reached its goals, how can it be approved for mass consumption
+- how does employment in that field works
+- how the research is financed, what's the whole stuff with "defending your dissertation" looks like?
+
+Also understand the perspective of a climate scientists doing these things too. Examples would be Hayhoe (obvious), Laura Iraci, Rama Nemani, Matthew Hansen
+Thomas Friedman
+Susan Rice, us national security advisor
+
+Also see the process of how oil refineries work, how pumpjacks work to the point as if I'm visiting it. Do the same for those industries that I care so much about, like ethanol, steel and cement. Do the same for a solar plant like Andasol.
+
+I guess I wanted to learn about automation is to know if I can build my own factory/plant. If I can, and if I know how professional stuff are done there, I can out source it effectively, and at the same time manage the money flow too.
+
+Also see how can solar panels are mass produced, what are the remaining challenges, (or any). Also see whether it will solve the electricity problem in full (meaning I can clearly see a path, and measure progress on that path) as I thought it would. If not then I'll have to reevaluate my plan
+
+Additional heating over last decade: 8*10^21 Joules per year
+
+How about the science left to do with Lithium and Lithium ion batteries?
+
+And again, look into creating several startup types, one being manufacturing, one being industrial, one being web service, one being biochemical engineering.
+
+Familiarize myself with permits and environmental regulations that are floating around in the world right now.
+
+To understand the supply chain and how can I affect it, look for ways to mitigate palm oil.
+
+"climate change without bullshit". Important article to go through: https://www.vox.com/energy-and-environment/2018/5/7/17306008/climate-change-global-warming-scenarios-ambition
+
+Dig into the quick history of human kind. Possibly watching Origins again
+
+Kickstarter: https://www.reddit.com/r/Entrepreneur/comments/7lzqyo/anyone_have_experience_with_kickstarter_tips/
+
+Also intro to family planning and those kind of stuff.
+
+In light of drawdown, how about I discuss it with a lot of people, hold conferences at many different places and also change the textbook?
+
+get into the mining and petrochemical industry. Also play satisfactory to begin to appreciate the size of these industrial machines, also the interconnections between them. https://www.epicgames.com/store/en-US/product/satisfactory/home. Did so, but it seems like this view of full automation is kind of misleading, because in the real world, we do not have the freedom of picking up factories and ploping them down. We have a preconceived idea of how the factory is structured, how things move in and out, and there is typically only 1 main assembling line. Other improvements are about efficiency, speed-wise. So it's really, really different from the type of scaling in satisfactory or in factorio.
+
+what I understand now is that a plant can just spring up easily, and I mean really easily. The real barrier is the government and the market. But like, I need to study to the point where I can that whole facility by myself then study about the market and the government.
+
+467kWh - 1.2tr
+
+vn energy outlook: https://ens.dk/sites/ens.dk/files/Globalcooperation/Official_docs/Vietnam/vietnam-energy-outlook-report-2017-eng.pdf
+
+answer to yt comment about nuclear
+
+data series on computerphile: https://www.youtube.com/watch?v=8GIbOJtUw8w
+
+other programming books: https://www.packtpub.com/all-products?released=Available&page=3
+- https://www.packtpub.com/application-development/hands-systems-programming-go
+- https://www.packtpub.com/application-development/hands-embedded-programming-qt
+- https://www.packtpub.com/data/natural-language-processing-fundamentals-e-learning
+- https://www.packtpub.com/big-data-and-business-intelligence/hands-deep-learning-iot
+- https://www.packtpub.com/application-development/jira-8-administration-cookbook-third-edition
+
+"permaculture gardens"
+aeroponics
+aquaponics
+
+what's with wealth vs money
+
+book, The Visual Display of Quantitative Information, Edward Tufte
+
+what about acrylic and laser cutting stuff, DXF, DWG, CDR, AI file types: https://www.makerstore.vn/services/dich-vu-cat-laser/
+
+also elec engr stuff, eevblog
+
+I need to study other things before diving again into climate, so here are the links:
+- drawdown: file:///C:/Users/Lenovo-1/Downloads/Paul%20Hawken%20-%20Drawdown_%20The%20Most%20Comprehensive%20Plan%20Ever%20Proposed%20to%20Reverse%20Global%20Warming-Penguin%20Books%20(2017).pdf
+- sr15: https://report.ipcc.ch/sr15/pdf/sr15_spm_final.pdf
+- kyoto protocol: https://en.wikipedia.org/wiki/Kyoto_Protocol
+
+i guess what i am looking for is "manufacturing and supply chain", which nha's books kinda gives me the foundations
+
+how stuff works in life in general: https://www.artofmanliness.com/tag/heading-out-on-your-own/
+
+what's the deal with sheet metal?
+archicad
+
+fourth manufacturing revolution. Currently, seems like a fad, but dig into it once more
+
+how about horizontal and vertical integration?
+
+what's the deal with hadoop
+
+oh wow, this is such a gem about manufacturing and prototyping: https://www.3dhubs.com/knowledge-base/how-design-parts-injection-molding
+
+okay, so I got the heavy industries down. I know what machines are there, how do these pieces fit together. Now see the same for the semiconductor industry, and what's the deal with all of those substrates, the doping and the etching? Also how metal working works, and how foundaries work too. For this, may be look for yt channels like king of random or night hawk
+
+some recycling stats: https://www.youtube.com/watch?v=1mxaN_xqQh4
+
+so I guess what I wanted to do about climate through all of these investigation might be giving out suggestions to improve stuff
+
+Manufacturing:
+- "reddit industrial machine design process"
+- I still don't know how to build a factory from scratch tho, so still make an effort to dig into it
+- also should I get involved in the manufacturing business?
+- also what software do they use for monitoring automated stuff? Probably a course in automation will do it
+- profile sinarmas
+- also how oil products are refined
+- how electricity in industrial systems work?
+
+also see over how public talking works, what venues I can penetrate into
+
+should I stop fearing starting a company?
+
+how waste management works
+also how to futureproof myself
+how to contract out for a whole factory?
+so the guts of mechanical engineering is to be damn precise and to be rigid
+
+go over android again, also how bluetooth works on that gig a year ago
+
+about the climate stuff. What resources do I have an infinite amount of that I can rely on? I have been taking electricity for granted
+
+may be getting back into the finite element analysis thing if I have time: https://www.youtube.com/watch?v=txk-VO1hzBY
+
+oh hey, check again on daliborfauny or something like that who makes pixie tubes for a business case
+
+also read on structures of revolutions
+for the long future, again, dyson swarm and solar panels on orbit
+
+read the 14 pages of the green new deal
+also metals scarcity seems to be a thing too. So dig into that
+the art of not being governed: an anarchist history of upland southeast asia, james scott
+
+Global climate action summit (9 hours long summit lol): https://www.youtube.com/watch?v=FuxHDD_pLf0
+also go through all of practical engineering to get the feel for the field
+so as a test of building big things, see how wind turbines are built and how 1 guy can do that
+also see how can you program those huge robot arms from japan
+
+also, may be go over really quickly the economic vids on khan academy, they have a lot of content and possibly gems that I can utilize
+
+and then finish the freakonomics book. Why do I feel like that book is kinda more anecdotal and won't actually introduce to the big picture.
+
+also all of the functionalities in digitalocean, discover all of them. Stuff like volumes, because like, it seems something like K8S would control and manage the nitty gritty details of volumes and networks, not me managing them myself. But that seems to involve too much automation and not so much that of content so it might be a pipe dream.
+
+what's the deal with chemtrails?
+ 
+2 hour session used to go to about data stuff: https://www.youtube.com/watch?v=xvdXi4ejk2w
+
+UN population stuff:
+- https://www.un.org/en/sections/issues-depth/population/
+- https://www.un.org/popin/icpd/conference/bkg/wppa.html
+- https://www.un.org/development/desa/en/news/population/world-population-prospects-2017.html
+
+how water works, mesopotamia, 691 BCE
+
+how about something like factorio, but much deeper, requiring much more effort, containing a lot more content. But this time it will be simpler. I'm imagining something like an industry simulator
+
+also materials science? May be learn 3-4 courses in that
+
+crash course politics: https://www.youtube.com/watch?v=lrk4oY7UxpQ&list=PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H
+
+UK Biomass Plant Carbon Capture project, Drax power station, North Yorkshire
+Spray ship for marine cloud brightening
+Jupiter technologies, flood analysis, short term predictions
+Hafen City
+
+John Englander's talk: https://www.youtube.com/watch?v=MvqY2NcBWI8. Watched it, but he mentions 2 times about Vietnam, which is a very specific thing to talk about. So see what he has been doing because I'm pretty scared when he say that.
+International Sea Level Institute.
+Sanan Sino-Science, chinese comp that plant trees in doors, price 11 times higher than the market average. No pescitides needed, and not much water needed too
+
+Also dig into hydroponics and aquaponics
+
+again, I feel that econ stuff is so "floating". I don't know where their absolute zero is. But I suspect that no one actually know how it works and just follow with the flow. Also, spend some time writing about how problems in Factorio differ from logistic problems in real life
+
+Again, try to make an ASIC, application specific integrated circuits. Try to get myself to the cutting edge of these circuits and systems.
+
+https://en.wikipedia.org/wiki/Estuary
+https://en.wikipedia.org/wiki/Brackish_water
+
+okay, so investigate the idea of a web app that takes and distributes wasted food in america, cuz that seems to be the best thing I can do right now. Logistics may cost more than the food itself. Heard this is a good resource for industry way of doing things: http://foodaround.org/. Sort of a start up in the same arena: https://food.cloud/. Also see again how that android app
+
+Primer channel about econ looks good too
+
+"depleting resources"
+Crash course engineering: https://www.youtube.com/watch?v=ivWXuOd5SrI&list=PL8dPuuaLjXtO4A_tL6DLZRotxEb114cMR&index=23
+
+Again, that freakonomics stuff: https://www.youtube.com/watch?v=5UGC2nLnaes
+Multi programming: https://www.youtube.com/watch?v=MB0yDMQj1lU
+Sim cards: https://www.youtube.com/watch?v=iJFnYBJJiuQ
+Gateway accident: https://www.youtube.com/watch?v=rQvGtvLqmos
+
+Humanitarian stuff:
+- https://www.odi.org/events/2655-humanitarian-space-concepts-definitions-and-uses
+- https://www.unocha.org/sites/dms/Documents/OOM-humanitarianprinciples_eng_June12.pdf
+- https://humanitarianencyclopedia.org/
+- https://www.odi.org/sites/odi.org.uk/files/odi-assets/events-documents/4648.pdf
+- https://www.evidenceaid.org/do-we-all-speak-and-practice-humanitarian-in-the-same-way/
+- https://en.wikipedia.org/wiki/Humanitarian_aid
+
+yang2020.com, https://www.businessinsider.com/tesla-ceo-elon-musk-2020-election-endorsement-andrew-yang-president-2019-8
+
+Yasuha: https://www.youtube.com/watch?v=5m1D2SEKAYo
+
+Again, how can contracts be reinforced?
+
+Also how does the connection between countries work? How can one company be international?
+
+try to set up an e commerce site
+
+world energy council
+
+how do you actually deal with soil erosion?
+- https://en.wikipedia.org/wiki/Crop_rotation
+- https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/shifting-cultivation
+- https://en.wikipedia.org/wiki/Shifting_cultivation
+- http://www.mekonginfo.org/assets/midocs/0002082-environment-shifting-cultivation-in-vietnam-its-social-economic-and-environmental-values-relative-to-alternative-land-use.pdf
+
+SR15 shits again: https://en.wikipedia.org/wiki/Special_Report_on_Global_Warming_of_1.5_°C
+
+nuclear debate again: https://www.youtube.com/watch?v=NclA1Y4V7R4
+
+Amory Lovins energy efficiency argument: https://e360.yale.edu/features/amory_lovins_energy_efficiency_is_the_key
+
+some other reports:
+- https://www.iea.org/etp/explore/
+- https://www.iea.org/etp2017/
+
+effective java: https://www.youtube.com/watch?v=V1vQf4qyMXg&feature=youtu.be&t=22m24s
+
+restful origins (dissertation, suspect I can gain a lot by reading this): https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+
+tuberculosis?
+
+seems like nice vids about econ: https://www.youtube.com/user/MrUniversity/playlists
+imf vids, short, seems good: https://www.youtube.com/watch?v=Igkpbqb0uXA&list=PLmYAE4wV1YQwWtLOxgtx33DxPcfDfYZ3h
+
+Also make the energy's timelines pluggable
+
+write a post explaining the complexities of gradle together with CI/CD and docker, and compare that to the financial infrastructure of today. Also related is how all of these abstractions are just to deal with the shear scale of things we have built our civilization with. But really, the roots of everything is really, really simple. Also mention the mind-blowing abstractions of things like first-order functions.
+may be this is more about abstraction more, and a shadow of it: modernization
+
+invoices: https://www.freshbooks.com/hub/invoicing/what-is-an-invoice
+
+?https://gocardless.com
+
+how insurance works (again lol): https://www.santander.co.uk/personal/insurance/travel-insurance
+
+nice channel about engineering: https://www.youtube.com/channel/UCosExgfjj-DhMJXnQd2Y4gA/videos
+
+articles to read:
+- https://www.weforum.org/agenda/2018/08/planet-earth-has-more-trees-than-it-did-35-years-ago/
+
+compile a list of interesting points about climate change to talk with that librarian:
+- trees absorb 3kg CO2 per year, aggregate: 9GtCO2/yr. Today it's 40GtCO2/yr
+- reality check on renewables
+
+go through this, and consider this done: https://www.youtube.com/watch?v=ImtZ5yENzgE
+
+go over econ stuff once more
+
+finish wordpress today and message jonas lol
+
+again, get into manufacturing
+
+how technology licensing work? like jpl and nasa
+
+https://drexel.edu/green/
+
+visit a geothermal plant
+enhanced geothermal systems
+
+look into this:
+- https://en.wikipedia.org/wiki/Cost_of_electricity_by_source
+- https://en.wikipedia.org/wiki/Electricity_pricing
+Valuable image: https://www.researchgate.net/figure/Ragone-plot-of-various-battery-technologies-with-specification-at-cell-level-for_fig1_258177713
+
+Again, look into this Andrew Yang guy, for the renewables and such
+look over to see whether this is worthy: https://aiesec.org/global-volunteer
+
+again, investigate the idea for actually building a dyson sphere
+watch earth 2100 again
+
+business magnate game
+
+skillshare has a course in business stuff
+
+doug ellison, amature guy, eventually works in jpl, uses data from nasa, the freely accessible ones
+
+maps.googleapis.com/maps/api/geocode/json?address=chicago
+3 core products: maps, routes, and places
+
+Fleet enema
+
+Also see whether there is some ocr as an api. Apparently there are, and it's called Cloud Vision API: https://cloud.google.com/vision/docs/ocr
+
+dig into quantum computing again for a little bit
+David Silver RL: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ
+diamandis: https://www.diamandis.com/blog/podcast-episode-75-private-space-exploration
+
+https://developers.google.com/identity/protocols/OAuth2
+
+so, i've got thien's computer, now try to steal cookies from him and go into his facebook account
+
+https://computer.howstuffworks.com/3dgraphics1.htm
+
+again at this bitch: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+
+p5. Also they have a few examples pulling from earthquake databases, so look into that:
+- https://p5js.org/download/
+- https://p5js.org/reference/#/p5/httpGet
+- https://earthquake.usgs.gov/fdsnws/event/1/
+- http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
+
+ethical hacking, 15 hours: https://www.youtube.com/watch?v=3Kq1MIfTWCE
+firmware reversing: https://www.youtube.com/watch?v=GIU4yJn2-2A
+
+also I feel like I need to study physics rigorously now, with the state of mind that I've got
+
+get a lot of documents online (that's for the notes thing, possibly for myself only)
+
+template ssn used: 901 23 4567
+
+download virtual box and test things out with the virus
+
+I feel like the way the machine learning stuff works, object detection and such, are usually located on a server, and the user sends info up there and it sends data back. That way, apps on someone's phone doesn't need much preconfiguring and you're not sending the entire weights and network across. I guess this because of "TensorFlow Object Detection API" found here: https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html, so check that out. The other option is to use a native method to run on the client's phone or something, which is undesirable, and doesn't have the full capability of linux
+
+learning.intersystems.com
+
+so, applications:
+- that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
+- try out the organic stuff at autodesk
+- try out google genomics
+- see how the folks who aggregate together a bunch of forest data did it
+- see how the folks who aggregate together a bunch of earthquake data did it
+- then the story of energy
+
+plow through android once more, to get the philosophy and the way of doing things
+now, plow through all the flutter shits, then may be enlighted then.
+
+also I believe that software in use for stuff like telescopes, they are in lack of technical expertise, so look over and see if I can help with anything
+
+also what's the deal with peer to peer networks
+
+rest service with expressjs??
+
+- read more about how these molecules are formed, then simulate that
+
+question about java structures:
+- https://junit.org/junit4/faq.html
+- https://docs.gradle.org/current/userguide/userguide.pdf
+- https://stackoverflow.com/questions/13489388/how-does-junit-rule-work
+
+talks on rendering:
+- https://www.youtube.com/watch?v=RdN06E6Xn9E
+- https://www.youtube.com/watch?v=mQ2KTRn4BMI
+
+timezone api?
+
+deal with spark stuff, early november stuff
+
+get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
+
+with the forces in check, see if I can simulate beams being stressed
+
+carbon xprize
+TerraPower, travelling wave reactor
+
+https://www2.flightclub.io/ Also see what kind of tech he's using here?
+
+methane stuff: https://www.youtube.com/watch?v=62VXwjT-csQ
+
+and try out what happens with lidar stuff? How to integrate them?
+
+esa is the largest provider of environmental data from space in the world, thanks to copernicus, eu program, using earth observing satellites. Get this mother fucking data and dig into it.
+
+Also I still don't get the interface for climate change. I mean, the common technical language ppl talk with each other in the field, so dig into that.
+
+wtf is this https://americas.ramboll.com/projects
+
+how about that world science festival thing brian greene hosted
+
+so how exactly does the processing foundation blends opengl into processing? opengl is the C++ with graphics card thing, while processing is a JVM thing.
+
+for all of these simulations to be real, I really have to tackle 3d rendering, ray marching and the like. So dig into that. First make a standardized mirror model and call it optics and really refine the 2d geometries. Then 2d ray marching, so that wolfenstein level is reached. Then expand it into 3d models, and then optics in 3d.
+
+see the interface between python and other data packages, how the interfaces work
+
+the simulations, implement locality with hashmap stuff
+
+I still don't understand the advantages of nginx over something like apache. It seems like to me that nginx people gets excited about fastcgi, and that nginx serves static pages really, really fast. But like, with all of the complexities introduced by things like oauth2, and cms, is it even worth it? Like, yes, you serve static pages faster, but who serves static pages nowadays anyways? https://www.plesk.com/blog/various/nginx-vs-apache-which-is-the-best-web-server/
+
+Also how're the different stacks, js ones work? Do they use a specialized webserver? Or just their inner implementation listens for ports and just do it from there? Because like, it seems nowadays that programs just listen in and clamp to a port indefinitely. If that's the case then the metrics about webserver markets would be seriously skewed.
+
+Then read over those 2000 pages magento, then understand the existing apis for the big picture.
+
+Also look over the internal documents to see if there's something fun.
+
+simulate boyles law for chi, and the sterling engine where air is forced on the side. Also think about how would you do forces on a beam. Do this, or a collab with her is impossible.
+
+And goddamnit, I still have physics simulation to do. I absolutely must do this, in order to collab with Chi and to kind of pushing myself to other fields. And goddammit, I still need to go through the state of the world rite now.
+
+editing genomes too, damn
+
+docker networking:
+- https://docs.docker.com/v17.09/engine/userguide/networking/
+- https://docs.docker.com/v17.09/engine/userguide/networking/default_network/container-communication/
+- https://docs.docker.com/network/network-tutorial-standalone/
+- and of course, that docker deep dive book
+
+then after docker networking, i can really understand the swarm stuff, and then K8S stuff.
+
+stocks again, check out docs for robinhood
+
+seems nice, go over wp over here: https://www.youtube.com/user/MattGeri/playlists
+
+buy chi and dan some stuff from spacex store
+
+and, learn nodejs in a few hours so I can sort of show dan what's that about. Seems like dan's not really following my path, and she kinda just want things serendipitously, and that's okay too. And by doing this, hopefully I can be comfortable in adapting to new tech really fast and deploy these things even faster. But again, goddammit, I still need to understand the firmware interface.
+
+and to deal with all the endpoint stuff. Man, not just rest, but the whole fucking convention around them too. Stuff like authentication servers, and integrating with CDNs, it's all new territory to me. Goddammit, why do I have so much fucking stuff to work on. If I don't get a clearance on the nodejs part, and the simulation for chi part, then I have to seriously reconsider the big plan again.
+
+2 books:
+- file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
+- file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
+
+docker certified associate
+
+specific use case of wordpress in spaces cdn: https://www.digitalocean.com/community/tutorials/how-to-speed-up-wordpress-asset-delivery-using-digitalocean-spaces-cdn
+
+there's a part in me that's uncomfortable about relying on black magic of LoadModule. I mean, does php always have to go with apache? So, figure out how nginx works and try to decouple php and apache. Again, I know how it works. If you were to separate the apache binary into the apache and php binaries, then it's exactly the same as running CGI. So, to speed things up, this is quite unacceptable.
+
+play sprocket again
+
+the virus thing, but with mail and do things automatically too. That would be so, so dope.
+
+dkim eli5
+
+- mail
+- port over 157239n & connect it to a cdn
+- simulation
+
+I guess the way to use a cdn now is to get the service, the service will query and fetch a bunch of static content, then it will give me a file, a htdocs file, or some file to enter directly to the configurations, to rewrite the locations to other places.
+
+curl --form "param1=value1" --form "param2=value2" --form "fileupload=@my-file.txt;filename=desired-filename.txt" endpoint
+
+also do this so that if I were to change my hosting location, I can still maintain the old hosting location for a while and every virus instances will naturally go to the new hosting location. This is now possible. Nah wait, may be think into this a little more?
+
+links to read:
+- https://www.php.net/manual/en/features.session.security.management.php
+
+iptables again: https://www.digitalocean.com/community/tutorials/how-to-list-and-delete-iptables-firewall-rules
+
+economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
+
+again with git stuff
+
+keto diet?
+
+also backing up SU.vbs too, to make sure it doesn't go away
+
+so, databases, if you want to update the database then export it as sql in phpmyadmin (figure out how to do this automatically) to generate a sql file, then update the startup folder. This is kinda the same with mounting mysql data location to a volume, but less chance for corruption?
+
+"choose your battles"
+
+"if you do not take my money, i would invest all of it in your competitors - masayoshi son"
+
+SoftBank Vision Fund, dig into this, and the deal with wework too
+
+- https://www.google.com/search?sxsrf=ACYBGNTaFHCNieztl9RDLZyV3zPvfJ1gBg%3A1571326879370&source=hp&ei=n4uoXZanE4Pv_QaA_4bgBQ&q=know+enough+to+be+dangerous&btnK=Google+Search&oq=molecular+dyna&gs_l=psy-ab.1.1.0i131j0l9.61204.63558..67596...0.0..0.83.896.14......0....1..gws-wiz.......35i39j0i67j0i131i67.CgTTACRv85E
+- https://www.psychologytoday.com/us/blog/intentional-insights/201710/knowing-just-enough-be-dangerous
+- https://ell.stackexchange.com/questions/124321/what-is-the-meaning-of-the-phrase-to-be-dangerous
+
+how about curling binaries? That would actually be pretty dangerous
+
+more curl in-depth: https://www.pair.com/support/kb/paircloud-downloading-files-with-curl/
+
+also how fast is php? it seems really, really dynamic. There must be some overhead to this?
+
+may be get into (like hack, not applying) whyfit, just for fun?
+
+also masquerading inside chrome's directory or a bunch of other locations, to avoid detection. Also check by hand permissions of these folders to make sure I can write in them. Also learn about windows permission too, like their model is completely different from unix-based stuff
+
+after the stealing file attack is possible, see what's the actual limit on transporting this to the web server? is it the limit set by php.ini? is it the limit set by how much memory I have, or is it much lower than these limits? Say I want to spoof files over. How does that work?
+
+figure out a rough estimate of the stray virus file size if i don't clear it ever so often.
+
+okay, so may be just bundle the virus only, not including the 2 other tiny project
+
+ibm transact
+
+how regulations and regulation authorities
+
+add timezones, but make it real simple. Also make it fast? It's easy to do it, and I think I can do it in 30 minutes. And all the other attack packages I think can be done by tmr. Then get on with the mail
+
+
+think about a path for teaching chi cs. And this time don't mess it up
+history of computing
+- crash course cs
+- os history
+- c++ and the compiling process
+- 
+
+https://www.youtube.com/watch?v=w3_0x6oaDmI
+https://www.youtube.com/watch?v=Kt_JePg86b8
+
+also add attack to be able to write file to the host computer. Like, the user can upload a file, specify a location, then download that file at that location. Well that would imply curling binaries right? So dig into whether this is even possible or not
+
+add note to users about time and timezones
+
+send kill signal and maintain that signal when deleting a virus
+
+SIDS, security identifiers, added to ACLs, access control lists
+permissions:
+- https://www.howtogeek.com/72718/how-to-understand-those-confusing-windows-7-fileshare-permissions/
+- https://www.online-tech-tips.com/computer-tips/set-file-folder-permissions-windows/
+- https://www.dell.com/support/article/us/en/04/sln156352/understanding-file-and-folder-permissions-in-windows?lang=en
+
+dig into icalcs command, have something to do with permissions
+
+how about locking the directory, to prevent deletion by spawning processes that sort of listens to a directory forever? That would be interesting, but would be way too time consuming to implement though
+
+"%~pd0..\..\data"
+
+so, tasks for today, now that internet doesn't work:
+- add attack package power, which will include shutdown and restart
+- implement timezones
+- implement exploreDir and collectFile
+- physics for chi
+- add a subdomain that points to u2, then bypass the whole ssl stuff
+
+tasklist:
+- image name, smss.exe, svchost.exe
+- pid, 0, 4, 1372
+- session name, services, console
+- session, 0, 1
+tasklist /v:
+- image name
+- pid
+- mem usage
+- status unknown
+- user name
+- cpu time
+- window title
+
+tasklist /fo csv
+
+taskkill {/pid 9214 | /im image name | /fi ???}
+
+the window won't refresh though
+
+devcon, don't have on work computer, but still an interesting possibility
+
+also add expand all or collapse all option to directory attacks
+net command too, but I still don't understand these, so may be for later?
+
+and apparently, batch can also print stuff, like, actually send signals to the printer
+
+may be adding filters would be nice:
+- Has window name
+
+how about adding easy and hard before an attack package?
+
+attrib???
+tree, not much use though
+title, sets title
+
+also for monitoring commands, like monitoring tasklist
+
+again, wtf is file attributes? I mean, "%%~a?"
+
+also control volume from the virus? Now these new capabilities are sort of ambitious
+
+publish to github
+
+Okay feeling guilty as fuck for spying on chi. Like, feels exactly the same way as ynes, cause like, I feel like I'm invading her privacy. So may be look around at all the stuff of hers, then tell her about this. She deserves the right to know this. I'm not as bad as the NSA. Okay, so when I'm done, ask to meet with her in person and explain these things in depth and make sure she understands everything about it.
+
+a list of candidate host locations
+
+inform user that cancelling an attack does little while the virus is active
+
+so, only 3 stuff left to do: task monitoring, with tasklist and taskkill, timezones, and uptime graph. Do the timezone first, then uptime graph, then task monitoring
+
+terminator 3 looks fun
+
+learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
+
+see how this guy can press buttons on the screen: https://www.youtube.com/watch?v=fURH8z3hb6Y
+
+litigation
+antithesis
+salivating
+
+1 bil telephone and internet sessions simultaneously per one of these devices, collect 125GB a second
+visceral
+skulk
+subpoena, "there is a strong chance we'll be served with a subpoena if we go back"
+"they are very nervous - worried about an injunction"
+"they are getting cold feet about publishing names of the telecoms collaborating"
+GCHQ Bude, UK
+also apparently, the us gov can revoke snowden's passport. How does this work? I thought passports are inherently uncancellable, if that's a word
+Also why Moscow then Ecuador? Jullian Assange used to go there to get asylum too
+brussels, belgium
+
+the ida chen stuff this year on climate
+Dagger Complex, Germany
+ramstein air base, germany

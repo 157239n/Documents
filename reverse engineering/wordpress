@@ -1,0 +1,177 @@
+wordpress reverse engineering
+
+fun things to notice:
+- get_option('siteurl')
+- apply_filters('stylesheet', get_option('stylesheet')) inside get_stylesheet inside /wp-includes/theme.php, to fetch stylesheet from theme. Is this the filter thing mentioned by LearnWebCode?
+- do_action('init'), do_action('wp_loaded')
+
+/index.php: entry point
+- WP_USE_THEMES, true
+- include /wp-blog-header.php
+
+/wp-blog-header.php: load wp-load.php?
+- require_once /wp-load.php, wp()
+- require_once /wp-includes/template-loader.php
+
+/wp-load.php:
+- ABSPATH, /var/www/html/wordpress
+- checks for /wp-config.php. If nothing then /wp-includes/load.php:
+  - (load.php): other shits to check whether wordpress has actually been installed
+
+/wp-config.php:
+- db related
+  - DB_NAME
+  - DB_USER
+  - DB_PASSWORD
+  - DB_HOST
+  - DB_CHARSET, utf8mb4
+  - DB_COLLATE?
+- auth related. renew: https://api.wordpress.org/secret-key/1.1/salt/
+  - AUTH_KEY
+  - SECURE_AUTH_KEY
+  - LOGGED_IN_KEY
+  - NONCE_KEY
+  - AUTH_SALT
+  - SECURE_AUTH_SALT
+  - LOGGED_IN_SALT
+  - NONCE_SALT
+- table_prefix = "wp_"
+- WP_DEBUG, false
+- require_once /wp-settings.php
+
+/wp-settings.php:
+- wp-include includes:
+  - /load.php
+  - /class-wp-paused-extensions-storage.php
+  - /class-wp-fatal-error-handler.php
+  - /class-wp-recovery-mode-cookie-service.php
+  - /class-wp-recovery-mode-key-service.php
+  - /class-wp-recovery-mode-link-service.php
+  - /class-wp-recovery-mode-email-service.php
+  - /class-wp-recovery-mode.php
+  - /error-protection.php
+  - /default-constants.php
+  - /plugin.php
+- variables, cross checking with /wp-includes/version.php
+  - wp_version, 5.2.1
+  - wp_db_version, 44719
+  - tinymce_version, 4940-20190515
+  - required_php_version, 5.6.20
+  - required_mysql_version, 5.0
+  - wp_local_package, none
+- blog_id
+
+/wp-includes/load.php:
+- functions:
+  - wp_get_server_protocol(), http/1.0, /1.1, /2, /2.0
+  - wp_unregister_GLOBALS(), ???
+  - wp_fix_server_vars(), fixing uninitialized variables in case of multiple program flow
+  - wp_check_php_mysql_versions(), self explanatory
+  - wp_favicon_request()
+  - wp_maintenance(), enters maintenance mode, checks for /.maintenance
+  - timer_start(), start timer, leaves global variable $timestart
+  - timer_stop(), return time between this and timer_start()
+  - wp_debug_mode(), set php error reporting, based on WP_DEBUG, WP_DEBUG_DISPLAY and WP_DEBUG_LOG
+  - wp_set_lang_dir(), set location of language directory, defines WP_LANG_DIR
+  - require_wp_db(), load /wp-includes/wp-db.php (it's a class), defines $wpdb globally
+  - wp_set_wpdb_vars(), set wp-db.php class's variables
+  - wp_not_installed(), duh
+  - wp_get_mu_plugins(), get array of must use plugins. Default directory is /wp-content/mu-plugins
+  - wp_get_active_and_valid_plugins(), get array of active and okay plugin files
+  - wp_get_active_and_valid_themes(), get array of active and okay themes
+  - wp_is_recovery_mode(), whether in recovery mode. In it, plugins or themes that cause wsod (white screen of death) will be paused
+  - is_protected_endpoing(), whether on endpoint that should be protected (???) against wsod
+  - is_protected_ajax_action(), whether handling ajax action that should be protected against wsod
+  - wp_set_internal_encoding()
+  - shutdown_action_hook(), callback just before exiting/finish loading
+  - wp_clone(), duh
+  - is_admin(), whether current request is for admin interface page (most general). current_user_can() will check whether user has access
+  - is_blog_admin(), whether current request is for a site's admin interface, like stuff inside /wp-admin/
+  - is_network_admin(), whether is for network admin interface, like in /wp-admin/network/
+  - is_user_admin(), yeah, user admin screen, /wp-admin/user
+  - is_multisite()
+  - get_current_blog_id()
+  - get_current_network_id()
+  - wp_load_translations_early(), attempt to load translations early
+  - wp_installing(), whether in installation mode
+  - is_ssl(), duh
+  - wp_convert_hr_to_bytes(), 8M to 8.000.000 bytes
+  - wp_doing_ajax(), whether current request is a WordPress ajax request
+  - wp_using_themes(), whether current request should use themes
+  - wp_doing_cron(), whether current request is a WordPress cron request. This is for automated publishing
+  - is_wp_error($thing), whether variable passed in is an object of WP_Error class
+  - wp_is_file_mod_allowed($context), whether file modifications are allowed. So may be this is literally changing the php structure
+  - wp_start_scraping_edited_file_errors()
+  - wp_finalize_scraping_edited_file_errors($scrape_key), finalize scraping
+  - wp_is_json_request(), whether current request is a JSON request, or is expecting a JSON message
+  - wp_is_jsonp_request(), whether current request is a JSONP request, or is expecting a JSONP response
+  - wp_is_xml_request(), duh
+
+/wp-includes/default-constants.php
+- current_limit, memory limit, ini_get("memory_limit")
+- WP_MEMORY_LIMIT
+- WP_MAX_MEMORY_LIMIT
+- WP_CONTENT_DIR
+- WP_CACHE
+- SCRIPT_DEBUG
+- MEDIA_TRASH, false
+- SHORTINIT, false
+- WP_FEATURE_BETTER_PASSWORDS, true
+- time keeping:
+  - MINUTE_IN_SECONDS
+  - HOUR_IN_SECONDS
+  - DAY_IN_SECONDS
+  - WEEK_IN_SECONDS
+  - MONTH_IN_SECONDS
+  - YEAR_IN_SECONDS
+- wp_plugin_directory_constants(), define plugin's constants
+  - WP_CONTENT_URL
+  - WP_PLUGIN_DIR, /wp-content/plugins
+  - WP_PLUGIN_URL, /wp-content/plugins
+  - WPMU_PLUGIN_DIR, /wp-content/mu-plugins
+  - WPMU_PLUGIN_URL
+- wp_cookie_constants(), defines cookie related WordPress constants
+  - COOKIEHASH
+  - USER_COOKIE, wordpressuser_ . COOKIEHASH
+  - PASS_COOKIE, wordpresspass_ . COOKIEHASH
+  - AUTH_COOKIE, wordpress_ . COOKIEHASH
+  - SECURE_AUTH_COOKIE, wordpress_sec_ . COOKIEHASH
+  - LOGGED_IN_COOKIE, wordpress_logged_in_ . COOKIEHASH
+  - TEST_COOKIE, wordpress_test_cookie
+  - COOKIEPATH
+  - SITECOOKIEPATH
+  - ADMIN_COOKIE_PATH, SITECOOKIEPATH . wp_admin
+  - PLUGINS_COOKIE_PATH
+  - COOKIE_DOMAIN, false
+  - RECOVERY_MODE_COOKIE, wordpress_rec_ . COOKIEHASH
+- wp_ssl_constants(), defines ssl-related WordPress constants
+  - FORCE_SSL_ADMIN
+- wp_functionality_constants(), defines functionality related WordPress constants
+  - AUTOSAVE_INTERVAL, 60
+  - EMPTY_TRASH_DAYS, 30
+  - WP_POST_REVISIONS, true
+  - WP_CRON_LOCK_TIMEOUT, 60
+- wp_templating_constants(), define templating related WordPress constants
+  - TEMPLATEPATH, get_template_directory()
+  - STYLESHEETPATH, get_stylesheet_directory()
+  - WP_DEFAULT_THEME, twentynineteen
+
+
+
+loading most of wordpress inside wp-settings.php:
+
+/wp-includes/theme.php
+- wp_get_themes()
+- wp_get_theme($stylesheet, $theme_root), get WP_Theme object, return new WP_Theme($stylesheet, $theme_root)
+- wp_clean_themes_cache($clear_update_cache = true)
+- get_stylesheet()
+- get_stylesheet_directory()
+- get_stylesheet_directory_uri()
+- get_stylesheet_uri()
+- get_locale_stylesheet_uri(), get_stylesheet_directory()/get_locale().css
+- get_template(), name of current theme
+- get_template_directory(), current theme directory, get_theme_root(get_template())/get_template()
+- get_template_directory_uri(), get theme directory uri
+- get_theme_roots(), get theme roots
+
+okay, enough reverse engineering. Too many shit to absorb

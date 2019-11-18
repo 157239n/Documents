@@ -1,0 +1,164 @@
+
+this is an eCommerce platform
+
+Links:
+- https://magento.com/blog
+- https://magento.com/technical-resources, they have developer documentation there
+- https://magento.com/resources
+- A webinar with FH photo: https://magento.com/resources/evolving-b2bcx
+- https://magento.com/products/magento-open-source
+- https://magento.com/products/order-management
+- https://magento.com/products
+
+Very useful links:
+- https://magento.stackexchange.com/questions/104380/server-error-500-after-install
+
+Requirements: https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html
+
+typical configs:
+- db: localhost, mg, password, magento, mg_
+- admin account: 157239n, UDZ8qSnsfZeHHKHM
+- encryption key: ba0d0e00327f5c40e639c9e78644988c
+
+php packages:
+- php-bcmath
+- php-curl
+- php-gd
+- php-intl
+- php-soap
+- php-zip
+- php-mbstring
+- php-dom (automatically, it says it will install php7.2-xml)
+- pdo-mysql (php-mysql)
+
+tar ball: on magento's github page: https://github.com/magento/magento2/archive/2.3.3.tar.gz
+
+getting through the docs to get the feel of the space magento is taking up:
+- Basic config: https://docs.magento.com/m2/ce/user_guide/configuration/configuration-basic.html
+- Tech resources, with user guides: https://magento.com/technical-resources?_ga=2.79851412.2069121135.1571678125-797795375.1571410044
+- Stuff to check over before the store goes live: https://docs.magento.com/m2/ce/user_guide/magento/prelaunch-checklist.html
+- open source user guide (pdf): https://docs.magento.com/m2/pdf/ce/Magento-Open-Source-2.2-User-Guide.pdf
+
+great, now I have 1800 pages to go through
+
+after the 1800 pages: https://docs.magento.com/m2/ce/user_guide/getting-started.html
+
+list of resources types:
+- product docs
+- magento resource library
+- security center
+- forums
+- blog
+- events and webinars
+- magento marketplace
+- training and certification
+- partners
+- expert consulting services
+
+so, there're apparently 2 modes: production or developer
+
+prelaunch checklist:
+- general:
+  - urls
+  - certificates
+  - email addresses
+- marketing
+  - email templates
+  - sales comms
+  - google tools
+- sales settings:
+  - cart options
+  - checkout options
+  - taxes
+  - shipping methods
+  - paypal
+  - payment methods
+- system
+  - cron
+
+urn:magento:framework:App/Language/package.xsd
+
+Magento components, including modules, themes, and language packages, must be registered in the Magento system through the Magento ComponentRegistrar class
+Each component must have a file called registration.php in its root directory
+
+use \Magento\Framework\Component\ComponentRegistrar;
+
+Modules (in /app/code/):
+ComponentRegistrar::register(ComponentRegistrar::MODULE, '<VendorName_ModuleName>', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magento_AdminNotification', __DIR__);
+
+Themes (in /app/design/, area = ["frontend", "adminhtml"]):
+ComponentRegistrar::register(ComponentRegistrar::THEME, '<area>/<vendor>/<theme name>', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/Magento/luma', __DIR__);
+
+Language package (in /app/i18n/):
+ComponentRegistrar::register(ComponentRegistrar::LANGUAGE, '<VendorName>_<packageName>', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::LANGUAGE, 'magento_de_de', __DIR__);
+
+Libraries (in /lib/internal):
+ComponentRegistrar::register(ComponentRegistrar::LIBRARY, '<vendor>/<library_name>', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::LIBRARY, 'magento/framework', __DIR__);
+
+namespace Alpine\ACH\Model;
+use Magento\Payment\Model\Method\AbstractMethod;
+
+i18n
+
+code standards: https://devdocs.magento.com/guides/v2.3/coding-standards/bk-coding-standards.html
+module reference guide: https://devdocs.magento.com/guides/v2.3/mrg/intro.html
+extension dev guide: https://devdocs.magento.com/guides/v2.3/extension-dev-guide/bk-extension-dev-guide.html
+architecture guide: https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html
+
+https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/XSD-XML-validation.html
+https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/component-registration.html
+https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html
+https://glossary.magento.com/module/
+https://devdocs.magento.com/guides/v2.3/architecture/tech-stack.html
+https://devdocs.magento.com/guides/v2.3/extension-dev-guide/intro/developers_roadmap.html
+
+
+replication steps:
+- composer install
+- bin/magento setup:uninstall
+- wizard
+- bin/magento setup:install --db-host=localhost --db-name=magento --db-user=mg --db-password=UDZ8qSnsfZeHHKHM --admin-user=157239n --admin-password=UDZ8qSnsfZeHHKHM --admin-email=157239q@gmail.com --admin-firstname=Quang --admin-lastname=Ho --base-url=http://magento.u4.kelvinho.org --use-secure=1 --use-secure-admin=1 --base-url-secure=https://magento.u4.kelvinho.org
+
+kay, so now build a fully fledge image, with everything in it, of the standard magento distribution, and the current pmi-specific distribution. After I get the mail going
+
+
+look into magento cdn integration. Basically how can I force magento to use spaces to cache stuff and store stuff too
+
+and see how magento handles money, duh
+
+list of basic magento stuff to go over: https://www.youtube.com/watch?v=C4VoeHmTN2E&list=PLtaXuX0nEZk9eL59JGE3ny-_GAU-z5X5D&index=6
+
+
+
+
+
+
+setting modes:
+rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
+bin/magento deploy:mode:set developer
+bin/magento deploy:mode:set default
+
+modules:
+magento module:enable [-c|--clear-static-content] modules
+magento module:status
+magento setup:upgrade
+magento cache:clean
+
+db:
+magento setup:db-schema:upgrade
+magento setup:db:status
+
+cron:
+magento cron:install [--force]
+
+tasks:
+compare local fresh vs pmi modified
+
+existing structure:
+- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/prepare/prepare.html
+- https://devdocs.magento.com/guides/v2.3/install-gde/install-roadmap_cli.html
+- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/prepare/prepare_file-str.html

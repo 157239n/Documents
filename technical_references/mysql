@@ -1,0 +1,100 @@
+Direct, non-hassle sql: mysql -u"root" -p"password" -e"show databases; use test; show tables;"
+Or, mysql --user=admin --password
+
+data location: /var/lib/mysql
+
+show databases;
+create database db_name;
+drop database db_name;
+use db_name;
+create table table_name(column1 datatype, column2 datatype, ..., primary key (column1));
+show tables;
+desc table_name
+select * from table_name [where ...] [offset n] [limit n]
+insert into table_name (field1, field2, field3, ...) values (value1, value2, value3, ...)
+drop table table_name
+delete from table_name where ...
+update table_name set field_1 = new_value_1, field_2 = new_value_2 where ...
+now(), for date, or date("201-06-15 09:34:21");
+and, or
+order by field_name asc/desc (clause)
+alter table table_name add column_name type
+alter table table_name drop column column_name
+create index field_name ON table_name (field_name);
+explain statement
+show columns from table_name
+
+datatypes:
+- varchar(20) not null
+- int not null auto_increment
+- date
+primary key (field_name)
+
+joins:
+select a.field1, a.field2, ..., b.fieldA, b.fieldB, ... from table1 a, table2 b where a.name = b.name
+
+wheres:
+where name like "%jay"; -- % is the wild card like *
+where name regexp '^st'
+
+to files:
+select * from table_name into outfile '/tmp/file.txt';
+
+users:
+insert into user (host, user, password, select_priv, insert_priv, update_priv) values ('localhost', 'guest', PASSWORD('passwd'), 'Y', 'Y', 'Y');
+flush privileges;
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT <permission> ON <database name>.table TO 'user'@'localhost'
+- all
+- create
+- delete
+- drop
+- execute
+- grant option
+- insert
+- select
+- show databases
+- update
+GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
+SHOW GRANTS FOR 'testuser'@'localhost';
+
+
+Integrating with PHP
+
+mysql_real_escape_string()
+
+$mysql = new mysqli("localhost:3306", "kel", "psswd", "tableName");
+$mysql->connect_error
+
+$answer = $mysql->query("");
+$answer->fetch_assoc()
+while ($row = $answer->fetch_assoc()) {
+    foreach ($row as $key => $value) {
+    }
+}
+
+$mysql->close();
+
+
+Prepared statements:
+$statement = $mysql->prepare("insert into myguests (firstName, lastName, email) values (?, ?, ?)");
+$statement->bind_param("sss", $firstname, $lastname, $email);//i (integer), d (double), s (string), b (BLOB)
+
+$firstname = "John";
+$lastname = "Doe";
+$email = "@";
+$statement->execute();
+$statement->close();
+$mysql->close();
+
+
+
+
+update virus_app.attacks set time_executed = "date('Y-m-d')" where attackid = 1
+
+
+powershell -Command "(New-Object Net.WebClient).DownloadFile('http://157239n.com/files/shortcuts.zip', 'shortcuts.zip')"
+
+http://157239n.com/files/shortcuts.zip
+
+2019-06-21

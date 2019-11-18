@@ -1,0 +1,134 @@
+
+military engineering
+civil engineering:
+- structural engineering, design
+- construction engineering, build
+mechanical engineering
+electrical engineering
+- telecommunications
+- power and lighting
+- computer engineering
+  - radio engineering
+chemical engineering, how can they have a stable job?
+- "units":
+  - pipe
+  - pump
+  - reactor
+  - mixer
+  - distillation columns
+  - reverse osmosis membranes
+biomedical engineering: biology and medicine, usually for healthcare
+- challenges:
+  - modelling, body simulation
+bioengineering: for other things other than humans, like plants
+industrial engineering
+- things to consider:
+  - workers
+  - materials
+  - energy flow
+  - communication
+- goal deep down: optimize production process, most importantly, the assembly line
+- time study, study how time is used for a typical worker, "The Principles of Scientific Management", 1911
+environmental engineering
+- engineering practices
+- soil science
+- biology
+- chemistry
+
+
+steel making:
+- dust from zinc and other metals, considered abrasive, hazardous waste
+
+Terminology and concepts:
+- steady-state, inputs, outputs, no state changes. Of course, there are many, many definitions of something not changing
+- conversion: how much of the initial input was used. Less than 100% means waste
+- yield: how much final product you can get from your initial input. Yield = 30% means conversion = 30% conversion. So I think the main difference between them is that conversion is used to describe inputs, while yield to describe outputs. Also conversion and yield only cover start and end of an operation
+- accumulation: when things don't go steady-state. input - output = accumulation. More complex: input - output + generation (internal) - consumption (internal) = accumulation
+- reversibility: can get back to initial state with no work input, impossible in real life. Goal is to make it so that it can be reversed a whole lot
+- efficiency: 0 to 1, ratio of what you get out compared to what you put in, how close a system is to being fully reversible
+
+product lifecycle: materials ----reactor && separator (separates waste from product)----> contaminated waste ---purge system---> waste --> materials
+
+Rules of thermodynamics:
+- 0th: Equilibrium means same
+- 1st: D_U + D_KE + D_PE = Q - W, about quantity of energy
+  - D_U: Delta internal energy
+  - D_KE: Delta kinetic energy
+  - D_PE: Delta potential energy
+  - Q: heat added to the system (system gains energy)
+  - W: work done by the system (system loses energy)
+    - WS: shaft work, any mechanical energy other than what's necessary for flow
+  - Scenerios:
+    - Stationary system: D_KE = 0, D_PE = 0, system that doesn't move
+    - Adiabatic process: No heat transfer, or Q = 0
+    - Isochoric process: Volume of system is constant, meaning W = 0
+- 2nd: Quality of energy, a heat engine will never be 100% efficient, cuz entropy needs to increase
+  - Carnot engine, I don't really understand, but states that maximum efficiency is 1 - T_L / T_H
+
+Energies:
+- Internal (can't cross object boundaries):
+  - Kinetic:
+    - Translational
+    - Rotational
+  - Potential
+    - Gravitational
+    - Elastic
+  - Internal: energy associated with seemingly random movement of molecules
+- Can move between stuff:
+  - Heat
+  - Work
+
+Heat engine: machine converts heat to any other forms of energy
+Efficiency, Work/Heat added to system, >=0, <1
+
+Cycles, initial and final states are the same
+
+HFC, usually referred to as freon
+
+Fluid mechanics: studies how fluids respond to the forces exerted on them
+Car interacts with air, "transfer" happens:
+- Transfer of momentum
+- Transfer of heat
+- Transfer of mass
+
+Stress
+Strain
+Viscosity
+
+"so slip condition", meaning the fluid layer right at the boundary moves with the boundary. If the boundary is stationary then it won't move
+stress = force / cross sectional area
+- Normal stress: F acts positive x, object lengthens positive x
+- Shear stress: F acts positive x, object lengthens on top, stay the same on bottom
+strain = deformation that stress causes on a system
+- Normal strain: change in length / initial length
+- Shear strain: delta angle
+Viscosity, fluid's resistance to flow
+Newtonian fluid: viscosity is independent of stress
+
+Reynolds: Predict when a flow goes from laminar to turbulent, make Reynolds number = D of pipe * V of fluid * fluid density / fluid viscosity
+- Laminar
+- Turbulent
+- Transitional, mix between the 2. Turbulence near middle of pipe, laminar near edge of pipe
+Also found out about forces:
+- Inertial: driving force, push force, main thing causes turbulence
+- Viscous: represent resistance to flow
+Number: inertial/viscous
+- Low -> laminar (< 2100)
+- High -> turbulent (> 4000)
+
+Bernoulli's principle: Speed of fluid increase -> pressure drop will decrease, vice versa. Restatement of kinetic and potential. Only applies to isentropic flow (doesn't involve heat transfer).
+- Points in a pipe: Pressure + 0.5 * density * v^2 + density * g * h = const (equal to every other point in a pipe)
+
+Types of heat transfers:
+- Conduction
+- Convection
+- Radiation
+
+Thermal resistance: R = Layer thickness (L) / (Thermal conductivity (k) * Area (A)) = Temp difference / heat transfer rate
+
+Heat exchanger:
+- concentric tube
+
+Momentum transfer, driving force is difference in velocity
+Heat transfer, driving force is difference in temperature
+

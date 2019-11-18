@@ -1,0 +1,72 @@
+
+can:
+- deploy
+- scale up and down dynamically
+- self-heal
+- 0 downtime rolling updates & rollbacks
+
+components:
+- nodes/data plane
+- masters/heads/head nodes/control plane
+
+steps:
+- write microservices
+- package microservices in its own container
+- wrap containers in pods
+- deploy pods to cluster via controllers:
+  - Deployments: scalability and rolling updates
+  - DaemonSets: run 1 instance of a service on every node in the cluster
+  - StatefulSets: stateful application components
+  - CronJobs: short-lived tasks. I'm infering that these will be dynamically set by k8s, not myself
+
+desired states/manifest:
+- which image?
+- which ports?
+- how many Pods?
+
+"cluster store":
+- in control plane
+- only stateful component in control plane
+- based on etcd (key-value store? like redis?)
+- stores config, state of cluster
+- should run 3-5 etcd replicas for HA
+
+controller manager:
+- implements background (aka daemon) control loops that monitors the cluster
+- control loops/watch loop/ reconciliation loop:
+  - node controller
+  - endpoints controller
+  - replicaset controller
+- data changes from monitoring the api server
+
+control loop logic:
+- obtain desired state
+- observe current state
+- determine differences
+- reconcile differences
+
+scheduler:
+- watches api server for new tasks and assign to new healthy nodes
+- "healthy":
+  - is the node tainted? (?)
+  - any affinity or anti-affinity rules? (?)
+  - required port available?
+- is not responsible for running tasks and keeping them running. It's responsible to find the appropriate nodes only
+
+cloud controller manager:
+- will be run in the control plane if using aws, azure, ...
+- manage integrations with underlying cloud techs, like internet facing load balancer
+
+node tasks:
+- watch api server for new work assignments
+- execute
+- report to control plane via api server. Okay, so everything is done via the api server. No hidden unix sockets, no hidden networks. Just a goddamn rest api. Nice
+
+node contains:
+- kubelet
+- container runtime (anything with a container runtime interface, like docker, containerd, ...)
+- network proxy (kube-proxy)
+
+posting to api server: kubectl
+
+"ip churn"? Context is that Pods are unreliable, and new ones are created with new ids and new ips.

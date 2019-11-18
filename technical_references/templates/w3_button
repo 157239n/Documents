@@ -1,0 +1,1 @@
+<div class = "w3-button w3-red" onclick = "signup()">Sign up</div>

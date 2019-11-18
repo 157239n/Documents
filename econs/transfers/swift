@@ -1,0 +1,13 @@
+
+swift code is just like routing number, an id number for banks, used by an org in Belgium, where they created and oversee the swift network. Swift codes are international, while routing number is in the US only.
+
+requirements:
+- recipient's bank:
+  - name
+  - address
+  - bic/swift code
+- recipient:
+  - name
+  - address
+  - account type (checking, current, savings, money market, ...)
+- reci

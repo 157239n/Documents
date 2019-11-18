@@ -1,0 +1,50 @@
+
+Lithium production: Chile (Atacama desert, "SQM" company), Australia, Argentina.
+
+Read over this: https://www.ft.com/content/cde8f984-43c7-11e6-b22f-79eb4891c97d
+
+Bolivia arguably has the most resources in its reserves, so may be look into a way to get involved there. Its plants are projected to be able to produce 18000 tonnes of lithium carbonate. However, from what I've read, the gov there doesn't seem to be so friendly. Read more here: https://www.mining.com/web/bolivia-revolutionaries-lithium-miners-go-die/. Also some youtube comments said that you can actually refine lithium from sea water, but it's 1000 times more concentrated in brines.
+
+
+Also a run down of different battery types:
+- Lead-acid: 25-45 Wh/kg, 1870
+- Nickel-iron: 30-40 Wh/kg, 1910
+- Nickel-cadmium: 35-60 Wh/kg, 1950
+- Nickel-metal hydride: 50-75 Wh/kg, 1980
+- Lithium-ion: 110-140 Wh/kg, 2005. Surprisingly it mainly contains nickel (80%), cobalt (15%), aluminum (5%) and much less lithium (< 1%)
+
+70 kWh battery materials:
+- Graphite/carbon: 108 kg
+- Nickel: 104 kg
+- Copper: 50 kg
+- Aluminum casing: 40 kg
+- Plastic: 25 kg
+- Cobalt: 19 kg
+- Lithium: 15 kg
+- Aluminum: 4 kg
+
+EV domination (12.1% #cars from today, which is 12.1% * 1.2 bil):
+- Nickel: 15 mil tons / 130 mil tons
+- Graphite: 15.6 mil tons / 800 mil tons
+- Copper: 7.2 mil tons / 2.1 bil tons
+- Aluminum: 6.4 mil tons / 65 bil tons
+- Plastic: 3.6 mil tons / 300 mil tons
+- Cobalt: 2.8 mil tons / 25 mil tons
+- Lithium: 2.2 mil tons / 40 mil tons
+
+Process to extract lithium: https://www.youtube.com/watch?v=w3CrFR1Jk1w
+- Granulation (factorio, crushing)
+- Calcination (factorio, flotation cells), needs hydride and dolomite
+- Leaching (factorio, leaching)
+- Evaporation and Crystallization (factorio, using mineral catalysts for crystallization)
+- Lithium recovery
+Btw, flotation is the single most important operation used to recover sulfide ores.
+
+Model 3: $200/kWh
+
+Production and regulation barriers of SQM in Chile: https://www.ft.com/content/cde8f984-43c7-11e6-b22f-79eb4891c97d
+
+In Bolivia, 10.000 km^2 of salt, 5.4 (now 9, 43% of the world's reserves) mil metric tonnes of lithium, demand is 100.000 metric tonnes of lithium carbonate (2010), 1.1 trillion USD
+Brine there, 1g/L
+Hoping for 30.000 tonnes annually. Pilot program: 15kg.
+Political problems with silver and tin, "san jose silver and tin mine"

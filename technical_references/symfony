@@ -1,0 +1,124 @@
+
+symfony check:requirements
+symfony new proj --full
+Downloading: wget https://get.symfony.com/cli/installer -O - | bash
+
+php packages:
+- php-json
+- php-xml
+- php-intl
+
+components (generic libraries):
+- List: https://symfony.com/components
+- Using: composer require symfony/asset
+
+Controller:
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+class SomeController {
+	// doing this like this is called annotation route
+	/**
+	 * @Route("/lucky/number{seed}", methods = {"GET", "HEAD"})
+	 */
+	public function number(int $seed) {
+		return new Response("");
+	}
+}
+
+config/routes.yaml:
+app_lucky_number:
+	path: /lucky/number
+	controller: App\Controller\SomeController::number
+
+
+a thing called symfony flex, with its 'recipe'
+
+bin/console debug:router
+
+templating:
+namespace App\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+class RandomController {
+	/**
+	 * @Route("/random/number")
+	 */
+	public function number() {
+		$number = random_int(0, 100);
+		return $this->render('random/number.html.twig', [
+			'number' => $number
+		])
+	}
+}
+templates/random/number.html.twig: // nah not this, but you get the idea
+<html>
+	<head>
+		<title>{% block title %}Abc!{% endblock %}</title>
+		{% block stylesheets %}{% endblock %}
+	</head>
+	<body>
+		{% blobk body %}{% endblock %}
+		{% block javascripts %}{% endblock %}
+	</body>
+</html>
+
+
+Structure:
+- config/: routes, services, packages
+- src/: all php
+- templates/: all twig templates
+- bin/: console
+- var/: automatically-created files, like /var/cache and /var/log
+
+services live in service containers
+use Psr\Log\LoggerInterface;
+/**
+ * @Route("/products")
+ */
+public function list(LoggerInterface $logger) {
+	$logger->info('Using the logging service');
+}
+
+List of services:
+bin/console debug:autowiring // this is that detail-hiding thing again. Autowiring is a dependency injection tool. That's fucking it. It's not really complicated but they hide it which makes it even more complicated. So 'services' are a made up concept within Symfony, and behind the scenes are just the dependency injection. By invoking that, it shows all of the available interfaces.
+Fuller list: bin/console debug:container
+
+Can also create one's own services:
+namespace App\Service;
+class MessageGenerator {
+	public function getMessage() {
+		return "some message";
+	}
+}
+
+use App\Service\MessageGenerator;
+public function new(MessageGenerator $messageGenerator) {
+	$message = $messageGenerator->getMessage();
+	$this->addFlash('success', $message);
+}
+
+So I kinda get this. But why not just, like, include that file and reference it directly? I guess doing things outside the perimeter is not the framework's intended use, and the flow should be that the framework creates the 'container' MessageGenerator then passed on, and later on there might be some control options related to constructing a MessageGenerator that I don't yet know.
+
+
+So, handling sessions, another service/container:
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+
+public function index(SessionInterface $session) {
+	$session->set('foo', 'bar');
+	$foobar = $session->get('foobar');
+	$filter = $session->get('filters', []); // default values
+}
+
+Another useful service would be Symfony\Component\HttpFoundation\Request
+$request->query->get('page') // get variables
+$request->request->get('page') // post variables
+$request->files->get('foo')
+$request->cookies->get('PHPSESSID')
+
+Ugh, why do they have to do it differently? Just have my goddamn GETs and POSTs
+
+
+
+Templating in details:
+- {{ ... }} evaluates variables
+- {% ... %} logic, conditional or loop
+- {# ... #} comments

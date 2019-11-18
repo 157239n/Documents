@@ -1,0 +1,26 @@
+
+wiki: https://wiki.kerbalspaceprogram.com/wiki/Main_Page
+delta v map: https://external-preview.redd.it/bSA9cUsWFlLygamNd090BTg-pNjHFJyH8uI7_xrgIlg.png?auto=webp&s=9462370745cbc68ad9fce391bd72b5c2423808c2
+
+create air to ground missiles and orbit to ground missiles (aka Rods From The Gods) in ksp. Some claim that the rods from gods have limited target window, so a lot of them is needed to be truely effective
+
+also how does programming a vehicle in ksp works? Is it really that hard? I want to kinda auto-launch a satellite to geostationary orbit, then measure temperature and shits there. But first try that out manually
+
+rods from gods articles:
+- https://en.wikipedia.org/wiki/Kinetic_bombardment
+- https://en.wikipedia.org/wiki/Chemical_laser
+- https://en.wikipedia.org/wiki/Debye_sheath
+- https://www.businessinsider.com/air-force-rods-from-god-kinetic-weapon-hit-with-nuclear-weapon-force-2017-9
+- https://taskandpurpose.com/kinetic-bombardment-kep-weaponry
+- https://www.popsci.com/scitech/article/2004-06/rods-god/
+- https://www.nextbigfuture.com/2018/11/orbital-kinetic-bombardment-gets-close-to-nuclear-on-damage-and-cost.html
+
+kOS mod, ckan as package manager: https://forum.kerbalspaceprogram.com/index.php?/topic/90246-the-comprehensive-kerbal-archive-network-ckan-package-manager-v1180-19-june-2016/
+https://github.com/KSP-CKAN/CKAN/releases/tag/v1.26.4
+https://ksp-kos.github.io/KOS/downloads_links.html#obtain
+
+ksp landing precisely: https://steamcommunity.com/sharedfiles/filedetails/?id=306678780
+
+mechjeb autolaunch
+
+https://www.reddit.com/r/KerbalSpaceProgram/comments/87031n/automating_flights/

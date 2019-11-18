@@ -1,0 +1,7 @@
+$numFiles = $_POST["num_files"];
+for ($i = 0; $i < $numFiles; $i++) {
+    $file = $_FILES["file" . $i];
+    if (!move_uploaded_file($file["tmp_name"], "destination/" . $file["name"])) {
+        echo "File " . $file["name"] . "failed to upload<br>\n";
+    }
+}

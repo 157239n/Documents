@@ -1,0 +1,132 @@
+About analyzing flows
+
+okay, so I really really want to take into account everything in economics and that kind of shit. My motivations are pretty straight forward really.
+
+1) People don't acknowledge about how to fix climate change. The group "Climate change" does not exist are fucked up. The ones that are fighting that group always tell bad stories about oil, gas, palm trees in india and such. Now here I'll have to introduce you to this new game called "Factorio". It's kinda like sim city, but not really. It focuses on automation, and it has really struck me to look back again at the power demand, power ranges (typical factory uses how much, in terms of mWh, etc), power options we have (coal, oil, nuclear, solar). Also the TED talk "A reality check on renewables" really hits me hard on this idea that "solar all the way" might not be a cut and clean solution as I had always think. So delving into the data is really, really necessary in order to mitigate harmful effects of climate change.
+2) People don't know how everything in civilization is fit together. I was first introduced the structure of power by CGP Grey's "Rules for rulers" video. Previously, my life plan was to get a degree, apply for a job at some place and just do that. Everything in the world is solved. But that video and another of Grey's "Cortex" podcast #40 really hits me hard that my position further on and my dreams might not be enacted if I don't have the power harnessed from other peoples. This really has led me to believe that I will always need other people's opinion, because it might give me an st3 (reference to Tim Urban's article), and to help me not to get crazy.
+
+Also, I once looked at my mom discussing politics in Vietnam with some other people and realized that the part they don't get is that politics in Vietnam or anywhere else is not dirty. It's just a natural tendancy for structures of people snap to the structures of power, meaning that corruption is bad to those don't understand the game. Corruption is, as CGP Grey points out, is a power-acquiring tool. This give me the feeling to analyze everything in the world, like how much petroleum in a year a country imports, how much electricity is consumed in factories, how the people's position are held together, because positions of power seems very, very short-lived and so that implies the model of "just get a degree and start working" will not hold under the pressure of technological innovation. Because it's short-lived and virtually can't operate under the fast pace of technological innovation, I'm really interested on knowing how can we enact a change quickly in this age and time.
+
+Anyway, so it's because people are generally stupid at this aspect (not true, i just have my mom and her friends as the sample space, but it's worrying enough to see that many people who don't know about this stuff), I really want to understand this and the best way to understand it is to look at everything, every operations, every inputs, every outputs, every flow of money everywhere. Basically how everything on earth works.
+
+Anyway, back to watching AlphaGo, it's seriously emotional and existential, just like "Act your age", "So the drama", "Infinity war", etc.
+
+
+
+
+Okay, so I'm done with that. Let's discuss where should we look for first.
+
+Goal is to characterize the flow of money. By country and by industry. First let's see the United States and how it's doing. Here are some candidate industries:
+- Chemical
+- Medical
+    - Cosmetic
+- Military
+- Space
+- Automobile
+- Service
+
+Check for parent and child industries.
+
+So sum money is expected to be GDP, total worth of all consumer products
+
+
+
+
+Big ideas:
+
+- Production Possibilities Frontier, Production Possibilities Curve (PPC)
+- Opportunity cost, can be increased (convex) and can be decreased (concave)
+- Trade works because ppl can reach outside their PPF.
+- Comparative advantage (comparing PPF of outputs) vs absolute advantage (comparing PPF of outputs if inputs/efforts put in are the same)
+
+abstract class Currency {
+    private double initialValue = 0;
+    private double absoluteValue = 0.0;
+    Money(double value) {
+        initialValue = value;
+        
+    }
+
+    abstract double getRatioToAbsoluteValue();
+    protected void changeRatioToAbsoluteValue(double ratio) {
+        updateAbsoluteValue()
+    }
+
+    private void updateAbsoluteValue() {
+        absoluteValue = initialValue * getRatioToAbsoluteValue();
+    }
+}
+
+class USD extends Currency {
+    private static double ratioToAbsoluteValue = 1.0;
+
+    USD(double value) {
+        super(value)
+    }
+
+    double getRatioToAbsoluteValue() {
+        return ratioToAbsoluteValue;
+    }
+}
+
+class Product {}
+
+class Transformation {
+    
+    Product product1, product2;
+    Currency cost;
+
+    Transformation(Product product1, Product product2, Currency cost) {
+        this.product1 = product1;
+        this.product2 = product2;
+        this.cost = cost;
+    }
+}
+
+
+This is pretty much as far as I can go: https://www.bea.gov/system/files/2018-10/gdpind218_1.pdf
+
+Tasks to do: for each industry, search for the major players, the ones that have a 90% impact on costs and see how they operate
+
+Now check again for the data in "A reality check on renewables"
+
+Biofuel plantation:
+60 miles per hour
+30 miles per gallon
+1200 liters of biofuel per hectare per year (needs verifying)
+80 meters car-spacing
+
+length of road doesn't matter, call it "a" (meters)
+number of cars travelling on that road: a/80 (#)
+
+1 car: 60 miles per hour, 30 miles 1 gallon, 60 miles 2 gallons -> 2 gallons per hour per car.
+1 year, 1 car travels for 24(hours) * 365(days) = 8760 hours -> 1 year, 1 car needs 8760 * 2 = 17.520 gallons = 66320 liters
+
+For that stretch of road a meters long, you need a/80 cars, or a/80 * 66320 liters of fuel every year
+
+The plantation's area in meters is a * b where b is the width of the plantation, is what we are interested in. 
+1200 liters every 10000 m^2 every year -> 0.12 liters every m^2 every year. We need a*b -> we need a*b*0.12 liters
+
+Now, width required = (a/80 * 66320) (liters) / (0.12 * a) = 66320 / (0.12 * 80) = 66320 / 9.6 = 6908 meters
+
+Okay, so that works out
+
+
+
+
+Metrics: 
+1 kg oil equivalent = 11.63 kWh
+1 liter of oil = 3.5 kg
+
+
+
+Assumption: 125 kWh per person per day in UK
+
+2249 TWh total = 2.249.000.000.000 kWh
+66.000.000 people
+-> 34000 kWh per person per year = 93 kWh per person per day
+
+Energy crops: 0.5W/m^2 (per day)
+Wind power: 2.5W/m^2 (per day). Production (5W/m^2 summer, 2W/m^2 winter), Insolation (220W/m^2 summer, 50W/m^2 winter)
+
+For really simple stuff, say a solar panel has power of a Watt for full daylight. Say 8am to 4pm is full daylight, rest are nights, meaning 8/24, or 1/3 a day, rest are pitch dark. so for that small panel, true wattage a day would be 3 / 3 or 1W. Say it's 15cm x 15cm, so say 200 cm^2 = 2dm^2 = 0.02m^2, meaning 1m^2 can fit 50 panels = 50W

@@ -1,0 +1,14 @@
+$mysql = new mysqli("localhost:3306", "kel", "Anihortes100%", "test");
+if ($mysql->connect_error) {
+    exit("Can't connect to database");
+}
+$query = sprintf("%s", $mysql->escape_string());
+$answer = $mysql->query($query);
+while ($row = $answer->fetch_assoc()) {
+    $row["someKey"]
+    foreach ($row as $key => $value) {
+        echo "<th>" . $key . "</th>";
+    }
+}
+$mysql->close();
+

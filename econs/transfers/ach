@@ -1,0 +1,40 @@
+
+also ACH, automated clearing houses, person A authorizes person B to automatically deduct money from person A's account
+
+is a network run by NACHA, National Automated Clearing House Association, since 1974
+
+"ACH is a way to move money between banks without using paper checks, wire transfers, credit card networks, or cash"
+
+"On your bills, ACH means you have the option to ay your bills electronically. Other terms include eChecks, EFT or AutoPay"
+
+ACH: automated clearing houses:
+- automated: handles millions of payments at the end of the day
+- clearing house:
+  - The Federal Reserve
+  - The Clearing House
+
+"When you provide a voided check to your biller, you are setting up ACH"
+
+ACH examples:
+- direct deposit
+- automatic payments, like energy bills, insurance premiums and homeowners association (HOA)
+- payments from businesses to vendors and suppliers
+- moving money from brick-and-mortar bank to your online bank
+
+employer through employer's bank, creates a request to send money to an employee's account:
+- Originator: employer
+- Originating Depository Financial Institution (ODFI): employer's bank
+Request goes to "ACH Operator", clearinghouse, routes request to their destinations
+- Receiving Depository Financial Institution (RDFI): receiving financial institution will adjust account of the final accountholder, the employee receiving pay
+- Receiver: the employee
+
+ACH types:
+- direct deposit: payments to a receiver. Samples: wages from employer or Social Security benefits paid into your checking account
+- direct payments: requests to pull funds from an account. Samples: pay utility bills automatically from checking account
+
+Transactions don't happen in real time. It is processed at the end of the day. Also takes 1-2 business days but there are plans to speed things up, may be even in the same day.
+
+
+Direct deposits. Needs:
+- bank account number
+- routing number

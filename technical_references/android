@@ -1,0 +1,315 @@
+Basic project properties:
+- Name
+- Package name
+- Whether to use AndroidX artifacts
+
+Random stuff:
+- .dex files: Dalvik Virtual Machine, JVM, but in android, does not use Java bytecode. Homegrown format called DEX was introduced. Basically Java .class files with completely different rules
+- So the apply(["plugin": "com.android.application"]) play a huge role in modifying delicate tiny bits across the application. Things like adding configurationName (implementation, compile, testImplementation for java, androidTestImplementation for android)
+- Apparently, modules are meant to write sharable independent libraries that all other application modules (could be just 1, or 2) can use it
+- Building process: .java ---javac---> .class ---ProGuard---> .class ---D8 (desugar)---> .dex
+- We can also have many app modules in 1 Android project (what for though?). Android app is a module with apply plugin: 'com.android.application'
+- Adb is Android Debug Bridge
+- gradlew app:dependencies, to show dependency graph
+- Languages: Java, Kotlin, C++
+- Each app runs under a different user, and can access its files only
+- Permissions are set automatically to ensure integrity
+
+Resources:
+- https://developer.android.com/studio/build
+- https://medium.com/@wasyl/understanding-android-gradle-build-files-e4b45b73cc4c
+- Resources: https://developer.android.com/guide/topics/resources/providing-resources.html
+- Best practices: https://developer.android.com/jetpack/docs/guide
+- https://developer.android.com/training/basics/firstapp/
+- Android Programming: The Big Nerd Ranch Guide
+- Big nerd Android programming
+- The busy developer guide to Android development
+- Kotlin for Android developer
+- Android Apprentice
+- Kotlin for Android app development
+
+References:
+- http://google.github.io/android-gradle-dsl/current/
+
+Opinions/Quotes:
+- A module helps you thinking in API terms and maintains the clear boundary of who can use what.
+- Another important reason is we might want a module because of build structure. You might want the output as a JAR, as AAR, as apk and so on.
+
+Questions:
+- How can I update my Android plugin. Is it just as simple as changing the dependency in the top-level build file?
+- Also "signing" an apk???
+
+Project structure:
+Gradle structure:
+- Files:
+  - settings.gradle: contain "include ':app'", contain Settings instance
+  - local.properties: a Properties file, include location of the Sdk. I guess that this file will be read somewhere else, and not loaded automatically
+  - gradle.properties: a Properties file, include Java heap memory limit, android.useAndroidX and android.enableJetifier. Also guess not loaded automatically
+  - build.gradle: build file for entire project with different modules. TL;DR: top-level build file. Contains com.android.tools.build:gradle:3.4.2 as a dependency???
+- Dependency types:
+  - Android: Aar
+  - Java: Jar
+  - Ruby: Gem
+
+  More on Gradle's role in Android:
+  - http://www.androiddocs.com/tools/building/plugin-for-gradle.html
+
+Implementation styles (module-specific build file):
+- implementation([group: 'com.google.code.guice', name: 'guice', version: '1.0'])
+- implementation(files('hibernate.jar', 'libs/spring.jar'))
+- implementation("commons-lang:commons-lang:2.6")
+- testImplementation("org.mockito:mockito:1.9.0-rc1")
+- implementation(fileTree('libs'))
+- androidTestImplementation('androidx.test:runner:1.2.0')
+- api("..."): implementation + expose to modules dependent on me. This is for inter-module communications
+- implementation project(':rating'): I depend on another module which is in the same root directory. Recall earlier that in settings.gradle there's include(":app")
+
+Plugin samples (apply([plugin: "pluginName"]) to apply a plugin):
+- com.android.application
+- kotlin-android
+- io.fabric
+- com.android.library
+- com.android.feature
+- java-library
+
+
+manifestPlaceholders, put constants in build.gradle and access from AndroidManifest.xml:
+defaultConfig {
+    manifestPlaceholders key1: 'value', key2: 'value'
+}
+
+buildTypes { // this is inside android {}
+    release {
+        manifestPlaceholders key1: 'value', key2: 'value'
+    }
+    debug {
+        manifestPlaceholders key1: 'diffValue', key2: 'diffValue'
+    }
+}
+}
+Usage in AndroidManifest.xml: ${key1}
+
+
+Extra properties work a bit differently from typical Gradle usage. Still pure Gradle tho:
+ext {
+    myVersion = '4.12'
+}
+dependencies {
+    implementation 'com.android.support:appcompat-v7:$rootProject.ext.supportVersion'
+}
+
+
+
+
+<activity android:name=".DisplayMessageActivity"
+          android:parentActivityName=".MainActivity"></activity>
+
+App components:
+- Activities: entry point for user interaction, async message
+  - Start by passing Intent to startActivity() or startActivityForResult()
+- Services: general purpose entry point, async message
+  - Music playback
+  - Updating shits
+  - Start by using JobScheduler to schedule actions. For older SDK, start a service by passing Intent to startService(), bind to a service by passing Intent to bindService()
+- Broadcast receivers: enable system to send messages to apps, async message. Also another entry point. Types of things that are broadcasted:
+  - Screen has turned off
+  - Battery is low
+  - Picture was captured
+  - Start by passing Intent to sendBroadcast(), sendOrderedBroadcast(), sendStickyBroadcast()
+  - Can be declared dynamically as BroadcastReceiver objects and registered with the system by calling registerReceiver()
+- Content providers:
+  - Manages shared set of app data that I can store in the fs, a SQLite db, on the web, or other places.
+  - Other apps can query, if the content provider of this app allows it, like ContactsContract.Data
+  - To the system, a content provider is an entry point into an app for publishing named data items, identified by a URI scheme
+  - Activated by a request from ContentResolver
+  - Query a content provider by calling query() on a ContentResolver
+
+Any app can start another app's component
+
+Manifest file, more docs: https://developer.android.com/guide/topics/manifest/manifest-intro.html:
+- App component declaration, all of them
+- User permissions
+- Minimum API level
+- Declares hardware and software features used or required by the app, like camera, bluetooth services, or multitouch screen
+- Declares API libraries the app needs to be linked against, like Google Maps library
+- <application>, android:icon attribute
+- <activity>, activities
+- <service>, services
+- <receiver>, broadcast receivers
+- <provider>, content providers
+
+Resources: res/values-fr/ Many qualifiers supported.
+
+
+
+
+
+
+
+Projects that are shelved:
+do something like facebook on android
+
+
+
+mvvm architectural style
+GeoQuiz (done, 6 chapters)
+- Vertical LinearLayout
+- TextView
+- Horizontal LinearLayout
+- 2 Buttons
+CriminalIntent
+BeatBox
+NerdLauncher
+PhotoGallery
+DragAndDraw
+Sunset
+Locatr
+
+Android Studio:
+- Android SDK
+- Android SDK tools and platform tools
+- System image for Android emulator
+
+Android resource XML namespace, the xmlns thing
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+package org.kelvinho.android.geoquiz;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class QuizActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_quiz);
+    }
+}
+
+
+Widget attributes:
+- android:layout_width. Values:
+  - match_parent: view will be as big as its parent
+  - wrap_content: view will be as big as its contents require
+- android:layout_height
+- android:padding. Values:
+  - pixels: "24dp". Dp is for density-independent pixels
+  - resource: TODO
+- android:orientation of LinearLayout. Values:
+  - horizontal: first child is left most
+  - vertical: first child is top most
+- android:text. Values:
+  - literal strings
+  - resource: @string/resource_name
+- android:id. Values:
+  - @+id/id_name
+- Button:
+  - android:drawableRight="@drawable/drawable_name"
+  - android:drawablePadding="4dp"
+- ImageButton:
+  - android:src="@drawable/drawable_name"
+  - android:contentDescription="@string/string_hint"
+- TextView:
+  - tools:text="Answer", just for dummy text for viewing
+- style="?android:listSeparatorTextViewStyle". More to come in Styles, themes and theme attributes in Chapter 9
+
+
+Conventions:
+- mWidgetName, like mTrueButton, "m" denotes member variable, or private non static
+- "s" denotes static
+
+Toasts: short messages. public static Toast makeText(Context context, int resId, int duration):
+
+Random:
+- AAPT: Android Asset Packaging Tool
+
+Activity lifecycle. States:
+- resumed (, onPause())
+- paused (onResume(), onStop())
+- stopped (onStart(), onDestroy())
+- nonexistent (onCreate(), )
+
+Logging: android.util.Log, Log.d(String tag, String msg). tag here sometimes refer to the class this is in, and is a constant
+Logcat thing built into Android Studio. Levels:
+- error: Log.e()
+- warning: Log.w()
+- info: Log.i()
+- debug: Log.d()
+- verbose: Log.v()
+
+protected void onSaveInstanceState(Bundle savedInstanceState), to save configurations before the Activity/Context is destroyed
+Linting: Analyze -> Inspect Code
+
+startActivity(Intent)
+startActivityForResult(Intent, int)
+public Intent(Context packageContext, Class<?> cls)
+setResult(int resultCode[, Intent data]). Codes:
+- Activity.RESULT_OK
+- Activity.RESULT_CANCELED
+onActivityResult(int, int, Intent)
+finish()
+
+Version codes: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+Dealing with versions: if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+Main documentation page: developer.android.com. Splitted into 3 parts:
+- Design: UI shits
+- Develop:
+  - Training
+  - API Guides: topic-based descriptions of app components, features, best practices
+  - Reference
+  - Samples
+  - Android Studio
+  - Android NDK: Native Development Kit
+  - Google Services
+- Distribute
+
+"You will recap the benefits of using fragments in Chapter 11 and Chapter 17", lol
+
+CriminalIntent
+CrimeActivity hosting a CrimeFragment
+object diagram
+
+fragment types:
+- native fragments
+- support fragments
+
+UUID, java.util.UUID, easy way to generate universal unique ID values
+2 options for hosting UI fragment in an activity:
+- layout fragment, add fragment to activity's layout, straightforward but inflexible
+- add fragment to activity's code, control over fragment at runtime
+
+Creating a UI Fragment:
+- Compose UI by defining widgets in a layout file
+- Create the class and set its view to be the layout that you defined
+- Wire up the widgets inflated from the layout in code
+
+CrimeFragment:
+- 2 TextView
+- EditText
+- Button
+- Checkbox
+
+public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+  return inflater.inflate(R.layout.fragment_crime, container, false); // last one is false (whether to add inflated view to the view's parent) cuz we will add the view in the activity's code.
+}
+
+

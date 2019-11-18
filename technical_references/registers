@@ -1,0 +1,91 @@
+Registers:
+- eax: accumulator
+- ebx: base
+- ecx: counter
+- edx: data
+
+- esp: stack pointer
+- ebp: base pointer
+- esi: source index
+- edi: destination index
+
+- eip: instruction pointer
+- eflags: some flags
+
+word size:
+- b: byte
+- h: half word, 2 bytes
+- w: word, 4 bytes
+- g: giant, 8 bytes
+
+objdump;
+- -M intel
+
+grep:
+- -A20 main.:
+
+gdb:
+- x = examine
+- i = info
+- r register(s)
+- break main
+- run
+- info registers, i r
+- quit
+- set disassembly-flavor intel
+- disassemble main
+- list
+- x/o 0x... (octal)
+- x/x $eip (hex)
+- x/u $eip (unsigned decimal)
+- x/t $eip (binary)
+- x/12x $eip, for 12 blocks of memory later from that
+- x/i $eip, instruction
+
+gcc:
+- -g: extra info for gdb
+
+file descriptors:
+- open()
+- close()
+- read()
+- write()
+
+overriding gcc's protection schemes:
+- buffer overflow: -fno-stack-protector
+
+C libraries:
+- stdio.h   - standard input output streams
+- stdlib.h  - standard libraries, like atoi(), memory management, utilities, string conversions, random numbers
+- string.h  - string handling
+- fcntl.h   - opening files, short for "file control" (bad name lol), O_RDONLY, O_APPEND, O_CREAT, O_TRUNC
+- unistd.h  - standard symbolic constants and types, like SEEK_CUR, getuid(), geteuid(), also provides access to POSIX OS api, also contain i/o primitives, also fork(), chdir(), umask() (?)
+- sys/stat.h
+- time.h    - time
+- threads.h - threading
+- math.h    - mathy stuff
+- cgicc     - cgi stuff
+
+C linking and library development process:
+- For main source code compilation: gcc -c src/main.c -o bin/main.o
+- For static stuff:
+    - Linking: gcc -c src/kel/add.c -o bin/static/add.o (-c is for compiling without linking)
+    - Archiving: ar rcs bin/static/libkel.a bin/static/add.o bin/static/answer.o
+    - Using: gcc bin/main.o -Lbin/static -lkel -o bin/statically-linked (-L for library dirs, -l for actual library name, which is only "kel", which is weird)
+
+Memory structure:
+- funciton location in text
+- parameters's location in memory
+- return location in text when done
+- base pointer
+- local variables
+
+Observations:
+- (argc, argv) = (edi, rsi) = (rbp-0x14, rbp-0x20) (argument values comes before the argument count, but comes after in stack's downward point of view). Also can think about "rsi is the argument"
+- eax is returned, which contains the true integer value. If return value doesn't fit into an integer then eax contains a pointer to an object that does.
+- rsi (source index) and rdi (destination index), contains pointers so that an instruction in assembly can call it. Ex: "mov rdi rsi". This way, by putting a source string and a dest string, strcpy can use these to perform the copying function, and not relying on parts of the memory to do so.
+- malloc takes in size integer via edi register, and returns the pointer to rax
+
+Libraries:
+- Statically linked: .a (linux), .lib (windows)
+- Dynamically linked: .so (linux), .dll (windows)

@@ -1,0 +1,244 @@
+
+steps:
+- unzip
+- goto /wp-admin
+- done
+
+themes live in wp-content/themes folder
+theme ynes: (in wp-content/themes/ynes):
+- index.php
+- style.css
+  - beginning comments (/**/) for metadata:
+    - Theme Name: ___
+    - Author: ___
+    - Author URI: ___
+    - Version: ___
+
+have_posts() and the_post() are just syntactic sugar of looping over posts
+
+if (have_posts()) {
+    while (have_posts()) {
+        the_post();
+    }
+}
+
+Posts:
+- Functions:
+  - the_title();
+  - the_title();
+  - the_permalink();
+
+Page:
+- Functions:
+  - home_url(): must echo
+- language_attributes() inside <html>
+
+Headers and footers:
+- Foundations:
+  - Just like a fucking C preprocessor, nothing more. Gets added into a page
+- Header: /header.php
+  - get: get_header()
+  - futureproof:
+    - wp_head() inside <head></head>
+    - body_class() inside <body>
+  - structure:
+    - header with class site-header
+- Footer: /footer.php
+  - get: get_footer()
+  - structure:
+    - footer with class site-footer
+
+bloginfo:
+- charset: UTF-8
+- name: duh
+- description: duh
+
+wp_enqueue_style();
+
+page.php, control for pages
+single.php, control for posts
+
+Navigations:
+- wp_nav_menu()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+template files
+category page
+Akismet plugin, preventing spam and such: https://wordpress.org/plugins/akismet/
+
+posts:
+- post meta data:
+  - taxonomies:
+    - category
+    - tags
+    - custom
+- custom post type
+pages: static information
+
+- the loop (aha, that's what I have been doing): https://developer.wordpress.org/themes/basics/the-loop/
+- template tags (feels like it's a big deal): https://developer.wordpress.org/themes/basics/template-tags/
+
+done rss (that I might want to re-read again):
+- https://wordpress.org/support/article/first-steps-with-wordpress-b/
+- https://wordpress.org/support/article/new_to_wordpress_-_where_to_start/
+- https://wordpress.org/support/article/wordpress-semantics/
+- general user actions: https://wordpress.org/support/article/wordpress-lessons/
+  - https://wordpress.org/support/article/first-steps-with-wordpress-classic/
+  - https://wordpress.org/support/article/introduction-to-blogging/
+- https://wordpress.org/support/article/writing-posts/
+- https://wordpress.org/support/article/pages/
+- https://wordpress.org/support/article/emoji/
+- https://codex.wordpress.org/HTML_to_XHTML
+- https://codex.wordpress.org/Finding_WordPress_Help
+- https://codex.wordpress.org/FAQ_New_To_WordPress
+- https://wordpress.org/support/article/comments-in-wordpress/
+
+themes:
+- index.php
+- style.css
+
+permissions:
+- sudo chown www-data:www-data -R *
+- find . -type d -exec chmod 755 {} \;
+- find . -type f -exec chmod 644 {} \;
+
+define ('WP_DEBUG', false)
+wp-config:
+- WP_DEBUG, debug mode: boolean
+- WP_DEBUG_DISPLAY, displays to admin page: boolean
+- WP_DEBUG_LOG, logs all to /wp-content/debug.log: boolean
+
+
+
+http://underscores.me/
+
+- template files
+  - html
+  - template tags
+  - php code
+- page templates
+- template tags, built-in functions I can use in a template file to retrieve and display data (the_title(), the_content())
+- template hierarchy
+
+post types:
+- post
+- page
+- attachment
+- revision
+- nav_menu_item
+
+template partials:
+- footer.php
+- header.php
+- sidebar.php
+
+common template files (* meaning they display Post post types, # meaning they display Page post types, $ for attachments, @ for custom):
+- *#$@index.php
+- style.css
+- rtl.css: right-to-left
+- comments.php
+- #front-page.php: alway used as the front page if exists, regardless of admin>settings>reading
+- *home.php: front page by default
+- header.php
+- singular.php: posts if single.php is not found, pages if page.php is not found. If this is not found then defaults to index.php
+- *$single.php: posts
+- *@single-{post-type}.php: custom posts, post-type is the custom post type, like single-books.php
+- *@archive-{post-type}.php: custom post archive
+- #page.php
+- page-{slug}.php: specific page, with the "{slug}" slug
+- *category.php: posts by category
+- *tag.php: psots by tag
+- *taxonomy.php: requests term in custom taxonomy
+- *author.php: posts by author
+- *date.php: generated using /2014/05 slugs
+- *archive.php: posts by omega
+- *#@search.php
+- $attachment.php: single attachment
+- image.php: more specific attachment.php
+- 404.php
+uncommon:
+- #\$custom.php
+- $MIME_type.php
+- $single-attachment.php
+
+
+
+twenty themes: https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentyten
+getting started, for users: https://codex.wordpress.org/Getting_Started_with_WordPress
+https://codex.wordpress.org/Main_Page
+
+sample template tags:
+- get_header()
+- get_sidebar()
+- get_footer()
+- get_search_form()
+- get_template_part(...)
+- the_title()
+- bloginfo('name')
+- the_content()
+- the_excerpt()
+- next_post()
+- previous_post()
+
+"a template tag is simply a piece of code that tells wordpress to get something from the database":
+- php code tag
+- wordpress function
+- optional params
+
+the loop:
+- next_post_link()
+- previous_post_link()
+- the_category()
+- the_author()
+- the excerpt()
+- the_ID()
+- the_meta(): custom fields related to post
+- the_title()
+- the_time()
+conditional tags:
+- is_home(): whether current page is the homepage
+- is_admin(): whether currently inside Admin screen
+- is_single(): whether displaying a single post
+- is_page(): whether displaying a single page
+- is_page_template(): whether using a specific template, is_page_template('about-page.php')
+- is_category(): true if have specified category
+- is_tag(): true if have specified tag
+- is_author(): true if inside author's archive page
+- is_search(): whether page is a search result page
+- is_404(): whether the current page exists
+- has_excerpt()
+
+
+https://developer.wordpress.org/themes/functionality/internationalization/
+
+
+/*
+Template Name: Special Layout
+*/
+
+.current_page_item
+.current_page_ancestor
+
+really important rss:
+- Guides:
+  - https://www.youtube.com/watch?v=AShql_Ap1Yo&list=PLpcSpRrAaOaqMA4RdhSnnNcaqOVpX7qi5&index=4
+  - https://developer.wordpress.org/themes/basics/linking-theme-files-directories/
+- References:
+  - https://codex.wordpress.org/Class_Reference/WP_Post
+  - Classes: https://developer.wordpress.org/reference/classes/wp_post/
+  - Functions: https://developer.wordpress.org/reference/functions/the_post/
+  - Template tags: https://developer.wordpress.org/themes/references/list-of-template-tags/
+- Sandbox: sgn.157239n.com/wordpress
+

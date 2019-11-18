@@ -1,0 +1,193 @@
+moi thu phai nam trong main(){}
+void main(){
+	moi thu;
+}
+End with ";"
+print("shit") to print shit
+can print operation: print(4/1) yield 4
+print(true) yield true
+//  to comment 1 line
+/*
+to comment
+a
+whole 
+block
+*/
+
+Variables must be declared using the keywords 'const', 'final', 'var' or a type name.
+declare o dau thi quyen truy cap cua no den day thoi
+-> ko can phai dat truoc variable la so hay la string
+->var bruh = "asd";
+->var bruh = 3.14;
+->var bruh = true;
+->var bruh = 4/3;
+mot khi da assign datatype thi ko doi dc nua
+cac operator ==, !=, ... co ve giong python
+
+
+final & constance co ban la nhu nhau: declare the final value to a variable aka mot khi da dat thi ko doi dc nua
+-> final bruh = "a"
+-> bruh = "b" --> error
+
+if else:
+if (condition){
+	bruh
+} else hoac else if (condition){
+	bruh2
+}
+
+ham switch(chi dung dc cho string va int):
+final bruh = 'b';
+void main() {
+  switch (bruh){
+    case "a":
+      print('bruh');
+      break;  <-- can break o moi case
+    case "b":
+      print('not bruh');
+      break;
+    default:
+	print(bruh)
+  }
+}
+(neu bruh ma la int thi bat buoc cac cáe phai la int E.g: case 1:)
+
+3 kieu loop:
+for loop:
+	for (var i = 1, i<4, i++){}
+	for (String planet in planetList){}
+		
+while (i < 4){}
+do {} while (i<4);
+
+break de pha vong lap
+continue de skip 1 vong lap
+
+_________________________________________________________________________________________________________________________________________
+function:
+returnType name(parameter){
+	something;
+}
+(this can be use as a variable or something)
+Short version: 
+	returnType name(parameter) => something;
+"=>" is a fat arrow
+
+Parameter neu de khong thi bat buoc phai co gia tri neu dc access E.g neu function ntn: 
+	void printName(name1, name2, name3){} 
+	thi bat buoc khi goi phai dung ca 3 parameter printName("Minh", "Dung", "Nguyen");
+parameter tru khi parameter duoc dat ntn: void printName(name1, name2, [name3]){} thi ko bat buoc phai dung ca 3, dung 2 dc roi.
+gia tri cua [name3] neu ko dc truyen vao gia tri se la null.
+Neu minh muon assign default value vao parameter thi minh lam ntn: void printName(name1, name2, {name3 = "minh){} luc dung van thay doi dc
+
+
+_________________________________________________________________________________________________________________________________________
+Error handling:
+try {
+	somerandomShit;
+} on errorName{
+	SomeOtherShit;
+}
+(minh dung ntn neu minh biet ten loi)
+
+try {
+	somerandomShit;
+} catch(e,s){
+	SomeOtherShit;
+}
+e la error, s la trace back.
+_________________________________________________________________________________________________________________________________________
+classes:
+
+class BRUH{
+	var naenae;      <--- 	khai bao bien Field (Field variable)
+	var name1 = "Minh";  (default variable with getter, setter)
+	
+	set name2(String name){			(custom setter)
+		naenae = name;
+	}
+(short way: set name2(String name) =>naenae = name;)
+
+	get name2{				(custom getter)
+		return naenae;
+(short way: get name2 =>naenae;)
+	}
+	void Sua(){
+		print("gau");
+	}
+}
+(variable can not be private to only one class, but can be private to 1 script by using _underscore E.g _name)
+CONSTRUCTOR:
+	BRUH(){
+		Someshit;
+	}
+	(default constructor, khong can phai tao , chi can nao neu minh muon chay code khi tai ra object)
+
+	BRUH(name){
+		this.Someshit = name;
+	}
+	(constructor neu muon co parameter)
+	Short version:
+	BRUH(this.Someshit);
+
+INHERITANCE:
+	class BRO extends BRUH{ 		(BRO se inherit tat ca cac bien va cac function cua BRUH)
+		someOtherShit;
+	}
+OVERRIDING:
+	class BRO extends BRUH{ 		
+		someOtherShit;
+		Sua(){		(neu muon override class thi co se nhin ntn:)
+			super.Sua();	(neu muon dung function cua parent class)
+			print("DMM");
+		}
+	}
+	Same with override variable:
+
+	class BRO extends BRUH{ 	
+		var name1 = "Quang";	
+		someOtherShit;
+		Sua(){		
+			super.Sua();
+			print(name1);	(print ra Quang)
+			print(super.name1)     (print ra Minh)
+			print("DMM");
+		}
+	}	
+	
+SUPER:
+	Neu class BRUH nhin ntn:
+	class BRUH{
+		BRUH(name){
+			print(name);
+		}
+	}
+	thi class BRO bat buoc phai co super(parameter) de truyen parameter vao:
+	class BRO extends BRUH{
+		BRO(name, race) : super(name){
+			this.name = name;
+		}
+	}
+LAMBDA:
+	function identity = (name, age){
+				print("$name is $age");
+			};
+Ko hieu lam nhung no la the. Neu muon lambda return cai gi do thi minh lam ntn:
+	function nico = (name){
+				return name
+			};
+	print(nico("bruh")); se print ra bruh
+
+Ko biet tai sao nhung minh co the co function lay parameter la 1 function khac. Hoac function return 1 function khac.
+
+_________________________________________________________________________________________________________________________________________
+ARRAY:
+	List<dataType> name = List(5);  (fixed list, ko them, ko xoa dc)
+	List<dataType> name = List();	 (growable list)
+--> cach add: name.add(variable)
+--> cach xoa:
+		name.remove(variable); (luc nay list se tu dong shift de thay the phan tu do)
+		name.removeAt(index);  (nhu tren)
+
+
+

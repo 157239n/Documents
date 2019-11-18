@@ -1,0 +1,16 @@
+const files = $('#fileToUpload')[0].files;
+const formData = new FormData();
+formData.append("num_files", files.length);
+for (let i = 0; i < files.length; i++) {formData.append("file" + i, files[i]);}
+$.ajax({
+    url: "upload.php",
+    type: "POST",
+    async: true,
+    data: formData,
+    processData: false,
+    contentType: false,
+    success: function(response) {
+    },
+    error: function(errorType, textStatus, errorThrown) {
+    }
+});

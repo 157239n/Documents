@@ -1,0 +1,30 @@
+sending an ajax request to a cgi script via js:
+$(function(){
+    $.ajax({
+    url: "ServerAdress/cgi-bin/" + service.py,
+    type: "POST",
+    async:true,
+    data: {key_vehicule: 'mercedes'},
+    success: function(response){
+
+        },
+    error: function(){
+
+        },
+    complete: function(){
+
+        }
+    });
+
+JS prog reference: https://github.com/getify/You-Dont-Know-JS/blob/master/README.md
+Console wiz: https://blog.teamtreehouse.com/mastering-developer-tools-console
+
+<textarea id = "" rows = "5" cols = "80"></textarea>
+
+Enter trigger: .addEventListener('keyup', function(event) {
+    if (e.keyCode === 13) { // checks for enter key
+        doSomething();
+    }
+})
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

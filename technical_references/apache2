@@ -1,0 +1,242 @@
+htpasswd /etc/apache2/passwds jdoe # -c to create a new file
+htdigest passwordfile realm user
+
+a2dismod mpm_event
+a2enmod mpm_prefork
+
+~ 150 directives
+
+Site directories containing 4 sub directories (not really, they're scattered throughout the file system, but the idea is that there are these types of files/folders):
+- conf
+- htdocs
+- logs
+- cgi-bin
+
+//<user>:<password>@<host>:<port>/<url-path>
+so, root:passwd@kelvinho.org:443/index.html
+
+"Apache handles user requests by starting up a new version of itself for each one that comes in"
+
+"Some useful packages, such as Tomcat, are only available as shared objects". So Tomcat is a package?
+
+Making process (for 1.3 only, which makes it kinda useless):
+./configure --with-layout=GNU --enable-module=proxy --enable-shared=proxy --show-layout > layout
+make
+make install
+
+These are for self compiled apache in the Singapore server
+usr/local/share/httpd/htdocs
+usr/local/share/httpd/cgi-bin
+
+apache2 -l: List compiled in modules. Default:
+- core.c
+- mod_so.c: to handle shared object
+- mod_watchdog.c
+- http_core.c
+- mod_log_config.c
+- mod_logio.c
+- mod_version.c
+- mod_unixd.c
+
+pcre:
+./configure --prefix=/usr/local/pcre
+
+httpd:
+./configure --with-pcre=/usr/local/pcre/ --prefix=/usr/local/apache2 --with-included-apr --with-expat=/usr/local/expat
+
+In /etc/hosts:
+127.0.0.1 localhost.localdomain localhost ubuntu-1
+
+ErrorDocument 404 /index.html # other errors include 505, 401 and 403
+
+<VirtualHost www.google.com>
+    ServerAdmin sales@google.com
+    DocumentRoot /
+    ServerName www.google.com
+    ErrorLog # something
+    TransferLog # something
+</VirtualHost>
+
+<Directory / ></Directory> # lowest priority
+<Files></Files> # middle priority
+<Location></Location> # highest priority
+
+These are kinda like CSS classes. Bunch together several directories and have multiple rules applied to that directory, written in the config
+
+<Directory ~ /[a-d].* > is equivalent to <DirectoryMatch /[a-d].* >
+<Files ~ /[a-d].* > is equivalent to <FilesMatch /[a-d].* >
+<Location ~ /[a-d].* > is equivalent to <LocationMatch /[a-d].* > # this applies the directives in a specific path
+
+<IfDefine name></IfDefine> # not used often in a production environment
+<IfModule module_name></IfModule> # if a module exists, can have a negation effect by putting ! before the module name
+
+Other directives:
+- ServerName www.example.com # (server config, virtual host) used for redirecting URLs. Haven't seen another use
+- UseCanonicalName on|off # (server config, virtual host, directory, .htaccess) default on, 
+- ServerAdmin problems@domain.com # (server config, virtual host)
+- ServerSignature [off|on|email] # (directory, .htaccess) default off
+- ServerTokens [productonly|min(imal)|OS|full] # (server config) default full
+- ServerAlias name1 name2 name3 ... # (virtual host)
+- ServerPath path # (virtual host)
+- CoreDumpDirectory directory # (server config) saves snapshot of core code dumped to a specific file in the specified directory
+- KeepAlive connections # (server config) default 5, how many initial connections to keep alive
+- KeepAliveTimeout seconds # (server config) default 15, self explanatory
+- TimeOut seconds # (server config) default 1200
+- Include filename # (server config) points to a file to be included in the current config file
+- Header
+- Options +ExecCGI +Includes +Indexes # allow execution of CGI, server side includes allowed, allow directory listings
+
+Prevent clients from seeing .htaccess files:
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+CERN metafiles
+
+Security:
+<Files>
+    AuthType Basic
+    AuthName "basically everything lol"
+    AuthBasicProvider file
+    AuthUserFile /etc/apache2/passwds
+    Require user jdoe
+</Files>
+
+<Files>
+    AuthType Digest
+    AuthName "basically everything" # auth-realm, gives name of the realm which users' names and passwords are valid
+    AuthUserFile /.../userPasswords
+    AuthGroupFile /.../groupNamesWithTheirUsers
+    require valid-user
+</Files>
+
+Content: can tune info sent to client, including these properties:
+- MIME type
+- language of the returned file
+- updates to the returned file
+- spelling of the client's requests (???)
+
+text.itl.html is treated by mod_mime to be Italian and html
+text.itl.xyz.html is treated by mod_mime to be html only cuz it doesn't recognize "xyz"
+
+Important things to keep in mind:
+- MIME type specifications are stored in a file, conf/mime.types. I can change it with a bunch of commands, like TypesConfig or AddType, but probably doesn't need to
+- In image negotiation, client sends over what it accepts. Looks like this: HTTP_ACCEPT=image/gif, image/x-xbitmap, image/jpeg. Keep in mind that browsers almost always lie about this (so what's even the point lol)
+- content-type: text/html: q=0.7, application/pdf: q=0.8
+
+So, is it possible to ask apache to send some language identification variable to php so that I can use it in the php files
+
+What needs to be read left: 18, 19
+
+Install modules:
+- apt-cache search libapache2*
+- apt-get install module_name # this will add to mods-available file, then the linking process like usual
+
+Scripting support:
+- apt-get install libapache2-mod-perl2
+- apt-get install libapache2-mod-python
+- apt-get install libapache2-mod-php php 
+
+what does libapache2-mod-python do?
+
+"trusted root certification authorities"
+
+Alias /somewhere_else_a_dir /usr/www/somewhere_else_also_a_dir
+
+ScriptAlias "/funk/main.py" "/var/www/cgi/main.py"
+Alias "/bin" "/var/www/cgi"
+<Directory "/var/www/cgi/">
+    Options +ExecCGI
+    AddHandler cgi-script .py
+</Directory>
+
+Redirect /service http://foo2.bar.com/service # isn't this just like Alias?
+
+
+
+For virtual hosts:
+Listen 80
+# default
+ServerName server.example.com
+DocumentRoot "/var/www/mainserver"
+<VirtualHost *:80>
+    DocumentRoot "/var/www/html"
+    ServerName www.example.com
+
+    ServerAdmin webmaster@localhost
+    ServerAlias abc.example.com
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+-------- start over ------------
+
+popular modules:
+- mod_dav
+- mod_perl
+- mod_php
+
+essential directives:
+- ServerName
+- ServerAdmin
+- DocumentRoot
+- ErrorLog ${APACHE_LOG_DIR}/error.log
+- VirtualHost *:443
+- Listen [hostname:]443
+rewrites:
+- RewriteEngine on|off
+- RewriteLog <filename>
+- RewriteLogLevel <number, 0: no log, 9: everything, >2 slows apache>
+- to ssh: RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+certificates:
+- SSLCertificateFile /etc/letsencrypt/live/magentop.u4.kelvinho.org/fullchain.pem
+- SSLCertificateKeyFile /etc/letsencrypt/live/magentop.u4.kelvinho.org/privkey.pem
+- Include /etc/letsencrypt/options-ssl-apache.conf
+proxy:
+- ProxyPass / http://service:80
+- ProxyPassReverse / url
+- ProxyPreserveHost On
+other, less essential:
+- ErrorLog ${APACHE_LOG_DIR}/error.log
+- CustomLog ${APACHE_LOG_DIR}/access.log combined
+- LogLevel alert|crit|error|warn|notice|info|debug
+- Deny from <host1> <host2>. Hosts can be "all", domain name, ip address, network/netmask pair, cidr
+- Allow from <host3> <host4>
+- Order deny,allow
+- Alias /somewhere_else /usr/bin/local, this will match domain.tld/somewhere_else to the local user binary directory
+- Require all granted = Allow from all
+- Redirect /service http://foo2.bar.com/service. If accessing /service/file.txt, will be redirected to foo.../file.txt
+other:
+- input cookies: CustomLog /logs/cookies_in.log "%{UNIQUE_ID}e %{Cookie}i"
+- output cookies: CustomLog /logs/cookies_out.log "%{UNIQUE_ID}e %{Set-Cookie}o"
+- run as user: User <linux userid>
+- ErrorDocument <error code> <document path>
+- KeepAlive <# concurrent requests>
+- KeepAliveTimeout <seconds>
+- Options All, ExecCGI, FollowSymLinks, Includes, Indexes
+
+"GET /some/where/foo.html" HTTP/1.0<CR><LF><CR><LF>
+
+Ohhhhhh, so ProxyPassReverse can actually fix my magento problems.
+
+Boilerplate site:
+<VirtualHost *:80>
+    ServerName
+    ServerAdmin 157239q@gmail.com
+</VirtualHost>
+<VirtualHost *:443>
+    ServerName
+    ServerAdmin 157239q@gmail.com
+</VirtualHost>
+<VirtualHost *:80>
+    ServerName
+    ServerAdmin 157239q@gmail.com
+</VirtualHost>
+<VirtualHost *:443>
+    ServerName
+    ServerAdmin 157239q@gmail.com
+</VirtualHost>
+
+

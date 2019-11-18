@@ -1,0 +1,319 @@
+If any of these are books, look them up on Library Genesis: gen.lib.rus.ec
+
+Computing:
+- Networking:
+  - https://www.youtube.com/watch?v=cNwEVYkx2Kk&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=1
+  - https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm
+- Crypto: https://www.youtube.com/watch?v=bBC-nXj3Ng4
+- Linux guide: https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html
+- Vim: Provim book
+- Batch scripting: http://steve-jansen.github.io/guides/windows-batch-scripting/
+- Bash scripting: https://ryanstutorials.net/bash-scripting-tutorial/
+- Linux commands: https://ryanstutorials.net/linuxtutorial/
+- VPN: https://vpntips.com/how-to-setup-a-vpn-server/ (steps kinda going in the right direction, but i'm impatient)
+- Non-hassle SSL: https://certbot.eff.org/
+- SSL/TLS info: http://httpd.apache.org/docs/2.4/ssl/ssl_intro.html
+- Apache: Apache the definitive guide, apache cookbook
+- Gradle: gradle in action book
+- Docker:
+  - Overview: docker deep dive
+  - Swarm: https://www.youtube.com/watch?v=KC4Ad1DS8xU
+- Voronoi: https://jacquesh.github.io/post/fortunes-algorithm/
+- Android build system, multi-module builds, CI/CD intro: https://medium.com/mindorks/introduction-to-android-build-system-for-beginners-cfafa1ab4104
+- Software construction: https://ocw.mit.edu/ans7870/6/6.005/s16/
+- Random: Computerphile
+- Talk, the tragedy of systemd: https://www.youtube.com/watch?v=o_AIw9bGogo
+- Snowden movie
+- Zero days movie
+- We are legion - the story of the hacktivists
+- Russia internet (Ashlee Vance, with Bloomberg). Actually a series called Hello World
+- Really nice low level explanation: http://beej.us/guide/
+- Unix hater's handbook: https://web.mit.edu/~simsong/www/ugh.pdf
+- NAT and iptables: https://www.karlrupp.net/en/computer/nat_tutorial
+- Talk, Quantum Computing for Computer Scientists: https://www.youtube.com/watch?v=F_Riqjdh2oM
+- Crash course CS (youtube)
+- Raven Kwok, Processing
+
+Paths:
+- Buy a domain name. Please please please BUY one. Do not use a domain name for free. There are no such thing. If your uni gives out domain names for free, DO NOT TAKE THEM. There is value in doing these things yourself, to learn how these things are actually done in the real world and be autonomous from the uni. It also gives you a better mindset too.
+- Buy a VPS. Please please please buy one that have lots of documentation. If you don't you will just scream at the screen and give up. If not sure then just go with DigitalOcean. Also please don't buy shared hosting and managed solutions, stuff like godaddy, hostinger, etc. Those are fine and they have their niche, but it's devastatingly bad for learning about all of this. Also please don't buy stuff from really technical managed solutions, like Google Cloud, Azure, or AWS. Those are just distractions and you get locked into their platform if you're not careful enough, and trust me, you're not careful enough.
+- Setting up apache2 only. Meanwhile learn about linux
+- Setting up a standard website, with the standard web stuff: html, css, js
+- Setting up php with apache2, so that a simple echo works
+- Setting up mysql with php with apache2, so that databases work
+- learn about docker:
+  - read through Docker Deep Dive. Do not do the things below until you have read this book.
+  - building and USING your own images. Please think of them as a tool, and force yourself to the way people normally do things. The value in actually using them is tremendous.
+  - use docker compose and explore microservices (mysql as a service, php as a service, then connect them together)
+  - analyze 3blue1brown's manim
+  - use overlay networks (overlay spans across hosts/nodes, bridge spans services inside a host/node)
+  - use docker swarm
+- Learn about k8s
+- Profit
+
+AI:
+- CGP Grey: https://www.youtube.com/watch?v=7Pq-S557XQU
+- Alphago movie
+- Lex Fridman interviewing elon (especially last few minutes): https://www.youtube.com/watch?v=dEv99vxKjVI
+
+Climate:
+- Renewables: TED talk: reality check on renewables
+- Non-bullshit climate change: project drawdown
+- Floating cities: https://www.youtube.com/watch?v=ieSV8-isy3M
+- Deforestation map: https://www.globalforestwatch.org/dashboards/
+- Years of living dangerously
+- Behind the flood
+- Earth 2100
+- Nova - Power Surge
+
+Politics:
+- Rules for rulers, CGP Grey: https://www.youtube.com/watch?v=rStL7niR7gs
+- The Putin interviews
+
+Econ:
+- Money abstraction: https://www.youtube.com/watch?v=_VB39Jo8mAQ
+- Banking: https://gendal.me/2013/11/24/a-simple-explanation-of-how-money-moves-around-the-banking-system/
+- Foundations: imf.org/basics
+- Pbs nova, mind over money
+- American money vault
+
+Math:
+- Fourier transform: https://www.youtube.com/watch?v=spUNpyF58BY
+- Game of life: https://www.youtube.com/watch?v=C2vgICfQawE
+
+Physics:
+- Fabric of the cosmos (movie series)
+- The elegant universe (movie series)
+- Frame of essence (youtube)
+
+Engineering:
+- Rockets:
+  - Book: Rocket Propulsion Elements book
+  - declan murphy flight club, rocket graphs, trajectories, specific impluse stuff
+- Aerodynamics: https://forum.kerbalspaceprogram.com/index.php?/topic/47818-basic-aircraft-design-explained-simply-with-pictures/
+- Big Bigger Biggest
+- BBC Explosions
+- Tesla doc
+- Elon doc
+- Nova making stuff series
+- Shock and awe - the story of electricity
+- Tomahawk
+
+Design:
+- Unsplash
+- Canva
+- Piktochart
+
+Whole deal:
+- Origins, 4 eps
+- 10 ways to end the world
+- Evacuate earth
+
+Entrepreneuership:
+- Shenzhen: The Silicon Valley of Hardware: https://www.youtube.com/watch?v=SGJ5cZnoodY
+- Holy Land: Startup Nations: https://www.youtube.com/watch?v=I5h8GfxIWVY
+
+Games:
+- Factorio:
+  - Trailer: https://www.youtube.com/watch?v=KVvXv1Z6EY8
+  - Angels mod: https://www.youtube.com/watch?v=LizA-DD9Gfo
+  - Greygoo: https://www.youtube.com/watch?v=xF--1XdcOeM
+  - Big bertha: https://www.youtube.com/watch?v=pDLIkfSLTmU
+  - Ray casting engine: https://www.youtube.com/watch?v=7lVAFcDX4eM
+  - Who is the invader: https://www.youtube.com/watch?v=ncB5-ByaHDE
+  - Mods:
+    - Industrial Revolution
+    - Angels & Bobs
+    - Klonan's mods:
+      - Construction drone
+      - Repair turrets
+    - Nauvis post collapse scenario
+      - Nauvis invasion: https://www.youtube.com/watch?v=Qekvxw9t7zo
+    - Really, really big base with really, really difficult mods: https://www.youtube.com/watch?v=dY2nxVNBHQs
+- Civ 5
+- The powder toy
+- Raze 2
+- Plazma burst 2
+- City Siege 3: Jungle Siege
+- Elite dangerous
+- Nier automata
+- Fold it
+- Eterna
+- Miegakure
+- Bloons
+- SAS
+- Sprocket, copyright, IP stuff
+- Battlefield: Bad Company 2
+- Kerbal Space Program
+- Sid Meier's Civilization V
+- Minecraft
+
+Tools:
+- Unity 5 interior: https://www.youtube.com/watch?v=MX1qRM-lTEU
+- Spaceclaim, 3D
+- Eagle, PCB
+- ANSYS, simulation
+
+Bio:
+- PKM Zeta
+- Black Fish, that orca who killed that trainer
+- The great sperm race
+- Nova science, neil, can we live forever
+- The evolution of venom
+- Worms documentary
+- Inside the living body
+- BBC Horizon - The secret you, taking about consciousness
+- The human brain, natgeo doc, 2008-era
+- How does the brain work
+- da Vinci system
+
+Youtube channels:
+- 3blue1brown, math
+- Practical engineering, civil engineering
+- CGP Grey, politics, random
+- VSauce
+- Veritasium, physics
+- Smarter everyday, physics
+- Minute physics
+- Frame of essence
+- Brady haran's channels:
+  - Numberphile
+  - Computerphile
+  - Sixty Symbols
+- udiprod, sorting
+- Quirkology, bets
+- MyReminiscent, dope music
+- Curious Elephant
+- Everyday astronaut
+- Our ludicrous future
+- Scott Manley
+- Patrik Pietschmann, everything piano: https://www.youtube.com/channel/UCs7O9sOUQiBGBxaaAguIwig
+- MyReminiscence, anime piano: https://www.youtube.com/user/MyReminiscence
+- Primitive technology
+- Alan Becker
+- Lex Fridman, long AI podcast
+- Strange Parts, guy goes to factories, I think mainly manufacturing: https://www.youtube.com/channel/UCO8DQrSp5yEP937qNqTooOw
+- The film theorists
+- Vihart, math stuff
+- Jack Lishman, SpaceX monthly recap
+
+Movies:
+- Avengers
+- Elysium
+- The transporter refueled
+- Tron legacy
+- Maze runner
+- Hunger games
+- Incredibles
+- Matrix
+- Terminator
+- High school musical
+- Interstella
+- Tomb raider
+- MI6
+- Edge of tomorrow
+
+Fetishes:
+- Your neighborhood tentacle shop
+- Body swap hentai cafe thing
+
+History:
+- Extra Credits
+- BBC Genghis Khan
+- Kalahari Killers
+- Manhunt Death Blow
+- Future Weapons
+- Origins
+
+Random:
+- Crash course on youtube
+- Wait but why
+- Talk, The search for the perfect door: https://www.youtube.com/watch?v=4YYvBLAF4T8
+- Breakout S02E03
+
+Music gems:
+- Close ones to my heart:
+  - Bad apple
+    - Piano: https://www.youtube.com/watch?v=rgeIOQTLLcc
+    - Original: https://www.youtube.com/watch?v=FtutLA63Cp8
+    - English vocal: https://www.youtube.com/watch?v=rG-Fs7de_9o
+    - Sand art: https://www.youtube.com/watch?v=xGk8UnnSkt4
+    - Violin: https://www.youtube.com/watch?v=3hYJRPcPjpI
+    - Guitar: https://www.youtube.com/watch?v=uH-YHeBTCKA
+  - Romeo and cinderella:
+    - Miku: https://www.youtube.com/watch?v=swqbfMh467A
+    - Piano: https://www.youtube.com/watch?v=dmP5I5v007E
+    - Another good ver: https://www.youtube.com/watch?v=TbFSpvlaugc
+  - Ghost rule:
+    - Miku: https://www.youtube.com/watch?v=gGweinZEhik
+    - Piano: https://www.youtube.com/watch?v=G0ZI4ZRe5gc
+  - Hazy moon:
+    - https://www.youtube.com/watch?v=2xMYwZgdltk
+  - Breaking free: https://www.youtube.com/watch?v=zuwugw89Lcg
+- Excellent but not close to my heart:
+  - Unravel: https://www.youtube.com/watch?v=sEQf5lcnj_o
+  - Only my railgun
+  - Dyson sphere: https://www.youtube.com/watch?v=rnJYlQ_bVP4
+  - Gold Gun Girls (TS the movie start and end theme): https://www.youtube.com/watch?v=FRtd8ArvH_s
+  - BertycoX, The Signal: https://www.youtube.com/watch?v=4BA2POUhCOM
+  - Saturn, Sleeping at last: https://www.youtube.com/watch?v=h3lWwMHFhnA
+  - Moonbaby, Here we go: https://www.youtube.com/watch?v=IIuZRWr3ODw
+  - Some factorio content have really great music
+- Good, but not excellent:
+  - Clockwork clown
+  - Bad end night Miku
+  - Lost one's weeping
+  - Unhappy refrain
+  - 2 faced lovers
+  - Classical Servant of Evil: https://www.youtube.com/watch?v=-V0wIUQsFC8
+  - Brambly Boundaries, Touhou 3D, minusT:
+    - 13': https://www.youtube.com/watch?v=KjJMWj6BYhY
+    - Straight to the point: https://www.youtube.com/watch?v=VfSIZexGCxI
+  - We appreciate power: https://www.youtube.com/watch?v=gYG_4vJ4qNA
+  - Muse uprising: https://www.youtube.com/watch?v=w8KQmps-Sog
+  - LSD Thunderclouds: https://www.youtube.com/watch?v=kg1BljLu9YY
+  - LSD Genius: https://www.youtube.com/watch?v=HhoATZ1Imtw
+  - Smosh assassin: https://www.youtube.com/watch?v=12PWq22E9CQ
+- Totally Spies: https://soundcloud.com/pinar-tokbay/sets/totally-spies-ost
+  - really nice music at the beginning of this: https://www.youtube.com/watch?v=6Qo9uJnp9Cg
+  - suspense and fear
+  - britanny: https://www.youtube.com/watch?v=wG5N6eiG5Go&list=PLkoRJIJTQcMqZRqbNB-6ioaPGEQgFk_bY&index=1
+  - new woohp theme
+  - woohp night suspense
+  - black widow
+  - baddie cong
+  - funky spy action
+  - investigation
+  - middle age village
+  - rave track - edm
+  - scary scene tune
+- Tron legacy:
+  - Main theme, piano: https://www.youtube.com/watch?v=LIboeVN58nM
+  - Son of Flynn: https://www.youtube.com/watch?v=TWJVgTeNljs
+  - The Game Has Changed: https://www.youtube.com/watch?v=DmKDVvIEhBY
+  - The Grid: https://www.youtube.com/watch?v=qRUfcp8Ba6g
+- This game:
+  - No Game No Life: https://www.youtube.com/watch?v=JRQbVNzmCK0
+- SpaceX:
+  - The Falcon Has Landed
+  - McGregor Texas
+  - Dragon V2
+  - Falcon Heavy
+  - BFR illustrations
+  - Merlin 1D engine flight qualification test: https://www.youtube.com/watch?v=Zj0851Wkm9c
+  - Elon shit: https://www.youtube.com/watch?v=_55E5BBSDN4
+  - Russian choir: https://www.youtube.com/watch?v=ENErda2k8iI
+  - Grimes song: https://www.youtube.com/watch?v=wK7-4080KMk
+  - SpaceX launch you up
+- Nier automata:
+  - 1h random music: https://www.youtube.com/watch?v=VJ_aT4T89aU
+  - Great trailer: https://www.youtube.com/watch?v=wJxNhJ8fjFk
+  - Not so great trailer: https://www.youtube.com/watch?v=mOQwMLWEJrg
+- Pirates of the Carribean
+- Ynes:
+  - https://www.youtube.com/watch?v=kSjj0LlsqnI
+- Wall-E
+- Interstella, No Time For Caution: https://www.youtube.com/watch?v=m3zvVGJrTP8
+
+Services:
+- High volume of 3d printed stuff: http://www.slant3d.com/

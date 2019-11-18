@@ -1,0 +1,2 @@
+- Using ImageMagick: "magick -delay 20 "inputimgs *.jpg" frame.mp4"
+- Running different sessions on Linux server: use tmux tool. "tmux ls", "tmux a -t (name)" (attach to name), "tmux new -s (name)" (create new session with given name)

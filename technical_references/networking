@@ -1,0 +1,132 @@
+
+200 OK
+201 CREATED
+404 NOT FOUND
+204 NO CONTENT
+
+
+
+Networking
+802.3an = 10Gbps (for LAN, set out by IEEE), 10GBASE-T (10gb baseband (digital signal, vs broadband, which is analog), T = UTP (Unshielded Twisted Pair) cable (LX, another type of cable, which is fiber optic))
+What's the theoretical maximum for transfer rate?
+
+Cat5 (100Mbps), Cat5e (1Gbps), Cat6 (10Gbps up to 55m), Cat6a (10Gbps up to 100m), Cat7 cables
+
+RJ45 connector. EIA/TIA 568b. Straight through and Cross over connections. Auto MDI-X works for <1Gbps
+
+1000BASE-TX or 1000BASE-T
+
+fiber optic cables: Single Mode Fibre vs Multi Mode Fibre
+802.11 (Wifi)
+
+2 addresses:
+- MAC, 1 every network card (thus, a computer can have multiple network cards), permanently assigned, "burned in address"
+- IP
+
+OSI model:
+- Application
+- Presentation
+- Session (big upwards)
+- Transport (small downwards)
+- Network
+- Data link, Logical Link Control and Media Access Control sub layers
+- Physical
+
+Header and trailer
+
+Session control protocol
+
+CCENT/CCNA guide by cisco
+
+CRC, aka error correcting information
+
+So, computer -> switch -> router -> switch -> another router -> switch -> another computer
+
+Classes for IP addresses:
+- A: Device, 1-3, large networks, small number of networks, but with enourmous hosts. First bit is always 0, so there are 2^7 networks possible. 0.0.0.0 to 127.0.0.0, but 0.0.0.0 and 127.0.0.0 is reserved -> so there are only 2^7 - 2 networks
+- B: Device, 2-2, medium networks. First 2 bits are always 10 -> 2^14 possible networks and 2^16 hosts. 128.0.0.0 to 191.255.0.0
+- C: Device, 3-1, small networks. First 3 bits are always 110 -> 2^21 possible networks (~2M) and 2^8 hosts. 192.0.0.0 to 223.225.225.0
+- D: Multicast, 224.0.0.0 to 239.255.255.255
+- E: Reserved for special purposes
+
+Classless interdomain routing (CIDR)
+CIDR notation: 172.16.1.0 /24 (/24 represents subnet mask of 255.255.255.0, or the first 24 bits of the ip address is turned on)
+
+Variable length subnet mask (VLSM), conserve even more ip addresses
+
+Boardcast ips, with max host number. Global boardcast ip: 255.255.255.255
+"network address", with min host number
+
+Internet Assigned Numbers Authority (IANA) assigns addresses to Regional Internet Registries (RIR)
+RIRs assign space to ISPs and large customers. ISPs give addresses to smaller customers
+
+RFC 1918, some IP spaces are now reserved for private use, like:
+- 10.0.0.0 /8
+- 172.16.0.0 /12
+- 192.168.0.0 /16
+
+When sent from a home network, the banned (private) IP addresses will be converted to a public address (Network Address Translation)
+
+DHCP server
+
+Video server sends traffic to multicast IP. Other hosts look for traffic sent to that IP. Routers forwards multicast
+
+Okay, so shouldn't the IP header section on IP addresses also have a subnet mask?
+
+Random source port: 1024 - 65535
+
+
+Router:
+
+GE 0/0/1: gigabit ethernet module 0 port 0. The "1" is the index of the opening. Each module has 4 openings, and each opening has an RJ45 style port and sfp transceivers (usually for fiber optic cables)
+- Management port
+- 2 USB ports, for firmware update
+- 2 console ports, 1 mini usb, the other RJ45 connector
+- Auxiliary port, old days
+
+Serial, baud rate, all the good stuff from the arduino times
+Router>enable (user exec mode, limited)
+Router# (priviledged exec mode)
+Commands:
+- enable
+- show ...
+  - show clock
+  - show version
+  - show ?
+  - show clock ?
+- configure terminal (enter configuration mode, global exec commands won't work, like show clock. Do this using "do show clock")
+- hostname Internet-Router (change hostname of device while in config mode)
+- exit
+- show ip interface brief
+- (config)interface gigabit 0/1 ("gigabit 0/1" because when executed show ip interface brief, the tut has 2 rows, "GigabitEthernet0/0" and "GigabitEthernet0/1")
+- (config-if)description Corporate Network
+- (config-if)ip address 192.168.0.1 255.255.255.0
+- (config-ip)shutdown
+- (config-ip)no shutdown (turn a command/config off)
+- (global)show interface description
+
+
+
+
+
+
+
+
+
+internet <- modem <- router <- firewall <- switch <- computer
+
+connections:
+- t1
+- dsl
+- cable
+- satellite
+
+router: separate networks
+every person gets their own router
+
+
+
+
+postfix
+
+

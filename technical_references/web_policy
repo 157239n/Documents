@@ -1,0 +1,12 @@
+cross domain:
+crossdomain.xml file
+
+<?xml version="1.0"?>
+<cross-domain-policy>
+    <allow-access-from domain="*" />
+</cross-domain-policy>
+
+or you can stick in a trusted domain
+
+
+

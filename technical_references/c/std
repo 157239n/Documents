@@ -1,0 +1,63 @@
+Standard library components:
+- run-time language support (allocation, run-time type information)
+- c standard library
+- strings (with international character sets and localization)
+- regex
+- io stream, can add own types, streams, buffering strategies, locales, and character sets
+- framework of containers (vector, map, find(), sort(), merge()), commonly called "STL", is extensible
+- numerical computation (std math, complex, vectors, random)
+- concurrent programming, including threads and locks. So foundational that users can add support for new models of concurrency as libraries
+- utilities to support template metaprogramming (type traits), STL-style generic programming (pair), and general programming (clock)
+- smart pointers for resource management, unique_ptr and shared_ptr, and interface to garbage collectors
+- special-purpose containers: array, bitset, tuple
+
+Standard library headers:
+- <algorithm>:
+  - p = find(b, e, x), *p == x
+  - p = find_if(b, e, f), f(*p) == true
+  - n = count(b, e, x), counts *q so that *q == x
+  - n = count_if(b, e, f)
+  - replace(b, e, v, v2)
+  - replace_if(b, e, f, v2)
+  - p = copy(b, e, out), copies [b:e) to [out:p)
+  - p = copy_if(b, e, out, f)
+  - p = move(b, e, out)
+  - p = unique_copy(b, e, out)
+  - sort(b, e)
+  - sort(b, e, f)
+  - (p1, p2) = equal_range(b, e, v), [p1:p2) is subsequence with value v
+  - p = merge(b, e, b2, e2, out)
+- <array>: array
+- <chrono>: duration, time_point // this is interesting
+- <cmath>: sqrt(), pow(), abs(), ceil(), floor(), cos(), sin(), tan(), acos(), asin(), atan(), sinh(), cosh(), tanh(), exp(), log(), log10()
+- <complex>: complex, sqrt(), pow(), and all the shits from <cmath>
+- <forward_list>: forward_list
+- <fstream>: fstream, ifstream, ofstream
+- <future>: future, promise
+- <ios>: hex, dec, scientific, fixed, defaultfloat
+- <iostream>: istream, ostream, cin, cout
+- <map>: map, multimap
+- <memory>: unique_ptr, shared_ptr, allocator
+- <random>: default_random_engine, normal_distribution
+- <regex>: regex, smatch
+- <string>: string, basic_string
+- <set>: set, multiset
+- <sstream>: istrstream, ostrstream
+- <stdexcept>: length_error, out_of_range, runtime_error
+- <thread>: thread
+- <unordered_map>: unordered_map, unordered_multimap
+- <utility>: move(), swap(), pair
+- <vector>: vector
+- <numeric>:
+  - x = accumulate(b, e, i), i = initial
+  - x = accumulate(b, e, i, f), accumulate using f() instead of +
+  - x = inner_product(b, e, b2, i)
+  - x = inner_product(b, e, b2, i, f, f2), inner_product sing f and f2 instead of + and *
+  - p = partial_sum(b, e, out)
+  - p = partial_sum(b, e, out, f), f instead of +
+  - p = adjacent_difference(b, e, out)
+  - p = adjacent_difference(b, e, out, f), f instead of -
+- <valarray>: kinda like mathematical vectors?
+- <limits>:
+  - numeric_limits<char>::is_signed()
+  - numeric_limits<int>::max()

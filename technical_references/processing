@@ -1,0 +1,21 @@
+Good old Processing
+
+void setup() {}
+void settings() {}
+void draw() {}
+
+p5js.org, new processing js
+function draw() {}
+size(x, y) = createCanvas(720, 400)
+
+function preload() {
+    img = loadImage('something.jpg');
+}
+mousePressed -> mouseIsPressed
+mouseX, touchX
+mouseY, touchY
+mousePressed(), touchStarted()
+mouseDragged(), touchMoved()
+mouseReleased(), touchEnded()
+random(100)
+let x = new Array(20)

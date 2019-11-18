@@ -1,0 +1,10 @@
+- ufw show raw
+- ufw status
+- ufw status verbose
+- ufw disable
+- ufw allow 53 (allowing port 53, closes everything by default)
+- ufw allow 53/tcp
+- ufw deny 53
+- ufw delete deny 53 (deletes rule in rule list somewhere)
+- ufw allow ssh
+- ufw allow from 207.46.232.182

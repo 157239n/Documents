@@ -1,0 +1,275 @@
+after finishing provim: https://github.com/liuchengxu/space-vim-dark
+status bar display: https://github.com/vim-airline/vim-airline
+there are 2 popular configuration file on github other than the author's own configs
+
+Folding (for .vimrc only, for now):
+# Fold title {{{
+content
+# }}}
+
+Comments: #
+
+Package managers:
+- pathogen, stored inside .vim/bundle
+
+$VIMRUNTIME, accessable in vim only (/usr/share/vim/vim80)
+
+set nobackup
+set nowritebackup
+set noswapfile
+set ruler " coordinates of the cursor (this seems to be default, so why include here)
+set ignorecase
+set smartcase
+set autoread " error handling for 2 vim instances editing 1 file
+set shortmess+=I " getting rid of the opening screen
+
+set runtimepath+=~/.vim/config " should add the path to a list of paths vim use to execute vim scripts written in VimL
+runtime basic.vim " loads ~/.vim/config/basic.vim
+
+set fileformat=dos " difference lies in \r\n or just \n. But I won't use it a lot
+
+Fundamentals:
+- commands
+    - single-line, :wq, :vsp, :echo $VIM
+    - mapped
+    - editing commands
+- buffers
+    - active: visible
+    - hidden: not visible but not empty
+    - inactive: empty and not visible
+    - no name: warns if not save
+    - scratch: doesn't warn if not save (which to me is exactly the same as no name, just use :q! lol)
+- windows: basically vsp stuff
+- tabs: tabs stuff that I know but don't use
+- modes:
+    - normal (<Esc>)
+    - insert (i)
+    - visual (v)
+    - replace (r): just like insert, but with "insert" lock on in windows (| to _)
+    - command line (:)
+    - visual block (C-v)
+
+specific to this instance only
+<C-w> is <Ctrl> + w
+<Leader> is \
+
+get history of commands:
+- static list: :history
+- dynamic list: q: (normal mode), <C-f> (command-line mode), opens up "Vim's command line window"
+
+:h {some command} " help!, <C-]> to jump to a hyperlink in the help file
+:h help-summary " how to use help
+Wiki: https://vim.fandom.com/wiki/Vim_Tips_Wiki, may be just read through a bit
+
+Key bindings (user defined):
+- :nmap: for normal mode, can do something like :verbose nmap
+- :vmap: for visual mode
+- :imap: for insert mode
+- :map: for all modes
+
+Key bindings (default): :h index
+
+:only: closes all windows except the current one (not used much)
+:e {file}: open a file
+:read, 2 arguments:
+- options that allow us to control file format and encoding
+- path to file to be loaded
+:read file2.txt will put contents of file2 to the buffer in the new line after the cursor
+:8read file2.txt, same deal, puts file2 starting on line 9
+:read !ls -la
+
+Moving between files:
+- :bn: next buffer (short for buffer next). We opened 2 buffers when executing vim file1 file2
+- :bp: buffer previous
+- :ls: lists all buffers (%file for active buffer)
+- :b1: moves to first buffer
+- :bf: moves to first buffer
+- :bl: moves to last buffer
+- :bm: moves to next modified buffer
+- :bd: deletes current buffer
+- :9,11bd: deletes buffers 9 through 11
+- :2bd: deletes second buffer
+
+Saving files:
+- :5,9wq: save and quit this file, but only save lines 5 through 9 (prob won't use much)
+- :conf {command}: confirm that command does not throw any errors
+
+New files:
+- :new {file}: new buffer in a horizontal split pane
+- :enew {file}: same as new, but doesn't create a split (environment new, may be not the original meaning, but hey)
+- :vnew {file}: same as new, but creates a vertical split instead
+- :tabnew {file}: same as new, but creates it in a new tab instead (which i suspect i will never use)
+
+New files from template:
+- autocmd BufNewFile *.html Or ~/skeleton.html
+
+File name modifiers: :h filename-modifiers
+- :echo expand('%:p'): ????? (:h expand)
+- :!open %:p: same deal, but feeds file name into a program (which i probably will not use)
+
+Switching working directory:
+- :cd ~/Code/ProjectB
+- :pwd
+- :cd %:p:h: change working directory into a buffer's (%) parent directory including itself (:p) minus itself (:h, remove head)
+
+Commands: [count] {operator} {[count] motion | text object}
+- Command
+    - x: cutting
+    - yy or Y: yank a line
+    - i: insert mode before cursor, I: insert mode at beginning of line
+    - a: insert mode after cursor, A: insert mode at the end of line
+    - f: find specified character (F for finding it before). Ex: fn finds the next n. t does the same thing, but put the cursor 1 character back, stands for "till"
+    - s: subtitute letter (and goes into insert mode), S: subtitute line
+    - o: insert into next line, O: insert into previous line
+    - u: undo
+    - ~: swap charater case
+    - .: repeats command
+    - d: delete, dd: delete current line, D: d$: delete til end (cuz $'s a movement to the end of line)
+    - p: paste after cursor, P: paste before cursor
+    - v: select (actually it enters visual mode, where i can use 3l to move left 3 times and select it)
+- Count
+- Operator
+- Motion:
+    - 0: beginning of line
+    - $: end of line, g_: end of line without newline
+    - %: next parethesis/bracket
+    - {}: prev and next paragraphs
+    - G: goto some line. If no number are specified, then go to the last line. gg = 0G
+- Page motion:
+    - <C-u>: move half page up
+    - <C-d>: move half page down
+    - <C-b>: move 1 page up (back)
+    - <C-f>: move 1 page down (forth)
+    - zt: shifts page so that current line is at the top
+    - zb: shifts page so that current line is at the bottom
+    - zz: shifts page so that current line is at the middle
+    - H: move cursor to top viewport (high)
+    - M: move cursor to middle (middle)
+    - L: move cursor to low viewport (low)
+- Special motion:
+    - i: inside
+    - a: around (just like "i", but shifted by a single character. Wider than "i")
+- Text object: {special motion} {object}
+    - Object:
+        - w: word, diw: delete inside word
+        - s: sentence, dis delete inside sentence
+        - p: paragraph, dip delete inside paragraph
+        - t: tag
+        - quotes, di" delete inside quote
+        - brackets/blocks
+- di": delete inside quotes (operator {[count] (motion | special motion) [object])
+
+Command line:
+- % refers to entire file, so :%d deletes everything
+- . refers to current line, so :.,0d deletes from current line to start of file
+
+Visual mode:
+- vey: go into visual mode, select till end of word, yank it
+
+Registers: :h quote_number
+- Registers:
+    - "": unnamed
+    - "0 through "9: 10 numbered
+    - "-: small delete
+    - "a to "z and "A to "Z: 26 named. Capitals will append yanked or deleted content to the register, while normal will wipe out the register first
+    - ".: read only, last edit made in insert mode
+    - "%: read only, current name of the file in buffers
+    - "#: read only, name of file last edited in buffers
+    - ":: read only, most recently executed command line command
+    - "=: expression
+    - "*, "+ and "~: selection and drop
+    - "_: black hole
+    - "/: Last search pattern
+- Commands:
+    - :reg: show all registers
+    - :reg {register names}: show that register only
+    - "{register}p: paste register content into buffer
+    - viw"2y: go into visual mode, select all contents inside a word then yank it to the "2 register
+    - @:: rerun last command
+    - <C-r>{register}: insert the contents of that register while inside insert mode
+    - <C-r>=<C-r>.: (inside insert mode) insert the result of evaluating what's inside register ".
+    - let @0="": this is VimL code, it means putting "" (nothing) into the 0 register
+    - Also there's unlet, which is interesting lol (oh rite, because this is what frees the heap)
+
+Fold options:
+- manual: defined manually (can be by using key bindings)
+- indent: folds defined by indenting lines
+- expr: folds defined by pattern matching (in VimL)
+- syntax: defined by rules within specific language files
+- diff: folds defined by nonrelevant changes when dealing with diff files
+- marker: folds defined by specific types of code comments
+
+Fold commands:
+- :set foldmethod=manual
+- v{motion | text object}zf: fold a selection
+- zf{motion | text object}: fold around a motion or text object. Ex: zf3j
+- zf'a: fold from current position up to the a mark
+- {count}zF: fold count number of lines from current position
+- zc: close fold
+- zo: open fold
+- za: alternate fold
+- zM: close all folds
+- zR: open all folds
+
+Bulk commands:
+- bufdo
+    - :bufdo wq
+- windo
+- tabdo
+- argdo
+
+Finding:
+- /: find forwards
+- ?: find backwards
+- *: look for occurance of word in cursor
+- #: same, but backwards
+
+Tmux:
+- <C-b>: prefix, or <P>
+- d: detach
+- <P>? or <P>:list-keys: list key bindings
+- tmux kill-session -t session_name
+- tmux ls or <P>:list-sessions
+- <P>:choose-session, like :Ex
+- <P>$: renaming session
+
+Macros:
+- qa{strokes}q for recording and place it in register a
+- Do it again using @a
+
+
+
+
+All of those environment setup:
+Downloading vim plug:
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+RC file:
+syntax on
+set nu
+
+call plug#begin('~/.vim/plugged')
+Plug 'liuchengxu/space-vim-dark'                                                                                               
+Plug 'liuchengxu/space-vim-theme'                                                                                              
+Plug 'axvr/photon.vim'                                                                                                         
+call plug#end()
+
+colorscheme space-vim-dark
+set splitright
+set splitbelow
+set foldmethod=marker
+set nowrap
+
+
+For installing plugins:
+:PlugInstall
+
+Also, there might not be the correct color depth information, so if colors seem weird, execute this: export TERM=xterm-256color
+
+
+good enough color scheme: elflord
+
+:set ff=unix, to convert to \n instead of \r\n
+:set ff=dos
+

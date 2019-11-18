@@ -1,0 +1,10 @@
+
+Chapter 7: Probability state spaces and stuff
+
+Probability distribution of 1 dimension of the state space "random variable"
+
+"discrete random variable" = {v1, v2, ..., vn}, maps to {p1, p2, ..., pn}, which all adds to 1
+{"heads": 0.6, "tails": 0.4}
+2 flips of biased coin -> 2 different random variables, same distribution
+
+C x A = {(T, T), (T, F), (F, T), (F, F)}, C and A are random variables, and an element is an atomic state

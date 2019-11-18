@@ -1,0 +1,94 @@
+start "title" "file to start"
+set /A four=2+2
+echo %0
+echo %*
+if /I %var% geq "1" ()
+if /I %var% geq 1 ()
+:: equ, neq, geq, leq
+if exist "file.txt" ()
+if "%var%"=="Hello" ()
+if not defined var ()
+
+reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion"
+
+pause
+
+setlocal
+setlocal EnableDelayedExpansion
+setlocal EnableExtensions
+endlocal
+%ERRORLEVEL%
+execute if command.exe successes: command.exe && otherCommand.exe
+execute if command.exe fails: command.exe || otherCommand.exe
+exit batch script but don't exit the cmd session behind it: exit /b 1
+bitwise: set /a errno^|=8. "|" for or, "^" for escaping? So "|=" is "a = a or b"
+nul: /dev/null
+con: stdin stream/file. Meaning "type con > file" works.
+
+shift, shifts the arguments. shift;%~1 == %~2
+
+arguments:
+- start with %
+- ~: strips away quotes. But actually, you can't use something like %dp1.
+- p: path
+- d: drive
+- n: name
+- x: extension
+- t: last modified date
+- z: size
+- 0-9: position of argument
+so,
+- %~1: %~n1
+- %~n1: file
+- %~nx1: file.txt
+- %~dnx1: \dir\file.txt
+- %~pdnx1: E:\dir\file.txt. This also equals %~f1, to be quick
+also,
+- %%~nv, with v being the loop variable
+
+%variable:~num chars to skip%
+removing substring: %str:is = %, replaces "is " with " ", %str:=% to replace every spaces
+substringL %str:~begining location,ending location%, each locations can be positive and negative
+
+for:
+for %%i in (%userprofile%\*) do echo %%i
+for /d %%i in (%userprofile%\*) do echo %%i: directories only
+for /r "%TEMP%" %%i in (*) do echo %%i: recursive, but I don't see much use though
+for /f "tokens=*" %%a in ('type daemon.cmd') do ()
+for /f "tokens=* skip=1" %%a in (daemon.cmd) do ()
+
+start /b cmd /c %~pd0another.cmd: starts in the background, async (becase it starts a new process). Which is super, super nice
+
+
+Okay, the for loop integration is so fucked up lmao. Take a look at this example:
+@echo off
+setlocal enableDelayedExpansion
+for %%A in (100 200 300 400 500) do (
+  set n=%%A
+
+  REM a FOR variable must be expanded
+  set /a x=%%A/25
+
+  REM an environment variable need not be expanded
+  set /a y=n/25
+
+  REM variables that were set within a block must be expanded using delayed expansion
+  echo x=!x!, y=!y!
+
+  REM another technique is to use CALL with doubled percents, but it is slower and less reliable
+  call echo x=%%x%%, y=%%y%%
+)
+
+functions:
+call :Display 5, 10
+
+:Display
+echo param1 is %~1, param2 is %~2
+exit /b 0
+
+arrays:
+set a[0]=1
+set a[0].name=joe
+echo %cur.name%
+
+

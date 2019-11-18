@@ -1,0 +1,12 @@
+
+useful keyboard shortcuts:
+- Focuses on main screen: Ctrl Alt L
+- Switch to tree screen: Ctrl Tab 1
+- Run (intellij idea): Shift F10
+- Run with new configs (intellij idea): Ctrl Shift F10
+- Rename, with refactor: Shift F6
+- Show usage: Alt F7
+- Find class: Ctrl N
+- Find file: Ctrl Shift N
+- Find symbols: Ctrl Shift Alt N
+- Param usage: Ctrl P

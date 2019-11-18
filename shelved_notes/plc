@@ -1,0 +1,114 @@
+ControlLogix Chapter: SLC 500 Logic <---> Logix 5000-based and RSLogix 5000 programming
+
+Scanning process
+
+The 2 poles for these systems is interestingly enough, L1 (?) and N (Neutral). Also interesting, L2 is sometimes treated as neutral
+
+Symbols: -||-: normally open contacts and -()-: coil when energized will close a set of contacts (sounds just like a relay)
+
+"Batching Control Systems"
+
+Marcotte systems, like a commercial brand that sounds cool
+
+Blending advantages of PLC-style control with PC systems to create a programmable automation controller (PAC)
+
+3 major types of PLC application:
+- Single-ended/stand-alone
+- Multitask
+- Control management
+
+Typical PLC instructions:
+- XIC: Examine ON, examine if closed, 0 to close valve, 1 to open valve. The thing that is flowing is logic
+- XIO: Examine OFF, examine if open, 0 to open valve, 1 to close valve
+- OTE: Output Energize, 0 to deenergize, 1 to energize
+- OTL: Output Latch (set, energized and remain energized)
+- OTU: Output Unlatch (reset, deenergized and remain deenergized)
+- TOF: Timer Off-Delay
+- TON: Timer On-Delay
+- CTD: Count Down
+- CTU: Count Up
+
+Allen-Bradley controllers: 8-slot chassis, totaling "128 I/O rack"
+Logical rack, 128 input points and 128 output points
+God, why are these so complicated? I can make the PLCs work with a tenth of their materials and signals. Like, literally a simple voltage divider would do and doesn't even need a specialized input and output modules.
+
+Okay, so an IO module does not necessarily have to be close to the PLC. Instead it could be really far away, like miles away. They communicate with the main PLC by using a communication module, which appears to be independent from the existing IO slots.
+
+module = rack
+PLC = processor
+
+Common voltages: 24VDC, 120VAC
+
+Programmable Logic Relay, Logic Modules, Smart Relays, fancy word for fixed PLCs. Examples:
+- TECO SG2 PLR 10HRA (40-79 VAC is the forbidden region). Oh wow, this is so freaking expensive, like $150 too expensive
+  - Input/Output: 8 (4I/4O), 10 (6I/4O), 12 (8I/4O), 20 (12I/8O)
+  - Form factor: H (LCD & keypad), V (LCD, keypad & RS-485), K (no LCD, no keypad), C (bare board), E (expansion)
+  - Output type: R (electromechanical relay), T (solid state transistor)
+  - Input power: D (24VDC), 12D (12VDC), A (100-240VAC), 24A (24VAC)
+  - Contact types:
+    - I: (6) Terminal inputs
+    - Z: (4) Cursor buttons
+    - M: (31) Retentive Auxilliary Relays
+    - N: (31) Non Retentive Auxilliary Relays
+    - C: (31) Counters
+    - T: (31) Timers
+    - Q: (4) Software generated output contacts
+- Eaton easy intelligent relay
+- Siemens logo logic module
+- Allen Bradley PICO PLC
+- Allen Bradley micro PLC
+Looks simple, rows of input on the top, rows of outputs on the bottom
+
+Modular PLCs, has to have at least a CPU module and a power supply. Examples:
+- Allen Bradley Controllogix
+- Allen Bradley Compactlogix
+- Allen Bradley Micrologix
+- Siemens S7
+- Automation direct click
+
+Make (0 off 1 on) or break (0 on 1 off) instructions
+
+5 languages:
+- Relay ladder logic
+- Function block diagram
+- Sequential function charts
+- Textual methods
+
+so apparently, PLCs are really overpriced. Alternatives are 
+- PSoC uC
+- KiCad 
+- PIC16F54 
+- 8051 core
+
+So after going through all of this, switch to embedded systems for more info
+
+PLCs memory stores information about the status of all inputs and outputs. Addressing schemes:
+- rack/slot based (I:1/0, or type:slot/location). Elements:
+  - Type: I (input) or O (output)
+  - Slot: physical location of the I/O module
+  - Word and bit: used to identify the actual terminal connection in a particular I/O module
+- tag-based
+
+Allen-Bradley's color code identification:
+- Red: AC I/O
+- Blue: DC I/O
+- Orange: relay outputs
+- Green: specialty modules
+- Black: I/O wiring, terminal blocks are not removable
+
+Okay, so this is kinda boring, I mean the whole field. Most people working in the field don't code, programming PLCs aren't really a focus in EE anyways and lots of ppl say that they just read the manual and can deal with them on the spot.
+
+One more point, it seems like I don't need any type of electrical engineering background to be able to do these types of things. And I can just be employed at a construction site doing PLCs work just fine.
+
+So, leaving myself with some links if I wanted to dig into this further, and if I were to really do this, then it provides all the nitty gritty details:
+- Youtube vids talking about this: https://www.youtube.com/watch?v=ku6utWk3faQ&list=PLdnqjKaksr8qxlMYRVTF2YzTm6RwtA7pc&index=10
+- Example manual for TECO SG2 PLR: https://media.digikey.com/pdf/data%20sheets/b&b%20electronics%20pdfs/sg2_plr_um_2-8-07.pdf
+- Also the book I'm reading: http://gen.lib.rus.ec/book/index.php?md5=2179BA845D4A87E8FA82CB07280006CC
+
+Old links:
+- gg search for "plc book reddit"
+- https://www.reddit.com/r/PLC/comments/82hil8/plc_book/
+- https://www.reddit.com/r/PLC/comments/4nmk2v/your_favourite_books/
+- (main) https://www.reddit.com/r/ECE/comments/647ppz/where_to_learn_about_plc_programming/
+- https://www.allaboutcircuits.com/textbook/digital/chpt-6/programmable-logic-controllers-plc/
+- http://www.easyveep.com/modules.php

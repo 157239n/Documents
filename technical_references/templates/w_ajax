@@ -1,0 +1,13 @@
+$.ajax({
+    url: "<?php echo $_SERVER["PHP_SELF"]; ?>",
+    type: "POST",
+    async: true,
+    data: {
+        query: "something"
+    },
+    success: function(response) {
+    },
+    error: function(errorType, textStatus, errorThrown) {
+    }
+});
+

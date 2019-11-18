@@ -1,0 +1,92 @@
+Well, not advanced, just out of scope for me currently
+And well, not books, just resources
+
+Tensor books:
+- The Mathematics of Relativity Theory and Continuum Mechanics (supposed to give a bigger picture)
+- Quick introduction to Tensor Analysis: https://arxiv.org/pdf/math/0403252.pdf (supposed to be easy)
+- Tensor products: https://kconrad.math.uconn.edu/blurbs/linmultialg/tensorprod.pdf
+- The Geometry of Physics
+- An Introduction to Tensors and Group Theory for Physicists
+- Geometrical Methods of Mathematical Physics
+- A Student's Guide to Vectors and Tensors (supposed to be easy)
+- https://www.grc.nasa.gov/www/k-12/Numbers/Math/documents/Tensors_TM2002211716.pdf
+- https://medium.com/@quantumsteinke/whats-the-difference-between-a-matrix-and-a-tensor-4505fbdc576c
+
+grey and meyer analog integrated circuits
+
+Powershell related:
+- https://devblogs.microsoft.com/scripting/a-powershell-object-lesson-part-one/
+- https://devblogs.microsoft.com/scripting/weekend-scripter-why-should-i-learn-powershell/
+- https://www.petri.com/why-learn-powershell
+- https://technofaq.org/posts/2018/04/8-reasons-why-you-should-learn-to-use-powershell/
+- https://www.techrepublic.com/blog/10-things/10-reasons-why-you-should-learn-to-use-powershell/
+- http://ramblingcookiemonster.github.io/PowerShell-Is-Too-Hard/
+- https://www.darkoperator.com/powershellbasics
+- http://ramblingcookiemonster.github.io/How-Do-I-Learn-PowerShell/
+- Formal books:
+    - file:///C:/Users/Lenovo-1/Downloads/Don%20Jones,%20Jeffery%20Hicks%20-%20Learn%20Windows%20PowerShell%203%20in%20a%20Month%20of%20Lunches-Manning%20Publications%20(2012).pdf
+    - file:///C:/Users/Lenovo-1/Downloads/Bruce%20Payette%20-%20Windows%20Powershell%20in%20Action,%20Second%20Edition%20%20-Manning%20Publications%20(2011).pdf    
+
+
+
+
+MIT press essential knowledge:
+- Information and Modern Corporation: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20Series)%20James%20W.%20Cortada%20-%20Information%20and%20the%20Modern%20Corporation%20%20-MIT%20Press%20(Massachusetts%20Institute%20of%20Technology)%20(2011).pdf
+- Crowd sourcing: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Daren%20C%20Brabham%20-%20Crowdsourcing-The%20MIT%20Press%20(2013).pdf
+- Free will: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Balaguer,%20Mark%20-%20Free%20will-The%20MIT%20Press%20(2014).pdf
+- Open access: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Suber,%20Peter%20-%20Open%20access-The%20MIT%20Press%20(2012).pdf
+- Paradox: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Cuonzo,%20Margaret%20-%20Paradox-The%20MIT%20Press%20(2014).pdf
+- The conscious mind: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Torey,%20Zoltan%20-%20The%20conscious%20mind-The%20MIT%20Press%20(2014).pdf
+- Understanding beliefs: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Nilsson,%20Nils%20J%20-%20Understanding%20beliefs-The%20MIT%20Press%20(2014).pdf
+- Waves: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Raichlen,%20Fredric%20-%20Waves-The%20MIT%20Press%20(2012).pdf
+- The technological singularity: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20series)%20Murray%20Shanahan%20-%20The%20Technological%20Singularity-The%20MIT%20Press%20(2015).pdf
+- Cloud computing: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20series)%20Nayan%20B.%20Ruparelia%20-%20Cloud%20Computing-The%20MIT%20Press%20(2016).pdf
+- The mind-body problem: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20Series)%20Jonathan%20Westphal%20-%20The%20Mind-Body%20Problem-MIT%20Press%20(2016).pdf
+- Auctions: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20series)%20Timothy%20P.%20Hubbard,%20Harry%20J.%20Paarsch%20-%20Auctions-The%20MIT%20Press%20(2016).pdf
+- Metadata: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20series)%20Jeffrey%20Pomerantz%20-%20Metadata-The%20MIT%20Press%20(2015).pdf
+- The future: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20series)%20Nick%20Montfort%20-%20The%20Future-The%20MIT%20Press%20(2017).pdf
+- Self tracking: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Gina%20Neff,%20Dawn%20Nafus%20-%20Self-Tracking-The%20MIT%20Press%20(2016).pdf
+- Spaceflight, a concise history: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20Essential%20Knowledge%20Series)%20Michael%20J.%20Neufeld%20-%20Spaceflight_%20A%20Concise%20History-MIT%20Press%20(2018).pdf
+- Carbon capture: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge)%20Howard%20J.%20Herzog%20-%20Carbon%20Capture-The%20MIT%20Press%20(2018).pdf
+- The internet of things: GG Books
+- Neuroplasticity: GG Books
+- Machine learning: The new AI: GG Books
+- Machine translation: GG Books
+- Robots: GG Books
+- Synthesia: GG Books
+- The book: GG Books
+
+
+
+format string vulnerability on heaps: http://homes.sice.indiana.edu/yh33/Teaching/I433-2016/lec13-HeapAttacks.pdf
+
+Current cl (ms c++ compiler, needed to work with cuda) problem: https://stackoverflow.com/questions/9356135/link-fatal-error-lnk-1104-cannot-open-file-libcmt-lib
+
+web security: https://www.w3.org/Security/
+Learn VBS again
+Learn about embedded system programming, stuff beyond arduino, gg for "going beyond arduino"
+- https://www.reddit.com/r/ECE/comments/4xpgnt/moving_beyond_arduino_for_embedded_development/?st=jvh3sjth&sh=41e7ffd7
+- CGI Security Issues: http://speed.eik.bme.hu/help/html/Special_Edition-Using_CGI/ch27.htm
+
+
+
+
+All about tensorflow:
+- https://github.com/aymericdamien/TensorFlow-Examples
+- datacamp's resources, probably bad: https://www.datacamp.com/community/tutorials/tensorflow-tutorial
+- http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.06571&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
+- https://www.deeplearning.ai/ai-for-everyone/
+- Using GPU: https://www.tensorflow.org/guide/using_gpu
+- Using TPU, whatever that is: https://www.tensorflow.org/guide/using_tpu
+- Performance: https://www.tensorflow.org/guide/performance/overview
+- deeplearning.ai's CNN: https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF
+
+Windows primer:
+- The other way around: https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html
+
+Internet simulator: https://studio.code.org/s/netsim
+How banks work: https://www.simple.com/blog/how-do-banks-work
+
+Java concurency series: https://www.javaworld.com/article/2078605/java-concurrency-modern-threading-a-java-concurrency-primer.html
+
+docker deep dive, understood why you would want something like Docker

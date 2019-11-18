@@ -1,0 +1,32 @@
+MIME is short for Multipurpose Internet Mail Extensions
+
+List of MIME types:
+
+Discrete types: atomic
+- application
+- audio
+  - audio/wave
+  - audio/wav
+  - audio/webm
+  - audio/ogg
+- example
+- font
+- image
+  - image/gif
+  - image/jpeg
+  - image/webp
+  - image/svg+xml
+- model
+- text
+  - text/plain
+  - text/csv
+  - text/html
+  - text/ecmascript
+- video
+  - video/ogg
+  - video/webm
+
+Multipart types: consist of multiple discrete types
+- message
+- multipart
+  - multipart/form-data

@@ -1,0 +1,133 @@
+Resources/Questions:
+- Stock stuff, may be scam: https://stockswithstrauss.com/six-figure-stock-free-training-by-sam-strauss?fbclid=IwAR0n-FPraxLsQELt3Ibqse7yCG8NteyscKQEtE7GeN51nEP2GwTQWqrT9yA
+- Okay, so a book on management? Also a book on general advertising principles
+- Business basics: https://www.investopedia.com/articles/basics/03/022803.asp
+- And how can I transport something automatically?
+- Also how warehouses work?
+- Also how do warehouses work? And all those nitty gritty stuff in the industry. I mean, things in factorio looks simple, but it is not so
+- Also see if anyone else has essentially controlled every part of the supply chain and how did it worked out for them.
+- Also learn about how China does its thing
+- How marketing works? I.e how advocating for a product works?
+- How funding works in these charitable attempts? Can I create a charitable organization?
+- how to actually distribute wages
+- also how taxes work? Not the specifics, no, but how to generally register for that, who should I pay it to, etc
+- profit for open source projects?
+- company acquisitions?
+- also insurance again
+- should I be afraid of starting a company ycombinator, for advices regarding doing the stuff I want to do
+  - https://news.ycombinator.com/item?id=14806393
+  - https://blog.samaltman.com/startups-role-models-risk-and-y-combinator
+
+"We have gone from a 'push' to a 'pull' supply chain over recent years. In fact, the phrase 'supply chain' can be a bit of a misnomer and rather it should be called a demand chain, with consumers holding sway"
+
+Warehouses used to be the way to go, because they provide buffer, and land was cheap back then. But the author is hinting that today, we don't do those types of things anymore, or at least, less often.
+
+Production runs: long. Expensive to change anything
+Economy was seen as supply driven (is it now?)
+
+Concepts:
+- Just in time (JIT), lol
+- Efficient consumer response (ECR)
+- Quick response (QR)
+
+Goal, pretty relatable, because these things happen in factorio too:
+- Minimize stock held
+- Speed up through put
+
+Tools:
+- Postponement, products are completed in the warehouse, not at the manufacturing location??? Why is it called that way???
+
+Supply chain steps: Raw materials -> products -> shipped to distribution facility -> stock a retail store -> customer's hands
+
+Supply chain strategies:
+- Push: Projected customer demand drives the process
+- Pull: Actual customer demand drives the process, related to "JIT school of inventory management". From this, it sounds like a pull strategy will cost much more than the push strategy. Same goes for JIT. Is this the case? Are there business cases where pull makes more sense?
+- Hybrid: buffering raw resources and products, storing them in distribution facility. Then wait for the consumers to consume. Also there are no completely pull or push supply chain strategy, it's always a mix, the important bit is what are the proportions
+
+The author seems to suggest that we are moving towards a pull supply chain technology and JIT. He/she even go as far as making the claim "supply chain should be called a demand chain, with consumers holding sway"
+
+So apparently warehouses are moving towards ports, or "port-centric logistics"
+Outsourcing Western production to India and Asia --> companies have to hold more in warehouses
+
+Types of warehouse operations:
+- Raw material storage: TL;DR: storage box. Usually placed at ports
+- Intermediate, postponement, customization or sub-assembly facilities. TL;DR: storage box. The examples given are really, really fuzzy and dodgy:
+  - Intermediate: store products temporarily at different production stages
+  - Customization: self-explanatory
+    - Country-specific items
+    - Computer assembly with different graphics card, software, etc.
+  - Postponement and sub-assembly:
+    - Label products
+- Finished goods storage: TL;DR: storage box lol. In Satisfactory you just group them together as a fucking storage box. Do you really need this type of sophistication? Also usually placed at ports, because duh
+  - Duh
+- Consolidation centres and transit warehouses: TL;DR: Merger. Sample cases:
+  - Sand from A and sand from B goes into the same warehouse, then gets shipped together into machines. A and B can be JIT centers.
+  - Product from A and B goes into a consilidation center, then that gets forwarded to Retail Distribution Centers (RDC)
+- Transhipment or break-bulk centres: TL;DR: Splitter. Also may be called deconsolidation centers
+- Cross-dock centers. TL;DR: High throughput sorting facility
+  - A big, fat warehouse with many stuff in. Products A, B, C, D deposits and comes out to other machines.
+  - Can also think this is Anchorage, place where stuff comes in from Asia, and gets sorted and redistributed to America
+  - Can also think this is Memphis, place where stuff comes in from America, gets sorted and redistributed to America
+  - Design: "I" shaped best ($) for <150 inputs and outputs. "T" best for >100 and <150 IO, "X" best for >200 IO
+place something intermediary, like that one in Alaska to connect Japan and mainland America
+  - The idea is that buffer is minimal, and throughput is off the charts, like when you don't need chests in Factorio, you just need the damn conveyor belt. Typically they spend <24 hours, sometimes <1h for parcels.
+  - Also the idea is that trucks will have be full truckload (FTL, faster than light lol), rather than less than truckload (LTL) for conventional distribution system
+- Sortation centers. Wtf? What's the fucking difference between this and Cross-dock centers?
+- Reverse logistics centers
+- Public sector warehousing:
+  - Armed forces
+  - Third-sector, stock for natural disasters
+
+Warehouses can also be like DigitalOcean. Shared hosting or dedicated domain name. Also they take care of the minutia details
+
+Why pile things up?
+- Uncertain and erratic demand
+- Economies of scale
+  - Shipping gets cheaper
+  - Price of storing < price of shipping
+- Buffer for production shutdowns. Reasons:
+  - Vacation
+  - Machine maintenance
+  - Stock count
+  - Seasonal production, high seasonality, sport events
+- Increase production runs (which imply saving cost)
+- General buffer in production
+
+Good location?
+- Geographic, like Memphis or Anchorage
+  - Weather
+- Cost of land
+- Access to transport/logistic
+  - Ports, airports and spaceports
+- Labor
+- Funding
+- Existing building. Think, NUMMI of Tesla
+- Utilities
+- Up and down the supply chain
+- Local gov
+Samples:
+- Wuhan, Shenyang, Chengdu, Atlanta, Marseille for cheapest, <70$/m^2*yr
+- London Heathrow, 313$/m^2*yr
+
+
+
+
+Talk about econ here for a second:
+- Marginal cost, cost to serve 1 customer. Can be labor (cause more customer, more labor needed) or electricity
+- Fixed cost, costs for buying warehouses, land, etc.
+- Economies of scale, duh
+- Natural monopoly, scale goes up, price goes down. Always.
+  - Determining: ideal size, cost is minimized. If ideal size = whole market then it's a natural monopoly
+- !Natural monopoly, scale goes up, price goes down. After a point scale goes up, price goes up. Which seems weird that any industry is like this, if assuming that demand is infinite
+
+Square root rule: Reduction in stockholding (%) = [1-sqrt(proposed #warehouses / original #warehouses)] * 100. I have no idea why this equation and not something else. It does not even fucking have a sensible bound lol
+
+Online retail sales:
+- US, 2013: $262B, 13% annual rise, 8% of all retail
+- UK: 10 to 15% annual rise, 10% of all retail
+- China: 75% annual rise (wow)
+- Global, 2013: $1T
+
+Returning stuff, viewed purely in a negative light, drain 4% of revenue, https://blog.addi.fit/product-returns-management-ecommerce
+
+

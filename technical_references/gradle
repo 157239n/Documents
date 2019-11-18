@@ -1,0 +1,157 @@
+Cutting through all the Groovy bullshits
+
+Project class:
+- Build script configuration:
+  - apply(Map<String, ?>)
+  - buildscript(Closure)
+- Dependency management:
+  - dependencies(Closure)
+  - configurations(Closure)
+  - getDependencies()
+  - getConfigurations()
+- Property getter/setter:
+  - getAnt()
+  - getName()
+  - getDescription()
+  - getGroup()
+  - getPath()
+  - getVersion()
+  - getLogger()
+  - setDescription(String)
+  - setVersion(Object)
+- File creation:
+  - file(path: Object)
+  - files(paths: Object...)
+  - fileTree(baseDir: Object)
+- Task creation:
+  - task(arg: Map<String, ?>, name: String)
+  - task(arg: Map<String, ?>, name: String, Closure)
+  - task(name: String)
+  - task(name: String, Closure)
+  - Arguments:
+    - group: 'versioning' // groups when run gradle tasks
+    - description: 'Prints project version'
+Task class:
+- Dependency:
+  - dependsOn(tasks: Object...)
+- Action definition:
+  - doFirst(Closure)
+  - doLast(Closure)
+  - getActions()
+  - finalizedBy(task: Object)
+- Input/output data declaration:
+  - getInputs()
+  - getOutputs()
+- Properties getter/setter:
+  - getAnt()
+  - getDescription()
+  - getEnabled()
+  - getGroup()
+  - setDescription(String)
+  - setEnabled(boolean)
+  - setGroup(String)
+Properties:
+- project.ext.aProperty = "some value" // declare in ext {}, but access as normal
+- ext {someOtherProp = 1.0D}
+- Can put these inside gradle.properties for properties directly under project and not in an external
+
+Updating:
+- ./gradlew wrapper --gradle-version=5.4.1 --distribution-type=all
+- ./gradlew wrapper
+
+
+
+Samples:
+
+task("helloWorld", {
+    println("starting up helloWorld")
+})
+
+//helloWorld.dependsOn(/*another task*/)
+helloWorld.doLast({println("ending helloWorld")})
+
+for (int i = 0; i < 3; i++) {
+    final int finalI = i
+    task("grad$i", {})
+    tasks["grad$i"].doLast({println "inside grad" + String.valueOf(finalI)})
+}
+
+
+apply([plugin: 'java']) // or, can also be plugins {id 'java'}
+
+jar.manifest.attributes('Main-Class': 'org.kelvinho.todo.Main')
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.kelvinho.todo.Main'
+    }
+}
+
+version = 0.1
+sourceCompatibility = 11
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+    test {
+        java {
+            srcDirs = ["test"]
+        }
+    }
+}
+
+buildDir = "out"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation([group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'])
+}
+
+task wrapper (type: Wrapper) {
+    gradleVersion = '5.5.1'
+    // distributionUrl = '...'
+    // distributionPath = 'gradle-dists'
+}
+
+logger.quiet("something")
+ext.versionFile = file("version.properties")
+void readVersion() { // suppose file has major and minor properties
+    Properties versionProps = new Properties()
+    versionFile.withInputStream {stream -> versionProps.load(stream)}
+    versionProps.minor.toInteger() //...
+}
+
+
+
+
+import org.gradle.api.logging.LogLevel;
+
+class SimpleTask extends DefaultTask {
+    protected String message = null;
+    protected String recipient = null;
+
+    void sayGreeting() {
+        println(message + ", " + recipient);
+        println("${message} + ${recipient}");
+    }
+}
+
+tasks.register("hello") {
+    description = "simple hello";
+    doFirst {
+        println("before hello");
+    }
+    dependsOn(["hello3", "hello2"])
+}
+
+hello.doLast({
+    println("hello, ");
+    logging.level = LogLevel.INFO;
+    logger.info "some info"
+})

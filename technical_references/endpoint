@@ -1,0 +1,28 @@
+
+graph.facebook.com/v2.9/your-facebook-user-id/photos
+
+5 common sections in rest api reference documentation:
+- resource description
+- endpoints and methods
+- parameters
+- request example
+- response example and schema
+
+sample api endpoint docs: https://developer.box.com/en/reference/get-folders-id/#response-example
+also nice endpoint docs: https://developers.callfire.com/docs.html#introduction
+may be i'm just stressing out about this. Just do the simple text file thing, because this would takes way too long and it is just not worth it. May be later, then dig into this:
+- https://github.com/Redocly/redoc
+- https://redocly.github.io/redoc/
+- https://swagger.io/
+
+also some attributes like this are nice:
+- sorting: GET /companies?sort=asc
+- filtering: GET /companies?category=banking&location=india
+- searching: GET /companies?search=Snowden
+- pagination: GET /companies?page=23
+
+POST /campaigns/{campaign_id}/actions/pause
+
+path params
+query params
+body params

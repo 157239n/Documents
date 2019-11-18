@@ -1,0 +1,171 @@
+
+required components in a mail server:
+- Mail Transfer Agent, handles SMTP traffic:
+  - send mail from users to an external MTA
+  - receive mail from an external MTA
+  - Postfix, Exim, Sendmail
+- Mail Delivery Agent/Local Delivery Agent, receives mail from MTA, places in user's mailbox
+  - Formats: mbox, Maildir. Each MDA supports specific mailbox formats, determines how messages are stored on the mail server
+  - Postfix, Dovecot
+- IMAP and/or POP3 Server
+  - Protocols, duh, used by mail clients. IMAP: cache, multithread. POP3: simple, don't cache
+  - Courier, Dovecot, Zimbra
+
+add components:
+- spam filter
+  - SpamAssassin
+- antivirus
+  - ClamAV
+- webmail
+  - Gmail, Outlook, the interface, Roundcube, Citadel
+
+Alternatives to not doing this:
+- Google Apps
+- Zoho
+- FastMail
+- Gandi
+- Microsoft Office365
+
+mail ports, more details: https://www.arclab.com/en/kb/email/list-of-smtp-and-imap-servers-mailserver-list.html:
+- smtp (outgoing), sometimes 465, sometimes 587:
+  - non-encrypted, AUTH, 25/587
+  - tls, StartTLS, 587
+  - ssl, SSL, 465
+- imap (incoming), always 993:
+  - non-encrypted, AUTH, 143
+  - tls, StartTLS, 143
+  - ssl, SSL, 993
+- just give me the ports: 25, 465, 587, 143, 993
+- just give me the container: docker container run -it --name mail --publish 25:25 --publish 465:465 --publish 587:587 --publish 143:143 --publish 993:993 --volume /dockerVolumes/mail:/hostVolume ubuntu:latest /bin/bash
+
+packages, for typical entry:
+- postfix
+- postfix-mysql
+- dovecot-core
+- dovecot-imapd
+- dovecot-lmtpd
+- dovecot-mysql
+
+commands:
+- docker: docker container run -it --name mailServer --publish 465:465 --publish 587:587 --publish 993:993 --volume /dockerVolumes/mailServer:/hostVolume ubuntu:latest /bin/bash
+
+
+
+
+
+
+mail.kelvinho.org
+
+usermail, mailpassword, db: servermail
+
+virtual domains:
+- id auto
+- name (50)
+
+virtual users:
+- id auto
+- domain_id -> virtual_domains.id
+- password (106)
+- email (120)
+
+virtual aliases:
+- id auto
+- domain_id -> virtual_domains.id
+- source (100)
+- destination (100)
+
+
+
+INSERT INTO `servermail`.`virtual_domains`
+(`id` ,`name`)
+VALUES
+('1', 'kelvinho.org'),
+('2', '157239n.com'),
+('3', 'inspire-concept.com');
+
+INSERT INTO `servermail`.`virtual_users`
+(`id`, `domain_id`, `password` , `email`)
+VALUES
+('1', '1', ENCRYPT('kelpassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))), 'kel@kelvinho.org'),
+('2', '2', ENCRYPT('ynespassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))), 'ynes@157239n.com'),
+('3', '3', ENCRYPT('longpassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))), 'long@inspire-concept.com');
+
+
+INSERT INTO `servermail`.`virtual_aliases`
+(`id`, `domain_id`, `source`, `destination`)
+VALUES
+('1', '1', 'quang@kelvinho.org', 'kel@kelvinho.org');
+
+
+
+/etc/dovecot/private/dovecot.key
+/etc/dovecot/private/dovecot.pem
+
+
+kay I give up, here's where I've gotton to:
+We need to create the /etc/dovecot/dovecot-sql.conf.ext file with your information for authentication:
+nano /etc/dovecot/conf.d/auth-sql.conf.ext
+
+
+
+
+
+goals for mail:
+- setup a deadass simple mailserver at u4.kelvinho.org where outgoing mail is possible
+- same thing, but looks legit
+- setup a 2 way mailserver where 2 way is possible
+- same thing, but looks legit
+
+what I imagine how it all fits together:
+1. Have a list of legit email from the domain
+2. Have a service listening to input port for incoming email or email confirmation
+3. Have another service sending out mail to other mailservers for outgoing mail
+4. Then for however you would do this, make sure it gets up to the world's current standards
+
+Also it seems like I only need the mail transfer agent, which is the main service that's going to listen in to ports and stuff, then the rest I can implement by myself.
+
+
+
+
+
+Notes from current:
+
+also may be just do email locally? how hard can that be? Apparently, really, really hard, and I still don't understand the core of it
+postfix only, for outgoing mail: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-14-04
+not doing this: https://www.digitalocean.com/community/tutorials/why-you-may-not-want-to-run-your-own-mail-server
+
+
+
+right, the mailing stuff, make sure I can gain control over everything before putting it into production. If I don't do this then it will, again, be a fucking pain in the ass to recover.
+
+Get on with the mail stuff. The mail stuff absolutelt must be over by tonight. And that's a lot of work. Dammit. Also, the magento thing and laravel using phpstorm
+
+SASL: Simple Authentication and Security Layer
+
+virtual_mailbox_domains
+virtual_mailbox_maps
+virtual_alias_maps
+
+
+
+
+
+kay, so plow through all of the mailing stuff. Then just stuff all of them into an image then boot stuff from there, changing key values only.
+- https://www.digitalocean.com/community/tags/email?type=tutorials
+- https://www.digitalocean.com/community/questions/how-to-set-up-email-on-digitalocean-droplet
+- https://www.digitalocean.com/community/tutorials/why-you-may-not-want-to-run-your-own-mail-server
+- https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassassin
+- https://www.linode.com/docs/email/postfix/
+
+
+
+Kay, so read through these and try to at least understand them:
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-a-postfix-e-mail-server-with-dovecot
+- https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-18-04
+- https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassassin
+
+mail stuff needs to have certificate issued by a CA too, I can't get away from it: https://gist.github.com/mrothNET/cb6f313e9cbe896f3e0fdec80ad2f3fa
+
+Just do this bitch: https://github.com/tomav/docker-mailserver
+
+Also figure out migrations too, so that the old viruses can still be effective. Then I can sort of know what it's like to do actual migrations

@@ -1,0 +1,190 @@
+Well, not advanced, just out of scope for me currently, and I might not want to touch them a lot because they are distracting to my goal, but fun nonetheless
+
+guide to everything dev:
+- http://www.schrockguide.net/
+- https://techdevguide.withgoogle.com/
+
+- List of conditions: https://www.everydayhealth.com/conditions/
+
+X-team (employment and shit, boring now, but may find interesting later on): https://x-team.com/join/?utm_source=youtube&utm_medium=sponsor&utm_campaign=techlead-remote
+
+Python as a DSL:
+- https://github.com/pyparsing/pyparsing
+- https://stackoverflow.com/questions/1547782/mini-languages-in-python
+
+Also about the hacking: http://security.cs.rpi.edu/courses/binexp-spring2015/lectures/
+Like hackthissite, "basics of playing wargames": http://overthewire.org/wargames/bandit/
+
+system administrator looks fun, but side tracked from my core values, but see into the courses required
+
+Writing drivers:
+- https://stackoverflow.com/questions/2222763/how-should-i-get-started-on-writing-device-drivers
+- http://csapp.cs.cmu.edu/
+
+"setting up ci/cd pipeline"
+primers:
+- Linux admin: https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/
+- Cloud engineer: https://www.reddit.com/r/aws/comments/8iok0i/so_you_want_to_learn_aws_aka_how_do_i_learn_to_be/
+
+Friend's cubesat: https://activities.tjhsst.edu/cubesat/#aboutus
+
+document complex carefully and publish it
+also publish all of my current packages
+which is Progress and Complex only tbh. Matrix, KNet, Graph2D can be candidates, but they are not refined enough. There are also potential gems and ideas inside SeleniumTest, Lisp and StateMachines that I might continue to work on later
+also pick up again on PassiveCircuitSim. Plug in the beta rule for transistors to see if it can solve it
+
+
+Web server testing guide: https://www.owasp.org/images/5/56/OWASP_Testing_Guide_v3.pdf
+
+Path from now that is shelved:
+- learn C#
+- learn Node, primer: http://work.haufegroup.io/node-js-primer-for-old-school-developers/
+- also look over those series of slides taken from mit ocw about xv6 operating system. Heard it's like Unix (well, everything is lol) but for demonstration to students
+- finish Hacking - Art of Exploitation
+- make an effort in shellcoder's handbook
+- finish transition to Java post
+- learn about windows powershell
+- learn basics of quantum computers
+
+Now that keras is understandable, dig into how is the compile method taken into account?
+
+Series of blog to write:
+- (i don't know enough) How the hell can computers work at all?
+- (done) How the hell can programs work at all? Are they using magic? (building an Lisp interpreter)
+- (too short) What's the deal with all different programming languages?
+- (done) Processing to Java
+- (i don't know enough) How does the web works/How to make a web, explain like I'm 5 (include things like the juliasetsbot)
+- (already done modsim) Science on computers (introduce models and that kind of stuff)
+- (too short/i don't know enough) What the hell is a quantum computer (explain and include examples of teleporting by using the image of large matrix multiplication)
+- (too short? may be? may be not?) Why do we care about Science
+
+Write a blog post about setting up a server and the making of juliasetsbot
+Create a gravitational field bot, where objects move like normal, but initialized randomly. Then the objects will light up for a few short seconds so that we can capture the dynamics
+
+JSP, ASP, PHP benchmarks
+
+Packaging python: https://marcobonzanini.com/2015/07/01/how-to-develop-and-distribute-python-packages/
+
+GTK+ GUI
+
+See also how to develop GUI applications in the main 3 languages
+
+All SSL, TLS crap from Symantec: https://www.websecurity.symantec.com/security-topics/what-is-ssl-tls-https
+
+cisco ccent guide for networking stuff
+
+Registry stuff (that huge hash map in windows, not as in registry and registrars):
+- https://www.howtogeek.com/school/using-windows-admin-tools-like-a-pro/lesson5/
+- https://www.howtogeek.com/370022/windows-registry-demystified-what-you-can-do-with-it/
+
+AWS Certified Security - Specialty Exam
+
+
+
+Interactive console application:
+- Text IO: https://text-io.beryx.org/releases/latest/
+- Lanterna: https://github.com/mabe02/lanterna
+
+Cisco Certified Network Associates, it's like a certification
+
+servers:
+- web
+- print
+- virtualization
+- file (not ftp)
+
+Check whether algoexpert.io is worth the buy
+
+https://www.tutorialspoint.com/rxjava/index.htm
+
+Quantum instruction set: https://www.youtube.com/watch?v=ZN0lhYU1f5Q
+
+In The Beginning Was the Command Line
+
+Eli the computer guy: Ramblings and Philosophy
+
+AWS and Azure (completely different), Linode, Digital Ocean
+
+amazon web services certified
+
+Games to try:
+- Cities: Skyline
+- Civ 5
+- Destiny
+
+dr strangelove
+
+Manufacturing:
+- Making an injection mold: https://www.youtube.com/watch?v=YrbQIN2TBhM
+
+laser cutting stuff, and also integration between spaceclaim and keyshot:
+- https://www.instructables.com/id/Turn-Images-Into-DXF-Files-for-Laser-Cutting/
+- https://www.youtube.com/watch?v=LAakSolos1E
+
+sysadmin security best practices:
+- https://www.sans.org/reading-room/whitepapers/bestprac/system-administrator-security-practices-657
+- https://www.welivesecurity.com/2016/07/29/10-security-commandments-every-sysadmin/
+- https://www.reddit.com/r/sysadmin/comments/2vkrno/going_from_sysadmin_to_security/
+
+Pretty good privacy: https://www.openpgp.org/
+
+Look over guava and apache commons io
+
+legal: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)
+
+R exercises:
+- https://www.r-exercises.com/
+- https://www.rstudio.com/online-learning/
+
+HVAC systems:
+- https://en.m.wikipedia.org/wiki/Cooling_tower
+
+Documentaries:
+- bang goes the theory
+- Pioneers in aviation documentary
+    - The Early Years
+    - The War Years
+    - The Race to the Moon
+- South of the border
+- How to build
+    - a satellite
+    - a super car
+    - a super jumbo wing
+
+computational fluid dynamics
+try to simulate truss analysis myself, to get the feel for structural simulation: https://www.youtube.com/watch?v=-qms9xt3sbQ
+also simulate velocity analysis: https://www.youtube.com/watch?v=jzNik6PEKG8
+also turbulence: https://www.youtube.com/watch?v=G32LXeCx7H0
+also failures: https://www.youtube.com/watch?v=qbv2rOEMyiA
+cells at work: http://www.phimmoi.net/phim/khi-cac-te-bao-lam-viec-6976/download.html
+
+try to implement this idea: https://www.youtube.com/watch?v=09mb78oiPkA&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi&index=10 at around 30:00
+
+get solid on mechanical and all types of simulations again
+
+go over ci/cd: jenkins, drone.io, circleci
+
+AI and logical induction, difficult to wrap my head around: https://www.youtube.com/watch?v=gDqkCxYYDGk
+
+falcon 9 model tuning and simulation (BPS space): https://www.youtube.com/watch?v=Bxu2_aIEvpo
+
+again on the game about dyson sphere
+
+CI/CD pipeline:
+- https://semaphoreci.com/blog/cicd-pipeline
+- https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch
+- https://www.plutora.com/blog/understanding-ci-cd-pipeline
+- https://codefresh.io/continuous-integration/continuous-integration-delivery-pipeline-important/
+- https://testcollab.com/blog/ci-cd-pipelines/
+- https://www.excella.com/insights/8-ways-to-keep-your-continuous-integration-and-deployment-cicd-pipeline-working-for-you
+
+Continuous delivery: reliable software releases through build, test, and deployment automation, Jez Humble
+
+https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=佐藤
+
+Writing applications (I just get too lazy to do it):
+- note.kelvinho.org
+- scratch.kelvinho.org
+
+
+

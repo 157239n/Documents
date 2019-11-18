@@ -84,18 +84,12 @@ Dive deep into starlink's business case:
 - https://www.reddit.com/r/Starlink/comments/ayec7p/starlink_faq_2019_edition/
 - https://www.reddit.com/r/Starlink/
 
-Py: https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started/4
-
 Global thermostat, Prometheus, Carbon engineering
-
-GPG apache build verification: http://httpd.apache.org/dev/verification.html
 
 Extra credits:
 - Money: https://www.youtube.com/watch?v=GKtNuzakzMA&list=PLhyKYa0YJ_5CL-krstYn532QY1Ayo27s1&index=3
 - Games: https://www.youtube.com/watch?v=lHcTKWiZ8sI&list=PLhyKYa0YJ_5AAbhb9A_CxOEGsdORotH48
 - Politics: https://www.youtube.com/watch?v=Xm-L9cIRdmY&list=PLhyKYa0YJ_5BMjoxHASNb0uGK_XQrUx9D
-
-More SSL/TLS details: http://httpd.apache.org/docs/2.4/ssl/ssl_intro.html
 
 For dummies: https://www.goodreads.com/list/show/2683.For_Dummies_Series
 - Managing money: file:///C:/Users/Lenovo-1/Downloads/(For%20Dummies)%20Benna%20T.,%20Bucci%20S.R.,%20Caher%20J.P.,%20Caher%20J.M.,%20Caverly%20N.B.,%20Economy%20P.,%20Hungelmann%20J.,%20Lucas%20J.E.,%20Lyons%20S.G.,%20Munro%20M.A.,%20Newmann%20B.W.,%20Reed%20M.,%20Simon%20J.S.,%20Sindell%20K.,%20Taylor-Hough%20D.,.pdf
@@ -130,8 +124,6 @@ andrew stuff: https://www.coursera.org/learn/machine-learning
 So what's the carrying capacity for the human race?
 
 Now it kinda feels the whole field is a bit toxic, because like, it appears that we have exceeded our carrying capacity and further advocacy might as well tank the world's economy
-
-"pentesting and auditing tools"
 
 green new deal: https://www.youtube.com/watch?v=GxIDJWCbk6I
 
@@ -181,8 +173,6 @@ what I understand now is that a plant can just spring up easily, and I mean real
 
 vn energy outlook: https://ens.dk/sites/ens.dk/files/Globalcooperation/Official_docs/Vietnam/vietnam-energy-outlook-report-2017-eng.pdf
 
-answer to yt comment about nuclear
-
 data series on computerphile: https://www.youtube.com/watch?v=8GIbOJtUw8w
 
 other programming books: https://www.packtpub.com/all-products?released=Available&page=3
@@ -213,12 +203,7 @@ i guess what i am looking for is "manufacturing and supply chain", which nha's b
 
 how stuff works in life in general: https://www.artofmanliness.com/tag/heading-out-on-your-own/
 
-what's the deal with sheet metal?
 archicad
-
-fourth manufacturing revolution. Currently, seems like a fad, but dig into it once more
-
-how about horizontal and vertical integration?
 
 what's the deal with hadoop
 
@@ -241,8 +226,6 @@ Manufacturing:
 
 also see over how public talking works, what venues I can penetrate into
 
-should I stop fearing starting a company?
-
 how waste management works
 also how to futureproof myself
 how to contract out for a whole factory?
@@ -253,8 +236,6 @@ go over android again, also how bluetooth works on that gig a year ago
 about the climate stuff. What resources do I have an infinite amount of that I can rely on? I have been taking electricity for granted
 
 may be getting back into the finite element analysis thing if I have time: https://www.youtube.com/watch?v=txk-VO1hzBY
-
-oh hey, check again on daliborfauny or something like that who makes pixie tubes for a business case
 
 also read on structures of revolutions
 for the long future, again, dyson swarm and solar panels on orbit
@@ -271,8 +252,6 @@ also see how can you program those huge robot arms from japan
 also, may be go over really quickly the economic vids on khan academy, they have a lot of content and possibly gems that I can utilize
 
 and then finish the freakonomics book. Why do I feel like that book is kinda more anecdotal and won't actually introduce to the big picture.
-
-also all of the functionalities in digitalocean, discover all of them. Stuff like volumes, because like, it seems something like K8S would control and manage the nitty gritty details of volumes and networks, not me managing them myself. But that seems to involve too much automation and not so much that of content so it might be a pipe dream.
 
 what's the deal with chemtrails?
  
@@ -309,7 +288,7 @@ Again, try to make an ASIC, application specific integrated circuits. Try to get
 https://en.wikipedia.org/wiki/Estuary
 https://en.wikipedia.org/wiki/Brackish_water
 
-okay, so investigate the idea of a web app that takes and distributes wasted food in america, cuz that seems to be the best thing I can do right now. Logistics may cost more than the food itself. Heard this is a good resource for industry way of doing things: http://foodaround.org/. Sort of a start up in the same arena: https://food.cloud/. Also see again how that android app
+investigate sharing excess and their model
 
 Primer channel about econ looks good too
 
@@ -337,8 +316,6 @@ Again, how can contracts be reinforced?
 
 Also how does the connection between countries work? How can one company be international?
 
-try to set up an e commerce site
-
 world energy council
 
 how do you actually deal with soil erosion?
@@ -359,14 +336,8 @@ some other reports:
 
 effective java: https://www.youtube.com/watch?v=V1vQf4qyMXg&feature=youtu.be&t=22m24s
 
-restful origins (dissertation, suspect I can gain a lot by reading this): https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
-
-tuberculosis?
-
 seems like nice vids about econ: https://www.youtube.com/user/MrUniversity/playlists
 imf vids, short, seems good: https://www.youtube.com/watch?v=Igkpbqb0uXA&list=PLmYAE4wV1YQwWtLOxgtx33DxPcfDfYZ3h
-
-Also make the energy's timelines pluggable
 
 write a post explaining the complexities of gradle together with CI/CD and docker, and compare that to the financial infrastructure of today. Also related is how all of these abstractions are just to deal with the shear scale of things we have built our civilization with. But really, the roots of everything is really, really simple. Also mention the mind-blowing abstractions of things like first-order functions.
 may be this is more about abstraction more, and a shadow of it: modernization
@@ -389,8 +360,6 @@ compile a list of interesting points about climate change to talk with that libr
 go through this, and consider this done: https://www.youtube.com/watch?v=ImtZ5yENzgE
 
 go over econ stuff once more
-
-finish wordpress today and message jonas lol
 
 again, get into manufacturing
 
@@ -431,12 +400,6 @@ diamandis: https://www.diamandis.com/blog/podcast-episode-75-private-space-explo
 
 https://developers.google.com/identity/protocols/OAuth2
 
-so, i've got thien's computer, now try to steal cookies from him and go into his facebook account
-
-https://computer.howstuffworks.com/3dgraphics1.htm
-
-again at this bitch: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
-
 p5. Also they have a few examples pulling from earthquake databases, so look into that:
 - https://p5js.org/download/
 - https://p5js.org/reference/#/p5/httpGet
@@ -444,19 +407,10 @@ p5. Also they have a few examples pulling from earthquake databases, so look int
 - http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
 
 ethical hacking, 15 hours: https://www.youtube.com/watch?v=3Kq1MIfTWCE
-firmware reversing: https://www.youtube.com/watch?v=GIU4yJn2-2A
 
 also I feel like I need to study physics rigorously now, with the state of mind that I've got
 
-get a lot of documents online (that's for the notes thing, possibly for myself only)
-
-template ssn used: 901 23 4567
-
-download virtual box and test things out with the virus
-
-I feel like the way the machine learning stuff works, object detection and such, are usually located on a server, and the user sends info up there and it sends data back. That way, apps on someone's phone doesn't need much preconfiguring and you're not sending the entire weights and network across. I guess this because of "TensorFlow Object Detection API" found here: https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html, so check that out. The other option is to use a native method to run on the client's phone or something, which is undesirable, and doesn't have the full capability of linux
-
-learning.intersystems.com
+https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html
 
 so, applications:
 - that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
@@ -467,28 +421,14 @@ so, applications:
 - then the story of energy
 
 plow through android once more, to get the philosophy and the way of doing things
-now, plow through all the flutter shits, then may be enlighted then.
-
-also I believe that software in use for stuff like telescopes, they are in lack of technical expertise, so look over and see if I can help with anything
 
 also what's the deal with peer to peer networks
 
-rest service with expressjs??
-
 - read more about how these molecules are formed, then simulate that
-
-question about java structures:
-- https://junit.org/junit4/faq.html
-- https://docs.gradle.org/current/userguide/userguide.pdf
-- https://stackoverflow.com/questions/13489388/how-does-junit-rule-work
 
 talks on rendering:
 - https://www.youtube.com/watch?v=RdN06E6Xn9E
 - https://www.youtube.com/watch?v=mQ2KTRn4BMI
-
-timezone api?
-
-deal with spark stuff, early november stuff
 
 get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
 
@@ -496,8 +436,6 @@ with the forces in check, see if I can simulate beams being stressed
 
 carbon xprize
 TerraPower, travelling wave reactor
-
-https://www2.flightclub.io/ Also see what kind of tech he's using here?
 
 methane stuff: https://www.youtube.com/watch?v=62VXwjT-csQ
 
@@ -511,17 +449,11 @@ wtf is this https://americas.ramboll.com/projects
 
 how about that world science festival thing brian greene hosted
 
-so how exactly does the processing foundation blends opengl into processing? opengl is the C++ with graphics card thing, while processing is a JVM thing.
-
-for all of these simulations to be real, I really have to tackle 3d rendering, ray marching and the like. So dig into that. First make a standardized mirror model and call it optics and really refine the 2d geometries. Then 2d ray marching, so that wolfenstein level is reached. Then expand it into 3d models, and then optics in 3d.
-
 see the interface between python and other data packages, how the interfaces work
 
 the simulations, implement locality with hashmap stuff
 
 I still don't understand the advantages of nginx over something like apache. It seems like to me that nginx people gets excited about fastcgi, and that nginx serves static pages really, really fast. But like, with all of the complexities introduced by things like oauth2, and cms, is it even worth it? Like, yes, you serve static pages faster, but who serves static pages nowadays anyways? https://www.plesk.com/blog/various/nginx-vs-apache-which-is-the-best-web-server/
-
-Also how're the different stacks, js ones work? Do they use a specialized webserver? Or just their inner implementation listens for ports and just do it from there? Because like, it seems nowadays that programs just listen in and clamp to a port indefinitely. If that's the case then the metrics about webserver markets would be seriously skewed.
 
 Then read over those 2000 pages magento, then understand the existing apis for the big picture.
 
@@ -529,41 +461,21 @@ Also look over the internal documents to see if there's something fun.
 
 simulate boyles law for chi, and the sterling engine where air is forced on the side. Also think about how would you do forces on a beam. Do this, or a collab with her is impossible.
 
-And goddamnit, I still have physics simulation to do. I absolutely must do this, in order to collab with Chi and to kind of pushing myself to other fields. And goddammit, I still need to go through the state of the world rite now.
-
-editing genomes too, damn
-
-docker networking:
-- https://docs.docker.com/v17.09/engine/userguide/networking/
-- https://docs.docker.com/v17.09/engine/userguide/networking/default_network/container-communication/
-- https://docs.docker.com/network/network-tutorial-standalone/
-- and of course, that docker deep dive book
-
-then after docker networking, i can really understand the swarm stuff, and then K8S stuff.
-
 stocks again, check out docs for robinhood
 
-seems nice, go over wp over here: https://www.youtube.com/user/MattGeri/playlists
+seems nice, go over wp over here: https://www.youtube.com/user/MattGeri/playlists. Again, the point of all this is to be able to port over kuche. Once I've done that then no need to go over wp. But may be watch the original series once more, to get the intuition behind that.
 
 buy chi and dan some stuff from spacex store
 
 and, learn nodejs in a few hours so I can sort of show dan what's that about. Seems like dan's not really following my path, and she kinda just want things serendipitously, and that's okay too. And by doing this, hopefully I can be comfortable in adapting to new tech really fast and deploy these things even faster. But again, goddammit, I still need to understand the firmware interface.
 
-and to deal with all the endpoint stuff. Man, not just rest, but the whole fucking convention around them too. Stuff like authentication servers, and integrating with CDNs, it's all new territory to me. Goddammit, why do I have so much fucking stuff to work on. If I don't get a clearance on the nodejs part, and the simulation for chi part, then I have to seriously reconsider the big plan again.
-
 2 books:
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 
-docker certified associate
-
 specific use case of wordpress in spaces cdn: https://www.digitalocean.com/community/tutorials/how-to-speed-up-wordpress-asset-delivery-using-digitalocean-spaces-cdn
 
-there's a part in me that's uncomfortable about relying on black magic of LoadModule. I mean, does php always have to go with apache? So, figure out how nginx works and try to decouple php and apache. Again, I know how it works. If you were to separate the apache binary into the apache and php binaries, then it's exactly the same as running CGI. So, to speed things up, this is quite unacceptable.
-
 play sprocket again
-
-the virus thing, but with mail and do things automatically too. That would be so, so dope.
 
 dkim eli5
 
@@ -571,168 +483,25 @@ dkim eli5
 - port over 157239n & connect it to a cdn
 - simulation
 
-I guess the way to use a cdn now is to get the service, the service will query and fetch a bunch of static content, then it will give me a file, a htdocs file, or some file to enter directly to the configurations, to rewrite the locations to other places.
-
-curl --form "param1=value1" --form "param2=value2" --form "fileupload=@my-file.txt;filename=desired-filename.txt" endpoint
-
-also do this so that if I were to change my hosting location, I can still maintain the old hosting location for a while and every virus instances will naturally go to the new hosting location. This is now possible. Nah wait, may be think into this a little more?
-
-links to read:
-- https://www.php.net/manual/en/features.session.security.management.php
-
-iptables again: https://www.digitalocean.com/community/tutorials/how-to-list-and-delete-iptables-firewall-rules
-
 economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
-
-again with git stuff
 
 keto diet?
 
-also backing up SU.vbs too, to make sure it doesn't go away
-
-so, databases, if you want to update the database then export it as sql in phpmyadmin (figure out how to do this automatically) to generate a sql file, then update the startup folder. This is kinda the same with mounting mysql data location to a volume, but less chance for corruption?
-
-"choose your battles"
-
-"if you do not take my money, i would invest all of it in your competitors - masayoshi son"
-
-SoftBank Vision Fund, dig into this, and the deal with wework too
-
-- https://www.google.com/search?sxsrf=ACYBGNTaFHCNieztl9RDLZyV3zPvfJ1gBg%3A1571326879370&source=hp&ei=n4uoXZanE4Pv_QaA_4bgBQ&q=know+enough+to+be+dangerous&btnK=Google+Search&oq=molecular+dyna&gs_l=psy-ab.1.1.0i131j0l9.61204.63558..67596...0.0..0.83.896.14......0....1..gws-wiz.......35i39j0i67j0i131i67.CgTTACRv85E
-- https://www.psychologytoday.com/us/blog/intentional-insights/201710/knowing-just-enough-be-dangerous
-- https://ell.stackexchange.com/questions/124321/what-is-the-meaning-of-the-phrase-to-be-dangerous
-
-how about curling binaries? That would actually be pretty dangerous
-
-more curl in-depth: https://www.pair.com/support/kb/paircloud-downloading-files-with-curl/
-
-also how fast is php? it seems really, really dynamic. There must be some overhead to this?
+SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I can attack son
 
 may be get into (like hack, not applying) whyfit, just for fun?
-
-also masquerading inside chrome's directory or a bunch of other locations, to avoid detection. Also check by hand permissions of these folders to make sure I can write in them. Also learn about windows permission too, like their model is completely different from unix-based stuff
-
-after the stealing file attack is possible, see what's the actual limit on transporting this to the web server? is it the limit set by php.ini? is it the limit set by how much memory I have, or is it much lower than these limits? Say I want to spoof files over. How does that work?
-
-figure out a rough estimate of the stray virus file size if i don't clear it ever so often.
-
-okay, so may be just bundle the virus only, not including the 2 other tiny project
 
 ibm transact
 
 how regulations and regulation authorities
 
-add timezones, but make it real simple. Also make it fast? It's easy to do it, and I think I can do it in 30 minutes. And all the other attack packages I think can be done by tmr. Then get on with the mail
-
-
-think about a path for teaching chi cs. And this time don't mess it up
-history of computing
-- crash course cs
-- os history
-- c++ and the compiling process
-- 
-
 https://www.youtube.com/watch?v=w3_0x6oaDmI
 https://www.youtube.com/watch?v=Kt_JePg86b8
-
-also add attack to be able to write file to the host computer. Like, the user can upload a file, specify a location, then download that file at that location. Well that would imply curling binaries right? So dig into whether this is even possible or not
-
-add note to users about time and timezones
-
-send kill signal and maintain that signal when deleting a virus
-
-SIDS, security identifiers, added to ACLs, access control lists
-permissions:
-- https://www.howtogeek.com/72718/how-to-understand-those-confusing-windows-7-fileshare-permissions/
-- https://www.online-tech-tips.com/computer-tips/set-file-folder-permissions-windows/
-- https://www.dell.com/support/article/us/en/04/sln156352/understanding-file-and-folder-permissions-in-windows?lang=en
-
-dig into icalcs command, have something to do with permissions
-
-how about locking the directory, to prevent deletion by spawning processes that sort of listens to a directory forever? That would be interesting, but would be way too time consuming to implement though
-
-"%~pd0..\..\data"
-
-so, tasks for today, now that internet doesn't work:
-- add attack package power, which will include shutdown and restart
-- implement timezones
-- implement exploreDir and collectFile
-- physics for chi
-- add a subdomain that points to u2, then bypass the whole ssl stuff
-
-tasklist:
-- image name, smss.exe, svchost.exe
-- pid, 0, 4, 1372
-- session name, services, console
-- session, 0, 1
-tasklist /v:
-- image name
-- pid
-- mem usage
-- status unknown
-- user name
-- cpu time
-- window title
-
-tasklist /fo csv
-
-taskkill {/pid 9214 | /im image name | /fi ???}
-
-the window won't refresh though
-
-devcon, don't have on work computer, but still an interesting possibility
-
-also add expand all or collapse all option to directory attacks
-net command too, but I still don't understand these, so may be for later?
-
-and apparently, batch can also print stuff, like, actually send signals to the printer
-
-may be adding filters would be nice:
-- Has window name
-
-how about adding easy and hard before an attack package?
-
-attrib???
-tree, not much use though
-title, sets title
-
-also for monitoring commands, like monitoring tasklist
-
-again, wtf is file attributes? I mean, "%%~a?"
-
-also control volume from the virus? Now these new capabilities are sort of ambitious
-
-publish to github
-
-Okay feeling guilty as fuck for spying on chi. Like, feels exactly the same way as ynes, cause like, I feel like I'm invading her privacy. So may be look around at all the stuff of hers, then tell her about this. She deserves the right to know this. I'm not as bad as the NSA. Okay, so when I'm done, ask to meet with her in person and explain these things in depth and make sure she understands everything about it.
-
-a list of candidate host locations
-
-inform user that cancelling an attack does little while the virus is active
-
-so, only 3 stuff left to do: task monitoring, with tasklist and taskkill, timezones, and uptime graph. Do the timezone first, then uptime graph, then task monitoring
-
-terminator 3 looks fun
 
 learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
 
 see how this guy can press buttons on the screen: https://www.youtube.com/watch?v=fURH8z3hb6Y
 
-litigation
-antithesis
-salivating
+now, suppose that I can't do the mail stuff on my own. No bullshit, the cost would be huge, and for what? So, do all of that once I'm free from here
 
-1 bil telephone and internet sessions simultaneously per one of these devices, collect 125GB a second
-visceral
-skulk
-subpoena, "there is a strong chance we'll be served with a subpoena if we go back"
-"they are very nervous - worried about an injunction"
-"they are getting cold feet about publishing names of the telecoms collaborating"
-GCHQ Bude, UK
-also apparently, the us gov can revoke snowden's passport. How does this work? I thought passports are inherently uncancellable, if that's a word
-Also why Moscow then Ecuador? Jullian Assange used to go there to get asylum too
-brussels, belgium
-
-the ida chen stuff this year on climate
-Dagger Complex, Germany
-ramstein air base, germany
+may be I should do the planning when there's no internet and currently being quarantined and watched and stuff. Then when I got back, the documents are already very clear and the implementation can be really, really quick.

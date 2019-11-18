@@ -1,0 +1,95 @@
+
+send kill signal and maintain that signal when deleting a virus
+
+SIDS, security identifiers, added to ACLs, access control lists
+permissions:
+- https://www.howtogeek.com/72718/how-to-understand-those-confusing-windows-7-fileshare-permissions/
+- https://www.online-tech-tips.com/computer-tips/set-file-folder-permissions-windows/
+- https://www.dell.com/support/article/us/en/04/sln156352/understanding-file-and-folder-permissions-in-windows?lang=en
+
+dig into icalcs command, have something to do with permissions
+
+how about locking the directory, to prevent deletion by spawning processes that sort of listens to a directory forever? That would be interesting, but would be way too time consuming to implement though
+
+so the plan is to have multiple instances of these homes. But how are they supposed to communicate to each other when they possibly don't even know the location of one another.
+
+Relying in a predetermined location to report the variables is vulnerable and undesirable
+
+so, tasks for today, now that internet doesn't work:
+- physics for chi
+- add a subdomain that points to u2, then bypass the whole ssl stuff
+
+tasklist:
+- image name, smss.exe, svchost.exe
+- pid, 0, 4, 1372
+- session name, services, console
+- session, 0, 1
+tasklist /v:
+- image name
+- pid
+- mem usage
+- status unknown
+- user name
+- cpu time
+- window title
+
+tasklist /fo csv
+
+taskkill {/pid 9214 | /im image name | /fi ???}
+
+the window won't refresh though
+
+devcon, don't have on work computer, but still an interesting possibility
+
+also add expand all or collapse all option to directory attacks
+net command too, but I still don't understand these, so may be for later?
+
+and apparently, batch can also print stuff, like, actually send signals to the printer
+
+may be adding filters would be nice:
+- Has window name
+
+attrib???
+tree, not much use though
+title, sets title
+
+also for monitoring commands, like monitoring tasklist
+
+again, wtf is file attributes? I mean, "%%~a?"
+
+also control volume from the virus? Now these new capabilities are sort of ambitious
+
+publish to github
+
+Okay feeling guilty as fuck for spying on chi. Like, feels exactly the same way as ynes, cause like, I feel like I'm invading her privacy. So may be look around at all the stuff of hers, then tell her about this. She deserves the right to know this. I'm not as bad as the NSA. Okay, so when I'm done, ask to meet with her in person and explain these things in depth and make sure she understands everything about it.
+
+a list of candidate host locations. But like, I can just do a recursive search, test permission, and if permission works, count up a counter, explore that directory and repeat, until the counter reached a random but pre-specified number, then that directory is selected. But like, that still is not random, assuming the first random generator is truely random. So, scans for permitted child directories, then pick a random directory among them and get into that. Then repeat again, for a random number of times from 0 to 8. That eliminates some deterministic behavior, but still sort of biased towards the earlier directories. But I guess this is sort of a price to pay. If I try to fix that with hierarchical-distributed randomness, that would kill the layer-distribution randomness, so pick one or another.
+
+inform user that cancelling an attack does little while the virus is active
+
+so, only 3 stuff left to do: task monitoring, with tasklist and taskkill, timezones, and uptime graph. Do the timezone first, then uptime graph, then task monitoring
+
+also backing up SU.vbs too, to make sure it doesn't go away. This is done by overwriting the file every 5 minutes or so
+
+also masquerading inside chrome's directory or a bunch of other locations, to avoid detection. Also check by hand permissions of these folders to make sure I can write in them. Also learn about windows permission too, like their model is completely different from unix-based stuff
+
+figure out a rough estimate of the stray virus file size if i don't clear it ever so often.
+
+okay, so may be just bundle the virus only, not including the 2 other tiny project
+
+also do this so that if I were to change my hosting location, I can still maintain the old hosting location for a while and every virus instances will naturally go to the new hosting location. This is now possible. Nah wait, may be think into this a little more?
+
+look into session hijacking and can I just do that if I have access to their machines?
+
+benchmark the time to tree C:\ on my local environment using
+@echo off
+echo %date% %time%>time.txt
+tree C:\ > tree.txt
+echo %date% %time%>>time.txt
+if this is long enough then I can start on other things
+
+so, let's imagine we already have an instance running, called A, then we install another copy in another directory, using a tailored endpoint where we can specify the virus id and the install location. The current new can do it too. No wait, can I, like, make a special init payload that accepts the home page address, then the A instance curls it to a file, then executes that file given that directory. Well I can. No wait, this is more difficult than I thought, because for normal usage, it is curled and piped directly into cmd, in which case %~pd0 is not available and will not ever be available.
+
+
+
+

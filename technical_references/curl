@@ -1,0 +1,4 @@
+
+curl --form "param1=value1" --form "param2=value2" --form "fileupload=@my-file.txt;filename=desired-filename.txt" endpoint
+
+oh and, curl -L google.com to follow all the redirects. -I for headers only

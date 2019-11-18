@@ -1,0 +1,13 @@
+
+git reset
+git commit -m""
+git commit --no-edit: use the previous message
+git add -A
+git log --graph
+
+git stash, git stash pop, git stash show, git stash list
+git rm <file>, will not track that file anymore
+git mv <file1> <file2>, moves inner representation and tracking from file1 to file2
+
+git log --graph HEAD~3..HEAD
+git reflog show

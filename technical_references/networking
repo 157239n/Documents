@@ -130,3 +130,116 @@ every person gets their own router
 postfix
 
 
+-----------------------TCP/IP illustrated---------------------------
+Application, ftp, telnet, email
+Transport, tcp, udp
+Network/Internet, ip, icmp (ping and tracert uses this), igmp (internet group management protocol)
+Link, device driver, interface card. Ethernet (address resolution protocol), token ring (reverse address resolution protocol), convert addresses used by the network interface
+
+popular applications:
+- telnet, ssh
+- ftp, sftp
+- smtp
+- snmp, simple network management protocol
+
+ip routers, routers, gateway
+a router, by definition, has 2 or more network interface layers (since it connects 2 networks). Any system with multiple interfaces is called multihomed
+
+Oh, so my thing with the iptables, prerouting and postrouting rules, so I can call that VM a router, but with custom rules, not with the agreed upon rules
+
+bridge connects networks at the link layer, not the network layer. Bridges makes multiple LANs appear to the upper layers as a single LAN
+
+TCP/IP internets tend to be built using routers instead of bridges
+
+broadcasting, sending udp datagram to every host, and multicast, to many, but not all host
+
+classes, this is before subnet came into play. But again, this is how it is used to be like
+class A: 0, 7 bits netid, 24 bits hostid, 0.0.0.0 to 127.255.255.255. netid 127 for loopback interface
+class B: 10, 14 bits netid, 16 bits hostid, 128.0.0.0 to 191.255.255.255
+class C: 110, 21 bits netid, 8 bits hostid, 192.0.0.0 to 223.255.255.255
+class D: 1110, 28 bits multicast group id, 224.0.0.0 to 239.255.255.255
+class E: 1111, 28 bits, reserved for future use, 240.0.0.0 to 255.255.255.255
+
+multihomed host will have multiple ip addresses, 1 per interface. Every interface must have a unique ip address, there must be 1 central authority to allocate stuff, internet network information center, called interNIC. Assigns only network ids. Host ids is up to the sysadmin
+
+3 types of addresses: unicast (destined for single host), broadcast (all hosts), multicast (some host)
+
+ethernet header (14) + ip header (20) + tcp header (20, udp 8) + application data + ethernet trailer (4), ranges from 46 to 1500 bytes. This is a physical property, and the headers above are typical sizes only
+
+tcp and udp use 16-bit port numbers to identify the application
+
+iterative server and concurrent server (this is where forking of apache and inetd comes into play). General rule, TCP servers are concurrent, cause it takes a long time and it is complex, and UDP servers are iterative, cause why concurrent when it doesn't add any value. Again, these are guidelines
+
+client port numbers are "ephemeral ports", 1024 to 5000
+/etc/services, for a list of typical services is using what port numbers
+
+Who controls TCP/IP suite?
+- Internet Society, ISOC
+- Internet Architecture Board (IAB), coordination body
+- Internet Engineering Task Force (IETF), near term
+- Internet Research Task Force (IRTF), long term research
+
+Important RFCs:
+- Assigned Numbers, all magic numbers, 1340
+- Internet Official Protocol Standards, state of standardization, 1600
+- Host Requirements, 1122 (link, network, transport), 1123 (application)
+- Router Requirements, 1009
+
+simple services:
+- echo, port 7, rfc 862, returns whatever the client sends
+- discard, port 9, rfc 863, discards everything client sends
+- daytime, port 13, rfc 867, returns date and time in human-readable form
+- time, port 37, rfc 868, returns time as 32 bit number, seconds from Jan 1st 1900, UTC
+
+sockets and transport layer interface, ways applications can communicate with
+
+Ethernet, RFC 894 most commonly used:
+- access method: CSMA/CD, Carrier Sense, Multiple Access with Collision Detection
+- speed: 10 Mbits/sec. Required
+- address size: 48 bit
+- 802.3, all CSMA/CD networks
+- 802.4, token bus networks
+- 802.5, token ring networks
+- 802.2, common to all 3 above, defines logic link control
+encapsulation of ip datagram:
+- RFC 894 for ethernets
+- RFC 1042 for IEEE 802 networks
+host requirements:
+- must send and receive using RFC 894 (Ethernet) encapsulation
+- should be able to receive RFC 1042 (IEEE 802) packets mixed with RFC 894
+- may be able to send 1042 packets
+
+SLIP, serial line ip
+- simple form of encapsulation for ip datagrams on serial lines
+- speed: 19200 bits/sec
+
+MTU, maximum transmission unit, constant in a single network
+path MTU, variable because the packet must go through a bunch of networks, each with their own MTU
+
+when something goes wrong, such as a router temporarily running out of buffers, ip has a simple error handling algorithm: throw away the datagram and try to send an icmp message back to the source.
+
+chapter on ip:
+- fields in ip header
+  - type of service: delay (interactive), throughput (bulk), reliability (network management, snmp), cost (usenet news)
+- ip routing
+- subnetting
+- commands: ifconfig and netstat
+
+a host is not required to receive a datagram larger than 576 bytes lmao
+
+entry in the routing table, this is after ip decides that the message is not for itself and it should send to another router to process:
+- destination ip address. Host address or network address (host id of 0)
+- ip address of a next-hop router. This is so that this host/router can dump the responsibility to the next one
+- flag, whether destination ip address is address of a network or the address of the host.
+- flag, whether next-hop router is really a next-hop router or a directly connected interface
+- specification of which network interface the datagram should be passed to for transmission
+point-to-point links are found here too
+
+ARP is used by hosts on a specific network to obtain a 48-bit ethernet address
+
+ARP: Address Resolution Protocol, RARP: Reverse Address Resolution Protocol
+32 bit ipv4 --ARP--> 48 bit ethernet address
+48 bit ethernet address --RARP--> 32 bit ipv4
+
+arp command, seems cool
+tcpdump command

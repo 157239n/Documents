@@ -90,6 +90,9 @@ if this is long enough then I can start on other things
 
 so, let's imagine we already have an instance running, called A, then we install another copy in another directory, using a tailored endpoint where we can specify the virus id and the install location. The current new can do it too. No wait, can I, like, make a special init payload that accepts the home page address, then the A instance curls it to a file, then executes that file given that directory. Well I can. No wait, this is more difficult than I thought, because for normal usage, it is curled and piped directly into cmd, in which case %~pd0 is not available and will not ever be available.
 
+okay, so it should work, injecting the second entry point. Now the problem is that I sort of need to differentiate between different entry points, so that self destruct works for them. Now this is quite hard and needs more thinking
 
+how about on ther explore dir, place a checkbox on the left and the user can check in the files they want to see, then click another button that will create a new attack automatically? I think this would be a precursor to me being able to integrate taskkill and tasklist
 
+and how does the interaction when a user closes their screen works? are the processes just stops? are they get resetted?
 

@@ -507,3 +507,25 @@ now, suppose that I can't do the mail stuff on my own. No bullshit, the cost wou
 may be I should do the planning when there's no internet and currently being quarantined and watched and stuff. Then when I got back, the documents are already very clear and the implementation can be really, really quick.
 
 so, i've just set myself a really, really ambitious deadline to finish the virus back up strategy because I told chi that the virus has that capability and I have to show her this capability on wednesday lmao
+
+https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
+
+for kuche, immediately port over the entire website over to the singapore server, and this time make it through a proxy of some sorts, so that I can do zero downtime updates (near to zero only, not entirely zero)
+
+So they say that to make zero downtime possible, just put it behind a load balancer, the traditional one. This kinda means that I have to understand about networking and stuff, which I'm kinda actively avoiding, but look over TCP/IP illustrated
+
+update the user with a new curl using -L to bypass https
+
+save the path I laid out for that yt guy for chi, and reply to that person too
+
+okay, so port the virus quickly, then separate that, then put separate applications under separate docker-compose projects, so that I can precisely control how everything will run
+
+kay, so write a simple python program to calculate the z value, to show chi. Do this when there's wifi available, which is tonight, not now.
+
+also may be design a piece of python code with an existing vulnerability that is simpe enough to understand in its entirety, then show chi and everyone else how the penetration stuff is actually done
+
+after I have understood networking, return to that stack overflow question of mine and answer that question
+
+also rewatch zero days, or read that quora post again, to get the details of stuxnet to tell chi
+
+startup folder on linux?

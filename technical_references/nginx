@@ -1,0 +1,173 @@
+
+These are from the nginx cookbook: advanced recipes for high performance load balancing
+
+installing:
+- /etc/apt/sources.list.d/nginx.list
+  - deb http://nginx.org/packages/mainline/ubuntu/ bionic nginx
+  - deb-src http://nginx.org/packages/mainline/ubuntu/ bionic nginx
+- run:
+  - wget http://nginx.org/keys/nginx_signing.key
+  - apt-key add nginx_signing.key
+  - apt-get update
+  - apt-get install -y nginx
+  - /etc/init.d/nginx start
+
+important files and folders:
+- /etc/nginx, duh
+- /etc/nginx/nginx.conf, default config entry point, sets up global settings
+- /etc/nginx/conf.d/, default http server config file, corresponds to sites-available
+- /var/log/nginx/: access.log and error.log, also exactly like apache. I'm feeling this will be a breeze to learn about
+
+commands:
+- -h: help menu
+- -v: version
+- -V: version, but more
+- -t: test config (?)
+- -T: test config, but more
+- -s {signal}: sends signal to the master process. Signals:
+  - stop: stop imediately
+  - quit: stop after finishing whatever it is doing
+  - reload: reload configs
+  - reopen: reopen log files (?)
+
+kay, so typical .conf inside conf.d:
+server {
+	listen 80 [default_server];
+	server_name localhost;
+
+	location / {
+		root /usr/share/nginx/html
+		index index.html index.htm
+	}
+
+	error_page 500 502 503 504 /50x.html
+
+	# proxy php scripts to Apache listening on 127.0.0.1:80
+	location ~ \.php$ {
+		proxy_pass http://127.0.0.1;
+	}
+
+	# pass php scripts to FastCGI server listening on 127.0.0.1:9000
+	location ~ \.php$ {
+		root html;
+		fastcgi_pass 127.0.0.1:9000;
+		fastcgi_index index.php;
+		fastcgi_param SCRIPT_FILENAME /scripts$fastcgi_script_name;
+		include fastcgi_params;
+	}
+
+	# deny access to .htaccess file, if Apache's document root concurs with nginx's one
+	location ~ /\.ht {
+		deny all;
+	}
+}
+
+Okay, so this is soooooo similar to apache. Strikingly similar. So, nginx is an additional sort of front end that redirects to apache or its own fast cgi module whenever dynamic stuff is needed. So, this is so freaking nice, the syntax is nice too. I'm getting addicted to nginx lmao
+
+and nginx.conf, corresponds to apache2.conf:
+user nginx;
+worker_processes 1;
+
+error_log /var/log/nginx/error.log warn;
+pid /var/run/nginx.pid
+
+events {
+	worker_connections 1024;
+}
+
+http {
+	include /etc/nginx/mime.types
+	default_type application/octet-stream;
+
+	log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+					'$status $body_bytes_sent "$http_referer" '
+					'"$http_user_agent" "$http_x_forwarded_for"';
+
+	access_log /var/log/nginx/access.log main;
+
+	sendfile on;
+	#tcp_nopush on;
+
+	keep_alive_timeout 65;
+
+	#gzip on;
+
+	include /etc/nginx/conf.d/*.conf;
+}
+
+Okay, so that was amazing. Nginx really hits home on my philosophy of avoiding subsystem optimization. Like, no one fucking wants ${APACHE_LOG_DIR}. Yes it makes things nicer, and you can control that config from a single place only. Buttttt, you have that overhead to know that the location to change it is in what config file, and you have to remember the "${APACHE_LOG_DIR}" too. This is not too bad. No, that is not too bad at all, but I mean, just write that damn log location out for sanity.
+
+/etc/nginx/:
+- conf.d
+- fastcgi_params
+- koi-utf
+- koi-win
+- mime.types
+- modules -> /usr/lib/nginx/modules
+- nginx.conf
+- scgi_params, params, like "scgi_param REQUEST_METHOD $request_method;"
+- uwsgi_params
+- win-utf
+
+Okay, so this has a huge potential to serve static content, but how about the authorization process works. Don't I have to return the files dynamically in order to have authorization on dynamic content? Without this authorization feature, nginx is quite dangerous and unusable.
+
+I also have questions about rewrite rule. Is it even a thing? If not then guess I can't really use nginx right?
+
+load balancing, don't understand:
+upstream backend {
+	server 10.10.12.45:80 weight=1;
+	server app.example.com:80 weight=2;
+}
+server {
+	location / {
+		proxy_pass http://backend;
+	}
+}
+
+upstream is a module, which controls the load balancing for http. Defines a pool of destinations. Can be ip addresses, unix sockets or dns records. Also defines how any individual request is assigned to any of the upstream servers.
+"server" directive includes parameters, included is "weight=2", but there can be others:
+- weight
+- server in standby | available | unavailable, how to determine if it's unavailable?
+
+tcp load balancing:
+stream {
+	upstream mysql_read {
+		server read1.example.com:3306 weight=5;
+		server read2.example.com:3306;
+		server 10.10.12.34:3306 backup;
+	}
+
+	server {
+		listen 3306;
+		proxy_pass mysql_read;
+	}
+}
+
+"stream" stuff is a module for load balancing tcp. Why not other packets? Well, cause why? When the entirety of the internet uses TCP, why do stuff like ICMP? Let the engine deal with all those ARP requests and whatnot and just build the freaking application.
+
+Why do I get the feeling that the authentication stuff, I have to use nginx's built in features, like apache's <Directory></Directory> stuff. Meaning I pretty much don't have control over the authentication in php. This might actually be a good thing, now that nginx philosophy is that? We'll see
+
+udp load balancing:
+stream {
+	upstream ntp {
+		server ntp.example.com:123 weight=2;
+		server ntp2.example.com:123;
+	}
+
+	server {
+		listen 123 udp;
+		proxy_pass ntp;
+	}
+}
+
+this balances load between 2 upstream network time protocol (ntp) (nginx has nothing to do with this, it's just the processing on the load balanced server) using the udp protocol (only indication is in listen 123 udp)
+
+if persistent session, then add "reuseport":
+stream {
+	server {
+		listen 1195 udp reuseport;
+		proxy_pass 127.0.0.1:1194
+	}
+}
+
+again, the big question: how can nginx have any functional advantage over apache? It does splits of into other processes anyway, just like with apache, and just like with fucking cgi. How can there be a performance difference if the underlying technology is the same?

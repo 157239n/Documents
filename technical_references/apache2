@@ -194,7 +194,7 @@ certificates:
 - SSLCertificateFile /etc/letsencrypt/live/magentop.u4.kelvinho.org/fullchain.pem
 - SSLCertificateKeyFile /etc/letsencrypt/live/magentop.u4.kelvinho.org/privkey.pem
 - Include /etc/letsencrypt/options-ssl-apache.conf
-proxy:
+proxy: mods proxy and proxy_http
 - ProxyPass / http://service:80
 - ProxyPassReverse / url
 - ProxyPreserveHost On

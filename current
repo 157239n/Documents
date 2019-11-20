@@ -520,12 +520,74 @@ save the path I laid out for that yt guy for chi, and reply to that person too
 
 okay, so port the virus quickly, then separate that, then put separate applications under separate docker-compose projects, so that I can precisely control how everything will run
 
-kay, so write a simple python program to calculate the z value, to show chi. Do this when there's wifi available, which is tonight, not now.
-
-also may be design a piece of python code with an existing vulnerability that is simpe enough to understand in its entirety, then show chi and everyone else how the penetration stuff is actually done
+redo git
 
 after I have understood networking, return to that stack overflow question of mine and answer that question
 
 also rewatch zero days, or read that quora post again, to get the details of stuxnet to tell chi
 
 startup folder on linux?
+
+and to handle all the sql stuff, there are several paths:
+- do the initial setup inside the Dockerfile, then reimport all of the sql data too, which is undesireable, because that would take a long time if the site were to grow. This is pretty much rock solid and no data corruption will ever occur, unless you do some really stupid things.
+- do the initial setup after the container has been created, and /var/lib/mysql has been mounted, then do the initial setup there. The next time mysql is started up, all the data is still on the mounted disk. This has the chance of corrupting the data, and each time some potentially breaking update happens, we can't use this any more, and have to manually set up the database again.
+
+So how about try using the mysql container? Like, no ports has to be exposed to the public network, because there will be private networks for me to use anyway, so no encapsulation properties are lost.
+
+How the hell can nginx can do things differently from apache? It has to forked of a process to handle the incoming tcp request right? So it's the same thing afterall. Is it good at caching stuff? But apache has that capability too
+
+see over the security claims digitalocean made, and see whether I can keep using their services for my testing ground
+
+using redis? Cause like, everyone seems to be using it
+
+macvlan driver:
+- subnet info
+- gateway
+- range of ip address that can be assigned
+- which interface or sub-interface to use? I thought this can be deducted from the subnet info?
+
+docker network create -d macvlan \
+	--subnet=10.0.0.0/24 \
+	--ip-range=10.0.0.0/25 \
+	--gateway=10.0.0.1 \
+	-o parent=eth0.100 \
+	macvlan100
+
+so, ipv6 guide for ipv4 people
+
+okay that's new, load balancer in digitalocean does not support ipv6
+
+read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
+
+swarm again:
+
+ports:
+- 
+
+so, nginx cutting edge stuff, sounds interesting:
+- http/2
+- media streaming
+- cloud and container environment
+traditional operational topics:
+- monitoring
+- debugging
+- performance
+- operational tips
+
+gem black fish
+
+links, apache vs nginx again:
+- https://www.reddit.com/r/sysadmin/comments/78scv6/nginx_or_apache/
+- https://www.reddit.com/r/webdev/comments/8yweod/is_there_any_reason_to_chose_apache_over_nginx/
+- https://www.reddit.com/r/linuxadmin/comments/2fpivy/apache_vs_nginx_explained/
+- https://www.reddit.com/r/webdev/comments/9v08ca/web_server_apache_or_nginx/
+
+tasks for tonight:
+- kuche stuff, entirely
+- chi stuff
+- tcp/ip illustrated stuff
+- docker networking, docker swarm and docker deep dive stuff, entirely
+- that nginx book, entirely
+- compartmentalize virus and those shared services
+- try moving 157239n over to deployment server 2 and smash a content delivery network onto it
+

@@ -1,6 +1,5 @@
 Killer commands (commands that I use sooooo frequently):
 - Typical webserver: docker container run -it --name webServer --publish 80:80 --publish 443:443 --volume /dockerVolumes/webServer:/hostVolume ubuntu:latest /bin/bash
-- Mail server:
 - Stops container from exiting: tail -f /dev/null
 - Usual daemon ip address (run ip a to make sure): 172.17.0.1/16
 - Non-interactive: ENV DEBIAN_FRONTEND noninteractive

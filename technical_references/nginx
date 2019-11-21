@@ -156,6 +156,7 @@ Why do I get the feeling that the authentication stuff, I have to use nginx's bu
 udp load balancing:
 stream {
 	upstream ntp {
+		[least_conn;]
 		server ntp.example.com:123 weight=2;
 		server ntp2.example.com:123;
 	}
@@ -190,5 +191,29 @@ mail {
 	}
 }
 
+Okay, so this pattern is interesting, check this out:
+http {
+	include /conf.d/*.conf;
+}
+And the confs look like:
+upstream service_name {
+	server server1Location weight=2;
+	server server2Location;
+}
+server {
+	listen 80;
+	server_name domain.tld;
+	root /var/www/html;
+	index index.html
+}
+So, the entire configuration file is placed inside the http block, which is responsible for the http application layer only. So load balancing and configuring tcp and what not, the stream block is used instead of the http block:
+stream {
+	upstream service_name {
+	}
+	server {
+		listen 3306;
+		...
+	}
+}
 
 

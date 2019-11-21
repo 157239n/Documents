@@ -107,7 +107,7 @@ Swapfiles, to increase RAM:
 - chmod 600 /swap
 - mkswap /swap
 - swapon /swap
-- Making it permanent (so far I don't have to use this, may be because the VPS never gets shutdown): add /swapfile swap swap defaults 0 0 to /etc/fstab
+  - Making it permanent (so far I don't have to use this, may be because the VPS never gets shutdown): add /swapfile swap swap defaults 0 0 to /etc/fstab
 - Status: swapon --show
 
 Remove swap:

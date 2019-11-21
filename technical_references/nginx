@@ -4,6 +4,22 @@ important directives, under server {}:
 - root /var/www/html
 - index index.html index.htm, index.php
 - server_name u4.kelvinho.org
+important directives, under http {}:
+- keepalive_requests 320;
+- keepalive_timeout 300s;
+ssl:
+- listen 443 ssl;
+- ssl_certificate .crt; These ssl params can be placed within the server directive, or the http one, to cover for all domains. Still have to register for that domain tho
+- ssl_certificate_key .key;
+- return 301 https://$host$request_uri
+proxying, inside location {}, inside server {}:
+- proxy_pass http://my_app_upstream;
+- proxy_set_header Host $http_host; this is the same as ProxyPreserveHost On in apache
+another ProxyPreserveHost, but this time the url is preserved too:
+- rewrite ^(.*)$   "://$http_host$uri$is_args$args";
+- rewrite ^(.*)$   "http$uri$is_args$args" break;
+- proxy_set_header Host $host;
+
 
 These are from the nginx cookbook: advanced recipes for high performance load balancing
 

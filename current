@@ -592,3 +592,10 @@ For the 157239n and the kuche, I must have access to the internal dns server to 
 okay, so think about nginx as a front facing load balancer, and only think of it like that. Serving static content does not fucking matter once you integrate a cdn. But again, think about certs too and how that comes into play in nginx
 
 /usr/share/apache2/icons
+
+okay, so why do I need digitalocean's load balancing service when I can just have an nginx instance? Like what's the point?
+
+so, books to process:
+- tcp/ip illustrated
+- docker
+- nginx cookbook

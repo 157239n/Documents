@@ -156,7 +156,7 @@ Why do I get the feeling that the authentication stuff, I have to use nginx's bu
 udp load balancing:
 stream {
 	upstream ntp {
-		[least_conn;]
+		[least_conn|ip_hash;]
 		server ntp.example.com:123 weight=2;
 		server ntp2.example.com:123;
 	}
@@ -216,4 +216,5 @@ stream {
 	}
 }
 
-
+Draining connections gracefully
+Send POST request, with json {"drain":true} to http://nginx.local/api/3/http/upstreams/backend/servers/0

@@ -1,8 +1,14 @@
 
+important directives, under server {}:
+- listen 80
+- root /var/www/html
+- index index.html index.htm, index.php
+- server_name u4.kelvinho.org
+
 These are from the nginx cookbook: advanced recipes for high performance load balancing
 
 installing:
-- /etc/apt/sources.list.d/nginx.list
+- /etc/apt/sources.list.d/nginx.list (without this is fine, it will default to sites-enabled style)
   - deb http://nginx.org/packages/mainline/ubuntu/ bionic nginx
   - deb-src http://nginx.org/packages/mainline/ubuntu/ bionic nginx
 - run:
@@ -170,4 +176,19 @@ stream {
 	}
 }
 
-again, the big question: how can nginx have any functional advantage over apache? It does splits of into other processes anyway, just like with apache, and just like with fucking cgi. How can there be a performance difference if the underlying technology is the same?
+interesting config from image (included link: http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript):
+mail {
+	server {
+		listen localhost:110;
+		protocol pop3;
+		proxy on;
+	}
+	server {
+		listen localhost:143;
+		protocol imap;
+		proxy on;
+	}
+}
+
+
+

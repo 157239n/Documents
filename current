@@ -574,14 +574,6 @@ traditional operational topics:
 - performance
 - operational tips
 
-gem black fish
-
-links, apache vs nginx again:
-- https://www.reddit.com/r/sysadmin/comments/78scv6/nginx_or_apache/
-- https://www.reddit.com/r/webdev/comments/8yweod/is_there_any_reason_to_chose_apache_over_nginx/
-- https://www.reddit.com/r/linuxadmin/comments/2fpivy/apache_vs_nginx_explained/
-- https://www.reddit.com/r/webdev/comments/9v08ca/web_server_apache_or_nginx/
-
 tasks for tonight:
 - kuche stuff, entirely
 - chi stuff
@@ -591,3 +583,12 @@ tasks for tonight:
 - compartmentalize virus and those shared services
 - try moving 157239n over to deployment server 2 and smash a content delivery network onto it
 
+cdn: https://www.digitalocean.com/community/tutorials/using-a-cdn-to-speed-up-static-content-delivery
+
+kay, so try using nginx to load balance stuff
+
+For the 157239n and the kuche, I must have access to the internal dns server to experiment, and I can't do any of that shit now on this computer.
+
+okay, so think about nginx as a front facing load balancer, and only think of it like that. Serving static content does not fucking matter once you integrate a cdn. But again, think about certs too and how that comes into play in nginx
+
+/usr/share/apache2/icons

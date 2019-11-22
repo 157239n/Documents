@@ -1,4 +1,8 @@
 
+define('FS_METHOD', 'direct');
+define('FORCE_SSL_ADMIN', true);
+$_SERVER["HTTPS"] = "on";
+
 steps:
 - unzip
 - goto /wp-admin

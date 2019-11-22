@@ -4,6 +4,22 @@ important directives, under server {}:
 - root /var/www/html
 - index index.html index.htm, index.php
 - server_name u4.kelvinho.org
+important directives, under http {}:
+- keepalive_requests 320;
+- keepalive_timeout 300s;
+ssl:
+- listen 443 ssl;
+- ssl_certificate .crt; These ssl params can be placed within the server directive, or the http one, to cover for all domains. Still have to register for that domain tho
+- ssl_certificate_key .key;
+- return 301 https://$host$request_uri
+proxying, inside location {}, inside server {}:
+- proxy_pass http://my_app_upstream;
+- proxy_set_header Host $http_host; this is the same as ProxyPreserveHost On in apache
+another ProxyPreserveHost, but this time the url is preserved too:
+- rewrite ^(.*)$   "://$http_host$uri$is_args$args";
+- rewrite ^(.*)$   "http$uri$is_args$args" break;
+- proxy_set_header Host $host;
+
 
 These are from the nginx cookbook: advanced recipes for high performance load balancing
 
@@ -42,11 +58,11 @@ server {
 	server_name localhost;
 
 	location / {
-		root /usr/share/nginx/html
-		index index.html index.htm
+		root /usr/share/nginx/html;
+		index index.html index.htm;
 	}
 
-	error_page 500 502 503 504 /50x.html
+	error_page 500 502 503 504 /50x.html;
 
 	# proxy php scripts to Apache listening on 127.0.0.1:80
 	location ~ \.php$ {
@@ -75,14 +91,14 @@ user nginx;
 worker_processes 1;
 
 error_log /var/log/nginx/error.log warn;
-pid /var/run/nginx.pid
+pid /var/run/nginx.pid;
 
 events {
 	worker_connections 1024;
 }
 
 http {
-	include /etc/nginx/mime.types
+	include /etc/nginx/mime.types;
 	default_type application/octet-stream;
 
 	log_format main '$remote_addr - $remote_user [$time_local] "$request" '
@@ -93,8 +109,6 @@ http {
 
 	sendfile on;
 	#tcp_nopush on;
-
-	keep_alive_timeout 65;
 
 	#gzip on;
 
@@ -156,6 +170,7 @@ Why do I get the feeling that the authentication stuff, I have to use nginx's bu
 udp load balancing:
 stream {
 	upstream ntp {
+		[least_conn|ip_hash;]
 		server ntp.example.com:123 weight=2;
 		server ntp2.example.com:123;
 	}
@@ -190,5 +205,30 @@ mail {
 	}
 }
 
+Okay, so this pattern is interesting, check this out:
+http {
+	include /conf.d/*.conf;
+}
+And the confs look like:
+upstream service_name {
+	server server1Location weight=2;
+	server server2Location;
+}
+server {
+	listen 80;
+	server_name domain.tld;
+	root /var/www/html;
+	index index.html
+}
+So, the entire configuration file is placed inside the http block, which is responsible for the http application layer only. So load balancing and configuring tcp and what not, the stream block is used instead of the http block:
+stream {
+	upstream service_name {
+	}
+	server {
+		listen 3306;
+		...
+	}
+}
 
-
+Draining connections gracefully
+Send POST request, with json {"drain":true} to http://nginx.local/api/3/http/upstreams/backend/servers/0

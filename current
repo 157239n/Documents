@@ -576,17 +576,27 @@ traditional operational topics:
 
 tasks for tonight:
 - kuche stuff, entirely
-- chi stuff
 - tcp/ip illustrated stuff
 - docker networking, docker swarm and docker deep dive stuff, entirely
-- that nginx book, entirely
 - compartmentalize virus and those shared services
 - try moving 157239n over to deployment server 2 and smash a content delivery network onto it
-
-cdn: https://www.digitalocean.com/community/tutorials/using-a-cdn-to-speed-up-static-content-delivery
 
 kay, so try using nginx to load balance stuff
 
 For the 157239n and the kuche, I must have access to the internal dns server to experiment, and I can't do any of that shit now on this computer.
 
 okay, so think about nginx as a front facing load balancer, and only think of it like that. Serving static content does not fucking matter once you integrate a cdn. But again, think about certs too and how that comes into play in nginx
+
+so, books to process:
+- tcp/ip illustrated
+- docker
+
+okay, so porting over the old website seems pretty possible now. Let's test port it, after backing up the virus data
+
+db problems:
+- https://visualstudiomagazine.com/articles/2019/03/01/dealing-with-databases.aspx
+- https://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker
+- https://blog.newrelic.com/product-news/containerizing-databases/
+- https://vsupalov.com/database-in-docker/
+
+also how can I check for load issues on apache, to figure out how I can make it faster, without just dumping more ram into it?

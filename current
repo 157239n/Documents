@@ -590,5 +590,3 @@ kay, so try using nginx to load balance stuff
 For the 157239n and the kuche, I must have access to the internal dns server to experiment, and I can't do any of that shit now on this computer.
 
 okay, so think about nginx as a front facing load balancer, and only think of it like that. Serving static content does not fucking matter once you integrate a cdn. But again, think about certs too and how that comes into play in nginx
-
-/usr/share/apache2/icons

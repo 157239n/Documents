@@ -530,7 +530,7 @@ Seemless, moderately secure out-of-the-box experience
 
 
 
-Proxying:
+Proxying, but just use nginx for this, it's better:
 a2enmod proxy
 a2enmod proxy_http
 
@@ -550,6 +550,19 @@ Self standards for proxying:
 
 
 
+
+docker network create -d macvlan \
+  --subnet=10.0.0.0/24 \
+  --ip-range=10.0.0.0/25 \
+  --gateway=10.0.0.1 \
+  -o parent=eth0.100 \
+  macvlan100
+
+macvlan driver:
+- subnet info
+- gateway
+- range of ip address that can be assigned
+- which interface or sub-interface to use? I thought this can be deducted from the subnet info?
 
 
 

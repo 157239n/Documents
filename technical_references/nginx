@@ -19,7 +19,8 @@ another ProxyPreserveHost, but this time the url is preserved too:
 - rewrite ^(.*)$   "://$http_host$uri$is_args$args";
 - rewrite ^(.*)$   "http$uri$is_args$args" break;
 - proxy_set_header Host $host;
-
+others:
+- client_max_body_size 100M;
 
 These are from the nginx cookbook: advanced recipes for high performance load balancing
 

@@ -453,8 +453,6 @@ see the interface between python and other data packages, how the interfaces wor
 
 the simulations, implement locality with hashmap stuff
 
-I still don't understand the advantages of nginx over something like apache. It seems like to me that nginx people gets excited about fastcgi, and that nginx serves static pages really, really fast. But like, with all of the complexities introduced by things like oauth2, and cms, is it even worth it? Like, yes, you serve static pages faster, but who serves static pages nowadays anyways? https://www.plesk.com/blog/various/nginx-vs-apache-which-is-the-best-web-server/
-
 Then read over those 2000 pages magento, then understand the existing apis for the big picture.
 
 Also look over the internal documents to see if there's something fun.
@@ -469,34 +467,26 @@ buy chi and dan some stuff from spacex store
 
 and, learn nodejs in a few hours so I can sort of show dan what's that about. Seems like dan's not really following my path, and she kinda just want things serendipitously, and that's okay too. And by doing this, hopefully I can be comfortable in adapting to new tech really fast and deploy these things even faster. But again, goddammit, I still need to understand the firmware interface.
 
+may be don't learn node as before, but understand the technology, what is the advantage in using it, and the philosophy behind it.
+
 2 books:
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 
-specific use case of wordpress in spaces cdn: https://www.digitalocean.com/community/tutorials/how-to-speed-up-wordpress-asset-delivery-using-digitalocean-spaces-cdn
-
-play sprocket again
+play sprocket again for intellectual property rights
 
 dkim eli5
 
 - mail
-- port over 157239n & connect it to a cdn
 - simulation
 
 economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
 
-keto diet?
-
 SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I can attack son
-
-may be get into (like hack, not applying) whyfit, just for fun?
 
 ibm transact
 
 how regulations and regulation authorities
-
-https://www.youtube.com/watch?v=w3_0x6oaDmI
-https://www.youtube.com/watch?v=Kt_JePg86b8
 
 learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
 
@@ -504,99 +494,44 @@ see how this guy can press buttons on the screen: https://www.youtube.com/watch?
 
 now, suppose that I can't do the mail stuff on my own. No bullshit, the cost would be huge, and for what? So, do all of that once I'm free from here
 
-may be I should do the planning when there's no internet and currently being quarantined and watched and stuff. Then when I got back, the documents are already very clear and the implementation can be really, really quick.
-
-so, i've just set myself a really, really ambitious deadline to finish the virus back up strategy because I told chi that the virus has that capability and I have to show her this capability on wednesday lmao
-
 https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
 
 for kuche, immediately port over the entire website over to the singapore server, and this time make it through a proxy of some sorts, so that I can do zero downtime updates (near to zero only, not entirely zero)
 
-So they say that to make zero downtime possible, just put it behind a load balancer, the traditional one. This kinda means that I have to understand about networking and stuff, which I'm kinda actively avoiding, but look over TCP/IP illustrated
-
-update the user with a new curl using -L to bypass https
-
 save the path I laid out for that yt guy for chi, and reply to that person too
-
-okay, so port the virus quickly, then separate that, then put separate applications under separate docker-compose projects, so that I can precisely control how everything will run
-
-redo git
 
 after I have understood networking, return to that stack overflow question of mine and answer that question
 
-also rewatch zero days, or read that quora post again, to get the details of stuxnet to tell chi
-
-startup folder on linux?
-
-and to handle all the sql stuff, there are several paths:
-- do the initial setup inside the Dockerfile, then reimport all of the sql data too, which is undesireable, because that would take a long time if the site were to grow. This is pretty much rock solid and no data corruption will ever occur, unless you do some really stupid things.
-- do the initial setup after the container has been created, and /var/lib/mysql has been mounted, then do the initial setup there. The next time mysql is started up, all the data is still on the mounted disk. This has the chance of corrupting the data, and each time some potentially breaking update happens, we can't use this any more, and have to manually set up the database again.
-
-So how about try using the mysql container? Like, no ports has to be exposed to the public network, because there will be private networks for me to use anyway, so no encapsulation properties are lost.
-
-How the hell can nginx can do things differently from apache? It has to forked of a process to handle the incoming tcp request right? So it's the same thing afterall. Is it good at caching stuff? But apache has that capability too
-
-see over the security claims digitalocean made, and see whether I can keep using their services for my testing ground
-
-using redis? Cause like, everyone seems to be using it
-
-macvlan driver:
-- subnet info
-- gateway
-- range of ip address that can be assigned
-- which interface or sub-interface to use? I thought this can be deducted from the subnet info?
-
-docker network create -d macvlan \
-	--subnet=10.0.0.0/24 \
-	--ip-range=10.0.0.0/25 \
-	--gateway=10.0.0.1 \
-	-o parent=eth0.100 \
-	macvlan100
-
-so, ipv6 guide for ipv4 people
-
-okay that's new, load balancer in digitalocean does not support ipv6
+oh and go through the old networking series, then go through the tcp/ip illustrated book once more, to gather nuggets of information, not to understand and remember how these packet format works.
 
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
-
-swarm again:
-
-ports:
-- 
-
-so, nginx cutting edge stuff, sounds interesting:
-- http/2
-- media streaming
-- cloud and container environment
-traditional operational topics:
-- monitoring
-- debugging
-- performance
-- operational tips
 
 tasks for tonight:
 - kuche stuff, entirely
 - tcp/ip illustrated stuff
 - docker networking, docker swarm and docker deep dive stuff, entirely
-- compartmentalize virus and those shared services
-- try moving 157239n over to deployment server 2 and smash a content delivery network onto it
 
-kay, so try using nginx to load balance stuff
+check again on cloudflare's cdn status for 157239n.com
 
-For the 157239n and the kuche, I must have access to the internal dns server to experiment, and I can't do any of that shit now on this computer.
+see over chi's new lab reports and understand the chemistry she's currently involved in.
 
-okay, so think about nginx as a front facing load balancer, and only think of it like that. Serving static content does not fucking matter once you integrate a cdn. But again, think about certs too and how that comes into play in nginx
+also, how about porting kuche over the ny server, to make development much less painful, then just port it back to singapore, to improve performance over there. This will also give me insight into deploying these serendipitously, and to truely utilize what docker has to offer.
 
-so, books to process:
-- tcp/ip illustrated
-- docker
+play factorio again, but this time try to skip all the bullshit, and just aim the goal really sharp and finish it quick
 
-okay, so porting over the old website seems pretty possible now. Let's test port it, after backing up the virus data
+an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
 
-db problems:
-- https://visualstudiomagazine.com/articles/2019/03/01/dealing-with-databases.aspx
-- https://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker
-- https://blog.newrelic.com/product-news/containerizing-databases/
-- https://vsupalov.com/database-in-docker/
+also a friendly reminder that there is still a lot of stuff and opened pages on the phone. But these after entirely fixing kuche's problems.
 
-also how can I check for load issues on apache, to figure out how I can make it faster, without just dumping more ram into it?
+then go through the media current stuff 
+
+http://142.93.201.90/
+
+dig into redis:
+- https://redis.io/
+- https://redis.io/documentation
+- https://redis.io/topics/data-types-intro
+- https://redis.io/topics/streams-intro
+- https://redis.io/topics/twitter-clone
+- https://en.wikipedia.org/wiki/Redis
+

@@ -1,0 +1,26 @@
+
+redis = remote dictionary server
+
+built in data structures:
+- lists
+- sets: keys can't repeat, any order
+- sorted sets
+- hashes
+- hyperloglogs: probabilistic data structure, used for cardinality of sets. Aka counting
+- bitmaps
+- geospatial indexes
+- bitfields
+- streams
+- strings
+
+common use cases:
+- cache
+- analytics
+- leaderboard
+- queues
+- cookie storage
+- expiring data
+- distributing locks
+- high io workloads
+- messaging
+- pub/sub

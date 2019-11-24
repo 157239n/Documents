@@ -17,7 +17,6 @@ Relying in a predetermined location to report the variables is vulnerable and un
 
 so, tasks for today, now that internet doesn't work:
 - physics for chi
-- add a subdomain that points to u2, then bypass the whole ssl stuff
 
 tasklist:
 - image name, smss.exe, svchost.exe
@@ -73,7 +72,7 @@ also backing up SU.vbs too, to make sure it doesn't go away. This is done by ove
 
 also masquerading inside chrome's directory or a bunch of other locations, to avoid detection. Also check by hand permissions of these folders to make sure I can write in them. Also learn about windows permission too, like their model is completely different from unix-based stuff
 
-figure out a rough estimate of the stray virus file size if i don't clear it ever so often.
+figure out a rough estimate of the stray virus file size if i don't clear it ever so often. So, pings every ~10 seconds, returns back ~100 characters, each character takes 1 byte in utf-8. That would be 10 bytes per second. A month has 2.5mil seconds, which would mean 25MB of data, for one stray virus in a month. That's pretty wild. Shouldn't I direct the virus to log inside of the database? That would be more efficient, mass-wise.
 
 okay, so may be just bundle the virus only, not including the 2 other tiny project
 
@@ -94,5 +93,14 @@ okay, so it should work, injecting the second entry point. Now the problem is th
 
 how about on ther explore dir, place a checkbox on the left and the user can check in the files they want to see, then click another button that will create a new attack automatically? I think this would be a precursor to me being able to integrate taskkill and tasklist
 
-and how does the interaction when a user closes their screen works? are the processes just stops? are they get resetted?
+an idea for attaching stray viruses to user accounts. When the account is active, the user can click a button, to get a config file A, and a random string B and the database stores hash(A, B). The B is the proof or ownership and you can't really guess the random string B if it's long. So, make it like that, make it long enough so that the security will not be breached. Then, the user can provide A and B, then the program reads A, checks if A is valid with the hash, then do the necessary association.
 
+or, just go with the much simpler approach of sending the kill when an unknown virus pings. This is also interesting and may be I should have a self destruct script that can delete the virus-specific SU.vbs file, then I don't need to worry about micromanaging the local environment anymore and can just let the virus mutates freely. Also may be this is a way to have multiple viruses know where each of the viruses are and how many there are, because at the end of the day, there must still be an entrypoint anyway, right? You can't hide there
+
+secure other public endpoints and make sure no one can get in
+
+so, for recovering the previous state, I can build an export command, which will dump mysql out into a file, which can be on mount/. The tool sits within startup/, not mount/, but the sql file will be on mount, and the data file will be on mount/ too. Have 2 separate tools for this. exportSql.sh, exportData.sh, importSql.sh, importData.sh, so on and so fourth. Why can't I just mount startup? Well, because the runtime environment is different from the build environment, and there are some stuff you want to do at build time, and others at runtime.
+
+side note: write a detailed post on building the virus. Just to explain my path on making something simple but yet can be extended. Then I can say about the architecture of stuff like register.php
+
+remap old viruses. Add a command so that they will install the new virus. Once the new virus responded, destroy the old one. May be before this, make another entry point on create the new virus so that the install location and other important information can be transferred to

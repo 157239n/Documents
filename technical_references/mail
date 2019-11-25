@@ -167,3 +167,8 @@ Kay, so read through these and try to at least understand them:
 mail stuff needs to have certificate issued by a CA too, I can't get away from it: https://gist.github.com/mrothNET/cb6f313e9cbe896f3e0fdec80ad2f3fa
 
 Just do this bitch: https://github.com/tomav/docker-mailserver
+
+ports, revisited:
+- pop3: 110 (unencrypted), 995 (encrypted)
+- imap: 143 (unencrypted), 993 (encrypted)
+- smtp: 25 (unencrypted), 465 (encrypted)

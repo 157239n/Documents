@@ -52,6 +52,7 @@ commands:
 - hostname (short hostname)
 - hostname -f (fully qualified domain name)
 - usermod -aG docker <user>, adds user to the group "docker"
+- rfc: read rfcs, source: curl -sL https://raw.githubusercontent.com/bfontaine/rfc/v0.2.6/rfc
 
 permissions:
 - normal ones, 0 -> 7

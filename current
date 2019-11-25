@@ -542,7 +542,7 @@ may be make the daily graph scrollable week by week. I think I'm crazy but I thi
 
 Also figure out migrations too, so that the old viruses can still be effective. Then I can sort of know what it's like to do actual migrations
 
-starttls 587 seems to work? meanhilw ssl/tls 465, which I consider to be the default, doesn't seem to work?
+starttls 587 seems to work? meanhilw ssl/tls 465 (definition revoked), which I consider to be the default, doesn't seem to work?
 
 mailing from gmail to test works, and there is that email in the files, inside kel/new/~
 
@@ -572,3 +572,19 @@ regarding the image:
 and standalone spf rules and grammar: http://www.open-spf.org/SPF_Record_Syntax/
 
 different perspective from linode: https://www.linode.com/docs/email/running-a-mail-server/
+
+security protocol versioning:
+- ssl v2
+- ssl v3
+- tls v1.0
+- tls v1.1
+- tls v1.2
+- tls v1.3
+
+opened ports in docker-compose.yml:
+- 25: stmp insecure
+- 587: starttls
+- 143: imap insecure, legacy support
+- 993: imap secure
+why these options?
+"so shortly after port 465 was defined, it was revoked with the expectation that clients would move to using starttls over port 587"

@@ -1,3 +1,8 @@
+Really dumb tls problems:
+- If you are using reverse proxy to serve your site, and the proxy handles all the ssl, then make sure $_SERVER["HTTPS"] = "On" because some software uses it to detect whether it's truely using tls
+
+
+
 $_SERVER["PHP_SELF"]
 if (isset($_GET["query"])); // checks first time here
 hash('md5, $string');

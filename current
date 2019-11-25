@@ -475,9 +475,6 @@ may be don't learn node as before, but understand the technology, what is the ad
 
 play sprocket again for intellectual property rights
 
-dkim eli5
-
-- mail
 - simulation
 
 economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
@@ -491,8 +488,6 @@ how regulations and regulation authorities
 learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
 
 see how this guy can press buttons on the screen: https://www.youtube.com/watch?v=fURH8z3hb6Y
-
-now, suppose that I can't do the mail stuff on my own. No bullshit, the cost would be huge, and for what? So, do all of that once I'm free from here
 
 https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
 
@@ -511,11 +506,11 @@ tasks for tonight:
 - tcp/ip illustrated stuff
 - docker networking, docker swarm and docker deep dive stuff, entirely
 
-check again on cloudflare's cdn status for 157239n.com
+check again on cloudflare's cdn status for 157239n.com. This is strange. The dns propagation checker said that the nameservers are already configured, but cloudflare's 3rd party tool says that the nameservers are still at the same place
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
-also, how about porting kuche over the ny server, to make development much less painful, then just port it back to singapore, to improve performance over there. This will also give me insight into deploying these serendipitously, and to truely utilize what docker has to offer.
+also, how about porting kuche over the ny server, to make development much less painful, then just port it back to singapore, to improve performance over there. This will also give me insight into deploying these serendipitously, and to truely utilize what docker has to offer. So, u3 will contain the business-critical code for the website, and u2 will run the email servers. Because I am not serving this through a proxy, the chance for failure is less, because I don't really have to take down apache for new certificates and whatnot. Also now that multiple email domains seems possible, do the same thing with kelvinho.org and see whether I can replicate everything. And the problem with persistent state too. Understand the image and the procedure fully, to make sure there are no surprises, and that I can repeat everything here reliably. Then for the website thing, test out whether just deleting the entry in the hosts file will make windows utilize the backbone dns or there are some hidden caches that I don't know about. A way to test this is to basically find a tool to tracert dns, or enter an invalid ip address for kuche, then removing it and if it updates, then it's probably good to go. No wait, a sneaky programmer can still bypass that. So, checking that is on the way to making sure everything works for the demo, but is not entirely foolproof.
 
 play factorio again, but this time try to skip all the bullshit, and just aim the goal really sharp and finish it quick
 
@@ -538,3 +533,42 @@ dig into redis:
 also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
 also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
 
+pmiorg@vs-ssh.visualstudio.com:v3/pmiorg/Enterprise%20Applications/eapp-plat-ecom-magento
+
+spf record, for verifying that a mail comes from a specific host. There is another part to it, which is DKIM (again). So how is this add any value to spf record?
+example.com 86400 TXT "v=spf1 a ~all"
+
+may be make the daily graph scrollable week by week. I think I'm crazy but I think I can actually implement this tonight.
+
+Also figure out migrations too, so that the old viruses can still be effective. Then I can sort of know what it's like to do actual migrations
+
+starttls 587 seems to work? meanhilw ssl/tls 465, which I consider to be the default, doesn't seem to work?
+
+mailing from gmail to test works, and there is that email in the files, inside kel/new/~
+
+wait, so there are 2 emails: one coming in from gmail, and the other from the mail daemon, notifying that the mail from test to gmail does not work, because of some google email policy. spf seems to be working, dkim too.
+
+v=spf1 a:mail.157239n.com -all 0.5 hours
+
+It said certificates are wrong tho, but like, I clearly have set up those. No wait, ahh, I have just have the pem files, but not actually associating that with the docker container, so it doesn't know where the certificate is
+
+so, incoming is ssl/tls, port 993, mail.157239n.com
+outgoing is starttls, port 587, mail.157239n.com, 465 is blocked. Right, so in the docker-compose file, there are no port 465 lmao. So enable it after making the startup structure and procedure repeatable, that's where the value is. But still strange that it is not enabled by default. So may be this is sort of an edge case? Idk
+
+Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
+
+previous 2 problems encountered. Document this in the mail section:
+- fails to pass 421-4.7.0 authentication checks
+- fails to pass 550-5.7.1 authentication checks
+
+regarding the image:
+- https://tvi.al/simple-mail-server-with-docker/
+- https://github.com/tomav/docker-mailserver/wiki/Installation-Examples
+- https://github.com/tomav/docker-mailserver/wiki/FAQ-and-Tips
+- https://github.com/tomav/docker-mailserver/wiki/Configure-SSL
+- https://github.com/tomav/docker-mailserver/wiki
+- https://github.com/tomav/docker-mailserver
+
+and standalone spf rules and grammar: http://www.open-spf.org/SPF_Record_Syntax/
+
+different perspective from linode: https://www.linode.com/docs/email/running-a-mail-server/

@@ -167,5 +167,3 @@ Kay, so read through these and try to at least understand them:
 mail stuff needs to have certificate issued by a CA too, I can't get away from it: https://gist.github.com/mrothNET/cb6f313e9cbe896f3e0fdec80ad2f3fa
 
 Just do this bitch: https://github.com/tomav/docker-mailserver
-
-Also figure out migrations too, so that the old viruses can still be effective. Then I can sort of know what it's like to do actual migrations

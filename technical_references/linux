@@ -144,6 +144,8 @@ tables:
 echo "1"> /proc/sys/net/ipv4/ip_forward
 
 non interactive pre seeding (debian-based only): https://serverfault.com/questions/143968/automate-the-installation-of-postfix-on-ubuntu
+- debconf-set-selections <<< "postfix postfix/mailname string your.hostname.com"
+- debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 
 packages:
 - traceroute: inetutils-traceroute

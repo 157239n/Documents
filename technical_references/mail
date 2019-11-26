@@ -26,119 +26,13 @@ Alternatives to not doing this:
 - Gandi
 - Microsoft Office365
 
-mail ports, more details: https://www.arclab.com/en/kb/email/list-of-smtp-and-imap-servers-mailserver-list.html:
-- smtp (outgoing), sometimes 465, sometimes 587:
-  - non-encrypted, AUTH, 25/587
-  - tls, StartTLS, 587
-  - ssl, SSL, 465
-- imap (incoming), always 993:
-  - non-encrypted, AUTH, 143
-  - tls, StartTLS, 143
-  - ssl, SSL, 993
-- just give me the ports: 25, 465, 587, 143, 993
-- just give me the container: docker container run -it --name mail --publish 25:25 --publish 465:465 --publish 587:587 --publish 143:143 --publish 993:993 --volume /dockerVolumes/mail:/hostVolume ubuntu:latest /bin/bash
+ports:
+- smtp: 25 (not secure), 465 (secure, but deprecated since 1990s), 587 (starttls, secure, used till this day)
+- imap: 143 (not secure), 993 (secure)
+- pop3: 110 (not secure), 995 (secure)
+- just give me the ports: 587, 993
 
-packages, for typical entry:
-- postfix
-- postfix-mysql
-- dovecot-core
-- dovecot-imapd
-- dovecot-lmtpd
-- dovecot-mysql
-
-commands:
-- docker: docker container run -it --name mailServer --publish 465:465 --publish 587:587 --publish 993:993 --volume /dockerVolumes/mailServer:/hostVolume ubuntu:latest /bin/bash
-
-
-
-
-
-
-mail.kelvinho.org
-
-usermail, mailpassword, db: servermail
-
-virtual domains:
-- id auto
-- name (50)
-
-virtual users:
-- id auto
-- domain_id -> virtual_domains.id
-- password (106)
-- email (120)
-
-virtual aliases:
-- id auto
-- domain_id -> virtual_domains.id
-- source (100)
-- destination (100)
-
-
-
-INSERT INTO `servermail`.`virtual_domains`
-(`id` ,`name`)
-VALUES
-('1', 'kelvinho.org'),
-('2', '157239n.com'),
-('3', 'inspire-concept.com');
-
-INSERT INTO `servermail`.`virtual_users`
-(`id`, `domain_id`, `password` , `email`)
-VALUES
-('1', '1', ENCRYPT('kelpassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))), 'kel@kelvinho.org'),
-('2', '2', ENCRYPT('ynespassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))), 'ynes@157239n.com'),
-('3', '3', ENCRYPT('longpassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))), 'long@inspire-concept.com');
-
-
-INSERT INTO `servermail`.`virtual_aliases`
-(`id`, `domain_id`, `source`, `destination`)
-VALUES
-('1', '1', 'quang@kelvinho.org', 'kel@kelvinho.org');
-
-
-
-/etc/dovecot/private/dovecot.key
-/etc/dovecot/private/dovecot.pem
-
-
-kay I give up, here's where I've gotton to:
-We need to create the /etc/dovecot/dovecot-sql.conf.ext file with your information for authentication:
-nano /etc/dovecot/conf.d/auth-sql.conf.ext
-
-
-
-
-
-goals for mail:
-- setup a deadass simple mailserver at u4.kelvinho.org where outgoing mail is possible
-- same thing, but looks legit
-- setup a 2 way mailserver where 2 way is possible
-- same thing, but looks legit
-
-what I imagine how it all fits together:
-1. Have a list of legit email from the domain
-2. Have a service listening to input port for incoming email or email confirmation
-3. Have another service sending out mail to other mailservers for outgoing mail
-4. Then for however you would do this, make sure it gets up to the world's current standards
-
-Also it seems like I only need the mail transfer agent, which is the main service that's going to listen in to ports and stuff, then the rest I can implement by myself.
-
-
-
-
-
-Notes from current:
-
-also may be just do email locally? how hard can that be? Apparently, really, really hard, and I still don't understand the core of it
-postfix only, for outgoing mail: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-14-04
 not doing this: https://www.digitalocean.com/community/tutorials/why-you-may-not-want-to-run-your-own-mail-server
-
-
-
-right, the mailing stuff, make sure I can gain control over everything before putting it into production. If I don't do this then it will, again, be a fucking pain in the ass to recover.
-
-Get on with the mail stuff. The mail stuff absolutelt must be over by tonight. And that's a lot of work. Dammit. Also, the magento thing and laravel using phpstorm
 
 SASL: Simple Authentication and Security Layer
 
@@ -146,29 +40,43 @@ virtual_mailbox_domains
 virtual_mailbox_maps
 virtual_alias_maps
 
+and standalone spf rules and grammar: http://www.open-spf.org/SPF_Record_Syntax/
 
+may be common authentication checks needed by mail clients:
+- fails to pass 421-4.7.0 authentication checks
+- fails to pass 550-5.7.1 authentication checks
 
+dead simple docker container setup. Thank god someone made this: https://github.com/tomav/docker-mailserver
 
+so, the path to doing this is:
+- have a server, then have mail.domain.tld points to that server
+- then have mail.otherdomain.tld points to that server too, in BOTH A and MX records
+the image:
+- download 4 files:
+  - curl -o setup.sh https://raw.githubusercontent.com/tomav/docker-mailserver/master/setup.sh; chmod a+x ./setup.sh
+  - curl -o docker-compose.yml https://raw.githubusercontent.com/tomav/docker-mailserver/master/docker-compose.yml.dist
+  - curl -o .env https://raw.githubusercontent.com/tomav/docker-mailserver/master/.env.dist
+  - curl -o env-mailserver https://raw.githubusercontent.com/tomav/docker-mailserver/master/env-mailserver.dist
+- change configurations
+- start the container
+- ./setup.sh email list
+- ./setup.sh email add user@domain.tld password
+- ./setup.sh config dkim to generate the dkim public key
+- paste this dkim key (should be at config/opendkim/keys/domain.tld/mail.txt) to the text dns record, default host (@)
+- add an spf rule like v=spf1 a:mail.domain.tld -all, so that mail clients can make sure an email is authorized from a particular domain
 
-kay, so plow through all of the mailing stuff. Then just stuff all of them into an image then boot stuff from there, changing key values only.
-- https://www.digitalocean.com/community/tags/email?type=tutorials
-- https://www.digitalocean.com/community/questions/how-to-set-up-email-on-digitalocean-droplet
-- https://www.digitalocean.com/community/tutorials/why-you-may-not-want-to-run-your-own-mail-server
-- https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassassin
-- https://www.linode.com/docs/email/postfix/
+Host: 1.0.168.192.in-addr.arpa
+Type: PTR
+Points to: hostname1.example.com
+TTL: 1 hour
 
+if network is 192.168.0.0/24, reverse zone would be 0.168.192.in-addr.arpa
 
+v=spf1 a:mail.157239n.com a:mail.kelvinho.org a:kelvinho.org -all
 
-Kay, so read through these and try to at least understand them:
-- https://www.digitalocean.com/community/tutorials/how-to-set-up-a-postfix-e-mail-server-with-dovecot
-- https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-18-04
-- https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassassin
-
-mail stuff needs to have certificate issued by a CA too, I can't get away from it: https://gist.github.com/mrothNET/cb6f313e9cbe896f3e0fdec80ad2f3fa
-
-Just do this bitch: https://github.com/tomav/docker-mailserver
-
-ports, revisited:
-- pop3: 110 (unencrypted), 995 (encrypted)
-- imap: 143 (unencrypted), 993 (encrypted)
-- smtp: 25 (unencrypted), 465 (encrypted)
+regarding the image:
+- https://github.com/tomav/docker-mailserver/wiki/Installation-Examples
+- https://github.com/tomav/docker-mailserver/wiki/FAQ-and-Tips
+- https://github.com/tomav/docker-mailserver/wiki/Configure-SSL
+- https://github.com/tomav/docker-mailserver/wiki
+- https://github.com/tomav/docker-mailserver

@@ -151,3 +151,7 @@ non interactive pre seeding (debian-based only): https://serverfault.com/questio
 packages:
 - traceroute: inetutils-traceroute
 - ip: iproute2
+
+Editing runlevel startup daemons:
+- disable daemon: update-rc.d apache2 disable
+- remove daemon files completely (and the service too): update-rc.d -f apache2 remove

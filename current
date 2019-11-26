@@ -520,8 +520,6 @@ also a friendly reminder that there is still a lot of stuff and opened pages on 
 
 then go through the media current stuff 
 
-http://142.93.201.90/
-
 dig into redis:
 - https://redis.io/
 - https://redis.io/documentation
@@ -535,56 +533,18 @@ also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXF
 
 pmiorg@vs-ssh.visualstudio.com:v3/pmiorg/Enterprise%20Applications/eapp-plat-ecom-magento
 
-spf record, for verifying that a mail comes from a specific host. There is another part to it, which is DKIM (again). So how is this add any value to spf record?
-example.com 86400 TXT "v=spf1 a ~all"
-
 may be make the daily graph scrollable week by week. I think I'm crazy but I think I can actually implement this tonight.
 
 Also figure out migrations too, so that the old viruses can still be effective. Then I can sort of know what it's like to do actual migrations
 
-starttls 587 seems to work? meanhilw ssl/tls 465 (definition revoked), which I consider to be the default, doesn't seem to work?
-
-mailing from gmail to test works, and there is that email in the files, inside kel/new/~
-
-wait, so there are 2 emails: one coming in from gmail, and the other from the mail daemon, notifying that the mail from test to gmail does not work, because of some google email policy. spf seems to be working, dkim too.
-
-v=spf1 a:mail.157239n.com -all 0.5 hours
-
-It said certificates are wrong tho, but like, I clearly have set up those. No wait, ahh, I have just have the pem files, but not actually associating that with the docker container, so it doesn't know where the certificate is
-
-so, incoming is ssl/tls, port 993, mail.157239n.com
-outgoing is starttls, port 587, mail.157239n.com, 465 is blocked. Right, so in the docker-compose file, there are no port 465 lmao. So enable it after making the startup structure and procedure repeatable, that's where the value is. But still strange that it is not enabled by default. So may be this is sort of an edge case? Idk
-
 Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
 
-previous 2 problems encountered. Document this in the mail section:
-- fails to pass 421-4.7.0 authentication checks
-- fails to pass 550-5.7.1 authentication checks
-
-regarding the image:
-- https://tvi.al/simple-mail-server-with-docker/
-- https://github.com/tomav/docker-mailserver/wiki/Installation-Examples
-- https://github.com/tomav/docker-mailserver/wiki/FAQ-and-Tips
-- https://github.com/tomav/docker-mailserver/wiki/Configure-SSL
-- https://github.com/tomav/docker-mailserver/wiki
-- https://github.com/tomav/docker-mailserver
-
-and standalone spf rules and grammar: http://www.open-spf.org/SPF_Record_Syntax/
+So, +all in the spf rule works. So this is the problem. Look into the spf rules again, so that I don't have to use +all, because I still think there is value spf provide. https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability
 
 different perspective from linode: https://www.linode.com/docs/email/running-a-mail-server/
 
-security protocol versioning:
-- ssl v2
-- ssl v3
-- tls v1.0
-- tls v1.1
-- tls v1.2
-- tls v1.3
+see whether the dkim include challenges like with getting a certificate? Because it sounds like dkim uses the same technology as tls (lmao, their .pem files and ----- BEGIN CERTIFICATE ----- and what not. Idk okay, just leave me alone and don't force me to understand the fucking layered details), so my worry is that I can't obtain a valid dkim key until I got the majority of dns pointed towards u2, which will not make for a smooth transition.
 
-opened ports in docker-compose.yml:
-- 25: stmp insecure
-- 587: starttls
-- 143: imap insecure, legacy support
-- 993: imap secure
-why these options?
-"so shortly after port 465 was defined, it was revoked with the expectation that clients would move to using starttls over port 587"
+and test the 'normal' certificates too, which I think dkim uses? Again, no idea fam
+
+tesla cybertruck, for comments: https://www.youtube.com/watch?v=DG9ezAuSn4c

@@ -539,12 +539,11 @@ Also figure out migrations too, so that the old viruses can still be effective. 
 
 Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
 
-So, +all in the spf rule works. So this is the problem. Look into the spf rules again, so that I don't have to use +all, because I still think there is value spf provide. https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability
-
-different perspective from linode: https://www.linode.com/docs/email/running-a-mail-server/
-
-see whether the dkim include challenges like with getting a certificate? Because it sounds like dkim uses the same technology as tls (lmao, their .pem files and ----- BEGIN CERTIFICATE ----- and what not. Idk okay, just leave me alone and don't force me to understand the fucking layered details), so my worry is that I can't obtain a valid dkim key until I got the majority of dns pointed towards u2, which will not make for a smooth transition.
-
-and test the 'normal' certificates too, which I think dkim uses? Again, no idea fam
-
 tesla cybertruck, for comments: https://www.youtube.com/watch?v=DG9ezAuSn4c
+
+also i'm lucky that I don't sort of have to deal with zero downtime upgrades. But wait, how would I do that? The guideline I saw on the internet is to just have multiple private servers, then use the load balancer to distribute load between them. Nice. But like databases man. How do you replicate something like that?
+
+php security book
+
+view digitalocean's services more in-depth: https://www.digitalocean.com/docs/droplets/resources/choose-plan/
+

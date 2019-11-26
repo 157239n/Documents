@@ -33,14 +33,13 @@ ports:
 - just give me the ports: 587, 993
 
 not doing this: https://www.digitalocean.com/community/tutorials/why-you-may-not-want-to-run-your-own-mail-server
+turns out this is so stupidly hard and requires understanding in so many disciplines that I ended up just using the docker setup below.
 
 SASL: Simple Authentication and Security Layer
 
 virtual_mailbox_domains
 virtual_mailbox_maps
 virtual_alias_maps
-
-and standalone spf rules and grammar: http://www.open-spf.org/SPF_Record_Syntax/
 
 may be common authentication checks needed by mail clients:
 - fails to pass 421-4.7.0 authentication checks
@@ -62,21 +61,10 @@ the image:
 - ./setup.sh email list
 - ./setup.sh email add user@domain.tld password
 - ./setup.sh config dkim to generate the dkim public key
-- paste this dkim key (should be at config/opendkim/keys/domain.tld/mail.txt) to the text dns record, default host (@)
-- add an spf rule like v=spf1 a:mail.domain.tld -all, so that mail clients can make sure an email is authorized from a particular domain
-
-Host: 1.0.168.192.in-addr.arpa
-Type: PTR
-Points to: hostname1.example.com
-TTL: 1 hour
+- paste this dkim key (should be at config/opendkim/keys/domain.tld/mail.txt) to the text dns record, host normally is mail._domainkey, but see the dkim key command to modify the zone file to be sure.
+- add an spf rule (it's a txt dns record) like v=spf1 mx -all, so that mail clients can make sure an email is authorized from a particular server. For more fine-grained control, consult this: http://www.open-spf.org/SPF_Record_Syntax/
+- generate certificate (for all domains the server is gonna handle mail of) using letsencrypt's certbot, store it at /etc/letsencrypt/live/mail.domain.tld/. Modify env-mailserver's SSL_TYPE field to letsencrypt
+- go through the environment variables, make sure hostname is mail, domain name is domain.tld AND the container name is mail.domain.tld
+- set up reverse dns (PTR record, this is especially painful because many services don't allow changing their PTR record for the vps), so that the server's ip address points to mail.domain.tld, also make sure the regular dns points mail.domain.tld to the server's ip address. Also, there can only be 1 ptr record. All other ptr records will act as aliases with the original one.
 
 if network is 192.168.0.0/24, reverse zone would be 0.168.192.in-addr.arpa
-
-v=spf1 a:mail.157239n.com a:mail.kelvinho.org a:kelvinho.org -all
-
-regarding the image:
-- https://github.com/tomav/docker-mailserver/wiki/Installation-Examples
-- https://github.com/tomav/docker-mailserver/wiki/FAQ-and-Tips
-- https://github.com/tomav/docker-mailserver/wiki/Configure-SSL
-- https://github.com/tomav/docker-mailserver/wiki
-- https://github.com/tomav/docker-mailserver

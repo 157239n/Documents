@@ -1,5 +1,0 @@
-
-db name: peter_wordpress
-name: peter
-password: Strongest avenger 2$
-host: localhost

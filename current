@@ -491,8 +491,6 @@ see how this guy can press buttons on the screen: https://www.youtube.com/watch?
 
 https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
 
-for kuche, immediately port over the entire website over to the singapore server, and this time make it through a proxy of some sorts, so that I can do zero downtime updates (near to zero only, not entirely zero)
-
 save the path I laid out for that yt guy for chi, and reply to that person too
 
 after I have understood networking, return to that stack overflow question of mine and answer that question
@@ -502,7 +500,6 @@ oh and go through the old networking series, then go through the tcp/ip illustra
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
 
 tasks for tonight:
-- kuche stuff, entirely
 - tcp/ip illustrated stuff
 - docker networking, docker swarm and docker deep dive stuff, entirely
 
@@ -510,13 +507,9 @@ check again on cloudflare's cdn status for 157239n.com. This is strange. The dns
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
-also, how about porting kuche over the ny server, to make development much less painful, then just port it back to singapore, to improve performance over there. This will also give me insight into deploying these serendipitously, and to truely utilize what docker has to offer. So, u3 will contain the business-critical code for the website, and u2 will run the email servers. Because I am not serving this through a proxy, the chance for failure is less, because I don't really have to take down apache for new certificates and whatnot. Also now that multiple email domains seems possible, do the same thing with kelvinho.org and see whether I can replicate everything. And the problem with persistent state too. Understand the image and the procedure fully, to make sure there are no surprises, and that I can repeat everything here reliably. Then for the website thing, test out whether just deleting the entry in the hosts file will make windows utilize the backbone dns or there are some hidden caches that I don't know about. A way to test this is to basically find a tool to tracert dns, or enter an invalid ip address for kuche, then removing it and if it updates, then it's probably good to go. No wait, a sneaky programmer can still bypass that. So, checking that is on the way to making sure everything works for the demo, but is not entirely foolproof.
-
 play factorio again, but this time try to skip all the bullshit, and just aim the goal really sharp and finish it quick
 
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
-
-also a friendly reminder that there is still a lot of stuff and opened pages on the phone. But these after entirely fixing kuche's problems.
 
 then go through the media current stuff 
 
@@ -533,15 +526,9 @@ also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXF
 
 pmiorg@vs-ssh.visualstudio.com:v3/pmiorg/Enterprise%20Applications/eapp-plat-ecom-magento
 
-may be make the daily graph scrollable week by week. I think I'm crazy but I think I can actually implement this tonight.
-
-Also figure out migrations too, so that the old viruses can still be effective. Then I can sort of know what it's like to do actual migrations
-
 Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
 
 tesla cybertruck, for comments: https://www.youtube.com/watch?v=DG9ezAuSn4c
-
-also i'm lucky that I don't sort of have to deal with zero downtime upgrades. But wait, how would I do that? The guideline I saw on the internet is to just have multiple private servers, then use the load balancer to distribute load between them. Nice. But like databases man. How do you replicate something like that?
 
 php security book
 

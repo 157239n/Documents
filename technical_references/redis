@@ -24,3 +24,18 @@ common use cases:
 - high io workloads
 - messaging
 - pub/sub
+
+cli. Should note that once you have the cli, there is the autocomplete feature which is very handy:
+- dead simple:
+  - set key value
+  - get key
+  - incr key, incrby, decr, decrby
+  - getset
+  - mset, mget, multiple __
+  - expire key seconds
+  - ttl key
+- lists:
+  - rpush list A, lpush list B
+  - lrange list start end, can be negative
+  - rpop list, lpop list
+  - ltrim list start end, like lrange, but sets the list to the new range

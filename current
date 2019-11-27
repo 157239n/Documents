@@ -465,10 +465,6 @@ seems nice, go over wp over here: https://www.youtube.com/user/MattGeri/playlist
 
 buy chi and dan some stuff from spacex store
 
-and, learn nodejs in a few hours so I can sort of show dan what's that about. Seems like dan's not really following my path, and she kinda just want things serendipitously, and that's okay too. And by doing this, hopefully I can be comfortable in adapting to new tech really fast and deploy these things even faster. But again, goddammit, I still need to understand the firmware interface.
-
-may be don't learn node as before, but understand the technology, what is the advantage in using it, and the philosophy behind it.
-
 2 books:
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
@@ -493,17 +489,9 @@ https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_
 
 save the path I laid out for that yt guy for chi, and reply to that person too
 
-after I have understood networking, return to that stack overflow question of mine and answer that question
-
 oh and go through the old networking series, then go through the tcp/ip illustrated book once more, to gather nuggets of information, not to understand and remember how these packet format works.
 
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
-
-tasks for tonight:
-- tcp/ip illustrated stuff
-- docker networking, docker swarm and docker deep dive stuff, entirely
-
-check again on cloudflare's cdn status for 157239n.com. This is strange. The dns propagation checker said that the nameservers are already configured, but cloudflare's 3rd party tool says that the nameservers are still at the same place
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
@@ -512,14 +500,6 @@ play factorio again, but this time try to skip all the bullshit, and just aim th
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
 
 then go through the media current stuff 
-
-dig into redis:
-- https://redis.io/
-- https://redis.io/documentation
-- https://redis.io/topics/data-types-intro
-- https://redis.io/topics/streams-intro
-- https://redis.io/topics/twitter-clone
-- https://en.wikipedia.org/wiki/Redis
 
 also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
 also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
@@ -530,7 +510,9 @@ Then after polishing the concurrent aspect of the virus, and have written about 
 
 tesla cybertruck, for comments: https://www.youtube.com/watch?v=DG9ezAuSn4c
 
-php security book
-
-view digitalocean's services more in-depth: https://www.digitalocean.com/docs/droplets/resources/choose-plan/
+okay, so i kinda get it with docker swarm already, and nigel's chapter on swarm kinda focuses on how to deploy them from a simple, prebuilt image. But like, I use docker compose for everything that I do nowadays to start really nice services, and docker stacks is basically docker compose, but with swarm integration. And I sort of feel like I can really understand this, so go through that chapter on docker swarm, then consider I have understood that:
+- https://github.com/dockersamples/atsea-sample-shop-app
+- https://github.com/dockersamples/atsea-sample-shop-app/blob/master/docker-compose.yml
+- https://github.com/dockersamples/atsea-sample-shop-app/blob/master/docker-stack.yml
+- https://github.com/docker/libnetwork/blob/master/docs/design.md
 

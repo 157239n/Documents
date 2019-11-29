@@ -115,3 +115,16 @@ http://157239n.com/files/vectors/generic.txt
 
 http://kelvinho.org/Virus/vectors/!targetId!
 
+so, may be install a certificate authority on their machine, then reroute their hosts file, for dns spoofing, to collect basically every communication channels. But like, signing keys aren't an easy thing to do as of right now, because i don't fucking understand those .pem key files. Like, the signing process is a big deal.
+
+After migration of the v2 targets, which definitely include that guy in canada, start to dig into the research he is doing.
+
+So, a general idea of what the post should be like should include these parts:
+- intro, talk about v1, then talk about v2 and what the end philosophy should look like. Then explain the hardship in actual spying, and the kind of glue code, monolithic and bloated code v1 and v2 has.
+- talk about the basic boot structure of the application, from the docker configs in the beginning, then specify port mappings, and whatnot. Also talk about the sql schema, the uptimes schema. Then for the model, talk about User, Virus, AttackInterface classes in general
+- then talk about AttackInterface in more detail, specify what specifications should it has, how the pluggable-ness should be achieved by php reflection. Then may be talk about similarities with wordpress, for having generalized concepts such as "the loop", and with magento, with generalized concept of to-be-compiled classes, based on some previous C configurationw, and what php modules to compile in.
+- after that, explain how that architecture can be extended to handle multiple attack types, and how there really is an option to customize everything, from the intercept generation process, to the batch file generation process, then to the admin screen, dealing with dormant, deployed and executed branchesw
+- also talk about the really complicated security mechanism to protect the data while in transit, and also possible problems with switching back and forth between http and https.
+- then talk about edge cases, and talk about when the application has outgrown the original vision, and signs where a complete rewrite with the same philosophy should be attempted. This is because well, the real time attacks, that updates automatically, fundamentally needs a new model to handle the workload. These are just not okay to deal with auto-updated attacks, and there is no concept of rolling attack in the 3 types.
+- then may be talk about automatic rolling deployments, and how the application signature should not be changed so much, as to be adapted to the old application, and when does it warrants a complete freeze of the system, for rolling updates to occur
+- then may be about future directions? But those details are not yet ironed out tho, so may be delay this until after 80% of the post is written

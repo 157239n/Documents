@@ -489,8 +489,6 @@ https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_
 
 save the path I laid out for that yt guy for chi, and reply to that person too
 
-oh and go through the old networking series, then go through the tcp/ip illustrated book once more, to gather nuggets of information, not to understand and remember how these packet format works.
-
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
@@ -505,6 +503,7 @@ also a problem with money and law that I think I need to solve is that currently
 also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
 
 pmiorg@vs-ssh.visualstudio.com:v3/pmiorg/Enterprise%20Applications/eapp-plat-ecom-magento
+this should warrant a complete rebuild, to be able to sort of make a script, to link all of the remotes? Or if possible, look into how there can be a git repo inside of another git repo. Nah nvm, just dump stuff here, don't need to worry about conflicts.
 
 Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
 

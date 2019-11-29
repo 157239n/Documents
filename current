@@ -1,7 +1,7 @@
 
 So, plan to deal with this whole problem:
 - (done) Learn about the remaining IT stuff: Docker and Gradle
-- (low priority) Learn about networking and possibly wiggle around the Raspberry Py to understand more
+- (done) Learn about networking and possibly wiggle around the Raspberry Py to understand more
 - Learn about some mechanical engineering stuff, to the point that I have a feeling and intuition for stresses and strains
 - (low priority) Learn about some fluid dynamics and thermodynamics, for understanding the applicability of science
 - Switch major to mechanical engineering, and get into a machine/hardware shop. Ask for contacts for students that are actually building hardware products for customers, from scratch. I remember Khue's friend used to do that.
@@ -487,10 +487,6 @@ see how this guy can press buttons on the screen: https://www.youtube.com/watch?
 
 https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
 
-save the path I laid out for that yt guy for chi, and reply to that person too
-
-oh and go through the old networking series, then go through the tcp/ip illustrated book once more, to gather nuggets of information, not to understand and remember how these packet format works.
-
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
@@ -515,4 +511,9 @@ okay, so i kinda get it with docker swarm already, and nigel's chapter on swarm 
 - https://github.com/dockersamples/atsea-sample-shop-app/blob/master/docker-compose.yml
 - https://github.com/dockersamples/atsea-sample-shop-app/blob/master/docker-stack.yml
 - https://github.com/docker/libnetwork/blob/master/docs/design.md
+
+make another graph that is discrete
+
+55 north 11th street, philly
+87 division street, ny
 

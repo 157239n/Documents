@@ -18,3 +18,24 @@ providers:
 - emerchantpay
 - shift4
 - judopay
+
+payment service provider/payment processing company (worldpay)
+-------------------------
+payment gateway | payment processor | merchant account (imply bank)
+       ^                 |
+       |                 v
+       |         uses visa's network
+       |
+integrates with erp/accounting software (sitecore)
+
+shopify, bigcommerce, magento, woocommerce
+
+payment processors:
+- payline
+- paypal
+- stripe, developer-centric
+- square
+
+again, a lot of ppl is recommending transferwise
+
+okay, so how does something like venmo changes the model? Does the guys at halal have to sign up for a merchant account? Or they can just do a normal account and let venmo just be the middleman?

@@ -42,7 +42,7 @@ It's a good point to note that easy.Screenshot and unixtime.cmd can be considere
 Also note that this conflicts with the plans to auto migrate and cluster orchestration, because moving the entire virus is fucking heavy with 3rd party libs and dealing with dependencies might be so mind fucking.
 
 Binaries I can think of right now:
-- JRE
+- JRE (Joe Rogan lmao)
 - python
 - nircmd: http://www.nirsoft.net/utils/nircmd.html
 

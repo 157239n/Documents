@@ -1,0 +1,20 @@
+
+i have no idea how any of these work and this is not my area of expertise
+
+internet merchant account
+payment gateway (worldpay, sage pay), sends to payment processor (whose is this?), then money from customer bank to your account
+payment service provider (hosts frontend pages, offer a list of payment schemes to choose from)
+
+paypal
+
+"online marketplace"
+
+may be set up a patrion account to test the flow of money?
+
+this channel looks like a lot of content: https://www.youtube.com/watch?v=NciOWYi1IJo
+
+providers:
+- bluesnap
+- emerchantpay
+- shift4
+- judopay

@@ -28,6 +28,7 @@ commands:
 - top
 - htop: better of top, displays processes' details
 - systemctl list-units --type=mount
+- systemctl enable <service>, start on boot
 - apropos
 - chsh: change shell, chsh -s /bin/zsh
 - open -a TextEdit ~/.zshrc (open file with specific program, why this style?)
@@ -36,10 +37,13 @@ commands:
 - fdisk -l: list all disks, possibly look for /dev/sda5
 - mount /dev/sda5 /mnt/drive
 - umount /dev/sda5
-- ifconfig (ipconfig in windows)
+- ifconfig (ipconfig in windows), iwconfig for wireless
+- arp -a
+- nmap: port scanner
 - dhclient: release and renew ip address
 - uname: current kernel information
 - ip addr show
+- route: show routing table
 - df -ah: df (short for "disk free", checks for disk space), all file systems, human readable formatting
 - du -sh <dir>: size of directory
 - netstat: open ports, listening sockets
@@ -53,6 +57,9 @@ commands:
 - hostname -f (fully qualified domain name)
 - usermod -aG docker <user>, adds user to the group "docker"
 - rfc: read rfcs, source: curl -sL https://raw.githubusercontent.com/bfontaine/rfc/v0.2.6/rfc
+others:
+- updatedb
+- locate: locate files. Run updatedb first
 
 permissions:
 - normal ones, 0 -> 7

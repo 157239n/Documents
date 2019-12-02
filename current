@@ -334,8 +334,6 @@ some other reports:
 - https://www.iea.org/etp/explore/
 - https://www.iea.org/etp2017/
 
-effective java: https://www.youtube.com/watch?v=V1vQf4qyMXg&feature=youtu.be&t=22m24s
-
 seems like nice vids about econ: https://www.youtube.com/user/MrUniversity/playlists
 imf vids, short, seems good: https://www.youtube.com/watch?v=Igkpbqb0uXA&list=PLmYAE4wV1YQwWtLOxgtx33DxPcfDfYZ3h
 
@@ -349,9 +347,6 @@ invoices: https://www.freshbooks.com/hub/invoicing/what-is-an-invoice
 how insurance works (again lol): https://www.santander.co.uk/personal/insurance/travel-insurance
 
 nice channel about engineering: https://www.youtube.com/channel/UCosExgfjj-DhMJXnQd2Y4gA/videos
-
-articles to read:
-- https://www.weforum.org/agenda/2018/08/planet-earth-has-more-trees-than-it-did-35-years-ago/
 
 compile a list of interesting points about climate change to talk with that librarian:
 - trees absorb 3kg CO2 per year, aggregate: 9GtCO2/yr. Today it's 40GtCO2/yr
@@ -387,9 +382,6 @@ skillshare has a course in business stuff
 
 doug ellison, amature guy, eventually works in jpl, uses data from nasa, the freely accessible ones
 
-maps.googleapis.com/maps/api/geocode/json?address=chicago
-3 core products: maps, routes, and places
-
 Fleet enema
 
 Also see whether there is some ocr as an api. Apparently there are, and it's called Cloud Vision API: https://cloud.google.com/vision/docs/ocr
@@ -408,10 +400,8 @@ p5. Also they have a few examples pulling from earthquake databases, so look int
 
 ethical hacking, 15 hours: https://www.youtube.com/watch?v=3Kq1MIfTWCE
 
-also I feel like I need to study physics rigorously now, with the state of mind that I've got
-
 https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html
-
+https://github.com/tesseract-ocr/tesseract/releases
 so, applications:
 - that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
 - try out the organic stuff at autodesk
@@ -422,17 +412,7 @@ so, applications:
 
 plow through android once more, to get the philosophy and the way of doing things
 
-also what's the deal with peer to peer networks
-
-- read more about how these molecules are formed, then simulate that
-
-talks on rendering:
-- https://www.youtube.com/watch?v=RdN06E6Xn9E
-- https://www.youtube.com/watch?v=mQ2KTRn4BMI
-
 get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
-
-with the forces in check, see if I can simulate beams being stressed
 
 carbon xprize
 TerraPower, travelling wave reactor
@@ -447,31 +427,26 @@ Also I still don't get the interface for climate change. I mean, the common tech
 
 wtf is this https://americas.ramboll.com/projects
 
-how about that world science festival thing brian greene hosted
+also I feel like I need to study physics rigorously now, with the state of mind that I've got
 
-see the interface between python and other data packages, how the interfaces work
+quickly go through everything here: http://www.worldscienceu.com/
 
+read more about how these molecules are formed, then simulate that
+with the forces in check, see if I can simulate beams being stressed
 the simulations, implement locality with hashmap stuff
+simulate boyles law for chi, and the sterling engine where air is forced on the side. Also think about how would you do forces on a beam. Do this, or a collab with her is impossible.
 
 Then read over those 2000 pages magento, then understand the existing apis for the big picture.
 
 Also look over the internal documents to see if there's something fun.
 
-simulate boyles law for chi, and the sterling engine where air is forced on the side. Also think about how would you do forces on a beam. Do this, or a collab with her is impossible.
-
 stocks again, check out docs for robinhood
-
-seems nice, go over wp over here: https://www.youtube.com/user/MattGeri/playlists. Again, the point of all this is to be able to port over kuche. Once I've done that then no need to go over wp. But may be watch the original series once more, to get the intuition behind that.
-
-buy chi and dan some stuff from spacex store
 
 2 books:
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 
 play sprocket again for intellectual property rights
-
-- simulation
 
 economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
 
@@ -483,11 +458,7 @@ how regulations and regulation authorities
 
 learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
 
-see how this guy can press buttons on the screen: https://www.youtube.com/watch?v=fURH8z3hb6Y
-
 https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
-
-save the path I laid out for that yt guy for chi, and reply to that person too
 
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
 
@@ -497,8 +468,6 @@ play factorio again, but this time try to skip all the bullshit, and just aim th
 
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
 
-then go through the media current stuff 
-
 also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
 also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
 
@@ -507,16 +476,66 @@ this should warrant a complete rebuild, to be able to sort of make a script, to 
 
 Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
 
-tesla cybertruck, for comments: https://www.youtube.com/watch?v=DG9ezAuSn4c
+so, chi's first interview will be on next thursday, let's see what's the status then
 
-okay, so i kinda get it with docker swarm already, and nigel's chapter on swarm kinda focuses on how to deploy them from a simple, prebuilt image. But like, I use docker compose for everything that I do nowadays to start really nice services, and docker stacks is basically docker compose, but with swarm integration. And I sort of feel like I can really understand this, so go through that chapter on docker swarm, then consider I have understood that:
-- https://github.com/dockersamples/atsea-sample-shop-app
-- https://github.com/dockersamples/atsea-sample-shop-app/blob/master/docker-compose.yml
-- https://github.com/dockersamples/atsea-sample-shop-app/blob/master/docker-stack.yml
-- https://github.com/docker/libnetwork/blob/master/docs/design.md
+from phone:
+political:
+- https://www.sba.gov/business-guide/10-steps-start-your-business/
+- https://en.m.wikipedia.org/wiki/Model_United_Nations
+- https://en.m.wikipedia.org/wiki/Diplomacy
+- https://www.reddit.com/r/explainlikeimfive/comments/2bxv30/eli5_what_is_a_model_un_and_how_does_it_work/
+- http://docs.everypolitician.org/use_the_data.html
+- http://www.popoloproject.com/
+- https://en.m.wikipedia.org/wiki/G20
+- https://books.google.com/books?hl=en&lr=&id=sOELm3YduxQC&oi=fnd&pg=RA1-PR10&dq=%22middle%20power%22&ots=3zxChBjjoQ&sig=TH9T3_c8wdX6wUuUlmmhtCak0cg#v=onepage&q=%22middle%20power%22&f=false
+- Junichi ihara united nations
+- joko widodo
+- vtsax
+- https://amp.businessinsider.com/paypal-mafia-members-careers-elon-musk-peter-thiel-reid-hoffman-2019-11
+climate:
+- https://beingthechangebook.com/
+- https://amp.reddit.com/r/climatechange/comments/9mzouo/the_new_un_report_has_me_spooked_seriously/
+- https://www.climate-lab-book.ac.uk/comparing-cmip5-observations/
+- https://qz.com/1144298/humanitys-fight-against-climate-change-is-failing-one-technology-can-change-that/
+- https://www.unenvironment.org/resources/emissions-gap-report-2017
+- https://cleantechnica.com/2019/04/21/carbon-captures-global-investment-would-have-been-better-spent-on-wind-solar/
+- https://www.globalccsinstitute.com/
+- https://www.scientificamerican.com/article/could-air-conditioning-fix-climate-change/?redirect=1
+- Afforestation
+- https://en.m.wikipedia.org/wiki/Sustainable_Development_Goals
+- https://en.m.wikipedia.org/wiki/Millennium_Summit
+- https://interestingengineering.com/capturing-co2-to-mitigate-the-effects-of-climate-change
+- marine permaculture reddit
+- https://www.carbonbrief.org/direct-co2-capture-machines-could-use-quarter-global-energy-in-2100/amp
+- Drawdown
+- Thermocline
+- https://cleantechnica.com/2019/08/22/bill-gates-is-throwing-away-money-on-ill-advised-non-solutions-to-global-warming/amp/
+- https://www.euractiv.com/section/energy-environment/news/norways-carbon-storage-project-boosted-by-european-industry/
+- https://www.energy.gov/articles/us-department-energy-announces-110m-carbon-capture-utilization-and-storage
+- https://www.gizmodo.com.au/2019/09/the-world-is-installing-a-ton-of-renewables-but-coal-could-screw-things-up/amp
+- https://www.forbes.com/sites/jamesconca/2019/10/08/carbon-engineering-taking-co2-right-out-of-the-air-to-make-gasoline/amp/
+- https://www.nytimes.com/2019/11/26/climate/greenhouse-gas-emissions-carbon.html
+- https://www.weforum.org/agenda/2018/08/planet-earth-has-more-trees-than-it-did-35-years-ago/
+it:
+- https://www.technologyreview.com/s/612318/establishing-an-ai-code-of-ethics-will-be-harder-than-people-think/
+- https://www.aboutdebian.com/internet.htm
+- https://www.red-gate.com/simple-talk/sql/database-devops-sql/introduction-to-devops-devops-and-the-database/amp/
+- https://github.com/dennybritz/reinforcement-learning
+- https://towardsdatascience.com/recreating-imagination-deepmind-builds-neural-networks-that-spontaneously-replay-past-experiences-9b57a9c08316
+- https://ocr.space/ocrapi
+- https://hadihariri.com/2014/01/06/intellij-idea-minimal-survival-guide/
+others:
+- https://80000hours.org/career-guide/introduction/
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/readings/
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings/
+- https://alcor.org/BecomeMember/index.html
+- https://jalopnik.com/heres-what-happened-with-teslas-ambitious-first-attempt-1838221405/amp
+- https://www.healthline.com/nutrition/12-foods-for-healthy-skin#section2
+- ynes: "econ problem set 1"
 
-make another graph that is discrete
+vpn by myself?
 
-55 north 11th street, philly
-87 division street, ny
+and may be figure out libraries to make a map of the world, for energy visualizations and whatnot
 
+understand concensus? https://raft.github.io/

@@ -13,6 +13,8 @@ reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion"
 
 pause
 
+%date%, %time%
+
 setlocal
 setlocal EnableDelayedExpansion
 setlocal EnableExtensions

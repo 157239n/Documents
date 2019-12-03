@@ -541,33 +541,3 @@ and may be figure out libraries to make a map of the world, for energy visualiza
 understand concensus? https://raft.github.io/
 
 again with that series on money. Gem that too
-
-current magento progress:
-- make user email NOT the unique identifier
-- We will not send emails out of Magento
-- Emails will be sent out of Silverpop or MyPMI
-- Currently, User can store multiple emails within the profile in MyPMI
-- Currently, Magento gets the primary email from the PMI profile
-- What happens if profile returns no primary email
-
-silverpop, watson email marketing, I presume this will be integrated with the react frontend
-
-so, ibm silverpop is for promotional email marketing, and ibm transact is for emailing order confirmation emails
-
-create a resource.kelvinho.org site where static files are served for the 3rd party packages
-
-"All email go through Silverpop"
-
-try out shopify?
-
-also how to monitor traffic of those containers? Docker Deep Dive has an idea to put a visualizer service inside of the docker stacks yml file, then connect it so that it can talk to the docker daemon, which can pull up statistics about those containers
-
-see how I can do php stuff with fastcgi on nginx. Or how load balancing a service using nginx works when the session level is handled by apache?
-
-interesting reads:
-- https://developer.paypal.com/docs/archive/checkout/how-to/server-integration/
-- https://beta.developer.worldpay.com/docs/wpg/tokenisation/beforeyouconnect
-
-so this is on ibm's servers? Or it's on PMI's?
-
-Hey Bhacker, so just a couple of questions. It seems like Transact is an IBM service, and it is hosted on their servers unlike magento and sitecore and we just sort of edit everything through their GUI? Is it so? I tried signing up for an IBM account, and try to test Transact, but it seems like there're no trial periods, and I also don't see any sort of environment setup in the docs. So I was wondering, is Transact a new part of PMI that seemingly no one has touched upon and I'm supposed to figure out how it works and migrate to it, or there's something that I'm missing?

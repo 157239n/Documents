@@ -36,8 +36,6 @@ try brilliant
 
 Research about the viability of nuclear. So tech seems okay. What about the money? Profile several nuclear plants
 
-Tweak julia sets
-
 UN stuff:
 - https://www.youtube.com/user/unitednations/playlists
 - https://en.wikipedia.org/wiki/Group_of_Seven
@@ -63,8 +61,6 @@ https://www.dawdlersphilosophy.com/e7-summer-at-aphelion/
 why was there apparently no action against climate in the gov area? Why has tries over the past couple of decades seemingly vanish?
 ecotourism
 
-watch that documentary about earth history again
-
 "business cases for mitigation and adaption in climate"
 
 control engineering
@@ -76,8 +72,6 @@ Climate change stuff to process:
 - https://www.youtube.com/watch?v=f6_OVfrc_5A
 
 https://whydoesitsuck.com/
-
-Elon on video games: https://www.youtube.com/watch?v=XHUCGNDoWp4
 
 Dive deep into starlink's business case:
 - https://www.reddit.com/r/spacex/comments/brfbic/rspacex_starlink_official_launch_discussion/
@@ -104,8 +98,6 @@ Books on money: "virtual environment to experiment with business"
 - http://gen.lib.rus.ec/book/index.php?md5=8AA6343D7F4E6117B7316C7069E99D02
 - http://gen.lib.rus.ec/book/index.php?md5=10DF87D2CAF65BCA13B3E7440E41FEAD
 - http://gen.lib.rus.ec/book/index.php?md5=635FF4858EF42C1DF8B93B2578482C13
-
-see the business case for docker: https://www.docker.com/taxonomy/term/4949. This includes lots of companies with high speed demands, like VISA.
 
 Dry electrode coating technology: http://www.powersourcesconference.com/Power%20Sources%202018%20Digest/docs/3-1.pdf
 
@@ -161,7 +153,7 @@ Dig into the quick history of human kind. Possibly watching Origins again
 
 Kickstarter: https://www.reddit.com/r/Entrepreneur/comments/7lzqyo/anyone_have_experience_with_kickstarter_tips/
 
-Also intro to family planning and those kind of stuff.
+Also intro to family planning and those kind of stuff, and investigate the claim made by drawdown
 
 In light of drawdown, how about I discuss it with a lot of people, hold conferences at many different places and also change the textbook?
 
@@ -231,8 +223,6 @@ also how to futureproof myself
 how to contract out for a whole factory?
 so the guts of mechanical engineering is to be damn precise and to be rigid
 
-go over android again, also how bluetooth works on that gig a year ago
-
 about the climate stuff. What resources do I have an infinite amount of that I can rely on? I have been taking electricity for granted
 
 may be getting back into the finite element analysis thing if I have time: https://www.youtube.com/watch?v=txk-VO1hzBY
@@ -288,7 +278,7 @@ Again, try to make an ASIC, application specific integrated circuits. Try to get
 https://en.wikipedia.org/wiki/Estuary
 https://en.wikipedia.org/wiki/Brackish_water
 
-investigate sharing excess and their model
+investigate sharing excess and their model or donations and seemingly almost charity
 
 Primer channel about econ looks good too
 
@@ -309,8 +299,6 @@ Humanitarian stuff:
 - https://en.wikipedia.org/wiki/Humanitarian_aid
 
 yang2020.com, https://www.businessinsider.com/tesla-ceo-elon-musk-2020-election-endorsement-andrew-yang-president-2019-8
-
-Yasuha: https://www.youtube.com/watch?v=5m1D2SEKAYo
 
 Again, how can contracts be reinforced?
 
@@ -339,8 +327,6 @@ imf vids, short, seems good: https://www.youtube.com/watch?v=Igkpbqb0uXA&list=PL
 
 write a post explaining the complexities of gradle together with CI/CD and docker, and compare that to the financial infrastructure of today. Also related is how all of these abstractions are just to deal with the shear scale of things we have built our civilization with. But really, the roots of everything is really, really simple. Also mention the mind-blowing abstractions of things like first-order functions.
 may be this is more about abstraction more, and a shadow of it: modernization
-
-invoices: https://www.freshbooks.com/hub/invoicing/what-is-an-invoice
 
 ?https://gocardless.com
 
@@ -374,7 +360,6 @@ Again, look into this Andrew Yang guy, for the renewables and such
 look over to see whether this is worthy: https://aiesec.org/global-volunteer
 
 again, investigate the idea for actually building a dyson sphere
-watch earth 2100 again
 
 business magnate game
 
@@ -384,10 +369,8 @@ doug ellison, amature guy, eventually works in jpl, uses data from nasa, the fre
 
 Fleet enema
 
-Also see whether there is some ocr as an api. Apparently there are, and it's called Cloud Vision API: https://cloud.google.com/vision/docs/ocr
-
 dig into quantum computing again for a little bit
-David Silver RL: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ
+Richard Sutton, David Silver RL: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ
 diamandis: https://www.diamandis.com/blog/podcast-episode-75-private-space-exploration
 
 https://developers.google.com/identity/protocols/OAuth2
@@ -398,19 +381,12 @@ p5. Also they have a few examples pulling from earthquake databases, so look int
 - https://earthquake.usgs.gov/fdsnws/event/1/
 - http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
 
-ethical hacking, 15 hours: https://www.youtube.com/watch?v=3Kq1MIfTWCE
-
 https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html
-https://github.com/tesseract-ocr/tesseract/releases
 so, applications:
 - that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
 - try out the organic stuff at autodesk
 - try out google genomics
-- see how the folks who aggregate together a bunch of forest data did it
-- see how the folks who aggregate together a bunch of earthquake data did it
 - then the story of energy
-
-plow through android once more, to get the philosophy and the way of doing things
 
 get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
 
@@ -452,15 +428,15 @@ economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
 
 SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I can attack son
 
-ibm transact
-
 how regulations and regulation authorities
+
+ibm transact
+https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
 
 learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
 
-https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
-
 read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
+slack's too: https://slack.com/cookie-policy
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
@@ -471,12 +447,7 @@ an interesting challenge that I think will be in the right step to understand th
 also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
 also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
 
-pmiorg@vs-ssh.visualstudio.com:v3/pmiorg/Enterprise%20Applications/eapp-plat-ecom-magento
-this should warrant a complete rebuild, to be able to sort of make a script, to link all of the remotes? Or if possible, look into how there can be a git repo inside of another git repo. Nah nvm, just dump stuff here, don't need to worry about conflicts.
-
 Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
-
-so, chi's first interview will be on next thursday, let's see what's the status then
 
 from phone:
 political:
@@ -492,52 +463,53 @@ political:
 - joko widodo
 - vtsax
 - https://amp.businessinsider.com/paypal-mafia-members-careers-elon-musk-peter-thiel-reid-hoffman-2019-11
-climate:
-- https://beingthechangebook.com/
-- https://amp.reddit.com/r/climatechange/comments/9mzouo/the_new_un_report_has_me_spooked_seriously/
-- https://www.climate-lab-book.ac.uk/comparing-cmip5-observations/
-- https://qz.com/1144298/humanitys-fight-against-climate-change-is-failing-one-technology-can-change-that/
-- https://www.unenvironment.org/resources/emissions-gap-report-2017
-- https://cleantechnica.com/2019/04/21/carbon-captures-global-investment-would-have-been-better-spent-on-wind-solar/
-- https://www.globalccsinstitute.com/
-- https://www.scientificamerican.com/article/could-air-conditioning-fix-climate-change/?redirect=1
-- Afforestation
-- https://en.m.wikipedia.org/wiki/Sustainable_Development_Goals
-- https://en.m.wikipedia.org/wiki/Millennium_Summit
-- https://interestingengineering.com/capturing-co2-to-mitigate-the-effects-of-climate-change
-- marine permaculture reddit
-- https://www.carbonbrief.org/direct-co2-capture-machines-could-use-quarter-global-energy-in-2100/amp
-- Drawdown
-- Thermocline
-- https://cleantechnica.com/2019/08/22/bill-gates-is-throwing-away-money-on-ill-advised-non-solutions-to-global-warming/amp/
-- https://www.euractiv.com/section/energy-environment/news/norways-carbon-storage-project-boosted-by-european-industry/
-- https://www.energy.gov/articles/us-department-energy-announces-110m-carbon-capture-utilization-and-storage
-- https://www.gizmodo.com.au/2019/09/the-world-is-installing-a-ton-of-renewables-but-coal-could-screw-things-up/amp
-- https://www.forbes.com/sites/jamesconca/2019/10/08/carbon-engineering-taking-co2-right-out-of-the-air-to-make-gasoline/amp/
-- https://www.nytimes.com/2019/11/26/climate/greenhouse-gas-emissions-carbon.html
-- https://www.weforum.org/agenda/2018/08/planet-earth-has-more-trees-than-it-did-35-years-ago/
 it:
 - https://www.technologyreview.com/s/612318/establishing-an-ai-code-of-ethics-will-be-harder-than-people-think/
-- https://www.aboutdebian.com/internet.htm
 - https://www.red-gate.com/simple-talk/sql/database-devops-sql/introduction-to-devops-devops-and-the-database/amp/
 - https://github.com/dennybritz/reinforcement-learning
 - https://towardsdatascience.com/recreating-imagination-deepmind-builds-neural-networks-that-spontaneously-replay-past-experiences-9b57a9c08316
-- https://ocr.space/ocrapi
-- https://hadihariri.com/2014/01/06/intellij-idea-minimal-survival-guide/
 others:
 - https://80000hours.org/career-guide/introduction/
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/readings/
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings/
 - https://alcor.org/BecomeMember/index.html
-- https://jalopnik.com/heres-what-happened-with-teslas-ambitious-first-attempt-1838221405/amp
 - https://www.healthline.com/nutrition/12-foods-for-healthy-skin#section2
 - ynes: "econ problem set 1"
-
-vpn by myself?
 
 and may be figure out libraries to make a map of the world, for energy visualizations and whatnot
 
 understand concensus? https://raft.github.io/
 
 again with that series on money. Gem that too
+
+psexec, smb credentials
+
+5:17 mark: https://www.youtube.com/watch?v=3Kq1MIfTWCE
+
+company provisioning:
+- d-rev
+- windpax
+
+go to Independence Seaport Museum
+
+so, priorities now (if meanwhile i got crazy because of the pressure, play factorio to get the scaling challenges, then may be walk and listen to those irregular podcasts, like anthropocene reviewed):
+- write about that damn virus soon, because the further I push it back, the less sort of emotions toward this issue and the less technical insight (and by extension, possible ideas) into this I get
+- implement the final attack, which is monitoring tasks and then stop spending time here
+- get the mola mars data (Mars Orbiter Laser Altimeter), then fill 'em up with water, to probe at the actual scale of a planet, then try to read over casey's work to see how he does his simulation
+- do the twitter thing all over again, now that I know about oauth more and how this process actually works
+- do the local hash map implementation for bounce dynamic, and measure performance
+- then simulate a stirling engine, with hot wall side vibrating constantly and cold wall side actively dampening its motion
+- do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
+- then do actual simulations of cfd
+- see how those folks aggregating data do it. At this point, I should have an idea of how this is like, with the mola plan above, so this will be sort of a best practice kind of approach. Candidate starting point would be that p5.js sketch thing, with the earthquake data, and also the website that aggregate deforestation information
+- then see over other nasa's dataset, preferably about earth and start to dive deep into the current state of climate stuff, because I still don't entirely get it
+- may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier
+
+at work priorities:
+- go over magento's way of doing things, like declaring di.xml file and stuff, because I sort of see how the real page relates to the code
+- go over the actual implementation, to get my own interpretation of the system, and what to expect in sort of the same ecommerce style scenerio
+- after that, the idea for how all of this stuff go together should appear, and then, read over the enterprise application docs to see how it all fits together, and actually hypothesize what tweaking one bit will do
+- then look into the details, the nitty gritty details of ibm transact, then consider everything about pmi is over
+
+https://sethrobertson.github.io/GitBestPractices/

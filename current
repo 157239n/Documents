@@ -513,3 +513,5 @@ at work priorities:
 - then look into the details, the nitty gritty details of ibm transact, then consider everything about pmi is over
 
 https://sethrobertson.github.io/GitBestPractices/
+
+I would want to finish "The Kubernetes Book", but honestly, it feels like a distraction from what's really important right now, because K8S is basically docker swarm, but with more features, configs and whatnot. I get docker swarm already, okay, so may be read over this when i'm bored and want to spice things up.

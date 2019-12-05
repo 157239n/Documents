@@ -22,3 +22,10 @@ All of these might seem unnatural. Like, if you have not known about "curl" or "
 With these improvements, how does the attacking process looks like now?
 
 
+
+
+
+
+
+
+Because we have deleted the counter feature, each viruses will now tell the application that it is alive, scan for new payloads, download those payloads and then starts a worker process to deal with that payload. After the payload is executed, the worker process will update the application with the results, and we can send any sort of files that we want back. This means that we can control the virus real time and can monitor it real time. And because the virus main thread forks worker threads to deal with the payload, if for some reason the payload gets nasty and is stopped by an antivirus, or for some error, the payload just pauses indefinitely, the virus couldn't care less and just moves on, freeing up to future attacks.

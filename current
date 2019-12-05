@@ -485,8 +485,6 @@ again with that series on money. Gem that too
 
 read over some of the messy legal details to get the landscape
 
-notify users of the screenshot detection by avast
-
 psexec, smb credentials
 
 5:17 mark: https://www.youtube.com/watch?v=3Kq1MIfTWCE
@@ -494,6 +492,7 @@ psexec, smb credentials
 company provisioning:
 - d-rev
 - windpax
+- BioLite, solving particulate matter problem, seems like they did quite a good job, reducing 95%, so check them out, see if they're successful
 
 go to Independence Seaport Museum
 
@@ -510,6 +509,10 @@ so, priorities now (if meanwhile i got crazy because of the pressure, play facto
 - then see over other nasa's dataset, preferably about earth and start to dive deep into the current state of climate stuff, because I still don't entirely get it
 - may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier
 
+serendipitous goals:
+- make separate demo pages on every proc? Build it at processing.kelvinho.org/projects or /{project-name}. Will be served by apache. Will have a space on the resources side: /app/processing/project/{project name}/
+- publish vsepr and uniform electric grid (seems like I have already done this)
+
 at work priorities:
 - go over magento's way of doing things, like declaring di.xml file and stuff, because I sort of see how the real page relates to the code
 - go over the actual implementation, to get my own interpretation of the system, and what to expect in sort of the same ecommerce style scenerio
@@ -519,3 +522,9 @@ at work priorities:
 https://sethrobertson.github.io/GitBestPractices/
 
 I would want to finish "The Kubernetes Book", but honestly, it feels like a distraction from what's really important right now, because K8S is basically docker swarm, but with more features, configs and whatnot. I get docker swarm already, okay, so may be read over this when i'm bored and want to spice things up.
+
+go over the details of Processing startup process, like how it starts up, the lifecycle, how things are implemented. Basically figure stuff out until I have control over the entire thing
+
+check for another pair of glasses
+
+pretty nice progress for today

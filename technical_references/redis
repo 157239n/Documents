@@ -39,3 +39,4 @@ cli. Should note that once you have the cli, there is the autocomplete feature w
   - lrange list start end, can be negative
   - rpop list, lpop list
   - ltrim list start end, like lrange, but sets the list to the new range
+  

@@ -522,8 +522,15 @@ https://sethrobertson.github.io/GitBestPractices/
 
 I would want to finish "The Kubernetes Book", but honestly, it feels like a distraction from what's really important right now, because K8S is basically docker swarm, but with more features, configs and whatnot. I get docker swarm already, okay, so may be read over this when i'm bored and want to spice things up.
 
-go over the details of Processing startup process, like how it starts up, the lifecycle, how things are implemented. Basically figure stuff out until I have control over the entire thing
+go over the details of Processing startup process, like how it starts up, the lifecycle, how things are implemented. Basically figure stuff out until I have control over the entire thing. Do this for both the java and the js version. Again, the important thing is the philosophy
 
 check for another pair of glasses
 
 pretty nice progress for today
+
+tar -xvpzf v3.0.0-alpha.4.tar.gz -C /phpdoc --strip-component=1
+cd /phpdoc
+composer install
+/phpdoc/bin
+
+also pretty nice process for today

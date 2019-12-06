@@ -454,7 +454,6 @@ political:
 - https://www.sba.gov/business-guide/10-steps-start-your-business/
 - https://en.m.wikipedia.org/wiki/Model_United_Nations
 - https://en.m.wikipedia.org/wiki/Diplomacy
-- https://www.reddit.com/r/explainlikeimfive/comments/2bxv30/eli5_what_is_a_model_un_and_how_does_it_work/
 - http://docs.everypolitician.org/use_the_data.html
 - http://www.popoloproject.com/
 - https://en.m.wikipedia.org/wiki/G20
@@ -526,22 +525,7 @@ go over the details of Processing startup process, like how it starts up, the li
 
 check for another pair of glasses
 
-pretty nice progress for today
-
-tar -xvpzf v3.0.0-alpha.4.tar.gz -C /phpdoc --strip-component=1
-cd /phpdoc
-composer install
-/phpdoc/bin
-
-also pretty nice process for today
-
-analysis:
-- A: question: {question, name a way to tell someone is nervous without them saying a word}
-- B: answer: {answer, nothing | shaking | stutters | like look | it's crying | sweat your hands}
-- C: fixed spelling: {answer, nothing | shaking | stutters | their look | crying | sweat}
-- D: categories
-
 may be buy tim's staged combustion cycle shirt
 
-so another sort of epiphany going on. It's about money and stuff. Take tron legacy. The return is 400mil, the investment is 100mil, so all in all, not super high grossing and because of that, Disney decides to not do a 3rd movie. Some people would say that's because Disney only kinda want money, but, you have to think about money as they're supposed to be. They're supposed to be the middleman of trading goods. Money works because people associate a sort of value to it, and in this case, the movie doesn't gross a lot because people aren't appealled to the idea. I'm certainly enjoyed the film, but let's say it's sort of a niche concept. So if people aren't interested, that's reflected directly on the movie's gross, and so money is quite a strong indication of whether people like it or not. There's a point in the beginning that seems to has escaped my mind, but the deal with that is with elon's initial investment of 100mil into spacex. So if a goal is sufficiently high enough, it can actually sort of overrides the fear.
+so go when I've finished this? Because I sort of need to start doing stuff on the mola dataset front, and see how to deal with binary data in general. I know how to deal with them a bit in the past, but now revisit the ideas and really drive java's architecture home this time.
 

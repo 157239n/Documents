@@ -50,7 +50,7 @@ commands:
 - ufw status: ufw is uncomplicated firewall
 - fg: foreground
 - tar -cvpzf (create or overwrite backup file, verbose, preserving permissions, tar ball to zip even more, f for creating a file name) backup.tar.gz --exlude=/mnt /var/www
-- tar -xvpzf (extract, others are the same) backup.tar.gz -C /recover
+- tar -xvpzf (extract, others are the same) backup.tar.gz -C /recover --strip-component=1 (to not insert a folder inside another folder)
 - ln /data/file1 ~/file1 (hard linking shit together. Here, /data/file1 is the original file, and ~/file1 is the link)
 - ln -s source link (symbolic linking shit together)
 - hostname (short hostname)

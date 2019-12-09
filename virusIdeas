@@ -130,6 +130,8 @@ This should just report back screenshots repeatedly, for 15 minutes
 
 ## Modify entry point to die silently (currently it displays a big warning) if there are no entry.cmd files
 
+## Modify entry point to not have the U.vbs mechanism for extra security, should be an option
+
 # Seems cool, might have a use someday
 
 ## Permissions and icalcs

@@ -1,0 +1,42 @@
+
+So there's this spacecraft, called Mars Global Surveyor, developed by JPL and launched on Nov 1996. Goal was to map out the entire planet, from the ionosphere down through the atmosphere to the surface. Also relaying signals from other spacecraft there too, but that's not the main point. Primary mission completed in Jan 2001, on extended mission until Nov 2nd, 2006. Then NASA ended the mission in Jan 2007. Extended goals:
+- surface features, geological processes on mars
+- composition, distribution, physical properties of surface minerals, rocks and ice
+- global topography (where mola comes into play), planet shape, gravitational field
+- magnetic field nature and map crustal remnant field
+- monitor global weather and thermal structure of atmosphere
+- interactions between mars' surface and the atmosphere. Monitors:
+  - surface features
+  - polar caps which expand and recede
+  - polar energy balance
+  - also dust and clouds
+
+93 degrees inclination, sun-synchronous orbit (duh, lmao)
+
+Successor: mars reconnaissance orbiter, still returning data back. Primary mission 2 years, and now it's 14 years (as of dec 2019)
+
+scientific instruments:
+- MOC: mars orbiter camera, more than 240k images received for 4.8 martian years
+  - narrow angle camera, black & white, 1.5 to 12 meters per pixel
+  - red and blue wide angle pictures (240m/pixel) for context
+  - daily global imaging (7.5km/pixel)
+- MOLA: mars orbiter laser altimeter
+- TES: thermal emission spectrometer
+- MAG/ER: magnetometer and electron reflectometer
+- USO/RS: ultrastable oscillator, for doppler measurements
+- MR: mars relay, serving other missions
+
+more stuff. Wiki, as always: https://en.wikipedia.org/wiki/Mars_Global_Surveyor
+
+----------------MOLA---------------
+transmitted data only til June 2001
+laser pulses 10 times per second -> precise topographic maps -> used in fields:
+- geophysics
+- geology
+- atmospheric circulations
+
+also functions as a radiometer, which measured radiance of mars at 1064 nanometers
+
+data: https://pds-geosciences.wustl.edu/missions/mgs/megdr.html
+also data: https://attic.gsfc.nasa.gov/mola/
+

@@ -19,7 +19,6 @@ Okay, path from now:
 - learn AI stuff, david silver's markov chains: https://www.youtube.com/watch?v=lfHX2hHRMVQ
 - read understanding earth
 - read rocket propulsion elements
-- daimun: https://www.facebook.com/daimun.official/posts/2291266651120317?__tn__=K-R
 - ml-class.org
 
 primers:
@@ -72,11 +71,6 @@ Climate change stuff to process:
 - https://www.youtube.com/watch?v=f6_OVfrc_5A
 
 https://whydoesitsuck.com/
-
-Dive deep into starlink's business case:
-- https://www.reddit.com/r/spacex/comments/brfbic/rspacex_starlink_official_launch_discussion/
-- https://www.reddit.com/r/Starlink/comments/ayec7p/starlink_faq_2019_edition/
-- https://www.reddit.com/r/Starlink/
 
 Global thermostat, Prometheus, Carbon engineering
 
@@ -227,7 +221,6 @@ about the climate stuff. What resources do I have an infinite amount of that I c
 
 may be getting back into the finite element analysis thing if I have time: https://www.youtube.com/watch?v=txk-VO1hzBY
 
-also read on structures of revolutions
 for the long future, again, dyson swarm and solar panels on orbit
 
 read the 14 pages of the green new deal
@@ -361,32 +354,21 @@ look over to see whether this is worthy: https://aiesec.org/global-volunteer
 
 again, investigate the idea for actually building a dyson sphere
 
-business magnate game
-
 skillshare has a course in business stuff
 
 doug ellison, amature guy, eventually works in jpl, uses data from nasa, the freely accessible ones
-
-Fleet enema
 
 dig into quantum computing again for a little bit
 Richard Sutton, David Silver RL: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ
 diamandis: https://www.diamandis.com/blog/podcast-episode-75-private-space-exploration
 
-https://developers.google.com/identity/protocols/OAuth2
-
-p5. Also they have a few examples pulling from earthquake databases, so look into that:
-- https://p5js.org/download/
-- https://p5js.org/reference/#/p5/httpGet
-- https://earthquake.usgs.gov/fdsnws/event/1/
-- http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
-
 https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html
 so, applications:
 - that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
 - try out the organic stuff at autodesk
-- try out google genomics
 - then the story of energy
+
+also interesting stuff/data here: https://oceanservice.noaa.gov/welcome.html and here: https://coast.noaa.gov/digitalcoast/. Man, the last one is a data gem. Also poking data here will make me understand about lidar stuff too
 
 get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
 
@@ -394,8 +376,6 @@ carbon xprize
 TerraPower, travelling wave reactor
 
 methane stuff: https://www.youtube.com/watch?v=62VXwjT-csQ
-
-and try out what happens with lidar stuff? How to integrate them?
 
 esa is the largest provider of environmental data from space in the world, thanks to copernicus, eu program, using earth observing satellites. Get this mother fucking data and dig into it.
 
@@ -422,32 +402,26 @@ stocks again, check out docs for robinhood
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 
-play sprocket again for intellectual property rights
-
 economics of nuclear: https://www.youtube.com/watch?v=cbeJIwF1pVY
 
 SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I can attack son
 
 how regulations and regulation authorities
 
-ibm transact
-https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
+ibm transact: https://www.ibm.com/support/knowledgecenter/en/SSWU4L/Transact/imc_Transact/imc_Transact.html
 
-learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk
+learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk. Math details: https://en.wikipedia.org/wiki/Space_tether
 
-read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
-slack's too: https://slack.com/cookie-policy
+"Two-line element set (TLE)", insanely popular data format used to describe satellite orbits
+
+read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/ and also slack's: https://slack.com/cookie-policy
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
-
-play factorio again, but this time try to skip all the bullshit, and just aim the goal really sharp and finish it quick
 
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
 
 also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
 also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
-
-Then after polishing the concurrent aspect of the virus, and have written about the structure of the virus, then I think I can understand the philosophy of magento in its entirety.
 
 from phone:
 political:
@@ -467,6 +441,8 @@ it:
 - https://www.red-gate.com/simple-talk/sql/database-devops-sql/introduction-to-devops-devops-and-the-database/amp/
 - https://github.com/dennybritz/reinforcement-learning
 - https://towardsdatascience.com/recreating-imagination-deepmind-builds-neural-networks-that-spontaneously-replay-past-experiences-9b57a9c08316
+- https://medium.com/saarthi-ai/how-to-design-better-chatbots-ae13f7fada6a
+- https://github.com/cinder92/react-native-marvel-app
 others:
 - https://80000hours.org/career-guide/introduction/
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
@@ -474,7 +450,6 @@ others:
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings/
 - https://alcor.org/BecomeMember/index.html
 - https://www.healthline.com/nutrition/12-foods-for-healthy-skin#section2
-- ynes: "econ problem set 1"
 
 and may be figure out libraries to make a map of the world, for energy visualizations and whatnot
 
@@ -482,23 +457,16 @@ understand concensus? https://raft.github.io/
 
 again with that series on money. Gem that too
 
-read over some of the messy legal details to get the landscape
-
-psexec, smb credentials
-
 5:17 mark: https://www.youtube.com/watch?v=3Kq1MIfTWCE
 
 company provisioning:
 - d-rev
 - windpax
 - BioLite, solving particulate matter problem, seems like they did quite a good job, reducing 95%, so check them out, see if they're successful
-
-go to Independence Seaport Museum
+- position dynamics: http://www.positrondynamics.com
 
 so, priorities now (if meanwhile i got crazy because of the pressure, play factorio to get the scaling challenges, then may be walk and listen to those irregular podcasts, like anthropocene reviewed):
-- write about that damn virus soon, because the further I push it back, the less sort of emotions toward this issue and the less technical insight (and by extension, possible ideas) into this I get
 - get the mola mars data (Mars Orbiter Laser Altimeter), then fill 'em up with water, to probe at the actual scale of a planet, then try to read over casey's work to see how he does his simulation
-- do the twitter thing all over again, now that I know about oauth more and how this process actually works
 - do the local hash map implementation for bounce dynamic, and measure performance
 - then simulate a stirling engine, with hot wall side vibrating constantly and cold wall side actively dampening its motion
 - do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
@@ -511,21 +479,22 @@ serendipitous goals:
 - make separate demo pages on every proc? Build it at processing.kelvinho.org/projects or /{project-name}. Will be served by apache. Will have a space on the resources side: /app/processing/project/{project name}/
 - publish vsepr and uniform electric grid (seems like I have already done this)
 
-at work priorities:
-- go over magento's way of doing things, like declaring di.xml file and stuff, because I sort of see how the real page relates to the code
-- go over the actual implementation, to get my own interpretation of the system, and what to expect in sort of the same ecommerce style scenerio
-- after that, the idea for how all of this stuff go together should appear, and then, read over the enterprise application docs to see how it all fits together, and actually hypothesize what tweaking one bit will do
-- then look into the details, the nitty gritty details of ibm transact, then consider everything about pmi is over
-
-https://sethrobertson.github.io/GitBestPractices/
-
-I would want to finish "The Kubernetes Book", but honestly, it feels like a distraction from what's really important right now, because K8S is basically docker swarm, but with more features, configs and whatnot. I get docker swarm already, okay, so may be read over this when i'm bored and want to spice things up.
-
-go over the details of Processing startup process, like how it starts up, the lifecycle, how things are implemented. Basically figure stuff out until I have control over the entire thing. Do this for both the java and the js version. Again, the important thing is the philosophy
-
-check for another pair of glasses
-
 may be buy tim's staged combustion cycle shirt
 
-so go when I've finished this? Because I sort of need to start doing stuff on the mola dataset front, and see how to deal with binary data in general. I know how to deal with them a bit in the past, but now revisit the ideas and really drive java's architecture home this time.
+what's the deal with customs?
 
+https://www.simple.com/blog/international-money-transfers
+
+read more into the imaging and the geography of mars: https://en.wikipedia.org/wiki/Mars_Global_Surveyor
+
+casey's take on mola: https://github.com/CHandmer/water-flow
+other casey stuff: http://www.caseyhandmer.com/home/mars
+
+read over updated falcon users guide: https://www.spacex.com/sites/spacex/files/falcon_users_guide_10_2019.pdf
+old f9 guide: https://www.spaceflightnow.com/falcon9/001/f9guide.pdf
+
+a = v^2/r
+v = w * r
+a/r = w^2
+
+v^2 = r * a

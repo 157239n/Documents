@@ -1,0 +1,24 @@
+FDSN = International Federation of Digital Seismograph Networks
+
+FDSN specs sheet: http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
+
+Sample server: https://earthquake.usgs.gov/fdsnws/event/1/
+
+Sample familiar usage: https://p5js.org/reference/#/p5/httpGet
+
+RFC geojson format: https://tools.ietf.org/html/rfc7946
+
+service interfaces:
+- dataselect: raw time series data in FDSN miniSEED format
+- station: metadata in FDSN StationXML format
+- event: parametric data for events in QuakeML
+
+<site>/fdsnws/<service>/<majorversion>/<service method>
+
+versioning:
+- major.minor.implementation. Implementation is index for each data centers
+
+service methods:
+- query: submit data or information request
+- version: request full service version
+- application.wadl: request a WADL for the interface

@@ -414,7 +414,7 @@ learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDw
 
 "Two-line element set (TLE)", insanely popular data format used to describe satellite orbits
 
-read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/ and also slack's: https://slack.com/cookie-policy
+read over digitalocean's terms of service, to get the feel for legal stuff: https://www.digitalocean.com/legal/terms-of-service-agreement/
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
@@ -476,7 +476,7 @@ so, priorities now (if meanwhile i got crazy because of the pressure, play facto
 - may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier
 
 serendipitous goals:
-- make separate demo pages on every proc? Build it at processing.kelvinho.org/projects or /{project-name}. Will be served by apache (why? let's just serve with nginx instead shall we?). Will have a space on the resources side: /app/processing/project/{project name}/
+- make separate demo pages on every proc? Build it at processing.kelvinho.org/projects and /{project-name}
 - publish vsepr and uniform electric grid (seems like I have already done this)
 
 may be buy tim's staged combustion cycle shirt
@@ -492,11 +492,3 @@ other casey stuff: http://www.caseyhandmer.com/home/mars
 
 read over updated falcon users guide: https://www.spacex.com/sites/spacex/files/falcon_users_guide_10_2019.pdf
 old f9 guide: https://www.spaceflightnow.com/falcon9/001/f9guide.pdf
-
-a = v^2/r
-v = w * r
-a/r = w^2
-
-let's just destroy u3 entirely. So when I got home, see over if there're anything valuable left in there, then destroy it
-
-git diff from the command line?

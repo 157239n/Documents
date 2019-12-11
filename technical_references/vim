@@ -261,6 +261,8 @@ set splitbelow
 set foldmethod=marker
 set nowrap
 
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 
 For installing plugins:
 :PlugInstall
@@ -273,3 +275,46 @@ good enough color scheme: elflord
 :set ff=unix, to convert to \n instead of \r\n
 :set ff=dos
 
+
+
+
+
+
+
+
+
+tabs:
+- tabnew
+- gt, gT
+
+sessions:
+- :mksession/mks ses1.vim
+- :source ses1.vim
+
+markings:
+- mk: mark 'k' as that point
+- mA: mark 'A' as that point globally, across files
+- 'k: beginning of mark
+- `k: exact mark
+- y'k will yank from current cursor to k. "'k" will make the cursor go to that mark
+- marks
+
+foldings:
+- zf'a
+- zo
+- zc
+- za, toggle
+
+formatting code: =i{, kinda like diw if you think about it, but with = and { different
+
+auto-complete: insert mode, ctrl n
+
+splits:
+- <C-w> _: maximize current window vertically
+- <C-w> |: maximize current window horizontally
+- <C-w> =: make all equal size
+- :sview file, read only
+- <C-w> -: decrease window height
+- <C-w> +: increase window height
+- <C-w> <: derease window width
+- <C-w> >: increase window width

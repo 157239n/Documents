@@ -1,0 +1,7 @@
+
+initial ambition
+
+write a post explaining the complexities of gradle together with CI/CD and docker, and compare that to the financial infrastructure of today. Also related is how all of these abstractions are just to deal with the shear scale of things we have built our civilization with. But really, the roots of everything is really, really simple. Also mention the mind-blowing abstractions of things like first-order functions.
+may be this is more about abstraction more, and a shadow of it: modernization
+
+again, the roots are simple. Like, it's "a" hard to do money. Then it's 1.1a hard to start doing more stuff like banks from scratch, and 1.5a hard to maintain everything by yourself, but if everyone's not doing it from scratch then it'll be 1.3a hard instead. So you kinda have to delay the instant gratification of creating something new entirely (which is 1.1a hard) and learn how things are done (which is 1.3a hard), to avoid the scenerio when you have to maintain everything (which is 1.5a hard). Concepts after concepts of the human race just keeps piling on top of each other, until my generation, then everything seems to move really fast that even this interface is hard to grasp. I think my generation is the last generation that can actually do this without absolutely being exhausted (well, future generations won't be if they have neuralink lmao, but talking about today and now)

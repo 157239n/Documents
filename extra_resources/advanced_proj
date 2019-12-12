@@ -187,4 +187,12 @@ Writing applications (I just get too lazy to do it):
 - scratch.kelvinho.org
 
 
+- do the local hash map implementation for bounce dynamic, and measure performance
+- then simulate a stirling engine, with hot wall side vibrating constantly and cold wall side actively dampening its motion
 
+with the forces in check, see if I can simulate beams being stressed
+simulate boyles law for chi, and the sterling engine where air is forced on the side. Also think about how would you do forces on a beam. Do this, or a collab with her is impossible.
+
+serendipitous goals:
+- make separate demo pages on every proc? Build it at processing.kelvinho.org/projects and /{project-name}
+- publish vsepr and uniform electric grid (seems like I have already done this)

@@ -473,7 +473,7 @@ so, priorities now (if meanwhile i got crazy because of the pressure, play facto
 - then do actual simulations of cfd
 - see how those folks aggregating data do it. At this point, I should have an idea of how this is like, with the mola plan above, so this will be sort of a best practice kind of approach. Candidate starting point would be that p5.js sketch thing, with the earthquake data, and also the website that aggregate deforestation information
 - then see over other nasa's dataset, preferably about earth and start to dive deep into the current state of climate stuff, because I still don't entirely get it
-- may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier
+- may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier. https://github.com/tesseract-shadow/tesseract-ocr-re, and post on improving input image quality: https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
 
 serendipitous goals:
 - make separate demo pages on every proc? Build it at processing.kelvinho.org/projects and /{project-name}
@@ -492,6 +492,8 @@ other casey stuff: http://www.caseyhandmer.com/home/mars
 
 read over updated falcon users guide: https://www.spacex.com/sites/spacex/files/falcon_users_guide_10_2019.pdf
 old f9 guide: https://www.spaceflightnow.com/falcon9/001/f9guide.pdf
+
+"liability insurance"
 
 https://sso.cas.org/as/PqQeY/resume/as/authorization.ping
 

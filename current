@@ -407,7 +407,6 @@ see over chi's new lab reports and understand the chemistry she's currently invo
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
 
 also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
-also this computerphile about OTP and stuff: https://www.youtube.com/watch?v=ZXFYT-BG2So
 
 from phone:
 political:
@@ -477,4 +476,26 @@ https://sso.cas.org/as/PqQeY/resume/as/authorization.ping
 
 sông chày hang tối
 
-go through the series with this prof again: https://www.youtube.com/watch?v=H4bf_uuMC-g
+kube stuff again, then this https://www.youtube.com/watch?v=07jq-5VbBVQ
+
+Google's Kubernetes Engine (GKE), but you could also take a look at Amazon (EKS) or Microsoft (AKS)
+A 3 node kubernetes cluster in GKE (~5$/mo)
+http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects
+https://cloud.google.com/kubernetes-engine/docs/quickstart
+https://www.manning.com/books/kubernetes-in-action
+https://github.com/kelseyhightower/kubernetes-the-hard-way
+
+this series, again: https://www.youtube.com/watch?v=tlS5Y2vm02c&list=PLUTypj9XuPp710VyE4y33JzV1BkrIAhnq&index=4
+rocket lab opening, 7 minutes in: https://www.youtube.com/watch?v=vu-ZisFbjFo
+rob miles: https://www.youtube.com/watch?v=PYylPRX6z4Q
+ludicrous future: https://www.youtube.com/watch?v=6H7goc9CNXA
+
+processing maps:
+- https://www.google.com/search?sxsrf=ACYBGNSLRG5iYY5VyqNzxaAPmplMWf90Fg%3A1576135287316&ei=d-rxXbzaEsTx5gK17YGwDQ&q=processing+map+visualization&oq=processing+us+map&gs_l=psy-ab.3.0.0i71l8.0.0..9075...0.1..0.0.0.......0......gws-wiz.yYBFnR7QcuY
+- https://medium.com/processing-foundation/maps-maps-maps-f0914218c87b
+
+planetary:
+- "lunar reconnaisance orbiter"
+- https://en.wikipedia.org/wiki/Topography
+- https://en.wikipedia.org/wiki/Mars_Exploration_Program
+- https://celestrak.com/NORAD/elements/active.php

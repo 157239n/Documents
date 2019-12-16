@@ -1,72 +1,80 @@
 
-can:
-- deploy
-- scale up and down dynamically
-- self-heal
-- 0 downtime rolling updates & rollbacks
+the application developer relies on the service level agrement (SLA) delivered by the container orchestration API
 
-components:
-- nodes/data plane
-- masters/heads/head nodes/control plane
+managed K8S as a service (KaaS)
 
-steps:
-- write microservices
-- package microservices in its own container
-- wrap containers in pods
-- deploy pods to cluster via controllers:
-  - Deployments: scalability and rolling updates
-  - DaemonSets: run 1 instance of a service on every node in the cluster
-  - StatefulSets: stateful application components
-  - CronJobs: short-lived tasks. I'm infering that these will be dynamically set by k8s, not myself
+Decoupled teams:
 
-desired states/manifest:
-- which image?
-- which ports?
-- how many Pods?
+Application Ops/SRE
+        ^
+        |
+     K8S API
+        |
+        v
+Cluster Ops/SRE
+       ^
+       |
+  Kernel SysCall API
+       |
+       v
+Kernel Ops/SRE
+        ^
+        |
+  CPU (x86, ARM, etc.)
+        |
+        v
+Hardware Ops/SRE
 
-"cluster store":
-- in control plane
-- only stateful component in control plane
-- based on etcd (key-value store? like redis?)
-- stores config, state of cluster
-- should run 3-5 etcd replicas for HA
+Ops = Operations teams
+SRE = Site Reliability Engineers
 
-controller manager:
-- implements background (aka daemon) control loops that monitors the cluster
-- control loops/watch loop/ reconciliation loop:
-  - node controller
-  - endpoints controller
-  - replicaset controller
-- data changes from monitoring the api server
+Application programs, typically:
+- language runtime
+- libraries
+- source code
+- external shared libraries, libc, libssl
 
-control loop logic:
-- obtain desired state
-- observe current state
-- determine differences
-- reconcile differences
+Google Cloud Platform registry, "Google Container Registry"
 
-scheduler:
-- watches api server for new tasks and assign to new healthy nodes
-- "healthy":
-  - is the node tainted? (?)
-  - any affinity or anti-affinity rules? (?)
-  - required port available?
-- is not responsible for running tasks and keeping them running. It's responsible to find the appropriate nodes only
+Generally in K8S, containers are launched by a daemon on each node called the kubelet
 
-cloud controller manager:
-- will be run in the control plane if using aws, azure, ...
-- manage integrations with underlying cloud techs, like internet facing load balancer
+Google: https://cloud.google.com/kubernetes-engine/
+Setting default zone: gcloud config set compute/zone us-west1-a
+Create a cluster: gcloud container clusters create kuar-cluster. Takes several minutes
+Get cluster credentials: gcloud auth application-default login
 
-node tasks:
-- watch api server for new work assignments
-- execute
-- report to control plane via api server. Okay, so everything is done via the api server. No hidden unix sockets, no hidden networks. Just a goddamn rest api. Nice
+Azure (aks = Azure Kubernetes Service):
+Creating resource group: az group create --name=kuar --location=westus
+Create a cluster: az aks create --resource-group=kuar --name=kuar-cluster. Takes several minutes
+Get cluster credentials: az aks get-credentials --resource-group=kuar --name=kuar-cluster
+kubectl tool: az aks install-cli
 
-node contains:
-- kubelet
-- container runtime (anything with a container runtime interface, like docker, containerd, ...)
-- network proxy (kube-proxy)
+AWS (eks = elastic kubernetes services):
+eksctl create cluster --name kuar-cluster
+eksctl create cluster --help
 
-posting to api server: kubectl
+Locally, minikube:
+minikube start
+minikube stop
+minikube delete
 
-"ip churn"? Context is that Pods are unreliable, and new ones are created with new ids and new ips.
+lots of docs:
+- https://kubernetes.io/docs/home/
+- https://kubernetes.io/docs/reference/kubectl/overview/
+
+kubectl version:
+- local kubectl tool version
+- k8s api server version
+
+kubectl get componentstatuses: cluster diagnostics
+
+controller-manager: entry.cmd
+scheduler: worker.cmd
+etcd: storage for cluster, where all API objects are stored
+
+cluster components, components that make up the cluster, actually deployed using kubernetes itself. These have sort of like important concepts to fathom. All of these components will run in the kube-system namespace.
+
+Kubernetes Proxy: routing network traffic to load-balanced services. Proxy must be present on every node. API object, DaemonSet
+(doesn't work) kubectl get daemonSets --namespace=kube-system kube-proxy
+Kubernetes DNS: naming and service discovery. Also run as replicated service. One or more DNS servers
+

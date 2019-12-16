@@ -499,3 +499,42 @@ planetary:
 - https://celestrak.com/NORAD/elements/active.php
 
 but still, focus on both k8s and the mola dataset, because I sort of have to split this workload into 2, or else I won't be able to do anything.
+
+so, the ideal use case for k8s would be to set up these environments:
+- dev
+- load test
+- production
+
+do the development in the dev side, then using a command, sort of push the changes to the load test environment, where the webserver will be benchmarked to see the true performance, then after specific requirements are passed, push the changes to the production environment. Currently, if I were to manage all these by hand, it would be a nightmare, and people have indeed faced such nightmares in the past, but what's the point of suffering?
+
+also a potential benefit of using k8s is that I can reboot computers once in a while, to sort of reset how much ram they will take, and there will be absolutely no down time. This is not the case with docker-compose and autostarting containers. It's a nice mechanism, but far from actually being zero down time.
+
+main private ip: 10.136.87.54
+router private ip: 10.136.178.245
+
+
+iptables -t nat -A PREROUTING -p tcp --dport 443 -j DNAT --to-destination 10.136.87.54:22
+iptables -t nat -A POSTROUTING -p tcp --dport 22 -j SNAT -d 10.136.87.54 --to-source 10.136.178.245
+
+serial: f2:1e:75:69:fb:a4
+
+so, limits:
+- vanilla magento: 300 -> 500
+- magento: 500 -> 700
+- peter: 200 -> 300
+- dat: 200 -> 300
+- mail: 100 -> 200
+
+so max total: 1200. Droplet memory size: 3800 -> other available memory: 2600. My applications are sort of really, really simple, except for the ones that have 3rd party stuff, like mail and wordpress. Strangely, dat's wordpress eats twice as much as mail, and peter's wordpress eats a tenth of mail
+
+just want to express a thing or two about tutorials and books: You fucking complicate things even further, and when the reader absolutely needs to learn something first before continuing, you just fucking assume thay they know everything and just keep on teaching. That's irresponsible at best, and criminal at worst. Damn you tutorials and books for suffering the curse of knowledge
+
+localhost inside of docker container: 172.17.0.1
+
+
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 10.136.87.54:8001
+iptables -t nat -A POSTROUTING -p tcp --dport 8001 -j SNAT -d 10.136.87.54 --to-source 10.136.178.245
+
+
+iptables -t nat -A PREROUTING -p tcp --source 172.17.0.1 --dport 8002 -j DNAT --to-destination 127.0.0.1:8001
+iptables -t nat -A POSTROUTING -p tcp --dport 8001 -j SNAT -d 127.0.0.1 --to-source 172.17.0.1:8002

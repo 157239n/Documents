@@ -1,3 +1,4 @@
+
 This is an excerpt from a youtube comment of mine. Feels like this sort of gives a clear and strong path
 
 Well, so the context is snowden and basically how computers work and how do they work together. I used to basically try really hard to understand these things few years ago, like trying to buy a domain, trying to set up wamp and whatnot, but I sort of still lacking foundational knowledge. Then I remember reading over exactly this link (https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04) and everything just clicks together, so I hope that you will be able to learn through that.
@@ -30,3 +31,59 @@ Edit, if you don't know what Linux to choose from, just go with Ubuntu, no quest
 - Debian: basically vanilla linux. A lot of other distros are based on debian too, like Kali (for penetration testing), Ubuntu (standard everything), Raspbian (for raspberry pis, a wallet-sized computer)
 - Red Hat Enterprise Linux (RHEL): good old tech, proprietary, used by big businesses
 - CentOS and Fedora, sort of RHEL, but free
+
+-------------------------------------
+
+also interesting challenge for ppl to think about:
+
+Input (data is 100GB big -> cannot build tree structure):
+0:d:b1
+1:f:a1
+1:f:a2
+1:f:a3
+1:d:b2
+2:f:a4
+2:f:a5
+
+Output:
+<li>
+    b1
+    <ul>
+        <li>a1</li>
+        <li>a2</li>
+        <li>a3</li>
+        <ul>
+            b2
+            <li>a4</li>
+            <li>a5</li>
+        </ul>
+    </ul>
+</li>
+
+that came up while interviewing dan lmao
+
+
+*kể tớ chút ít về cậu là ai đi. Cậu học ở đâu, cậu học ngành nào
+amherst ntn? vui k?
+vì sao cậu chọn CS?
+*kể tớ nghe về 1 lần cậu có khó khăn đi. Lúc đó là cậu đang làm gì? Cậu đang làm với ai? Chuyện gì xảy ra? Cậu làm gì để giải quyết nó?
+5 năm sau cậu hy vọng cậu sẽ trở thành người như thế nào?
+vì sao cậu muốn có công việc này?
+what gets you up in the morning?
+cậu muốn làm trong team lớn hay team nhỏ
+tụi tui có chi nhánh ở gần san francisco, trong bay area. Cậu có muốn làm ở đó k?
+
+cậu bình thường dùng interfaces như thế nào
+trong python nó có vụ default arguments, nhưng trong java lại không có. Vậy thì làm sao để tạo ra default arguments trong java?
+cậu thấy mình rành những lĩnh vực nào?
+tụi tui theo cái scheduling methodology "scrum" và "agile". Không biết là cậu có nghe qua cái đó chưa
+cậu có biết gì về dependency injection k?
+
+cậu còn muốn kể tớ cái gì về cậu nữa không?
+
+upbeat vl :v
+
+---------------------------------
+
+
+

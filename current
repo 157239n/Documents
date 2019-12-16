@@ -486,9 +486,7 @@ https://www.manning.com/books/kubernetes-in-action
 https://github.com/kelseyhightower/kubernetes-the-hard-way
 
 this series, again: https://www.youtube.com/watch?v=tlS5Y2vm02c&list=PLUTypj9XuPp710VyE4y33JzV1BkrIAhnq&index=4
-rocket lab opening, 7 minutes in: https://www.youtube.com/watch?v=vu-ZisFbjFo
 rob miles: https://www.youtube.com/watch?v=PYylPRX6z4Q
-ludicrous future: https://www.youtube.com/watch?v=6H7goc9CNXA
 
 processing maps:
 - https://www.google.com/search?sxsrf=ACYBGNSLRG5iYY5VyqNzxaAPmplMWf90Fg%3A1576135287316&ei=d-rxXbzaEsTx5gK17YGwDQ&q=processing+map+visualization&oq=processing+us+map&gs_l=psy-ab.3.0.0i71l8.0.0..9075...0.1..0.0.0.......0......gws-wiz.yYBFnR7QcuY
@@ -499,3 +497,5 @@ planetary:
 - https://en.wikipedia.org/wiki/Topography
 - https://en.wikipedia.org/wiki/Mars_Exploration_Program
 - https://celestrak.com/NORAD/elements/active.php
+
+but still, focus on both k8s and the mola dataset, because I sort of have to split this workload into 2, or else I won't be able to do anything.

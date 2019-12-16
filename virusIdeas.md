@@ -153,18 +153,3 @@ permissions:
 ## Physical devices
 
 seems like batch can print stuff, like, actually sending signal to the printer
-
-Okay feeling guilty as fuck for spying on chi. Like, feels exactly the same way as ynes, cause like, I feel like I'm invading her privacy. So may be look around at all the stuff of hers, then tell her about this. She deserves the right to know this. I'm not as bad as the NSA. Okay, so when I'm done, ask to meet with her in person and explain these things in depth and make sure she understands everything about it.
-
-So after a while watching chi, i'm sort of more and more guilty for doing this. Previously, I was hyped, because I have all of these capabilities in my own hands, and again, it felt really powerful and I want to mess around with stuff. So, the drive kinda outweighs the responsibility. But then, seeing chi's life is pretty normal and not high profile anymore, so that drive went down and now, the responsibility went through the roof. Coupled that with chi's request to stop doing this, stop doing this for real, and use phan as a test bed only. Like, I promised, and that's a very sacred thing for me to say. So, keep the virus going, but never attack her again under trivial circumstances. For life threatning stuff then I'll get in, but for petty, normal, everyday stuff, just don't anymore, it's not cool doing so.
-
-targets:
-- (no idea): technical, android studio, node, apache ant, azure, could be quang's friend
-- 247852352125282, 15/10, 16/10, 18/10, 19/10, 20/10, 22/10, 27/10: home windows 7
-- 282471455613364, 12/10, 17/10, 29/10, 5/11, 18/11, 18/11, 21/11, 25/11: no idea, could be canada guy
-
-http://157239n.com/files/vectors/generic.txt
-
-http://kelvinho.org/Virus/vectors/!targetId!
-
-After migration of the v2 targets, which definitely include that guy in canada, start to dig into the research he is doing.

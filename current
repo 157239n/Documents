@@ -512,12 +512,6 @@ also a potential benefit of using k8s is that I can reboot computers once in a w
 main private ip: 10.136.87.54
 router private ip: 10.136.178.245
 
-
-iptables -t nat -A PREROUTING -p tcp --dport 443 -j DNAT --to-destination 10.136.87.54:22
-iptables -t nat -A POSTROUTING -p tcp --dport 22 -j SNAT -d 10.136.87.54 --to-source 10.136.178.245
-
-serial: f2:1e:75:69:fb:a4
-
 so, limits:
 - vanilla magento: 300 -> 500
 - magento: 500 -> 700
@@ -531,10 +525,10 @@ just want to express a thing or two about tutorials and books: You fucking compl
 
 localhost inside of docker container: 172.17.0.1
 
+for main
+iptables -t nat -A PREROUTING -p tcp --dport 15723 -j DNAT --to-destination 127.0.0.1:8001
+iptables -t nat -A POSTROUTING -p tcp -d 127.0.0.1 --dport 8001 -j SNAT --to-source 172.17.0.1:15723
 
-iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 10.136.87.54:8001
-iptables -t nat -A POSTROUTING -p tcp --dport 8001 -j SNAT -d 10.136.87.54 --to-source 10.136.178.245
+add delay before starting up mysql
 
-
-iptables -t nat -A PREROUTING -p tcp --source 172.17.0.1 --dport 8002 -j DNAT --to-destination 127.0.0.1:8001
-iptables -t nat -A POSTROUTING -p tcp --dport 8001 -j SNAT -d 127.0.0.1 --to-source 172.17.0.1:8002
+and the problem seems to be that the docker target in the PREROUTING chain goes in front of the custom DNAT chain. So figure out if I can sort of reverse the order around

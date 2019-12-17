@@ -81,8 +81,9 @@ root@ubuntu-2:~/test/kind# kubectl get nodes
 NAME                 STATUS   ROLES    AGE   VERSION
 clu1-control-plane   Ready    master   21m   v1.16.3
 ```
-### kubectl describe nodes {node name right above}
+### kubectl describe {resource type, nodes} {resource name, node name right above}
 ```
+root@ubuntu-2:~# kubectl describe node clu1
 Name:               clu1-control-plane
 Roles:              master
 Labels:             beta.kubernetes.io/arch=amd64
@@ -165,32 +166,87 @@ Events:
   Warning  readOnlySysFS            23m                kube-proxy, clu1-control-plane  CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
   Normal   Starting                 23m                kube-proxy, clu1-control-plane  Starting kube-proxy.
 ```
-### kubectl get deployments
+### kubectl get {resource type} --all-namespaces [--namespace={namespace}]
 ```
-root@ubuntu-2:~/test/kind# kubectl get deployments
-No resources found in default namespace.
+root@ubuntu-2:~# kubectl get deployments --all-namespaces
+NAMESPACE     NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+kube-system   coredns   2/2     2            2           6m24s
 ```
-### kubectl get deployments --namespace=kube-system
 ```
-root@ubuntu-2:~/test/kind# kubectl get deployments --namespace=kube-system
-NAME      READY   UP-TO-DATE   AVAILABLE   AGE
-coredns   2/2     2            2           57m
+root@ubuntu-2:~# kubectl get services --all-namespaces
+NAMESPACE     NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
+default       kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP                  6m42s
+kube-system   kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   6m40s
 ```
-### kubectl get services
 ```
-root@ubuntu-2:~/test/kind# kubectl get services
-NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
-kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   58m
+root@ubuntu-2:~# kubectl get pods --all-namespaces
+NAMESPACE     NAME                                         READY   STATUS    RESTARTS   AGE
+kube-system   coredns-5644d7b6d9-4qff2                     1/1     Running   0          8m11s
+kube-system   coredns-5644d7b6d9-c5cjq                     1/1     Running   0          8m11s
+kube-system   etcd-clu1-control-plane                      1/1     Running   0          7m11s
+kube-system   kindnet-8rhhh                                1/1     Running   0          8m11s
+kube-system   kube-apiserver-clu1-control-plane            1/1     Running   0          7m8s
+kube-system   kube-controller-manager-clu1-control-plane   1/1     Running   0          7m9s
+kube-system   kube-proxy-c4ld7                             1/1     Running   0          8m11s
+kube-system   kube-scheduler-clu1-control-plane            1/1     Running   0          7m25s
 ```
-### kubectl get services --namespace=kube-system
+### kubectl config set-context context1 --namespace=namespace1
 ```
-root@ubuntu-2:~/test/kind# kubectl get services --namespace=kube-system
-NAME       TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
-kube-dns   ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   57m
+root@ubuntu-2:~/.kube# kubectl config set-context context1 --namespace=namespace1
+Context "context1" created.
+```
+### kubectl config use-context context1
+```
+root@ubuntu-2:~/.kube# kubectl config use-context context1
+Switched to context "context1".
+```
+### kubectl apply -f obj.yaml \[--dry-run\] \[edit-last-applied | set-last-applied | view-last-applied\]
+### kubectl delete -f obj.yaml \[--dry-run\]
+### kubectl edit {resource type} {resource name}
+### kubectl delete {resource type} {resource name}
+### kubectl label pods bar color=red
+### kubectl label pods bar color-
+### kubectl logs {pod name}
+### kubectl exec {pod name} date
+### kubectl exec -it {pod name} -- bash
+### kubectl attach -it {pod name}
+### kubectl cp {pod name}:{path to remote file} {path to local file}
+### kubectl port-forward {pod name | 'services' | service name} 8080:80
+Opens a connection that forwards traffic from local machine on 8080 to remote container's port 80. Can forward to a service inside of a pod, but not to the service's load balancer and gets distributed to all pods
+### kubectl top nodes
+### kubectl top pods
+### kubectl help {command name}
+
+## Pods
+### Yml file
+optionals:
+- livenessProbe
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kuard
+spec:
+  containers:
+    - image: gcr.io/kuar-demo/kuard-amd64:blue
+      name: kuard
+      ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+      livenessProbe:
+        httpGet:
+          path: /healthy
+          port: 8080
+        initialDelaySeconds: 5
+        timeoutSeconds: 1
+        periodSeconds: 10
+        failureThreshold: 3
 ```
 
-
-
+### kubectl port-forward --address 0.0.0.0 kuard 8080:8080 2>/dev/null 1>&2 &
+### kubectl exec kuard date
+Also, -it and sh is available, kinda similar to docker heh?
 
 
 

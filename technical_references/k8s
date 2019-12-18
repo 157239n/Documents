@@ -78,3 +78,79 @@ Kubernetes Proxy: routing network traffic to load-balanced services. Proxy must 
 (doesn't work) kubectl get daemonSets --namespace=kube-system kube-proxy
 Kubernetes DNS: naming and service discovery. Also run as replicated service. One or more DNS servers
 
+-----
+
+kube stuff again, then this https://www.youtube.com/watch?v=07jq-5VbBVQ
+
+Google's Kubernetes Engine (GKE), but you could also take a look at Amazon (EKS) or Microsoft (AKS)
+A 3 node kubernetes cluster in GKE (~5$/mo)
+http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects
+https://cloud.google.com/kubernetes-engine/docs/quickstart
+https://www.manning.com/books/kubernetes-in-action
+https://github.com/kelseyhightower/kubernetes-the-hard-way
+
+
+so, the ideal use case for k8s would be to set up these environments:
+- dev
+- load test
+- production
+
+do the development in the dev side, then using a command, sort of push the changes to the load test environment, where the webserver will be benchmarked to see the true performance, then after specific requirements are passed, push the changes to the production environment. Currently, if I were to manage all these by hand, it would be a nightmare, and people have indeed faced such nightmares in the past, but what's the point of suffering?
+
+also a potential benefit of using k8s is that I can reboot computers once in a while, to sort of reset how much ram they will take, and there will be absolutely no down time. This is not the case with docker-compose and autostarting containers. It's a nice mechanism, but far from actually being zero down time.
+
+
+pods = docker-compose project
+pod manifest, text file representation of the k8s api object
+k8s api server accepts and processes pod manifests before storing them (the manifests)in persistent storage (etcd)
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
+
+multiple instances of a pod can be deployed by repeating the workflow described here. ReplicaSets are better suited for running multiple instances of a Pod
+
+kubectl run kuard --generator=run-pod/v1 --image=gcr.io/kuar-demo/kuard-amd64:blue
+kubectl get pods
+kubectl delete pods/kuard
+kubectl run -d --name kuard --publish 8080:8080 gcr.io/kuar-demo/kuard-amd64:blue
+
+http://api.k8s.kelvinho.org/api/v1/namespaces/kube-system/services/https://kubernetes-dashboard:/proxy
+/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+so, this repo is the root of everything: https://github.com/kubernetes-up-and-running/kuard
+
+so, interestingly, these are the kinds inside of the dashboard setup:
+- Namespace
+- ServiceAccount
+- Secret
+- ConfigMap
+- Role
+- ClusterRole
+- RoleBinding
+- ClusterRoleBinding
+- Deployment
+- Service
+- Deployment
+
+interesting reddit thread to go through: https://www.reddit.com/r/kubernetes/comments/b6zuuf/help_understanding_dashboard_permissions/
+also possible dashboard uses in the future: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+containers that fail liveness checks are restarted, containers that fail readiness checks are removed from service load balancers
+
+probes/health checks:
+- liveness, basic http, restarted when failed
+- readiness, removed from service when failed
+- tcpSocket, check if reachable
+- exec probes, succeeds when script returns 0
+
+applications running in the same pod share the same ip address and port space (network namespace), have the same hostname (UTS namespace), and can communicate using native interprocess communication channels over System V IPC (IPC namespace)
+
+to add volume to a Pod manifest, 2 stanzas:
+- spec.volumes: defines all volumes that may be accessed by containers in Pod manifest
+- volumeMounts array: inside container definition, defines the volumes that are mounted into a particular container, and the path to mount onto
+
+once a pod is scheduled to a node, no rescheduling occurs if that node fails. If I want to make multiple copies, then have to create it manually, which is undesirable. So use ReplicaSet instead
+
+labels, identifying information
+annotations, sort of labels, but can be used by libraries and whatnot. It's not like secrets, but act like 1
+
+kubectl label deployments alpaca-test "canary=true"

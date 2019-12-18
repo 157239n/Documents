@@ -227,6 +227,11 @@ kind: Pod
 metadata:
   name: kuard
 spec:
+  volumes:
+    - name: "kuard-data" <-------- name of pod-wide volume, any containers in a pod can access it
+      nfs:
+        server: my.nfs.server.local
+        path: "/exports" <---------- the volume's root will be at /exports
   containers:
     - image: gcr.io/kuar-demo/kuard-amd64:blue
       name: kuard
@@ -234,6 +239,16 @@ spec:
         - containerPort: 8080
           name: http
           protocol: TCP
+      resources:
+        requests:
+          cpu: "500m" <----------- this means 500 miliCPU (lmao), or 0.5 of a CPU
+          memory: "128Mi"
+        limits:
+          cpu: "1000m"
+          memory: "256Mi"
+      volumeMounts:
+        - mountPath: "/data" <-------- location of mount inside of the container
+          name: "kuard-data" <-------- name of pod-wide volume, can be shared by a lot of containers
       livenessProbe:
         httpGet:
           path: /healthy

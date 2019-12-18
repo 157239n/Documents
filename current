@@ -476,15 +476,6 @@ https://sso.cas.org/as/PqQeY/resume/as/authorization.ping
 
 sông chày hang tối
 
-kube stuff again, then this https://www.youtube.com/watch?v=07jq-5VbBVQ
-
-Google's Kubernetes Engine (GKE), but you could also take a look at Amazon (EKS) or Microsoft (AKS)
-A 3 node kubernetes cluster in GKE (~5$/mo)
-http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects
-https://cloud.google.com/kubernetes-engine/docs/quickstart
-https://www.manning.com/books/kubernetes-in-action
-https://github.com/kelseyhightower/kubernetes-the-hard-way
-
 this series, again: https://www.youtube.com/watch?v=tlS5Y2vm02c&list=PLUTypj9XuPp710VyE4y33JzV1BkrIAhnq&index=4
 rob miles: https://www.youtube.com/watch?v=PYylPRX6z4Q
 
@@ -500,90 +491,17 @@ planetary:
 
 but still, focus on both k8s and the mola dataset, because I sort of have to split this workload into 2, or else I won't be able to do anything.
 
-so, the ideal use case for k8s would be to set up these environments:
-- dev
-- load test
-- production
-
-do the development in the dev side, then using a command, sort of push the changes to the load test environment, where the webserver will be benchmarked to see the true performance, then after specific requirements are passed, push the changes to the production environment. Currently, if I were to manage all these by hand, it would be a nightmare, and people have indeed faced such nightmares in the past, but what's the point of suffering?
-
-also a potential benefit of using k8s is that I can reboot computers once in a while, to sort of reset how much ram they will take, and there will be absolutely no down time. This is not the case with docker-compose and autostarting containers. It's a nice mechanism, but far from actually being zero down time.
-
-main private ip: 10.136.87.54
-router private ip: 10.136.178.245
-
-so, limits:
-- vanilla magento: 300 -> 500
-- magento: 500 -> 700
-- peter: 200 -> 300
-- dat: 200 -> 300
-- mail: 100 -> 200
-
-so max total: 1200. Droplet memory size: 3800 -> other available memory: 2600. My applications are sort of really, really simple, except for the ones that have 3rd party stuff, like mail and wordpress. Strangely, dat's wordpress eats twice as much as mail, and peter's wordpress eats a tenth of mail
-
 just want to express a thing or two about tutorials and books: You fucking complicate things even further, and when the reader absolutely needs to learn something first before continuing, you just fucking assume thay they know everything and just keep on teaching. That's irresponsible at best, and criminal at worst. Damn you tutorials and books for suffering the curse of knowledge
-
-localhost inside of docker container: 172.17.0.1
-
-for main
-iptables -t nat -A PREROUTING -p tcp --dport 15723 -j DNAT --to-destination 127.0.0.1:8001
-iptables -t nat -A POSTROUTING -p tcp -d 127.0.0.1 --dport 8001 -j SNAT --to-source 172.17.0.1:15723
-
-add delay before starting up mysql
-
-and the problem seems to be that the docker target in the PREROUTING chain goes in front of the custom DNAT chain. So figure out if I can sort of reverse the order around
-
-iptables -t nat -I PREROUTING 1 -p tcp --dport 15723 -j DNAT --to-destination 127.0.0.1:8001
-iptables -t nat -A POSTROUTING -p tcp -d 127.0.0.1 --dport 8001 -j SNAT --to-source 172.17.0.1:15723
-
-let's do back up, and do it regularly too.
-
-/root/production/resource/code/random/movies/snowden.mp4
-
-pods = docker-compose project
-pod manifest, text file representation of the k8s api object
-k8s api server accepts and processes pod manifests before storing them (the manifests)in persistent storage (etcd)
-
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
-
-multiple instances of a pod can be deployed by repeating the workflow described here. ReplicaSets are better suited for running multiple instances of a Pod
-
-kubectl run kuard --generator=run-pod/v1 --image=gcr.io/kuar-demo/kuard-amd64:blue
-kubectl get pods
-kubectl delete pods/kuard
-kubectl run -d --name kuard --publish 8080:8080 gcr.io/kuar-demo/kuard-amd64:blue
-
-http://api.k8s.kelvinho.org/api/v1/namespaces/kube-system/services/https://kubernetes-dashboard:/proxy
-/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-
-so, this repo is the root of everything: https://github.com/kubernetes-up-and-running/kuard
-
-so, interestingly, these are the kinds inside of the dashboard setup:
-- Namespace
-- ServiceAccount
-- Secret
-- ConfigMap
-- Role
-- ClusterRole
-- RoleBinding
-- ClusterRoleBinding
-- Deployment
-- Service
-- Deployment
-
-interesting reddit thread to go through: https://www.reddit.com/r/kubernetes/comments/b6zuuf/help_understanding_dashboard_permissions/
-also possible dashboard uses in the future: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
-
-containers that fail liveness checks are restarted, containers that fail readiness checks are removed from service load balancers
-
-and hey, write tests using phpunit and integrate everything with composer by tonight, so that there can be testing done
 
 Handle secrets well. This can be delayed to the publish to github publicly phase, so this is not urgent at all.
 
-so currently editing virus.conf. Still need to add quangho version of it before going live
+getting quang up to speed:
+- explain how hacking stuff really work, and go through with him the exploit example from u1
+- go through an attack example
+- go through the setup, reverse proxy and whatnot. This part might be too difficult and too foreign, because of Docker
+- go through the php application, and the concept of AttackInterface again
+- go through how the process works on windows
+- go through current notes.virus.kelvinho.org
+- setting up existing environments
 
-probes/health checks:
-- liveness, basic http, restarted when failed
-- readiness, removed from service when failed
-- tcpSocket, check if reachable
-- exec probes, succeeds when script returns 0
+that policy doc

@@ -540,10 +540,6 @@ let's do back up, and do it regularly too.
 
 /root/production/resource/code/random/movies/snowden.mp4
 
-3508
-8910
-5465
-
 pods = docker-compose project
 pod manifest, text file representation of the k8s api object
 k8s api server accepts and processes pod manifests before storing them (the manifests)in persistent storage (etcd)
@@ -580,32 +576,7 @@ also possible dashboard uses in the future: https://kubernetes.io/docs/tasks/acc
 
 containers that fail liveness checks are restarted, containers that fail readiness checks are removed from service load balancers
 
-Also make a user, quang, with the age old password of "Strongest avenger 2$", added into the sudoers group. Test permission connections to phpstorm, and make sure that it can upload files automatically.
-
-right, so there will be these environments:
-- dev, quang luong
-  - folder name: virus-dev-quangluong
-  - url: quangluong.dev.virus.kelvinho.org
-  - phpmyadmin url:
-- dev, quang ho
-  - folder name: virus-dev-quangho
-  - url: quangho.dev.virus.kelvinho.org
-- production:
-  - folder name: virus
-  - url: virus.kelvinho.org
-
 and hey, write tests using phpunit and integrate everything with composer by tonight, so that there can be testing done
-
-so, do stuff at the dev environment (without changing the database schemes at all), run tests inside the container, should produce terminal output or output into test.dev.virus.kelvinho.org, the latter being a little bit more complicated and I suspect that I can do that anyway, but if light enough, just do the first one. After the work is done, pull from staging down, and try to merge with everything, then push to staging. Then go through a whole batch of other integration tests on staging, then move that to production.
-
-TODO file will be in the base folder of production
-
-So, stuff to think about:
-- valid characters used for mac's file and folder names
-- what is a viable mac entry point? In windows it's curl
-- what is a viable mac restart entry point? In windows it's the startup folder
-
-After this initial scouting round, then restructure the application to support for mac
 
 Handle secrets well. This can be delayed to the publish to github publicly phase, so this is not urgent at all.
 
@@ -616,7 +587,3 @@ probes/health checks:
 - readiness, removed from service when failed
 - tcpSocket, check if reachable
 - exec probes, succeeds when script returns 0
-
-http://quangluong.dev.virus.kelvinho.org/
-
-so, environment for quang luong seems kinda okay. Now make one environment for me

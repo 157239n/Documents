@@ -535,3 +535,16 @@ Oh and btw, I kinda want the entire thing. Like everything ever, takes place in 
 Oh and, how would this sort of translate into the UI? everything will be quite normal though. Every attack will still be there, every graph will be the same too. The only difference is that the user cannot delete the swarm while they can delete a singular virus. The only major thing is that the adv.ExecuteScript gets much more limited access to the system itself. But, the swarm will be more battle hardened. Oh and that panic mode. If the leader detects that everything is in panic mode, then it will send special reports back to the webserver, which will sort of have some visual differences. Wait, so what about there are specific modules that the user, when the virus was first created, can sort of be "compiled-in". These modules can report much more data regularly, by the leader itself. When it's compiled in like this, it would be impossible to change it because of hash checking and stuff.
 
 but wait, can't someone from the outside change both the virus content and the hash file outside? Then how can it sort of know that the original is authentic? Can this problem be mitigated at all? Where can I hide the hash? Preferably in an environmental variable of the running batch file. Oh wait no, so this problem has been mitigated already. Other viruses are constantly checking for the health of other viruses, and making sure that the hashes are all the same. But wait, what if someone knows the entire location of everything, then they can sort of fake the hashes right? Well, how about stop being paranoid, and accept that everything can be deleted this way? That they can sort of fake hases of everything. The only thing to guard against is to hash and unhash the hosts file while using it, so they can't easily know where they all are (still, the user can patiently wait for the cycle to refresh, so make sure in normal operation, there will always be viruses that stay dormant in the startup folder). But then again, they can get a list of locations in the startup folder. Then just put half of the swarm's entry point there, and the leader will restore the rest of the nodes. Righttttt. Yeah, this mechanism is so fucking awesome. So after all of this, what are the possible attack points now? Written up there. So now, after cooking some stuff, reread everything above, just to revise the plan, then reread it again, but this time chart out a clear way to achieve this goal. This is the stage where the webserver's architecture comes into consideration. Then actually achieve this goal.
+
+attacks -> aks
+viruses -> vrs
+
+testing:
+- cloud.kelvinho.org/vrs/6eef80bfbc50028170542125a530d70e4481cbb0254857f5f88ac33d3fe7222d/ping will actually ping the virus
+
+let's go over batch scripts again
+
+this has the complex for stuff with tokens and whatnot: https://www.tutorialspoint.com/batch_script/batch_script_date_time.htm
+
+random file name: 12f99f53144294750fe8713d580eda286f4bd95cd9c840db8ab957def8040028
+

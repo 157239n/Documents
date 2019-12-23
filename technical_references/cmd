@@ -94,3 +94,6 @@ set a[0].name=joe
 echo %cur.name%
 
 
+slicing strings:
+%variable:~[-]num_chars_to_skip,[-]num_chars_to_keep%
+

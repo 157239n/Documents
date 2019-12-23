@@ -467,47 +467,71 @@ read more into the imaging and the geography of mars: https://en.wikipedia.org/w
 casey's take on mola: https://github.com/CHandmer/water-flow
 other casey stuff: http://www.caseyhandmer.com/home/mars
 
-read over updated falcon users guide: https://www.spacex.com/sites/spacex/files/falcon_users_guide_10_2019.pdf
-old f9 guide: https://www.spaceflightnow.com/falcon9/001/f9guide.pdf
-
 "liability insurance"
 
-https://sso.cas.org/as/PqQeY/resume/as/authorization.ping
-
 sông chày hang tối
-
-this series, again: https://www.youtube.com/watch?v=tlS5Y2vm02c&list=PLUTypj9XuPp710VyE4y33JzV1BkrIAhnq&index=4
-rob miles: https://www.youtube.com/watch?v=PYylPRX6z4Q
 
 processing maps:
 - https://www.google.com/search?sxsrf=ACYBGNSLRG5iYY5VyqNzxaAPmplMWf90Fg%3A1576135287316&ei=d-rxXbzaEsTx5gK17YGwDQ&q=processing+map+visualization&oq=processing+us+map&gs_l=psy-ab.3.0.0i71l8.0.0..9075...0.1..0.0.0.......0......gws-wiz.yYBFnR7QcuY
 - https://medium.com/processing-foundation/maps-maps-maps-f0914218c87b
 
-planetary:
-- "lunar reconnaisance orbiter"
-- https://en.wikipedia.org/wiki/Topography
-- https://en.wikipedia.org/wiki/Mars_Exploration_Program
-- https://celestrak.com/NORAD/elements/active.php
+TLE: https://celestrak.com/NORAD/elements/active.php
 
 but still, focus on both k8s and the mola dataset, because I sort of have to split this workload into 2, or else I won't be able to do anything.
 
-just want to express a thing or two about tutorials and books: You fucking complicate things even further, and when the reader absolutely needs to learn something first before continuing, you just fucking assume thay they know everything and just keep on teaching. That's irresponsible at best, and criminal at worst. Damn you tutorials and books for suffering the curse of knowledge
-
 Handle secrets well. This can be delayed to the publish to github publicly phase, so this is not urgent at all.
-
-getting quang up to speed:
-- explain how hacking stuff really work, and go through with him the exploit example from u1
-- go through an attack example
-- go through the setup, reverse proxy and whatnot. This part might be too difficult and too foreign, because of Docker
-- go through the php application, and the concept of AttackInterface again
-- go through how the process works on windows
-- go through current notes.virus.kelvinho.org
-- setting up existing environments
 
 that policy doc
 
 so may be, create a program that can beat window's chess engine. This would sort of reintroduces some of the important ideas for dealing with mola
 
-product key, save this bitch somewhere: https://www.howtogeek.com/206329/how-to-find-your-lost-windows-or-office-product-keys/
+how mergers work?
 
-also check whether the wsl setup works in pmi's computer. Then I can do things locally indeed. That would be kinda interesting.
+joe's upcoming bronze age
+
+air force space command manual: https://static.e-publishing.af.mil/production/1/afspc/publication/afspcman91-710v1/afspcman91-710v1.pdf
+
+another feature I kinda want to implement is that of health checks. I kinda want every anomaly to be sent to me immediately, so that I can resolve the problem. K8S seems to be able to sort these things out quite well. The only problem I'm having with it is that it's just so god damn expensive, in terms of memory I mean. I figure that I can just use docker-compose for everything that I do, but I'm kinda addicted to the managed solution k8s provides. So, still test everything out, but do that after mola. And I think it's worth it to sort of experiment with kind and then try out the managed k8s that digitalocean provides.
+
+nuclear series: https://www.youtube.com/watch?v=4FINQBiGPC4 also scott manley's
+
+gem phineas and ferb songs, duckje3
+
+autocmd FileType netrw setl bufhidden=delete
+
+change mpm_prefork on virus blog page, also change mpm_event on the deployment one. This kinda seems easy now lmao. After switching, make sure that everything still works as usual, especially with weird file names.
+
+may be let's just do the swarm thing really quick, then may be things can move along.
+
+informal stuff, may return later:
+- https://www.digitalocean.com/community/questions/lamp-on-ubuntu-14-04-with-apache-event-mpm
+- "how php-fpm works"
+- "opcode caching for PHP scripts"
+- https://www.digitalocean.com/community/tutorials/how-to-configure-apache-http-with-mpm-event-and-php-fpm-on-freebsd-12-0
+- https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations
+
+add this to vbs, to suppress errors when the virus itself is not there: On Error Resume Next
+
+okay, so currently midway on understanding raft, and here's what I think about the possibilities to actually implement this:
+in raft, there's a leader. If no one is a leader, every single node will have timeouts and will try to get itself elected. If it becomes the leader, then every once and a while, it will give out a signal to other nodes (0, 1, 2, ..., 10% in their local text files), telling that it's still alive. Then, that leader will do the curling from the webservers and will fetch payloads and do everything. So the leader kinda acts as if it's the lone virus and just do everything like what it's doing now. Then there can be these scenarios:
+- if the leader gets deleted, everyone in the swarm will notice that and begin to ask to become leader itself, and the new leader will be established. Once it's established, the leader will scout out another place to restore the lost virus, and will create it there, and run it or whatever.
+- if the follower gets deleted (leader notices this because followers are supposed to send a message back to the leader telling that it's still alive), then it's the leader's responsibility to recreate the lost follower. Wait, but if only the process is terminated, then check the health of the other virus, then activate a nice entry point (historically, the U.vbs in startup, but I'm thinking of changing it into non-vbs technology) in order to restart it. Assuming it's off entirely sounds kinda extreme and can be wasteful of necessary compute cycles (which can sort of further the detection of the swarm)
+- if a node is recreated, the leader will send out a signal telling other viruses where the new virus will be at
+- if the utils folder is deleted, then agree on each other on another utils folder.
+
+So, these are the properties of the swarm now:
+- the webserver doesn't know where these viruses are
+- thus, the webserver cannot have anyway of changing the swarm itself
+- thus, the webserver cannot have any reports or health checks on the swarm (which is unsettling, but if the webserver knows too much then that's a weak spot too)
+- the viruses' code cannot be modified to affect the entire swarm, if they are found out
+- the hosts file cannot be read easily
+- the startup folder only contain 1/2 of the swarm's # nodes, to make sure that no entity can just delete everything instantly by exploring the startup folder
+- a healthy swarm I figure must contain 7 nodes, with 4 nodes in the startup folder.
+
+Oh and btw, each target should have 1 simple virus and 1 swarm. The simple virus first, then the swarm later on
+
+Oh and btw, I kinda want the entire thing. Like everything ever, takes place in a single file. Meaning, entry.cmd and worker.cmd are in a file, like a.cmd, then I can do a.cmd entry or something, then it will go to that mode. This kinda means that the entire thing can fit into 1 file and not a folder. But then again, there must be a place to store the hosts file, and the communications file, but all of the main logic should just happen in a file, and all other files are just for data stuff. Update: this can be sort of a challenging architectural decisions, on a lot of the details. And I can sort of overcomplicate things too much, like that api() function way back
+
+Oh and, how would this sort of translate into the UI? everything will be quite normal though. Every attack will still be there, every graph will be the same too. The only difference is that the user cannot delete the swarm while they can delete a singular virus. The only major thing is that the adv.ExecuteScript gets much more limited access to the system itself. But, the swarm will be more battle hardened. Oh and that panic mode. If the leader detects that everything is in panic mode, then it will send special reports back to the webserver, which will sort of have some visual differences. Wait, so what about there are specific modules that the user, when the virus was first created, can sort of be "compiled-in". These modules can report much more data regularly, by the leader itself. When it's compiled in like this, it would be impossible to change it because of hash checking and stuff.
+
+but wait, can't someone from the outside change both the virus content and the hash file outside? Then how can it sort of know that the original is authentic? Can this problem be mitigated at all? Where can I hide the hash? Preferably in an environmental variable of the running batch file. Oh wait no, so this problem has been mitigated already. Other viruses are constantly checking for the health of other viruses, and making sure that the hashes are all the same. But wait, what if someone knows the entire location of everything, then they can sort of fake the hashes right? Well, how about stop being paranoid, and accept that everything can be deleted this way? That they can sort of fake hases of everything. The only thing to guard against is to hash and unhash the hosts file while using it, so they can't easily know where they all are (still, the user can patiently wait for the cycle to refresh, so make sure in normal operation, there will always be viruses that stay dormant in the startup folder). But then again, they can get a list of locations in the startup folder. Then just put half of the swarm's entry point there, and the leader will restore the rest of the nodes. Righttttt. Yeah, this mechanism is so fucking awesome. So after all of this, what are the possible attack points now? Written up there. So now, after cooking some stuff, reread everything above, just to revise the plan, then reread it again, but this time chart out a clear way to achieve this goal. This is the stage where the webserver's architecture comes into consideration. Then actually achieve this goal.

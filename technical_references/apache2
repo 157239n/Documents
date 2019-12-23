@@ -243,4 +243,46 @@ Boilerplate site:
     ServerAdmin 157239q@gmail.com
 </VirtualHost>
 
+-------
+
+php7.4-fpm:
+
+enable new mods and configs:
+- apt instal php7.4-fpm
+- service php7.4-fpm start
+- a2dismod mpm_prefork
+- a2enmod mpm_event
+- a2enmod proxy_fcgi
+- a2enconf php7.4-fpm
+- service apache2 restart
+
+conf-available/php5-fpm.conf:
+<IfModule mod_fastcgi.c>
+    AddHandler php5-fcgi .php
+    Action php5-fcgi /php5-fcgi
+    Alias /php5-fcgi /usr/lib/cgi-bin/php5-fcgi
+    FastCgiExternalServer /usr/lib/cgi-bin/php5-fcgi -socket /var/run/php5-fpm.sock -pass-header Authorization
+
+    <Directory /usr/lib/cgi-bin>
+        Require all granted
+    </Directory>
+</IfModule>
+
+mpm_event config
+<IfModule event.c>
+    StartServers 3 (2)
+    MinSpareThreads 75 (25)
+    MaxSpareThreads 250 (75)
+    ThreadLimit 64
+    ThreadsPerChild 25
+    MaxClients 400 // MaxRequestWorkers
+    MaxRequestsPerChild 0 // MaxConnectionsPerChild
+</IfModule>
+
+others, from tutorials that don't apply to my case, but kept because it might come in handy:
+- a2enmod actions fastcgi alias
+- a2dismod mpm_prefork_php5
+- apt-get install proxy_fcgi php5-fpm apache2-mpm-event
+- "proxy_fcgi_module"
+
 

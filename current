@@ -318,7 +318,7 @@ imf vids, short, seems good: https://www.youtube.com/watch?v=Igkpbqb0uXA&list=PL
 
 ?https://gocardless.com
 
-how insurance works (again lol): https://www.santander.co.uk/personal/insurance/travel-insurance
+subpoena? again lmao
 
 nice channel about engineering: https://www.youtube.com/channel/UCosExgfjj-DhMJXnQd2Y4gA/videos
 
@@ -382,7 +382,7 @@ quickly go through everything here: http://www.worldscienceu.com/
 
 read more about how these molecules are formed, then simulate that
 
-Then read over those 2000 pages magento, then understand the existing apis for the big picture.
+international law: https://www.youtube.com/channel/UCGasG4aiJ2_8ar-EXGHI1kQ/videos
 
 Also look over the internal documents to see if there's something fun.
 
@@ -514,7 +514,7 @@ So, these are the properties of the swarm now:
 - thus, the webserver cannot have anyway of changing the swarm itself
 - thus, the webserver cannot have any reports or health checks on the swarm (which is unsettling, but if the webserver knows too much then that's a weak spot too)
 - the viruses' code cannot be modified to affect the entire swarm, if they are found out
-- the hosts file cannot be read easily
+- the hosts file cannot be read easily. But the fact that it can still be read, which is worrysome
 - the startup folder only contain 1/2 of the swarm's # nodes, to make sure that no entity can just delete everything instantly by exploring the startup folder
 - a healthy swarm I figure must contain 7 nodes, with 4 nodes in the startup folder.
 
@@ -532,6 +532,8 @@ Oh and, how would this sort of translate into the UI? everything will be quite n
 
 but wait, can't someone from the outside change both the virus content and the hash file outside? Then how can it sort of know that the original is authentic? Can this problem be mitigated at all? Where can I hide the hash? Preferably in an environmental variable of the running batch file. Oh wait no, so this problem has been mitigated already. Other viruses are constantly checking for the health of other viruses, and making sure that the hashes are all the same. But wait, what if someone knows the entire location of everything, then they can sort of fake the hashes right? Well, how about stop being paranoid, and accept that everything can be deleted this way? That they can sort of fake hases of everything. The only thing to guard against is to hash and unhash the hosts file while using it, so they can't easily know where they all are (still, the user can patiently wait for the cycle to refresh, so make sure in normal operation, there will always be viruses that stay dormant in the startup folder). But then again, they can get a list of locations in the startup folder. Then just put half of the swarm's entry point there, and the leader will restore the rest of the nodes. Righttttt. Yeah, this mechanism is so fucking awesome. So after all of this, what are the possible attack points now? Written up there. So now, after cooking some stuff, reread everything above, just to revise the plan, then reread it again, but this time chart out a clear way to achieve this goal. This is the stage where the webserver's architecture comes into consideration. Then actually achieve this goal.
 
+Why can't I sort of eliminate the need for a swarm, and just have 1 virus out in the open, and another hidden from everything? If the hidden script finds out that the main script's hash has been changed, or that the startup script no longer there, it can just copy itself over right? Done. They can't delete the script, because the hidden script will notice that and reconstruct everything. They can't delete the hidden virus, because first off, they have no idea where it is, because there are no referrals to it. But, they can force stop everything through the task manager right? What is to stop them from doing this? Well, the high availability of the swarm to correct and rebuild processes before they are destroyed?
+
 rewatch starship updates
 also the black mirror episodes
 and chi stuff
@@ -540,9 +542,85 @@ how drivers work?
 
 btw, each time I hear bad apple again, it just sort of steals my soul away. Damn this is good shit
 
-another epiphany, this time about how easily it can be that you lose the big picture. Like, if you know low level stuff really well, and apply them really, really broad, then you got every opportunity you can get. So like, in a way, knowing excel stuff alone kinda helps everything. And also, computers have become crazy efficient in processing data, but then again, there's no cheating physics in the way to get energy, so we still have to learn those hardcore physics stuff
-
 that doc lmao
 
-damn I want to go for a long walk. So kinda wait until that's an option, then go. I sort of need the walk to regain focus on the virus. Like, it's so fucking complicated right now. Meanwhile, download stuff like
+find that big backup hard drive
+
+also, space-based solar panels seems reasonable, but still harder (20 times harder, my gut feeling), so it's reasonable only if we want to build a civilization in the stars, and not as a means to transition earth, I mean, that would be kinda dumb. So sort of read over the us military's report on space access, also that environment report, with cleanrooms and whatnot, to get the feel of the possibility to actually do these kinds of things
+
+getting dat up to speed. This is kinda like Quang, but like, I deleted that plan already, so let's just make a new one:
+- show what attacks and vulnerabilities are like, using the example from u1's files
+- install the virus on his machine, then do a demo of current capabilities
+- show how the virus works, like the flow once it's on the target machine. Remember to compare with the mpm_event model
+- show the overall structure of all current projects, like configs and such. Dive a bit into Docker, but try to stay out of it as much as possible, I'm trying to make him understand, not scare him lmao, Docker can be quite intimidating
+- explain what will be his responsibility, and which part will he involve in
+- install phpstorm, and stresses the practices. No actually write that down on notes
+- explain the importance of the decoupling of payloads and the viruses itself (so that the right design choices will be made), in preparation for the swarm plan to go online. Only after the swarm plan goes online (which in my very optimistic deadline will be 3 days) can I let Dat tweak the UI, which I think he likes more. This implies that I should describe how will the swarm plan works, to sort of press on the importance of decoupling more
+- if Dat is comfortable with Docker stuff (which I highly doubt), then explain about K8S and how things will be run in the future
+
+think about splitting the certificates up into 3 categories, virus, magento, and regular, to sort of prevent the dns zone lookup and certificate lookup thing, which can be very uncool
+
+make sure I can't do a directory traversal using get file
+
+copy everything from quang luong's environment over, preserving permissions in the meantime, and registers it (getting a certificate, and include a mode in build for optimized environment. Also remember to tweak the startup times of mysql inside the containers to prevent a failed start procedure)
+
+workloads for dat:
+- know what the hell he is doing. This means:
+  - daemon models
+  - php, how php is executed. Talk about php_mod and then php-fpm, talk about mpm_prefork and mpm_event in the meantime
+  - how php communicates with the db
+  - how apache works
+- implement easy attacks
+  - adv.session.MonitorTask
+  - easy.ProductKey
+  - easy.session.MonitorPartitions
+  - easy.session.MonitorScreen
+- implement hard attacks
+  - adv.SessionHijack
+  - easy.CollectBigFile
+  - easy.session.KeyLogging
+- really, really hard attacks:
+  - adv.ActivateSwarm. This one I'm currently doing, so may be just feedback from Dat is important, not his code contribution
+  - adv.RedirectTraffic
+
+move timing work on to cron? So that I won't have to have an endless script and just let the system deal with everything?
+
+okay, so may be really quickly, define what the behavior of the new plan will be. There are 2 viruses, 1 naked to the elements, and the other hidden. The hidden is created by the naked one at boot, then the naked one will be recreated when the hidden one spots that the startup script or the script itself is not there anymore or the hashes have changed. If the hases have changed, but the file is still there, that means there have been a reversen engineering attempt, which is defcon 1, in which the startup script will notify the webserver immediately.
+
+all the directories will be named from a list of normal words
+
+Naked one:
+- main script, polymorphic in name, start out as mn.cmd
+- data file. Stores many things
+  - current payloads folder, unencrypted, because they still can't do anything when they know about this
+- incoming file, for the hidden script to report into
+
+Hidden one:
+- main script
+- initial incoming file. This will be created by the naked one, and the naked one will pass some initial parameters, to initialize the hidden one. After the hidden one has read those, communication is cut off, and the incoming file will be deleted by the hidden one. These things will be transferred to:
+  - virus location. The hidden one can get the hash just by hashing it.
+  - payloads folder. This will be used to recreate the naked one, if necessary
+
+General principle/guideline when doing these things:
+- it is assumed that they don't know where both the naked one and the hidden one is. The naked one can be easily seen and traced back through the startup script, but even the system does not know where the hidden one is
+- it is assumed that they can:
+  - delete them one by one, reasonable assumption
+  - stop them via task manager one by one, reasonable assumption provided they don't have specialized tool to stop multiple tasks at once
+, thus the system is built to recover all these scenerios. But because they can delete and stop them pretty quickly. 1 second lower estimate, 2 second upper estimate, the mechanism to check on each other must be faster than 1 second, or else the mechanism will not make sense.
+
+universal usb installer
+
+dw tv
+
+cron jobs inside docker containers: https://blog.knoldus.com/running-a-cron-job-in-docker-container/
+international law: https://www.youtube.com/watch?v=1SbdlteP9Qk&list=PLj3bSusRimZNEIPYNl_7nk2cdoqa48WmY&index=4
+"customary rules of international law"
+un charter: https://www.un.org/en/sections/un-charter/un-charter-full-text/
+https://en.wikipedia.org/wiki/Charter_of_the_United_Nations
+"full discharge of liability"
+resolutions: https://en.wikipedia.org/wiki/United_Nations_Security_Council_resolution
+https://en.wikipedia.org/wiki/United_Nations_resolution
+
+https://pitmonticone.github.io/rcp85-debate/
+
 

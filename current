@@ -635,6 +635,13 @@ swarm thing:
 - /new/win/{user_handle}/swarm, /new/win/{user_handle}/swarm/location/{location}, swarm installation script, file mode. Every activity stays within the specified location (default is C:\Users)
 - /new/mac/{user_handle}/swarm, /new/mac/{user_handle}/swarm/location/{location}, swarm installation script, file mode
 
+also virus endpoints:
+- /vrs/{virus_id}/ping: pinging
+- /vrs/{virus_id}/aks: list of attacks
+- /vrs/{virus_id}/aks/{attack_id}/code: code of a specific attack
+- /vrs/{virus_id}/aks/{attack_id}/report: place to report files and whatnot
+- /vrs/{virus_id}/hms: hidden missing, report that the hidden virus has disappeared
+
 also note that the swarm will be as lightweight and mobile as possible, so won't have the baggage of licenses and all that for social engineering
 
 so what's the swarm installation script looks like? It has all the functions that the main script has, and have the base folder embedded, and not from the data file
@@ -649,7 +656,7 @@ what's the initial installation script now look like? Because this is a stream, 
 
 the loops looks like this:
 - (any) loads constants, done
-  - ping_t=0
+  - hidden_ping_time=0
   - last_fetch=:unixTime
 - (any) loads data, done
   - type
@@ -660,51 +667,124 @@ the loops looks like this:
     - for each attacks, prepares environment, downloads the code, executes it
     - exits
 - if there aren't any arguments:
-- (naked) ping
 - (any) read the incoming messages to set up environmental variables
 - (hidden) delete incoming file
-- (standalone & naked) save data
+- (naked) save data
 - :daemon_loop
 - if standalone:
   - if difference between now and last_fetch is 7 seconds, log, fork off and execute "{self} fetch"
 - if naked:
-  - checks incoming message, just a "ping", records the time and compares with ping_t. If hidden is no where to be found, then create one
   - if difference between now and last_fetch is 7 seconds, log, fork off and execute "{self} fetch"
+  - echos now to og
+  - checks incoming message, just a "ping", records the time, compares with hidden_ping_time, heal hidden if necessary
 - if hidden: if any of these are violated, proceed to clean the naked virus
   - checks existence of naked
   - checks hash of naked
   - checks existence of startup script
   - checks hash of startup script
-  - message naked
+  - checks time in og
+  - ping naked
+
+naked cleaning and reconstruction process:
+- reads the old hash, deletes the U!hash:~0,5!.vbs file
+- deletes the location file
+
+wait, there's an another vulnerability. How about shutting down the task for naked, then shutdown the hidden script? The initial way to do this with the swarm is to have the leader pings followers. So now, let's do /og, stands for outgoing, Naked will prints out the current unix time to that file every daemon loop. The hidden virus will also check for the liveness here.
 
 note: the plan to append directly to standalone's script's variables type and libs might have problems. Like, what if the environmental variables declared this way retain when the swarm installation script is executed? Would the variables then sort of transfer to when building the swarm? If it does transfer then it'd be pretty bad. In this particular case, it's not so bad and it seems like not a problem at all, but it is still, side effects, which is highly undesirable going forward into the future
 
 also complete the architecture before switching over to php-fpm
 
-standalone will be given these when init script starts it
+standalone:
 - data:
   - type|0
-  - utils|{payloads and utils folder}
-- incoming:
+  - libs|{libs folder}
+- incoming by stream init script:
   - type|0
-  - utils|{payloads and utils folder}
+  - libs|{libs folder}
 
-naked will be given these when hidden/init script starts it
+naked:
 - data:
   - type|1 // 0 for standalone, 1 for naked, 2 for hidden
-  - utils|{payloads and utils folder}
-- incoming:
+  - libs|{libs folder}
+  - base|{base location where location randomization happens}
+- incoming by file init script:
   - type|1
-  - utils|{payloads and utils folder}
+  - libs|{libs folder}
+  - base|{base location}
+- incoming by hidden script, normal use, repeatedly:
+  - ping|_
+- incoming by hidden script, reconstruction: {init script, hidden script normal use}
 
-hidden will be given these when naked starts it:
-- data: nonexistent
-- incoming: exists for a short while, then hidden deletes it
+hidden: note that hidden will only be created by naked, and not any startup scripts
+- incoming by naked script on startup: note that this exists for a short while, then hidden deletes it
   - type|2
-  - utils|{payloads and utils folder}, this is for passing right back to the naked one to construct it
+  - libs|{libs folder}, this is for passing right back to the naked one to construct it
+  - base|{base location}
+  - lc|{naked location}, mn.cmd and ic is expected to be inside
 
-what is the failsafe? Like, the nuke button that I can remove when testing stuff out? The base environment where things happen should be contained. This way, I can just delete everything, and both running scripts will be gone. To do this, make a script to build up the structure
+naked will be given these by hidden:
+- incoming:
+  - ping|_, this is telling naked that the hidden is still alive and well
 
-also test with unicode characters and whatnot
+what is the failsafe? Like, the nuke button that I can remove when testing stuff out? The base environment where things happen should be contained. This way, I can just delete everything, and both running scripts will be gone
 
 general tso's and wonton soup, see places where I can eat that, then invite dan & chi?
+
+interesting combination with C#: https://stackoverflow.com/questions/54360791/batch-script-to-read-input-text-file-and-build-output-command
+
+verbs to avoid, the built-in commands, the communications one, where standards have been in place and it differs virus to virus:
+- type
+- libs
+- base
+- lc
+- ping
+- vrs
+- aks
+- fetch
+but then again, the way to go about this is to define the names long, so as to identify it correctly
+
+no wait, so because everything just copies each other to recover things, I can get away with obfuscating the intercommunications too. So these are the variables I can do this:
+- libs
+- base
+- lc
+- fetch
+- mn
+- ic
+- dt
+
+But all of these obfuscation needs to have a stringent testing plan. So, when it comes to doing just that, make a batch script that can automate the process? It would be hard to get all the software interfaces together, and it might just not worth it to do that.
+
+Also now that I think about it, I don't need the standalone stuff rite? I can just use the old one, and all will be well. So yeah, go do that
+
+so, things to do for tonight:
+- test out the system thoroughly, make sure it works
+- incrementally test the obfuscation schema
+- test out what's the perfect HIDDEN_PING_INTERVAL. I kinda want it to be either 1 or 2, but can bump it up if necessary. But in principle, it needs to be low, so as to recover fast in case task manager kills it sequentially faster
+- move git schema to include the docker configurations too, and clean up/streamline everything (like docs, or initStructures) a bit. This is so that I can spin up a new container super duper quick, preferrably in 1 command. This would require practicing with using the mysql image instead of downloading mysql directly to the image. But I would need to do this carefully, like, make sure all ther permissions and everything is okay, and that I can have a backup mechanism, and that I won't be locked out
+- create an environment for dat. I sort of need this to be as quick as possible, meaning I can quickly clone everything, again, in 1 command.
+
+things I want to do tonight but just doesn't seem possible:
+- redo the rewrite rules, and move everything over to php-fpm
+
+so, a problem with extending the functionalities to multiple platforms. Currently, package names are pretty loose concepts. there's the package name that will be displayed to the user, which looks like adv.ExecuteScript. The true class name is not stored there tho. Only ExecuteScript is used to get the class dynamically. That's kinda dangerous!
+
+className, real classes convention should be Kelvinho\Virus\Attack\AttackPackages\{platform = Win|Mac}\{type = Session|OneTime}\{package name}, cannot overlap
+displayName, names displayed to the user should look like {level = adv|easy?}.{type = session|onetime?}.{package name}. Can overlap
+dbName, names to be stored into the database should look like {platform = win|mac}.{type = session|oneTime}.{package name}, cannot overlap. The ability to change the underlying classes on the backend dynamically, like, add a new vendor, for example, while still use the names inside the database kinda justifies using this
+the folder name is not important, but still, should be {type = session|oneTime?}.{package name}
+
+so, when fetching the current attacks, will check for the names in the database, 
+
+btw, this feels like redis might actually do better
+
+the uses will be:
+- dbName -> className
+- dbName -> displayName
+
+dbName
+className
+displayName
+description
+
+yay, so moving the schema over works. Now I need to manually go in to the database and fix up that thing, then it's a breeze to develop packages for mac. Right, let's go home

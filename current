@@ -684,16 +684,12 @@ the loops looks like this:
   - checks hash of startup script
   - checks time in og
   - ping naked
+  - if needs cleaning:
+    - reads the old hash, deletes the U!hash:~0,5!.vbs file
+    - deletes the location file
 
-naked cleaning and reconstruction process:
-- reads the old hash, deletes the U!hash:~0,5!.vbs file
-- deletes the location file
-
-wait, there's an another vulnerability. How about shutting down the task for naked, then shutdown the hidden script? The initial way to do this with the swarm is to have the leader pings followers. So now, let's do /og, stands for outgoing, Naked will prints out the current unix time to that file every daemon loop. The hidden virus will also check for the liveness here.
-
-note: the plan to append directly to standalone's script's variables type and libs might have problems. Like, what if the environmental variables declared this way retain when the swarm installation script is executed? Would the variables then sort of transfer to when building the swarm? If it does transfer then it'd be pretty bad. In this particular case, it's not so bad and it seems like not a problem at all, but it is still, side effects, which is highly undesirable going forward into the future
-
-also complete the architecture before switching over to php-fpm
+features:
+- og, outgoing
 
 standalone:
 - data:
@@ -733,25 +729,8 @@ general tso's and wonton soup, see places where I can eat that, then invite dan 
 
 interesting combination with C#: https://stackoverflow.com/questions/54360791/batch-script-to-read-input-text-file-and-build-output-command
 
-verbs to avoid, the built-in commands, the communications one, where standards have been in place and it differs virus to virus:
-- type
-- libs
-- base
-- lc
-- ping
-- vrs
-- aks
-- fetch
-but then again, the way to go about this is to define the names long, so as to identify it correctly
-
-no wait, so because everything just copies each other to recover things, I can get away with obfuscating the intercommunications too. So these are the variables I can do this:
-- libs
-- base
-- lc
-- fetch
-- mn
-- ic
-- dt
+verbs to avoid, the built-in commands, the communications one, where standards have been in place and it differs virus to virus: type, ping, vrs, aks
+no wait, so because everything just copies each other to recover things, I can get away with obfuscating the intercommunications too. So these are the variables I can do this: libs, base, lc, fetch, mn, ic, dt
 
 But all of these obfuscation needs to have a stringent testing plan. So, when it comes to doing just that, make a batch script that can automate the process? It would be hard to get all the software interfaces together, and it might just not worth it to do that.
 
@@ -760,31 +739,15 @@ Also now that I think about it, I don't need the standalone stuff rite? I can ju
 so, things to do for tonight:
 - test out the system thoroughly, make sure it works
 - incrementally test the obfuscation schema
-- test out what's the perfect HIDDEN_PING_INTERVAL. I kinda want it to be either 1 or 2, but can bump it up if necessary. But in principle, it needs to be low, so as to recover fast in case task manager kills it sequentially faster
+- test out what's the perfect HIDDEN_PING_INTERVAL. I kinda want it to be either 1 or 2, but can bump it up if necessary. But in principle, it needs to be low, so as to recover fast in case task manager kills it sequentially faster. Let's stick with 1, the download cycle seems to be able to execute something like 10-15 times per second
 - move git schema to include the docker configurations too, and clean up/streamline everything (like docs, or initStructures) a bit. This is so that I can spin up a new container super duper quick, preferrably in 1 command. This would require practicing with using the mysql image instead of downloading mysql directly to the image. But I would need to do this carefully, like, make sure all ther permissions and everything is okay, and that I can have a backup mechanism, and that I won't be locked out
 - create an environment for dat. I sort of need this to be as quick as possible, meaning I can quickly clone everything, again, in 1 command.
 
 things I want to do tonight but just doesn't seem possible:
 - redo the rewrite rules, and move everything over to php-fpm
 
-so, a problem with extending the functionalities to multiple platforms. Currently, package names are pretty loose concepts. there's the package name that will be displayed to the user, which looks like adv.ExecuteScript. The true class name is not stored there tho. Only ExecuteScript is used to get the class dynamically. That's kinda dangerous!
+i have not deal with the scenereo when the utils folder is gone and naked will have to recreate that
 
-className, real classes convention should be Kelvinho\Virus\Attack\AttackPackages\{platform = Win|Mac}\{type = Session|OneTime}\{package name}, cannot overlap
-displayName, names displayed to the user should look like {level = adv|easy?}.{type = session|onetime?}.{package name}. Can overlap
-dbName, names to be stored into the database should look like {platform = win|mac}.{type = session|oneTime}.{package name}, cannot overlap. The ability to change the underlying classes on the backend dynamically, like, add a new vendor, for example, while still use the names inside the database kinda justifies using this
-the folder name is not important, but still, should be {type = session|oneTime?}.{package name}
+may be, the usb stick still have some content left. I mean, I haven't plugged it in for extended periods of time, and TRIM might not be enabled there. Yeah it has the thing with the operating system there, but just may be? Like, I don't want to lose a part of me
 
-so, when fetching the current attacks, will check for the names in the database, 
 
-btw, this feels like redis might actually do better
-
-the uses will be:
-- dbName -> className
-- dbName -> displayName
-
-dbName
-className
-displayName
-description
-
-yay, so moving the schema over works. Now I need to manually go in to the database and fix up that thing, then it's a breeze to develop packages for mac. Right, let's go home

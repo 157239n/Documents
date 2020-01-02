@@ -750,4 +750,20 @@ i have not deal with the scenereo when the utils folder is gone and naked will h
 
 may be, the usb stick still have some content left. I mean, I haven't plugged it in for extended periods of time, and TRIM might not be enabled there. Yeah it has the thing with the operating system there, but just may be? Like, I don't want to lose a part of me
 
+getFile.php has directory traversal problems
+https://stackoverflow.com/questions/4205141/preventing-directory-traversal-in-php-but-allowing-paths
 
+new mysqli("localhost:3306", "virus", "Vu,-za8M:Yp`D-NR", "virus_app");
+
+sed -e 's/;clear_env = no/clear_env = no/' -i /etc/php/7.4/fpm/pool.d/www.conf
+
+
+
+sed "s/\(.*\)=\(.*\)/env[\1]='\2'/"
+
+
+include=/etc/php/7.4/fpm/pool.d/env
+
+cat /startup/.env_mysql | sed "s/\(.*\)=\(.*\)/env[\1]='\2'/" > /etc/php/7.4/fpm/pool.d/env
+
+let's change the env file to /.env.php_fpm, and tell users to go there

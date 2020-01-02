@@ -740,11 +740,7 @@ so, things to do for tonight:
 - test out the system thoroughly, make sure it works
 - incrementally test the obfuscation schema
 - test out what's the perfect HIDDEN_PING_INTERVAL. I kinda want it to be either 1 or 2, but can bump it up if necessary. But in principle, it needs to be low, so as to recover fast in case task manager kills it sequentially faster. Let's stick with 1, the download cycle seems to be able to execute something like 10-15 times per second
-- move git schema to include the docker configurations too, and clean up/streamline everything (like docs, or initStructures) a bit. This is so that I can spin up a new container super duper quick, preferrably in 1 command. This would require practicing with using the mysql image instead of downloading mysql directly to the image. But I would need to do this carefully, like, make sure all ther permissions and everything is okay, and that I can have a backup mechanism, and that I won't be locked out
 - create an environment for dat. I sort of need this to be as quick as possible, meaning I can quickly clone everything, again, in 1 command.
-
-things I want to do tonight but just doesn't seem possible:
-- redo the rewrite rules, and move everything over to php-fpm
 
 i have not deal with the scenereo when the utils folder is gone and naked will have to recreate that
 
@@ -753,17 +749,13 @@ may be, the usb stick still have some content left. I mean, I haven't plugged it
 getFile.php has directory traversal problems
 https://stackoverflow.com/questions/4205141/preventing-directory-traversal-in-php-but-allowing-paths
 
-new mysqli("localhost:3306", "virus", "Vu,-za8M:Yp`D-NR", "virus_app");
+change other sites to php-fpm too
 
-sed -e 's/;clear_env = no/clear_env = no/' -i /etc/php/7.4/fpm/pool.d/www.conf
+remember to switch the php.ini stuff so that I can bring 8MB files back. At startup/php.ini
 
+kay, so I can do the development right back in localhost. Like, just spin up an instance from github and there you go. Still have to think about how the inner vm can deal with that.
 
+clean up the db schema and get rid of unnecessary stuff
 
-sed "s/\(.*\)=\(.*\)/env[\1]='\2'/"
+oh and the back up, I expect it to be quite large, considering I have the virus-backup instance, and other stuff
 
-
-include=/etc/php/7.4/fpm/pool.d/env
-
-cat /startup/.env_mysql | sed "s/\(.*\)=\(.*\)/env[\1]='\2'/" > /etc/php/7.4/fpm/pool.d/env
-
-let's change the env file to /.env.php_fpm, and tell users to go there

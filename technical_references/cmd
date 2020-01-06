@@ -14,6 +14,7 @@ reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion"
 pause
 
 %date%, %time%
+precise waiting: http://blog.bitcollectors.com/adam/2015/06/waiting-in-a-batch-file/
 
 setlocal
 setlocal EnableDelayedExpansion

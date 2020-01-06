@@ -398,8 +398,6 @@ SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I 
 
 how regulations and regulation authorities
 
-learn more about orbital dynamics man https://www.youtube.com/watch?v=dqwpQarrDwk. Math details: https://en.wikipedia.org/wiki/Space_tether
-
 "Two-line element set (TLE)", insanely popular data format used to describe satellite orbits
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
@@ -460,10 +458,12 @@ what's the deal with customs?
 
 https://www.simple.com/blog/international-money-transfers
 
-read more into the imaging and the geography of mars: https://en.wikipedia.org/wiki/Mars_Global_Surveyor
-
-casey's take on mola: https://github.com/CHandmer/water-flow
-other casey stuff: http://www.caseyhandmer.com/home/mars
+Mars and MOLA:
+- https://en.wikipedia.org/wiki/Mars_Global_Surveyor
+- https://github.com/CHandmer/water-flow
+- http://www.caseyhandmer.com/home/mars
+- TLE: https://celestrak.com/NORAD/elements/active.php
+- air force space command manual: https://static.e-publishing.af.mil/production/1/afspc/publication/afspcman91-710v1/afspcman91-710v1.pdf
 
 "liability insurance"
 
@@ -473,144 +473,22 @@ processing maps:
 - https://www.google.com/search?sxsrf=ACYBGNSLRG5iYY5VyqNzxaAPmplMWf90Fg%3A1576135287316&ei=d-rxXbzaEsTx5gK17YGwDQ&q=processing+map+visualization&oq=processing+us+map&gs_l=psy-ab.3.0.0i71l8.0.0..9075...0.1..0.0.0.......0......gws-wiz.yYBFnR7QcuY
 - https://medium.com/processing-foundation/maps-maps-maps-f0914218c87b
 
-TLE: https://celestrak.com/NORAD/elements/active.php
-
-but still, focus on both k8s and the mola dataset, because I sort of have to split this workload into 2, or else I won't be able to do anything.
-
-Handle secrets well. This can be delayed to the publish to github publicly phase, so this is not urgent at all.
-
-that policy doc
-
 so may be, create a program that can beat window's chess engine. This would sort of reintroduces some of the important ideas for dealing with mola
 
 how mergers work?
 
 joe's upcoming bronze age
 
-air force space command manual: https://static.e-publishing.af.mil/production/1/afspc/publication/afspcman91-710v1/afspcman91-710v1.pdf
-
 another feature I kinda want to implement is that of health checks. I kinda want every anomaly to be sent to me immediately, so that I can resolve the problem. K8S seems to be able to sort these things out quite well. The only problem I'm having with it is that it's just so god damn expensive, in terms of memory I mean. I figure that I can just use docker-compose for everything that I do, but I'm kinda addicted to the managed solution k8s provides. So, still test everything out, but do that after mola. And I think it's worth it to sort of experiment with kind and then try out the managed k8s that digitalocean provides.
-
-nuclear series: https://www.youtube.com/watch?v=4FINQBiGPC4 also scott manley's
-
-gem phineas and ferb songs, duckje3
-
-autocmd FileType netrw setl bufhidden=delete
-
-change mpm_prefork on virus blog page, also change mpm_event on the deployment one. This kinda seems easy now lmao. After switching, make sure that everything still works as usual, especially with weird file names.
-
-may be let's just do the swarm thing really quick, then may be things can move along.
-
-informal stuff, may return later:
-- https://www.digitalocean.com/community/questions/lamp-on-ubuntu-14-04-with-apache-event-mpm
-- "how php-fpm works"
-- "opcode caching for PHP scripts"
-- https://www.digitalocean.com/community/tutorials/how-to-configure-apache-http-with-mpm-event-and-php-fpm-on-freebsd-12-0
-
-add this to vbs, to suppress errors when the virus itself is not there: On Error Resume Next
-
-So, these are the properties of the swarm now:
-- the webserver doesn't know where these viruses are
-- thus, the webserver cannot have anyway of changing the swarm itself
-- thus, the webserver cannot have any reports or health checks on the swarm (which is unsettling, but if the webserver knows too much then that's a weak spot too)
-- the viruses' code cannot be modified to affect the entire swarm, if they are found out
-- the hosts file cannot be read easily. But the fact that it can still be read, which is worrysome
-- the startup folder only contain 1/2 of the swarm's # nodes, to make sure that no entity can just delete everything instantly by exploring the startup folder
-- a healthy swarm I figure must contain 7 nodes, with 4 nodes in the startup folder.
-
-Oh and btw, each target should have 1 simple virus and 1 swarm. The simple virus first, then the swarm later on
-
-Oh and btw, I kinda want the entire thing. Like everything ever, takes place in a single file. Meaning, entry.cmd and worker.cmd are in a file, like a.cmd, then I can do a.cmd entry or something, then it will go to that mode. This kinda means that the entire thing can fit into 1 file and not a folder. But then again, there must be a place to store the hosts file, and the communications file, but all of the main logic should just happen in a file, and all other files are just for data stuff. Update: this can be sort of a challenging architectural decisions, on a lot of the details. And I can sort of overcomplicate things too much, like that api() function way back
-
-how would the UI be different for end users? Quite normal, with these differences:
-- will have different options when starting up:
-  - number of viruses in the swarm. The larger it is, the more stable and impenetrable it is, but because it will reside randomly, there will be increased probability that it will get detected. Suggested number is 7
-  - whether to include a self-destruct mechanism. This is final decision and cannnot be changed
-- defcons to report back
-
-Oh and, how would this sort of translate into the UI? everything will be quite normal though. Every attack will still be there, every graph will be the same too. The only difference is that the user cannot delete the swarm while they can delete a singular virus. The only major thing is that the adv.ExecuteScript gets much more limited access to the system itself. But, the swarm will be more battle hardened. Oh and that panic mode. If the leader detects that everything is in panic mode, then it will send special reports back to the webserver, which will sort of have some visual differences. Wait, so what about there are specific modules that the user, when the virus was first created, can sort of be "compiled-in". These modules can report much more data regularly, by the leader itself. When it's compiled in like this, it would be impossible to change it because of hash checking and stuff.
-
-but wait, can't someone from the outside change both the virus content and the hash file outside? Then how can it sort of know that the original is authentic? Can this problem be mitigated at all? Where can I hide the hash? Preferably in an environmental variable of the running batch file. Oh wait no, so this problem has been mitigated already. Other viruses are constantly checking for the health of other viruses, and making sure that the hashes are all the same. But wait, what if someone knows the entire location of everything, then they can sort of fake the hashes right? Well, how about stop being paranoid, and accept that everything can be deleted this way? That they can sort of fake hases of everything. The only thing to guard against is to hash and unhash the hosts file while using it, so they can't easily know where they all are (still, the user can patiently wait for the cycle to refresh, so make sure in normal operation, there will always be viruses that stay dormant in the startup folder). But then again, they can get a list of locations in the startup folder. Then just put half of the swarm's entry point there, and the leader will restore the rest of the nodes. Righttttt. Yeah, this mechanism is so fucking awesome. So after all of this, what are the possible attack points now? Written up there. So now, after cooking some stuff, reread everything above, just to revise the plan, then reread it again, but this time chart out a clear way to achieve this goal. This is the stage where the webserver's architecture comes into consideration. Then actually achieve this goal.
-
-Why can't I sort of eliminate the need for a swarm, and just have 1 virus out in the open, and another hidden from everything? If the hidden script finds out that the main script's hash has been changed, or that the startup script no longer there, it can just copy itself over right? Done. They can't delete the script, because the hidden script will notice that and reconstruct everything. They can't delete the hidden virus, because first off, they have no idea where it is, because there are no referrals to it. But, they can force stop everything through the task manager right? What is to stop them from doing this? Well, the high availability of the swarm to correct and rebuild processes before they are destroyed?
 
 rewatch starship updates
 also the black mirror episodes
 and chi stuff
 
-how drivers work?
-
-btw, each time I hear bad apple again, it just sort of steals my soul away. Damn this is good shit
-
-that doc lmao
-
-find that big backup hard drive
-
 also, space-based solar panels seems reasonable, but still harder (20 times harder, my gut feeling), so it's reasonable only if we want to build a civilization in the stars, and not as a means to transition earth, I mean, that would be kinda dumb. So sort of read over the us military's report on space access, also that environment report, with cleanrooms and whatnot, to get the feel of the possibility to actually do these kinds of things
-
-getting dat up to speed. This is kinda like Quang, but like, I deleted that plan already, so let's just make a new one:
-- show what attacks and vulnerabilities are like, using the example from u1's files
-- install the virus on his machine, then do a demo of current capabilities
-- show how the virus works, like the flow once it's on the target machine. Remember to compare with the mpm_event model
-- show the overall structure of all current projects, like configs and such. Dive a bit into Docker, but try to stay out of it as much as possible, I'm trying to make him understand, not scare him lmao, Docker can be quite intimidating
-- explain what will be his responsibility, and which part will he involve in
-- install phpstorm, and stresses the practices. No actually write that down on notes
-- explain the importance of the decoupling of payloads and the viruses itself (so that the right design choices will be made), in preparation for the swarm plan to go online. Only after the swarm plan goes online (which in my very optimistic deadline will be 3 days) can I let Dat tweak the UI, which I think he likes more. This implies that I should describe how will the swarm plan works, to sort of press on the importance of decoupling more
-- if Dat is comfortable with Docker stuff (which I highly doubt), then explain about K8S and how things will be run in the future
-
-think about splitting the certificates up into 3 categories, virus, magento, and regular, to sort of prevent the dns zone lookup and certificate lookup thing, which can be very uncool
-
-make sure I can't do a directory traversal using get file
-
-copy everything from quang luong's environment over, preserving permissions in the meantime, and registers it (getting a certificate, and include a mode in build for optimized environment. Also remember to tweak the startup times of mysql inside the containers to prevent a failed start procedure)
-
-workloads for dat:
-- know what the hell he is doing. This means:
-  - daemon models
-  - php, how php is executed. Talk about php_mod and then php-fpm, talk about mpm_prefork and mpm_event in the meantime
-  - how php communicates with the db
-  - how apache works
-- implement easy attacks
-  - adv.session.MonitorTask
-  - easy.ProductKey
-  - easy.session.MonitorPartitions
-  - easy.session.MonitorScreen
-- implement hard attacks
-  - adv.SessionHijack
-  - easy.CollectBigFile
-  - easy.session.KeyLogging
-- really, really hard attacks:
-  - adv.ActivateSwarm. This one I'm currently doing, so may be just feedback from Dat is important, not his code contribution
-  - adv.RedirectTraffic
-
-move timing work on to cron? So that I won't have to have an endless script and just let the system deal with everything?
-
-okay, so may be really quickly, define what the behavior of the new plan will be. There are 2 viruses, 1 naked to the elements, and the other hidden. The hidden is created by the naked one at boot, then the naked one will be recreated when the hidden one spots that the startup script or the script itself is not there anymore or the hashes have changed. If the hases have changed, but the file is still there, that means there have been a reversen engineering attempt, which is defcon 1, in which the startup script will notify the webserver immediately.
-
-all the directories will be named from a list of normal words
-
-Naked one:
-- main script, polymorphic in name, start out as mn.cmd
-- data file. Stores many things
-  - current payloads folder, unencrypted, because they still can't do anything when they know about this
-- incoming file, for the hidden script to report into
-
-Hidden one:
-- main script
-- initial incoming file. This will be created by the naked one, and the naked one will pass some initial parameters, to initialize the hidden one. After the hidden one has read those, communication is cut off, and the incoming file will be deleted by the hidden one. These things will be transferred to:
-  - virus location. The hidden one can get the hash just by hashing it.
-  - payloads folder. This will be used to recreate the naked one, if necessary
-
-General principle/guideline when doing these things:
-- it is assumed that they don't know where both the naked one and the hidden one is. The naked one can be easily seen and traced back through the startup script, but even the system does not know where the hidden one is
-- it is assumed that they can:
-  - delete them one by one, reasonable assumption
-  - stop them via task manager one by one, reasonable assumption provided they don't have specialized tool to stop multiple tasks at once
-, thus the system is built to recover all these scenerios. But because they can delete and stop them pretty quickly. 1 second lower estimate, 2 second upper estimate, the mechanism to check on each other must be faster than 1 second, or else the mechanism will not make sense.
 
 dw tv
 
-cron jobs inside docker containers: https://blog.knoldus.com/running-a-cron-job-in-docker-container/
 international law: https://www.youtube.com/watch?v=1SbdlteP9Qk&list=PLj3bSusRimZNEIPYNl_7nk2cdoqa48WmY&index=4
 "customary rules of international law"
 un charter: https://www.un.org/en/sections/un-charter/un-charter-full-text/
@@ -621,141 +499,40 @@ https://en.wikipedia.org/wiki/United_Nations_resolution
 
 https://pitmonticone.github.io/rcp85-debate/
 
-modes:
-- file mode: is expected to be a file, called by an existing virus so won't have to deal with social engineering
-- stream mode: is expected to be piped into cmd or sh or bash. If called by the initial installation then have to deal with social engineering
-the new installation schema:
-- /new/win/{user_handle}, startup script, will always be placed at appdata, stream mode
-- /new/win/{user_handle}/location/{location}, startup script, file mode, will be placed at a specific location
-- /new/win/{user_handle}/mn/{virus_id}: main script, will contain :pickRandomLocation, :hash and :unixTime, is expected to be a file
-- /new/win/{user_handle}/license
-- /new/mac/{user_handle}: mac startup script, stream mode
-- /new/mac/{user_handle}/mn/{virus_id}: mac main script
-swarm thing:
-- /new/win/{user_handle}/swarm, /new/win/{user_handle}/swarm/location/{location}, swarm installation script, file mode. Every activity stays within the specified location (default is C:\Users)
-- /new/mac/{user_handle}/swarm, /new/mac/{user_handle}/swarm/location/{location}, swarm installation script, file mode
-
-also virus endpoints:
-- /vrs/{virus_id}/ping: pinging
-- /vrs/{virus_id}/aks: list of attacks
-- /vrs/{virus_id}/aks/{attack_id}/code: code of a specific attack
-- /vrs/{virus_id}/aks/{attack_id}/report: place to report files and whatnot
-- /vrs/{virus_id}/hms: hidden missing, report that the hidden virus has disappeared
-
-also note that the swarm will be as lightweight and mobile as possible, so won't have the baggage of licenses and all that for social engineering
-
-so what's the swarm installation script looks like? It has all the functions that the main script has, and have the base folder embedded, and not from the data file
-- pick a random location for the main script, create /dt, /mn.cmd and /ic there
-- pick a random location for the utils folder
-- send message about the utils folder and the type (1) to the incoming messages
-
-what's the initial installation script now look like? Because this is a stream, so won't have any function the main script has, and preferably can't have any labels and loopbacks
-- get the location for the main script (appdata if first time), create /entry.cmd and other dummy social engineering stuff there
-- append to the beginning of the main script "set type=0", also set the payloads and utils folder too, so there won't have to be any data loading
-- create the startup script
-
-the loops looks like this:
-- (any) loads constants, done
-  - hidden_ping_time=0
-  - last_fetch=:unixTime
-- (any) loads data, done
-  - type
-  - utils
-- if there are arguments:
-  - (implied naked) fetch:
-    - fetches the list of attacks
-    - for each attacks, prepares environment, downloads the code, executes it
-    - exits
-- if there aren't any arguments:
-- (any) read the incoming messages to set up environmental variables
-- (hidden) delete incoming file
-- (naked) save data
-- :daemon_loop
-- if standalone:
-  - if difference between now and last_fetch is 7 seconds, log, fork off and execute "{self} fetch"
-- if naked:
-  - if difference between now and last_fetch is 7 seconds, log, fork off and execute "{self} fetch"
-  - echos now to og
-  - checks incoming message, just a "ping", records the time, compares with hidden_ping_time, heal hidden if necessary
-- if hidden: if any of these are violated, proceed to clean the naked virus
-  - checks existence of naked
-  - checks hash of naked
-  - checks existence of startup script
-  - checks hash of startup script
-  - checks time in og
-  - ping naked
-  - if needs cleaning:
-    - reads the old hash, deletes the U!hash:~0,5!.vbs file
-    - deletes the location file
-
-features:
-- og, outgoing
-
-standalone:
-- data:
-  - type|0
-  - libs|{libs folder}
-- incoming by stream init script:
-  - type|0
-  - libs|{libs folder}
-
-naked:
-- data:
-  - type|1 // 0 for standalone, 1 for naked, 2 for hidden
-  - libs|{libs folder}
-  - base|{base location where location randomization happens}
-- incoming by file init script:
-  - type|1
-  - libs|{libs folder}
-  - base|{base location}
-- incoming by hidden script, normal use, repeatedly:
-  - ping|_
-- incoming by hidden script, reconstruction: {init script, hidden script normal use}
-
-hidden: note that hidden will only be created by naked, and not any startup scripts
-- incoming by naked script on startup: note that this exists for a short while, then hidden deletes it
-  - type|2
-  - libs|{libs folder}, this is for passing right back to the naked one to construct it
-  - base|{base location}
-  - lc|{naked location}, mn.cmd and ic is expected to be inside
-
-naked will be given these by hidden:
-- incoming:
-  - ping|_, this is telling naked that the hidden is still alive and well
-
-what is the failsafe? Like, the nuke button that I can remove when testing stuff out? The base environment where things happen should be contained. This way, I can just delete everything, and both running scripts will be gone
-
 general tso's and wonton soup, see places where I can eat that, then invite dan & chi?
 
 interesting combination with C#: https://stackoverflow.com/questions/54360791/batch-script-to-read-input-text-file-and-build-output-command
 
-verbs to avoid, the built-in commands, the communications one, where standards have been in place and it differs virus to virus: type, ping, vrs, aks
-no wait, so because everything just copies each other to recover things, I can get away with obfuscating the intercommunications too. So these are the variables I can do this: libs, base, lc, fetch, mn, ic, dt
-
-But all of these obfuscation needs to have a stringent testing plan. So, when it comes to doing just that, make a batch script that can automate the process? It would be hard to get all the software interfaces together, and it might just not worth it to do that.
-
-Also now that I think about it, I don't need the standalone stuff rite? I can just use the old one, and all will be well. So yeah, go do that
-
-so, things to do for tonight:
-- test out the system thoroughly, make sure it works
-- incrementally test the obfuscation schema
-- test out what's the perfect HIDDEN_PING_INTERVAL. I kinda want it to be either 1 or 2, but can bump it up if necessary. But in principle, it needs to be low, so as to recover fast in case task manager kills it sequentially faster. Let's stick with 1, the download cycle seems to be able to execute something like 10-15 times per second
-- create an environment for dat. I sort of need this to be as quick as possible, meaning I can quickly clone everything, again, in 1 command.
-
-i have not deal with the scenereo when the utils folder is gone and naked will have to recreate that
-
 may be, the usb stick still have some content left. I mean, I haven't plugged it in for extended periods of time, and TRIM might not be enabled there. Yeah it has the thing with the operating system there, but just may be? Like, I don't want to lose a part of me
 
-getFile.php has directory traversal problems
-https://stackoverflow.com/questions/4205141/preventing-directory-traversal-in-php-but-allowing-paths
+"test that by using ab to send web requests": https://serversforhackers.com/c/php-fpm-process-management, "ab" seems to be a load testing tool? Also the page has info on tuning php-fpm
 
-change other sites to php-fpm too
+K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
 
-remember to switch the php.ini stuff so that I can bring 8MB files back. At startup/php.ini
+the measured cpu usage is quite high, something like 8-14% (1s clock speed, don't check hash), 3-8% (2s clock speed, don't check hash), 10-30% (1s clock speed, check hash), 4-13% (2s clock speed, check hash)
 
-kay, so I can do the development right back in localhost. Like, just spin up an instance from github and there you go. Still have to think about how the inner vm can deal with that.
+work left on the virus:
+- make sure every curl have the -L option
+- add a package to build the traditional virus
+- have a static folder, and put all static files from resource over (like screenshotting code?). Or just use the new extras thingy that I just add?
+- make sure all controllers redirect to main page if not authorized
+- clear getFile from directory traversal: https://stackoverflow.com/questions/4205141/preventing-directory-traversal-in-php-but-allowing-paths
+- update dat's schema and everything, after finishing all the above
 
-clean up the db schema and get rid of unnecessary stuff
+also the pmi thingy with the timesheets
 
-oh and the back up, I expect it to be quite large, considering I have the virus-backup instance, and other stuff
+for the package explanation:
+- talk about old architecture (7 viruses)
+- talk about new architecture and the assumptions (can't delete them both at the same time, and can't kill them both at the same time)
+- talk about the fact that picking a random location takes a while, so they can try killing each fast enough and the location will converge at the base location
+- talk about why libs should be placed somewhere hidden, like in another program's folders
+- talk about why the base location should be as wide as possible, to lock a whole folder in, but may be not too wide because of the base location convergence
+- talk about swarm clock speeds and checking file integrity and how that sort of have a massive impact on the detectability of it in the cpu usage and battery usage
+- talk about how this does not have all the social engineering stuff
+- talk about obfuscation options. Should I even make options?
+- talk about how batch gets executed, and how it's god damn slow
+- talk about how the hidden is just there after a reboot
 
+after all of the above, do the k8s for an overview, not for actual commands remembering. First the book by nigel, then the ongoing book
+
+so may be bring my own computer on tuesday?

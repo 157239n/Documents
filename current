@@ -509,30 +509,21 @@ may be, the usb stick still have some content left. I mean, I haven't plugged it
 
 K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
 
-the measured cpu usage is quite high, something like 8-14% (1s clock speed, don't check hash), 3-8% (2s clock speed, don't check hash), 10-30% (1s clock speed, check hash), 4-13% (2s clock speed, check hash)
-
 work left on the virus:
-- make sure every curl have the -L option
-- add a package to build the traditional virus
-- have a static folder, and put all static files from resource over (like screenshotting code?). Or just use the new extras thingy that I just add?
-- make sure all controllers redirect to main page if not authorized
-- clear getFile from directory traversal: https://stackoverflow.com/questions/4205141/preventing-directory-traversal-in-php-but-allowing-paths
 - update dat's schema and everything, after finishing all the above
-
-also the pmi thingy with the timesheets
-
-for the package explanation:
-- talk about old architecture (7 viruses)
-- talk about new architecture and the assumptions (can't delete them both at the same time, and can't kill them both at the same time)
-- talk about the fact that picking a random location takes a while, so they can try killing each fast enough and the location will converge at the base location
-- talk about why libs should be placed somewhere hidden, like in another program's folders
-- talk about why the base location should be as wide as possible, to lock a whole folder in, but may be not too wide because of the base location convergence
-- talk about swarm clock speeds and checking file integrity and how that sort of have a massive impact on the detectability of it in the cpu usage and battery usage
-- talk about how this does not have all the social engineering stuff
-- talk about obfuscation options. Should I even make options?
-- talk about how batch gets executed, and how it's god damn slow
-- talk about how the hidden is just there after a reboot
 
 after all of the above, do the k8s for an overview, not for actual commands remembering. First the book by nigel, then the ongoing book
 
 so may be bring my own computer on tuesday?
+
+add panic button plan to the TODO list
+
+how about the documentations for everything inside? Right now I don't feel a need to collect all of them. But just try to do that, and see if stuff like @inheritDoc works
+
+bootstrap process:
+- https://www.binpress.com/php-bootstrapping-crash-course/
+- https://stackoverflow.com/questions/3313950/php-bootstrapping-basics
+- https://github.com/PeeHaa/OpCacheGUI
+- https://stackoverflow.com/questions/17224798/how-to-use-php-opcache
+
+consider moving everything over to the new architecture, with all the template stuff, and all the routing stuff, all according to standards like PSR-0. But like, it seems like /vrs/{virus_id}/aks/{attack_id}/code can't be implemented in a router, and other stuff as well. But still, go over how things are bootstrapped, and try to implement that. Only when that's done, then I think I can understand magento

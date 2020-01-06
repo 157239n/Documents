@@ -2,3 +2,8 @@
 curl --form "param1=value1" --form "param2=value2" --form "fileupload=@my-file.txt;filename=desired-filename.txt" endpoint
 
 oh and, curl -L google.com to follow all the redirects. -I for headers only
+
+if there is a redirect while using a POST request, curl will default that to a GET request on later redirects. I know how fucked up this is, but oh well, have to follow these rules. So what's the good thing to do now?
+
+if no arguments: curl -d "" --post301 --post302 --post303 -L <url>
+if have arguments, replace -d with --form, duh

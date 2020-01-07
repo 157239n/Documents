@@ -526,4 +526,112 @@ bootstrap process:
 - https://github.com/PeeHaa/OpCacheGUI
 - https://stackoverflow.com/questions/17224798/how-to-use-php-opcache
 
+may be put up another container, this time for php-opcache thing, and tweak it
+
 consider moving everything over to the new architecture, with all the template stuff, and all the routing stuff, all according to standards like PSR-0. But like, it seems like /vrs/{virus_id}/aks/{attack_id}/code can't be implemented in a router, and other stuff as well. But still, go over how things are bootstrapped, and try to implement that. Only when that's done, then I think I can understand magento
+
+app
+- bootstrap.php
+- lib: application
+- public
+  - .htaccess
+  - index.php
+share: log files, config files
+  - config
+    - default.php
+vendor
+  - autoload.php, duh
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+$2y$10$5n4dbSmGH.LgrbJtjRGl7.firv/juZQyGKzzc2R9p99dBO8g2H3MO
+
+ext-dom
+
+php-xml
+php-mbstring
+
+setenvif
+
+common php extensions https://gist.github.com/hollodotme/418e9b7c6ebc358e7fda
+
+configuration
+- whitelist: []
+- language: en
+- timezone
+- error_reporting: E_ALL
+- display_errors: 'Off'
+- log_errors: 'On'
+- uri_scheme: Router::URI_REWRITE
+
+global variables:
+- translator, I18n\FileTranslator > I18n\Translator, translate($key)
+- uriScheme, Router::URI_REWRITE, which is an integer 1. THe other option is QUERY_STRING, integer 2
+- byteFormatter, Format\Byte
+- sessionStorage, Storage\Session
+- csrfToken, Security\CrsfToken
+- whitelist, Auth\Ip
+- user, Auth\User, authentication object
+- urlRenderer, Presentation\Url > Presentation\UrlRenderer, get($identifier)
+- htmlTemplate, Presentation\Html > Presentation\Template > Presentation\Renderer, render($template, $data = [])
+- jsonTemplate, Presentation\Json
+- request, Network\Request > Network\RequestData
+- routeFactory, Network\RouteFactory
+- router, Network\Router
+
+finally, router->run()
+
+where does /maincss comes from???
+
+
+Autoloader(__NAMESPACE__, dirname(__DIR__))
+autoloader->register()
+
+Class_Name -> CLass/Name
+
+okay I get it now. Scripts can be included just before serving using the spl thingy, or what I have been doing, which is including everything at every request
+
+also the router and route concept, and the renderer concept too
+
+router will route the request to the desired destination (aka callbacks). So, /vrs/*/aks/* will route to a specific file
+
+you can then define routes, add to the router, then the router will sort of go through every route possible, and will call that
+
+and the template thing, there's 1 base template A, and then there will be a template B on top of that to load with some data C. B and C together produces a valid html segment. That segment is saved in a variable, then the base template is rendered, meaning it is given the whole $content to work with.
+
+So now, look into the current virus archtecture, and may be rework it to look something like this?
+
+right, the router thingy too. Let's figure out what signal get sent where
+
+/new/win/{user_handle}/entry
+/new/win/{user_handle}/license
+/new/win/{user_handle}
+
+
+Old rules
+
+
+    <Directory "/var/www/virus">
+        RewriteEngine On
+
+        RewriteBase /
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-l
+
+        RewriteRule ^abc$ handler.php?url=abc [QSA,L]
+        RewriteRule ^hr/(.*)$ handler.php?url=$1
+        RewriteRule ^user/login.php$ view/login.php
+        RewriteRule ^user/dashboard.php$ view/dashboard.php
+        RewriteRule ^user/virus.php$ view/virus.php
+        RewriteRule ^user/attack.php$ view/attack.php
+        RewriteRule ^vrs/(.*)$ vrs.php?endpoint=$1
+        RewriteRule ^new/(.*)$ new.php?endpoint=$1
+        RewriteRule ^viruses/(.*)$ vrs.php?endpoint=$1
+        #RewriteRule ^$ view/dashboard.php
+    </Directory>
+

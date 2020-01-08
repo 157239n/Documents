@@ -479,8 +479,6 @@ how mergers work?
 
 joe's upcoming bronze age
 
-another feature I kinda want to implement is that of health checks. I kinda want every anomaly to be sent to me immediately, so that I can resolve the problem. K8S seems to be able to sort these things out quite well. The only problem I'm having with it is that it's just so god damn expensive, in terms of memory I mean. I figure that I can just use docker-compose for everything that I do, but I'm kinda addicted to the managed solution k8s provides. So, still test everything out, but do that after mola. And I think it's worth it to sort of experiment with kind and then try out the managed k8s that digitalocean provides.
-
 rewatch starship updates
 also the black mirror episodes
 and chi stuff
@@ -501,34 +499,11 @@ https://pitmonticone.github.io/rcp85-debate/
 
 general tso's and wonton soup, see places where I can eat that, then invite dan & chi?
 
-interesting combination with C#: https://stackoverflow.com/questions/54360791/batch-script-to-read-input-text-file-and-build-output-command
-
 may be, the usb stick still have some content left. I mean, I haven't plugged it in for extended periods of time, and TRIM might not be enabled there. Yeah it has the thing with the operating system there, but just may be? Like, I don't want to lose a part of me
 
 "test that by using ab to send web requests": https://serversforhackers.com/c/php-fpm-process-management, "ab" seems to be a load testing tool? Also the page has info on tuning php-fpm
 
 K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
-
-work left on the virus:
-- update dat's db schema and everything, after finishing all the above
-
-after all of the above, do the k8s for an overview, not for actual commands remembering. First the book by nigel, then the ongoing book
-
-add panic button plan to the TODO list
-
-- https://github.com/PeeHaa/OpCacheGUI
-- https://stackoverflow.com/questions/17224798/how-to-use-php-opcache
-
-plan:
-- create attack factory, which have session and stuff, which it can pass to the attack constructor, which will save the session variable in
-- the factory will also invoke the load state method
-- do the same thing with $_FILES, and UserFactory. For now I'll just do UserFactory, and not UserFactoryInterface, but always keep in mind that I may want that in the future
-
-singletons:
-- http://misko.hevery.com/2008/08/17/singletons-are-pathological-liars/
-- "singleton replacement": https://stackoverflow.com/questions/162042/are-there-any-viable-alternatives-to-the-gof-singleton-pattern
-- https://softwareengineering.stackexchange.com/questions/40373/so-singletons-are-bad-then-what
-- https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons
 
 things to check:
 - activate swarm
@@ -536,5 +511,28 @@ things to check:
 - new virus
 - self destruct
 
+todos today:
+- when get home, test the rest of the packages, and finalize activate swarm and new simple one too. Currently, they have not sort of make a new virus just yet and just reuse the old elements, which is troublesome. That sort of comes to my mind now, that I can sort of use a simple one to then install the swarm with the same id, then nuke the simple one, and the swarm just basically takes over. So make this an option too. This means that the type field can change, so make sure I include that in.
+- go over all session accesses, and make sure only the ones interacting with the main ui in view has access over setting it, not the controllers
+- check over every get() and post(), and then determine if checking is necessary
+- do the same thing (DI stuff) with $_FILES (add it to RequestData), and UserFactory. Also I believe I have not deleted every comment ever, so do that
 
+@internal
+some other interesting tags (for namespaces):
+- @category: app name
+- @package: namespace under app
+- @author: name <email>
+- @copyright: Copyright (c) 2014 Pieter Hordijk <https://github.com/PeeHaa>
+- @license: http://www.opensource.org/licenses/mit-license.html  MIT License
+- @version: 1.0.0
 
+IoC: https://www.martinfowler.com/articles/injection.html
+
+list of deleted session stuff, in case I need it after testing:
+- cancel attack, both
+- delete attack, virus
+- delete virus, virus. Wtf was I thinking?
+- deploy attack, both
+- update attack, both
+
+also rethink logs

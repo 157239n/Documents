@@ -182,11 +182,6 @@ Continuous delivery: reliable software releases through build, test, and deploym
 
 https://myoji-yurai.net/myojiPrefectureRanking.htm?myojiKanji=佐藤
 
-Writing applications (I just get too lazy to do it):
-- note.kelvinho.org
-- scratch.kelvinho.org
-
-
 - do the local hash map implementation for bounce dynamic, and measure performance
 - then simulate a stirling engine, with hot wall side vibrating constantly and cold wall side actively dampening its motion
 
@@ -196,3 +191,5 @@ simulate boyles law for chi, and the sterling engine where air is forced on the 
 serendipitous goals:
 - make separate demo pages on every proc? Build it at processing.kelvinho.org/projects and /{project-name}
 - publish vsepr and uniform electric grid (seems like I have already done this)
+
+https://www.datadoghq.com/blog/monitoring-apache-web-server-performance/

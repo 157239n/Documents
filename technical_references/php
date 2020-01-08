@@ -1,6 +1,10 @@
 Really dumb tls problems:
 - If you are using reverse proxy to serve your site, and the proxy handles all the ssl, then make sure $_SERVER["HTTPS"] = "On" because some software uses it to detect whether it's truely using tls
 
+setenvif
+
+common php extensions https://gist.github.com/hollodotme/418e9b7c6ebc358e7fda
+
 
 
 $_SERVER["PHP_SELF"]

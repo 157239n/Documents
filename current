@@ -507,12 +507,6 @@ K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernete
 
 IoC: https://www.martinfowler.com/articles/injection.html
 
-when do I consider swarm complete?
-- can attack easily
-- can recover
-- can attack after recover
-- survives a shutdown
+swarm problem left: dealing with restarts. The errors seem to indicate that the directory with spaces are the problem. So make an alternate directory structure, put everything there, and see if it works again successfully.
 
-C:\Users\15723\Desktop\struct\c d\
-C:\Users\15723\Desktop\struct\a
-C:\Users\15723\Desktop\struct\
+also make a renew cert script, that will change proxy config, redeploy it, renew certs, stop apache, kill apache, change proxy config, redeploy it. Set up cron job to run once each day, preferrably midnight or so. Also document cron jobs? I don't think that's necessary, because I'm pretty much still stuck with this node for a long time.

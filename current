@@ -497,7 +497,7 @@ https://en.wikipedia.org/wiki/United_Nations_resolution
 
 https://pitmonticone.github.io/rcp85-debate/
 
-general tso's and wonton soup, see places where I can eat that, then invite dan & chi?
+general tso's, lo mein and wonton soup, see places where I can eat that, then invite dan & chi?
 
 may be, the usb stick still have some content left. I mean, I haven't plugged it in for extended periods of time, and TRIM might not be enabled there. Yeah it has the thing with the operating system there, but just may be? Like, I don't want to lose a part of me
 
@@ -505,34 +505,14 @@ may be, the usb stick still have some content left. I mean, I haven't plugged it
 
 K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
 
-things to check:
-- activate swarm
-- collect file, NOT passed
-- new virus
-- self destruct
-
-todos today:
-- when get home, test the rest of the packages, and finalize activate swarm and new simple one too. Currently, they have not sort of make a new virus just yet and just reuse the old elements, which is troublesome. That sort of comes to my mind now, that I can sort of use a simple one to then install the swarm with the same id, then nuke the simple one, and the swarm just basically takes over. So make this an option too. This means that the type field can change, so make sure I include that in.
-- go over all session accesses, and make sure only the ones interacting with the main ui in view has access over setting it, not the controllers
-- check over every get() and post(), and then determine if checking is necessary
-- do the same thing (DI stuff) with $_FILES (add it to RequestData), and UserFactory. Also I believe I have not deleted every comment ever, so do that
-
-@internal
-some other interesting tags (for namespaces):
-- @category: app name
-- @package: namespace under app
-- @author: name <email>
-- @copyright: Copyright (c) 2014 Pieter Hordijk <https://github.com/PeeHaa>
-- @license: http://www.opensource.org/licenses/mit-license.html  MIT License
-- @version: 1.0.0
-
 IoC: https://www.martinfowler.com/articles/injection.html
 
-list of deleted session stuff, in case I need it after testing:
-- cancel attack, both
-- delete attack, virus
-- delete virus, virus. Wtf was I thinking?
-- deploy attack, both
-- update attack, both
+when do I consider swarm complete?
+- can attack easily
+- can recover
+- can attack after recover
+- survives a shutdown
 
-also rethink logs
+C:\Users\15723\Desktop\struct\c d\
+C:\Users\15723\Desktop\struct\a
+C:\Users\15723\Desktop\struct\

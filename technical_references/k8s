@@ -154,3 +154,78 @@ labels, identifying information
 annotations, sort of labels, but can be used by libraries and whatnot. It's not like secrets, but act like 1
 
 kubectl label deployments alpaca-test "canary=true"
+
+---------------------------------------------
+
+the k8s book, nigel
+
+
+Deployments
+DaemonSets
+StatefulSets
+
+docker
+kubectl
+kubeadm
+
+"service meshes"?
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    zone: prod
+    version: v1
+spec:
+  containers:
+  - name: hello-ctr
+    image: nigelpoulton/k8sbook:latest
+    ports:
+    - containerPort: 8080
+
+Deployment
+- ReplicaSet
+  - Pod
+  - Pod
+
+Deployment definitions:
+- how many pods?
+- what images will the pods use?
+- what network ports to use
+- details on rolling updates
+
+probes:
+- startup
+- readiness
+- liveness
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deploy
+spec: most of the action will happen
+  replicas: 10
+  selector:
+    matchLabels:
+      app: hello-world
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template: pod template the deployment will manage
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-pod
+        image: nigelpoulton/k8sbook:latest
+        ports:
+        - containerPort: 8080
+
+kubectl apply -f file.yml
+
+

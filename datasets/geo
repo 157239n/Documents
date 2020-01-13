@@ -1,0 +1,16 @@
+
+geosciences software:
+- Geographic Resources Analysis Support System, GRASS: GIS (Geographic Information System)
+- Quantum GIS: famous for user-friendly
+- Survex: cave-survey data
+- System for Automated Geoscientific Analyses, SAGA: generic analyzing geographical data
+- User-friendly desktop internet GIS, uDig: famous for user-friendly, written in java
+- Therion: advanced cave surveying tool, command line based application. Fully compatible with survex and data can be stored in either survex or therion
+- Grid Analysis and Display System, GrADS: advanced tool, 4d datasets, optional 5th dimension. Extra functions in any language
+- GPlates: plate-technonics visualization, C++, OpenGL
+- Generic Mapping Tools, GMT: collection of 80 tools. Mainly CLI. Free comprehensive collection of GIS data, like coastlines, rivers, political borders, etc.
+- Open Java Unified Mapping Platform, OpenJUMP: GIS, 2003
+- gvSIG Desktop: analyzing geospatial data
+- Seismic toolkit: seismic data analyzer. Filtering, spectral analysis, polarization analysis, time-frequency representation, Hilbert transform, singular value decomposition. Go-to tool for experts
+- PostGIS: GIS, but on PostgreSQL. Added functions, operators & index enhancements into geospatial datasets. Kinda makes it db management tool
+- GPS Babel: Middle man between GPS receivers (Garmin, Magellan). Have the impression of being a CLI

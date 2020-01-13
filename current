@@ -398,8 +398,6 @@ SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I 
 
 how regulations and regulation authorities
 
-"Two-line element set (TLE)", insanely popular data format used to describe satellite orbits
-
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
@@ -462,7 +460,7 @@ Mars and MOLA:
 - https://en.wikipedia.org/wiki/Mars_Global_Surveyor
 - https://github.com/CHandmer/water-flow
 - http://www.caseyhandmer.com/home/mars
-- TLE: https://celestrak.com/NORAD/elements/active.php
+- TLE (Two-line element set): https://celestrak.com/NORAD/elements/active.php
 - air force space command manual: https://static.e-publishing.af.mil/production/1/afspc/publication/afspcman91-710v1/afspcman91-710v1.pdf
 
 "liability insurance"
@@ -479,10 +477,6 @@ how mergers work?
 
 joe's upcoming bronze age
 
-rewatch starship updates
-also the black mirror episodes
-and chi stuff
-
 also, space-based solar panels seems reasonable, but still harder (20 times harder, my gut feeling), so it's reasonable only if we want to build a civilization in the stars, and not as a means to transition earth, I mean, that would be kinda dumb. So sort of read over the us military's report on space access, also that environment report, with cleanrooms and whatnot, to get the feel of the possibility to actually do these kinds of things
 
 dw tv
@@ -497,11 +491,7 @@ https://en.wikipedia.org/wiki/United_Nations_resolution
 
 https://pitmonticone.github.io/rcp85-debate/
 
-general tso's, lo mein and wonton soup, see places where I can eat that, then invite dan & chi?
-
-may be, the usb stick still have some content left. I mean, I haven't plugged it in for extended periods of time, and TRIM might not be enabled there. Yeah it has the thing with the operating system there, but just may be? Like, I don't want to lose a part of me
-
-"test that by using ab to send web requests": https://serversforhackers.com/c/php-fpm-process-management, "ab" seems to be a load testing tool? Also the page has info on tuning php-fpm
+general tso's, lo mein and wonton soup, see places where I can eat that, then invite dan & chi? May be jsut go around and try them myself
 
 K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
 
@@ -509,4 +499,4 @@ IoC: https://www.martinfowler.com/articles/injection.html
 
 swarm problem left: dealing with restarts. The errors seem to indicate that the directory with spaces are the problem. So make an alternate directory structure, put everything there, and see if it works again successfully.
 
-also make a renew cert script, that will change proxy config, redeploy it, renew certs, stop apache, kill apache, change proxy config, redeploy it. Set up cron job to run once each day, preferrably midnight or so. Also document cron jobs? I don't think that's necessary, because I'm pretty much still stuck with this node for a long time.
+make the constants into a config file, and put all the variables in a context variable. No may be delay the context variable. Dig into magento's way of doing things before doing that, cause it might not be good

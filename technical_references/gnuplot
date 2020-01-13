@@ -1,0 +1,28 @@
+
+starttime
+seconds
+ctime: connection time
+dtime: processing time
+ttime: total time
+wait: waiting time
+
+unset key
+set key [bottom left box], now will be the title
+set xrange [-1:13]
+set xlabel
+set terminal png
+set size 800,600
+set output "dataimg.png"
+set style line 1
+set grid [y]
+
+linetype 7 (lt 7)
+linecolor 0 (lc 0)
+title "interesting data"
+with linespoints (w lp): connect data points
+with lines
+with points
+with errorbars
+using 9: use the 9th column as y axis
+using a:b:c: use ath column as x axis, bth column as y axis, c for error bars. Each can be ($2/1000), for scaling stuff, for example
+smooth sbezier

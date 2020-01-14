@@ -159,6 +159,7 @@ kubectl label deployments alpaca-test "canary=true"
 
 the k8s book, nigel
 
+K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
 
 Deployments
 DaemonSets
@@ -229,3 +230,45 @@ spec: most of the action will happen
 kubectl apply -f file.yml
 
 
+
+kubectl apply -f {file}.yml --record
+kubectl cluster-info --context kind-clu1
+kubectl version --output=yaml
+kubectl config view
+kubectl config current-context
+kubectl config use-context docker-desktop
+kubectl get pods --watch
+kubectl get pods hello-pod -o yaml
+kubectl describe secret -n kube-system | grep deployment -A 12
+kubectl get rs (or replicaset). This is sort of rarely used. Only used when rollback to the previous version, and even then it shouldn't probably do that
+kubectl get svc (or service)
+kubectl get ep (or endpoints)
+
+kubectl rollout history deployment hello-deploy
+kubectl rollout status deployment hello-deploy
+kubectl rollout
+kubectl rollout undo deployment hello-deploy --to-revision=1
+
+dashboard url: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+can the cluster survive a restart?
+
+also restructure the logs of k8s and kind
+
+so figure out on which node each of these resides in:
+- api server
+- cluster store (etcd and stuff)
+
+also test destroy some of the nodes too, because I tried to destroy a worker node using docker compose rm -f {container name}, and k8s didn't even budge
+
+also see what's the right way to log into the dashboard? And see their security barriers
+
+several types of services:
+- ClusterIP: stable ip and port only accessible from inside the cluster. Guaranteed stable for the life of the Service. No need to touch iptables and ipvs rules
+- NodePort: route traffic from outside to inside
+- LoadBalancer: play nicely with commercial load balancing solutions out there
+- ExternalName: route traffic to outside the cluster
+
+Endpoints object, list of good pods
+
+also currently, my architecture involves only 1 master node. Test out a multi-master cluster

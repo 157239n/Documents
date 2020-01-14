@@ -430,8 +430,6 @@ so may be, create a program that can beat window's chess engine. This would sort
 
 how mergers work?
 
-joe's upcoming bronze age
-
 also, space-based solar panels seems reasonable, but still harder (20 times harder, my gut feeling), so it's reasonable only if we want to build a civilization in the stars, and not as a means to transition earth, I mean, that would be kinda dumb. So sort of read over the us military's report on space access, also that environment report, with cleanrooms and whatnot, to get the feel of the possibility to actually do these kinds of things
 
 "customary rules of international law"
@@ -452,3 +450,60 @@ swarm problem left: dealing with restarts. The errors seem to indicate that the 
 make the constants into a config file, and put all the variables in a context variable. No may be delay the context variable. Dig into magento's way of doing things before doing that, cause it might not be good
 
 deal with the migration of inspire concept
+
+kubectl cluster-info --context kind-clu1
+kubectl version --output=yaml
+kubectl config view
+kubectl config current-context
+kubectl config use-context docker-desktop
+kubectl get pods --watch
+kubectl get pods hello-pod -o yaml
+kubectl describe secret -n kube-system | grep deployment -A 12
+kubectl get rs (or replicaset). This is sort of rarely used. Only used when rollback to the previous version, and even then it shouldn't probably do that
+kubectl get svc (or service)
+kubectl get ep (or endpoints)
+
+kubectl rollout status deployment hello-deploy
+kubectl rollout
+kubectl rollout undo deployment hello-deploy --to-revision=1
+
+dashboard url: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+services: provide stable and reliable networking for a set of dynamic pods
+
+so, how about doing this on real nodes connected only via private networking?
+
+every Service gets its own stable ip address, stable dns name, stable port
+
+still have a question tho. Seems like k8s doesn't address the problem of having 1 single points of failure, which is the load balancer at the beginning. But again, may be I am hallucinating, because 1 fully fledged node can withstand 23k requests/second. A fully fledged HAProxy server can have 2.4 million SSL connections (https://www.freecodecamp.org/news/how-we-fine-tuned-haproxy-to-achieve-2-000-000-concurrent-ssl-connections-d017e61a4d27/), so there's pretty much no need to have even 2 load balancer. Heck, google only have 63k searches per second. Only 63k. So freaking low. I guess they can actually run everything on just 1 front-facing load balancer and that's it. Facebook has to deal with much bigger loads tho, up to 13M requests per second, which needs what, 5.4 of the HAProxy load balancer, which is totally doable with the help of CDNs and dns load balancing. The bottleneck is the actual applications behind, which can handle only like 460 requests per second in my case, and 130 requests per second in google's case. Right, let's write about this in the notes. Actually, write an entire blog post about this, and link notes to that article. Also really, really mention the fact that "faster" does not mean anything at all if you don't have the scientific method backing you, meaning if you don't have concrete measurements. Also really dig into my fears of single points of failures
+
+can the cluster survive a restart?
+
+okay, so benchmark these setups for the blog post (make a tool so that I can just plug in the information and it will spit out the data right away, so that I can sort of do the experiments really, really fast):
+- nginx serving static files
+- php_fpm serving static files
+- php_fpm serving simple index.php files
+- mod_php serving static files
+- mod_php serving simple index.php files
+
+also restructure the logs of k8s and kind
+
+and apparently, someone managed to get 5k requests/second out of apache (3.75GB, 1vCPUs). See if I can reproduce this in my results: https://cloudplatform.googleblog.com/2013/11/compute-engine-load-balancing-hits-1-million-requests-per-second.html. They also say that the service they are using (https://cloud.google.com/compute/docs/machine-types) provides the ability I was talking about, which is creating a shit load of nodes and destroy them right away.
+
+Endpoints object, list of good pods
+
+also test destroy some of the nodes too, because I tried to destroy a worker node using docker compose rm -f {container name}, and k8s didn't even budge
+
+also see what's the right way to log into the dashboard? And see their security barriers
+
+several types of services:
+- ClusterIP: stable ip and port only accessible from inside the cluster. Guaranteed stable for the life of the Service. No need to touch iptables and ipvs rules
+- NodePort: route traffic from outside to inside
+- LoadBalancer: play nicely with commercial load balancing solutions out there
+- ExternalName: route traffic to outside the cluster
+
+update the main page (kelvinho.org) to at least provide some details on what have been going on
+
+how about, try to change my account using another logon method, like google. Then because I can freely move the 157239n domain to my other account, it's not so disruptive
+
+

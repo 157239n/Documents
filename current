@@ -443,12 +443,6 @@ general tso's, lo mein and wonton soup, see places where I can eat that, then in
 
 IoC: https://www.martinfowler.com/articles/injection.html
 
-swarm problem left: dealing with restarts. The errors seem to indicate that the directory with spaces are the problem. So make an alternate directory structure, put everything there, and see if it works again successfully.
-
-make the constants into a config file, and put all the variables in a context variable. No may be delay the context variable. Dig into magento's way of doing things before doing that, cause it might not be good
-
 review docker's tagging structure, and see how can I make the image making process procedural
 
 get more ram lmao
-
-how about, try to change my account using another logon method, like google. Then because I can freely move the 157239n domain to my other account, it's not so disruptive

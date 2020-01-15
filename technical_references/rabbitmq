@@ -1,0 +1,7 @@
+
+So I came across this while trying to set up OpenEdgar, which has like, a ton of dependencies, and they don't freaking provide some Dockerfile to go with. What were they thinking lmao. So anyway, this log page might get populated later, it might not
+
+- https://www.3pillarglobal.com/insights/rabbitmq-understanding-message-broker
+- https://hackernoon.com/introduction-to-message-brokers-part-1-apache-kafka-vs-rabbitmq-8fd67bf68566
+- https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd
+

@@ -1,0 +1,122 @@
+
+original article that all of these came out of: https://www.martinfowler.com/articles/injection.html
+
+so, inversion of cotnrol:
+
+dependency injection
+service locator
+
+components: glob of software that's intended to be used, without change, by application out of control of the component writers
+services: same, but components are "local", like jar files, and services are expected to work through a network
+
+naive:
+class MovieLister {
+	public Movie[] moviesDirectedBy(String arg) {}
+}
+
+public interface MovieFinder {
+	List findAll();
+}
+
+class MovieLister {
+	private MovieFinder finder;
+	public MovieLister() {
+		finder = new ColonDelimitedMovieFinder("movies1.txt");
+	}
+}
+
+3 main stypes of dependency injection:
+- interface injection (type 1 IoC)
+- setter injection (type 2 IoC)
+- constructor injection (type 3 IoC)
+
+constructor injection: PicoContainer, http://picocontainer.com/
+class MovieLister {
+	public MovieLister(MovieFinder finder) {
+		this.finder = finder;
+	}
+}
+class ColonMovieFinder implements MovieFinder {
+	public ColonMovieFinder(String fileName) {
+		this.fileName = fileName;
+	}
+	List findAll() {...}
+}
+private MutablePicoContainer configureContainer() {
+	MutablePicoContainer pico = new DefaultPicoContainer();
+	Parameter[] finderParams = {new ConstantParameter("movies1.txt")};
+	pico.registerComponentImplementation(MovieFinder.class, ColonMovieFinder.class, finderParams);
+	pico.registerComponentImplementation(MovieLister.class);
+	return pico;
+}
+public static void main() {
+	MutablePicoContainer pico = new configureContainer();
+	MovieLister lister = (MovieLister) pico.getComponentInstance(MovieLister.class);
+}
+
+setter injection: Spring
+class MovieLister {
+	private MovieFinder finder;
+	public void setFinder(MovieFinder finder) {
+		this.finder = finder;
+	}
+}
+class ColonMovieFinder {
+	private String fileName;
+	public void setFilename(String fileName) {
+		this.fileName = fileName
+	}
+}
+XML:
+<beans>
+	<bean id = "MovieLister" class = "spring.MovieLister">
+		<property name = "finder">
+			<ref local = "MovieFinder"/>
+		</property>
+	</bean>
+	<bean id = "MovieFinder" class = "spring.ColonMovieFinder">
+		<property name = "fileName">
+			<value>movies1.txt</value>
+		</property>
+	</bean>
+</beans>
+public static void main() {
+	ApplicationContext ctx = new FileSystemXmlApplicationContext("spring.xml");
+	MovieLister lister = (MovieLister) ctx.getBean("MovieLister");
+}
+
+interface injection: Avalon, http://avalon.apache.org/closed.html
+public interface InjectFinder {
+	void injectFinder(MovieFinder finder);
+}
+class MovieLister implements InjectFinder { // how is this any different from setter injection?
+	public void injectFinder(MovieFinder finder) {
+		this.finder = finder;
+	}
+}
+public interface InjectFinderFileName {
+	void injectFileName(String fileName);
+}
+class ColonMovieFinder implements MovieFinder, InjectFinderFileName {
+	public void injectFileName(String fileName) {
+		this.fileName = fileName;
+	}
+}
+class Tester {
+	private Container container;
+	public void configureContainer() {
+		container = new Container();
+		registerComponents();
+		registerInjectors();
+		container.start();
+	}
+	private void registerComponents() {
+		container.registerComponent("MovieLister", MovieLister.class);
+		container.registerComponent("MovieFinder", ColonMovieFinder.class);
+	}
+	private void registerInjectors() {
+		container.registerInjector(InjectFinder.class, container.lookup("MovieFinder"));
+		container.registerInjector(InjectFinderFileName.class, new FinderFileNameInjector());
+	}
+}
+there's more, but like what the hell are all these? Why can't you be simple, just like the other 2?

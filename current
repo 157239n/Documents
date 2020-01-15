@@ -326,8 +326,6 @@ skillshare has a course in business stuff
 
 doug ellison, amature guy, eventually works in jpl, uses data from nasa, the freely accessible ones
 
-Richard Sutton, David Silver RL: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ
-
 https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html
 so, applications:
 - that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
@@ -350,8 +348,6 @@ Also I still don't get the interface for climate change. I mean, the common tech
 wtf is this https://americas.ramboll.com/projects
 
 also I feel like I need to study physics rigorously now, with the state of mind that I've got
-
-quickly go through everything here: http://www.worldscienceu.com/
 
 read more about how these molecules are formed, then simulate that
 
@@ -441,8 +437,8 @@ https://pitmonticone.github.io/rcp85-debate/
 
 general tso's, lo mein and wonton soup, see places where I can eat that, then invite dan & chi? May be jsut go around and try them myself
 
-IoC: https://www.martinfowler.com/articles/injection.html
-
-review docker's tagging structure, and see how can I make the image making process procedural
-
 get more ram lmao
+
+a behavior that seems strange: I echos into the rabbitmq's etc, start up the server, then stop it, then move on to the next build stage (shutting down and starting up a new container, using the old files? Is this the case? Review the docker book to be sure). Then the etc file gets overwritten??????? How does this happen? Is it an intrinsic docker thing?
+
+scout all viruses for java location, to see if java is truely 'universal'

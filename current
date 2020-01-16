@@ -259,8 +259,6 @@ https://en.wikipedia.org/wiki/Brackish_water
 
 "depleting resources"
 
-Multi programming: https://www.youtube.com/watch?v=MB0yDMQj1lU
-
 Humanitarian stuff:
 - https://www.odi.org/events/2655-humanitarian-space-concepts-definitions-and-uses
 - https://www.unocha.org/sites/dms/Documents/OOM-humanitarianprinciples_eng_June12.pdf
@@ -295,8 +293,6 @@ some other reports:
 
 ?https://gocardless.com
 
-subpoena? again lmao
-
 compile a list of interesting points about climate change to talk with that librarian:
 - trees absorb 3kg CO2 per year, aggregate: 9GtCO2/yr. Today it's 40GtCO2/yr
 - reality check on renewables
@@ -304,8 +300,6 @@ compile a list of interesting points about climate change to talk with that libr
 go through this, and consider this done: https://www.youtube.com/watch?v=ImtZ5yENzgE
 
 again, get into manufacturing
-
-how technology licensing work? like jpl and nasa
 
 https://drexel.edu/green/
 
@@ -378,8 +372,6 @@ political:
 - vtsax
 - https://amp.businessinsider.com/paypal-mafia-members-careers-elon-musk-peter-thiel-reid-hoffman-2019-11
 it:
-- https://www.technologyreview.com/s/612318/establishing-an-ai-code-of-ethics-will-be-harder-than-people-think/
-- https://www.red-gate.com/simple-talk/sql/database-devops-sql/introduction-to-devops-devops-and-the-database/amp/
 - https://github.com/dennybritz/reinforcement-learning
 - https://towardsdatascience.com/recreating-imagination-deepmind-builds-neural-networks-that-spontaneously-replay-past-experiences-9b57a9c08316
 others:
@@ -418,9 +410,7 @@ Mars and MOLA:
 
 sông chày hang tối
 
-and may be figure out libraries to make a map of the world, for energy visualizations and whatnot:
-- https://www.google.com/search?sxsrf=ACYBGNSLRG5iYY5VyqNzxaAPmplMWf90Fg%3A1576135287316&ei=d-rxXbzaEsTx5gK17YGwDQ&q=processing+map+visualization&oq=processing+us+map&gs_l=psy-ab.3.0.0i71l8.0.0..9075...0.1..0.0.0.......0......gws-wiz.yYBFnR7QcuY
-- https://github.com/cvalenzuela/Mappa
+P5 map library: https://github.com/cvalenzuela/Mappa
 
 so may be, create a program that can beat window's chess engine. This would sort of reintroduces some of the important ideas for dealing with mola
 
@@ -439,6 +429,8 @@ general tso's, lo mein and wonton soup, see places where I can eat that, then in
 
 get more ram lmao
 
-a behavior that seems strange: I echos into the rabbitmq's etc, start up the server, then stop it, then move on to the next build stage (shutting down and starting up a new container, using the old files? Is this the case? Review the docker book to be sure). Then the etc file gets overwritten??????? How does this happen? Is it an intrinsic docker thing?
-
 scout all viruses for java location, to see if java is truely 'universal'
+
+see how ads work
+
+also look again google analytics, then try to incorporate everything.

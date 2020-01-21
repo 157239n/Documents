@@ -95,10 +95,6 @@ Books on money: "virtual environment to experiment with business"
 
 Dry electrode coating technology: http://www.powersourcesconference.com/Power%20Sources%202018%20Digest/docs/3-1.pdf
 
-Look over CircleCI:
-- https://circleci.com/docs/2.0/tutorials/
-- https://circleci.com/docs/2.0/project-walkthrough/
-
 Old electrical stuff from MIT:
 - https://www.youtube.com/watch?v=3GdMaDzIUeQ&list=PL9F74AFA03AA06A11&index=18
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/
@@ -427,11 +423,6 @@ https://pitmonticone.github.io/rcp85-debate/
 
 general tso's, lo mein and wonton soup, see places where I can eat that, then invite dan & chi? May be jsut go around and try them myself
 
-downtime mitigation:
-- https://www.digitalocean.com/community/tutorials/3-strategies-for-minimizing-downtime
-- http://www.thinkcode.se/blog/2017/03/29/zerodowntime-deployment-with-haproxy-as-load-balancer
-- https://engineeringblog.yelp.com/2017/05/taking-zero-downtime-load-balancing-even-further.html
-
 add option to not display the nodes/description for ludvik
 
 make the old gun
@@ -439,3 +430,5 @@ make the old gun
 "how economies work"
 
 infect luan again
+
+accept answer on stack overflow.

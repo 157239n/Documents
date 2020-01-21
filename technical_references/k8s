@@ -272,3 +272,123 @@ several types of services:
 Endpoints object, list of good pods
 
 also currently, my architecture involves only 1 master node. Test out a multi-master cluster
+
+------------------------
+
+kubernetes up and running, again
+
+
+so, let's just do the K8S anyway, because again, like the virus, if I don't, then I'll just keep thinking about it and can't get other stuff done, because other stuff is sort of boring, and I can't stand boring stuff. So here's the way to do this:
+- get 2 nodes, 2GB RAM to experiment, in a region not NY. Then make ssh listen to 443, and do everything over port 80 only. Oh and, don't worry about packet sniffing, because they can't when a certificate is valid. They can only know sort of which ip I accessed.
+- Initialize everything K8S there, then test out various aspects. THe go-to book is still the nigel one.
+
+and yeah, I sort of feels like I was getting to that scale critical point where it's worth it to learn how to do this. This again, will be absolutely brutal, but just hang on with me, because it will be worth it and I can really focus on the real meat after this.
+
+and again, I expect I can do load tests, complete load test suites somehow within K8S, so actively look that out
+
+
+
+
+role-based access control
+more specialized objects:
+- DaemonSets, word play on ReplicaSets
+- Jobs
+- ConfigMaps, Secrets
+
+5: Pods
+6: Labels and annotations
+7: Services
+8: Ingress
+9: ReplicaSets
+10: Deployments
+11: DaemonSets
+12: Jobs
+13: ConfigMaps, Secrets
+
+"They cannot fail"
+
+oh and how can I get certificates when all of this stuff is happening?
+
+oh and I get the feeling that I have to commit code, then it gets built, then it gets deployed, and that's time wasted.
+docker-gc for garbage collecting
+
+kubelet
+kubeadm
+kubectl
+kubernetes-cni
+
+on master:
+kubeadm init --pod-network-cidr 10.244.0.0/16 \
+  --apiserver-advertise-address 10.0.0.1 \
+  --apiserver-cert-extra-sans kubernetes.cluster.home
+
+so, pod network sort of can be any available ip address ranges. Then the advertise address is this machine (master)'s ip address
+
+the above will print out a command for joining nodes. Hey, this is exactly like docker swarm. It's the same concept anyways. Looks like the below:
+kubeadm join --token=<token> 10.0.0.1
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" >> /etc/apt/sources.list.d/kubernetes.list
+apt update
+apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+
+master node:
+- eth0: 68.183.63.148
+- eth1: 10.132.174.23/16
+slave node:
+- eth0: 142.93.73.82
+- eth1: 10.132.55.18/16
+
+kubeadm init --pod-network-cidr 10.132.174.0/8 --apiserver-advertise-address 10.132.174.23 --apiserver-cert-extra-sans k8s.cluster.home
+systemctl daemon-reload
+
+after updating /etc/sysctl.conf
+sysctl --system
+
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+iptables -A FORWARD -i eth1 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i eth0 -o eth1 -j ACCEPT
+
+echo -e "\nexport KUBECONFIG=/etc/kubernetes/admin.conf">>~/.bashrc
+
+kubeadm join 10.132.174.23:6443 --token atd6o8.lee8v9mcdhyusze1 \
+    --discovery-token-ca-cert-hash sha256:6451ba36a605c57c6c896cb00ef02bd005db6d1fc203466cae4279f263c4c8a0 
+
+kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+
+https://www.weave.works/blog/introduction-to-kubernetes-pod-networking--part-1
+https://kubernetes.io/docs/concepts/cluster-administration/addons/#networking-and-network-policy
+
+dashboard: kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc2/aio/deploy/recommended.yaml
+
+ssh -L 8001:localhost:8001 root@68.183.63.148
+
+ssh -L 8001:localhost:22 root@kelvinho.org
+then, ssh root@localhost -p 8001, will get into the server
+
+kubectl get DaemonSets --namespace=kube-system
+
+default environment:
+- DaemonSets:
+  - calico-node
+  - kube-proxy
+- Deployments:
+  - calico-kube-controllers
+  - coredns
+- Services:
+  - kube-dns
+
+--all-namespaces
+
+kubectl apply -f <file name>
+kubectl delete -f <file name>
+kubectl delete <resource> <object>
+kubectl label pods bar color=red
+kubectl label pods bar color-
+kubectl logs <pod-name>
+kubectl exec -it <pod name> -- bash (well this is inconvenient lmao)
+kubectl port-forward <pod-name> 8080:80, forward traffic from 8080 to 80 on the remote server
+
+kubectl run kuard --generator=run-pod/v1 --image=gcr.io/kuar-demo/kuard-amd64:blue
+kubectl delete pods/kuard
+

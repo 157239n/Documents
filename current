@@ -155,8 +155,6 @@ what I understand now is that a plant can just spring up easily, and I mean real
 
 vn energy outlook: https://ens.dk/sites/ens.dk/files/Globalcooperation/Official_docs/Vietnam/vietnam-energy-outlook-report-2017-eng.pdf
 
-data series on computerphile: https://www.youtube.com/watch?v=8GIbOJtUw8w
-
 other programming books: https://www.packtpub.com/all-products?released=Available&page=3
 - https://www.packtpub.com/application-development/hands-systems-programming-go
 - https://www.packtpub.com/application-development/hands-embedded-programming-qt
@@ -293,8 +291,6 @@ compile a list of interesting points about climate change to talk with that libr
 - trees absorb 3kg CO2 per year, aggregate: 9GtCO2/yr. Today it's 40GtCO2/yr
 - reality check on renewables
 
-go through this, and consider this done: https://www.youtube.com/watch?v=ImtZ5yENzgE
-
 again, get into manufacturing
 
 https://drexel.edu/green/
@@ -315,12 +311,6 @@ again, investigate the idea for actually building a dyson sphere
 skillshare has a course in business stuff
 
 doug ellison, amature guy, eventually works in jpl, uses data from nasa, the freely accessible ones
-
-https://ai.googleblog.com/2017/06/supercharge-your-computer-vision-models.html
-so, applications:
-- that ocr thing with nutritional value (lmao, and make it quick). Also for money stuff
-- try out the organic stuff at autodesk
-- then the story of energy
 
 also interesting stuff/data here: https://oceanservice.noaa.gov/welcome.html and here: https://coast.noaa.gov/digitalcoast/. Man, the last one is a data gem. Also poking data here will make me understand about lidar stuff too
 
@@ -377,10 +367,6 @@ others:
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings/
 - https://alcor.org/BecomeMember/index.html
 
-again with that series on money. Gem that too
-
-5:27 mark: https://www.youtube.com/watch?v=3Kq1MIfTWCE
-
 company provisioning:
 - d-rev
 - windpax
@@ -394,6 +380,8 @@ so, priorities now (if meanwhile i got crazy because of the pressure, play facto
 - see how those folks aggregating data do it. At this point, I should have an idea of how this is like, with the mola plan above, so this will be sort of a best practice kind of approach. Candidate starting point would be that p5.js sketch thing, with the earthquake data, and also the website that aggregate deforestation information
 - then see over other nasa's dataset, preferably about earth and start to dive deep into the current state of climate stuff, because I still don't entirely get it
 - may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier. https://github.com/tesseract-shadow/tesseract-ocr-re, and post on improving input image quality: https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
+- try out the organic stuff at autodesk
+- then the story of energy
 
 https://www.simple.com/blog/international-money-transfers
 
@@ -430,5 +418,3 @@ make the old gun
 "how economies work"
 
 infect luan again
-
-accept answer on stack overflow.

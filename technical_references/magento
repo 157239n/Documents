@@ -162,3 +162,62 @@ existing structure:
 - https://devdocs.magento.com/guides/v2.3/extension-dev-guide/prepare/prepare.html
 - https://devdocs.magento.com/guides/v2.3/install-gde/install-roadmap_cli.html
 - https://devdocs.magento.com/guides/v2.3/extension-dev-guide/prepare/prepare_file-str.html
+
+------------------------
+
+so, the book:
+
+aspects:
+- Products
+- Marketing
+- Content
+- Customers
+- Sales
+- Reports
+
+cli responsibilities:
+- install
+- manage cache
+- manage indexers
+- manage cron
+- compile code
+- set magento mode
+- set urn highlighter
+- dependency reports
+- translate dictionaries & language packages
+- deploy static files
+- create symlinks to LESS files
+- run unit tests
+- convert layout to XML files
+- generate data for performance testing
+- create css from less
+
+magento:
+- cache:status
+- cache: disable
+- indexer:info
+- indexer:status
+- indexer:reindex
+
+make the deploy script be aware of the deploy.py script
+
+covered topics:
+- theme basic concepts
+- theme structure
+- luma theme
+- theme inheritance
+- cms block & pages
+- custom variables
+- creating a theme
+
+/app/design/frontend/<Vendor>/
+- <theme 1>
+- <theme 2>
+
+Magento_Customer has specific .css and .html files to handle Customer module
+
+/vendor/magento/theme-frontend-luma
+static files published at /pub/static/frontend/<Vendor>/<theme>/<language>
+
+
+

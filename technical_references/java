@@ -33,3 +33,6 @@ public static void main(String[] args) {
 }
 
 Swing widgets: http://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html
+
+guava and apache commons io seems nice
+

@@ -1,8 +1,4 @@
 
-the application developer relies on the service level agrement (SLA) delivered by the container orchestration API
-
-managed K8S as a service (KaaS)
-
 Decoupled teams:
 
 Application Ops/SRE
@@ -97,16 +93,9 @@ so, the ideal use case for k8s would be to set up these environments:
 
 do the development in the dev side, then using a command, sort of push the changes to the load test environment, where the webserver will be benchmarked to see the true performance, then after specific requirements are passed, push the changes to the production environment. Currently, if I were to manage all these by hand, it would be a nightmare, and people have indeed faced such nightmares in the past, but what's the point of suffering?
 
-also a potential benefit of using k8s is that I can reboot computers once in a while, to sort of reset how much ram they will take, and there will be absolutely no down time. This is not the case with docker-compose and autostarting containers. It's a nice mechanism, but far from actually being zero down time.
-
-
-pods = docker-compose project
-pod manifest, text file representation of the k8s api object
-k8s api server accepts and processes pod manifests before storing them (the manifests)in persistent storage (etcd)
+also a potential benefit of using k8s is that I can reboot computers once in a while, to sort of reset how much ram they will take, and there will be absolutely no down time. This is not the case with docker-compose and autostarting containers. It's a nice mechanism, but far from actually being zero down time. Actually, the idea to sort of resetting RAM is kinda a joke. I wasn't joking before, but the ridiculousness of it seems like a joke. Linux is sort of rock solid, especially kernel version 5. Like, there's pretty much nothing it can't deal with.
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
-
-multiple instances of a pod can be deployed by repeating the workflow described here. ReplicaSets are better suited for running multiple instances of a Pod
 
 kubectl run kuard --generator=run-pod/v1 --image=gcr.io/kuar-demo/kuard-amd64:blue
 kubectl get pods
@@ -153,23 +142,15 @@ once a pod is scheduled to a node, no rescheduling occurs if that node fails. If
 labels, identifying information
 annotations, sort of labels, but can be used by libraries and whatnot. It's not like secrets, but act like 1
 
-kubectl label deployments alpaca-test "canary=true"
+kubectl label deployments alpaca-test "canary=true". This is not recommended, because this is imperative, not procedural, and so kinda makes the point of K8S worthless. May be this will be a nice tool to quickly fix configs and stuff, but it just feels like a complete waste of K8S philosophy
 
 ---------------------------------------------
 
 the k8s book, nigel
 
-K8S from that guy: https://www.pluralsight.com/courses/getting-started-kubernetes
+the vid thingy: https://www.pluralsight.com/courses/getting-started-kubernetes
 
-Deployments
-DaemonSets
-StatefulSets
-
-docker
-kubectl
-kubeadm
-
-"service meshes"?
+"service meshes"? https://www.nginx.com/blog/what-is-a-service-mesh/
 
 apiVersion: v1
 kind: Pod
@@ -184,17 +165,6 @@ spec:
     image: nigelpoulton/k8sbook:latest
     ports:
     - containerPort: 8080
-
-Deployment
-- ReplicaSet
-  - Pod
-  - Pod
-
-Deployment definitions:
-- how many pods?
-- what images will the pods use?
-- what network ports to use
-- details on rolling updates
 
 probes:
 - startup
@@ -228,38 +198,37 @@ spec: most of the action will happen
         - containerPort: 8080
 
 kubectl apply -f file.yml
-
-
-
 kubectl apply -f {file}.yml --record
 kubectl cluster-info --context kind-clu1
 kubectl version --output=yaml
 kubectl config view
 kubectl config current-context
 kubectl config use-context docker-desktop
-kubectl get pods --watch
-kubectl get pods hello-pod -o yaml
+
+kubectl describe {resource name} [{object name}] [-n {namespace}] [--all-namespaces]
+kubectl get {resource name} [{object name}] [--watch] [-o yaml]
+Resources:
+- pods
+- replicaset (rs). Only used when doing rollbacks
+- service (svc)
+- endpoints (ep)
+
+objects:
+- Deployments
+- DaemonSets
+- StatefulSets
+
 kubectl describe secret -n kube-system | grep deployment -A 12
-kubectl get rs (or replicaset). This is sort of rarely used. Only used when rollback to the previous version, and even then it shouldn't probably do that
-kubectl get svc (or service)
-kubectl get ep (or endpoints)
 
 kubectl rollout history deployment hello-deploy
 kubectl rollout status deployment hello-deploy
 kubectl rollout
 kubectl rollout undo deployment hello-deploy --to-revision=1
 
+also it seems like etcd is what the master plane uses to sort of store config data. Etcd itself also seems to be decentralized
+
 dashboard url: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-
-can the cluster survive a restart?
-
-also restructure the logs of k8s and kind
-
-so figure out on which node each of these resides in:
-- api server
-- cluster store (etcd and stuff)
-
-also test destroy some of the nodes too, because I tried to destroy a worker node using docker compose rm -f {container name}, and k8s didn't even budge
+oh and, I can use SSH tunnel now, lmao. Ssh is so fucking useful and powerful
 
 also see what's the right way to log into the dashboard? And see their security barriers
 
@@ -271,25 +240,15 @@ several types of services:
 
 Endpoints object, list of good pods
 
-also currently, my architecture involves only 1 master node. Test out a multi-master cluster
-
 ------------------------
 
 kubernetes up and running, again
-
-
-so, let's just do the K8S anyway, because again, like the virus, if I don't, then I'll just keep thinking about it and can't get other stuff done, because other stuff is sort of boring, and I can't stand boring stuff. So here's the way to do this:
-- get 2 nodes, 2GB RAM to experiment, in a region not NY. Then make ssh listen to 443, and do everything over port 80 only. Oh and, don't worry about packet sniffing, because they can't when a certificate is valid. They can only know sort of which ip I accessed.
-- Initialize everything K8S there, then test out various aspects. THe go-to book is still the nigel one.
 
 and yeah, I sort of feels like I was getting to that scale critical point where it's worth it to learn how to do this. This again, will be absolutely brutal, but just hang on with me, because it will be worth it and I can really focus on the real meat after this.
 
 and again, I expect I can do load tests, complete load test suites somehow within K8S, so actively look that out
 
-
-
-
-role-based access control
+role-based access control. Yeah this sounds complicated. Seems to be exactly like ACL (Access Control List), like inside Magento's permission scheme
 more specialized objects:
 - DaemonSets, word play on ReplicaSets
 - Jobs
@@ -305,16 +264,11 @@ more specialized objects:
 12: Jobs
 13: ConfigMaps, Secrets
 
-"They cannot fail"
-
 oh and how can I get certificates when all of this stuff is happening?
 
 oh and I get the feeling that I have to commit code, then it gets built, then it gets deployed, and that's time wasted.
 docker-gc for garbage collecting
 
-kubelet
-kubeadm
-kubectl
 kubernetes-cni
 
 on master:

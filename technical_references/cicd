@@ -1,3 +1,4 @@
+
 A lot of ppl say drone.io is great
 Also concourse
 
@@ -9,3 +10,5 @@ Jobs:
 - deploying the binary to some server
 
 Sequential Jobs are called a pipeline
+
+okay so cicd stuff is pretty much a joke, once I learn more about stuff in general. I mean, it has its niches, but for normal architecture, people probably already use k8s, and building a pipeline is not really that hard. Imagine this: you have your application container, then put another container (act as a sidecar) that's responsible for pulling code down from master every 10 seconds. So like, I can just split things up into 3 branches/environments: 1 for production, 1 for uat, 1 for development. If I'm done with the one for development, with all of the unit testing and load testing done and everything, then I can merge code to the uat branch, then all the uat pods will notice this and pull the new code down. Then I can merge code to the production branch, if people in uat deems everything is alright, then the production pods will again notice this and pull the new code down. Easy and simple. And the shell script on the sidecar container, it's like, really, really simple. Why do I need fucking complicated yml files from fucking non-existent ci/cd application platforms just to do the task of a single container containing a single shell script running in the background? Get out of here my friend, you got your priorities wrong. And like damn, what do they expect when I'm doing all of this stuff on-prem? They can't access it, and the legal agreement stuff is fucking annoying and complicated. Like god damn, I hate myself so much for used to being addicted to try these ci/cd services out. Really wasted my time there.

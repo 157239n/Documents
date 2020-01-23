@@ -14,22 +14,6 @@ Tensor books:
 
 grey and meyer analog integrated circuits
 
-Powershell related:
-- https://devblogs.microsoft.com/scripting/a-powershell-object-lesson-part-one/
-- https://devblogs.microsoft.com/scripting/weekend-scripter-why-should-i-learn-powershell/
-- https://www.petri.com/why-learn-powershell
-- https://technofaq.org/posts/2018/04/8-reasons-why-you-should-learn-to-use-powershell/
-- https://www.techrepublic.com/blog/10-things/10-reasons-why-you-should-learn-to-use-powershell/
-- http://ramblingcookiemonster.github.io/PowerShell-Is-Too-Hard/
-- https://www.darkoperator.com/powershellbasics
-- http://ramblingcookiemonster.github.io/How-Do-I-Learn-PowerShell/
-- Formal books:
-    - file:///C:/Users/Lenovo-1/Downloads/Don%20Jones,%20Jeffery%20Hicks%20-%20Learn%20Windows%20PowerShell%203%20in%20a%20Month%20of%20Lunches-Manning%20Publications%20(2012).pdf
-    - file:///C:/Users/Lenovo-1/Downloads/Bruce%20Payette%20-%20Windows%20Powershell%20in%20Action,%20Second%20Edition%20%20-Manning%20Publications%20(2011).pdf    
-
-
-
-
 MIT press essential knowledge:
 - Information and Modern Corporation: file:///C:/Users/Lenovo-1/Downloads/(The%20MIT%20Press%20Essential%20Knowledge%20Series)%20James%20W.%20Cortada%20-%20Information%20and%20the%20Modern%20Corporation%20%20-MIT%20Press%20(Massachusetts%20Institute%20of%20Technology)%20(2011).pdf
 - Crowd sourcing: file:///C:/Users/Lenovo-1/Downloads/(MIT%20Press%20essential%20knowledge%20series)%20Daren%20C%20Brabham%20-%20Crowdsourcing-The%20MIT%20Press%20(2013).pdf
@@ -56,17 +40,11 @@ MIT press essential knowledge:
 - Synthesia: GG Books
 - The book: GG Books
 
-
-
-format string vulnerability on heaps: http://homes.sice.indiana.edu/yh33/Teaching/I433-2016/lec13-HeapAttacks.pdf
-
 Current cl (ms c++ compiler, needed to work with cuda) problem: https://stackoverflow.com/questions/9356135/link-fatal-error-lnk-1104-cannot-open-file-libcmt-lib
 
 web security: https://www.w3.org/Security/
 Learn VBS again
-Learn about embedded system programming, stuff beyond arduino, gg for "going beyond arduino"
-- https://www.reddit.com/r/ECE/comments/4xpgnt/moving_beyond_arduino_for_embedded_development/?st=jvh3sjth&sh=41e7ffd7
-- CGI Security Issues: http://speed.eik.bme.hu/help/html/Special_Edition-Using_CGI/ch27.htm
+Learn about embedded system programming, stuff beyond arduino, gg for "going beyond arduino": https://www.reddit.com/r/ECE/comments/4xpgnt/moving_beyond_arduino_for_embedded_development/?st=jvh3sjth&sh=41e7ffd7
 
 
 
@@ -89,4 +67,11 @@ How banks work: https://www.simple.com/blog/how-do-banks-work
 
 Java concurency series: https://www.javaworld.com/article/2078605/java-concurrency-modern-threading-a-java-concurrency-primer.html
 
-docker deep dive, understood why you would want something like Docker
+other programming books: https://www.packtpub.com/all-products?released=Available&page=3
+- https://www.packtpub.com/application-development/hands-systems-programming-go
+- https://www.packtpub.com/application-development/hands-embedded-programming-qt
+- https://www.packtpub.com/data/natural-language-processing-fundamentals-e-learning
+- https://www.packtpub.com/big-data-and-business-intelligence/hands-deep-learning-iot
+- https://www.packtpub.com/application-development/jira-8-administration-cookbook-third-edition
+
+

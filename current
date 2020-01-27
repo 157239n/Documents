@@ -351,16 +351,21 @@ make the old gun
 "how economies work". I think I got it, but not entirely sure, so still, look for people's interpretation of this, and I might get a really good answer.
 
 so, goal for today:
-- go through with the rest of the magento book
-- go through the distributed design thingy, to get the idea of the scale we are talking about here, because it seems like I have already solved the problem. This is slightly disturbing, because it seems like everything here assumes that I know about K8S and how to sort of be an entire IT department. So like god damn it, go through that, because I sort of understand it already.
-- go through openedgar stuff, and rabbitmq too, to see if there are anything interesting
-- also think about whether I can really use Magento for my future businesses? Like, go through other's recommendation, and see whether they can get things done without having to resort to buying modules and whatnot. And again, that elusive connection with payment gateways and whatnot. Then get back to the task at hand, which is the IBM Transact thing
-- oh and for magento, go through the theme dev part, then go through the book from the beginning again.
+- go through with the rest of the magento book. After finishing the theme part, reread everything
+- try out shopify, because according to reddit reviews (https://www.reddit.com/r/Magento/comments/a0qo0f/tell_me_all_the_downsides_of_magento/), magento is sort of a disastrous mess. Look into how connection with payment gateways work. Apparently, shopify is not open sourced, so I can't mess around with them and host everything on my own server. So may be this is a real deterrent for PMI. They allow me to mess around with things for 14 days, to evaluate the product, so snatch that chance and do it.
+- IBM Transact thing
+- this too: https://www.reddit.com/r/Magento/comments/97umqo/is_it_worth_getting_into_magento_2_for_a_medium/
 
-policy hub too
+policy hub too, 2 documents now
 
-figure out how elon got to stay in the US? May be read maye musk's book for that, and ashlee's book too
+figure out how elon got to stay in the US?
 
 find that place/club where chi can practice speaking and singing
 
-restructure the k8s logs. Nah. And leave the health checks to later, because like, I will reach that state in a short time, and because the way the k8s up and running book structure everything is kidna confusing and really hard to follow through. So? Redo the Nigel book, and this time make adjustments to the old logs, not create new ones
+yeah I know how to wire up certificates and whatnot, but how do they work again? Like, in detail, boiled down to cold, hard math
+
+make chi the thing to scale it to 1.25 speed, with that song included on the server
+
+yeah, the problem with magento now is that /setup now redirect into itself. The reason is pretty obvious, because only apache2 with an embedded php interpreter sort of read the individual .htaccess files and stack the patterns and variables and whatnot. So try that again, but I'll likely fail, so best thing to do is to still go through the book
+
+figure out what's the meaning of orange vs green lines in sublime text?

@@ -1,4 +1,11 @@
 
+Theoretical maximum of k8s (even k8s can't accomodate literally infinite computing power):
+- <5000 nodes
+- <150000 pods (30 pods/nodes limit on avg)
+- <300000 containers (2 containers/pod limit on avg)
+- <100 pods per node
+So anyway, my crave for scalability and really get the ops perspective of managing all of this stuff should end, now that I know about the theoretical max size of a cluster. 5k nodes, still a huge number of nodes tho, and pretty much on solar system scale, not planet scale anymore.
+
 Decoupled teams:
 
 Application Ops/SRE
@@ -116,9 +123,8 @@ so, interestingly, these are the kinds inside of the dashboard setup:
 - ClusterRole
 - RoleBinding
 - ClusterRoleBinding
-- Deployment
-- Service
-- Deployment
+- Deployment (done)
+- Service (done)
 
 interesting reddit thread to go through: https://www.reddit.com/r/kubernetes/comments/b6zuuf/help_understanding_dashboard_permissions/
 also possible dashboard uses in the future: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
@@ -149,6 +155,7 @@ kubectl label deployments alpaca-test "canary=true". This is not recommended, be
 the k8s book, nigel
 
 the vid thingy: https://www.pluralsight.com/courses/getting-started-kubernetes
+acloud.guru/learn/kubernetes-deep-dive
 
 "service meshes"? https://www.nginx.com/blog/what-is-a-service-mesh/
 
@@ -189,13 +196,27 @@ spec: most of the action will happen
   template: pod template the deployment will manage
     metadata:
       labels:
-        app: hello-world
+        app: hello-world # pod labels
     spec:
       containers:
-      - name: hello-pod
+      - name: hello-ctr
         image: nigelpoulton/k8sbook:latest
         ports:
         - containerPort: 8080
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-svc
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      nodePort: 30001
+      targetPort: 2020
+      protocol: TCP
+  selector:
+    app: hello-world
 
 kubectl apply -f file.yml
 kubectl apply -f {file}.yml --record
@@ -239,6 +260,148 @@ several types of services:
 - ExternalName: route traffic to outside the cluster
 
 Endpoints object, list of good pods
+
+persistent volume subsystem
+storage provisioners
+container storage interface
+kubernetes persistent volume subsystem
+storage classes and dynamic provisioning
+demo
+
+k8s supports:
+- iSCSI
+- SMB
+- NFS
+- object storage blobs
+- external storage systems
+
+but all are called volumes once it reaches inside the Pods
+
+storage providers ---> plugin layer (CSI) <------> Persistent volume subsystem (PV, PVC, SC, ...)
+storage providers:
+- traditional enterprise storage arrays from vendors, like EMC, NetApp
+- cloud storage services: AWS Elastic Block Store (EBS), GCE Persistent Disks (PD)
+
+PersistentVolumes (PV): think of it as a mounted drive that's mounted on multiple Pods at once
+PersistentVolumeClaims (PVC): tickets that authorize applications (Pods) to use PV
+StorageClasses (SC): makes everything dynamic. Sort of like the Service stuff relying on labels and whatnot?
+
+steps:
+- create the PV
+- create the PVC (damn security stuff)
+- define volume in a PodSpec
+- mount to a container
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv1
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: test
+  capacity:
+    storage: 10Gi
+  persistentVolumeReclaimPolicy: Retain
+  gcePersistentDisk:
+    pdName: uber-disk
+
+access modes:
+- ReadWriteOnce (RWO): only 1 PVC can claim it, usually only supported by block storage
+- ReadWriteMany (RWM): many PVCs can claim it. Usually only supported by file & object storage
+- ReadOnlyMany (ROM)
+
+persistent volume reclaim policy: what to do to a PV when a PVC "unmounts" from a PV?
+- Delete (deletes the PV -> data loss)
+- Retain
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc1
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: test
+  resources:
+    requests:
+      storage: 10Gi
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volpod
+spec:
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: pvc1
+  containers:
+  - name: ubuntu-ctr
+    image: ubuntu:latest
+    command:
+    - /bin/bash
+    - "-c"
+    - "sleep 60m"
+    volumeMounts:
+    - mountPath: /data
+      name: data
+
+kind: StorageClass
+apiVersion: storage.k9s.io/v1
+metadata:
+  name: fast
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: io1
+  zones: eu-west-1a
+  iopsPerGB: "10"
+
+StorageClass notes:
+- immutable, can't modify once deployed
+- "provisioner" and "plugins" are interchangable
+
+ConfigMaps
+
+benefits:
+- decouple application from configs -> reusable application images
+- simpler testing
+- simpler & fewer disruptive changes
+
+current way to leverage 3 environments (dev, test, prod):
+- build 3 distinct images
+- store images in 3 distinct repos
+- run each image in specific env (dev for dev, test for test, prod for prod)
+
+ConfigMaps can be injected using:
+- env vars
+- arguments to container's startup command
+- files in a volume
+
+Threat modelling
+
+potential threats:
+- Spoofing: mutual TLS and securing CA ought to do it, ServiceAccount restricts what Pods can do (the dashboard token thingy?)
+- Tampering: 
+- Repudiation
+- Informational disclosure
+- Denial of service
+- Elevation of privelege
+
+Other important stuff worth mentioning (not included in the book or give sample configs):
+- service meshes
+- DaemonSets
+- StatefulSets
+- Jobs & CronJobs
+- Autoscaling:
+  - Horizontal Pod Autoscaler (HPA): dynamically add/remove pods
+  - Cluster Autoscaler (CA): dynamically add/remove nodes
+  - Vertical Pod Autoscaler (VPA): attempts to right-size Pods, but still in beta
+- Role-based access control (RBAC). Stable since 1.8, objects defined in authorization.rbac.k8s.io:
+  - Subjects: users and groups, managed outside of K8S
+  - Operations: actions subject is allowed to do (create, list, delete, ...)
+  - Resources: objects on the cluster, like Pods
+- Helm: k8s package manager. Can do something like apt-get install app, and a fully fledged cluster forms
 
 ------------------------
 

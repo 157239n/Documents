@@ -529,28 +529,6 @@ Seemless, moderately secure out-of-the-box experience
 
 
 
-
-Proxying, but just use nginx for this, it's better:
-a2enmod proxy
-a2enmod proxy_http
-
-Site:
-<VirtualHost *:80>
-  ServerName subdomain.domain.tdn
-  ProxyPass / http://172.17.0.1:8080/
-</VirtualHost>
-
-Self standards for proxying:
-- ports: 8001:80, 44301:443 (deprecated), counting up
-- certificates should be configured on the proxy one
-- services ports:
-  - phpMyAdmin: 50001:5000, counting up. Can't really be 500001:5000, although we want it
-
-
-
-
-
-
 docker network create -d macvlan \
   --subnet=10.0.0.0/24 \
   --ip-range=10.0.0.0/25 \
@@ -566,5 +544,12 @@ macvlan driver:
 
 
 
+Logging:
+docker logs {container name}
+
+docker automatically saves all stdout outputs to its logs, which is a json file somewhere in the host. If the application logs to a file, then you can use something like
+RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log && \
+    ln -sf /proc/self/fd/1 /var/log/apache2/error.log
+to override the log files with a symbolic link which will dump it to the output. Can replace the file descriptor files with /dev/stdin and /dev/stdout, but some said that they're not guaranteed to be there all the time.
 
 

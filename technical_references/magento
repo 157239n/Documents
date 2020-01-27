@@ -167,13 +167,33 @@ existing structure:
 
 so, the book:
 
-aspects:
-- Products
-- Marketing
-- Content
-- Customers
-- Sales
-- Reports
+M2 improvements:
+- Performance
+- Payment method
+- Checkout
+- Catalog
+- CMS
+- Web API
+- Framework
+- Setup
+
+security:
+- password management
+- XSS
+- permissions
+- click jacking exploits
+- non-default admin url
+
+- Web Users (frontend/backend)
+  - Products
+  - Marketing
+  - Content
+  - Customers
+  - Sales
+  - Reports
+- Service Consumers (API and endpoints)
+- Service Layers (interface/contracts)
+- Models (resources/databases)
 
 cli responsibilities:
 - install
@@ -199,7 +219,16 @@ magento:
 - indexer:status
 - indexer:reindex
 
-make the deploy script be aware of the deploy.py script
+SEO details:
+
+covered topics:
+- magento SEO management
+- SEO catalog configuration
+- XML sitemapmanager
+- Google Analytics tracking code
+- optimizing Magento pages, products, and categories
+
+Theme dev details
 
 covered topics:
 - theme basic concepts
@@ -217,7 +246,30 @@ covered topics:
 Magento_Customer has specific .css and .html files to handle Customer module
 
 /vendor/magento/theme-frontend-luma
-static files published at /pub/static/frontend/<Vendor>/<theme>/<language>
+static files published at:
+- /pub/static/frontend/<Vendor>/<theme>/<language>
+
+<theme dir>/
+  <Vendor>_<Module>/ <---- I guess these are for overriding previous data and files, because the extras are below.
+    web/
+    css/
+      source/
+    layout/
+      override/
+    templates/
+  etc/
+  i18n/
+  media/ <------ static
+  web/ <-------- static
+    css/
+      source/
+    fonts/
+    images/
+    js/
+  composer.json <----- dependencies and meta information
+  registration.php <-- registering with the whole system
+  theme.xml <--------- extra meta info. I figure, this can be included in registration.php
+
 
 
 

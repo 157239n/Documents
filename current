@@ -7,12 +7,7 @@ So, plan to deal with this whole problem:
 
 try brilliant
 
-Also look into shark tank and watch a few episodes. Few from vn, few from us, few from europe, few from developed asia
-
 control engineering
-
-For dummies: https://www.goodreads.com/list/show/2683.For_Dummies_Series
-- Managing money: file:///C:/Users/Lenovo-1/Downloads/(For%20Dummies)%20Benna%20T.,%20Bucci%20S.R.,%20Caher%20J.P.,%20Caher%20J.M.,%20Caverly%20N.B.,%20Economy%20P.,%20Hungelmann%20J.,%20Lucas%20J.E.,%20Lyons%20S.G.,%20Munro%20M.A.,%20Newmann%20B.W.,%20Reed%20M.,%20Simon%20J.S.,%20Sindell%20K.,%20Taylor-Hough%20D.,.pdf
 
 Science funding:
 - https://en.wikipedia.org/wiki/Funding_of_science
@@ -45,8 +40,6 @@ Additional heating over last decade: 8*10^21 Joules per year
 
 How about the science left to do with Lithium and Lithium ion batteries?
 
-And again, look into creating several startup types, one being manufacturing, one being industrial, one being web service, one being biochemical engineering.
-
 Kickstarter: https://www.reddit.com/r/Entrepreneur/comments/7lzqyo/anyone_have_experience_with_kickstarter_tips/
 
 get into the mining and petrochemical industry. Also play satisfactory to begin to appreciate the size of these industrial machines, also the interconnections between them. https://www.epicgames.com/store/en-US/product/satisfactory/home. Did so, but it seems like this view of full automation is kind of misleading, because in the real world, we do not have the freedom of picking up factories and ploping them down. We have a preconceived idea of how the factory is structured, how things move in and out, and there is typically only 1 main assembling line. Other improvements are about efficiency, speed-wise. So it's really, really different from the type of scaling in satisfactory or in factorio.
@@ -54,8 +47,6 @@ get into the mining and petrochemical industry. Also play satisfactory to begin 
 what I understand now is that a plant can just spring up easily, and I mean really easily. The real barrier is the government and the market. But like, I need to study to the point where I can that whole facility by myself then study about the market and the government.
 
 467kWh - 1.2tr
-
-what's with wealth vs money
 
 i guess what i am looking for is "manufacturing and supply chain", which nha's books kinda gives me the foundations
 
@@ -68,15 +59,7 @@ also metals scarcity seems to be a thing too. So dig into that
 so as a test of building big things, see how wind turbines are built and how 1 guy can do that
 also see how can you program those huge robot arms from japan
 
-also, may be go over really quickly the economic vids on khan academy, they have a lot of content and possibly gems that I can utilize
-
 also materials science? May be learn 3-4 courses in that
-
-again, I feel that econ stuff is so "floating". I don't know where their absolute zero is. But I suspect that no one actually know how it works and just follow with the flow. Also, spend some time writing about how problems in Factorio differ from logistic problems in real life. Update: apparently, the economic game doesn't have their "absolute zero" you're talking about. Everything is sort of imaginary and all built upon trusting each other. This increasingly seems to be the case, so read more into everything and confirm this
-
-?https://gocardless.com
-
-skillshare has a course in business stuff
 
 doug ellison, amature guy, eventually works in jpl, uses data from nasa, the freely accessible ones
 
@@ -95,13 +78,9 @@ Also look over the internal documents to see if there's something fun.
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 
-SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I can attack son
-
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
 an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
-
-also a problem with money and law that I think I need to solve is that currently I'm kinda not using the legal library as the rest of the world. I need to know the details, to be aware of the parameters that introduces
 
 from phone:
 - https://github.com/dennybritz/reinforcement-learning
@@ -168,6 +147,16 @@ figure out how elon got to stay in the US?
 also see over how public talking works, what venues I can penetrate into
 find that place/club where chi can practice speaking and singing
 
-(A Nutshell handbook) Simson Garfinkel, Gene Spafford - Web Security & Commerce-O'Reilly (1997)
-
 okay, for the international law thing, I'm starting to not understand it. So, go through them from the beginning and now, branch out and read a bunch of stuff about them, may be read stuff from preexisting logs as well
+
+"pmi-pmbok"
+
+kay, so let's stop the magento bit for a sec, to make it eat into my brain. So now, let's go over the web security thing, and after finishing the book entirely, go back to the layout and whatnot
+
+okay, so this is quite awesome, finally I'm getting some stuff done. So goal now is to bust through this and reverse engineer everything. This is the right book
+
+may be try to make the virus highly available too. This can only be achieved using the same setup I have earlier, which is have a load balancing layer, made of 1 nginx instance, then direct that towards the 2 fpm servers, then I can swap out the 2 instances. I think it's best to include both instances in the same docker-compose.yml file, and the redis one too, for tracking sessions and whatnot. K8S is pretty nice, and I think will be best, again, if my scale moves beyond 2 HA servers
+
+yikes. Let's see the twitter stuff again. Now I believe I can really do this without feeling adhoc and out of place. So yeah. let's just do that, and make the gravity art thingy from before.
+
+kay, so many things done today. Would be real nice if I can finish basically everything by terms

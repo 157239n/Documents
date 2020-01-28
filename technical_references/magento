@@ -270,6 +270,191 @@ static files published at:
   registration.php <-- registering with the whole system
   theme.xml <--------- extra meta info. I figure, this can be included in registration.php
 
+Luma theme: implements responsive web design (RWD), based on magento's ui library, uses css3 media queries for screen width, meaning mobile is fine.
+
+reusable components:
+- actions toolbar
+- breadcrumbs
+- buttons
+- drop-down menus
+- forms
+- icons
+- layout
+- loaders
+- messages
+- pagination
+- popups
+- ratings
+- sections
+- tabs and accordions
+- tables
+- tooltips
+- typography
+- list of theme variables
+
+luma theme uses some elements of blank theme to be functional, located at /vendor/magento/theme-frontend-blank folder, "declared" parent theme of luma. Logically, each theme will be at different folders, but because the code reuse thingy, they decided to do something called theme inheritance.
+
+I figure this sort of works like docker layers, where each build command just layer things above it and make they all work together, I guess
+
+- new theme in app/design/frontend/<Vendor>/<theme>
+- declare Magento/blank as parent
+- theme.xml
+- registration.php
+
+customization in the admin section too. Admin can create "block" and "content", like Home, About us, or any other static pages
+
+custom variables, {{config path="web/unsecure/base_url"}}
+{{CustomVar code="dev_name"}}
+{{store url=""}}
+{{media url="wysiwyg/home-main.jpg"}}
+https://docs.magento.com/m2/ce/user_guide/marketing/variables-custom.html
+
+disabling cache management
+
+app/design/frontend/Packt <----- vendor's theme directory
+  basic <----- theme directory
+    theme.xml
+    registration.php
+    composer.json
+    etc
+      view.xml <----------- bunch of image sizings, variables
+    web <-------- gonna be placed in pub
+      css
+        source
+      fonts
+      images
+        logo.svg <------ default logo. If not .svg, then have to declare it
+      js
+    Magento_Theme
+      web <-------- gonna be placed in pub
+        images
+          logo.png
+      layout
+        default.xml <------- overriding values from parent themes (using referenceBlock mechanism)
+    Magento_Catalog
+
+/etc/view.xml: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-images.html
+
+change theme: Content | Design | Configuration
+
+sample composer:
+{
+  "name": "packt/compstore",
+  "description": "CompStore electronics theme",
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/theme-frontend-luma": "~100.0",
+    "magento/framework": "~100.0"
+  },
+  "type": "magento2-theme", <--------- predefined by magento docs
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": ["registration.php"]
+}
+
+using css files, I assume is in one of the .xml files
+<head>
+    <css src="css/styles-m.css"/>
+    <css src="css/styles-l.css" media="screen and (min-width: 768px)"/>
+    <css src="css/print.css" media="print"/>
+</head>
+source of these files:
+<theme dir>/web/css/styles-m.less
+web/css/styles-l.less
+web/css/print.less
+
+less stuff, process these (https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/css-topics/css-preprocess.html):
+- @import
+- @magento_import
+files resolved by less are copied to /var/view_preprocessed/less, other parts are understood to be saved at /var/cache
+resulting .css gets published to pub/static/frontend/<Vendor>/<theme>/<locale>
+then I can deploy the static files using magento setup:static-content:deploy
+
+vendor/magento/theme-frontend-blank/web/css/_styles.less -> app/design/frontend/Packt/compstore/web/css/_styles.less:
+  @import 'source/lib/_lib.less'
+  @import 'source/_sources.less'
+  @import 'source/_components.less'
+  @import 'source/_compstore.less'
+source
+  _compstore.less
+    @color-compstore: #F6F6F6;
+    body {
+      background: @color-compstore
+    }
+  _theme.less
+
+https://magento.stackexchange.com/questions/102260/find-out-the-name-for-a-referenceblock-in-magento-2
+
+widget types (https://magenticians.com/create-widget-in-magento-2/):
+- cms page link
+- cms static block
+- catalog category link
+- catalog new products list
+- catalog product link
+- catalog products list
+- orders and returns
+- recently compared products
+- recently viewed products
+
+block-title
+
+right, so a block is just a normal block, which can use other complex block and container structures inside, and they can have other stuff inside too. Each of those elements have a class which is in charge for controlling everything about it, like setting the data source (the ResourceModel thingy) and viewing things.
+
+a widget is a reference block that inserts itself into the standard layouts, and which contains the content of a specific block. So yeah, the idea is sound, but the execution and the explanation is absolutely terrible.
 
 
+Extension dev details
 
+Covered:
+- overview
+- zend framework basics
+- magento extension structure
+- twitter rest api
+- twitter oauth
+- magento extension project - TweetsAbout
+
+Zend framework benefits (framework.zend.com):
+- everyone knows it
+- great web service support to integrate magento with different software
+- mvc
+
+module file structure:
+app/code/<Vendor>/<Moduke>
+  core:
+    Block: View classes , visualization layers between logical and frontend layer
+    Controller: control all actions. Process requests, then redirects to a specific module
+    etc: all xml config files
+    Helper: auxiliary classes, providing forms, validators & formatters, which is commonly used in business logic
+    Model: business logic and access to data
+    Setup: setup classes
+  additionals:
+    Api: classes to control api layers
+    i18n: translating the module view layer
+    Plugin: interception
+    view: templates and layouts
+    composer.json
+    registration.php
+
+Yeah I pretty much understand everything here, like what's what, and the general vibe of how these things fit together. However, the classes connections, and the details of the classes, they are still quite elusive
+
+so, get latest tweets with #magento, #packt, #php tags. 2 pages:
+- 1: link to results
+- 2: show tweets
+
+dev.twitter.com/rest/public
+
+provide programatic access to read and write twitter data
+
+real, working folder structure:
+app/Packt/TweetsAbout
+  Api
+  Block
+  Controller
+  etc
+  Observer
+  view
+  composer.json
+  registration.php

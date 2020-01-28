@@ -3,10 +3,68 @@ crossdomain.xml file
 
 <?xml version="1.0"?>
 <cross-domain-policy>
-    <allow-access-from domain="*" />
+  <allow-access-from domain="*" />
 </cross-domain-policy>
 
 or you can stick in a trusted domain
 
+---------------------
 
+This is from a book called Web Security & Commerce-O'Reilly (1997), by Simson Garfinkel and Gene Spafford. These are the notes after reading the book
 
+topics included:
+- user safet, browser vulnerabilities
+- digital certificates, certificate authority, code signing
+- cryptography
+- web server security
+- commerce and society
+  - digital payments?
+  - blocking software & censorship tech (PICS, RSACi)?
+  - cvil/criminal issues faced?
+
+topics with specific attention:
+- risks, threats, and benefits
+- control access to information
+- lessen chances server will be broken into
+- procedures for institution
+- encryption?
+- security issues regarding java, javascript, activex, netscape plugins
+- legal issues
+
+I. basics
+	1. web history
+II. web browser & user risks
+	2. history of browsers
+	3. java & javascript issues
+	4. running arbitrary code on computer
+	5. privacy, cookies, secrets disclosure
+III. digital certificates?
+	6. cryptography
+	7. kind of certificates
+	8. pros and cons
+	9. signing executables, verification process?
+IV. cryptography
+	10. encryption & message digests
+	11. role of encryption
+	12. SSL, TLS
+V. securing web servers
+	13. unix, windows nt & physical security
+	14. access controls
+	15. CGI
+VI. money & society
+	16. credit cards, digital cash, others
+	17. controlling, totalitarian countries
+	18. civil concerns
+	19. legal issues survey
+VII. summary, technical
+	A. anecdote, setting up and securing it
+	B. installing TLS on apache2
+	C. technical of SSL 3.0
+	D. technical of PICS standard
+	E. more info?
+
+"technologies such as digital certificates are eliminating the need to use SSL's cryptographic channel for sending usernames and passwords"
+
+"current" SSL implementation:
+- export-grade
+- domestic

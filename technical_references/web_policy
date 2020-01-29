@@ -68,3 +68,97 @@ VII. summary, technical
 "current" SSL implementation:
 - export-grade
 - domestic
+
+attacker goals:
+- steal documents
+- corrupt info, format drives
+- modify operating system, leave traps, create new security holes
+- transfer money from victim to self
+
+so, keys:
+- private: used for signing stuff
+- public: used for verifying that something was signed
+
+so, pgp messages and stuff
+
+instead of signing John's photograph, the state should sign his public key. So, a trusted 3rd party would say "hey, I can verify that this key belongs to this guy, John". Then, John with his private key can say to everyone "hey, listen to the trusted 3rd party and believe me when I say I'm John. "
+
+certificates, signed by a CA, contains:
+- name
+- the person's public key
+- serial number
+- other info
+
+different CA types:
+- internal CA
+- outsourced employee CA
+- outsourced customer CA
+- trusted 3rd party CA
+
+so how does key exchange work? right, so sign a message using a public key, then unlock it using a private key. Simple
+
+"other CA public keys can be added manually by the end-user". Right, so this is possible
+
+handling revokes? Use a certificate revocation list (CRL). Basically a list of revoked certs
+
+certification practices statement (CPS). What does it mean when this CA signs something
+
+X.509 v3 Certificate, contains:
+- version
+- serial number
+- algorithm identifier
+  - algorithm
+  - parameters
+- issuer
+- period of validity
+	- not before date
+	- not after date
+- subject
+- subject's public key
+	- algorithm
+	- parameters
+	- public key
+- signature
+
+"The people who are actually setting up these systems seem to be a little wiser. They don't want a system that is perfect, just one that is better than today's paper-based identification systems"
+
+"Copyright is intended to coer the expression of ideas rather than the ideas themselves"
+
+"Registration and marking of copyright may increase statutory penalties awarded if an infringement occurs"
+
+practices that make host security worse:
+- don't consider security as a serious issue
+- transmit plaintext passwords
+- don't use security tools
+- don't get latest updates
+- don't track security develpoment in the world
+- no logs
+- no backups
+- no system & network monitoring 
+
+guidelines:
+- who's accessing? nature of it (CRUD)? who authorizes it
+- who's responsible for:
+  - security
+  - upgrades
+  - backups
+  - maintenance
+- materials allowed on served pages?
+- which sites & external users can access?
+- what testing & evaluation before they're installed?
+- handling complaints & requests about the server & page content?
+- reacting to incident?
+- how, when should policy be updated
+- who to speak to press? law enforcements?
+
+security tools?
+- snapshotting the system, look for weaknesses
+- monitor system over time
+- scan network, look for network-based weaknessws
+- monitor system & networks, determing if an attack is in progress
+
+access control strategies?
+- hidden & unpublished urls
+- restrict to a few ip addresses
+- passwords/other id
+

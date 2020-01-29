@@ -47,6 +47,7 @@ commands:
 - df -ah: df (short for "disk free", checks for disk space), all file systems, human readable formatting
 - du -sh <dir>: size of directory
 - netstat: open ports, listening sockets
+- systat
 - ufw status: ufw is uncomplicated firewall
 - fg: foreground
 - tar -cvpzf (create or overwrite backup file, verbose, preserving permissions, tar ball to zip even more, f for creating a file name) backup.tar.gz --exlude=/mnt /var/www
@@ -83,6 +84,7 @@ users:
 - adduser <user>
 - userdel <user>
 - usermod -aG sudo <username>, add user to sudo group
+- finger
 
 services: start using /etc/init.d/<service name>. It's basically just a daemon lol
 - networking
@@ -162,3 +164,6 @@ packages:
 Editing runlevel startup daemons:
 - disable daemon: update-rc.d apache2 disable
 - remove daemon files completely (and the service too): update-rc.d -f apache2 remove
+
+binding ssh to a specific interface:
+ListenAddress 0.0.0.0 in /etc/ssh/sshd_config

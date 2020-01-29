@@ -138,7 +138,6 @@ add option to not display the nodes/description for ludvik
 so, goal for today:
 - go through with the rest of the magento book. After finishing the theme part, reread everything
 - IBM Transact thing
-- this too: https://www.reddit.com/r/Magento/comments/97umqo/is_it_worth_getting_into_magento_2_for_a_medium/
 
 policy hub too, 2 documents now
 
@@ -154,3 +153,38 @@ okay, for the international law thing, I'm starting to not understand it. So, go
 kay, so let's stop the magento bit for a sec, to make it eat into my brain. So now, let's go over the web security thing, and after finishing the book entirely, go back to the layout and whatnot
 
 yikes. Let's see the twitter stuff again. Now I believe I can really do this without feeling adhoc and out of place. So yeah. let's just do that, and make the gravity art thingy from before.
+
+okay, damn, the web security book is so fucking boring, like, it talks about stuff that's so fucking mundane and doesn't require me to think at all. And like, stuff in there just yada yada about how this and that is dangerous and whatnot, and doesn't mention how the mechanism actually works. I know how the mechanism works, so may be that's why I'm so bored out of my mind. Still, I need to know how the certificate thingy actually works, so just hold it in and make it through the book.
+
+right, so have another pass at things inside the magento book
+
+venmo model seems to suggest that it's quite anonymous, and can sort of evade the detection of credit card companies.
+
+"stripe has php library to accept credit cards without needing a merchant account". So like, what I want to do with all these testing is to make the money transferring process as testable and as throwaway as possible. I think that through experimenting with this, I can really get to know the rules of the game. Also some said I can just sign up for a paypal account, then include a button that will redirect users to paypal's site, then it will do the rest and I get the money. This is a bit dangerous tho. Like what if, the returning request, like the callback mechanism of oauth doesn't work? What's there to sync the data between the paypal account and my internal db? Boy, then I'd really have to make everything as highly available as possible (well, look into the ability to sort of confirm to paypal at another time so that this issue can be mitigated), or else I don't know how to handle the legal reprecussions.
+
+Also, how does the legal side of things integrate with like, credit card companies? Like, following the principle that money can be anything a group of ppl deems valuable, and if you can make everyone trust you, then the fictional money you invented really have value. So like, venmo sort of invent this new currency, everyone jumps on the bandwagon, then it really have value. Then does the gov just let this happen? Or they jump and regulate a player when it seems to be creating an idea resembling money?
+
+"The other thing you need to worry about is the coming of PCI compliance which basically says if you are not compliant, you (or the company you work for) will be liable by your Merchant Bank and/or Card Vendor for not being compliant by July of 2010. This will impose large fines on you and possibly revoke the ability for you to process credit cards."
+
+ask lawyers that I know of to answer some of the questions above. Candidates would be Hieu Man, that small girl studying law (man I feel guilty for not remembering her name), mama (may be? but seems like she doesn't know about this stuff), ynes (yeah, i like her, so duh), then forums
+
+also what about that PCI compliant thingy? Is it a specification? Is it a legal contract? What is it? https://www.pcisecuritystandards.org/
+
+some suggest braintree, which sounds familiar enough.
+
+also read up on what should I do if my site is breached and simple metadata is stolen? I guess that's included in the security book thingy. Then what happens when like, order data gets compromised and users are suing me and my company? I guess that's included in the PCI thingy.
+
+sample of integrating with payment gateway:
+- https://www.spaceotechnologies.com/paypal-payment-gateway-integration-php/
+- https://www.quora.com/How-do-I-integrate-a-payment-gateway-in-a-website-developed-in-PHP
+- https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
+
+so, what's the long term plan now?
+- see how to hack the economic system, by framing everything of value in the view that value is what we create it
+- see how to hack the environment, and really, really see non-bullshit ways of going about solving this, because we only have 10-15 years to reach <2 degrees, and 1-2 years to reach <1.5 degrees
+- see how to hack the government. See how government works. I sort of know roughly how they work by now already, partly because the public international law thingy which it reveals that the international community is still sort of based on DNS, or decentralized systems, in a way. Feels like there's a lot of similarities between all distributed systems, and that the computing side of distributed systems are more secure while the distributed system of nations are more loosely coupled (however, still behaving right along the incentives), because they can do so, because nations move slow, and because radical shocks don't really occur in nations (and when they do, that nation sort of crumbles and disappears and everyone else is either in shit because the whole world is in shit or they just don't care about the collapsed nation). Anyway, I sort of understand how they work, but how about the chain of command and social structure needed to control things like immigration, like imports, like taxes, like border control. I'll consider I understand this when I can create a nation on my own (which tbh, seems like all I need to create a nation is respect from others (which can come if I'm powerful, both militarily and economically), an effective way to control my colony, and a lot of paperwork to follow the rules of international law), with all the functionalities ppl associated with a nation.
+- see how to hack human psychology, just basically what humans want, why humans want what they want (must be explained by the gene wanting to stay immortal thingy), how to effectively give them what they want (with myself feeling good and with a sense of purpose, which should be easy), and how to effectively give them what they want without knowing I'm doing this background thing, probably how I did things with Nhi. And like, ppl might call be being fake and all, but then again, that can only occur when the representation is leaked. If the representation has no way of leaking itself, then lies and truths don't really matter anymore, because then, I will have successfully decouple human values from my values and sort of be a truely general intelligence. Like, I've done this for a while now, from how I sort of dumbing stuff down when explaining to other ppl, to events with hannie, to events with nhi, etc. And also note that if I were to really do this, once the representation is exposed, ppl will forever think I'm fake, and that's really an inconvenience, because I've essentially lost that resource to harvest and my human side sort of be sad over that. So like, train myself to disregard those and to sort of numb them and myself, if possible. Anyway, so because I've done a lot of that stuff before, I really want doing it to be systematic and to devise some rules that I can repeatedly do so that I don't have to think much about it.
+
+also mess around with certs, pgp and all that good stuff, to a point where the redirect traffic thingy is possible. Then sort of do a rough estimate of how much the data usage is going to be, and can I isolate just some of the servers (i still want to use cdn's capabilities so it won't have to flow through my server, and then may be have an option to intercept that. This is going to be tough, because I'm essentially going to have to fight all security attempts) and not everything
+
+oh and as a side effect of that international law thingy, I sort of understand how that Ho guy can sort of convince france and whatnot to back down on their aggression.

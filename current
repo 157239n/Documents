@@ -153,10 +153,4 @@ okay, for the international law thing, I'm starting to not understand it. So, go
 
 kay, so let's stop the magento bit for a sec, to make it eat into my brain. So now, let's go over the web security thing, and after finishing the book entirely, go back to the layout and whatnot
 
-okay, so this is quite awesome, finally I'm getting some stuff done. So goal now is to bust through this and reverse engineer everything. This is the right book
-
-may be try to make the virus highly available too. This can only be achieved using the same setup I have earlier, which is have a load balancing layer, made of 1 nginx instance, then direct that towards the 2 fpm servers, then I can swap out the 2 instances. I think it's best to include both instances in the same docker-compose.yml file, and the redis one too, for tracking sessions and whatnot. K8S is pretty nice, and I think will be best, again, if my scale moves beyond 2 HA servers
-
 yikes. Let's see the twitter stuff again. Now I believe I can really do this without feeling adhoc and out of place. So yeah. let's just do that, and make the gravity art thingy from before.
-
-kay, so many things done today. Would be real nice if I can finish basically everything by terms

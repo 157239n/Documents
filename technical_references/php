@@ -91,3 +91,11 @@ ob_get_clean();
 
 evaluate a string as if it's a file and use include: eval()
 
+standards:
+- PSR-0: autoloading standard, superseded by PSR-4
+- PSR-1: basic coding standards
+- PSR-2: extends PSR-1, adding layout code presentation
+- PSR-3: logger interface: 8 methods for 8 log levels: debug, info, notice, warning, error, critical, alert, emrgency
+- PSR-4: autoloading from file paths
+
+god dammit, there's the php -c php_ini_file php_script thingy. I can use this to execute backup thingy and cron thingy without having some weird and wonky env sourcing mechanism

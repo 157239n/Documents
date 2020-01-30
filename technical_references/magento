@@ -458,3 +458,33 @@ app/Packt/TweetsAbout
   view
   composer.json
   registration.php
+
+every layout file is assigned by following this pattern: <module name>_<controller>_<controller file>.xml
+
+updating module:
+- magento module:enable --clear-static-content Packt_TweetsAbout
+- magento setup:upgrade
+- magento setup:static-content:deploy
+
+mobile chapter, topics covered:
+- why mobile? responsive?
+- test website on different devices
+- google chrome dev tools device mode
+- responsive web designer tester extension
+- adjusting compstore theme for mobile devices
+- adjusting tweets for mobile devices
+
+speeding up chapter, topics covered:
+- magento entity-attribute-value
+- indexing and reindexing data
+- caching
+- selecting right magento hosting service
+- apache web server deflation: mod_deflate, compresses output
+- enabling expires header: mod_expires, tell client to cache stuff
+- php memory configuration
+- optimizing mysql server
+- cleaning database log
+- minifying scripts
+- cdn
+
+there's the mod_deflate thingy

@@ -185,8 +185,46 @@ so, what's the long term plan now?
 - see how to hack the government. See how government works. I sort of know roughly how they work by now already, partly because the public international law thingy which it reveals that the international community is still sort of based on DNS, or decentralized systems, in a way. Feels like there's a lot of similarities between all distributed systems, and that the computing side of distributed systems are more secure while the distributed system of nations are more loosely coupled (however, still behaving right along the incentives), because they can do so, because nations move slow, and because radical shocks don't really occur in nations (and when they do, that nation sort of crumbles and disappears and everyone else is either in shit because the whole world is in shit or they just don't care about the collapsed nation). Anyway, I sort of understand how they work, but how about the chain of command and social structure needed to control things like immigration, like imports, like taxes, like border control. I'll consider I understand this when I can create a nation on my own (which tbh, seems like all I need to create a nation is respect from others (which can come if I'm powerful, both militarily and economically), an effective way to control my colony, and a lot of paperwork to follow the rules of international law), with all the functionalities ppl associated with a nation.
 - see how to hack human psychology, just basically what humans want, why humans want what they want (must be explained by the gene wanting to stay immortal thingy), how to effectively give them what they want (with myself feeling good and with a sense of purpose, which should be easy), and how to effectively give them what they want without knowing I'm doing this background thing, probably how I did things with Nhi. And like, ppl might call be being fake and all, but then again, that can only occur when the representation is leaked. If the representation has no way of leaking itself, then lies and truths don't really matter anymore, because then, I will have successfully decouple human values from my values and sort of be a truely general intelligence. Like, I've done this for a while now, from how I sort of dumbing stuff down when explaining to other ppl, to events with hannie, to events with nhi, etc. And also note that if I were to really do this, once the representation is exposed, ppl will forever think I'm fake, and that's really an inconvenience, because I've essentially lost that resource to harvest and my human side sort of be sad over that. So like, train myself to disregard those and to sort of numb them and myself, if possible. Anyway, so because I've done a lot of that stuff before, I really want doing it to be systematic and to devise some rules that I can repeatedly do so that I don't have to think much about it.
 
-also mess around with certs, pgp and all that good stuff, to a point where the redirect traffic thingy is possible. Then sort of do a rough estimate of how much the data usage is going to be, and can I isolate just some of the servers (i still want to use cdn's capabilities so it won't have to flow through my server, and then may be have an option to intercept that. This is going to be tough, because I'm essentially going to have to fight all security attempts) and not everything
-
 oh and as a side effect of that international law thingy, I sort of understand how that Ho guy can sort of convince france and whatnot to back down on their aggression.
 
 signing nondisclosure agreements?
+
+right, so I can't really go through their section on credit cards and whatnot, just because I have no frame of reference
+
+nice read: https://nickcraver.com/blog/2017/05/22/https-on-stack-overflow/
+
+may be, do the following chapters first, then go back to the module thingy. Jumping stuff works in the past too, like, because knowledge in this area sort of aren't strictly hierarchy, and I sort of understand more about ops now more than ever before.
+
+No, may be just skim through the module, then most likely I'll give up. Then jump. But first, go through everything so far again, to make sure I don't lose track of stuff.
+
+1. magento fundamentals
+2. magento features
+3. working with SEO
+4. theme dev
+5. more theme dev
+6. extension dev
+7. mobile
+8. speeding things up
+9. improving skills
+
+the mobile thing, seems like everything already works out of the box, so what gives? App specific paradigms are too different to bridge anyways
+
+and I sort of feels like after the extension dev thingy, I will already have gotton everything already.
+
+may be, make a tutorial on what to do, caveats to setting things up, etc, so that my replacement can have a quick go ahead.
+- $_SERVER["HTTPS"] = "On";
+- .htaccess and rewrite problems
+
+look into the docker root problem again, because this might be a huge problem that I'm neglecting
+
+interesting article: https://serverfault.com/questions/835660/cdn-how-is-it-possible-that-my-dns-delivers-a-different-ip-depending-on-the-vis
+
+"data-driven architecture". Last article was on like, brick and mortar architecture, not the operations architecture
+
+magento framework version 102.0.3
+
+abraham: 1.1.0
+
+kay, so this is getting brutal, like the inner workings of magento. So just go with the flow, because everything else has been already discovered except this one. So go through it all, then try to top everything up and make every bit connect to every other bit
+
+currently at page 94

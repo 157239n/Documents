@@ -126,6 +126,12 @@ X.509 v3 Certificate, contains:
 
 "Registration and marking of copyright may increase statutory penalties awarded if an infringement occurs"
 
+certificate types:
+- certification authority certificates: self-signed CA, or signed by other CAs
+- server certificates
+- personal certificates: passports. Other names include client-side digital certificates, client certificates
+- software publisher certificates: sign distributed software. So may be this also sign stuff like drivers? Which is interesting
+
 practices that make host security worse:
 - don't consider security as a serious issue
 - transmit plaintext passwords
@@ -177,3 +183,78 @@ logs to track (cgi era):
 - separation of privilege
 - least common mechanism: separate users
 - psychological acceptability: everything's simple enough so that everyone will use the security mechanism
+
+there's something called signing nondisclosure agreements for 3rd parties
+
+plaintext ---encrypt & key---> ciphertext ---decrypt & key---> plaintext
+
+2 encryption schema:
+- symmetric key algorithm, requires both parties know the same key
+  - block algos
+  - stream algos
+- public key algorithm, normally 10 to 100 times slower than symmetric key algorithm -> use public to agree on a key, then use symmetric
+
+symmetric schemes:
+- des: data encryption standard
+- desx
+- triple-des
+- blowfish
+- idea: international data encryption algorithm
+- rc2
+- rc4
+- rc5
+
+public key schemes:
+- diffie-hellman key exchange
+- rsa
+- elgamal
+
+different hashing functions:
+- hmac
+- md2
+- md4
+- md5
+- sha
+- sha-1
+
+encryption is used for...?
+- confidentiality
+- authentication
+- integrity
+- nonrepudiation
+
+it's not used for...>
+- protect unencrypted docs
+- stolen keys
+- ddos
+- hiding a message actually sent
+
+popular systems:
+- ssl/tls
+- pct
+- s-http
+- cybercash
+- dnssec
+- kerberos
+- ssh
+
+trademark protection: protect name of company
+trade secret protection: protect special ingredients to make a meal
+
+"it was easier to maintain the algorithms as a trade secret than to go through the exercise of patenting the algorithms in dozens of countries aroudn the world and then attempting to police the technology". Wait what? I thought patent stuff can only be applicable under 1 jurisdiction? How can international patent stuff be protected?
+
+"Under current US law, cryptography is a munition, and the export of cryptographic machines (including computer programs that implement cryptography) is covered by the Defense Trade Regulations (formerly known as the International Traffic in Arms Regulation - ITAR). As of late December 1996, to export a program that includes cryptography, you need a license from the US Commerce Department"
+
+man, the security book seems to be maniac about the whole regulation thingy, can't export thingy. Does that still happen today? I think not, because I have not reached any legal complexity barriers just yet, and like, tls is offered basically everywhere. And the anonymous group kinda have lots of advocacy for dismantling this, so I guess the landscape has radically changed?
+
+international agreements on cryptography:
+- cocom: coordinating committees for multilateral export controls. Impact on international munitions control organization. Dissoled in 1994
+- wassenaar arrangement on export controls for conventional arms and dual-use goods and technologies: restrict export of dual-use goods, 1996, signed by 31 countries
+
+certificates contain:
+- domain name
+- public key
+- the company that owns it
+- when it was issued
+- when it expires
+- who issued it

@@ -162,3 +162,18 @@ access control strategies?
 - restrict to a few ip addresses
 - passwords/other id
 
+logs to track (cgi era):
+- time program was run
+- pid
+- params provided
+- invalid params
+- host details: name & ip
+
+7 principles of security:
+- least privilege
+- economy of mechanism: make things simple
+- complete mediation: air tight things
+- open design: no back doors
+- separation of privilege
+- least common mechanism: separate users
+- psychological acceptability: everything's simple enough so that everyone will use the security mechanism

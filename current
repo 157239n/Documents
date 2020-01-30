@@ -188,3 +188,5 @@ so, what's the long term plan now?
 also mess around with certs, pgp and all that good stuff, to a point where the redirect traffic thingy is possible. Then sort of do a rough estimate of how much the data usage is going to be, and can I isolate just some of the servers (i still want to use cdn's capabilities so it won't have to flow through my server, and then may be have an option to intercept that. This is going to be tough, because I'm essentially going to have to fight all security attempts) and not everything
 
 oh and as a side effect of that international law thingy, I sort of understand how that Ho guy can sort of convince france and whatnot to back down on their aggression.
+
+signing nondisclosure agreements?

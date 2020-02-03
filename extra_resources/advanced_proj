@@ -147,3 +147,25 @@ an attacker looks at docker, approaching multi-container applications: https://i
   - https://www.youtube.com/watch?v=RdN06E6Xn9E
   - https://www.youtube.com/watch?v=mQ2KTRn4BMI
   - raven kwok: https://www.youtube.com/watch?v=37WgbsmkrbA
+
+- then do actual simulations of cfd
+- get the mola mars data (Mars Orbiter Laser Altimeter), then fill 'em up with water, to probe at the actual scale of a planet, then try to read over casey's work to see how he does his simulation
+- then see over other nasa's dataset, preferably about earth and start to dive deep into the current state of climate stuff, because I still don't entirely get it
+
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/readings/
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings/
+- https://www.youtube.com/watch?v=3GdMaDzIUeQ&list=PL9F74AFA03AA06A11&index=18
+- https://github.com/dennybritz/reinforcement-learning
+- https://towardsdatascience.com/recreating-imagination-deepmind-builds-neural-networks-that-spontaneously-replay-past-experiences-9b57a9c08316
+
+Mars and MOLA:
+- https://en.wikipedia.org/wiki/Mars_Global_Surveyor
+- https://github.com/CHandmer/water-flow
+- http://www.caseyhandmer.com/home/mars
+- TLE (Two-line element set): https://celestrak.com/NORAD/elements/active.php
+- air force space command manual: https://static.e-publishing.af.mil/production/1/afspc/publication/afspcman91-710v1/afspcman91-710v1.pdf
+
+so may be, create a program that can beat window's chess engine. This would sort of reintroduces some of the important ideas for dealing with mola
+
+control engineering

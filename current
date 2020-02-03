@@ -7,8 +7,6 @@ So, plan to deal with this whole problem:
 
 try brilliant
 
-control engineering
-
 Science funding:
 - https://en.wikipedia.org/wiki/Funding_of_science
 - https://www.acsh.org/news/2017/02/07/how-science-funded-united-states-10816
@@ -19,12 +17,6 @@ Books on money: "virtual environment to experiment with business"
 - http://gen.lib.rus.ec/book/index.php?md5=8AA6343D7F4E6117B7316C7069E99D02
 - http://gen.lib.rus.ec/book/index.php?md5=10DF87D2CAF65BCA13B3E7440E41FEAD
 - http://gen.lib.rus.ec/book/index.php?md5=635FF4858EF42C1DF8B93B2578482C13
-
-Old electrical stuff from MIT:
-- https://www.youtube.com/watch?v=3GdMaDzIUeQ&list=PL9F74AFA03AA06A11&index=18
-- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/
-
-Rocket propulsion elements to process: file:///C:/Users/Lenovo-1/Downloads/George%20P.%20Sutton,%20Oscar%20Biblarz%20-%20Rocket%20Propulsion%20Elements-Wiley%20(2016).pdf
 
 question to ask chi:
 - what are all the toys, how can they be used? How about an example of a different research direction using those same types of toys?
@@ -80,48 +72,25 @@ Also look over the internal documents to see if there's something fun.
 
 see over chi's new lab reports and understand the chemistry she's currently involved in.
 
-an interesting challenge that I think will be in the right step to understand the true solutions to climate change would be to do the terraformed mars thing, or at least look into casey's work and figure out how it works. Then use the data available for earthquakes and other stuff like tree tops, aggregated from satellites and whatnot to visualize and put together all of these data.
-
-from phone:
-- https://github.com/dennybritz/reinforcement-learning
-- https://towardsdatascience.com/recreating-imagination-deepmind-builds-neural-networks-that-spontaneously-replay-past-experiences-9b57a9c08316
-others:
 - https://80000hours.org/career-guide/introduction/
-- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
-- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/readings/
-- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings/
 - https://alcor.org/BecomeMember/index.html
 
 company provisioning:
 - d-rev
 - windpax
-- BioLite, solving particulate matter problem, seems like they did quite a good job, reducing 95%, so check them out, see if they're successful
+- BioLite, solving particulate matter problem, seems like they did quite a good job, reducing 95%, so check them out
 - position dynamics: http://www.positrondynamics.com
 
 so, priorities now (if meanwhile i got crazy because of the pressure, play factorio to get the scaling challenges, then may be walk and listen to those irregular podcasts, like anthropocene reviewed):
-- get the mola mars data (Mars Orbiter Laser Altimeter), then fill 'em up with water, to probe at the actual scale of a planet, then try to read over casey's work to see how he does his simulation
 - do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
-- then do actual simulations of cfd
 - see how those folks aggregating data do it. At this point, I should have an idea of how this is like, with the mola plan above, so this will be sort of a best practice kind of approach. Candidate starting point would be that p5.js sketch thing, with the earthquake data, and also the website that aggregate deforestation information
-- then see over other nasa's dataset, preferably about earth and start to dive deep into the current state of climate stuff, because I still don't entirely get it
 - may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier. https://github.com/tesseract-shadow/tesseract-ocr-re, and post on improving input image quality: https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
 - try out the organic stuff at autodesk
-- then the story of energy
-- read understanding earth
+- then the story of energy post
 - read rocket propulsion elements
-- Understanding earth: file:///C:/Users/Lenovo-1/Downloads/John%20Grotzinger,%20Thomas%20H.%20Jordan,%20Frank%20Press,%20Raymond%20Siever%20-%20Understanding%20Earth%205th%20Ed..pdf
-- Ignition on gg books
+- read understanding earth: file:///C:/Users/Lenovo-1/Downloads/John%20Grotzinger,%20Thomas%20H.%20Jordan,%20Frank%20Press,%20Raymond%20Siever%20-%20Understanding%20Earth%205th%20Ed..pdf
 
 https://www.simple.com/blog/international-money-transfers
-
-Mars and MOLA:
-- https://en.wikipedia.org/wiki/Mars_Global_Surveyor
-- https://github.com/CHandmer/water-flow
-- http://www.caseyhandmer.com/home/mars
-- TLE (Two-line element set): https://celestrak.com/NORAD/elements/active.php
-- air force space command manual: https://static.e-publishing.af.mil/production/1/afspc/publication/afspcman91-710v1/afspcman91-710v1.pdf
-
-so may be, create a program that can beat window's chess engine. This would sort of reintroduces some of the important ideas for dealing with mola
 
 how mergers work?
 
@@ -135,10 +104,6 @@ add option to not display the nodes/description for ludvik
 
 "how economies work". I think I got it, but not entirely sure, so still, look for people's interpretation of this, and I might get a really good answer.
 
-so, goal for today:
-- go through with the rest of the magento book. After finishing the theme part, reread everything
-- IBM Transact thing
-
 policy hub too, 2 documents now
 
 figure out how elon got to stay in the US?
@@ -146,31 +111,17 @@ figure out how elon got to stay in the US?
 also see over how public talking works, what venues I can penetrate into
 find that place/club where chi can practice speaking and singing
 
-okay, for the international law thing, I'm starting to not understand it. So, go through them from the beginning and now, branch out and read a bunch of stuff about them, may be read stuff from preexisting logs as well
-
 "pmi-pmbok"
-
-kay, so let's stop the magento bit for a sec, to make it eat into my brain. So now, let's go over the web security thing, and after finishing the book entirely, go back to the layout and whatnot
-
-yikes. Let's see the twitter stuff again. Now I believe I can really do this without feeling adhoc and out of place. So yeah. let's just do that, and make the gravity art thingy from before.
-
-okay, damn, the web security book is so fucking boring, like, it talks about stuff that's so fucking mundane and doesn't require me to think at all. And like, stuff in there just yada yada about how this and that is dangerous and whatnot, and doesn't mention how the mechanism actually works. I know how the mechanism works, so may be that's why I'm so bored out of my mind. Still, I need to know how the certificate thingy actually works, so just hold it in and make it through the book.
-
-venmo model seems to suggest that it's quite anonymous, and can sort of evade the detection of credit card companies.
 
 "stripe has php library to accept credit cards without needing a merchant account". So like, what I want to do with all these testing is to make the money transferring process as testable and as throwaway as possible. I think that through experimenting with this, I can really get to know the rules of the game. Also some said I can just sign up for a paypal account, then include a button that will redirect users to paypal's site, then it will do the rest and I get the money. This is a bit dangerous tho. Like what if, the returning request, like the callback mechanism of oauth doesn't work? What's there to sync the data between the paypal account and my internal db? Boy, then I'd really have to make everything as highly available as possible (well, look into the ability to sort of confirm to paypal at another time so that this issue can be mitigated), or else I don't know how to handle the legal reprecussions.
 
 Also, how does the legal side of things integrate with like, credit card companies? Like, following the principle that money can be anything a group of ppl deems valuable, and if you can make everyone trust you, then the fictional money you invented really have value. So like, venmo sort of invent this new currency, everyone jumps on the bandwagon, then it really have value. Then does the gov just let this happen? Or they jump and regulate a player when it seems to be creating an idea resembling money?
 
-"The other thing you need to worry about is the coming of PCI compliance which basically says if you are not compliant, you (or the company you work for) will be liable by your Merchant Bank and/or Card Vendor for not being compliant by July of 2010. This will impose large fines on you and possibly revoke the ability for you to process credit cards."
+"The other thing you need to worry about is the coming of PCI compliance which basically says if you are not compliant, you (or the company you work for) will be liable by your Merchant Bank and/or Card Vendor for not being compliant by July of 2010. This will impose large fines on you and possibly revoke the ability for you to process credit cards." This is sort of perflexing, because, I thought PCI compliance worries banks and credit card networks, like Visa and MasterCard, and not individual businesses. But this quote seem to suggest that normal businesses must also be PCI compliant and thus, have sort of a pen testing personnel come in to check for vulnerabilities and if the business pass, then it's granted the PCI compliant status
 
 ask lawyers that I know of to answer some of the questions above. Candidates would be Hieu Man, that small girl studying law (man I feel guilty for not remembering her name), mama (may be? but seems like she doesn't know about this stuff), ynes (yeah, i like her, so duh), then forums
 
-also what about that PCI compliant thingy? Is it a specification? Is it a legal contract? What is it? https://www.pcisecuritystandards.org/
-
 some suggest braintree, which sounds familiar enough.
-
-also read up on what should I do if my site is breached and simple metadata is stolen? I guess that's included in the security book thingy. Then what happens when like, order data gets compromised and users are suing me and my company? I guess that's included in the PCI thingy.
 
 sample of integrating with payment gateway:
 - https://www.spaceotechnologies.com/paypal-payment-gateway-integration-php/
@@ -185,8 +136,6 @@ so, what's the long term plan now?
 
 oh and as a side effect of that international law thingy, I sort of understand how that Ho guy can sort of convince france and whatnot to back down on their aggression.
 
-right, so I can't really go through their section on credit cards and whatnot, just because I have no frame of reference
-
 nice read: https://nickcraver.com/blog/2017/05/22/https-on-stack-overflow/
 
 may be, make a tutorial on what to do, caveats to setting things up, etc, so that my replacement can have a quick go ahead.
@@ -197,18 +146,12 @@ look into the docker root problem (about security, and root user thing) again, b
 
 interesting article: https://serverfault.com/questions/835660/cdn-how-is-it-possible-that-my-dns-delivers-a-different-ip-depending-on-the-vis
 
-"data-driven architecture". Last article was on like, brick and mortar architecture, not the operations architecture
-
-magento framework version 102.0.3
-
-abraham: 1.1.0
-
-kay, so this is getting brutal, like the inner workings of magento. So just go with the flow, because everything else has been already discovered except this one. So go through it all, then try to top everything up and make every bit connect to every other bit
-
-the timesheets thing
-
 about that thought experiment of what if venmo decides to treat 1 venmo dollar as 2 US dollar? Which parties will suffer, which parties will flourish?
 
-try out ynes's setup
+try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset.
 
 so, an idea to establish trust and massively gain trust from millions of ppl procedurally, where the core basis of the trust can change? This seems like something economic theories or blockchain has already solved, and it's just not popular enough (the irony, haha)
+
+and just have a rough understanding of what can I do as an F1 student? Can I just spring up a store? Can I register for a merchant bank account? If not, can I register for venmo's merchant bank account?
+
+so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?

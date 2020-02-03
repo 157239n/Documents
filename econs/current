@@ -19,3 +19,26 @@ SoftBank Vision Fund, dig into this, and the deal with wework too. And see if I 
 what's with wealth vs money
 
 And again, look into creating several startup types, one being manufacturing, one being industrial, one being web service, one being biochemical engineering.
+
+internet-based payment systems (note that this info is old):
+- DigiCash
+- CyberCash/CyberCoin
+- Virtual PIN
+- Smart Cards, which essentially is just credit cards, because everyone of them already have the microprocessor
+- Mondex
+
+cost of banks to service an individual customer ranges between $50 to $200 a year
+
+refund: "in some cases, the acquiring bank will refund the bank charges as well". Interesting...
+
+"the consumer's bank debits the consumer's account and places the money (possibly minus a service charge) into an interbank settlement account". Righttttt, so going back to the central bank idea, that every commercial bank sort of keeps in check with the national bank. The national bank then hold its own checks to individual other national banks.
+
+but then again, banks seem to create another currency entirely but people still have trust that it is pegged onto the real dollar, which effectively makes it the real dollar.
+
+check digit algorithm is public (ISO 2894)
+
+banks, impose 1% to 7% for each transactions. This is paid by the merchant
+
+how does money gets introduced into the market?
+
+venmo model seems to suggest that it's quite anonymous, and can sort of evade the detection of credit card companies.

@@ -1,0 +1,14 @@
+anaconda-navigator
+jupyter notebook list
+jupyter notebook
+conda create --name snowflakes biopython
+conda info
+conda info --envs
+conda activate
+conda activate {env name}
+conda search {package name}
+conda list
+conda install {package name}
+
+help("modules")
+conda install -c pytorch -c fastai fastai

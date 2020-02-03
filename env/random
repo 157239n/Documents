@@ -1,6 +1,6 @@
 Reality check on renewables ted talk (David MacKay, "Sustainable energy - without the hot air", chief science advisor to UK Dept. of Energy and Climate Change):
 
-UK energy consumption: 125kWh per day per person (when I actually do the calculations, doesn't seem like so. Really check the validity of this):
+UK energy consumption: 125kWh per day per person:
 - 40 for transport
 - 40 for heating
 - 40 for electricity
@@ -8,12 +8,12 @@ UK energy consumption: 125kWh per day per person (when I actually do the calcula
 
 Top of the line countries: 2.5W/m^2 (each day). This level is what we should aim for to provide to the world
 Wind power: 2.5W/m^2
-Solar PV: 5-20W/m^2 (given in the talk, 230W/m^2 calculated myself (probably for insolation), online resources indicates 45W/m^2 (for panels, when exposed to 230W/m^2 at 20% efficiency))
+Solar PV: 5-20W/m^2 for UK, can climb to 60W/m^2 for deserts. Assuming 15-20% efficiency
 Concentrating solar power: 15-20W/m^2
 Nuclear: 1000W/m^2
-Sunlight: 342W/m^2 (kinda controversial overhere)
+Sunlight: 342W/m^2 world average per day per m^2 of earth's surface. 1368W/m^2 for direct sunlight for a circle (not spherical) earth. 110W/m^2 in UK (32%), 250W/m^2 in deserts (73%)
 
-Andasol Solar Power Station: Europe's first parabolic trough power plant:
+Andasol Solar Power Station: Europe's first parabolic trough power plant, 10W/m^2
 - Solar radiance/insolation: 250W/m^2 (quoted as "exceptionally high"), but totaling around 97W/m^2 only, so 38% efficiency
 Other plants (check out https://www.youtube.com/user/beyondzeroemissions/videos btw)? Btw the promotional vid (https://www.youtube.com/watch?v=AsLnIYKo-qk) of that plant looks so cool you know. What's the profession there called?
 
@@ -38,19 +38,10 @@ Planning to operation delays:
 - Wind, CSP: 10 gCO2e/kWh
 - Solar PV: 45 gCO2e/kWh
 
-Electricity rates: gem: https://www.iea.org/statistics/prices/, also here: https://www.globalpetrolprices.com/electricity_prices/
-- Solomon islands: 99 cent/kWh, highest in the world
-- Jamaica: 44 cent/kWh
-- California: 16.2 cent/kWh
-- Germany: 29.4 cent/kWh. Some 35 cent/kWh. Stats: https://www.cleanenergywire.org/factsheets/germanys-energy-consumption-and-power-mix-charts. Highest in the world that is 
-"normal". There are other places that are higher than Germany but a lot of studies cite them as the normal highest
-- France: 16 cent/kWh
-- Solar, some claimed 1.79 cent/kWh
-- US: 12 cent/kWh
-- China: 7 cent/kWh
-- Russia: 5.5 cent/kWh
-- Vietnam: 5 cent/kWh
-- Saudi Arabia: 2 cent/kWh
+Electricity rates, some say solar is 1.79 cent/kWh:
+- gem: https://www.iea.org/statistics/prices/
+- https://www.globalpetrolprices.com/electricity_prices/
+- https://www.cleanenergywire.org/factsheets/germanys-energy-consumption-and-power-mix-charts
 
 Oil prices:
 - Crude oil: $0.45/L
@@ -62,7 +53,10 @@ house cats kill billions of birds every year, while hundred thousand from wind t
 
 Lignite, kinda like coal
 
-Last time CO2 ppm was this high is 125k years ago, at around 300ppm, 1-2 degrees higher than normal
+CO2 concentrations and past data:
+- 300ppm -> 1-2 degress increase, 125k million years ago
+- 400ppm -> 2-3.5 degrees increase, 3-5 million years ago
+- 1000ppm -> 10 degress increase, 50 mollion years ago. Little ice, sea level at least 60 meters higher than currently. So probably the thing about feedback loops to - cause 200 meters of sea level rise is kinda bullshit
 
 612k
 439k
@@ -80,8 +74,6 @@ Gasses outlawed by Kyoto protocol:
 - Perfluorocarbons
 - Sulfur Hexafluoride
 
-Diplomatic immunity: codified in 1961 in Vienna Convention on Diplomatic Relations
-- functional immunity
-- full immunity
-
 effects of CO2: 500k atomic bombs a day, or 5/sec
+
+"House of Green in Denmark", have report that fossil fuel usage has not declined (but not increased), despite wind generates 115% of the energy needs

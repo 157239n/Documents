@@ -471,8 +471,6 @@ speeding up chapter, topics covered:
 - apache web server deflation: mod_deflate, compresses output
 - enabling expires header: mod_expires, tell client to cache stuff
 
-all the composer thingy is sort of managed using the root composer.json file?
-
 Context has a lot of contexts:
 - \Magento\Framework\App\RequestInterface
 - \Magento\Framework\App\ResponseInterface
@@ -490,13 +488,9 @@ if the module works, then start working on porting everything to php-fpm with ng
 
 rm -rf var/cache/*
 
-okay, so it's not the fault of the empty index.html file. So may be now, create a new module, then include that, then see whether it actually shows up
-
 \Magento\Framework\View\Result\PageFactory::TYPE_PAGE
 
-so currently, modules seem to be installing just fine, however, the connections are still severed, so nothing has displayed, just yet. So may be:
-- use the Magento\Backend stuff. Also understand why people use this instead of stuff within the framework? Like, what advantage does it gives?
-- read other books, now that I have a rough idea of how things fit together.
+Understand Magento\Backend and why people use this instead of stuff within the framework? Like, what advantage does it gives?
 
 man like, I'm so fucking close to finally understand everything and can start massively deploy this to my other projects. And like, I sort of understand financial systems more too, so like, I can really, really be done with the business side and can just start kicking. But still, undertanding financial systems aren't enough to be able to execute the business well. I still need to have a business plan, and preferrably one that's based on my goals. There's still a whole lot of work to be done outside of services on the internet.
 
@@ -510,3 +504,176 @@ also search for commonly broken references to try to fix this
 more debugging info: https://magento.stackexchange.com/questions/428/fundamentals-for-debugging-a-magento-store
 
 the twitter composer package itself: https://twitteroauth.com/
+
+------------
+
+so, going over a new magento book
+
+1. installing
+2. system tools
+3. performance
+4. catalogs and categories
+5. managing store
+6. theme
+7. extensions
+8. extensions
+
+seems like I should have sort of a CLI tool to manage the virus? The tasks I have to do in the terminal is:
+- doing periodic backups of everything
+- scan for active viruses and add to database
+
+cache types:
+- config
+- layout
+- block_html
+- collections: result of db queries
+- db_ddl: database schema
+- eav: eav attributes: store labels, attrib rendering, search settings, etc
+- full_page: generated html pages
+- reflection
+- translate: merge all translations
+- config_integration: compiled integrations
+- config_integration_api: compiled integration apis
+- config_webservice: web api structure
+
+backups:
+- --code: everything excluding var and pub/static, at var/backups/{timestamp}_filesystem.tgz
+- --media: media, at var/backups/{timestamp}_filesystem.tgz
+- -db: db, at var/backups/{timestamp}_db.tgz
+
+so, performance boost methods adverised
+- redis, backend cache
+- memcached, session caching
+- varnish, full page cache
+- cdn
+- http/2
+- performance testing
+
+this is basically not what I'm looking for right now, so just skip it entirely
+
+rightttt. This is going somewhere.
+
+define:
+- website: top level container, parent level, can use on different domain names, different shipping methods, payment options, customers, orders, etc
+- store: same data, different storeviews. Always connected to a root catalog that holds categories and subcategories. Not possible to share 1 basket. Shipping, catalog, customer, inventory, taxes and payment settings cannot be shared between sites
+- storeview: lowest level, usually used to handle different localizations. Can be used for B2B, like hidden private sales pages
+
+linux hosts file, at /etc/hosts, service nscd restart
+
+skipping over section about attribute sets and whatnot
+
+shoes:
+- colors
+- brands
+- sizes
+
+snowboard:
+- weight
+- length
+- torsion
+- manufacturer
+- style
+
+products:
+- simple product: physical, damn simple, no options
+- configurable product: combination of simple products with different color, sizes, etc
+- grouped product: collection of somple products that relate to each other. Like, camera, memory, photo bag. The combo costs less
+- virtual product: non-physical
+- bundle product: extension of grouped products
+- downloadable product
+- gift card (EE only)
+
+managing, which I skipped for now because again, it's not what I really want to do. The real meat is to be able to have extensions and whatnot:
+- shipping & tax rules
+- managing customer groups
+- configure inventories
+- configure currency rates
+- advanced pricing
+
+next is theme development. I expect this to be quite a breeze, and can skim through quite easily, so do just that. Then get into the weeds of extensions. I understand most of them already, but the little details to actually make them stick together, that's a totally differnt story
+
+- create a new theme
+- layout xml of a module
+- add css/js to pages
+- using grunt for css changes
+- add static blocks to pages through layout xml
+- add static blocks to pages through widgets
+- dynamic serving theme based on client's browser
+- theme-specific translations
+
+web
+  css
+    source
+      _theme.less
+  fonts
+  images
+  js
+
+the layout files are split per layout handle. A layout handle is a unique identifier for the layout definitions that are used to build the page. 3 different types of layout handles:
+- page type layout handles: identify the page based on full action names of the controller (customer_account_create). Right, so this is the xml that the other book was referencing, but don't really mention anything related to layout files
+- page layout handles: added identifiers based on a product type shown (catalog_product_view_type_downloadable)
+- custom handles: added custom identifiers not referencing to any page
+
+template fiels: Magento_Customer/view/frontend/templates/form/register.phtml -> {theme dir}/Magento_Customer/templates/form/register.phtml
+
+oh and just realized, the downloading part takes a long time, and that's the penalty of doing stuff remotely. But then again, I can't really use docker in windows without getting virtual box or something, so I will just have to accept that
+
+overriding example, app/design/frontend/Genmato/default/Magento_Catalog/layout/catalog_product_view.xml
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <move element="product.info.stock.sku"
+      destination="product.info.price"
+      after="product.price.final"/>
+    <move element="product.info.review"
+      destination="product.info.main"
+      after="product.info.price"/>
+    <remove name="report.bugs"/>
+  </body>
+</page>
+
+available default widgets:
+- cms page link
+- cms static block
+- catalog category link
+- catalog new products list
+- catalog product link
+- catalog product list
+- orders and returns
+- recently compared products
+- recently viewed products
+
+okayyyy. All done with the theme stuff. Now go on to the extensions, and I'm still fully awake. This feels great. Actual progress is happening.
+
+so, covered topics:
+- initializing extension basics
+- working with database models. Yay. This part isn't covered by the other book
+- create tables using setup scripts. Also a yay
+- create a web route and controller to display data. I think I understand this part well enough already
+- create system configuration fields
+- create backend data grid
+- create backend form to add/edit data
+
+some configs can be area-specific. RIght, so these options, the extra ones, are interesting and I haven't seen them before:
+- adminhtml
+- frontend
+- cron
+- api
+
+registration types:
+- module: magento2-module
+- library
+- theme: magento2-theme
+- language: magento2-language
+
+storing data is handled through a Model class. This communicates with the ResourceModel class. All CRUD operations are done through the ResourceModel class.
+
+loading a set of records, a Collection is used
+
+the template file is optional
+
+\Magento\Framework\App\ActionInterface. This is the recommended approach pointed to by the \Magento\Framework\App\Action\Action class. But like, tried to use ActionInterface. Didn't work. Then replace it with the old class, and then it works flawlessly. So see into how can I use the recommended method
+
+right, so the resource model connection, up next. I need to know how this is connected. After that, I think everything is set, and I will have understood everything. By then, go back to the beginning, and set everything up so that everything is disposable, and use the new architecture and whatnot.
+
+understand the observer and events role in the twitter stuff. Also the top menu stuff included. How does it work?

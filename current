@@ -145,3 +145,13 @@ and just have a rough understanding of what can I do as an F1 student? Can I jus
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
 
 how about private international law. It seems more complicated than the public one. I think I have understood the public ones enough already
+
+oh and, go through mail one more time. I know it's like hell, with all those security mechanisms, but this time, set up a dead simple one, using a mail client that doesn't care about security, and increase security over time. The goal is to be able to integrate all of these functionalities, distill them into images and churn out products (aka commerce sites/sites) in the matter of minutes
+
+may be ask nhat to dig deeper into AI? Like, AI (especially reinforcement and the whole safety field) work sort of falls under the category of philosophy, which he apparently is doing a lot of. And like, using his brain power and how much time he has got, it seems plausible that he can make a difference in the AI safety field, which would be so cool to see happen. So like, read through all of the stuff he has got over his website (using a VPN, to skew the statistics and to make sure he don't figure it out), understand the current state of mind he is currently having, then intercept that thought and suggest that he can take up this task.
+
+okay damn, I'm feeling alive again. Man this feels good
+
+btw, how testing with a database work? Do you sort of like, separate accessing the database directly using some wrapper classes and then build mocks of of these "ResourceModel" and then give the thing to test to make sure it can do it? Yeah seems to be the only way.
+
+what's up with the whole http/2 business?

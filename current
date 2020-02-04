@@ -26,27 +26,15 @@ question to ask chi:
 - how does employment in that field works
 - how the research is financed, what's the whole stuff with "defending your dissertation" looks like?
 
-I guess I wanted to learn about automation is to know if I can build my own factory/plant. If I can, and if I know how professional stuff are done there, I can out source it effectively, and at the same time manage the money flow too.
-
 Additional heating over last decade: 8*10^21 Joules per year
 
-How about the science left to do with Lithium and Lithium ion batteries?
-
 Kickstarter: https://www.reddit.com/r/Entrepreneur/comments/7lzqyo/anyone_have_experience_with_kickstarter_tips/
-
-get into the mining and petrochemical industry. Also play satisfactory to begin to appreciate the size of these industrial machines, also the interconnections between them. https://www.epicgames.com/store/en-US/product/satisfactory/home. Did so, but it seems like this view of full automation is kind of misleading, because in the real world, we do not have the freedom of picking up factories and ploping them down. We have a preconceived idea of how the factory is structured, how things move in and out, and there is typically only 1 main assembling line. Other improvements are about efficiency, speed-wise. So it's really, really different from the type of scaling in satisfactory or in factorio.
 
 what I understand now is that a plant can just spring up easily, and I mean really easily. The real barrier is the government and the market. But like, I need to study to the point where I can that whole facility by myself then study about the market and the government.
 
 467kWh - 1.2tr
 
-i guess what i am looking for is "manufacturing and supply chain", which nha's books kinda gives me the foundations
-
-okay, so I got the heavy industries down. I know what machines are there, how do these pieces fit together. Now see the same for the semiconductor industry, and what's the deal with all of those substrates, the doping and the etching? Also how metal working works, and how foundaries work too. For this, may be look for yt channels like king of random or night hawk
-
 for the long future, again, dyson swarm and solar panels on orbit
-
-also metals scarcity seems to be a thing too. So dig into that
 
 so as a test of building big things, see how wind turbines are built and how 1 guy can do that
 also see how can you program those huge robot arms from japan
@@ -81,7 +69,7 @@ company provisioning:
 - BioLite, solving particulate matter problem, seems like they did quite a good job, reducing 95%, so check them out
 - position dynamics: http://www.positrondynamics.com
 
-so, priorities now (if meanwhile i got crazy because of the pressure, play factorio to get the scaling challenges, then may be walk and listen to those irregular podcasts, like anthropocene reviewed):
+so, priorities now (if meanwhile i got crazy because of the pressure, may be walk and listen to those irregular podcasts, like anthropocene reviewed (listened all of that one btw)):
 - do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
 - see how those folks aggregating data do it. At this point, I should have an idea of how this is like, with the mola plan above, so this will be sort of a best practice kind of approach. Candidate starting point would be that p5.js sketch thing, with the earthquake data, and also the website that aggregate deforestation information
 - may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier. https://github.com/tesseract-shadow/tesseract-ocr-re, and post on improving input image quality: https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
@@ -121,7 +109,7 @@ Also, how does the legal side of things integrate with like, credit card compani
 
 ask lawyers that I know of to answer some of the questions above. Candidates would be Hieu Man, that small girl studying law (man I feel guilty for not remembering her name), mama (may be? but seems like she doesn't know about this stuff), ynes (yeah, i like her, so duh), then forums
 
-some suggest braintree, which sounds familiar enough.
+some suggest braintree, which sounds familiar enough. Heck, there's even a prebuilt Magento module, so it must be quite big
 
 sample of integrating with payment gateway:
 - https://www.spaceotechnologies.com/paypal-payment-gateway-integration-php/
@@ -155,3 +143,5 @@ so, an idea to establish trust and massively gain trust from millions of ppl pro
 and just have a rough understanding of what can I do as an F1 student? Can I just spring up a store? Can I register for a merchant bank account? If not, can I register for venmo's merchant bank account?
 
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
+
+how about private international law. It seems more complicated than the public one. I think I have understood the public ones enough already

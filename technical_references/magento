@@ -1,24 +1,55 @@
 
 this is an eCommerce platform
 
-Links:
-- https://magento.com/blog
-- https://magento.com/technical-resources, they have developer documentation there
-- https://magento.com/resources
-- A webinar with FH photo: https://magento.com/resources/evolving-b2bcx
-- https://magento.com/products/magento-open-source
-- https://magento.com/products/order-management
-- https://magento.com/products
-
 Very useful links:
 - https://magento.stackexchange.com/questions/104380/server-error-500-after-install
+- https://www.mageplaza.com/magento-2-module-development/how-to-create-crud-model-magento-2.html
+- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/bk-extension-dev-guide.html
+- https://devdocs.magento.com/guides/v2.3/config-guide/bk-config-guide.html
+- https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html
+- https://devdocs.magento.com/guides/v2.3/mrg/intro.html
+- https://devdocs.magento.com/guides/v2.3/coding-standards/bk-coding-standards.html
+- https://devdocs.magento.com/guides/v2.3/install-gde/install-roadmap_cli.html
+- https://magento.com/technical-resources, they have developer documentation there
+- https://magento.stackexchange.com/questions/97291/explanation-of-ui-component-grid-in-magento-2
+
+Important xsds:
+- urn:magento:framework:App/Language/package.xsd
+- urn:magento:framework:Event/etc/events.xsd
+- urn:magento:framework:App/etc/routes.xsd
+- urn:magento:framework:Module/etc/module.xsd
+- urn:magento:framework:View/Layout/etc/page_configuration.xsd
+- urn:magento:framework:ObjectManager/etc/config.xsd
+- urn:magento:framework:Acl/etc/acl.xsd
+- urn:magento:framework:Config/etc/theme.xsd
+- urn:magento:module:Magento_Ui:etc/ui_configuration.xsd
+- urn:magento:module:Magento_Config:etc/system_file.xsd
+- urn:magento:module:Magento_Backend:etc/menu.xsd
+
+important/interesting classes/interfaces:
+- \Magento\Backend\Block\Template
+- \Magento\Framework\Component\ComponentRegistrar
+- \Magento\Framework\App\RequestInterface
+- \Magento\Framework\App\Action\Action
+- \Magento\Framework\App\ActionInterface. Suggested way of doing things from the above's recommendation
+- \Magento\Backend\Block\Widget\Form\Generic: generic form data
+- \Magento\Backend\Block\Widget\ContainerInterface extends \Magento\Backend\Block\Widget\Button\ContextInterface
+- \Magento\Payment\Model\Method\AbstractMethod
+
+Context:
+- \Magento\Framework\App\RequestInterface
+- \Magento\Framework\App\ResponseInterface
+- \Magento\Framework\ObjectManagerInterface, create($type, $arguments = []), get($type), configure(array $configuration)
+- \Magento\Framework\Event\ManagerInterface
+- \Magento\Framework\UrlInterface
+- \Magento\Framework\App\Response\RedirectInterface
+- \Magento\Framework\App\ActionFlag
+- \Magento\Framework\App\ViewInterface
+- \Magento\Framework\Message\ManagerInterface
+- \Magento\Framework\Controller\Result\RedirectFactory
+- \Magento\Framework\Controller\ResultFactory
 
 Requirements: https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html
-
-typical configs:
-- db: localhost, mg, password, magento, mg_
-- admin account: 157239n, UDZ8qSnsfZeHHKHM
-- encryption key: ba0d0e00327f5c40e639c9e78644988c
 
 php packages:
 - php-bcmath
@@ -31,7 +62,41 @@ php packages:
 - php-dom (automatically, it says it will install php7.2-xml)
 - pdo-mysql (php-mysql)
 
+common pit falls:
+- inner container thinks it's using http, while the https layer was stripped from the outside already. Solution: add $_SERVER["HTTPS"] = "On"; to the bootstrap file
+- mysql image version 8 has weird authentication schemes
+- .htaccess files are not read properly -> infinite recursion
+- rewrite rules are not configured correctly -> infinite recursion
+
 tar ball: on magento's github page: https://github.com/magento/magento2/archive/2.3.3.tar.gz
+
+      catalog ---(product database)--- X            [global]
+                                       |
+                                       |
+                                       X            [website]
+                                       |
+                                       |
+   root category ---(menu container)---X            [store]
+                                       |
+                                       |
+                                   X---X---X
+                                   |   |   |
+subcategories ---(menu options)--- X   X   X        [store view]
+
+entry points
+- http: Framework\App\Http
+- static: Framework\App\StaticResource
+- media: Magento\MediaStorage\App\Media
+
+events:
+- define observers in event.xml
+- define Observer class based on \Magento\Framework\Event\ObserverInterface, define execute(...) function
+- dispatch event using \Magento\Framework\Event\ManagerInterface->dispatch('{event_identifier}', ['key1' => 'value1'])
+
+static files are stored in:
+- pub/static/frontend/<Vendor>/<theme>/<language>
+- <theme_dir>/media
+- <theme_dir>/web
 
 getting through the docs to get the feel of the space magento is taking up:
 - Basic config: https://docs.magento.com/m2/ce/user_guide/configuration/configuration-basic.html
@@ -39,23 +104,7 @@ getting through the docs to get the feel of the space magento is taking up:
 - Stuff to check over before the store goes live: https://docs.magento.com/m2/ce/user_guide/magento/prelaunch-checklist.html
 - open source user guide (pdf): https://docs.magento.com/m2/pdf/ce/Magento-Open-Source-2.2-User-Guide.pdf
 
-great, now I have 1800 pages to go through
-
 after the 1800 pages: https://docs.magento.com/m2/ce/user_guide/getting-started.html
-
-list of resources types:
-- product docs
-- magento resource library
-- security center
-- forums
-- blog
-- events and webinars
-- magento marketplace
-- training and certification
-- partners
-- expert consulting services
-
-so, there're apparently 2 modes: production or developer
 
 prelaunch checklist:
 - general:
@@ -76,92 +125,7 @@ prelaunch checklist:
 - system
   - cron
 
-urn:magento:framework:App/Language/package.xsd
-
-Magento components, including modules, themes, and language packages, must be registered in the Magento system through the Magento ComponentRegistrar class
-Each component must have a file called registration.php in its root directory
-
-use \Magento\Framework\Component\ComponentRegistrar;
-
-Modules (in /app/code/):
-ComponentRegistrar::register(ComponentRegistrar::MODULE, '<VendorName_ModuleName>', __DIR__);
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magento_AdminNotification', __DIR__);
-
-Themes (in /app/design/, area = ["frontend", "adminhtml"]):
-ComponentRegistrar::register(ComponentRegistrar::THEME, '<area>/<vendor>/<theme name>', __DIR__);
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/Magento/luma', __DIR__);
-
-Language package (in /app/i18n/):
-ComponentRegistrar::register(ComponentRegistrar::LANGUAGE, '<VendorName>_<packageName>', __DIR__);
-ComponentRegistrar::register(ComponentRegistrar::LANGUAGE, 'magento_de_de', __DIR__);
-
-Libraries (in /lib/internal):
-ComponentRegistrar::register(ComponentRegistrar::LIBRARY, '<vendor>/<library_name>', __DIR__);
-ComponentRegistrar::register(ComponentRegistrar::LIBRARY, 'magento/framework', __DIR__);
-
-namespace Alpine\ACH\Model;
-use Magento\Payment\Model\Method\AbstractMethod;
-
-i18n
-
-code standards: https://devdocs.magento.com/guides/v2.3/coding-standards/bk-coding-standards.html
-module reference guide: https://devdocs.magento.com/guides/v2.3/mrg/intro.html
-extension dev guide: https://devdocs.magento.com/guides/v2.3/extension-dev-guide/bk-extension-dev-guide.html
-architecture guide: https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html
-
-https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/XSD-XML-validation.html
-https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/component-registration.html
-https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html
-https://glossary.magento.com/module/
-https://devdocs.magento.com/guides/v2.3/architecture/tech-stack.html
-https://devdocs.magento.com/guides/v2.3/extension-dev-guide/intro/developers_roadmap.html
-
-
-replication steps:
-- composer install
-- bin/magento setup:uninstall
-- wizard
-- bin/magento setup:install --db-host=localhost --db-name=magento --db-user=mg --db-password=UDZ8qSnsfZeHHKHM --admin-user=157239n --admin-password=UDZ8qSnsfZeHHKHM --admin-email=157239q@gmail.com --admin-firstname=Quang --admin-lastname=Ho --base-url=http://magento.u4.kelvinho.org --use-secure=1 --use-secure-admin=1 --base-url-secure=https://magento.u4.kelvinho.org
-
-kay, so now build a fully fledge image, with everything in it, of the standard magento distribution, and the current pmi-specific distribution. After I get the mail going
-
-
-look into magento cdn integration. Basically how can I force magento to use spaces to cache stuff and store stuff too
-
-and see how magento handles money, duh
-
-list of basic magento stuff to go over: https://www.youtube.com/watch?v=C4VoeHmTN2E&list=PLtaXuX0nEZk9eL59JGE3ny-_GAU-z5X5D&index=6
-
-
-
-
-
-
-setting modes:
-rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
-bin/magento deploy:mode:set developer
-bin/magento deploy:mode:set default
-
-modules:
-magento module:enable [-c|--clear-static-content] modules
-magento module:status
-magento setup:upgrade
-magento cache:clean
-
-db:
-magento setup:db-schema:upgrade
-magento setup:db:status
-
-cron:
-magento cron:install [--force]
-
-tasks:
-compare local fresh vs pmi modified
-
-existing structure:
-- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/prepare/prepare.html
-- https://devdocs.magento.com/guides/v2.3/install-gde/install-roadmap_cli.html
-- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/prepare/prepare_file-str.html
+https://www.youtube.com/watch?v=C4VoeHmTN2E&list=PLtaXuX0nEZk9eL59JGE3ny-_GAU-z5X5D&index=6
 
 ------------------------
 
@@ -177,13 +141,6 @@ M2 improvements:
 - Framework
 - Setup
 
-security:
-- password management
-- XSS
-- permissions
-- click jacking exploits
-- non-default admin url
-
 - Web Users (frontend/backend)
   - Products
   - Marketing
@@ -196,58 +153,14 @@ security:
 - Models (resources/databases)
 
 cli responsibilities:
-- install
-- manage cache
-- manage indexers
-- manage cron
-- compile code
-- set magento mode
 - set urn highlighter
-- dependency reports
-- translate dictionaries & language packages
-- deploy static files
-- create symlinks to LESS files
-- run unit tests
 - convert layout to XML files
-- generate data for performance testing
-- create css from less
-
-magento:
-- cache:status
-- cache: disable
-- indexer:info
-- indexer:status
-- indexer:reindex
-
-SEO details:
-
-covered topics:
-- magento SEO management
-- SEO catalog configuration
-- XML sitemapmanager
-- Google Analytics tracking code
-- optimizing Magento pages, products, and categories
-
-Theme dev details
-
-covered topics:
-- theme basic concepts
-- theme structure
-- luma theme
-- theme inheritance
-- cms block & pages
-- custom variables
-- creating a theme
 
 /app/design/frontend/<Vendor>/
 - <theme 1>
 - <theme 2>
 
 Magento_Customer has specific .css and .html files to handle Customer module
-
-/vendor/magento/theme-frontend-luma
-static files published at:
-- /pub/static/frontend/<Vendor>/<theme>/<language>
 
 <theme dir>/
   <Vendor>_<Module>/ <---- I guess these are for overriding previous data and files, because the extras are below.
@@ -294,22 +207,11 @@ reusable components:
 
 luma theme uses some elements of blank theme to be functional, located at /vendor/magento/theme-frontend-blank folder, "declared" parent theme of luma. Logically, each theme will be at different folders, but because the code reuse thingy, they decided to do something called theme inheritance.
 
-I figure this sort of works like docker layers, where each build command just layer things above it and make they all work together, I guess
-
-- new theme in app/design/frontend/<Vendor>/<theme>
-- declare Magento/blank as parent
-- theme.xml
-- registration.php
-
-customization in the admin section too. Admin can create "block" and "content", like Home, About us, or any other static pages
-
 custom variables, {{config path="web/unsecure/base_url"}}
 {{CustomVar code="dev_name"}}
 {{store url=""}}
 {{media url="wysiwyg/home-main.jpg"}}
 https://docs.magento.com/m2/ce/user_guide/marketing/variables-custom.html
-
-disabling cache management
 
 app/design/frontend/Packt <----- vendor's theme directory
   basic <----- theme directory
@@ -401,126 +303,15 @@ widget types (https://magenticians.com/create-widget-in-magento-2/):
 
 block-title
 
-right, so a block is just a normal block, which can use other complex block and container structures inside, and they can have other stuff inside too. Each of those elements have a class which is in charge for controlling everything about it, like setting the data source (the ResourceModel thingy) and viewing things.
-
-a widget is a reference block that inserts itself into the standard layouts, and which contains the content of a specific block. So yeah, the idea is sound, but the execution and the explanation is absolutely terrible.
-
-
-Extension dev details
-
-Covered:
-- overview
-- zend framework basics
-- magento extension structure
-- twitter rest api
-- twitter oauth
-- magento extension project - TweetsAbout
-
-Zend framework benefits (framework.zend.com):
-- everyone knows it
-- great web service support to integrate magento with different software
-- mvc
-
-module file structure:
-app/code/<Vendor>/<Moduke>
-  core:
-    Block: View classes , visualization layers between logical and frontend layer
-    Controller: control all actions. Process requests, then redirects to a specific module
-    etc: all xml config files
-    Helper: auxiliary classes, providing forms, validators & formatters, which is commonly used in business logic
-    Model: business logic and access to data
-    Setup: setup classes
-  additionals:
-    Api: classes to control api layers
-    i18n: translating the module view layer
-    Plugin: interception
-    view: templates and layouts
-    composer.json
-    registration.php
-
-Yeah I pretty much understand everything here, like what's what, and the general vibe of how these things fit together. However, the classes connections, and the details of the classes, they are still quite elusive
-
-so, get latest tweets with #magento, #packt, #php tags. 2 pages:
-- 1: link to results
-- 2: show tweets
-
-dev.twitter.com/rest/public
-
-provide programatic access to read and write twitter data
-
-real, working folder structure:
-app/Packt/TweetsAbout
-  Api
-  Block
-  Controller
-  etc
-  Observer
-  view
-  composer.json
-  registration.php
-
-every layout file is assigned by following this pattern: <module name>_<controller>_<controller file>.xml. Module name does not contain the vendor name
-
-updating module:
-- magento module:enable --clear-static-content Packt_TweetsAbout
-- magento setup:upgrade
-- magento setup:di:compile
-- magento setup:static-content:deploy
-
 speeding up chapter, topics covered:
 - apache web server deflation: mod_deflate, compresses output
 - enabling expires header: mod_expires, tell client to cache stuff
 
-Context has a lot of contexts:
-- \Magento\Framework\App\RequestInterface
-- \Magento\Framework\App\ResponseInterface
-- \Magento\Framework\ObjectManagerInterface
-- \Magento\Framework\Event\ManagerInterface
-- \Magento\Framework\UrlInterface
-- \Magento\Framework\App\Response\RedirectInterface
-- \Magento\Framework\App\ActionFlag
-- \Magento\Framework\App\ViewInterface
-- \Magento\Framework\Message\ManagerInterface
-- \Magento\Framework\Controller\Result\RedirectFactory
-- \Magento\Framework\Controller\ResultFactory
-
-if the module works, then start working on porting everything to php-fpm with nginx, to make sure I understand all the ways magento can go wrong
-
-rm -rf var/cache/*
-
 \Magento\Framework\View\Result\PageFactory::TYPE_PAGE
-
-Understand Magento\Backend and why people use this instead of stuff within the framework? Like, what advantage does it gives?
-
-man like, I'm so fucking close to finally understand everything and can start massively deploy this to my other projects. And like, I sort of understand financial systems more too, so like, I can really, really be done with the business side and can just start kicking. But still, undertanding financial systems aren't enough to be able to execute the business well. I still need to have a business plan, and preferrably one that's based on my goals. There's still a whole lot of work to be done outside of services on the internet.
-
-magento framework version 102.0.3
-
-abraham: 1.1.0
-
-https://stackoverflow.com/questions/55928892/magento-2-blank-page-but-not-empty
-also search for commonly broken references to try to fix this
-
-more debugging info: https://magento.stackexchange.com/questions/428/fundamentals-for-debugging-a-magento-store
-
-the twitter composer package itself: https://twitteroauth.com/
 
 ------------
 
 so, going over a new magento book
-
-1. installing
-2. system tools
-3. performance
-4. catalogs and categories
-5. managing store
-6. theme
-7. extensions
-8. extensions
-
-seems like I should have sort of a CLI tool to manage the virus? The tasks I have to do in the terminal is:
-- doing periodic backups of everything
-- scan for active viruses and add to database
 
 cache types:
 - config
@@ -536,31 +327,10 @@ cache types:
 - config_integration_api: compiled integration apis
 - config_webservice: web api structure
 
-backups:
-- --code: everything excluding var and pub/static, at var/backups/{timestamp}_filesystem.tgz
-- --media: media, at var/backups/{timestamp}_filesystem.tgz
-- -db: db, at var/backups/{timestamp}_db.tgz
-
-so, performance boost methods adverised
-- redis, backend cache
-- memcached, session caching
-- varnish, full page cache
-- cdn
-- http/2
-- performance testing
-
-this is basically not what I'm looking for right now, so just skip it entirely
-
-rightttt. This is going somewhere.
-
 define:
 - website: top level container, parent level, can use on different domain names, different shipping methods, payment options, customers, orders, etc
 - store: same data, different storeviews. Always connected to a root catalog that holds categories and subcategories. Not possible to share 1 basket. Shipping, catalog, customer, inventory, taxes and payment settings cannot be shared between sites
 - storeview: lowest level, usually used to handle different localizations. Can be used for B2B, like hidden private sales pages
-
-linux hosts file, at /etc/hosts, service nscd restart
-
-skipping over section about attribute sets and whatnot
 
 shoes:
 - colors
@@ -590,33 +360,12 @@ managing, which I skipped for now because again, it's not what I really want to 
 - configure currency rates
 - advanced pricing
 
-next is theme development. I expect this to be quite a breeze, and can skim through quite easily, so do just that. Then get into the weeds of extensions. I understand most of them already, but the little details to actually make them stick together, that's a totally differnt story
-
-- create a new theme
-- layout xml of a module
-- add css/js to pages
-- using grunt for css changes
-- add static blocks to pages through layout xml
-- add static blocks to pages through widgets
-- dynamic serving theme based on client's browser
-- theme-specific translations
-
-web
-  css
-    source
-      _theme.less
-  fonts
-  images
-  js
-
 the layout files are split per layout handle. A layout handle is a unique identifier for the layout definitions that are used to build the page. 3 different types of layout handles:
 - page type layout handles: identify the page based on full action names of the controller (customer_account_create). Right, so this is the xml that the other book was referencing, but don't really mention anything related to layout files
 - page layout handles: added identifiers based on a product type shown (catalog_product_view_type_downloadable)
 - custom handles: added custom identifiers not referencing to any page
 
-template fiels: Magento_Customer/view/frontend/templates/form/register.phtml -> {theme dir}/Magento_Customer/templates/form/register.phtml
-
-oh and just realized, the downloading part takes a long time, and that's the penalty of doing stuff remotely. But then again, I can't really use docker in windows without getting virtual box or something, so I will just have to accept that
+template files: Magento_Customer/view/frontend/templates/form/register.phtml -> {theme dir}/Magento_Customer/templates/form/register.phtml
 
 overriding example, app/design/frontend/Genmato/default/Magento_Catalog/layout/catalog_product_view.xml
 <?xml version="1.0"?>
@@ -643,8 +392,6 @@ available default widgets:
 - recently compared products
 - recently viewed products
 
-okayyyy. All done with the theme stuff. Now go on to the extensions, and I'm still fully awake. This feels great. Actual progress is happening.
-
 so, covered topics:
 - initializing extension basics
 - working with database models. Yay. This part isn't covered by the other book
@@ -660,20 +407,4 @@ some configs can be area-specific. RIght, so these options, the extra ones, are 
 - cron
 - api
 
-registration types:
-- module: magento2-module
-- library
-- theme: magento2-theme
-- language: magento2-language
-
-storing data is handled through a Model class. This communicates with the ResourceModel class. All CRUD operations are done through the ResourceModel class.
-
-loading a set of records, a Collection is used
-
 the template file is optional
-
-\Magento\Framework\App\ActionInterface. This is the recommended approach pointed to by the \Magento\Framework\App\Action\Action class. But like, tried to use ActionInterface. Didn't work. Then replace it with the old class, and then it works flawlessly. So see into how can I use the recommended method
-
-right, so the resource model connection, up next. I need to know how this is connected. After that, I think everything is set, and I will have understood everything. By then, go back to the beginning, and set everything up so that everything is disposable, and use the new architecture and whatnot.
-
-understand the observer and events role in the twitter stuff. Also the top menu stuff included. How does it work?

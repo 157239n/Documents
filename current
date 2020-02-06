@@ -124,8 +124,6 @@ so, what's the long term plan now?
 
 oh and as a side effect of that international law thingy, I sort of understand how that Ho guy can sort of convince france and whatnot to back down on their aggression.
 
-nice read: https://nickcraver.com/blog/2017/05/22/https-on-stack-overflow/
-
 look into the docker root problem (about security, and root user thing) again, because this might be a huge problem that I'm neglecting
 
 interesting article: https://serverfault.com/questions/835660/cdn-how-is-it-possible-that-my-dns-delivers-a-different-ip-depending-on-the-vis
@@ -149,10 +147,6 @@ oh and, go through mail one more time. I know it's like hell, with all those sec
 may be ask nhat to dig deeper into AI? Like, AI (especially reinforcement and the whole safety field) work sort of falls under the category of philosophy, which he apparently is doing a lot of. And like, using his brain power and how much time he has got, it seems plausible that he can make a difference in the AI safety field, which would be so cool to see happen. So like, read through all of the stuff he has got over his website (using a VPN, to skew the statistics and to make sure he don't figure it out), understand the current state of mind he is currently having, then intercept that thought and suggest that he can take up this task.
 
 btw, how testing with a database work? Do you sort of like, separate accessing the database directly using some wrapper classes and then build mocks of of these "ResourceModel" and then give the thing to test to make sure it can do it? Yeah seems to be the only way.
-
-what's up with the whole http/2 business?
-- https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference
-- https://www.upwork.com/hiring/development/the-http2-protocol-its-pros-cons-and-how-to-start-using-it/
 
 so, goal for today?
 - understand the nitty gritty stuff, features, bells and whistles of magento
@@ -183,3 +177,5 @@ ui components:
 2 basic and secondary ui components:
 - listing, the one the book trying to address in the first section
 - form, the one the book trying to address in the second section
+
+absolutely throw away the unnecessary stuff in the mage2cookbook project

@@ -146,36 +146,26 @@ oh and, go through mail one more time. I know it's like hell, with all those sec
 
 may be ask nhat to dig deeper into AI? Like, AI (especially reinforcement and the whole safety field) work sort of falls under the category of philosophy, which he apparently is doing a lot of. And like, using his brain power and how much time he has got, it seems plausible that he can make a difference in the AI safety field, which would be so cool to see happen. So like, read through all of the stuff he has got over his website (using a VPN, to skew the statistics and to make sure he don't figure it out), understand the current state of mind he is currently having, then intercept that thought and suggest that he can take up this task.
 
-btw, how testing with a database work? Do you sort of like, separate accessing the database directly using some wrapper classes and then build mocks of of these "ResourceModel" and then give the thing to test to make sure it can do it? Yeah seems to be the only way.
+ideas for hackathon?
+- (easy) tool to load test the shit out of a system. More generally, a tool to do benchmarking
+- (hard) virus with zero day exploits or at least near-zero day exploits. Or one that can implant faked device drivers
+- (crazy hard) games like eterna, or foldit, where some biology or chemistry is involved
+- (easy) mola (mars orbiter laser altimeter) dataset, look for good places to land and whatnot
+- (medium) satellite tracking with accelerometer to know where to point phone to, using TLE (two-line element set) datasets
+- (hard) 3d scanning, so that one can move their camera around (still put the object on a white background) and it will carve out the model
+- (hard) rail gun/coil gun. Extension will be multiple shaped charge with synced ignition signal, just like with Fat Man
+- (easy-medium) that fan idea of chi (fluffy candy machine)
+- (hard) simplified miegakure (marc's original version). Have a 2-3d game and 3-4d game, or like 4D Toys
+- (crazy hard) pen testing tool which automatically looks out for vulnerabilities and exploit them just enough for me to take over
+- (crazy hard) simulate a 10-qbit system so that it's playable
+- (medium) simulate stress structures. This is quite straightforward, because I used to do something like this
+- (medium) simulate sterling engine
+- (medium) ocr thing with [nutritional value, bills]
+- (crazy hard) computational fluid dynamics
+- (medium-hard) visualize political structures, who's who, what do they most likely want and report back who will be the easiest to sway his/her opinion. popoloproject.com and docs.everypolitician.org/use_the_data.html
+- (hard) partial information reconstruction. This is used in MRIs (http://www.robots.ox.ac.uk/~jmb/lectures/medimanallecture1.pdf) and the event horizon telescope to act as an earth-sized telescope
+- (easy) tool to analyze dimensionality of coastlines
 
-so, goal for today?
-- understand the nitty gritty stuff, features, bells and whistles of magento
-- understand the existing code base
-- finish cookbook
+"periodically scan your systems using appropriate tools like tiger (Unix), WebTrends (NT)"
 
-"creating a backend data grid"
-
-"Magento Functional Testing Framework"
-
-acl: Elf_Genmato::demolist
-system: <resource>Elf_Genmato::config_genmato</resource>
-
-okay, but why is it so darn complicated?
-
-go through a sliver of rails again? Cuz now I already know what to expect, so should be a breeze
-
-the cookbook doesn't really have a Ui folder, which is odd, but not odd. Guess I'll have to fill in the gaps myself?
-
-ui components:
-
-<module root dir>
-  Magento
-    Ui
-      etc
-        ui_definition.xsd
-
-2 basic and secondary ui components:
-- listing, the one the book trying to address in the first section
-- form, the one the book trying to address in the second section
-
-absolutely throw away the unnecessary stuff in the mage2cookbook project
+compare changes at a later date tool: Tripwire

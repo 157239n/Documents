@@ -12,6 +12,8 @@ Very useful links:
 - https://devdocs.magento.com/guides/v2.3/install-gde/install-roadmap_cli.html
 - https://magento.com/technical-resources, they have developer documentation there
 - https://magento.stackexchange.com/questions/97291/explanation-of-ui-component-grid-in-magento-2
+- https://github.com/ashsmith/magento2-blog-module-tutorial
+- reverse engineer this: https://github.com/PeeHaa/OpCacheGUI
 
 Important xsds:
 - urn:magento:framework:App/Language/package.xsd
@@ -35,6 +37,8 @@ important/interesting classes/interfaces:
 - \Magento\Backend\Block\Widget\Form\Generic: generic form data
 - \Magento\Backend\Block\Widget\ContainerInterface extends \Magento\Backend\Block\Widget\Button\ContextInterface
 - \Magento\Payment\Model\Method\AbstractMethod
+- \Magento\Framework\Registry
+- \Magento\Backend\Model\View\Result\ForwardFactory
 
 Context:
 - \Magento\Framework\App\RequestInterface

@@ -5,22 +5,6 @@ security ethics:
 - https://www.infoq.com/articles/security-ethics/
 - https://www.interactiveservices.com/understanding-cybersecurity-ethics-in-the-workplace/
 - https://www.scu.edu/media/ethics-center/technology-ethics/IntroToCybersecurityEthics.pdf
-- ethics and compliance effect: https://www.navexglobal.com/compliancenext/media/doc/Cyber-security-best-practices-Bloomberg.pdf
-
-kali tool categories:
-- information gathering
-- sniffing and spoofing
-- post exploitation
-- forensics
-- reporting
-- vulnerability analysis
-- web applications assessment
-- database assessment
-- password cracking
-- wireless
-- reverse engineering
-- exploitation
-- social engineering
 
 tricks/vectors:
 - SMB relay, still very effective: https://cqureacademy.com/blog/penetration-testing/smb-relay-attack
@@ -42,7 +26,6 @@ tools:
 - Fail2ban
 - dockle: inspect whether a particular docker image is secure: https://github.com/goodwithtech/dockle
 - nessus tenable
-- metasploit
 - nexpose from rapid7
 - http://www.open-scap.org/
 - lynis, automatically find weaknesses: https://cisofy.com/lynis/, https://fearby.com/article/run-ubuntu-vm-system-audit-lynis/

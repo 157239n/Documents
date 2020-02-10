@@ -1,0 +1,45 @@
+
+This is from the book Kali Linux Revealed
+
+kali tool categories:
+- information gathering
+	- target network data
+	- identifying computers, os, services, potentially sensitive parts and listing of running directory services
+- sniffing and spoofing
+- post exploitation
+- forensics
+	- initial triage
+	- data imaging
+	- full analysis
+	- case management
+- reporting: collecting data, and reveal non-obvious relationships
+- vulnerability analysis: see if system is vulnerable against known vulnerabilities or insecure configs
+- web applications analysis: same thing as the above, but for web apps
+- database assessment: sql injection, data extraction
+- password cracking/attacks: auth systems
+- wireless attacks: multiple wireless cards
+- reverse engineering
+- exploitation: exploiting of a formerly identified vulnerability
+- social engineering
+
+download url: https://www.kali.org/downloads/
+
+chapters:
+- About Kali Linux
+- Getting Started with Kali Linux
+- Linux Fundamentals
+- Installing Kali Linux
+- Configuring Kali Linux
+- Helping Yourself and Getting Help
+- Securing and Monitoring Kali Linux
+- Debian Package Management
+- Advanced Usage
+- Kali Linux in the Enterprise
+- Introduction to Security Assessments
+
+author also wrote Debian Administrator's Handbook
+
+common roles:
+- advanced penetration testing
+- forensic analysis
+- security auditing

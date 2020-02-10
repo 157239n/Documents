@@ -43,6 +43,7 @@ commands:
 - dhclient: release and renew ip address
 - ip addr show
 - route: show routing table
+- free: free memory
 - df -ah: df (short for "disk free", checks for disk space), all file systems, human readable formatting
 - du -sh <dir>: size of directory
 - netstat: open ports, listening sockets
@@ -61,6 +62,19 @@ commands:
 - lsb_release -a
 - neofetch
 - set enforce 0, disable SE linux
+- sha256sum
+- dd if=kali-linux.iso of=/dev/sdb: burn a file (likely iso) to a device
+- mkfs.ext3
+- dmesg: system logs, or at least that's what I've read
+- journalctl
+  - -r: reverse order
+  - --vacuum-time=2d: delete logs but the most recent 2 days
+  - --vacuum-size=500M: same thing, but restrict logs space
+  - -u ssh.service
+- lspci, from pciutils
+- lsusb, from usbutils
+- lspcmcia, from pcmciautils
+- lsdev, procinfo
 others:
 - updatedb
 - locate: locate files. Run updatedb first
@@ -177,3 +191,14 @@ virtualization daemons:
 - ovmf
 
 linux hosts file, at /etc/hosts, service nscd restart
+
+filesystem:
+etc
+  hosts, use service nscd restart
+  hosts.deny
+  hosts.allow
+  environment, environment for all processes, be injected into all user sessions thanks to Pluggable Authentication Module (PAM)
+dev
+  stdin
+  urandom
+  null

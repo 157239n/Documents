@@ -27,14 +27,10 @@ question to ask chi:
 - how the research is financed, what's the whole stuff with "defending your dissertation" looks like?
 
 Additional heating over last decade: 8*10^21 Joules per year
-
-Kickstarter: https://www.reddit.com/r/Entrepreneur/comments/7lzqyo/anyone_have_experience_with_kickstarter_tips/
+467kWh - 1.2tr
+for the long future, again, dyson swarm and solar panels on orbit
 
 what I understand now is that a plant can just spring up easily, and I mean really easily. The real barrier is the government and the market. But like, I need to study to the point where I can that whole facility by myself then study about the market and the government.
-
-467kWh - 1.2tr
-
-for the long future, again, dyson swarm and solar panels on orbit
 
 so as a test of building big things, see how wind turbines are built and how 1 guy can do that
 also see how can you program those huge robot arms from japan
@@ -97,7 +93,6 @@ policy hub too, 2 documents now
 figure out how elon got to stay in the US?
 
 also see over how public talking works, what venues I can penetrate into
-find that place/club where chi can practice speaking and singing
 
 "pmi-pmbok"
 
@@ -105,16 +100,7 @@ find that place/club where chi can practice speaking and singing
 
 Also, how does the legal side of things integrate with like, credit card companies? Like, following the principle that money can be anything a group of ppl deems valuable, and if you can make everyone trust you, then the fictional money you invented really have value. So like, venmo sort of invent this new currency, everyone jumps on the bandwagon, then it really have value. Then does the gov just let this happen? Or they jump and regulate a player when it seems to be creating an idea resembling money?
 
-"The other thing you need to worry about is the coming of PCI compliance which basically says if you are not compliant, you (or the company you work for) will be liable by your Merchant Bank and/or Card Vendor for not being compliant by July of 2010. This will impose large fines on you and possibly revoke the ability for you to process credit cards." This is sort of perflexing, because, I thought PCI compliance worries banks and credit card networks, like Visa and MasterCard, and not individual businesses. But this quote seem to suggest that normal businesses must also be PCI compliant and thus, have sort of a pen testing personnel come in to check for vulnerabilities and if the business pass, then it's granted the PCI compliant status
-
 ask lawyers that I know of to answer some of the questions above. Candidates would be Hieu Man, that small girl studying law (man I feel guilty for not remembering her name), mama (may be? but seems like she doesn't know about this stuff), ynes (yeah, i like her, so duh), then forums
-
-some suggest braintree, which sounds familiar enough. Heck, there's even a prebuilt Magento module, so it must be quite big
-
-sample of integrating with payment gateway:
-- https://www.spaceotechnologies.com/paypal-payment-gateway-integration-php/
-- https://www.quora.com/How-do-I-integrate-a-payment-gateway-in-a-website-developed-in-PHP
-- https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
 
 so, what's the long term plan now?
 - see how to hack the economic system, by framing everything of value in the view that value is what we create it
@@ -122,42 +108,75 @@ so, what's the long term plan now?
 - see how to hack the government. See how government works. I sort of know roughly how they work by now already, partly because the public international law thingy which it reveals that the international community is still sort of based on DNS, or decentralized systems, in a way. Feels like there's a lot of similarities between all distributed systems, and that the computing side of distributed systems are more secure while the distributed system of nations are more loosely coupled (however, still behaving right along the incentives), because they can do so, because nations move slow, and because radical shocks don't really occur in nations (and when they do, that nation sort of crumbles and disappears and everyone else is either in shit because the whole world is in shit or they just don't care about the collapsed nation). Anyway, I sort of understand how they work, but how about the chain of command and social structure needed to control things like immigration, like imports, like taxes, like border control. I'll consider I understand this when I can create a nation on my own (which tbh, seems like all I need to create a nation is respect from others (which can come if I'm powerful, both militarily and economically), an effective way to control my colony, and a lot of paperwork to follow the rules of international law), with all the functionalities ppl associated with a nation.
 - see how to hack human psychology, just basically what humans want, why humans want what they want (must be explained by the gene wanting to stay immortal thingy), how to effectively give them what they want (with myself feeling good and with a sense of purpose, which should be easy), and how to effectively give them what they want without knowing I'm doing this background thing, probably how I did things with Nhi. And like, ppl might call be being fake and all, but then again, that can only occur when the representation is leaked. If the representation has no way of leaking itself, then lies and truths don't really matter anymore, because then, I will have successfully decouple human values from my values and sort of be a truely general intelligence. Like, I've done this for a while now, from how I sort of dumbing stuff down when explaining to other ppl, to events with hannie, to events with nhi, etc. And also note that if I were to really do this, once the representation is exposed, ppl will forever think I'm fake, and that's really an inconvenience, because I've essentially lost that resource to harvest and my human side sort of be sad over that. So like, train myself to disregard those and to sort of numb them and myself, if possible. Anyway, so because I've done a lot of that stuff before, I really want doing it to be systematic and to devise some rules that I can repeatedly do so that I don't have to think much about it.
 
-look into the docker root problem (about security, and root user thing) again, because this might be a huge problem that I'm neglecting
-
 interesting article: https://serverfault.com/questions/835660/cdn-how-is-it-possible-that-my-dns-delivers-a-different-ip-depending-on-the-vis
 
 about that thought experiment of what if venmo decides to treat 1 venmo dollar as 2 US dollar? Which parties will suffer, which parties will flourish?
 
 try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset. At https://www.fast.ai/2018/09/26/ml-launch/, https://course.fast.ai/index.html
 
-so, an idea to establish trust and massively gain trust from millions of ppl procedurally, where the core basis of the trust can change? This seems like something economic theories or blockchain has already solved, and it's just not popular enough (the irony, haha)
-
 and just have a rough understanding of what can I do as an F1 student? Can I just spring up a store? Can I register for a merchant bank account? If not, can I register for venmo's merchant bank account?
 
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
 
-how about private international law. It seems more complicated than the public one. I think I have understood the public ones enough already
+how about private international law (aka international business law). It seems more complicated than the public one. I think I have understood the public ones enough already
 
 oh and, go through mail one more time. I know it's like hell, with all those security mechanisms, but this time, set up a dead simple one, using a mail client that doesn't care about security, and increase security over time. The goal is to be able to integrate all of these functionalities, distill them into images and churn out products (aka commerce sites/sites) in the matter of minutes
 
 looks interesting: https://www.linuxlinks.com/physics/
 
-do that stuff for dan too
-
 man, really, really buy tesla stocks this time. Because I feel like this is the time I make an impact. All the underlying philosophy is solved, and right now it's time to put my money where my mouth is and make this future a reality
 
 also I sort of thought about the value normal work will bring. Yes, it will most definitely bring me new connections, and I can really talk to some of them who is interested in the idea and we can do things together. However, finding such people to collaborate upon is a tad bit difficult, because people simply aren't interested. Their value will most likely be their connections, and hardware-specific and possibly law and social-specific vendors who I can leverage upon. <add more>
 
-and of course, see in depth how docker plays with permissions
-
 try to reverse engineer my server using kali, but then again, may be not, because it's so fucking wide
 
-check cdn status for 157239n
+check cdn status for 157239n, only 1/2 sites for now
 
 my rights as an f1 student?
 
-random forests, most widely applicable machine learning model
-
-make all of the styling decisions into 1 class, then inject that class in
-
 metart.com
+
+financial integration stuff:
+- companies:
+	- square
+	- wallet.google.com
+	- braintree, which sounds familiar enough. Heck, there's even a prebuilt Magento module, so it must be quite big
+	- paypal:
+		- https://www.sandbox.paypal.com/us/home
+		- https://www.sandbox.paypal.com/cgi-bin/webscr
+		- "paypal business account", try this out
+- general:
+	- https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
+
+join group: https://www.facebook.com/groups/KickstarterBestPractices/
+
+can I write data to a live cd? Considering I burned the data onto the usb, and the OS loads from the USB, so the USB acts as a primary partition anyway, so can I store additional info. So test this
+
+post request sqlmap injection: https://hackertarget.com/sqlmap-post-request-injection/
+
+so, a document on this friday, which will be worldpay, then another document next friday
+
+what pci dss compliant means for small businesses: https://www.shopkeep.com/blog/what-is-pci-compliance-small-business
+
+kay, so the reconstruction tasks is gonna be brutal, because I will have to read the code, understand it, and write about it as if I know everything. So, finish the kali book in its entirety today, then work on deconstructing worldpay
+
+man, I really want to cook that piece of meat, so badly, in fact
+
+buy a usb on the way home
+
+yeah I sort of want to have a NFS integrated to my dev environment, so find ways to exploit that
+
+okay shit, some chinese dudes are trying to gain access to my ssh stuff at 112.85.42.94. Kay, secure my stuff immediately, research the security side as well, and install fail2ban
+
+okay another shit, let's not use password authentication altogether
+
+okay shit, so now I have to learn about iptables again? Like lmao, I thought I can run away from network-specific stuff, but apparently I can't. So deal with this shit when I get home, and really harden my server
+
+shanghai & nanjing
+
+devices:
+- pci
+- usb
+- pcmcia
+
+bg: send process to background???

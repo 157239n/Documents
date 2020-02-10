@@ -4,6 +4,7 @@ List of MIME types:
 
 Discrete types: atomic
 - application
+  - application/x-www-form-urlencoded
 - audio
   - audio/wave
   - audio/wav

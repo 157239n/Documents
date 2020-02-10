@@ -42,6 +42,7 @@ Computing:
 - Git exercises: https://gitexercises.fracz.com/
 - What docker really is: https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
 - AI alignment problem, why it's hard and important: https://www.youtube.com/watch?v=EUjc1WuyPT8
+- Quick overview of K8S: https://medium.com/easyread/step-by-step-introduction-to-basic-concept-of-kubernetes-e20383bdd118
 
 Paths:
 - Buy a domain name. Please please please BUY one. Do not use a domain name for free. There are no such thing. If your uni gives out domain names for free, DO NOT TAKE THEM. There is value in doing these things yourself, to learn how these things are actually done in the real world and be autonomous from the uni. It also gives you a better mindset too.
@@ -321,7 +322,7 @@ Music gems:
   - That russian song: https://www.youtube.com/watch?v=AT9CNOOImM0
   - Senbonzakura: https://www.youtube.com/watch?v=shs0rAiwsGQ
   - Love Trial: https://www.youtube.com/watch?v=EKc6EzYZIbQ
-  - Sand Planet: https://www.youtube.com/watch?v=9FeUi0I5LRg
+  - Sand Planet: https://www.youtube.com/watch?v=9FeUi0I5LRg, live: https://www.youtube.com/watch?v=36yiPn3zFGc
   - What time is it: https://www.youtube.com/watch?v=n9-LH3rgp5Y
 - Totally Spies: https://soundcloud.com/pinar-tokbay/sets/totally-spies-ost
   - really nice music at the beginning of this: https://www.youtube.com/watch?v=6Qo9uJnp9Cg
@@ -386,3 +387,6 @@ Services/tools:
 - Greenshot, print screen, then edit it immediately, kinda like snipping tool
 - P5 map library: https://github.com/cvalenzuela/Mappa
 - security applications: https://github.com/sbilly/awesome-security
+- OVH: Europe's biggest VPS provider
+- prq.se: VPS provider in sweden, where everything is anonymous
+- Bahnhof AB: an ISP (which imply they can sell floating IPs, and thus hosting), from sweden (again) and located in pionen, a literal cold war bomb shelter

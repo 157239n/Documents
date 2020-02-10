@@ -41,7 +41,6 @@ commands:
 - arp -a
 - nmap: port scanner
 - dhclient: release and renew ip address
-- uname: current kernel information
 - ip addr show
 - route: show routing table
 - df -ah: df (short for "disk free", checks for disk space), all file systems, human readable formatting
@@ -58,6 +57,10 @@ commands:
 - hostname -f (fully qualified domain name)
 - usermod -aG docker <user>, adds user to the group "docker"
 - rfc: read rfcs, source: curl -sL https://raw.githubusercontent.com/bfontaine/rfc/v0.2.6/rfc
+- uname -romi, current kernel information
+- lsb_release -a
+- neofetch
+- set enforce 0, disable SE linux
 others:
 - updatedb
 - locate: locate files. Run updatedb first
@@ -167,3 +170,10 @@ Editing runlevel startup daemons:
 
 binding ssh to a specific interface:
 ListenAddress 0.0.0.0 in /etc/ssh/sshd_config
+
+virtualization daemons:
+- libvirtd
+- spice-vdagentd
+- ovmf
+
+linux hosts file, at /etc/hosts, service nscd restart

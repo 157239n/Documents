@@ -1,0 +1,93 @@
+
+these are from my exploration of kali linux. I've actually decided that the field is too large and I will have to dedicate every time and effort into this to really reap the benefits, so it's not worth it anyway
+
+security ethics:
+- https://www.infoq.com/articles/security-ethics/
+- https://www.interactiveservices.com/understanding-cybersecurity-ethics-in-the-workplace/
+- https://www.scu.edu/media/ethics-center/technology-ethics/IntroToCybersecurityEthics.pdf
+- ethics and compliance effect: https://www.navexglobal.com/compliancenext/media/doc/Cyber-security-best-practices-Bloomberg.pdf
+
+kali tool categories:
+- information gathering
+- sniffing and spoofing
+- post exploitation
+- forensics
+- reporting
+- vulnerability analysis
+- web applications assessment
+- database assessment
+- password cracking
+- wireless
+- reverse engineering
+- exploitation
+- social engineering
+
+tricks/vectors:
+- SMB relay, still very effective: https://cqureacademy.com/blog/penetration-testing/smb-relay-attack
+- sql injection (obviously)
+- ddos
+
+certifications:
+- Linux Professional Institute Certification Programs, LPIC-1
+
+tools:
+- nmap: figure out open ports
+- sqlmap: automatically finds sql injection possibilities and exploit them on the spot
+- wireshark: analyzes packets
+- owasp zap: web application security scanner
+- burp/burp suite: web application security scanner
+- maltego: analyzes social networks and computer networks, taking data from dns records, whois records, search engine, social networks, various apis and meta data
+- ettercap: exploiting man in the middle attacks
+- metasploit project: a bunch of tools
+- Fail2ban
+- dockle: inspect whether a particular docker image is secure: https://github.com/goodwithtech/dockle
+- nessus tenable
+- metasploit
+- nexpose from rapid7
+- http://www.open-scap.org/
+- lynis, automatically find weaknesses: https://cisofy.com/lynis/, https://fearby.com/article/run-ubuntu-vm-system-audit-lynis/
+- rkhunter is a standalone package that can be installed on a server and then used to scan it for malware
+- tiger: old school pen testing tool
+  - demonstration: https://www.tecmint.com/tiger-linux-security-audit-intrusion-detection-tool/
+- Tripwire: compare changes at a later date
+
+interesting phrases:
+- "security automation & orchestration"
+
+books:
+- the web application hacker's handbook
+- kali linux revealed: https://kali.training/downloads/Kali-Linux-Revealed-1st-edition.pdf
+
+security audit/pen testing steps:
+- monitor DNS changes
+- scan internet-facing networks everyday
+- scan internal vulnerability
+- configuration scans
+- active directory reporting
+- end user security test, meaning sitting with the user and see what he/she does
+- firewall logging anomaly detection
+- read reports from these tests
+- disable su
+- verify sudoers
+- analyze services that start on boot
+- review cron for all users
+- scan for world-writable files
+- scan for files owned by unknown users/groups
+- verify pam.d files are configured as desired
+- globally disable access to xml-rpc.php in apache config (403, helps prevent brute force and other quiet attacks)
+- go through a list of all TLS ciphers and make sure all suites are strong enough
+- prepare a usb stick with kali linux
+- use a standard security Framework such as NIST, ISO 27001, or SOC2 to get the right information
+
+other sources:
+- http://www.pentest-standard.org/index.php/Main_Page
+- https://csrc.nist.gov/
+- https://www.sans.org/security-resources/
+- australian signals directorate: https://asd.govcms.gov.au/cyber
+- "ISO/IEC 27000 series": ISO/IEC Information Security Management Systems standards
+- https://haveibeenpwned.com/
+- talk about rhel, fedora and centos: https://www.youtube.com/watch?v=HQsUdLPJW20&feature=youtu.be
+
+companies offering services:
+- berico technologies
+- palantir technologies

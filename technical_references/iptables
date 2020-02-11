@@ -1,0 +1,25 @@
+
+Ip tables:
+- Originating article: http://jensd.be/343/linux/forward-a-tcp-port-to-another-ip-or-port-using-nat-with-iptables
+- Commands:
+  - list all rules: iptables -L
+  - input, forward, output chains: iptables -L -n
+  - nat-related chains: iptables -t nat -L -n
+  - flushing:
+    - iptables -F
+    - iptables -t nat -F
+  - saving rule:
+    - iptables-save > /etc/iptables.rules (Ubuntu only)
+  - Quickly reroute without hassle:
+    - iptables -t nat -A PREROUTING -p tcp --dport <incoming port> -j DNAT --to-destination <dest ip>:<dest port>
+    - iptables -t nat -A POSTROUTING -p tcp --dport <dest port> -j SNAT -d <dest ip> --to-source <localhost ip>
+Also you might want to remove all known hosts because some terminal emulator will warn you if your dns configs have changed that someone's trying to dns spoof you. If you are using secure shell extension or anything related to chrome, go to the console (Ctrl Shift J) and execute this command: term_.command.removeAllKnownHosts();
+
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+
+tables:
+- nat
+- mangle
+- filter
+
+echo "1"> /proc/sys/net/ipv4/ip_forward

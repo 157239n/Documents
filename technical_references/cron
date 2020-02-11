@@ -1,0 +1,8 @@
+
+cron jobs:
+- crontab -e: edit crontab file
+- crontab select-editor
+
+run script when starting up:
+- edit cron: crontab -e
+- add: @reboot /path/to/script

@@ -1,92 +1,146 @@
+
+other related logs you might want to checkout:
+- cron
+- iptables
+- swap
+- bash
+- boot
+- curl
+- c/
+
 Apt:
 - apt-get install $package
 - apt-get remove $package
 - apt-get update: update cache
 - apt-get upgrade: upgrade everything
 - apt-get source --compile $package: build package from source
+- apt-get autoremove
+- apt-get clean
+- apt show {package}
 
-Environmental variables:
-export MYVAR=test
-echo $MYVAR
-env
+dpkg:
+- -L {package}: list of files included in the package
+- -s {package}: display all metadata
+
+man pages' sections (many commands with same name):
+- 1. commands that can be executed from the command line
+- 2. system calls (functions provided by the kernel)
+- 3. library functions (provided by system libraries)
+- 4. devices
+- 5. configuration files
+- 6. games
+- 7. sets of macros and standards
+- 8. system administration commands
+- 9. kernel routines
+
+environmental variables:
+- export MYVAR=test
+- echo $MYVAR
+- env
 
 suid: chmod 4750 file
-Ctrl+Z to pause, fg (foreground) to resume a program
 
 commands:
-- w: users
-- nm: list symbols from object file
-- grep --invert-match
-- head <file>: list the first 10 lines of a file
-- cut
-- find -iname something_to_find
-- size
-- locate: locate c header files
-- apt-get autoremove|clean
-- service apache2 status
-- ps -aux: process status
-- top
-- htop: better of top, displays processes' details
-- systemctl list-units --type=mount
-- systemctl enable <service>, start on boot
-- apropos
-- chsh: change shell, chsh -s /bin/zsh
-- open -a TextEdit ~/.zshrc (open file with specific program, why this style?)
-- wget "google.com/file.zip"
-- tasksel: task select, for quickly installing a bunch of things
-- fdisk -l: list all disks, possibly look for /dev/sda5
-- mount /dev/sda5 /mnt/drive
-- umount /dev/sda5
-- ifconfig (ipconfig in windows), iwconfig for wireless
-- arp -a
-- nmap: port scanner
-- dhclient: release and renew ip address
-- ip addr show
-- route: show routing table
-- free: free memory
-- df -ah: df (short for "disk free", checks for disk space), all file systems, human readable formatting
-- du -sh <dir>: size of directory
-- netstat: open ports, listening sockets
-- systat
-- ufw status: ufw is uncomplicated firewall
-- fg: foreground
-- tar -cvpzf (create or overwrite backup file, verbose, preserving permissions, tar ball to zip even more, f for creating a file name) backup.tar.gz --exlude=/mnt /var/www
-- tar -xvpzf (extract, others are the same) backup.tar.gz -C /recover --strip-component=1 (to not insert a folder inside another folder)
-- ln /data/file1 ~/file1 (hard linking shit together. Here, /data/file1 is the original file, and ~/file1 is the link)
-- ln -s source link (symbolic linking shit together)
-- hostname (short hostname)
-- hostname -f (fully qualified domain name)
-- usermod -aG docker <user>, adds user to the group "docker"
-- rfc: read rfcs, source: curl -sL https://raw.githubusercontent.com/bfontaine/rfc/v0.2.6/rfc
-- uname -romi, current kernel information
-- lsb_release -a
-- neofetch
-- set enforce 0, disable SE linux
-- sha256sum
-- dd if=kali-linux.iso of=/dev/sdb: burn a file (likely iso) to a device
-- mkfs.ext3
-- dmesg: system logs, or at least that's what I've read
-- journalctl
-  - -r: reverse order
-  - --vacuum-time=2d: delete logs but the most recent 2 days
-  - --vacuum-size=500M: same thing, but restrict logs space
-  - -u ssh.service
-- lspci, from pciutils
-- lsusb, from usbutils
-- lspcmcia, from pcmciautils
-- lsdev, procinfo
-others:
-- updatedb
-- locate: locate files. Run updatedb first
-
-permissions:
-- normal ones, 0 -> 7
-- suid
-- sgid
+- hardware
+  - fdisk -l: list all disks, possibly look for /dev/sda5
+  - mount /dev/sda5 /mnt/drive
+  - umount /dev/sda5
+  - top: stats about processes
+  - htop: top, but fancy
+  - ps -aux: process status
+  - free: show free memory
+  - df -ah: df (short for "disk free", checks for disk space), all file systems, human readable formatting
+  - lsb_release -a
+  - systat
+  - uname -romi, current kernel information
+  - neofetch, os information, fancy
+  - mkfs.ext3
+  - dd if=kali-linux.iso of=/dev/sdb: burn a file (likely iso) to a device
+  - lspci, from pciutils
+  - lsusb, from usbutils
+  - lspcmcia, from pcmciautils
+  - lsdev, procinfo
+  - du -sh <dir>: size of directory
+- text manipulation
+  - grep --invert-match
+  - head <file>: list the first 10 lines of a file
+  - find -iname something_to_find
+  - cut
+  - size
+- daemons:
+  - systemctl
+    - list-units --type=mount
+    - enable <service>, start on boot
+    - status: tree view
+  - service apache2 status
+- network:
+  - arp -a
+  - ifconfig (ipconfig in windows), iwconfig for wireless
+  - dhclient: release and renew ip address
+  - ip addr show
+  - route: show routing table
+  - netstat: open ports, listening sockets
+  - hostname (short hostname)
+  - hostname -f (fully qualified domain name)
+  - nmap: port scanner
+  - traceroute, package inetutils-traceroute
+  - ip, package iproute2
+- logging/manual:
+  - dmesg: system logs, or at least that's what I've read
+  - journalctl
+    - -r: reverse order
+    - --vacuum-time=2d: delete logs but the most recent 2 days
+    - --vacuum-size=500M: same thing, but restrict logs space
+    - -u ssh.service
+  - apropos {string to search for}, shorter man
+  - rfc: read rfcs, source: curl -sL https://raw.githubusercontent.com/bfontaine/rfc/v0.2.6/rfc
+  - man [section] {command}
+- housekeeping
+  - fg: foreground, Ctrl+Z to pause
+  - tar -cvpzf (create or overwrite backup file, verbose, preserving permissions, tar ball to zip even more, f for creating a file name) backup.tar.gz --exlude=/mnt /var/www
+  - tar -xvpzf (extract, others are the same) backup.tar.gz -C /recover --strip-component=1 (to not insert a folder inside another folder)
+  - ln /data/file1 ~/file1 (hard linking shit together. Here, /data/file1 is the original file, and ~/file1 is the link)
+  - ln -s source link (symbolic linking shit together)
+  - open -a TextEdit ~/.zshrc (open file with specific program, why this style?)
+  - getent {system database} {possible entry}, searches system database for possible entries. A few dbs:
+    - passwd
+    - shadow
+- programming-specific:
+  - locate: locate c header files. Run updatedb first
+  - sha256sum
+  - nm: list symbols from object file
+  - wget "google.com/file.zip"
+- users:
+  - id
+  - adduser <user>
+  - deluser <user>, there's userdel too, but that's different and at a lower level
+  - usermod -aG <group> <username>, add user to group
+  - finger
+  - w: users
+  - passwd: change current user's password
+    - -e user: force password expiration, user required to create a new password next time they log in
+    - -l user: lock out a user, meaning they can't login
+    - -u user: unlock a user
+  - chfn: change full name, modify GECOS, or "general information" fields
+  - chsh -s /bin/zsh: change log in shell
+  - chage: change age
+  - addgroup
+  - delgroup
+  - groupmod
+  - gpasswdgroup: change password for group
+  - gpasswd -r group: deletes group password
+  - newgrp {new group}: start a new shell with same user and new group
+- others:
+  - tasksel: task select, for quickly installing a bunch of things
+  - ufw status: uncomplicated firewall
+  - set enforce 0, disable SE linux
 
 popular distros:
 - damn small linux
 - trustix linux
+- debian-based, like ubuntu, mint, kali
+- arch-based, like manjaro
+- centos-based, like rhel, fedora. Centos is free version of rhel, fedora is cutting edge version of rhel
 
 file types: open with ls -l<file_type>
 - -: regular file
@@ -97,86 +151,13 @@ file types: open with ls -l<file_type>
 - p: named pipe
 - l: symbolic link
 
-users:
-- adduser <user>
-- userdel <user>
-- usermod -aG sudo <username>, add user to sudo group
-- finger
-
-services: start using /etc/init.d/<service name>. It's basically just a daemon lol
-- networking
-
-cron jobs:
-- crontab -e: edit crontab file
-- crontab select-editor
-
-useful aliases
-alias tarx='tar -xvpzf'
-alias tarz='tar -cvpzf'
-alias version='lsb_release -a'
-
-configure files:
-./configure --prefix=/usr/local/pcre
-
-inetd is the service that kinda listens to all of the sockets and relay that to other layers. Worked well before the internet happened
-
+"inetd is the service that kinda listens to all of the sockets and relay that to other layers. Worked well before the internet happened"
 "So this leads us to what we know these days as service. It's kinda a super set of a daemon. They often encompasses multiple daemons or a whole bunch of clones of a daemon or various things like that. Old school init can start these things but they don't really get involved with managing them after that."
-
 "... housekeeping functions like ... mounting filesystems, and starting daemons"
-
-for SFTP stuff, use VSFTPd
-
-Raspberry Pi:
-- sudo apt-get install libreoffice-style-tango libreoffice-gtk libreoffice-gtk3, for nive libreoffice UI
-
-Swapfiles, to increase RAM:
-- fallocate -l 1G /swap. If fail sudo dd if=/dev/zero of=/swapfile bs=1024 count=1048576
-- chmod 600 /swap
-- mkswap /swap
-- swapon /swap
-  - Making it permanent (so far I don't have to use this, may be because the VPS never gets shutdown): add /swapfile swap swap defaults 0 0 to /etc/fstab
-- Status: swapon --show
-
-Remove swap:
-- swapoff -v /swapfile
-- rm /swapfile
-
-Ip tables:
-- Originating article: http://jensd.be/343/linux/forward-a-tcp-port-to-another-ip-or-port-using-nat-with-iptables
-- Commands:
-  - list all rules: iptables -L
-  - input, forward, output chains: iptables -L -n
-  - nat-related chains: iptables -t nat -L -n
-  - flushing:
-    - iptables -F
-    - iptables -t nat -F
-  - saving rule:
-    - iptables-save > /etc/iptables.rules (Ubuntu only)
-  - Quickly reroute without hassle:
-    - iptables -t nat -A PREROUTING -p tcp --dport <incoming port> -j DNAT --to-destination <dest ip>:<dest port>
-    - iptables -t nat -A POSTROUTING -p tcp --dport <dest port> -j SNAT -d <dest ip> --to-source <localhost ip>
-Also you might want to remove all known hosts because some terminal emulator will warn you if your dns configs have changed that someone's trying to dns spoof you. If you are using secure shell extension or anything related to chrome, go to the console (Ctrl Shift J) and execute this command: term_.command.removeAllKnownHosts();
-
-run script when starting up:
-- edit cron: crontab -e
-- add: @reboot /path/to/script
-
-iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
-
-tables:
-- nat
-- mangle
-- filter
-
-echo "1"> /proc/sys/net/ipv4/ip_forward
 
 non interactive pre seeding (debian-based only): https://serverfault.com/questions/143968/automate-the-installation-of-postfix-on-ubuntu
 - debconf-set-selections <<< "postfix postfix/mailname string your.hostname.com"
 - debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
-
-packages:
-- traceroute: inetutils-traceroute
-- ip: iproute2
 
 Editing runlevel startup daemons:
 - disable daemon: update-rc.d apache2 disable
@@ -185,12 +166,15 @@ Editing runlevel startup daemons:
 binding ssh to a specific interface:
 ListenAddress 0.0.0.0 in /etc/ssh/sshd_config
 
-virtualization daemons:
-- libvirtd
-- spice-vdagentd
-- ovmf
-
-linux hosts file, at /etc/hosts, service nscd restart
+daemons:
+- virtualization
+  - libvirtd
+  - spice-vdagentd
+  - ovmf
+- network
+  - systemd-networkd
+  - systemd-resolved
+  - networking
 
 filesystem:
 etc
@@ -198,7 +182,14 @@ etc
   hosts.deny
   hosts.allow
   environment, environment for all processes, be injected into all user sessions thanks to Pluggable Authentication Module (PAM)
+  network
+    interfaces, interfaces at boot time
+  shells, valid login shells
 dev
   stdin
   urandom
   null
+usr
+  share
+    doc/{package}/README.Debian: docs
+    bin: place to put global, custom executables

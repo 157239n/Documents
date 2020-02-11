@@ -160,19 +160,15 @@ what pci dss compliant means for small businesses: https://www.shopkeep.com/blog
 
 kay, so the reconstruction tasks is gonna be brutal, because I will have to read the code, understand it, and write about it as if I know everything. So, finish the kali book in its entirety today, then work on deconstructing worldpay
 
-man, I really want to cook that piece of meat, so badly, in fact
-
 buy a usb on the way home
 
 yeah I sort of want to have a NFS integrated to my dev environment, so find ways to exploit that
 
-okay shit, some chinese dudes are trying to gain access to my ssh stuff at 112.85.42.94. Kay, secure my stuff immediately, research the security side as well, and install fail2ban
+okay shit, some dudes are trying to gain access to my ssh stuff at 112.85.42.94. Kay, secure my stuff immediately, research the security side as well, and install fail2ban. Located at shanghai & nanjing to be exact
 
 okay another shit, let's not use password authentication altogether
 
 okay shit, so now I have to learn about iptables again? Like lmao, I thought I can run away from network-specific stuff, but apparently I can't. So deal with this shit when I get home, and really harden my server
-
-shanghai & nanjing
 
 devices:
 - pci
@@ -180,3 +176,25 @@ devices:
 - pcmcia
 
 bg: send process to background???
+
+american: 45kg CO2/day
+
+rsync
+
+LVM: logical volume manager
+
+netcat? retrieve and export data over the network. Why can't I just use sftp?
+
+each service is represented by a service unit described by a service file shipped in
+- /lib/systemd/system
+- /run/systemd/system
+- /etc/systemd/system
+overwrites each other, with structure {service name}.service.d/*.conf, but what I saw is a whole mess of other stuff
+
+if i block every port using a firewall, does that mean I can't browse the internet? Because that uses a random ephemeral port
+
+seems like only difference between linux and windows programs are that the system calls are different. Is this the case?
+
+prepare ideas for that lib guy
+
+deal with virus's old targets

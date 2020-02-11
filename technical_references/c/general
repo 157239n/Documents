@@ -1,0 +1,3 @@
+
+configure files:
+./configure --prefix=/usr/local/pcre

@@ -43,3 +43,172 @@ common roles:
 - advanced penetration testing
 - forensic analysis
 - security auditing
+
+logcheck, levels of detail:
+- paranoid
+- server
+- workstation
+
+security measures:
+- install on fully encrypted file system
+- block ips when fail a certain time (fail2ban)
+- firewalls
+- https
+- nuke password
+
+3 primary attributes of the system:
+- confidentiality: can non-privileged dudes access privilege data?
+- integrity: can data be modified in some way that's not intended?
+- availability: are the data and system accessible when and how it's intended to be?
+
+risk: what are you trying to prevent from happening
+threat: who would do it to you
+vulnerability: what allows them to do it
+controls can be put in place to address the threat or vulnerability, with the goal of mitigating the risk
+
+metapackages:
+- kali-linux-wireless
+- kali-linux-web
+- kali-linux-forensic
+
+types of assessments:
+- vulnerability assessment
+- compliance test
+- traditional penetration test
+- application assessment
+
+vulnerabilities:
+- file inclusion: include unexpected files
+- sql injection
+- buffer overflow
+- race conditions
+
+anti-exploit technologies:
+- Data Execution Prevention (DEP)
+- Address Space Layout Randomization (ASLR)
+
+-----------
+
+vulnerability assessment
+
+data points:
+- operating system version
+- patch level
+- processor architecture, many applications are available across architectures:
+	- intel x86
+	- intel x64
+	- multiple versions of RAM, SPARC
+
+dealing with signature matches:
+- true positives
+- false positive
+- true negative
+- false negative
+
+likelihood of occurence:
+- high: advesary is highly skilled and motivated and measures put in place are insuffient
+- medium: adverary is motivated and skilled, but measures may impede their success
+- low: adversary is unskilled or lacks motivation, measures are partially or completely effective
+
+impact:
+- high: significant financial losses, serious harm to mission/reputation, serious injury/loss of life
+- medium: financial losses, harm to mission/reputation, human injury
+- low: some degree of financial loss or impact to mission and reputation
+
+overall risk:
+- high: strong requirement for additional measures to be implemented. May continue working, but must be redesigned and implemented asap
+- medium: requirement for additional measures. Plan to implement must be done in a timely manner
+- low: can implement measures, but can opt to accept the risk
+
+tools for doing this:
+- Information Gathering
+- Vulnerability Analysis
+- Web Application Analysis
+
+-----------
+
+compliance penetration test, usually begins with a vulnerability assessment
+
+govs/industry-mandated requirements based on a compliance framework the entire org operates under
+sample compliance frameworks:
+- Payment Card Industry Data Security Standard (PCI DSS): dictated by payment card companies that retailers processing card-based payments must comply with. "PCI compliance auditing"
+- Defense Information Systems Agency Security Technical Implementation Guides (DISA STIG)
+- Federal Risk and Authorization Management Program (FedRAMP)
+- Federal Information Security Management Act (FISMA)
+
+-----------
+
+traditional penetration test
+
+starts with a goal, like
+- "simulate what whould happen if an internal user is compromised"
+- "identify what would happen if the organization came under focused attack by an external malicious party"
+
+basically figure out what's the worst case scenario
+
+exploiting vulnerabilities -> exploring level of access -> leverage additional attacks
+
+multiple phases:
+- information gathering, should appear just as a normal user
+- vulnerability discovery, or "active information gathering". Kali's categories:
+	- Vulnerability Analysis
+	- Web Application Analysis
+	- Database Assessment
+	- Reverse Engineering
+- exploitation. Kali's categories:
+	- Web Application Analysis
+	- Database Assessment
+	- Password Attacks
+	- Exploitation Tools
+- pivoting and exfiltration, escalating privileges, getting into other systems, collect sensitive information. Kali's categories:
+	- Password Attacks
+	- Exploitation Tools
+	- Sniffing and Spoofing
+	- Post Exploitation
+- reporting, document discovered stuff. Kali's categories:
+	- Reporting Tools
+
+-----------
+
+application assessment
+
+including:
+- web applications
+- compiled desktop applications
+- mobile applications
+
+types:
+- black box assessment: nothing more than a standard user
+- white box assessment: ofter: full source code access, admin access. Trade-off is that this is in no way a simulation of actual malicious activity
+
+-----------
+
+assessment formalization
+
+needs to define rules of engagement (aka boundaries):
+- what systems i'm allowed to mess with?
+- what time of day, over what attack window is assessment allowed to occur
+- if potential vulnerability is discovered, am i allowed to exploit it? If not, how to?
+- if a significant issue is discovered, how should it be handled? Informed at the end, or right away
+- who to talk to when there's an emergency
+- who knows about the activity? How will it be communicated? Some cases orgs will want to test their defense capabilities
+- expectations at the end of the assessment?
+
+-----------
+
+types of vulnerabilities?
+
+denial of service
+memory corruption
+- stack buffer overflow
+- heap corruption
+- integer overflow
+- format string
+web vulnerabilities
+- sql injection
+- xss
+password attacks
+- online: passwords are attempted
+- offline: tables of hased passwords get leaked, then try to turn the hashs to clear text
+client-side attacks
+- social engineering

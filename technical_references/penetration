@@ -33,6 +33,10 @@ tools:
 - tiger: old school pen testing tool
   - demonstration: https://www.tecmint.com/tiger-linux-security-audit-intrusion-detection-tool/
 - Tripwire: compare changes at a later date
+- aide: advanced intrusion detection environment, checks file integrity, stored at /var/lib/aide/aide.db
+- rkhunter
+- chkrootkit
+- checksecurity
 
 interesting phrases:
 - "security automation & orchestration"

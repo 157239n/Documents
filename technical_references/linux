@@ -21,6 +21,7 @@ Apt:
 dpkg:
 - -L {package}: list of files included in the package
 - -s {package}: display all metadata
+- --verify: auditing packages
 
 man pages' sections (many commands with same name):
 - 1. commands that can be executed from the command line
@@ -165,6 +166,12 @@ Editing runlevel startup daemons:
 
 binding ssh to a specific interface:
 ListenAddress 0.0.0.0 in /etc/ssh/sshd_config
+
+each service is represented by a service unit described by a service file shipped in
+- /lib/systemd/system
+- /run/systemd/system
+- /etc/systemd/system
+overwrites each other, with structure {service name}.service.d/*.conf, but what I saw is a whole mess of other stuff
 
 daemons:
 - virtualization

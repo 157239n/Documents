@@ -96,8 +96,6 @@ also see over how public talking works, what venues I can penetrate into
 
 "pmi-pmbok"
 
-"stripe has php library to accept credit cards without needing a merchant account". So like, what I want to do with all these testing is to make the money transferring process as testable and as throwaway as possible. I think that through experimenting with this, I can really get to know the rules of the game. Also some said I can just sign up for a paypal account, then include a button that will redirect users to paypal's site, then it will do the rest and I get the money. This is a bit dangerous tho. Like what if, the returning request, like the callback mechanism of oauth doesn't work? What's there to sync the data between the paypal account and my internal db? Boy, then I'd really have to make everything as highly available as possible (well, look into the ability to sort of confirm to paypal at another time so that this issue can be mitigated), or else I don't know how to handle the legal reprecussions.
-
 Also, how does the legal side of things integrate with like, credit card companies? Like, following the principle that money can be anything a group of ppl deems valuable, and if you can make everyone trust you, then the fictional money you invented really have value. So like, venmo sort of invent this new currency, everyone jumps on the bandwagon, then it really have value. Then does the gov just let this happen? Or they jump and regulate a player when it seems to be creating an idea resembling money?
 
 ask lawyers that I know of to answer some of the questions above. Candidates would be Hieu Man, that small girl studying law (man I feel guilty for not remembering her name), mama (may be? but seems like she doesn't know about this stuff), ynes (yeah, i like her, so duh), then forums
@@ -124,13 +122,13 @@ oh and, go through mail one more time. I know it's like hell, with all those sec
 
 looks interesting: https://www.linuxlinks.com/physics/
 
-man, really, really buy tesla stocks this time. Because I feel like this is the time I make an impact. All the underlying philosophy is solved, and right now it's time to put my money where my mouth is and make this future a reality
+man, really, really buy tesla stocks this time. Because I feel like this is the time I make an impact. All the underlying philosophy is solved, and right now it's time to put my money where my mouth is and make this future a reality. Also it forces me to dabble inside the legal stuff so I can have more confidence in grabbing control to myself
 
 also I sort of thought about the value normal work will bring. Yes, it will most definitely bring me new connections, and I can really talk to some of them who is interested in the idea and we can do things together. However, finding such people to collaborate upon is a tad bit difficult, because people simply aren't interested. Their value will most likely be their connections, and hardware-specific and possibly law and social-specific vendors who I can leverage upon. <add more>
 
 try to reverse engineer my server using kali, but then again, may be not, because it's so fucking wide
 
-check cdn status for 157239n, only 1/2 sites for now
+check cdn status for 157239n, only 1/2 sites for now. Actually try out fastly later in the day
 
 my rights as an f1 student?
 
@@ -146,11 +144,7 @@ financial integration stuff:
 - general:
 	- https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
 
-join group: https://www.facebook.com/groups/KickstarterBestPractices/
-
 so, a document on this thursday, which will be worldpay, then another document next friday. May be thursday, because like, so that I can have a day off
-
-what pci dss compliant means for small businesses: https://www.shopkeep.com/blog/what-is-pci-compliance-small-business
 
 harden server using iptables
 if i block every port using a firewall, does that mean I can't browse the internet? Because that uses a random ephemeral port
@@ -161,8 +155,6 @@ seems like only difference between linux and windows programs are that the syste
 
 prepare ideas for that lib guy
 
-check if the security thing really checks once per day
-
 get chi to buy tesla stocks
 
 okay copy the images over again, but this time eject it properly and try to boot them up again
@@ -172,3 +164,42 @@ turbotax
 irs.gov
 so, go through all the online stuff, then go to isss for detailed info, before sending docs over to td
 https://redbus2us.com/f1-visa-students-stock-trading-allowed-invest-buy-sell-and-taxes/
+
+right, so magento docs first, to get down on the setup quickly, and make sure html stuff can be ported quickly
+
+I sort of feel like the magento doc can use some more, because I haven't touched upon these ideas:
+- menu -> controller -> layout -> model & templates & ui components -> resource model & fetching data
+- route -> controller -> ...
+- how referenceContainers work
+- how blocks work, with widgets too
+- how dependency injection works
+- also may be make a list of things to take note because it's important? And before that, give out a general flow of everything
+
+but now, let's move on to worldpay, because I have what, 4 hours left to document it, and now I have no frame of context at all, so that's worrysome. So I guess I can focus on this when I got home, but like, that's really undesirable, because I have the legal thing to deal with.
+
+right, so worldpay, steps to deconstruct this?
+- replicate folder structure, annotate the hell out of it, then delete the redundant parts. This is so that I can have an understanding of it as a whole better
+- read over how payment gateways work
+- read over the worldpay module
+- read over the worldpay website itself
+
+other links included:
+- https://beta.developer.worldpay.com/tools
+- https://beta.developer.worldpay.com/docs
+- https://beta.developer.worldpay.com/references
+- https://beta.developer.worldpay.com/
+- https://www.worldpay.com/en-us/developer
+- https://beta.developer.worldpay.com/discover/online-payments
+- https://beta.developer.worldpay.com/docs/wpg/directintegration/paymentrequests
+- http://support.worldpay.com/support/kb/bg/pdf/bgxmldirect.pdf
+- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/service-contracts/service-to-web-service.html
+
+right, I also have paypal's api to document. Don't know if I can do this or not
+
+"basic knowledge of the worldpay payment services"
+
+clean up ssh keys
+
+MCC 6012 merchants, applicable to UK only, but sounds complex. Turns out it's a mandate that tells merchants to store more info. Damnit the 5 eyes
+
+yeah, let's use another day, I can do other stuff as well

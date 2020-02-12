@@ -18,6 +18,7 @@ tools:
 - nmap: figure out open ports
 - sqlmap: automatically finds sql injection possibilities and exploit them on the spot
 - wireshark: analyzes packets
+- netcat: like wireshark, but simple and free. And apparently, it has a bunch of other features too. https://www.varonis.com/blog/netcat-commands/
 - owasp zap: web application security scanner
 - burp/burp suite: web application security scanner
 - maltego: analyzes social networks and computer networks, taking data from dns records, whois records, search engine, social networks, various apis and meta data

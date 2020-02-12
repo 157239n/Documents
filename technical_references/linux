@@ -111,6 +111,8 @@ commands:
   - sha256sum
   - nm: list symbols from object file
   - wget "google.com/file.zip"
+  - bg %1: ctrl+z to stop a running process, then run "bg %1" to resume that process in the background
+  - rsync: syncing files
 - users:
   - id
   - adduser <user>

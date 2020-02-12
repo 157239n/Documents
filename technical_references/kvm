@@ -1,0 +1,9 @@
+
+kvm
+qemu
+spice server
+qxl
+
+faster mouse:
+- https://bugs.freedesktop.org/show_bug.cgi?id=91219#c26
+- https://depot.flexvdi.com/guest-tools/

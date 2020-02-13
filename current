@@ -92,8 +92,6 @@ policy hub too, 2 documents now
 
 figure out how elon got to stay in the US?
 
-also see over how public talking works, what venues I can penetrate into
-
 "pmi-pmbok"
 
 Also, how does the legal side of things integrate with like, credit card companies? Like, following the principle that money can be anything a group of ppl deems valuable, and if you can make everyone trust you, then the fictional money you invented really have value. So like, venmo sort of invent this new currency, everyone jumps on the bandwagon, then it really have value. Then does the gov just let this happen? Or they jump and regulate a player when it seems to be creating an idea resembling money?
@@ -112,7 +110,7 @@ about that thought experiment of what if venmo decides to treat 1 venmo dollar a
 
 try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset. At https://www.fast.ai/2018/09/26/ml-launch/, https://course.fast.ai/index.html
 
-and just have a rough understanding of what can I do as an F1 student? Can I just spring up a store? Can I register for a merchant bank account? If not, can I register for venmo's merchant bank account?
+and just have a rough understanding of what can I do as an F1 student? Can I just spring up a store? Can I register for a merchant bank account? If not, can I register for venmo's merchant bank account? Same question, phrased differently: my rights as an f1 student?
 
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
 
@@ -126,12 +124,6 @@ man, really, really buy tesla stocks this time. Because I feel like this is the 
 
 also I sort of thought about the value normal work will bring. Yes, it will most definitely bring me new connections, and I can really talk to some of them who is interested in the idea and we can do things together. However, finding such people to collaborate upon is a tad bit difficult, because people simply aren't interested. Their value will most likely be their connections, and hardware-specific and possibly law and social-specific vendors who I can leverage upon. <add more>
 
-try to reverse engineer my server using kali, but then again, may be not, because it's so fucking wide
-
-check cdn status for 157239n, only 1/2 sites for now. Actually try out fastly later in the day
-
-my rights as an f1 student?
-
 financial integration stuff:
 - companies:
 	- square
@@ -144,8 +136,6 @@ financial integration stuff:
 - general:
 	- https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
 
-so, a document on this thursday, which will be worldpay, then another document next friday. May be thursday, because like, so that I can have a day off
-
 harden server using iptables
 if i block every port using a firewall, does that mean I can't browse the internet? Because that uses a random ephemeral port
 
@@ -156,16 +146,12 @@ seems like only difference between linux and windows programs are that the syste
 prepare ideas for that lib guy
 
 get chi to buy tesla stocks
+and may be intercept chi's again, to figure out how she does her official stuff
 
 okay copy the images over again, but this time eject it properly and try to boot them up again
 
-fdic-insured deposit account
-turbotax
-irs.gov
 so, go through all the online stuff, then go to isss for detailed info, before sending docs over to td
 https://redbus2us.com/f1-visa-students-stock-trading-allowed-invest-buy-sell-and-taxes/
-
-right, so magento docs first, to get down on the setup quickly, and make sure html stuff can be ported quickly
 
 I sort of feel like the magento doc can use some more, because I haven't touched upon these ideas:
 - menu -> controller -> layout -> model & templates & ui components -> resource model & fetching data
@@ -174,8 +160,6 @@ I sort of feel like the magento doc can use some more, because I haven't touched
 - how blocks work, with widgets too
 - how dependency injection works
 - also may be make a list of things to take note because it's important? And before that, give out a general flow of everything
-
-but now, let's move on to worldpay, because I have what, 4 hours left to document it, and now I have no frame of context at all, so that's worrysome. So I guess I can focus on this when I got home, but like, that's really undesirable, because I have the legal thing to deal with.
 
 right, so worldpay, steps to deconstruct this?
 - replicate folder structure, annotate the hell out of it, then delete the redundant parts. This is so that I can have an understanding of it as a whole better
@@ -198,8 +182,14 @@ right, I also have paypal's api to document. Don't know if I can do this or not
 
 "basic knowledge of the worldpay payment services"
 
-clean up ssh keys
+MCC 6012 merchants, applicable to UK only, but sounds complex. Turns out it's a mandate that tells merchants to store more info. Damnit the 5 eyes. Dig into this a little bit more
 
-MCC 6012 merchants, applicable to UK only, but sounds complex. Turns out it's a mandate that tells merchants to store more info. Damnit the 5 eyes
+figure out how can I use graphics card on the virtual machine
 
-yeah, let's use another day, I can do other stuff as well
+may be read through tesla quarterly reports?
+
+check over my health insurance
+
+see how coupons work in heirloom
+
+"stores and rewards cards", and "rewards credit card", 1-5% back in cash/points. Dig more into this. Is this just a normal credit card, or is it a specific card for a specific store

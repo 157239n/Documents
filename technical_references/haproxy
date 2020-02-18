@@ -81,5 +81,8 @@ Resolver options:
 - hold nx 1s
 - hold other 1s
 
+Some keywords to look for when sudden bugs happen (some time back I went crazy over these, and concluded that it's too much a hassle and there's a better way):
+- option forwardfor header X-Real-IP
+- option forwardfor
 
 

@@ -3,8 +3,8 @@ Killer commands (commands that I use sooooo frequently):
 - Stops container from exiting: tail -f /dev/null
 - Usual daemon ip address (run ip a to make sure): 172.17.0.1/16
 - Non-interactive: ENV DEBIAN_FRONTEND noninteractive
-- Dockerfile flags:
-  - 
+- Useful inspections:
+  - inspect ip address of containers: docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' {container name/hash}
 
 Real world information
 - Open Container Initiative - standards body for container technology

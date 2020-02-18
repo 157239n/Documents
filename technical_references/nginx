@@ -22,6 +22,14 @@ another ProxyPreserveHost, but this time the url is preserved too:
 others:
 - client_max_body_size 100M;
 
+Some keywords to look for when sudden bugs happen (some time back I went crazy over these, and concluded that it's too much a hassle and there's a better way):
+- proxy_set_header X-Real-IP $remote_addr;
+- proxy_set_header X-Forwarded-For $remote_addr;
+- proxy_set_header Forwarded $proxy_add_forwarded; this doesn't appear to work
+- proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+- real_ip_header proxy_protocol; # proxy_protocol needed
+- real_ip_recursive on;
+
 These are from the nginx cookbook: advanced recipes for high performance load balancing
 
 installing:

@@ -1,0 +1,94 @@
+
+this covers logging in linux
+
+etc
+	syslog.conf
+	logrotate.d
+		apt
+		apache2
+		certbot
+		rkhunter
+	cron.daily
+var/log
+	syslog (debian), messages (rhel)
+	auth.log (debian), secure (rhel)
+	kern.log
+	cron
+	boot.log
+	maillog
+	mail.log
+	kern
+	dmesg: device driver messages
+	faillog: failed logins
+	daemon.log
+	btmp: all failed login attempts
+	utmp: current login state
+	wtmp: record of each login/logout
+	lastlog: every user's last login
+
+logging categories:
+- application logs
+- event logs
+- service logs
+- system logs
+
+levels:
+- emergency: emergency condition, like imminent system crash, usually broadcast to all users
+- alert: should be corrected immediately, like a corrupted system database
+- crit: critical condition, like hardware error
+- err: ordinary error
+- warning
+- notice: not an error, but should be handled in a special way
+- info
+- debug
+
+syslog is a standard for creating and transmitting logs
+- syslog service. Listens for events at /dev/log and applications can write into that. Implementations:
+	- rsyslogd
+	- syslog-ng
+- syslog protocol (RFC 5424), specify how logs are to be transported over a network. Also data format. Ports:
+	- 514: plaintext
+	- 6514: encrypted
+- syslog message, any log formatted in the syslog message format. Consists of standardized header and message containing the log's contents
+
+syslog format:
+Jun 4 22:14:15 server1 sshd[41458] : Failed password for root from 10.0.2.2 port 22 ssh2
+<34>1 2019-06-05T22:14:15.003Z server1 sshd - - pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.2
+
+elements:
+- timestamp
+- hostname
+- app-name: "sshd:auth"
+- priority: "<34>", 2 parts to it. First part is facility, second is severity. 2 formats: 8*facility+severity or facility.severity
+- facility: type of process that created the event. 0 (kernel messages) -> 23 (local application)
+- severity: 0 (emergency) -> 7 (debug)
+
+https://www.loggly.com/ultimate-guide/category/systemd/
+
+commands:
+- logger:
+	- message: writes into /var/log/syslog. Can have the `command` thingy
+	- -f file: reads what's in the file and logs it
+	- --size 10: limits every line to 10 characters. Still logs the full input tho
+- newsyslog
+- logrotate, should be called by a cron daemon
+- systemctl
+	- list-unit-files --type service
+	- list-units --type service --state=running
+	- list-dependencies <service unit file>
+	- --failed
+- systemd-analyze: time taken by the boot process
+	- blame: blame on what service takes the longest to boot (currently it's docker of over 40 seconds)
+- journalctl
+	- --disk-usage
+	- --vacuum-size=200M: limit everything to 200M
+	- --verify: if there are any coruptions
+
+journalctl config params:
+- compress
+- systemkeepfree
+- runtimekeepfree
+- systemmaxfilesize
+- runtimemaxfilesize
+- maxretentionsec
+- maxfilesec

@@ -181,3 +181,66 @@ how stuff works in life in general: https://www.artofmanliness.com/tag/heading-o
 practice moonwalk
 
 interesting article: https://serverfault.com/questions/835660/cdn-how-is-it-possible-that-my-dns-delivers-a-different-ip-depending-on-the-vis
+
+https://phallophilereviews.com/njoy-pure-wand-technique-tips-for-g-spot-and-prostate-pleasure/?fbclid=IwAR04FIzbC3gw8jkdqhQitmxmJCqOsx9JpWyat9iW00_Cds3596OhauTHN4k
+
+figure out how can I use graphics card on the virtual machine
+
+seems like only difference between linux and windows programs are that the system calls are different. Is this the case?
+
+- https://www.loggly.com/ultimate-guide/linux-logging-with-systemd/
+- https://www.digitalocean.com/community/tutorials/systemd-essentials-working-with-services-units-and-the-journal
+
+okay copy the images over again, but this time eject it properly and try to boot them up again
+
+harden server using iptables
+if i block every port using a firewall, does that mean I can't browse the internet? Because that uses a random ephemeral port
+
+compiled vs interpreted when doing web?
+https://www.appdynamics.com/blog/engineering/comparing-php-7-vs-hhvm/
+
+oh and, go through mail one more time. I know it's like hell, with all those security mechanisms, but this time, set up a dead simple one, using a mail client that doesn't care about security, and increase security over time. The goal is to be able to integrate all of these functionalities, distill them into images and churn out products (aka commerce sites/sites) in the matter of minutes
+
+https://unix.stackexchange.com/questions/47208/what-is-the-difference-between-kernel-drivers-and-kernel-modules
+https://medium.com/linux-plus-plus/gnome-3-a-journey-like-no-other-524c140240a9
+
+detergent and dish cleaner
+serious article to go through: https://www.theguardian.com/world/2020/feb/13/antarctic-temperature-rises-above-20c-first-time-record
+
+- may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier. https://github.com/tesseract-shadow/tesseract-ocr-re, and post on improving input image quality: https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
+- try out the organic stuff at autodesk, "Autodesk Inventor"
+
+get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
+
+See nasa's data on climate shit. They have satellites and shit
+
+Look into singularity uni again, to see whether it's worth it and whether I should apply
+
+- synthetic aperture radar
+- do space probes use linux
+- trident neptune mission animation
+- how radiators in space works
+- europa clipper
+- cryovocanism
+- enceladus
+- Triton (moon)
+- Titan (moon)
+- Europa (moon)
+- Ganymede (moon)
+- Callisto (moon)
+- io jupiter moon
+- dragonfly nasa
+- osiris rex
+
+add option to not display the nodes/description for ludvik
+
+see over chi's new lab reports and understand the chemistry she's currently involved in.
+
+right, so I have to migrate luan's copies
+
+https://medium.com/vidme/goodbye-for-now-120b40becafa
+
+elon tour spacex: https://www.youtube.com/watch?v=TQ6tZtGrShg
+pointer powers: https://www.youtube.com/watch?v=t5NszbIerYc
+
+try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset. At https://www.fast.ai/2018/09/26/ml-launch/, https://course.fast.ai/index.html

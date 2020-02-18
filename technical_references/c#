@@ -1,0 +1,92 @@
+
+using System;
+namespace HelloWorld {
+	class Program {
+		private string name; // field
+
+		public string Name { // property
+			get { return name; }
+			set { name = value; }
+		}
+
+		public string Age { // property
+			get;set;
+		}
+
+		public Program() {}
+
+		static void Main(string[] args) {
+			string userName = Console.ReadLine();
+			Console.WriteLine("Hello, world!");
+			Console.Write(userName.Length);
+			Program program = new Program();
+			program.Name = "abc"
+		}
+	}
+
+	sealed class Screenshot : Program {
+	}
+
+	class MonitorScreen : Screenshot { // will throw an error because Screenshot is sealed
+	}
+
+	abstract class Animal {
+		public abstract void abc() {}
+	}
+
+	interface Kingdom {
+		void run();
+	}
+
+	class Abc : IInterface1, IInterface2 {}
+
+	enum Level { // can be placed in a class
+		Low,
+		Medium,
+		High
+	}
+}
+
+variable types:
+- int
+- double
+- char
+- string
+- bool
+
+const type variable = 15;
+double abc = 45.6D;
+
+Concert.
+- ToBoolean
+- ToDouble
+- ToString
+- ToInt32
+- ToInt64
+
+Math.Max(5, 10), Min, Sqrt, Abs, Round
+
+string[] cars = {"Volvo", "Tesla"};
+
+access modifiers. No package huh:
+- public
+- private
+- protected
+- internal: accessible within its own assembly, but not from another assembly
+
+using System.IO (https://docs.microsoft.com/en-us/dotnet/api/system.io.file?view=netframework-4.8); there are other stuff like buffers too, but let's not get into that
+File.
+- AppendText()
+- Copy()
+- Create()
+- Delete()
+- Exists()
+- ReadAllText()
+- Replace()
+- WriteAllText()
+
+try {
+} catch (Exception e) {
+	Console.WriteLine(e.Message);
+} finally {
+}

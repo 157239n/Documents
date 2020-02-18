@@ -1,3 +1,14 @@
+
+interesting modules:
+- remoteip
+- mpm_event
+- deflate
+- rewrite
+- status
+
+interesting directives:
+- RemoteIPHeader X-Forwarded-For
+
 htpasswd /etc/apache2/passwds jdoe # -c to create a new file
 htdigest passwordfile realm user
 

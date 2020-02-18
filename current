@@ -5,7 +5,7 @@ So, plan to deal with this whole problem:
 - Switch major to mechanical engineering, and get into a machine/hardware shop. Ask for contacts for students that are actually building hardware products for customers, from scratch. I remember Khue's friend used to do that.
 - Buy Tesla stocks once I get the SSN, check out docs for robinhood
 
-try brilliant
+try brilliant and skillshare
 
 Science funding:
 - https://en.wikipedia.org/wiki/Funding_of_science
@@ -26,7 +26,7 @@ question to ask chi:
 - how does employment in that field works
 - how the research is financed, what's the whole stuff with "defending your dissertation" looks like?
 
-Additional heating over last decade: 8*10^21 Joules per year
+Additional heating over last decade: 8*10^21 Joules per year, 3M exajoules/year, plants capture 3k exajoules/yr, human activities 500 exajoules/yr
 467kWh - 1.2tr
 for the long future, again, dyson swarm and solar panels on orbit
 
@@ -41,8 +41,6 @@ doug ellison, amature guy, eventually works in jpl, uses data from nasa, the fre
 
 also interesting stuff/data here: https://oceanservice.noaa.gov/welcome.html and here: https://coast.noaa.gov/digitalcoast/. Man, the last one is a data gem. Also poking data here will make me understand about lidar stuff too
 
-get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
-
 carbon xprize
 TerraPower, travelling wave reactor
 
@@ -53,8 +51,6 @@ Also look over the internal documents to see if there's something fun.
 2 books:
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
-
-see over chi's new lab reports and understand the chemistry she's currently involved in.
 
 - https://80000hours.org/career-guide/introduction/
 - https://alcor.org/BecomeMember/index.html
@@ -67,9 +63,6 @@ company provisioning:
 
 so, priorities now (if meanwhile i got crazy because of the pressure, may be walk and listen to those irregular podcasts, like anthropocene reviewed (listened all of that one btw)):
 - do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
-- see how those folks aggregating data do it. At this point, I should have an idea of how this is like, with the mola plan above, so this will be sort of a best practice kind of approach. Candidate starting point would be that p5.js sketch thing, with the earthquake data, and also the website that aggregate deforestation information
-- may be setting up tesseract again, then deal with all of those low hanging fruits that can be easily automated, to make my life a tad bit easier. https://github.com/tesseract-shadow/tesseract-ocr-re, and post on improving input image quality: https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
-- try out the organic stuff at autodesk
 - then the story of energy post
 - read rocket propulsion elements
 - read understanding earth: file:///C:/Users/Lenovo-1/Downloads/John%20Grotzinger,%20Thomas%20H.%20Jordan,%20Frank%20Press,%20Raymond%20Siever%20-%20Understanding%20Earth%205th%20Ed..pdf
@@ -84,13 +77,7 @@ https://pitmonticone.github.io/rcp85-debate/
 
 general tso's, lo mein, see places where I can eat that, then invite dan & chi? May be jsut go around and try them myself
 
-add option to not display the nodes/description for ludvik
-
 "how economies work". I think I got it, but not entirely sure, so still, look for people's interpretation of this, and I might get a really good answer.
-
-policy hub too, 2 documents now
-
-figure out how elon got to stay in the US?
 
 "pmi-pmbok"
 
@@ -99,22 +86,17 @@ Also, how does the legal side of things integrate with like, credit card compani
 ask lawyers that I know of to answer some of the questions above. Candidates would be Hieu Man, that small girl studying law (man I feel guilty for not remembering her name), mama (may be? but seems like she doesn't know about this stuff), ynes (yeah, i like her, so duh), then forums
 
 so, what's the long term plan now?
-- see how to hack the economic system, by framing everything of value in the view that value is what we create it
 - see how to hack the environment, and really, really see non-bullshit ways of going about solving this, because we only have 10-15 years to reach <2 degrees, and 1-2 years to reach <1.5 degrees
 - see how to hack the government. See how government works. I sort of know roughly how they work by now already, partly because the public international law thingy which it reveals that the international community is still sort of based on DNS, or decentralized systems, in a way. Feels like there's a lot of similarities between all distributed systems, and that the computing side of distributed systems are more secure while the distributed system of nations are more loosely coupled (however, still behaving right along the incentives), because they can do so, because nations move slow, and because radical shocks don't really occur in nations (and when they do, that nation sort of crumbles and disappears and everyone else is either in shit because the whole world is in shit or they just don't care about the collapsed nation). Anyway, I sort of understand how they work, but how about the chain of command and social structure needed to control things like immigration, like imports, like taxes, like border control. I'll consider I understand this when I can create a nation on my own (which tbh, seems like all I need to create a nation is respect from others (which can come if I'm powerful, both militarily and economically), an effective way to control my colony, and a lot of paperwork to follow the rules of international law), with all the functionalities ppl associated with a nation.
 - see how to hack human psychology, just basically what humans want, why humans want what they want (must be explained by the gene wanting to stay immortal thingy), how to effectively give them what they want (with myself feeling good and with a sense of purpose, which should be easy), and how to effectively give them what they want without knowing I'm doing this background thing, probably how I did things with Nhi. And like, ppl might call be being fake and all, but then again, that can only occur when the representation is leaked. If the representation has no way of leaking itself, then lies and truths don't really matter anymore, because then, I will have successfully decouple human values from my values and sort of be a truely general intelligence. Like, I've done this for a while now, from how I sort of dumbing stuff down when explaining to other ppl, to events with hannie, to events with nhi, etc. And also note that if I were to really do this, once the representation is exposed, ppl will forever think I'm fake, and that's really an inconvenience, because I've essentially lost that resource to harvest and my human side sort of be sad over that. So like, train myself to disregard those and to sort of numb them and myself, if possible. Anyway, so because I've done a lot of that stuff before, I really want doing it to be systematic and to devise some rules that I can repeatedly do so that I don't have to think much about it.
 
 about that thought experiment of what if venmo decides to treat 1 venmo dollar as 2 US dollar? Which parties will suffer, which parties will flourish?
 
-try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset. At https://www.fast.ai/2018/09/26/ml-launch/, https://course.fast.ai/index.html
-
 and just have a rough understanding of what can I do as an F1 student? Can I just spring up a store? Can I register for a merchant bank account? If not, can I register for venmo's merchant bank account? Same question, phrased differently: my rights as an f1 student?
 
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
 
 how about private international law (aka international business law). It seems more complicated than the public one. I think I have understood the public ones enough already
-
-oh and, go through mail one more time. I know it's like hell, with all those security mechanisms, but this time, set up a dead simple one, using a mail client that doesn't care about security, and increase security over time. The goal is to be able to integrate all of these functionalities, distill them into images and churn out products (aka commerce sites/sites) in the matter of minutes
 
 looks interesting: https://www.linuxlinks.com/physics/
 
@@ -134,55 +116,12 @@ financial integration stuff:
 - general:
 	- https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
 
-harden server using iptables
-if i block every port using a firewall, does that mean I can't browse the internet? Because that uses a random ephemeral port
-
 american: 45kg CO2/day
-
-seems like only difference between linux and windows programs are that the system calls are different. Is this the case?
 
 prepare ideas for that lib guy
 
-get chi to buy tesla stocks
-and may be intercept chi's again, to figure out how she does her official stuff
-
-okay copy the images over again, but this time eject it properly and try to boot them up again
-
 so, go through all the online stuff, then go to isss for detailed info, before sending docs over to td
 https://redbus2us.com/f1-visa-students-stock-trading-allowed-invest-buy-sell-and-taxes/
-
-I sort of feel like the magento doc can use some more, because I haven't touched upon these ideas:
-- menu -> controller -> layout -> model & templates & ui components -> resource model & fetching data
-- route -> controller -> ...
-- how referenceContainers work
-- how blocks work, with widgets too
-- how dependency injection works
-- also may be make a list of things to take note because it's important? And before that, give out a general flow of everything
-
-right, so worldpay, steps to deconstruct this?
-- replicate folder structure, annotate the hell out of it, then delete the redundant parts. This is so that I can have an understanding of it as a whole better
-- read over how payment gateways work
-- read over the worldpay module
-- read over the worldpay website itself
-
-other links included:
-- https://beta.developer.worldpay.com/tools
-- https://beta.developer.worldpay.com/docs
-- https://beta.developer.worldpay.com/references
-- https://beta.developer.worldpay.com/
-- https://www.worldpay.com/en-us/developer
-- https://beta.developer.worldpay.com/discover/online-payments
-- https://beta.developer.worldpay.com/docs/wpg/directintegration/paymentrequests
-- http://support.worldpay.com/support/kb/bg/pdf/bgxmldirect.pdf
-- https://devdocs.magento.com/guides/v2.3/extension-dev-guide/service-contracts/service-to-web-service.html
-
-right, I also have paypal's api to document. Don't know if I can do this or not
-
-"basic knowledge of the worldpay payment services"
-
-MCC 6012 merchants, applicable to UK only, but sounds complex. Turns out it's a mandate that tells merchants to store more info. Damnit the 5 eyes. Dig into this a little bit more
-
-figure out how can I use graphics card on the virtual machine
 
 may be read through tesla quarterly reports?
 
@@ -192,7 +131,14 @@ see how coupons work in heirloom
 
 "stores and rewards cards", and "rewards credit card", 1-5% back in cash/points. Dig more into this. Is this just a normal credit card, or is it a specific card for a specific store
 
-proactive, or proactin
+ask chi about switchable mechanically interlocked macromolecular architectures (MIMA) and like, I sort of want to know what's available now
 
-and I have to deal with refreshes too, remember that. Dealing with that is also sort of a headache. How would this work? Well, how about create something like attack-specific controller? Looks like /attack/controller/{controller name}. The controllers will be inside {package}/controller/{controller name}
+analyze spacex's ipo: https://www.youtube.com/watch?v=wj8jKhx51Kg
 
+data from aukehostra. Not necessarily have to build programs to scratch through this, but to get the idea of how things are like, aka status update
+
+and, how about 2020 year? Do I get another W-2 for that?
+
+"in order to increase the number of potential investors and reduce the risk they incurred, europeans truned ot limited liability joint-stock companies"
+
+read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good

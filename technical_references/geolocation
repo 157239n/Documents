@@ -1,0 +1,34 @@
+
+https://developers.google.com/maps/documentation/geolocation/intro
+
+so basics is, you send google a request, google responds with an answer. Request looks like this:
+curl -d "{}" -H "Content-Type: application/json" -i "https://www.googleapis.com/geolocation/v1/geolocate?key=SOME_KEY"
+
+sample response:
+gg:
+response:
+{
+  "location": {
+    "lat": 51.0,
+    "lng": -0.1
+  },
+  "accuracy": 1200.4
+}
+
+for digitalocean servers
+{
+  "location": {
+    "lat": 40.8053731,
+    "lng": -74.0241367
+  },
+  "accuracy": 3002
+}
+
+for upenn
+{
+  "location": {
+    "lat": 39.952590099999995,
+    "lng": -75.1867422
+  },
+  "accuracy": 1476
+}

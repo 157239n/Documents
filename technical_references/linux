@@ -1,6 +1,7 @@
 
 other related logs you might want to checkout:
 - cron
+- logging
 - iptables
 - swap
 - bash
@@ -58,7 +59,8 @@ commands:
   - mkfs.ext3
   - dd if=kali-linux.iso of=/dev/sdb: burn a file (likely iso) to a device
   - lspci, from pciutils
-  - lsusb, from usbutils
+  - lsusb, from usbutils, displaying info about USB buses in the system and the devices connected to them. Interface at /proc/bus/usb
+  - usbview
   - lspcmcia, from pcmciautils
   - lsdev, procinfo
   - du -sh <dir>: size of directory
@@ -88,6 +90,8 @@ commands:
   - ip, package iproute2
 - logging/manual:
   - dmesg: system logs, or at least that's what I've read
+  - last: last user logging in
+  - last reboot
   - journalctl
     - -r: reverse order
     - --vacuum-time=2d: delete logs but the most recent 2 days
@@ -115,6 +119,7 @@ commands:
   - rsync: syncing files
 - users:
   - id
+  - who
   - adduser <user>
   - deluser <user>, there's userdel too, but that's different and at a lower level
   - usermod -aG <group> <username>, add user to group
@@ -198,7 +203,20 @@ dev
   stdin
   urandom
   null
+  bus
 usr
   share
     doc/{package}/README.Debian: docs
     bin: place to put global, custom executables
+
+other interesting commands:
+- set -a
+- set +a
+
+some interesting "drivers":
+- xhci_hcd
+- usbhid
+- usb-storage
+- usbfs
+- btusb
+- ehci-pci

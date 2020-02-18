@@ -1,0 +1,69 @@
+
+xdebug, php extension for remote debugging, code coverange, and more
+
+php7.4-xml
+php7.4-mbstring
+
+so unit, integration and functional
+
+that alcohol thingy
+
+dependencies that needs to be ironed out:
+- global variables. This is solved using dependency injection
+- session variables. This is solved again, using dependency injection and mocking the session variables
+- usage of registry. Slightly different way of accessing global variables
+- other code
+
+- unit
+- integration
+- functional
+
+$this->getMock('\Util\Mail');
+
+set_error_handler() and set_exception_handler() function levels
+$this->fail()
+$this->markTestIncomplete('...')
+$this->markTestSkipped('...')
+\PHPUnit\Framework\TestCase
+
+cli capabilities:
+- running tests
+- processing test results
+- configuring options
+- generating code coverage
+
+test statuses:
+- .: success
+- F: fail
+- E: error
+- S: skipped
+- I: incomplete
+
+Imagick::readImage
+
+- test fixtures
+- global state
+- test dependencies
+- data providers
+
+known state for tests:
+- known state for methods
+- known state for classes
+
+in a single class, setUp() and tearDown() is used for wrapping around methods
+then setUpBeforeClass() and tearDownAfterClass()
+
+phpunit offers configuration options to switch global variables backup on or off. Can be done in CLI, text config file (phpunit.xml) or in code (@backupGlobals disabled)
+@depends <method name>
+
+organize tests using config file:
+- test suites
+- groups included or excluded from execution
+
+so, I can do something like don't have namespaces for classes at all, and only reference the autoloader thingy
+
+- Dummy: only accepting arguments
+- Fake: immitate real object's functionality
+- Stub: return predefined values
+- Spy: like stub, but remembers
+- Mock: stub with expectations

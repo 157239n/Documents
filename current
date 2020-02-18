@@ -87,7 +87,6 @@ ask lawyers that I know of to answer some of the questions above. Candidates wou
 
 so, what's the long term plan now?
 - see how to hack the environment, and really, really see non-bullshit ways of going about solving this, because we only have 10-15 years to reach <2 degrees, and 1-2 years to reach <1.5 degrees
-- see how to hack the government. See how government works. I sort of know roughly how they work by now already, partly because the public international law thingy which it reveals that the international community is still sort of based on DNS, or decentralized systems, in a way. Feels like there's a lot of similarities between all distributed systems, and that the computing side of distributed systems are more secure while the distributed system of nations are more loosely coupled (however, still behaving right along the incentives), because they can do so, because nations move slow, and because radical shocks don't really occur in nations (and when they do, that nation sort of crumbles and disappears and everyone else is either in shit because the whole world is in shit or they just don't care about the collapsed nation). Anyway, I sort of understand how they work, but how about the chain of command and social structure needed to control things like immigration, like imports, like taxes, like border control. I'll consider I understand this when I can create a nation on my own (which tbh, seems like all I need to create a nation is respect from others (which can come if I'm powerful, both militarily and economically), an effective way to control my colony, and a lot of paperwork to follow the rules of international law), with all the functionalities ppl associated with a nation.
 - see how to hack human psychology, just basically what humans want, why humans want what they want (must be explained by the gene wanting to stay immortal thingy), how to effectively give them what they want (with myself feeling good and with a sense of purpose, which should be easy), and how to effectively give them what they want without knowing I'm doing this background thing, probably how I did things with Nhi. And like, ppl might call be being fake and all, but then again, that can only occur when the representation is leaked. If the representation has no way of leaking itself, then lies and truths don't really matter anymore, because then, I will have successfully decouple human values from my values and sort of be a truely general intelligence. Like, I've done this for a while now, from how I sort of dumbing stuff down when explaining to other ppl, to events with hannie, to events with nhi, etc. And also note that if I were to really do this, once the representation is exposed, ppl will forever think I'm fake, and that's really an inconvenience, because I've essentially lost that resource to harvest and my human side sort of be sad over that. So like, train myself to disregard those and to sort of numb them and myself, if possible. Anyway, so because I've done a lot of that stuff before, I really want doing it to be systematic and to devise some rules that I can repeatedly do so that I don't have to think much about it.
 
 about that thought experiment of what if venmo decides to treat 1 venmo dollar as 2 US dollar? Which parties will suffer, which parties will flourish?
@@ -142,3 +141,22 @@ and, how about 2020 year? Do I get another W-2 for that?
 "in order to increase the number of potential investors and reduce the risk they incurred, europeans truned ot limited liability joint-stock companies"
 
 read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good
+
+w2 2020?
+
+so, flow of everything (draw.io to do that)? Does worldpay actually polls the url exposed?
+ping alyssa for extra work
+
+if we want to use eProtect with Magento 2.3, would we connect to Vantiv eProtect or Worldpay eProtect? We were told that these are 2 separate products
+
+https://developer.vantiv.com/
+
+https://beta.developer.worldpay.com/docs/wpg/hostedintegration/paymentpageintegration
+
+writing tests seems important, but only when I setup my own thing with the database. I still disagree with mocks and stubs strongly
+
+i still want to do the old schema thingy. Not with router, but with experimenting with a real database, resetting its schema and whatnot
+
+do i really need that query string append? let's try to remove that and see if it affects anything
+
+"pdo db connection", this is mentioned a lot

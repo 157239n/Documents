@@ -43,3 +43,86 @@ types of transfers:
 - B2B: business to business: https://www.investopedia.com/terms/b/btob.asp
 - B2C: business to consumer
 - B2G: business to government
+
+tax classification
+- corporation
+	- C corporation
+	- subchapter S corporation
+- partnership
+- cooperative
+- disregarded entity, indifferent from the owner, which in most cases are only 1
+	- sole member LLCs: SMLLC. Taxes treat them no different, but debts and other liabilities can be considered as a different entity
+	- qualified subchapter S corporation
+	- qualified real estate investment trust subsidiary
+
+main business designations and types:
+- sole proprietorship
+- trust
+- partnerships:
+	- general partnership
+	- limited partnership
+	- limited liability partnership
+	- limited liability limited partnership
+- companies
+	- LLC: limited liability company: owners enjoy limited liability, but is not a corporation
+	- PLLC: professional limited liability company. Same deal, but some people's liabilities are not limited (like doctors, medical care, lawyers, accountants, ...), to prevent them from malpractice
+- corporation:
+	- corp, inc: shares
+	- professional corporation: corp and same thing with PLLC
+	- doing business as
+
+"company" is all of the above combined. A word used for an entity that wishes to make a profit. A source says:
+- proprietorship
+- partnership
+- corporation
+
+"the owners of a corporation are shareholders; their percentage of ownership in the business is represented by their corporate stocks or shares. Shareholders can choose a board of directors to manage business operations, or they can create a shareholders' agreement, which will allow them to manage the business directly"
+
+security is a tradable financial asset of any kind. Broadly categorized into:
+- debt securities (banknotes, bonds, and debentures)
+- equity securities (common stocks)
+- derivatives (forwards, futures, options, and swaps)
+
+-------------------------------
+
+good thought experiment
+
+so the setup is like this: 1 Venmo dollar (VM) at time 0 equals to 1 USD. In everyone's mind, the value of the 2 is exactly the same
+Trader A has a bunch of VM bills, and he is willing to trade 1 VM bill for 1.1 USD. He also has other jobs in the VM world to replenish the supply of VM he has. Trader A is convinced USD is worth a bit more, so he won't give away any USD
+Trader B has a bunch of USB bills, and she is willing to trade 1 USD bill for 1.1 VM (effectively 1 VM for 0.9 USD). She also has other jobs to replenish the supply of USD she has. Trader B is convinced VM to worth a bit more, so she won't give away any VM
+
+So now, if someone wants to convert between VM to USD, then he/she should do business with trader B, because she values VM more, and is willing to give away USD.
+If someone wants to convert between USD to VM, then he/she should do business with trader A, because he values USD more.
+
+|-------------------------------------|
+|    market VM    |     market USD    |
+|               <-A--                 |
+|      #1       --B->      #2         |
+|                 |                   |
+|      | ^        |        | ^        |
+|------C-D-----------------E-F--------|
+|      v |   apple market  v |        |
+|                                     |
+|                #3                   |
+|                                     |
+|-------------------------------------|
+
+all consumers have nothing, yet
+
+traders, before switch:
+- A: 1 VM = 1.1 USD, willing to give out VM. Has 100 VM, equivalent to 100 apples
+- B: 1 VM = 0.9 USD, willing to give out USD. Has 100 USD, equivalent to 100 apples
+- C: 1 apple = 0.9 VM, willing to give out apples. Has 100 apples, equivalent to 100 apples
+- D: 1 apple = 1.1 VM, willing to give out VM. Has 100 VM, equivalent to 100 apples
+- E: 1 apple = 0.9 USD, willing to give out apples. Has 100 apples, equivalent to 100 apples
+- F: 1 apple = 1.1 USD, willing to give out USD. Has 100 USD, equivalent to 100 apples
+
+traders, after switch:
+- A: 1 VM = 2.1 USD, willing to give out VM. Has 100 VM, equivalent to 200 apples
+- B: 1 VM = 1.9 USD, willing to give out USD. Has 100 USD, equivalent to 100 apples
+- C: 2 apple = 0.9 VM, willing to give out apples. Has 100 apples, equivalent to 100 apples
+- D: 2 apple = 1.1 VM, willing to give out VM. Has 100 VM, equivalnt to 200 apples
+- E: 1 apple = 0.9 USD, willing to give out apples. Has 100 apples, equivalent to 100 apples
+- F: 1 apple = 1.1 USD, willing to give out USD. Has 100 apples, equivalent to 100 apples
+
+question is, will traders A-F and consumers 1-3 be all satisfied?

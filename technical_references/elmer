@@ -1,0 +1,29 @@
+
+This is like ANSYS, but open source: http://www.nic.funet.fi/pub/sci/physics/elmer/doc/ElmerguiManual.pdf
+
+- input file
+- model definitions
+- utility functions
+- solver input files
+- solution and post processing
+
+elmer software suite
+importing finite element mesh files in various formats
+generating finite element partitionings for geometry input files
+setting up pde-systems to solve
+exporting model data and results
+
+can automatically call paraview
+
+parallel solver: ElmerSolver_mpi
+GUI hides a number of operations
+
+dev package of Qt 4 installed
+
+export ELMERGUI_HOME=/usr/local/bin
+export PATH=$PATH:$ELMERGUI_HOME
+
+mesh generators:
+- ElmerGrid, built-in
+- Tetgen, optional
+- Netgen, built-in

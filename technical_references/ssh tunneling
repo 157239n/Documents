@@ -1,0 +1,28 @@
+
+home <---> work
+
+ssh -L 8181:<work ip>:3389 username@<work ip>
+this is initiated from home to work, using 8181 as the port to send to work (meaning work must open 8181), then once at work, the packet will get rerouted to port 3389 of interface 0.0.0.0
+
+ssh -D 8181 username@<work ip>
+dynamic port forwarding
+
+ssh -R 8181:<home ip>:3389 username@<work ip>
+
+ssh -R 46:localhost:5000 root@kelvinho.org
+ssh -R 80:localhost:8080 ssh.localhost.run
+
+linux screen
+
+corp1: 192.168.20.6, laptop
+corp2: 192.168.20.2, webserver
+corp3: 192.168.20.1, another computer, "Corporate-1"
+
+home1: 192.168.1.68, port 22 opened, main computer to ssh into
+home2: 192.168.1.63 proxy server
+
+from corp1: ssh root@192.168.1.68 -L 3128:192.168.1.63:3128. Meaning, ssh into the home1 computer, and keep the ssh session going. Then listen for port 3128 (first one) on own computer (corp1), and forward every traffic to home2 computer at port 3128 (second one)
+
+from corp3, ssh to home1, listen to home1 for new connections. ssh root@192.168.1.68 -R 1234:192.168.20.2:80. Meaning, ssh into the home1 computer, and keep the ssh session going. Then listen for port 1234 on home1, and forward every traffic to corp2 webserver
+
+so, should be something like ssh root@kelvinho.org -R 9000:localhost:5000

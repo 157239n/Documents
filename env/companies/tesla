@@ -1,0 +1,60 @@
+
+3 steps to self driving:
+- being future complete
+- future complete where person does not need to pay attention
+- reliable enough to convince regulators
+
+camera serial interface: 2.5Gpixels/s
+on chip network: LPDDR4 DRAM 128b@4266Gb/s, 68GB/s peak bandwidth
+image signal processor: 1G pixel/s, 24-bit pipeline, adv tone mapping, adv noise reduction
+neural network processor: 32MB SRAM, 96x96 Mul/Add array, ReLU hardware, 36TOPS @ 2GHz, 2 per chip, 72TOPS total
+gpu, 1GHz, 600GFLOPS, FP32, FP16
+main processor: 12 ARM A72 64b CPUs, 2.2GHz
+safety system: lock step cpu, final drive control, control validation
+security system: ensure system only runs code cryptographically signed by tesla
+
+256 bytes of activation data, 128 bytes of weight data, combined in 96x96 small add array, which performs 9216 multiply adds (9216 multiplies and 9216 adds) per CLOCK. At 2GHz that's a total of 36.8TOPS
+
+256 bytes read (activation), 128 bytes read (weight), 128 bytes write (results). 2GHz -> 1TB/s
+
+small instruction set:
+- DMA read
+- DMA write
+- convolution
+- deconvolution
+- inner-product
+- scale
+- eltwise
+- stop
+
+neural network compiler
+
+we have implementation of tanh and sigmoid. How the fuck is this possible? I thought the relu layer is accessed as an instruction set?
+
+"at the time we started the design not all the ip that we wanted purchase was available in 10nm"
+
+Arithmetic energy
+
+| Integer | Energy |
+| ------- | ------ |
+|   Add   |        |
+|  8 bit  | 0.03pJ |
+| 32 bit  | 0.10pJ | <----- picked this
+|   Mult  |        |
+|  8 bit  | 0.20pJ | <----- picked this
+| 32 bit  | 3.00pJ |
+
+|   FP   | Energy |
+| ------ | ------ |
+|  FAdd  |        |
+| 16 bit | 0.40pJ |
+| 32 bit | 0.90pJ |
+|  FMult |        |
+| 16 bit | 1.00pJ |
+| 32 bit | 4.00pJ |
+
+| Memory | Energy   |
+| ------ | -------- |
+|  SRAM  | (64 bit) |
+|  32KB  | 20pJ     | <----- picked this (obv lmao)
+|  DRAM  | 2000pJ   |

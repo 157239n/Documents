@@ -116,6 +116,9 @@ Networks:
   - Overlay: docker network create -d overlay <name>. This connects to the current Docker host only. When creating a service and attaching the overlay network, the network automatically spans to other Docker nodes
 - Inspecting: docker network inspect <name>
 - Removing: docker network prune
+- ipam:
+    config:
+      - subnet: "172.16.0.32/28"
 
 Volumes:
 - Listing:

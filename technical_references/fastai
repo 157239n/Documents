@@ -1,0 +1,176 @@
+
+https://docs.fast.ai/
+https://github.com/fastai/fastai
+https://github.com/fastai/fastai_dev
+https://www.fast.ai/
+https://medium.com/@hiromi_suenaga/machine-learning-1-lesson-1-84a1dc2b5236
+
+so, lessions:
+1. image classification
+2. production; sgd from scratch
+3. multi-label; segmentation
+4. nlp, tabular data, recsys
+5. backprop, neural net from scratch
+6. cnn deep dive, ethics
+7. resnet, u-net, gans
+8. backprop from the foundations
+9. the training in depth
+10. looking inside the model
+11. data block api, generic optimizer
+12. advanced training: ulmfit
+13. swift: deep learning basics
+14. swift: putting it all together
+
+nice link where I dealt with version 0.7:
+- https://forums.fast.ai/t/fastai-v0-7-install-issues-thread/24652
+- https://forums.fast.ai/t/importerror-cannot-import-name-as-tensor/25295
+- https://github.com/NVIDIA/nvidia-docker/issues/864
+- https://github.com/codenvy/codenvy/issues/2427
+- https://forums.fast.ai/t/trying-to-run-fastai-library-under-virtualenv-hit-bcolz-error/9544/5
+- https://forums.fast.ai/t/fastai-v0-7-install-issues-thread/24652
+
+from fastai.basics import *
+from fastai.vision import *
+
+dependencies:
+core: core -> torch_core ->
+	metrics
+	layers
+	basic_data -> data_block
+training: callack -> basic_train -> callbacks -> train
+applications:
+- collab
+- tabular:
+		models
+		transform -> data
+- text:
+		transform -> data ------> learn
+		models --------------|
+- vision:
+		image -> transform -> data -----> learn
+		models ----------------------|
+more details:
+- basic_data: wrap [torch.utils.data.Dataset, torch.utils.data.DataLoader] in DeviceDataLoader, in charge of putting the data on the right devices (transformations, like normalization), then regroup them in a DataBunch
+- layers: basic functions to define custom layers or groups of layers
+- metrics: all the metrics
+- callback: 
+
+torch.cuda.get_device_name(0)
+torch.cuda.device(0)
+
+ImageDataBunch: https://docs.fast.ai/vision.data.html#ImageDataBunch
+- .show_batch(rows=3, figsize=(7,6)), figsize is the size of each samples overall and can be omitted
+- .normalize(imagenet_stats), mean 0, sd 1 for channels (0-255 default), imagenet_stats definition appeared here: https://github.com/fastai/fastai/blob/master/fastai/vision/data.py
+- .classes: list of classes as strings
+- .c: can think of as a count of classes available
+- .train_ds
+- .valid_ds
+	- .x: image file names (absolute paths)
+	- .y: labels
+- "in fast ai, everything you model with is going to be a data bunch object"
+- it contains 2 or 3 datasets: training, validation data, [test data]
+- importing data factory methods:
+	- from_folder
+	- from_csv
+	- from_df
+	- from_name_re(path_to_images_folder, list_of_file_names, pattern, valid_pct=0.2, ds_tfms=get_transforms()). Sample regular expression: r'/([^/]+)_\d+.jpg$'
+	- from_name_func
+	- from_lists
+	- create_from_ll
+	- single_from_classes
+
+ConvLearner:
+- "a model is trained in fast ai using something called a learner"
+- must feed:
+	- data
+	- model, or architecture. Samples (https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py):
+		- models.resnet34: extremely well, 84MB, nearly all the time (download.pytorch.org/models/resnet34-333f7ec4.pth, https://arxiv.org/pdf/1512.03385.pdf). Others include:
+		- resnet18: faster, 44.7MB
+		- resnet50
+		- resnet101
+		- resnet152: more details and hopefully more accuracy
+- can feed:
+	- metrics, list:
+		- error_rate
+- is a legacy feature, as i understand it. The new thing is cnn_learner(data, model). Same deal, result is a Learner class, so cnn_learner i guess is the factory?
+- .save("stage-1")
+- .load("stage-1")
+- .fit_one_cycle(1)
+- .unfreeze(): train everything, not just the final layers
+- .lr_find(): learning rate finder: what's the fastest lr i can do this without sacrificing accuracy
+- .recorder.plot() to plot the graph
+- .fit_one_cycle(2)
+- .export(), create a file named export.pkl
+- .predict(image)
+- .to_fp16(), switch every operations to operate on 16 bit floating point numbers
+
+so a trained model's weight weighs something in the MB range (around 84 or so). That's insanity. Also resnet34 has already been trained on imagenet data, so it already has a concept of what animals are, and apparently, this pretrained model can work with like 30 sample images, which is insanity to think about
+
+ClassificationInterpretation:
+- package: fastai.train
+- interp = ClassificationInterpretation.from_learner(learner)
+- interp
+	- .plot_top_losses(9, figsize=(15,11))
+	- .plot_confusion_matrix(figsize=(12,12), dpi=60)
+	- .most_confused(min_val=2)
+	- .top_losses(), returns (losses, idxs)
+
+FileDeleter:
+- FileDeleter(file_paths=top_loss_paths)
+
+bs stands for batch size btw. So more batch size meaning you can crunch through more images per gpu run, meaning the overhead in setting up the gpu environment is reduced
+
+resnet50:
+- bs 48 for 11GB gpu
+- bs 32 for 8GB gpu
+- bs 16 for 4GB gpu
+
+try to mutiply batch size by cycles and see if it adds up to around 1.4k
+
+random functions:
+- ds_tfms=get_transforms()
+- learn.destroy()
+- torch.cuda.empty_cache()
+- download_images(path_to_file_with_urls.txt, destination_folder, max_pics=200, max_workers=0), max_workers for not spawning a lot of processes
+- verify_images(path_to_folder_with_images, delete=True, max_workers=8)
+- np.random.seed(42)
+- open_image(path_to_image_file)
+- open_mask(path_to_image_file): same as open_image(), but here images are integers
+
+resnet34 reverse engineering
+inside binary file:
+	conv1.weightq
+	bn1.weightq
+	bn1.biasq
+	layer1.0.bn1.weightq
+	layer1.0.bn1.biasq
+	layer1.0.conv2.weightq#h
+	FloatTensor
+	cpuq
+	ctorch
+	FloatStorage
+	jumbled data
+	cpuq
+	ctorch
+	FloatStorage
+notes:
+	oh, so bn stands for BatchNorm2d
+	tops out at 4 layers, which is super weird, because there are something like 7 layers. Anyway, I guess the detailed architecture will be ironed out some time later. 	Now just go with the flow and accept things as is
+	stored in a pth file, turns out it's really simple. Just a path contained inside, I guess is where the pythonpath variable should point to? Other times it's a binary file (this case), which again is very interesting
+
+random useful quotes:
+- 224x244 is an extremely common size that most models tend to use
+
+DataSet (atomic elements, torch) -> DataLoader (batches, torch) -> DataBunch (binds train_dl and valid_dl, fastai)
+"data block api"
+ImageFileList.from_folder(path).label_from_csv().random_split_by_pct().datasets().transform().databunch().normalize()
+ImageFileList.from_folder(path).label_from_folder().split_by_folder().add_test_folder().datasets().transform(tfms, size=224).databunch()
+ImageFileList.from_folder(path).label_from_func().random_split_by_pct().datasets().transform(get_transforms(), size=224).databunch()
+things have changed also, so now there are no ImageFileList anymore. But still keep on going through this
+.databunch(collate_fn=bb_pad_collate)
+TextSplitData.from_csv(...)
+
+for classification, we use this loss function called cross-entropy loss. Can't use this for regression, can only use this on classifications
+learner.loss_func = MSELossFlat()
+
+"fit_one_cycle makes the learning rate starts low, go up, and then go down again"

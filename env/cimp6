@@ -1,0 +1,64 @@
+
+https://pitmonticone.github.io/rcp85-debate/
+
+ECS: equilibrium climate sensitivity
+
+so ipcc does produce a book for each round of cmip, or in the reports, the assessment reports, called "climate change {year}, physical science basis"
+
+so planning for 5 degrees now, don't just do it for 3 degress anymore, it's pretty unrealistic
+
+2 models:
+- physical model, forced by gases
+- earth system model, which is the physical one, but with an interactive carbon cycle
+
+coupled model intercomparison project
+
+RCPs:
+- 2.6
+- 4.5
+- 6
+- 8.5
+
+cmip is run by the world climate research program project
+
+have to run a small set of fundamental (DECK) experiments:
+- amip 
+- pre-industrial control run
+- 1% per year co2 increase
+- abrupt 4x co2 increase
+
+cmip6 provides data:
+- duration of runs
+- specification of forcing data
+	- greenhouse gases, aerosol emissions
+	- from observations, or other models (this is the models feeding back into each other thing)
+	- drives simulation in desired direction in parameter space
+	- differences in results due to differing model performance
+- specs disseminated via es-doc, may be this is what the twitter dashboard thing is about. es-doc.oeg
+	- also tools to support climate model documentation
+
+data then submitted to earth system grid federation, which is a repo for all data. UK node run by CEDA, center for environmental data analysis
+
+so they start off with a fast, basic model, which is the physical model. There're 2 flavors:
+- HadGEM3-GC3.1-N96ORCA1: simple
+- HadGEM3-GC3.1-N216ORCA025: complex
+then they stick a bunch of other stuff they want to simulate into the simple physical model, like: interactive carbon cycle, atmospheric chemistry, dynamic vegetation, terrestial nitrogen limitation, ocean biogeochemistry. They call the model UKESM1-N96ORCA1
+
+so, there are multiple N's:
+- N96: 130km
+- N216, 60km
+- N1024, 12km
+
+ocean model resolution:
+- 1 degree
+- 1/6 degree
+- 1/12 degree
+
+netCDF files
+https://search.es-doc.org/
+
+and sign up for drexel hackathon thingy
+
+okay yeah this is serious. So I mean, pathways to ai still seems to be more important tho. And like, man, the whole southern part is going to be submerged
+
+https://pcmdi.llnl.gov/CMIP6/

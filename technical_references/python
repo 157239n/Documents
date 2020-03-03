@@ -1,14 +1,14 @@
-anaconda-navigator
-jupyter notebook list
-jupyter notebook
-conda create --name snowflakes biopython
-conda info
-conda info --envs
-conda activate
-conda activate {env name}
-conda search {package name}
-conda list
-conda install {package name}
 
-help("modules")
-conda install -c pytorch -c fastai fastai
+help("modules"), can use for function names and stuff
+
+type hinting:
+from typing import Callable, List, Dict, Tuple, Sequence, Any, Iterator, Iterable, Set
+def greeting(name: str) -> str:
+    return 'Hello ' + name
+List[float]
+
+pathlib, https://docs.python.org/3/library/pathlib.html:
+Path("/home/user/setup.py")
+
+import inspect
+inspect.getsource(len)

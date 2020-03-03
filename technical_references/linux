@@ -70,6 +70,7 @@ commands:
   - find -iname something_to_find
   - cut
   - size
+  - mkfifo: create a named pipe, set that to be piped into other programs, then pipe data into that named pipe
 - daemons:
   - systemctl
     - list-units --type=mount

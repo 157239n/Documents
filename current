@@ -3,7 +3,6 @@ so, priorities now:
 - do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
 - then the story of energy post
 - read rocket propulsion elements
-- read understanding earth: file:///C:/Users/Lenovo-1/Downloads/John%20Grotzinger,%20Thomas%20H.%20Jordan,%20Frank%20Press,%20Raymond%20Siever%20-%20Understanding%20Earth%205th%20Ed..pdf
 - (low priority) Learn about some fluid dynamics and thermodynamics, for understanding the applicability of science
 - Switch major to mechanical engineering, and get into a machine/hardware shop. Ask for contacts for students that are actually building hardware products for customers, from scratch. I remember Khue's friend used to do that.
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
@@ -12,17 +11,7 @@ so, priorities now:
 
 try brilliant and skillshare
 
-Additional heating over last decade: 8*10^21 Joules per year, 3M exajoules/year, plants capture 3k exajoules/yr, human activities 500 exajoules/yr
-467kWh - 1.2tr
-for the long future, again, dyson swarm and solar panels on orbit
-
-american: 45kg CO2/day
-
 - https://80000hours.org/career-guide/introduction/
-
-also, space-based solar panels seems reasonable, but still harder (20 times harder, my gut feeling), so it's reasonable only if we want to build a civilization in the stars, and not as a means to transition earth, I mean, that would be kinda dumb. So sort of read over the us military's report on space access, also that environment report, with cleanrooms and whatnot, to get the feel of the possibility to actually do these kinds of things
-
-https://pitmonticone.github.io/rcp85-debate/
 
 general tso's, lo mein, see places where I can eat that, then invite dan & chi? May be jsut go around and try them myself
 
@@ -37,10 +26,6 @@ check over my health insurance
 see how coupons work in heirloom
 
 "stores and rewards cards", and "rewards credit card", 1-5% back in cash/points. Dig more into this. Is this just a normal credit card, or is it a specific card for a specific store: https://creditcards.usnews.com/articles/are-credit-card-rewards-worth-it
-
-ask chi about switchable mechanically interlocked macromolecular architectures (MIMA) and like, I sort of want to know what's available now
-
-data from aukehostra. Not necessarily have to build programs to scratch through this, but to get the idea of how things are like, aka status update
 
 read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good
 
@@ -59,6 +44,110 @@ yeah let's go on sunday 10pm, for that thing, because on friday there's minh and
 
 go over ML models and see if I can have some information extraction process out of stocks and whatnot. That link by ynes again seems nice and all that. And really get into the data and make this a dependable skillset
 
-http://theconversation.com/elon-musk-was-right-to-drop-his-bungled-plan-to-take-tesla-private-102225
+keep ties with that german guy
 
-openfoam, cfd on linux, https://www.linuxjournal.com/content/cfd-or-not-cfd
+and yea, that political index idea from a year back
+
+may be finish the docs and send over to bhacker one last time
+
+send mama: https://www.youtube.com/watch?v=boKd_Pb2HUA
+https://www.youtube.com/watch?v=CpjjJc3Sq14
+https://www.youtube.com/watch?v=F-wBgsf8jWY
+
+what's lobbying?
+
+https://towardsdatascience.com/saliency-based-image-segmentation-473b4cb31774
+
+also train myself to sleep 6 hours a day consistently, because 6 hours seems reasonable enough to keep myself productive, and the consistent part is also really important, because only then can I truely utilize the extra hours doing something useful. And also please keep pushing my absolute hardest to crunch through these goals, and may be write these logs really, really frequently
+
+rewatch joe rogan with elon? because joe said that he felt elon didn't open up until they were drinking. So sort of analyze this?
+
+may be I really have to go out and ask for help so I can penetrate these venues even further
+
+how about creating a bunch of images with text inside them, and then draw a boundary layer as the correct answer? Yep this approach is quite interesting, but I have to have the data first to be able to do this
+
+and the tone of them speaking about these things, it's almost as if they have sort of a capability to learn things distributedly, and not relying on a single data center. I also suspect this has to do with transfer learning
+
+and may be do read into the quarterly reports
+
+and may be really apply these ML ideas to the scientific backbone, and actually change how science works
+
+get money in and buy a 2nd tesla stock
+
+and pay canaris bills
+
+pytorch, calculating gradient means loss.backward(). But I thought loss is just a number? Okay, so how they did stuff was to declare a as nn.Parameter(a). So this looks like an array wrapper and thus by using this, they can sort of know how to calculate the gradient and whatnot. I sort of couldn't imagined this flexibility a while back, and I still don't know how they did it. So may be this is worthwhile afterall
+
+also if I can just find out where are the damn images, then I probably can develop whole system of commands to clear out unnecessary images or low quality ones, instead of cooperating with the notebook's mechanism
+
+https://forums.fast.ai/t/find-path-to-file-imagedatabunch/50279/6
+
+and the idea to pull live satellite data and look for smoke clouds and whatnot. And may be icebergs too? Just to give out an automatic alert whenever something abnormal is found. I think this would be valuable in terms of creating a learning workflow, and inch me closer to that idea of replacing science's core structure with something like this
+
+"planet amazon dataset"
+
+and may be now make models to predict some physical phenomenon? Like 3 body problem, or other stuff, like pistons and whatnot. Then make these learn on quantum data, which I think will be the nail in the coffin for traditional science
+
+"satellite tiles"
+
+and yeah, can I get data directly from an SSO satellite? Do people publish these data?
+
+"multi-label classification, segmentation"
+
+and may be look again at speec details when using these technologies
+
+"a partial"
+acc_02 = partial(accuracy_thresh, thresh=0.2)
+learner.fit_one_cycle(5, slice(0.01))
+
+wait what? So you are saying that you can just use a model trained on 128x128 images and slap it to a 256x256 image? Don't models need to stay rigid and the same size throughout?
+
+doc_src/data_block
+
+so after going through the sgd thingy they introduced, they kinda still ambiguous about how these architectures work, and how can I adapt this to predict scientific phenomena
+
+image segmentation?
+
+np.loadtxt(path_to_file.txt, dtype=str)
+
+decrease regularization
+
+weight decay
+dropout
+data augmentation
+
+for segmentation, we can use a cnn, but something else called unet is better
+
+so a cnn will condense things down, then the unet thing expands things out
+
+Learner.create_unet(), so I suspect there will be a Learner.create_cnn() version too? So try this out
+learner.recorder.plot_losses()
+learner.recorder.plot_lr()
+
+so I suspect that the convolution nn works with sort of an absolute max image size, and every image size below can be applied to here, so that's why you can increase the resolution to double the original (the transfer learning thingy) and it still works. Just my prediction, of course
+
+when we do NLP classification, we actually create 2 models: language model
+
+text_classification_learner()
+
+and it seems like I can actually apply for a grant from drexel to begin doing these things. I can feel these goals are being checked off and can actually be executed. Oh yeah baby, I feel it so strongly it burns. Muahahahaha :v Damn what am I talking about :v Kay bye :v Man, I'm in my prime time right now. I really have to try my best in this small opportunity, and progress even faster than myself in the past
+
+adam, rmsprop
+
+kay, so this is interesting, ludvik is offering to pay me, but let's not reply just yet
+
+worry about rent stuff
+
+graphviz
+
+2020 Drexel Emerging Graduate Scholars Conference – April 22 & 23
+
+another pass through course.fast.ai. And remember to buy a shitload of meat today (like at 7? yeah seems right). But first let's grab some food
+
+may be create Final Simple Net (or fixing it) again, and this time really understand the indicies so that I can dynamically create any algorithm I want
+
+cobalt: https://www.youtube.com/watch?v=25G4BcioPjE
+
+chrome support ipv6? https://support.google.com/chrome/forum/AAAAP1KN0B0Jq0wVEd1qxo/?hl=en-GB
+
+also i20 stuff

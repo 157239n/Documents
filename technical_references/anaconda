@@ -1,0 +1,17 @@
+
+conda activate
+conda deactivate
+
+conda list: list all installed packages
+conda create --name myenv
+conda install {package name}
+conda install -n myenv scipy=0.15.0 astroid
+conda search {package name}
+
+conda env create -f environment.yml
+conda env list
+conda create --name myclone --clone myenv
+conda info --envs
+conda info
+
+anaconda-navigator

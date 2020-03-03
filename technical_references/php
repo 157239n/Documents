@@ -41,6 +41,11 @@ composer.json:
         "vendor/package2": "1.*",
         "vendor/package3": ">=2.0.3"
     }
+    "autoload": {
+        "psr-0": {
+            "Kelvinho\\Virus": "bootstrap.php"
+        }
+    }
 }
 
 Publish:

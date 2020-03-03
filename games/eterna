@@ -1,0 +1,39 @@
+
+"eteRNA allows you to manually type in a sequence when solving puzzles"
+
+what's up with the concept of energy? And loop energy and stuff
+
+"free energy can be thought of as the energy released by folding a completely unfolded RNA molecule. Conversely, the energy that must be added in order to unfold a folded RNA"
+
+loops often have positive free energy
+
+"some boosted loops (1-1 loop with double G boost) will have a negative energy. This free energy is actually coming from a non-Watson-Crick bond". This is very perflexing
+
+actually calculating energy:
+- https://www.tbi.univie.ac.at/RNA/
+- http://rna.urmc.rochester.edu/NNDB/
+
+"all internal loops can be boosted by the formation of a GA or UU terminal mismatch". For multiloop, it's GA or CA
+
+loops that can be boosted:
+- hairpin
+- internal
+- multi
+- external (some)
+
+GC-rich sequence are difficult to synthesize and prone to being caught in folding traps (Kinetic trap)
+
+main wiki now: http://eternawiki.org/wiki/index.php5/Main_Page
+guides: https://eternagame.fandom.com/wiki/List_of_Player_Guides
+walkthroughs: https://eternagame.fandom.com/wiki/List_of_Puzzle_Walkthroughs
+secondary structure databases: https://eternagame.fandom.com/wiki/List_of_Secondary_Structure_Databases
+getting into the weeds: https://docs.google.com/document/d/1q9Uly2C8pVEu9JuLSiUsQoiOoNBtQRJMCRnzDCWBhzE/edit
+guides: https://eternagame.org/web/strategy_guides/
+tips and tricks: https://eternagame.fandom.com/wiki/Tips_and_Tricks
+
+AU-AU stacks alternate between -1.1 and -1.3kcal/mol
+GC-AU stacks alternate between -2.1 and -2.2kcal/mol
+
+okay, so I understand that the base sequence will dictate what structures the rna will fold into, but how is this information about folding important? I thought the important parts of an RNA is the main encoding of it? The case with proteins make sense, but that seems to be difficult as well, because like, you can't produce these structures in the wild rite? So how is it helpful. The general principle may be that I don't understand the field enough
+
+quad stacking energies: https://getsatisfaction.com/eternagame/topics/eterna_quad_energy_reference_table-3faed

@@ -1,0 +1,23 @@
+
+conda install jupyter
+jupyter notebook
+jupyter notebook list
+jupyter notebook
+jupyter trust notebook.ipynb
+
+keyboard shortcuts:
+- shift enter: run
+
+magics:
+- %reload_ext autoreload
+- %autoreload 2: reload if underlying code changes
+- %matplotlib inline
+
+tab: code suggestion
+shift tab: see needed params inside a function
+
+help(untar_data)
+doc(interp.plot_top_losses)
+??FileDeleter
+
+ipywidgets

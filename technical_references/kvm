@@ -7,3 +7,65 @@ qxl
 faster mouse:
 - https://bugs.freedesktop.org/show_bug.cgi?id=91219#c26
 - https://depot.flexvdi.com/guest-tools/
+
+https://www.linux-kvm.org/images/9/95/KVM_Virtual_vs_Physical.pdf
+
+hypervisor - kvm
+virt-manager
+libvirt
+migration
+
+installing
+bridge networking
+virsh
+- new a vm
+- adjust settings
+- make an image
+- new vm using existing image
+- close a vm
+
+virt-manager
+
+private virtualized hardware:
+- network card
+- disk
+- graphics adapter
+
+/dev/kvm
+
+libvirt supports:
+- xen hypervisor
+- qemu emulator
+- kvm hypervisor
+- lxc container system
+- openvz container system
+- user mode linux paravirtualized kernel
+- virtualbox hypervisor
+- vmware esx and gsx hypervisors
+- vmware workstation and player hypervisors
+- storage on:
+	- ide
+	- scsi
+	- usb disks
+	- FibreChannel
+	- LVM
+	- iSCSI
+	- NFS
+	- filesystems
+- storage drivers
+- directory backend
+- local filesystem backend
+- network filesystem backend
+- logical volume manager (LVM) backend
+- disk backend
+- iSCSI backend
+- SCSI backend
+- multipath backend
+
+intel VT-x, code name Vanderpool
+
+virsh -c qemu:///system list
+
+virsh create config_file.xml
+virsh define config_file.xml
+virsh start foo

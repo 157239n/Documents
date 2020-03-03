@@ -1,0 +1,26 @@
+
+https://www.robots.ox.ac.uk/~vgg/data/pets/
+
+~200 images for each class
+
+image class-id species breed id
+
+variations:
+- scale
+- pose
+- lighting
+
+37 different categories of dog breed and cat breed
+
+there's a thing called trimaps, and "trimap segmentation" that is talked about here
+
+directory structure:
+oxford-iiit-pet
+	annotations
+		trimaps/, a bunch of black images. They don't appear to contain anything, but still varies in size
+		xmls/, which can be used as labels
+		README
+		list.txt: main annotation
+		text.txt: subset of list, but delegated for testing. Just a standard
+		trainval.txt: subset of list, but delegated for testing. Just a standard
+	images/: all jpg files

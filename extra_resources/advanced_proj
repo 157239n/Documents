@@ -238,10 +238,7 @@ see over chi's new lab reports and understand the chemistry she's currently invo
 
 right, so I have to migrate luan's copies
 
-https://medium.com/vidme/goodbye-for-now-120b40becafa
-
 elon tour spacex: https://www.youtube.com/watch?v=TQ6tZtGrShg
-pointer powers: https://www.youtube.com/watch?v=t5NszbIerYc
 
 try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset. At https://www.fast.ai/2018/09/26/ml-launch/, https://course.fast.ai/index.html
 
@@ -265,3 +262,44 @@ question to ask chi:
 - now suppose that the research has reached its goals, how can it be approved for mass consumption
 - how does employment in that field works
 - how the research is financed, what's the whole stuff with "defending your dissertation" looks like?
+
+- crash course politics: https://www.youtube.com/watch?v=lrk4oY7UxpQ&list=PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H
+- http://www.worldscienceu.com/
+
+games:
+- sprocket (intellectual property rights)
+- business magnate
+- Conspiracy/diplomacy: https://www.reddit.com/r/diplomacy/comments/7qqzzm/any_beginner_tips/
+- Cities: Skyline
+- Civ 5
+- Destiny
+
+more discussions on deploying this to production:
+- https://hackernoon.com/fast-ai-in-production-real-word-text-classification-with-ulmfit-199769be2a6
+- https://github.com/render-examples/fastai-v3
+- https://aws.amazon.com/blogs/machine-learning/building-training-and-deploying-fastai-models-with-amazon-sagemaker/
+- https://towardsdatascience.com/create-and-deploy-an-image-classifier-using-fastai-and-render-in-15-mins-947f9de42d21
+- https://medium.com/@jianjye/how-to-deploy-fast-ai-models-to-digitalocean-with-flask-and-supervisor-for-predictions-268e9dc89174
+- https://medium.com/datadriveninvestor/fastai-and-render-quick-and-easy-way-to-create-and-deploy-computer-vision-models-14fd3f903cfc
+- https://www.kdnuggets.com/2019/03/deploy-pytorch-model-production.html
+
+fastcgi:
+- https://www.digitalocean.com/community/tutorials/understanding-and-implementing-fastcgi-proxying-in-nginx
+- https://help.dreamhost.com/hc/en-us/articles/217298967-FastCGI-overview
+- https://docs.hhvm.com/hhvm/advanced-usage/fastCGI
+- https://help.superhosting.bg/en/cgi-common-gateway-interface-fastcgi.html
+- https://www.liquidweb.com/kb/the-best-settings-for-configuring-fastcgi-mod_fcgid/
+- https://stackoverflow.com/questions/1222510/how-does-fastcgi-work-on-a-web-server-eg-apache-2-2
+- https://www.nginx.com/resources/wiki/start/topics/examples/fastcgiexample/
+- https://www.nongnu.org/fastcgi/
+
+try out resharper:
+- https://docs.microsoft.com/en-us/dotnet/core/
+- https://www.mono-project.com/
+- https://www.jetbrains.com/rider/documentation/
+- https://youtrack.jetbrains.com/issues/RIDER
+- https://rider-support.jetbrains.com/hc/en-us
+so may be the reason I don't want to use visual studio is because the key maps are all different: https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings
+C#: https://www.youtube.com/watch?v=4zrEPsFb8s4
+
+openfoam, cfd on linux, https://www.linuxjournal.com/content/cfd-or-not-cfd

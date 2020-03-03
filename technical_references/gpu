@@ -1,0 +1,17 @@
+
+nvidia-smi is a pretty nifty tool to inspect nvidia gpus
+nvidia-smi -q -g 0 -d UTILIZATION -l
+nvidia-smi -l 1
+nvidia-smi --gpu-reset -i 0
+
+https://askubuntu.com/questions/887926/no-cuda-capable-device-is-detected-although-requirements-are-installed
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#abstract
+https://askubuntu.com/questions/451672/installing-and-testing-cuda-in-ubuntu-14-04
+https://registry.hub.docker.com/r/tleyden5iwx/ubuntu-cuda/dockerfile
+https://github.com/NVIDIA/nvidia-docker
+https://stackoverflow.com/questions/25185405/using-gpu-from-a-docker-container
+
+curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu18.04/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+apt install nvidia-prime
+
+Base image: nvidia/cuda:10.0-base

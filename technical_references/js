@@ -28,3 +28,12 @@ Enter trigger: .addEventListener('keyup', function(event) {
 })
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+getting images from google. Details change all the time tho
+urls=Array.from(document.querySelectorAll('.rg_i')).map(el=> el.hasAttribute('data-src')?el.getAttribute('data-src'):el.getAttribute('data-iurl'));
+window.open('data:text/csv;charset=utf-8,' + escape(urls.join('\n')));
+copy(Array.from(document.querySelectorAll('.rg_i')).map(el=> el.getAttribute('data-iurl')).join("\n"))
+copy(Array.from(document.querySelectorAll('.rg_i')).map(el=> el.getAttribute('src')).join("\n"))
+.rg_meta
+.rg_di
+working one at time of writing: copy(Array.from(document.querySelectorAll('.rg_i')).map(el=> el.hasAttribute('data-src')?el.getAttribute('data-src'):el.getAttribute('data-iurl')).join("\n"))

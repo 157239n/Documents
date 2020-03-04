@@ -212,3 +212,92 @@ password attacks
 - offline: tables of hased passwords get leaked, then try to turn the hashs to clear text
 client-side attacks
 - social engineering
+
+-------------------------------
+
+another pass, multiple sources, goal is to develop political graphs, which maltego seems to be up to the challenge
+
+nmap, zenmap, practically the same, but zenmap has a gui
+
+nmap -O <url>: detect OS
+nmap -p 1-65535 -T4 <url>: -p for range of ports, -T4 for speed (1 to 5, the higher, the faster), equivalent to nmap -p- -T4 <url>
+nmap -sS -T4 <url: SYN scan
+
+searchsploit windows: all shellcodes for windows
+
+dnsenum:
+- host address, A records
+- name servers
+- mx servers
+- trying zone transfer and getting bind versions
+- brute forcing subdomain
+- class C netranges
+- reverse dns lookup
+- ip blocks
+
+dnsmap:
+- brute forcing subdomain
+
+dnstracer
+
+lbd <url>: checks if a site has a load balancer. This can come in handy if the request somehow differ to each other through time. But because everything I do uses docker, the environments are exactly the same, so they didn't detect there was a load balancer at all. But they do detect that it ran nginx accurate to the version. This can be because of the default screens
+
+hping3. Like normal ping, but more advanced, and uses tcp, udp, icmp, raw-ip. Has traceroute mode, and other stuff like:
+- firewall testing
+- advanced port scanning
+- network testing, diff protocols, TOS, fragmentation
+- manual path MTU discovery
+- remote os fingerprinting
+- remote uptime guessing
+- tcp/ip stack auditing
+
+fern wifi cracker
+
+owasp-zap: fancy gui for scanning problems with typical webservers
+
+metasploit thingy: https://www.guru99.com/kali-linux-tutorial.html
+
+cisco common exploit tools:
+- cisco-torch -A <url>
+- CAT -p 23 -h <url>
+- cge.pl <url> <number, 1-14, for attack modes>
+
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Frame-Options: sameorigin
+
+sql-related:
+- sqlmap
+- sqlninja: for microsoft sql server only
+
+popular cms:
+- wpscan: scan wordpress sites. wpscan --url <url>
+- joomscan: scan joomla
+
+tlssled <url> <port>
+
+metasplot:
+- msfupdate -> apt update && apt install metasploit-framework
+- search name:Microsoft type:exploit, lists a bunch of exploits. Do info like the above to view in detail 1 of it
+- info exploit/windows/ssl/ms04_011_pct
+
+Social-Engineer Toolkit, pretty dope. Not what I'm looking for tho. Menu:
+- Social-Engineering Attacks
+- Penetration Testing (Fast-Track)
+- Third Party Modules
+- Update the Social-Engineer Toolkit
+- Update SET configuration
+- Help, Credits, and About
+
+maltego
+- "a tool to gather information on a large scale"
+- "it automates the process of information gathering"
+there're these things called transforms:
+- PATERVA CTAS CE
+- Shodan
+- Farsight DNSDB: database of dns stuff
+- Have I been Pwned?
+- CaseFile
+integrates with other companies:
+- BuiltWith
+- Shodan

@@ -1,4 +1,14 @@
 
+kubectl: 
+- curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+- chmod +x ./kubectl
+- sudo mv ./kubectl /usr/local/bin/kubectl
+- kubectl version --client
+kubeadm:
+
+setenforce 0
+kubeadm init --ignore-preflight-errors Swap
+
 Theoretical maximum of k8s (even k8s can't accomodate literally infinite computing power):
 - <5000 nodes
 - <150000 pods (30 pods/nodes limit on avg)
@@ -60,6 +70,8 @@ Locally, minikube:
 minikube start
 minikube stop
 minikube delete
+minikube ssh
+minikube dashboard
 
 lots of docs:
 - https://kubernetes.io/docs/home/
@@ -220,7 +232,7 @@ spec:
 
 kubectl apply -f file.yml
 kubectl apply -f {file}.yml --record
-kubectl cluster-info --context kind-clu1
+kubectl cluster-info --context kind-clu1 [dump]
 kubectl version --output=yaml
 kubectl config view
 kubectl config current-context
@@ -240,6 +252,7 @@ objects:
 - StatefulSets
 
 kubectl describe secret -n kube-system | grep deployment -A 12
+kubectl get secrets -n kube-system, look for "default", then kubectl describe secret $token_name
 
 kubectl rollout history deployment hello-deploy
 kubectl rollout status deployment hello-deploy
@@ -509,3 +522,89 @@ kubectl port-forward <pod-name> 8080:80, forward traffic from 8080 to 80 on the 
 kubectl run kuard --generator=run-pod/v1 --image=gcr.io/kuar-demo/kuard-amd64:blue
 kubectl delete pods/kuard
 
+kubectl proxy: authenticates with api server, then make the dashboard available on a different url
+
+----------------------------
+
+another pass, this time through edx.org
+/api/v1: core
+/apis/$NAME/$VERSION: can think of as packages, like /apis/batch/v2alpha1 or /apis/certificates.k8s.io/v1beta1, or /apis/networking.k8s.io/v1
+/healthz
+/logs
+/metrics
+/ui
+
+label selectors:
+env==dev or env=dev
+env in (dev,qa)
+from possibles:
+env:dev
+env:qa
+
+
+kubectl set image deployment mynginx nginx=nginx:1.16-alpine
+pods cross talk: redis-master.my-ns
+
+minikube service <name> --url
+minikube addons enable ingress
+
+kubectl create configmap my-config --from-literal=key1=value1 --from-literal=key2=value2
+kubectl create configmap permission-config --from-file=<path/to/>permission-reset.properties
+
+kubectl create secret generic my-password --from-literal=password=mysqlpassword. Don't know what's generic's for tho
+
+
+
+
+
+left over sources:
+
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+"k8s expose low number port": https://github.com/kubernetes/kubernetes/issues/9995
+
+why nodeport is a pain: https://oteemo.com/2017/12/12/think-nodeport-kubernetes/
+
+ingress 80: https://kubernetes.github.io/ingress-nginx/user-guide/basic-usage/
+
+nice overview: https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+https://www.sumologic.com/kubernetes/load-balancer/#monitoring-your-load-balancer
+
+btw this is so meta. I mean, an outside load balancer gets redirected to an ingress, gets redirected to a service, gets redirected to a pod, gets redirected to a container, gets redirected by apache, then finally gets redirected to the php-fpm process. So. Many. Layers
+
+btw, I remember reading that nginx and php-fpm doesn't play well with .htaccess files. So what's up with that? Is that true? It seems like I ran wordpress on nginx and php-fpm just fine, in the engr thingy
+
+again, how does permissions work here? I usually run docker as root. Does that mean the containers will also have root privileges? I mean, processes in the container runs as PID 1, and it can have access to a volume, right?
+
+mysql usage on k8s: https://www.youtube.com/watch?v=g924HDB81oc
+
+k8s federation
+
+also experiment with the full experience with kubeadm and utilizing multiple vms. See if they can access each other's web servers first
+
+strategy for utilizing namespaces?
+
+behavior of namespaces again?
+
+https://kubernetes.github.io/ingress-nginx/user-guide/tls/
+
+do k8s again. I know I've said this lots of times, but really do it this time on the local machine, possibly spinning up several virtual machines as well, to simplify moving things to production dramatically. And yeah, to do the zero downtime thingy, and to have automated scripts to manage the whole fucking thing. It will be gruelsome, and difficult, because all of these must be considered:
+- I can still renew certificates (how do they work again?). can I somehow get the certificate from within a pod, and no port 80 have to drop. Instead, every raw ip access will be redirected there? Again, I have to understand how they work intimately in order to do this. Hell, if I can do this then I don't really have to serendipitously renew them and just tell cron to do it? Looks plausible: https://runnable.com/blog/how-to-use-lets-encrypt-on-kubernetes, "certbot through k8s"
+- I can still send traffic to different containers based on their target domain. This is done using Ingress
+- run lots of containers at once, beyond the limit of 32 imposed on docker. Ask stack overflow to be sure
+- write code and make things live immediately. The volume>hostPath thingy is pretty much exactly like the old docker volume model, so yes, this is doable, and production should have the source code baked into the image itself
+- can work well with databases. This should be fine, cause mysql image is gonna fix all the permission crap
+- can feed sensitive config information in
+- references the host itself
+- can get ip address from within the container
+- survives a shutdown. Minikube will just be restarted, and everything should work again
+- can purge old images, because those can be large
+- deal with the "/etc/php/7.4/fpm/pool.d/www.conf" problem. Just thought of something else. I can just include that info in some distant service and I can poll it directly, without having to set in stone the environmental variables. Btw, previously I managed to import all environment variables with MYSQL_ at the beginning. I can just create a new convention for that and let it do everything on its own
+- does the system automatically updates the pods when an image is changed, but the image's name does not?
+- have access to the dashboard from the wide internet, but with some kind of authorization
+
+also plan is to manage everything I do on this comp using k8s, and not the live server just yet. May be after, when I'm comfortable enough with this
+
+https://github.com/kelseyhightower/kubernetes-the-hard-way
+https://github.com/kubernetes/kubeadm

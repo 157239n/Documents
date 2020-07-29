@@ -26,3 +26,12 @@ from corp1: ssh root@192.168.1.68 -L 3128:192.168.1.63:3128. Meaning, ssh into t
 from corp3, ssh to home1, listen to home1 for new connections. ssh root@192.168.1.68 -R 1234:192.168.20.2:80. Meaning, ssh into the home1 computer, and keep the ssh session going. Then listen for port 1234 on home1, and forward every traffic to corp2 webserver
 
 so, should be something like ssh root@kelvinho.org -R 9000:localhost:5000
+
+
+
+not tunneling, but useful config at ~/.ssh/config:
+Host myhostshortcut
+     HostName myhost.com
+     User barthelemy
+     ServerAliveInterval 60
+     ServerAliveCountMax 10

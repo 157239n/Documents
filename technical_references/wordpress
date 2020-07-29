@@ -57,14 +57,51 @@ bloginfo:
 - name: duh
 - description: duh
 
-wp_enqueue_style();
+function myTheme_loadResources() {
+  wp_enqueue_style("style", get_stylesheet_uri());
+}
+// https://codex.wordpress.org/Plugin_API/Action_Reference, hooks: https://developer.wordpress.org/reference/hooks
+add_action("wp_enqueue_scripts", "myTheme_loadResources");
 
 page.php, control for pages
 single.php, control for posts
 
 Navigations:
-- wp_nav_menu()
+- wp_nav_menu(args), displays navigation menu. Has "theme_location" inside args
+- register_nav_menus(array('primary' => 'Primary Menu'))
+- .current-menu-item
 
+
+is_page(int|string|int[]|string[])
+
+wp_list_pages(args)
+get_pages()
+get_children(args, including parent id/slug)
+is_page(slug|id|slug[]|id[]), whether current global page is of an identifier
+the_post()
+get_post(slug|id)
+the_author()
+get_the_author(): string, name of author
+get_the_author_meta("ID"[, $user_id])
+get_author_posts_url($author_id)
+get_the_category([$id]): array
+get_category_link(up[0]->term_id)
+get_posts(args)
+the_post_thumbnail()
+get_search_form()
+get_template_part($slug, $name)
+
+classes:
+- WP_Query: https://developer.wordpress.org/reference/classes/wp_query/
+- WP_Post: https://developer.wordpress.org/reference/classes/wp_post/
+
+archive identifier functions:
+- is_category()
+- is_tag()
+- is_author()
+- is_day()
+- is_month()
+- is_year()
 
 
 
@@ -246,3 +283,6 @@ really important rss:
   - Template tags: https://developer.wordpress.org/themes/references/list-of-template-tags/
 - Sandbox: sgn.157239n.com/wordpress
 
+
+multi-language. Simple dictionary file, maps english phrases to vietnamese. Aka $translator.get(). The object will be created for different code pages and sections. So "checkout" code will check for i18n/checkout.txt for dictionary. Each route supposedly will get a different translator
+checkout

@@ -5,3 +5,9 @@ So I came across this while trying to set up OpenEdgar, which has like, a ton of
 - https://hackernoon.com/introduction-to-message-brokers-part-1-apache-kafka-vs-rabbitmq-8fd67bf68566
 - https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd
 
+advanced message queuing protocol, defining:
+- producers
+- broker
+- consumers
+
+-> increase loose coupling and scalability

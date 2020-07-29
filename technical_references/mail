@@ -68,3 +68,41 @@ the image:
 - set up reverse dns (PTR record, this is especially painful because many services don't allow changing their PTR record for the vps), so that the server's ip address points to mail.domain.tld, also make sure the regular dns points mail.domain.tld to the server's ip address. Also, there can only be 1 ptr record. All other ptr records will act as aliases with the original one.
 
 if network is 192.168.0.0/24, reverse zone would be 0.168.192.in-addr.arpa
+
+rest of the mail stuff:
+- dkim with sendmail
+  - https://philio.me/setting-up-dkim-with-sendmail-on-ubuntu-14-04/
+  - https://randombio.com/linuxsetup97.html
+- relay: http://www.postfix.org/BASIC_CONFIGURATION_README.html#relay_from
+- postfix conf:
+  - https://www.youtube.com/watch?v=HmG6g0ujhJc
+  - https://www.youtube.com/watch?v=yHUigLSmGOE
+  - long one: https://www.youtube.com/watch?v=2pMC-6LVLLg
+  - bad one: https://www.youtube.com/watch?v=Jeod07TdYkc
+- general:
+  - https://www.youtube.com/watch?v=x28ciavQ4mI
+
+
+
+sendmail EMAILADDRESS
+FROM: FROMADDRESS
+SUBJECT: hello world
+this is a test email
+.
+
+works like a charm, but gmail says it's not verified
+
+hostnamectl set-hostname mail.example.com
+
+dig {domain} {mx/a/aaaa/txt/...}
+
+/etc/postfix/main.cf
+virtual_alias_domains = grokshop.tv
+virtual_alias_maps = hash:/etc/postfix/virtual
+inet_protocols = ipv4
+
+/etc/postfix/virtual, to forward stuff
+ceo@grokshop.tv abc@gmail.com
+
+postmap /etc/postfix/virtual
+postconf inet_protocols, to list accepting protocols (v4 or v6)

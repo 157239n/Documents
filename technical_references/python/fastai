@@ -174,3 +174,101 @@ for classification, we use this loss function called cross-entropy loss. Can't u
 learner.loss_func = MSELossFlat()
 
 "fit_one_cycle makes the learning rate starts low, go up, and then go down again"
+
+-------
+
+unregulated notes
+
+
+pytorch, calculating gradient means loss.backward(). But I thought loss is just a number? Okay, so how they did stuff was to declare a as nn.Parameter(a). So this looks like an array wrapper and thus by using this, they can sort of know how to calculate the gradient and whatnot. I sort of couldn't imagined this flexibility a while back, and I still don't know how they did it. So may be this is worthwhile afterall
+
+also if I can just find out where are the damn images, then I probably can develop whole system of commands to clear out unnecessary images or low quality ones, instead of cooperating with the notebook's mechanism
+
+https://forums.fast.ai/t/find-path-to-file-imagedatabunch/50279/6
+
+and the idea to pull live satellite data and look for smoke clouds and whatnot. And may be icebergs too? Just to give out an automatic alert whenever something abnormal is found. I think this would be valuable in terms of creating a learning workflow, and inch me closer to that idea of replacing science's core structure with something like this
+
+"planet amazon dataset"
+
+and may be now make models to predict some physical phenomenon? Like 3 body problem, or other stuff, like pistons and whatnot. Then make these learn on quantum data, which I think will be the nail in the coffin for traditional science
+
+"satellite tiles"
+
+and yeah, can I get data directly from an SSO satellite? Do people publish these data?
+
+"multi-label classification, segmentation"
+
+"a partial"
+acc_02 = partial(accuracy_thresh, thresh=0.2)
+learner.fit_one_cycle(5, slice(0.01))
+
+wait what? So you are saying that you can just use a model trained on 128x128 images and slap it to a 256x256 image? Don't models need to stay rigid and the same size throughout?
+
+doc_src/data_block
+
+so after going through the sgd thingy they introduced, they kinda still ambiguous about how these architectures work, and how can I adapt this to predict scientific phenomena
+
+image segmentation?
+
+np.loadtxt(path_to_file.txt, dtype=str)
+
+decrease regularization
+weight decay
+dropout
+data augmentation
+
+for segmentation, we can use a cnn, but something else called unet is better
+
+so a cnn will condense things down, then the unet thing expands things out
+
+Learner.create_unet(), so I suspect there will be a Learner.create_cnn() version too? So try this out
+learner.recorder.plot_losses()
+learner.recorder.plot_lr()
+
+so I suspect that the convolution nn works with sort of an absolute max image size, and every image size below can be applied to here, so that's why you can increase the resolution to double the original (the transfer learning thingy) and it still works. Just my prediction, of course
+
+when we do NLP classification, we actually create 2 models: language model
+
+text_classification_learner()
+
+and it seems like I can actually apply for a grant from drexel to begin doing these things. I can feel these goals are being checked off and can actually be executed. Oh yeah baby, I feel it so strongly it burns. Muahahahaha :v Damn what am I talking about :v Kay bye :v Man, I'm in my prime time right now. I really have to try my best in this small opportunity, and progress even faster than myself in the past
+
+adam, rmsprop
+
+and may be really apply these ML ideas to the scientific backbone, and actually change how science works
+
+how about creating a bunch of images with text inside them, and then draw a boundary layer as the correct answer? Yep this approach is quite interesting, but I have to have the data first to be able to do this
+
+and the tone of them speaking about these things, it's almost as if they have sort of a capability to learn things distributedly, and not relying on a single data center. I also suspect this has to do with transfer learning
+
+df_raw: raw dataset, (401125, 65)
+raw_train: (401125-12k)
+raw_valid: (12k, 65)
+df_trn: converted strings to categories, then into numbers. (401125, 66) (SalePrice gone, <other>_na added)
+y_trn: (401125,)
+X_train: (401125-12k, 66)
+X_valid: (12k, 66)
+y_train: (401125-12k,)
+y_valid: (12k,)
+
+preds: (40, 12k). 40 for 40 estimators, 12k for predictions of y_valid
+preds[:,0]: (40,), predictions of 40 estimators on the first sample of X_valid
+preds[:0,]: (0, 12k), predictions of the 1st estimator on every sample
+fi: (66, 2), feature importance, has columns col (YearMade, ProductSize) and imp (0.17, 0.04)
+
+conda install matplotlib=2.2.3
+
+collaborative filtering model
+
+pip3 install torch==1.0.1, "Optional" problem, definitely worked on previous ones
+but, doesn't solve that mnist problem tho, so try installing a later version
+pip3 install torch==1.1.0, "Optional" problem
+pip3 install torch==1.2.0, "AttributeError: module 'torch.jit' has no attribute 'unused'" problem
+pip3 install torch==1.3.1, "RuntimeError: builtin cannot be used as a value: at /usr/local/lib/python3.6/dist-packages/torchvision/models/detection/_utils.py:14:56" problems
+pip3 install torch==1.4.0, problems but only until much later
+pip3 install torch==1.2.0 torchvision==0.4.0 pillow==6.1, same problem as 1.4.0, still "IndexError: invalid index to scalar variable."
+
+not reproducible things, after docker restart:
+- /usr/local/lib/python3.6/dist-packages/pdpbox/pdp.py, graphing somewhere in lesson 2
+after git pull:
+- ~/fastai/old/fastai/model.py: lesson 4, at line 243 after np.average() at batch_cnts, removed [0]

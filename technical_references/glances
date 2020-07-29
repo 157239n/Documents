@@ -1,0 +1,8 @@
+
+glances -w for starting webserver on port 61208 
+
+/?refresh_time=2
+
+localhost/api/2/args/time
+
+https://readthedocs.org/projects/glances/downloads/pdf/stable/

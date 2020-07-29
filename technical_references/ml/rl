@@ -1,0 +1,5 @@
+
+s: state
+o: observation, subset of state
+
+a = pi(s). As simple as that? I thought we have bounds and whatnot? If this is the way to do it then it'll be a breeze

@@ -303,3 +303,88 @@ so may be the reason I don't want to use visual studio is because the key maps a
 C#: https://www.youtube.com/watch?v=4zrEPsFb8s4
 
 openfoam, cfd on linux, https://www.linuxjournal.com/content/cfd-or-not-cfd
+
+http://docs.everypolitician.org/use_the_data.html. Apparently the team wasn't able to keep up, and have moved operations over to https://www.wikidata.org/wiki/Wikidata:WikiProject_every_politician. Also http://www.politicalgraveyard.com/
+popoloproject.com. Just a data format specification: https://github.com/popolo-project/popolo-spec/tree/gh-pages/examples
+
+may be write to brian greene and tell him how grateful am I for the 2 shows that he did
+
+software: "river analysis system", HEC-RAS. Developed by US army corps of engineers. This will satisfy my inner nerd so much
+- how much rain falls, how much of that rain makes its way into creeks and rivers -> "hydrologic analysis"
+- then need a hydrolic model to find out how much the river rises as a result -> "floodplain mapping"
+"fluvial geomorphology", study of how rivers form and evolve
+"PE Exam"
+https://www.cement.org/learn/concrete-technology/durability/corrosion-of-embedded-materials
+"anodization"
+
+and possibly check over blockchain, but don't
+
+- https://dba.stackexchange.com/questions/171640/one-mysql-table-keeps-losing-auto-increment-after-restart
+- https://desmart.com/blog/be-careful-with-mysql-s-auto_increment-how-we-ended-up-losing-data
+- https://blog.pythian.com/case-auto-increment-mysql/
+- https://mysqlserverteam.com/storing-uuid-values-in-mysql-tables/
+- https://mysqlserverteam.com/mysql-8-0-uuid-support/
+- https://dev.mysql.com/doc/refman/8.0/en/innodb-auto-increment-handling.html
+- https://stackoverflow.com/questions/3679611/mysql-upsert-and-auto-increment-causes-gaps
+
+time is an emergent phenomenon:
+- https://www.quantamagazine.org/edward-witten-ponders-the-nature-of-reality-20171128
+- https://physics.stackexchange.com/questions/390058/what-does-it-mean-that-space-time-is-emergent
+- https://pdfs.semanticscholar.org/1a0c/842dc8fdb878770b6c7bc7a4fb40dcb9d95f.pdf
+- https://arxiv.org/abs/1502.03264
+- http://guava.physics.uiuc.edu/~nigel/courses/569/Essays_Spring2018/Files/gupta.pdf
+- https://iopscience.iop.org/article/10.1088/1742-6596/626/1/012019/pdf
+- https://medium.com/the-physics-arxiv-blog/quantum-experiment-shows-how-time-emerges-from-entanglement-d5d3dc850933
+
+make a prettier universal paperclip? "universal paperclip extended"??
+
+buy mom a vr set as a nice gift
+
+how about I get into the business of mass producing telescopes?
+
+gradient checkpointing: https://qywu.github.io/2019/05/22/explore-gradient-checkpointing.html
+tensorflow memory saving: https://medium.com/tensorflow/fitting-larger-networks-into-memory-583e3c758ff9
+detailed optimization tricks: https://www.sicara.ai/blog/2019-28-10-deep-learning-memory-usage-and-pytorch-optimization-tricks
+
+quantization? https://pytorch.org/docs/stable/quantization.html
+https://github.com/pytorch/pytorch/wiki/Introducing-Quantized-Tensor
+
+seems interesting: http://digitalsoundandmusic.com/chapters/ch7/
+
+dissecting covid 19? https://www.youtube.com/watch?v=8vWaawiUteM
+https://www.youtube.com/watch?v=V7NkS6j-XWg
+
+https://waitbutwhy.com/2020/03/my-morning.html
+
+join melody's groupme
+
+nuclear construction and operation: https://www.youtube.com/watch?v=qHPp458m1cs
+
+do a deep dive into distribution and p values
+
+holy shit: https://www.reddit.com/r/factorio/comments/gf0rk7/upgradeable_buffered_intersection/
+
+may be intro to what pytorch can do, and the intuitions behind it all
+
+collisions:
+- https://gistbok.ucgis.org/bok-topics/spatial-indexing
+- "spatial index"
+- http://chipmunk-physics.net/release/ChipmunkLatest-Docs/#CollisionDetection
+- "spatial hashmap"
+- https://gamedev.stackexchange.com/questions/18261/how-can-i-implement-fast-accurate-2d-collision-detection
+- https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects
+- https://gamedev.stackexchange.com/questions/10911/a-ball-hits-the-corner-where-will-it-deflect
+
+try to setup and use woocommerce, because that may really speed things up a lot for me now that I've understood roughly how wordpress works
+
+help hideboar sell his posters?
+
+try gravity with sigmoid
+try gravity where the iterator is actually dynamically generating new states? Right within python
+try gravity where there's a default positive angular velocity right at the beginning and random (normal, and small) centripetal velocity
+
+aws essential course: https://www.youtube.com/watch?v=vJzHn24TNQE&list=PLv2a_5pNAko0Mijc6mnv04xeOut443Wnk&index=17
+
+good article for visualizing the landscape, but they used an artificial landscape tho: http://louistiao.me/notes/visualizing-and-animating-optimization-algorithms-with-matplotlib/. I still want to visualize the landscape as it's training, but this provides the animation process
+
+toasts for virus

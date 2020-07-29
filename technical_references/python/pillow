@@ -1,0 +1,15 @@
+
+from PIL import Image
+
+img1 = Image.open('abc.jpg')
+img1.save('abc.png')
+
+img1.thumbnail((300, 300))
+img1.save(...)
+
+img1.rotate(90).save(...)
+img1.convert(mode='L').save(...)
+
+img1.show()
+
+np.asarray(img1)

@@ -15,3 +15,5 @@ void displayMessage(const string &msg, const vector<elemType> &vec) {...}
 const vector<int>* (*seq_ptr)(int); // a pointer to a function that takes in an integer and spits out a pointer to a vector
 const vector<int>* (*seq_ptr[])(int); // this is an array of the above
 extern const vector<int>* (*seq_ptr[6])(int); // this is the array (object, not function) declaration in header files. Then the object is expected to be initialized at file scope of main()
+
+#pragma once, always present in header files

@@ -39,6 +39,7 @@ mainClassName = 'some.package.SomeMainClass'
 dependencies {
     implementation 'com.google.guava:guava:23.0'
     implementation 'org.processing:core:3.3.7'
+    implementation 'com.1stleg:jnativehook:2.1.0'
     implementation 'org.json:json:20140107'
     implementation fileTree("libs")
 

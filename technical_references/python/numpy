@@ -1,0 +1,6 @@
+
+np.array([1, 2, 3])
+nparray.reshape(5, 3)
+np.ones([2, 3, 5])
+np.exp(x)
+np.arange(-2, 2, 0.01)

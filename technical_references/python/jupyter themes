@@ -1,0 +1,13 @@
+
+"jt" command: https://github.com/dunovank/jupyter-themes
+
+themes:
+- chesterish: dark, neon blue
+- grade3: light, predominantly white, with cherry feeling
+- gruvboxd: dark, retro with yellow, grey-white and grey-blue
+- gruvboxl: light, retro, brown-white with more white
+- monokai: dark, just like itself in sublime text
+- oceans16: dark, main theme for a long time
+- onedork: like oceans16, but with darker background
+- solarizedd: dark, but lots and lots of cyan-blue, hard to read
+- solarizedl: light, also hard to read

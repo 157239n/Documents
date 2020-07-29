@@ -118,6 +118,8 @@ commands:
   - wget "google.com/file.zip"
   - bg %1: ctrl+z to stop a running process, then run "bg %1" to resume that process in the background
   - rsync: syncing files
+  - remove non-ascii characters: LC_ALL=C tr -dc '\0-\177' <file >newfile
+  - grep non-ascii characters: grep --color='auto' -P -n "[\x80-\xFF]" file.xml
 - users:
   - id
   - who
@@ -221,3 +223,7 @@ some interesting "drivers":
 - usbfs
 - btusb
 - ehci-pci
+
+ctrl-tab in terminals
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab '<Primary>Tab'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ prev-tab '<Primary><Shift>Tab'

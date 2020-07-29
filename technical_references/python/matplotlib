@@ -1,0 +1,10 @@
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+mpimg.imread('abc.jpg')
+
+plt.plot(x, y)
+plt.scatter(x, y)
+plt.imshow(np rank 2/3 tensor)

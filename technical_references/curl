@@ -7,3 +7,11 @@ if there is a redirect while using a POST request, curl will default that to a G
 
 if no arguments: curl -d "" --post301 --post302 --post303 -L <url>
 if have arguments, replace -d with --form, duh
+
+
+$ch = curl_init("http://blackbox.nn.157239n.com/basics");
+curl_setopt($ch, CURLOPT_HEADER, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$abc = curl_exec($ch);
+if(curl_error($ch)) echo "Error";
+curl_close($ch);

@@ -1,6 +1,0 @@
-Kernel: a function that runs in CUDA, access by adding __global__ before the function
-Device code: code that runs on the GPU
-Host code: code that runs on the CPU
-
-- allocate memory, cudaMallocManaged(), returns a pointer that I can access from host or device code
-- free memory, cudaFree()

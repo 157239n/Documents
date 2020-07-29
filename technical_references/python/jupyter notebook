@@ -1,0 +1,57 @@
+
+conda install jupyter
+jupyter notebook
+jupyter notebook list
+jupyter notebook
+jupyter trust notebook.ipynb
+
+keyboard shortcuts:
+- shift enter: run
+
+magics:
+- %reload_ext autoreload
+- %autoreload 2: reload if underlying code changes
+- %matplotlib inline
+
+tab: code suggestion
+shift tab: see needed params inside a function
+
+help(untar_data)
+doc(interp.plot_top_losses)
+??FileDeleter
+
+ipywidgets
+
+%time <command>
+%prun <command>, to profile stuff
+
+%%timeit
+<code>
+
+%%timeit <code>
+
+%pdb, turning on debugger
+
+slides: jupyter nbconvert Jupyter\ Slides.ipynb --to slides --post serve
+
+
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install -- user
+
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable
+
+
+%load_ext Cython
+%%cython
+
+%load_ext hierarchymagic
+%%dot
+
+diagram G {
+	rankdir=LR;
+	hello -> world;
+	goodbye -> cruel -> world;
+	world -> of -> warcraft;
+	world -> on -> fire;
+}

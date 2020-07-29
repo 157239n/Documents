@@ -15,3 +15,12 @@ curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu18.04/nvidia-docker.list
 apt install nvidia-prime
 
 Base image: nvidia/cuda:10.0-base
+
+Kernel: a function that runs in CUDA, access by adding __global__ before the function
+Device code: code that runs on the GPU
+Host code: code that runs on the CPU
+
+- allocate memory, cudaMallocManaged(), returns a pointer that I can access from host or device code
+- free memory, cudaFree()
+
+for cuda version: nvcc --version

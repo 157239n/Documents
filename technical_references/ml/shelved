@@ -1,0 +1,78 @@
+
+frank hutter, use random forests to actually find optimal hyperparameters. Pretty neat. Generally, the concept is called "automl": https://www.automl.org/book/
+bayesian optimization: http://krasserm.github.io/2018/03/21/bayesian-optimization/
+on the difficulty of training RNNs: https://arxiv.org/pdf/1211.5063.pdf
+batch norm: https://arxiv.org/pdf/1502.03167.pdf
+training highly effective connectivities within NNs with randomly initialized, fixed weights: https://arxiv.org/pdf/2006.16627.pdf
+
+neuroscience:
+- hippocampus doing RL:
+	- https://www.nature.com/articles/s41467-019-08998-1
+	- https://pubmed.ncbi.nlm.nih.gov/30842581/
+	- https://www.frontiersin.org/articles/10.3389/fncom.2016.00128/full
+- spiking stuff, direct brain:
+	- https://www.nature.com/articles/s41598-020-58831-9.pdf
+	- https://singularityhub.com/2020/03/10/scientists-linked-artificial-and-biological-neurons-in-a-network-and-amazingly-it-worked/
+- http://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf
+
+GANs:
+- original paper: https://arxiv.org/pdf/1406.2661v1.pdf
+- dcgan: https://arxiv.org/pdf/1511.06434.pdf
+- gan upscaling: http://papers.nips.cc/paper/5773-deep-generative-image-models-using-a-laplacian-pyramid-of-adversarial-networks.pdf
+- unsupervised representation learning with deep conv GANs: https://arxiv.org/pdf/1511.06434.pdf, the sunglasses paper
+- deep multiscale video prediction beyond mean square error: https://arxiv.org/pdf/1511.05440.pdf
+- improved techniques for training GANs: https://arxiv.org/pdf/1606.03498.pdf
+- towards principled methods for training GANs: https://arxiv.org/pdf/1701.04862.pdf
+- mode collapse:
+	- catastrophic forgetting and mode collapse in GANs: https://arxiv.org/pdf/1807.04015.pdf
+	- comparison of GAN architectures which reduce mode collapse: https://arxiv.org/pdf/1910.04636.pdf
+	- ldmgan: reducing mode collapse in GANs with latent distribution matching: https://openreview.net/pdf?id=HygHbTVYPB
+	- veegan: reducing mode collapse in GANs using implicit variational learning: https://michaelgutmann.github.io/assets/papers/Srivastava2017.pdf
+	- https://mc.ai/how-to-fight-mode-collapse-in-gans/
+	- https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b
+	- https://machinelearningmastery.com/practical-guide-to-gan-failure-modes/
+	- https://cedar.buffalo.edu/~srihari/CSE676/22.3-GAN%20Mode%20Collapse.pdf
+	- https://developers.google.com/machine-learning/gan/problems
+
+super resolution:
+- https://arxiv.org/pdf/1609.05158.pdf
+- https://arxiv.org/pdf/1707.02921.pdf
+- no gans, lots of techniques to unpack: https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5
+
+CNNs:
+- trippy images generation:
+	- https://www3.cs.stonybrook.edu/~cse352/T12talk.pdf
+	- https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html
+	- https://arxiv.org/pdf/1412.1897v4.pdf
+	- https://arxiv.org/pdf/1412.0035v1.pdf
+	- https://arxiv.org/pdf/1506.02753.pdf
+	- https://arxiv.org/pdf/1312.6034v2.pdf
+- hard negative mining (like negative sampling??):
+	- https://www.reddit.com/r/computervision/comments/2ggc5l/what_is_hard_negative_mining_and_how_is_it/
+	- https://www.researchgate.net/post/Hard_Negative_Mining_in_CNN_leading_to_class_imbalance
+	- https://www.researchgate.net/post/How_to_do_Hard_negative_mining
+	- https://openaccess.thecvf.com/content_ECCV_2018/papers/SouYoung_Jin_Unsupervised_Hard-Negative_Mining_ECCV_2018_paper.pdf
+	- https://arxiv.org/pdf/1604.03540.pdf
+	- https://arxiv.org/pdf/1906.09681.pdf
+
+may be unproductive to think about, or ideas that are not of value:
+
+ben goertzel:
+- https://goertzel.org/Goertzel_linked_papers_Dec_2014.pdf
+- http://www.agi-society.org/journal/
+- https://dblp.org/pers/g/Goertzel:Ben.html
+
+opencog:
+- https://github.com/opencog
+- https://wiki.opencog.org/w/The_Open_Cognition_Project
+- https://en.wikipedia.org/wiki/OpenCog
+- https://wiki.opencog.org/w/Background_Publications
+- https://opencog.org/faq/
+- also singularitynet?
+- https://ai.stackexchange.com/questions/2381/what-are-general-ideas-behind-opencog
+- https://en.wikipedia.org/wiki/Cyc
+- trueai.io
+
+this and see over pytorch's c interface and nvidia's interface as well: https://docs.python.org/3/extending/extending.html, https://developer.nvidia.com/how-to-cuda-c-cpp. The goal here is to basically know how the connection works, and to be able to anticipate whether OpenAI can really do stuff like GPT-4, and how can I have control over basically everything in my stack, but still have the flexibility of the python interface. Also see whether I can create a nn.Conv2d closer to what they are actually using. Also I kinda want to create my own stuff in CPU really fast, without going through prebuilt stuff like counter
+
+tensorboard for pytorch? https://pytorch.org/docs/stable/tensorboard.html

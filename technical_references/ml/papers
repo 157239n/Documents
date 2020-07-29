@@ -1,0 +1,407 @@
+
+reminders:
+- conv-bn-relu
+
+deep resources:
+- https://pytorch.org/tutorials/
+- https://colah.github.io/
+- http://jalammar.github.io/
+- https://openai.com/progress/
+- https://deepmind.com/careers#internships
+- clear path: https://openai.com/blog/requests-for-research-2/
+- https://spinningup.openai.com/en/latest/
+	- https://github.com/openai/spinningup
+	- https://github.com/kashif/firedup
+	- https://github.com/Kaixhin/spinning-up-basic
+	- https://github.com/MishaLaskin/torchingup
+	- https://github.com/openai/baselines
+	- https://github.com/openai/universe
+- deepmind's course: https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF
+- trask's book
+- human compatible book
+- https://www.lesswrong.com/users/nostalgebraist
+- grad level lectures: https://www.cs.cornell.edu/courses/cs6787/2017fa/Lecture4.pdf
+- https://losslandscape.com/
+- https://alignment-newsletter.libsyn.com/
+- silver, lecture 4: https://www.youtube.com/watch?v=PnHCvfgC_ZA&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=4
+- jeremy, dl: https://www.youtube.com/watch?v=CJKnDu2dxOE
+- suggested by openai:
+	- deep rl bootcamp: https://sites.google.com/view/deep-rl-bootcamp/lectures
+	- CS285 deep rl learning: http://rail.eecs.berkeley.edu/deeprlcourse/
+	- david silver: https://www.davidsilver.uk/teaching/
+	- random pdf: http://joschu.net/docs/nuts-and-bolts.pdf
+	- random pdf: https://github.com/jachiam/rl-intro/blob/master/Presentation/rl_intro.pdf
+	- https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html
+	- algorithms for RL: https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
+	- optimizing expectations: from deep RL to stochastic computational graphs: http://joschu.net/docs/thesis.pdf
+	- https://github.com/rll/rllab
+	- gym walkthrough: https://gym.openai.com/docs/#review
+	- https://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/, good q-learning intro
+- training RNNs by Sutskever: http://www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf
+- https://aiweirdness.com/
+- https://distill.pub/
+- https://www.reddit.com/r/artificial/wiki/learning-materials
+- https://microscope.openai.com/models
+- https://agi.mit.edu
+- https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw/videos
+- https://www.youtube.com/c/ArxivInsights/videos
+- https://huggingface.co/
+
+talks:
+- yann lecun: https://www.youtube.com/watch?v=SGSOCuByo24
+- ian goodfellow talk: https://www.youtube.com/watch?v=sucqskXRkss
+- joshua bengio talk, backprop in the brain: https://www.youtube.com/watch?v=FhRW77rZUS8
+- covid 19, howard: https://www.youtube.com/watch?v=GZ0yNMnvwqY
+- deepmind energy: https://www.youtube.com/watch?v=ba1tND0B0xk
+- lex's dawn song, adversarial ML and computer security: https://www.youtube.com/watch?v=HhY95m-WD_E
+- lex's matt botvinick: https://www.youtube.com/watch?v=3t06ajvBtl0, https://scholar.google.com/citations?hl=en&user=eM916YMAAAAJ&view_op=list_works&sortby=pubdate
+- ian: https://www.youtube.com/watch?v=HGYYEUSm-0Q
+- lex's ppt, with list of other speakers: https://www.youtube.com/watch?v=-GV_A9Js2nM
+- sutskever: https://www.youtube.com/watch?v=9EN_HoEk3KY, https://www.youtube.com/watch?v=9EN_HoEk3KY
+
+DeepMind:
+- (8/10) Understanding Synthetic Gradients and Decoupled Neural Interfaces:
+	- https://arxiv.org/pdf/1703.00522.pdf
+	- https://deepmind.com/research/publications/understanding-synthetic-gradients-and-decoupled-neural-interfaces
+	- https://iamtrask.github.io/2017/03/21/synthetic-gradients/
+- (5/10) Learning to Transduce with Unbounded Memory:
+	- http://papers.nips.cc/paper/5648-learning-to-transduce-with-unbounded-memory.pdf
+	- https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
+- (3/10) Neural Turing Machines: https://arxiv.org/pdf/1410.5401.pdf
+- Learning and Evaluating, General Linguistic Intelligence, DeepMind: https://arxiv.org/pdf/1901.11373.pdf
+
+detecting crime, without risking privacy: https://iamtrask.github.io/2017/06/05/homomorphic-surveillance/
+
+CNNs:
+- mask rcnn, like unet, but can differentiate between differences
+- ensemble: https://arxiv.org/pdf/1804.09803.pdf
+- object saliency detection, image segmentation: https://arxiv.org/pdf/1505.01173.pdf
+- good end-to-end document recognition: https://dropbox.tech/machine-learning/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning
+- (8/10) readable paper about predicting wind farms: https://arxiv.org/pdf/1810.12611.pdf
+- (7/10) end-to-end recognition: https://arxiv.org/pdf/1604.03286.pdf, "paragraph recognition"
+- An Autonomous method for finding objects: https://towardsdatascience.com/saliency-based-image-segmentation-473b4cb31774
+- details on how the imagenet competition is structured and what is learned: https://arxiv.org/pdf/1409.0575.pdf
+- (9/10) selective search for object recognition: https://ivi.fnwi.uva.nl/isis/publications/2013/UijlingsIJCV2013/UijlingsIJCV2013.pdf
+- overfitting cifar 10: https://arxiv.org/pdf/1806.00451.pdf, https://arxiv.org/pdf/1711.11561.pdf
+- RetinaNet: https://arxiv.org/pdf/1708.02002.pdf, https://towardsdatascience.com/review-retinanet-focal-loss-object-detection-38fba6afabe4
+- SlowFast: video and time component, to remove flickering in static images
+- Aggregated Residual Transformations for DNNs: https://arxiv.org/pdf/1611.05431.pdf
+- group equivariant convolutional networks: http://proceedings.mlr.press/v48/cohenc16.pdf
+- perceptual losses for real-time style transfer and super resolution: https://arxiv.org/pdf/1603.08155.pdf
+
+adversarial & security:
+- intriguing properties of nn: https://arxiv.org/pdf/1312.6199v4.pdf, the adversarial images part
+- explaining and harvesting adversarial examples: https://arxiv.org/pdf/1412.6572.pdf
+- adversarial examples in the real world: https://arxiv.org/pdf/1607.02533.pdf
+- practical blackbox attacks against machine learning: https://arxiv.org/pdf/1602.02697.pdf
+
+tuning:
+- leslie:
+	- cyclical lr: https://arxiv.org/pdf/1506.01186.pdf
+	- 1 cycle:
+		- https://arxiv.org/pdf/1803.09820.pdf
+		- https://sgugger.github.io/the-1cycle-policy.html
+	- super convergence:
+		- https://towardsdatascience.com/https-medium-com-super-convergence-very-fast-training-of-neural-networks-using-large-learning-rates-decb689b9eb0
+		- https://arxiv.org/pdf/1708.07120.pdf
+- technical strategy for ai engineers: https://d2wvfoqc9gyqzf.cloudfront.net/content/uploads/2018/09/Ng-MLY01-13.pdf
+- practical recommendations for gradient-based training: https://arxiv.org/pdf/1206.5533.pdf
+- no lr: https://github.com/awslabs/adatune
+- double descent:
+	- A brief prehistory of double descent: https://arxiv.org/pdf/2004.04328.pdf
+	- Deep double descent, where bigger models and more data hurt: https://arxiv.org/pdf/1912.02292.pdf
+	- (heavy math) high-dimensional dynamics of generalization error in NNs: https://arxiv.org/pdf/1710.03667.pdf
+	- the jamming transition as a paradigm to understand the loss landscape of deep NNs: https://arxiv.org/pdf/1809.09349.pdf
+	- reconciling modern ML practice and the bias-variance trade-off: https://arxiv.org/pdf/1812.11118.pdf
+- weight norm (never heard of it lmao): https://arxiv.org/pdf/1602.07868.pdf
+- how does batch normalization help optimization: https://arxiv.org/pdf/1805.11604.pdf
+- augmentation:
+	- playing with data, ground truth from computer games: https://arxiv.org/pdf/1608.02192.pdf
+	- playing for benchmarks: https://arxiv.org/pdf/1709.07322.pdf
+	- free supervision from video games: https://openaccess.thecvf.com/content_cvpr_2018/papers/Krahenbuhl_Free_Supervision_From_CVPR_2018_paper.pdf
+- adversarial examples:
+	- simple black-box adversarial attacks: https://arxiv.org/pdf/1905.07121.pdf
+	- black-box adversarial attacks with limited queries and information: https://arxiv.org/pdf/1804.08598.pdf
+	- adversarial risk and the dangers of evaluating against weak attacks: https://arxiv.org/pdf/1802.05666.pdf
+	- reliable evaluation of adversarial robustness with an ensemble of diverse parameter-free attacks: https://arxiv.org/pdf/2003.01690.pdf
+	- https://www.technologyreview.com/2020/07/10/1005048/ai-deep-learning-safe-from-hackers-adversarial-attacks/?fbclid=IwAR0qc7C4OyLf79jR5c7BEZNj9lfbp7D-6YiAMLoeIiZkPcocDO0e5lXAnUI
+- (redditors find this fishy) learned optimizers that scale and generalize: https://arxiv.org/pdf/1703.04813.pdf
+- scaling laws for neural language models: https://arxiv.org/pdf/2001.08361.pdf, https://www.reddit.com/r/MachineLearning/comments/gz310a/p_how_big_should_my_language_model_be_an/
+
+RNNs:
+- unreasonable effectiveness of RNNs: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+- visualizing and understanding recurrent networks: https://arxiv.org/pdf/1506.02078.pdf
+- rnn and lstm from scratch: https://mlexplained.com/2019/02/15/building-an-lstm-from-scratch-in-pytorch-lstms-in-depth-part-1/
+- LSTM: a search space odyssey: https://arxiv.org/pdf/1503.04069.pdf
+- GRUs: https://arxiv.org/pdf/1412.3555v1.pdf
+- a neural transducer: https://arxiv.org/pdf/1511.04868.pdf
+- multitask sequence to sequence learning: https://arxiv.org/pdf/1511.06114.pdf
+
+executive summaries:
+- a survey on neural architecture search, seems readable, and comprehensive: https://arxiv.org/pdf/1905.01392.pdf
+- survey of recent deep CNN: https://arxiv.org/pdf/1901.06032.pdf
+- 2 minute papers: https://www.youtube.com/watch?v=N6wn8zMRlVE
+- visual question answering: a survey of methods and datasets: https://arxiv.org/pdf/1607.05910.pdf
+- https://adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html
+- measuring the algorithmic efficiency of NNs: https://arxiv.org/pdf/2005.04305.pdf
+- are we really making much progress? worrying analysis of recent neural recommendation approaches: https://arxiv.org/pdf/1907.06902.pdf
+- AutoML, a survey of the state-of-the-art: https://arxiv.org/pdf/1908.00709.pdf
+- beyond human-level accuracy: computational challenges in DL: https://arxiv.org/pdf/1909.01736.pdf
+
+RL:
+- starcraft: https://arxiv.org/pdf/1708.04782.pdf
+- https://towardsdatascience.com/welcome-to-deep-reinforcement-learning-part-1-dqn-c3cab4d41b6b
+- https://towardsdatascience.com/dqn-part-1-vanilla-deep-q-networks-6eb4a00febfb
+- Mastering the game of go with DNN and tree search: http://airesearch.com/wp-content/uploads/2016/01/deepmind-mastering-go.pdf
+- Mastering the game of go without human knowledge: https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf
+- monte carlo learning
+- temporal-difference learning
+- Mastering Chess and Shogi by Self-Play with a General RL Algorithm: https://arxiv.org/pdf/1712.01815.pdf
+- why RL is hard: https://www.alexirpan.com/2018/02/14/rl-hard.html
+- reproducibility is a challenge:
+	- reproducibility of benchmarked deep reinforcement learning tasks for continuous control: https://arxiv.org/pdf/1708.04133.pdf
+	- deep RL that matters: https://arxiv.org/pdf/1709.06560.pdf
+- learning curve is incredibly steep: http://amid.fish/reproducing-deep-rl
+- andrej's deep RL, pong from pixels: http://karpathy.github.io/2016/05/31/rl/
+- human level control through deep RL: https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf, I suspect there're multiple versions
+- safely interruptible agents (heavy math, deepmind): https://intelligence.org/files/Interruptibility.pdf
+- multiagent cooperation and competition with deep RL: https://arxiv.org/pdf/1511.08779.pdf
+- first person shooter games: https://arxiv.org/pdf/1609.05521.pdf
+- action elimination with deep RL: https://papers.nips.cc/paper/7615-learn-what-not-to-learn-action-elimination-with-deep-reinforcement-learning.pdf
+- decoding multitask DQN in the world of minecraft: https://ewrl.files.wordpress.com/2016/11/ewrl13-2016-submission-29.pdf
+- RL neural turing machines (seems like deepmind has something with "neural turing machines" title before): https://arxiv.org/pdf/1505.00521v1.pdf
+- continuous deep Q-learning with model-based acceleration: https://arxiv.org/pdf/1603.00748.pdf
+- benchmarking safe exploration in deep RL, from openai: https://cdn.openai.com/safexp-short.pdf
+- humans performing the task:
+	- guided cost learning, deep inverse optimal control via policy optimization: https://arxiv.org/pdf/1603.00448.pdf
+	- apprenticeship learning via inverse RL: https://ai.stanford.edu/~ang/papers/icml04-apprentice.pdf
+	- deep imitation learning for complex manipulation tasks from virtual reality teleoperation: https://arxiv.org/pdf/1710.04615.pdf
+- humans judging agent's performance:
+	- active preference-learning based RL: https://arxiv.org/pdf/1208.0984.pdf
+	- interactive learning from policy-dependent human feedback: https://arxiv.org/pdf/1701.06049.pdf
+- supervising strong learners by amplifying weak experts: https://arxiv.org/pdf/1810.08575.pdf
+- summary of openai's curiosity-driven learning: https://www.lyrn.ai/2018/11/20/curiosity-driven-learning-exploration-by-random-network-distillation/
+	- curiosity-driven exploration by self-supervised prediction: https://arxiv.org/pdf/1705.05363.pdf
+- solving montezuma's revenge:
+	- https://openai.com/blog/reinforcement-learning-with-prediction-based-rewards/
+	- exploration by random network distillation: https://arxiv.org/pdf/1810.12894.pdf
+	- redditor's reimplementation: https://www.reddit.com/r/MachineLearning/comments/bdhuke/p_full_chainer_implementation_openai_random/
+	- https://www.reddit.com/r/MachineLearning/comments/9tangi/r_reinforcement_learning_with_predictionbased/
+- unsupervised predictive memory in a goal-directed agent: https://arxiv.org/pdf/1803.10760.pdf
+- optimizing agent behavior over long time scales by transporting value: https://arxiv.org/pdf/1810.06721v1.pdf
+- environmental drivers of systematicity and generalization in a situated agent: https://arxiv.org/pdf/1910.00571.pdf, https://deepmind.com/research/publications/Emergent-Systematic-Generalization-in-a-Situated-Agent
+
+attention:
+- luong: https://arxiv.org/pdf/1508.04025.pdf
+- bahdanau attention: https://arxiv.org/pdf/1409.0473.pdf
+- layer normalization: https://arxiv.org/pdf/1607.06450.pdf
+- https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
+- https://kazemnejad.com/blog/transformer_architecture_positional_encoding/
+- https://medium.com/@_init_/how-self-attention-with-relative-position-representations-works-28173b8c245a
+- on the relationship between self-attention and conv layers, recent paper, heavy math, but with some cool visuals: https://arxiv.org/pdf/1911.03584v2.pdf
+
+NLP:
+- bert original: https://arxiv.org/pdf/1810.04805.pdf
+- gpt-2 original: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+- gpt-3 video overview: https://www.youtube.com/watch?v=SY5PvZrJhLE
+- interesting paper about applying n-grams to suggest educational materials: https://www.microsoft.com/en-us/research/wp-content/uploads/2010/12/enrichingTextbooksThroughDataMining-dev2010.pdf
+- (3/10) distributed representation of sentences and documents: https://arxiv.org/pdf/1405.4053.pdf
+- (7/10) fine-tune bert for extractive summarization: https://arxiv.org/pdf/1903.10318.pdf
+- how to generate a good word embedding? https://arxiv.org/pdf/1507.05523.pdf
+- gshard, 600 billion params: https://arxiv.org/pdf/2006.16668.pdf
+- gpt-3: https://arxiv.org/pdf/2005.14165.pdf
+- pretrained transformer: https://arxiv.org/pdf/1905.08836.pdf
+- generating wikipedia by summarizing long sequences: https://arxiv.org/pdf/1801.10198.pdf
+- deep unordered composition rivals syntactic methods for text classification: https://people.cs.umass.edu/~miyyer/pubs/2015_acl_dan.pdf
+- GLUE benchmark: https://arxiv.org/pdf/1804.07461.pdf
+- compositionality decomposed, how do NNs generalise? https://arxiv.org/pdf/1908.08351.pdf
+- (7/10) gg neural machine translation system, does mention multiple gpus: https://arxiv.org/pdf/1609.08144.pdf
+- a fast unified model for parsing and sentence understanding: https://arxiv.org/pdf/1603.06021v1.pdf
+- exploring the limits of language modeling: https://arxiv.org/pdf/1602.02410v2.pdf
+- question answering:
+	- end-to-end memory networks: https://arxiv.org/pdf/1503.08895.pdf
+	- learning to compose NNs for question answering: https://arxiv.org/pdf/1601.01705v4.pdf
+- syntactic parsing:
+	- globally normalized transition-based NNs: https://arxiv.org/pdf/1603.06042.pdf
+	- grammar as a foreign language: https://arxiv.org/pdf/1412.7449.pdf
+- machine translation:
+	- seq2seq with NNs (original paper, I think): https://arxiv.org/pdf/1409.3215.pdf
+	- neural machine translation by jointly learning to align and translate: https://arxiv.org/pdf/1409.0473.pdf
+- neural machine translation by jointly learning to align and translate: https://arxiv.org/pdf/1409.0473.pdf
+- the woman worked as a babysitter, on biases in language generation: https://arxiv.org/pdf/1909.01326.pdf, shows bias in GPT-2
+- https://www.reddit.com/r/MachineLearning/comments/f7z5sa/news_500000_prize_for_distilling_wikipedia_to_its/
+- https://ai.googleblog.com/2020/07/grounding-natural-language-instructions.html
+
+NLP and images, which I consider as a pretty strong AI btw:
+- show, attend, and tell: https://arxiv.org/pdf/1502.03044.pdf
+- img captioning and visual question answering: https://arxiv.org/pdf/1707.07998.pdf
+- video "paragraph" captioning using hierarchical RNN: https://www.cv-foundation.org/openaccess/content_cvpr_2016/app/S19-04.pdf
+- action labeling in videos: https://arxiv.org/pdf/1507.05738.pdf
+- combining text and image capabilities: https://arxiv.org/pdf/1708.02711.pdf
+
+AGI, and how to make them safe:
+- theory-guided data science: https://arxiv.org/pdf/1612.08544.pdf. yeah that idea of leaving all intricate scientific details to the AI seems to be very valuable
+- the value learning problem: https://intelligence.org/files/ValueLearningProblem.pdf
+- knowledge transfer: https://arxiv.org/pdf/1511.05641.pdf
+- quantilizers, a safer alternative to maximizers for limited optimization: https://intelligence.org/files/QuantilizersSaferAlternative.pdf
+- approval-directed agents: https://ai-alignment.com/model-free-decisions-6e6609f5d99e
+- EU data laws: https://arxiv.org/pdf/1606.08813.pdf
+- local interpretable model-agnostic explanations: https://homes.cs.washington.edu/~marcotcr/blog/lime/
+- concrete problems in AI safety (duh): https://arxiv.org/pdf/1606.06565.pdf
+- agent foundations for aligning machine intelligence with human interests: https://intelligence.org/files/TechnicalAgenda.pdf
+- strategic implications of openness in ai development, nick bostrom: https://www.nickbostrom.com/papers/openness.pdf
+- reward misclassification:
+	- surprising creativity of digital evolution: https://arxiv.org/pdf/1803.03453.pdf
+	- faulty reward functions in the wild: https://openai.com/blog/faulty-reward-functions/
+	- RL with a corrupted reward channel (heavy math): https://arxiv.org/pdf/1705.08417.pdf
+- AI safety via debate: https://arxiv.org/pdf/1805.00899.pdf
+- on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
+
+others:
+- http://www.cs.toronto.edu/~hinton/absps/tsne.pdf
+- learning efficient algorithms with hierarchical attentive memory: https://arxiv.org/pdf/1602.03218.pdf
+- energy and policy considerations for DL in NLP: https://arxiv.org/pdf/1906.02243.pdf
+
+neuroscience:
+- https://en.wikipedia.org/wiki/Visual_cortex
+- neuralink: https://www.biorxiv.org/content/10.1101/703801v4.full.pdf, http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
+	- primary motor cortex
+	- supplementary motor area
+	- dorsal premotor cortex
+	- primary somatosensory cortex
+- very good paper about visualizing brain with fmri: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/. With demo: https://gallantlab.org/huth2016/
+
+concepts to look forward to:
+- explainable ai, speak directly to an agent
+- active learning
+- 0 shot learning:
+	- https://towardsdatascience.com/applications-of-zero-shot-learning-f65bb232963f
+	- https://www.lesswrong.com/posts/ZHrpjDc3CepSeeBuE/gpt-3-a-disappointing-paper
+	- https://arxiv.org/pdf/1707.00600.pdf
+- 1 shot learning: https://en.wikipedia.org/wiki/One-shot_learning
+- reparameterization trick:
+	- auto-encoding variational bayes: https://arxiv.org/pdf/1312.6114.pdf
+	- https://gregorygundersen.com/blog/2018/04/29/reparameterization/
+	- https://stats.stackexchange.com/questions/199605/how-does-the-reparameterization-trick-for-vaes-work-and-why-is-it-important
+	- http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/
+	- https://towardsdatascience.com/reparameterization-trick-126062cfd3c3
+- unsupervised learning:
+	- towards principled unsupervised learning: https://arxiv.org/pdf/1511.06440.pdf
+- variational autoencoders, 2nd contender to GANs
+- automl-zero: evolving ML algorithms from scratch: https://arxiv.org/pdf/2003.03384.pdf
+
+benchmarks:
+- bleu: https://www.aclweb.org/anthology/P02-1040.pdf, https://en.wikipedia.org/wiki/BLEU
+- IWSLT 2016
+
+MultiModel, a way to train a bunch of experts:
+- https://papers.nips.cc/paper/6446-multimodal-residual-learning-for-visual-qa.pdf
+- Random multimodel deep learning for classification: https://arxiv.org/pdf/1805.01890.pdf
+- An improvement using RMDL: https://arxiv.org/pdf/1808.08121.pdf
+- multimodel deep learning: https://people.csail.mit.edu/khosla/papers/icml2011_ngiam.pdf
+- accelerating dl workloads through efficient multimodel execution: https://cs.stanford.edu/~matei/papers/2018/mlsys_hivemind.pdf
+
+projects:
+- tools:
+	- create a tool to take screenshots repeatedly, and automatically saving them in select places. This should listen to a very specific key that the user can set, so that's a challenge
+	- also make the tool for labeling the label's corners to depend more on gui
+- blog:
+	- do a recap on what blackbox pieces we've created that we can truely have power over and it not being completely useless (too slow/too memory intensive). Also talk about how this is a problem, because without that infinite hackability, we can't really make progress
+	- I still have not devised equations for the network capability, so may be look into it again
+	- do blackbox post on layer normalization
+- physics:
+	- how about trying to predict physical stuff again, but this time on datasets that are wildly fluctuating? Like finding planck constant thingy, cause it feels like the universe kinda likes to throw stuff at us.
+	- gravity, 2d collisions, so simulate the vsepr thingy, where a nn can predict the geometric patterns of the shapes, and the platonic solid with pentagon for its side, yeah, simulate that
+	- also, adding a convolutional aspect to the gravity stuff seems important, so do that
+- images:
+	- can upsample be done by just using generic high quality images, have a transpose conv layer, then a normal conv layer? Something tells me that that's quite enough to do the task, so just try it out
+	- also, may be the conv kernel maximizer sort of failed because I train it on too low resolution images of just 32x32, so may be, if I just increase the scale to like 128, then it'll display more behavior
+- RL
+	- and really, I feel like I should be able to create a caro playing agent right off the bat, without specific knowledge about how markov chains and whatnot
+	- may be derive how I would train a network to play snake? First by evolution, and second by gradient descent? 2nd one seems quite complicated because I need to formulize the problem well enough. And do this before I continue learning about reinforcement learning, cause I'm trying to create agents that don't have clear rewards and objectives
+- try emnist, with letters and stuff
+- apply constraints on lstm, just like with predicting the inverse, and see what comes out of it
+- create a demonstration where I have an OCR, with the idea of making everything a convolutional layer, and clusters the digits together and whatnot
+- do the extra metrics thingy with convolution layers, where I plot out the average mean (log scale) and std (linear scale) on a 1d graph
+- try the high quality audio from low quality mics idea from lex
+- do the take away parts of an image thingy until it breaks, to show the analysis to others
+- recreate embedding from scratch. For reference: https://pytorch.org/docs/master/generated/torch.nn.Embedding.html, use predicting name nationality as benchmark
+- okay, after I do a blackbox on RNNs, LSTMs and resnet, contact udacity to create a module for them. I really want to spread what I know to others man
+- may be I really need to learn in details how fastai works, and appreciate what they have done to make the process easier, so do that
+- also, can adaptive pool enlarge an image? Will there be spaces where it's blank?
+- also, at least try to reproduce the loss landscape, cause I need that to benchmark a bunch of networks
+- yeah, recreate everything related to nlp, and other papers too
+- play around with this: https://github.com/huggingface/transformers
+- try to predict the minesweeper task. This is again the prediction problem. Also, can be quite interesting to apply the gradient stuff here, because it's basically a 1 step gradient, which is pretty nifty as I don't need to consider time yet
+- try out the being consistent thingy, that's an idea in the gan thingy anyway
+- try and analyze corona data: https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
+- create a youtube/blog series where I ask all the weird questions, or may be just setting up the environment to reproduce some studies beforehand, to show that those relationship still holds, and to figure out edge cases.
+- minh's labels
+- how about learning MNIST but the objective is to make outputs of the same number to have the same distribution? Why is this interesting to investigate? Well, we kinda hide the true representation and the true goal away, it should take more effort to classify it so it should be interesting to see whether it can really do that
+- generate (GANs and stuff) website covers that looks nice enough?
+- "input paragraph, use synonym, cho logic hơn. Bert model"
+- also, how about just tackle the open domain question answering stuff, so I can dive deeper into how that works and I would love to just have an assistant at my disposal
+- do some of the mechanical turk tasks. May be really dive in for 3 hours?
+- how about just invent nesterov, but adjust learning rate for each param? Wait, isn't that already just the regular nesterov?
+- also, I sort of don't actually think attention can work at all, again, because there seems to be no recurrent part inside, so is it just gonna have to use information from the positional encoding? That doesn't sound robust at all
+- again, active learning and giving attention the image embeddings should create this inner world experience, which would be great. But I have to create the infrastructure first, so do just that. Also, do benchmarks on how effective tesla's outlier thesis is. Can I fix outliers continuously until a model's inner world experience becomes that of us? This will be very interesting to see. Also, does tesla continuously train just a single model? Or if they want an improved model, they have to train that component from scratch
+- see if I can create a system where it can learn algebra by encoding the digits as a fourier transform sequence
+- also, what if I give the transformer the character embedding instead? The prediction is that it will perform much worse, and once I have that insight, then I can start working on combining transformers at different scales together
+- an idea to combine text and images is to build complex knowledge representation in 2 models, then try to make them slowly merge into each other using another, small, labeled dataset. Or create a mapping between the meanings themselves to try to directly transfer knowledge across
+- also for minh's labels, how about just try to apply super resolution on that and recover the losses? That would be cool
+- so how about, predict an image to be a cat, then distort the images so that the dog label pops up?
+
+references papers (read it, understood, but just leave it here in case I need them):
+- image captioning basics, just basically cnn stacked with lstm: https://arxiv.org/pdf/1411.4389.pdf
+
+short thoughts and questions:
+- and jeremy said that recent papers sort of have gotten rid of the learning rate thingy already, so may be look into that. That adatune thingy
+- how about think about what properties should an AGI has, and make sure there are no logical uncertainty
+- oh and another idea that treads carefully with the cyclical dependency is in a robotic model, where an action takes 200ms, and the brain can predict how a sensory input will change. This might really be interesting
+- how about making an agent to just learn math by being consistent over time?
+- also, how about just generate a bunch of text, look through them, and see if I can learn anything from it. Like, give a paper's abstract, try to make it generate new knowledge
+- can I add a class in an existing embedding and still make sense?
+- "I want a Spotify to offer a service where I train it with my EEG output and it generates songs that always give me chills"
+- also, how can I give the language model a feel of the outside world using images? This seems reallyyyyyy attractive
+- these language models seem to not be stable. Also, bert and gpt-2 seems similar, except bert is 2 dim and gpt-2 is only 1?
+- how about pushing gpt-2 to the limit? "A and B are talking together. A mentions his ...". The idea is, A and B are males, so gpt-2 has to pick one or the other (or both) when considering the word "his". So see if it can actually do that, because my intuition is no
+- again, it seems like attention can't do stuff like paying attention to similar words? Stacking layers also doesn't feel like it's going to help much tho, as the spanning mechanism doesn't seem like it's going to be very strong
+- also, can't I use GANs on text? Why that doesn't work? Too unstable?
+- and yeah, the whole reinforcement thing just sounds like backprop, but through 50 time steps, or whatever the moves in a match is. This model poses a problem tho, of the vanishing gradient again, so again, look for attention for the solution
+- the bidirectional stuff doesn't really make sense to me tho. How the hell are you gonna use it other than reducing the dimensionality?
+- also sort of the only graph that can come from the gan thingy is when you put another, unrelated agent in and get the confidence in the number seen. If confidence is high, then it's not doing well.
+- yeah, clustering problem in gan is what I was refering to earlier. What is it?
+- "transformers are supersets of CNNs", what's up with that?
+
+reverse engineering:
+- xkcd alt text bot
+
+employment:
+- future of humanity institute: https://www.fhi.ox.ac.uk/fellows/
+- https://www.tesla.com/careers/job/autopilot-designverificationinternshipfall2020-56965
+- https://www.tesla.com/careers/job/autopilot-deeplearningresearchengineer-scientistinternshipfall2020-56964
+- also 80k hours again, for carreers in ai safety: https://80000hours.org/career-guide/introduction/
+- https://allenai.org/
+- MIRI, but this is super math-heavy, so may be not
+- https://www.tesla.com/careers/search#/?keyword=internship
+
+thoughts and goals distilled down:
+### Should I do a gap year to explore the cutting edge of ML?
+I am an international undergrad sophomore not studying ML or CS, but I have a good foundation in ML and have been on a research paper reading spree lately. When I didn't know about ML, the whole field seems very intimidating, but now, the field actually seems manageable and it feels like I can actually contribute meaningful progress. But the amount of recent papers and ideas are quite staggering, and I don't think it will be effective for me to stay in university and keep doing my unrelated major. Also I want the current Covid 19 situation in the US to settle down before I go back. So I have been seriously considering a gap year with these goals:
+- Doing a pilot study to know what ML are really capable of these days
+- Reach the cutting edge (stuff like gshard)
+- Write papers
+- Write Distill papers with visualizations
+- Do some Kaggle competitions
+- Seek out what field existing architectures (resnet, gpt-3, ...) can really boost but for some reason no one has actually done it
+- Actually talk to domain experts and see if they find this valuable
+The long term goal of mine is to be able to:
+- Get into OpenAI/DeepMind
+- Tackle some AI safety problems raised in the literature
+- Maintain myself financially while doing all of the above
+So I was wondering, should I really do this? The field looks very, very lush and I can't resist going in. I know that this will be very brutal, both physically and mentally, but I have a strong work ethic, so I think I can tackle it. But I also know that doing this without a related university background is hard, so any help is appreciated. If I should, how do I...
+- Submit papers to arxiv (or others) without a sponsor/reference
+- Support myself financially (may be do Distill prizes), although this is not very important and I can take a hit for a year, but I still want to look for prospective opportunities
+- Approach companies like OpenAI/DeepMind
+- Approach domain experts
+Thank you in advanced!

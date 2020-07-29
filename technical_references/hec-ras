@@ -1,0 +1,35 @@
+
+Menu options:
+- View/Edit geometric data
+- View/Edit steady flow data
+- View/Edit quasi-unsteady flow data
+- View/Edit unsteady flow data
+- View/Enter sediment boundary conditions
+- View/Edit water quality boundary conditions
+- Perform a steady flow simulation
+- Perform an unsteady flow simulation
+- Perform a sediment transport simulation
+- Perform a water quality simulation
+- Perform hydraulic design computations
+- Open RAS Mapper to view maps and data spatially
+- View cross sections
+- View profiles
+- View Generic Profile Plot
+- View computed rating curves
+- View 3D multiple cross section plot
+- Plot Stage and Flow Hydrographs
+- Hydraulic property table plots
+- View detailed output at XS, Culverts, Bridges, Weirs, etc...
+- View summary output tables by profile
+- Summary of errors, warnings, and notes
+- View DSS Data
+
+LOB: left of bank station
+ROB: right of bank station
+
+floodplain areas
+https://en.wikipedia.org/wiki/Floodplain
+https://en.wikipedia.org/wiki/Floodplain#/media/File:Paran%C3%A1_River_Floodplain.jpg
+manning's n value
+http://www.fsl.orst.edu/geowater/FX3/help/8_Hydraulic_Reference/Mannings_n_Tables.htm
+https://www.youtube.com/watch?v=LhOCmncetX4

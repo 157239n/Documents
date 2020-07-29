@@ -1,36 +1,18 @@
 
 so, priorities now:
-- do the dora todo list thing, for gems about computational fluid dynamics (and navier stokes obviously) and whatnot
-- then the story of energy post
 - read rocket propulsion elements
-- (low priority) Learn about some fluid dynamics and thermodynamics, for understanding the applicability of science
 - Switch major to mechanical engineering, and get into a machine/hardware shop. Ask for contacts for students that are actually building hardware products for customers, from scratch. I remember Khue's friend used to do that.
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 - book: "pmi-pmbok", "pmbok guide"
 
 try brilliant and skillshare
-
-- https://80000hours.org/career-guide/introduction/
-
-general tso's, lo mein, see places where I can eat that, then invite dan & chi? May be jsut go around and try them myself
-
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
-
-how about private international law (aka international business law). It seems more complicated than the public one. I think I have understood the public ones enough already
-
 prepare ideas for that lib guy
-
 check over my health insurance
-
-see how coupons work in heirloom
-
-"stores and rewards cards", and "rewards credit card", 1-5% back in cash/points. Dig more into this. Is this just a normal credit card, or is it a specific card for a specific store: https://creditcards.usnews.com/articles/are-credit-card-rewards-worth-it
-
 read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good
 
-yeah let's go on sunday 10pm, for that thing, because on friday there's minh and on sat there's the competition. Also bring food for her
-
+file:///home/kelvin/Downloads/James%20Edward%20Gordon%20-%20Structures_%20or,%20Why%20things%20don't%20fall%20down-Penguin%20Books%20(1978).pdf
 7. joints, fastenings and people - also about creep and chariot wheels
 8. soft materials and living structures - or how to design a worm
 9. walls, arches and dams - or cloud towers and the stability of masonry
@@ -42,119 +24,272 @@ yeah let's go on sunday 10pm, for that thing, because on friday there's minh and
 15. chapter of accidents - a study in sin, error, and metal fatigue
 16. efficiency and aesthetic - or the world we have to live in
 
-go over ML models and see if I can have some information extraction process out of stocks and whatnot. That link by ynes again seems nice and all that. And really get into the data and make this a dependable skillset
-
-keep ties with that german guy
-
-and yea, that political index idea from a year back
-
-may be finish the docs and send over to bhacker one last time
-
-send mama: https://www.youtube.com/watch?v=boKd_Pb2HUA
-https://www.youtube.com/watch?v=CpjjJc3Sq14
-https://www.youtube.com/watch?v=F-wBgsf8jWY
-
-what's lobbying?
-
-https://towardsdatascience.com/saliency-based-image-segmentation-473b4cb31774
-
-also train myself to sleep 6 hours a day consistently, because 6 hours seems reasonable enough to keep myself productive, and the consistent part is also really important, because only then can I truely utilize the extra hours doing something useful. And also please keep pushing my absolute hardest to crunch through these goals, and may be write these logs really, really frequently
-
-rewatch joe rogan with elon? because joe said that he felt elon didn't open up until they were drinking. So sort of analyze this?
-
-may be I really have to go out and ask for help so I can penetrate these venues even further
-
-how about creating a bunch of images with text inside them, and then draw a boundary layer as the correct answer? Yep this approach is quite interesting, but I have to have the data first to be able to do this
-
-and the tone of them speaking about these things, it's almost as if they have sort of a capability to learn things distributedly, and not relying on a single data center. I also suspect this has to do with transfer learning
+may be I really have to go out and ask for help so I can penetrate these venues even further. Not really tho, for the current situation
 
 and may be do read into the quarterly reports
 
-and may be really apply these ML ideas to the scientific backbone, and actually change how science works
+check robinhood's name, cuz it's currently kel, not my legal name. Yeah contact them and say things are not right. Hasn't answered yet. This is starting to look worrying
 
-get money in and buy a 2nd tesla stock
+the direct air capture thing is sort of viable actually. What they need is a production line, and careful analysis of the actual cost, because I think I can apply the same cost saving methods as elon. So may be that iceland trip is really valuable. And god dammit, this means I have to study chemistry
 
-and pay canaris bills
+phase out magento certificates? After I get magento working, or at least the standalone simple financial model working
 
-pytorch, calculating gradient means loss.backward(). But I thought loss is just a number? Okay, so how they did stuff was to declare a as nn.Parameter(a). So this looks like an array wrapper and thus by using this, they can sort of know how to calculate the gradient and whatnot. I sort of couldn't imagined this flexibility a while back, and I still don't know how they did it. So may be this is worthwhile afterall
+masterclass.comds
 
-also if I can just find out where are the damn images, then I probably can develop whole system of commands to clear out unnecessary images or low quality ones, instead of cooperating with the notebook's mechanism
+chapter 11 of the bankruptcy code
 
-https://forums.fast.ai/t/find-path-to-file-imagedatabunch/50279/6
+also connect with that girl who used to do lstm stuff, Nhu right?, and see what she has been up to lately
 
-and the idea to pull live satellite data and look for smoke clouds and whatnot. And may be icebergs too? Just to give out an automatic alert whenever something abnormal is found. I think this would be valuable in terms of creating a learning workflow, and inch me closer to that idea of replacing science's core structure with something like this
+effective altruism global:
+- https://www.eaglobal.org/events/ea-global-2017-uk/
+- https://www.youtube.com/channel/UCEfASxwPxzsHlG5Rf1-4K9w
 
-"planet amazon dataset"
+get to the angel thingy
+Drexel University - Baiada Startup Incubator
+skillshare, entrepreneurship hustle: from business plan to real success
+also planet (company) now offers unrivalled access and rapid response to any part of the world. See their plans
+do things with planets-only.net
+210, 23rd. 248, section 12b, 22nd
+reason about cpu-gpu communication speed and determine if training on multiple gpus are really worth it
 
-and may be now make models to predict some physical phenomenon? Like 3 body problem, or other stuff, like pistons and whatnot. Then make these learn on quantum data, which I think will be the nail in the coffin for traditional science
+can RL agents always be reasonable when framerate switches to 30fps to 60 or higher? If they are influenced by this then it seems like the error signal attenuation still applies right? So at that point, why not just create a much simpler policy-only optimization process?
 
-"satellite tiles"
+also, pay very, very close attention to human's failure modes as well, as I don't think this has been developed in the community yet
 
-and yeah, can I get data directly from an SSO satellite? Do people publish these data?
+again x3, I think I can implement this whole thing without the formulation of action-state values or state values. So try out that kind of simple tree search. Also I think by creating all of the infrastructure on my own, I can really provide a new perspective in the game
 
-"multi-label classification, segmentation"
+tiny bit of math and workable code: https://towardsdatascience.com/reinforcement-learning-with-openai-d445c2c687d2
+env: https://github.com/openai/gym/blob/master/gym/envs/classic_control/cartpole.py
+more complex running code: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 
-and may be look again at speec details when using these technologies
+look up q learning on youtube or something
 
-"a partial"
-acc_02 = partial(accuracy_thresh, thresh=0.2)
-learner.fit_one_cycle(5, slice(0.01))
+try this out some day: https://beta.openai.com/
 
-wait what? So you are saying that you can just use a model trained on 128x128 images and slap it to a 256x256 image? Don't models need to stay rigid and the same size throughout?
+grants:
+- http://thielfellowship.org/
+- https://www.effectivealtruism.org/grants/
+- https://www.1517fund.com/
+- advice: http://colah.github.io/posts/2020-05-University/
 
-doc_src/data_block
+damn: https://colah.github.io/cv.pdf
+https://explorabl.es/
 
-so after going through the sgd thingy they introduced, they kinda still ambiguous about how these architectures work, and how can I adapt this to predict scientific phenomena
+read the superintelligence book again
 
-image segmentation?
+may be the reason why ppl are unsettling about AI safety is because their solutions are a lot of times too creative and feels uncomfortable to humans, so may be the true solution is to just suggest general research ideas and leave us doing everything?
 
-np.loadtxt(path_to_file.txt, dtype=str)
+also see how humans actually do RL too. How can they correlate long distance reward signals? Are they even good at such a task? It seems like I can somehow use attention as this mechanism that spans multiple time frames, so as to make the RL capabilities more pronounced, as that acts kinda like a skip connection
 
-decrease regularization
+so the model-based RL agents seems interesting, because it can do fundamental experiments in the world to build an accurate model, then use that model as a proxy for the real world, then do experiments on them, instead of on the real world
 
-weight decay
-dropout
-data augmentation
+also, does GPT-2 sort of see "ngyeun" as "nguyen"? I know it's relying on tokens, but I mean, if experiments done on how the agent pay attention to images, then confirming this might be an important validation
 
-for segmentation, we can use a cnn, but something else called unet is better
+do the predicting distances by being consistent thingy, because it's a real possibility that may reveal more what's really going on
 
-so a cnn will condense things down, then the unet thing expands things out
+https://www.techrepublic.com/article/natural-language-processing-a-cheat-sheet/
 
-Learner.create_unet(), so I suspect there will be a Learner.create_cnn() version too? So try this out
-learner.recorder.plot_losses()
-learner.recorder.plot_lr()
+how do ppl actually build chatbots from language models? In other words, how to use language models flexibly and in 1 domain. "how chatbots are made"
 
-so I suspect that the convolution nn works with sort of an absolute max image size, and every image size below can be applied to here, so that's why you can increase the resolution to double the original (the transfer learning thingy) and it still works. Just my prediction, of course
+ask econ prof about all the RL stuff
 
-when we do NLP classification, we actually create 2 models: language model
+"neural turing machine" sounds very, very impressive, so look into that
 
-text_classification_learner()
 
-and it seems like I can actually apply for a grant from drexel to begin doing these things. I can feel these goals are being checked off and can actually be executed. Oh yeah baby, I feel it so strongly it burns. Muahahahaha :v Damn what am I talking about :v Kay bye :v Man, I'm in my prime time right now. I really have to try my best in this small opportunity, and progress even faster than myself in the past
 
-adam, rmsprop
 
-kay, so this is interesting, ludvik is offering to pay me, but let's not reply just yet
 
-worry about rent stuff
 
-graphviz
 
-2020 Drexel Emerging Graduate Scholars Conference – April 22 & 23
 
-another pass through course.fast.ai. And remember to buy a shitload of meat today (like at 7? yeah seems right). But first let's grab some food
 
-may be create Final Simple Net (or fixing it) again, and this time really understand the indicies so that I can dynamically create any algorithm I want
 
-cobalt: https://www.youtube.com/watch?v=25G4BcioPjE
 
-chrome support ipv6? https://support.google.com/chrome/forum/AAAAP1KN0B0Jq0wVEd1qxo/?hl=en-GB
 
-also i20 stuff
 
-http://docs.everypolitician.org/use_the_data.html
-popoloproject.com
+http://docs.google.com/document/d/1APDC20cPKe4kecrKknVpybOU5sK9ukh9m7Zob38odOk/preview
 
-figure out what can I do with maltego? How far can I sort of collect information and doing benchmarks before I get into trouble?
+also, spiking NNs seems interesting, so dive in that as well. Note that this is actually quite controversial
 
-do that post
+what does it mean for bert to be bidirectional? I mean, aren't attention mechanism don't have a direction?
+
+visuals: stylegan2
+music: openai/jukebox
+text: openai/gpt-2
+
+verify digit additions: https://github.com/openai/gpt-3/tree/master/data
+
+https://www.gwern.net/GPT-3
+scaling laws for neural language models: https://arxiv.org/pdf/2001.08361.pdf
+
+superglue: a stickier benchmark for general-purpose language understanding systems: https://w4ngatang.github.io/static/papers/superglue.pdf
+original glue benchmark: https://openreview.net/pdf?id=rJ4km2R5t7
+
+"gan mode collapse"
+
+gpu rent:
+- https://www.fluidstack.io/
+
+"evolutionary computation"
+
+again, my rejection for training in a cluster is how the hell are you going to transport the gradients and weights to each other? Regular network bandwidth depends on the CPU which is not very fast, so how are you going to make it realistic at all?
+
+"feature attribution, I guess they compute gradients all the way to the input and use that to construct heatmaps of which voxels are most important for a classification"
+
+"robustify black-box controllers from neural nets"
+
+the early phase of NN training: https://arxiv.org/pdf/2002.10365.pdf
+deep RL from human preferences: https://arxiv.org/pdf/1706.03741.pdf, sounds familiar
+the lottery ticket hypothesis: finding sparse, trainable NNs: https://arxiv.org/pdf/1803.03635.pdf
+planning chemical syntheses with deep NNs and symbolic AI: https://www.nature.com/articles/nature25978, alphago-inspired architecture
+scaling laws for neural language models: https://arxiv.org/pdf/2001.08361.pdf
+learning the difference that makes a difference with counterfactually-augmented data: https://arxiv.org/pdf/1909.12434.pdf
+linformer: self-attention with linear complexity: https://arxiv.org/pdf/2006.04768.pdf
+
+https://venturebeat.com/2020/07/15/mit-researchers-find-systematic-shortcomings-in-imagenet-data-set/
+
+distillation & amplification:
+- alphago zero and the foom debate: https://intelligence.org/2017/10/20/alphago/
+- https://ai-alignment.com/alphago-zero-and-capability-amplification-ede767bb8446
+- https://ai-alignment.com/benign-model-free-rl-4aae8c97e385
+- https://ai-alignment.com/policy-amplification-6a70cbee4f34
+- "capability vs policy amplification"
+- https://intelligence.org/2018/05/19/challenges-to-christianos-capability-amplification-proposal/
+- https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616
+
+read more into inverse RL, seems like a very promising way to go about this
+
+https://intelligence.org/all-publications/
+
+ways to meaningfully contribute to ai safety? Doesn't seem there's a way besides actually building the system
+
+read over his papers to know which areas is he working in: http://www.pages.drexel.edu/~ek826/, http://www.pages.drexel.edu/~ad3639/
+- https://openaccess.thecvf.com/content_CVPR_2020/papers/Kim_Modeling_Biological_Immunity_to_Adversarial_Examples_CVPR_2020_paper.pdf
+- apparently, he worked on the loihi chip too, and ask about the nitty gritty details on SNNs
+- is it easy now to get started on spiking NNs? doesn't seem so
+- is there research left for small labs with may be 4 V100
+- ask ynes about the actual hardware umass used. Are they using it off-the-shelf?
+
+read over russell's papers: https://people.eecs.berkeley.edu/~russell/research/future/
+
+https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/
+https://towardsdatascience.com/language-models-and-fake-news-the-democratization-of-propaganda-11b1267b3054
+
+fact check brain capacity
+
+"expert iteration", thinking fast and slow with DL and tree search: https://arxiv.org/pdf/1705.08439.pdf
+neural architecture search with RL: https://arxiv.org/pdf/1611.01578.pdf
+neural architecture search: a survey: https://arxiv.org/pdf/1808.05377.pdf
+
+turn faces into anime girls. May be real guy -> anime guy/girl, and real girl -> anime guy/girl as well. Devise a way of switching the network back and fourth, to practice inputting in explicit meaning. This should be the first step in actually extracting information out of a system
+
+may be create a gpu and performance guide for ppl who're into training stuff
+
+may be an extremely dumb question about nano tech. We obviously can move atoms around in a silicon lattice. So why can't we design a self-bootstrapping mechanism that allows us to basically manipulate everything?
+
+https://en.wikipedia.org/wiki/OpenAI
+
+can RL from pixels be as efficient as RL from state? https://bair.berkeley.edu/blog/2020/07/19/curl-rad/
+
+https://iclr.cc/
+
+SNN: https://www.youtube.com/watch?v=ICw2_49dSNw
+
+discovering RL algorithms: https://arxiv.org/pdf/2007.08794.pdf
+
+pipeline stuff (the concurrent idea in CPUs and stuff): https://cs.stanford.edu/~matei/papers/2019/sosp_pipedream.pdf
+
+squad:
+- know what you don't know: unanswerable questions for squad: https://arxiv.org/pdf/1806.03822.pdf
+- squad: 100k+ questions for machine comprehension of text: https://nlp.stanford.edu/pubs/rajpurkar2016squad.pdf
+
+search and indexing stuff: solr, lucene. "DescriptionElasticsearch is a search engine based on the Lucene library"
+
+try sorting stuff using a NN? This can be a solid test bed for trying out attention and LSTMs
+
+look up starlink bandwidth
+
+paragraph stuff, "paragraph recognition:
+- http://www.tbluche.com/files/Goog2017.pdf
+- scan, attend, and read: end-to-end handwritten paragraph recognition with MDLSTM attention: https://arxiv.org/pdf/1604.03286.pdf
+
+directly there's no way
+
+"the great hack" movie, cambrige analytica??
+
+covid stuff:
+- https://connect.biorxiv.org/relate/content/181
+- continual bert: continual learning for adaptive extractive summarization of covid-19 literature: https://arxiv.org/pdf/2007.03405.pdf
+- a survey on applications of AI in fighting against covid-19: https://arxiv.org/pdf/2007.02202.pdf
+- IoT for current covid-19 and future pandemics: an exploratory study: https://arxiv.org/pdf/2007.11147.pdf
+
+how classical language models be used in any circumstances without it becoming god? I just sort of don't get it
+
+kuchen change images to jpg
+
+word2vec: 2013
+glove: 2014
+
+high performance computing arena again? What do they actually offer?
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+again with the image segmentation but different color for different objects of same class
+
+deepmind's DNC (differential neural computer), mentioned by goertzel
+
+crash course AI: https://www.youtube.com/playlist?list=PL8dPuuaLjXtO65LeD2p4_Sb5XQ51par_b
+
+also, really deal with tabular data, cause that seems to be what ppl lean towards when they're talking about "data scientist". And yeah, this seems to have good practical value, and the stuff with CNNs are like leaf programs trying to do a specific task
+
+what's this? https://www.deepcode.ai/
+
+https://bdtechtalks.com/tag/demystifying-ai/
+
+one weird trick for parallelizing CNNs: https://arxiv.org/pdf/1404.5997v2.pdf
+http://course18.fast.ai/part2.html
+dawn bench: an end-to-end DL benchmark and competition: https://dawn.cs.stanford.edu/benchmark/papers/nips17-dawnbench.pdf
+why train what you can code? Rekall: a compositional approach to video analysis: https://dawn.cs.stanford.edu/2019/10/09/rekall/
+infrastructure for usable ML: the stanford dawn project: https://arxiv.org/pdf/1705.07538.pdf
+http://image-net.org/update-sep-17-2019
+"resnet inference energy cost"
+noscope: optimizing NN queries over video at scale: https://arxiv.org/pdf/1703.02529.pdf
+hidden technical debt in ML systems: https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf
+E^2-Train: training SOTA CNNs with over 80% energy savings: https://arxiv.org/pdf/1910.13349.pdf
+ML: the high interest credit card of technical debt: https://research.google/pubs/pub43146/, https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43146.pdf
+"functional vigilance of drivers while using autopilot", lex's MIT research on autopilot
+
+more body swaps:
+- https://nhentai.net/g/283609/1/
+- https://nhentai.net/g/320221/1/
+
+again, why don't ppl include loss surface visualizations in their papers??? I think this is absolutely necessary to actually gain an intuition of what's going on
+
+attention and its relation to event-based systems?
+
+so the idea GPT-3 is pushing is that when the big network gets fed a prompt, it forms this little network on the go that's specialized to handle the task, which sort of explains why GPT-3 needs to be so big, and it also sort of explains the power-law relationship. So really reason about the relative sizes of these networks. How large is the actual specialized network and the full one? Then make comparisons to other animals
+
+also yeah, we already have the A100 GPU, which can do like 600 TFLOPS, more than the human brain already. But the training still takes time tho, because what we're effectively doing is getting the general architecture to pass through billions of years of evolution, so it makes sense that it takes so long and consuming so many resources. But humans learn new things pretty slowly too, which sort of tells us that in learning completely new things, humans take as long as GPT-3. So have numbers to characterize this phenomenon
+
+deepmind, deep RL and its neuroscientific implications: https://deepmind.com/research/publications/Deep-Reinforcement-Learning-and-its-Neuroscientific-Implications
+
+yoshua bengio: from system 1 DL to system 2 DL: https://www.youtube.com/watch?v=T3sxeTgT4qc
+
+seems interesting: https://www.wandb.com/papers
+
+don guy seems interesting: https://www.youtube.com/playlist?list=PLpP2qGSxCw-e0nMetkx41JVrdcivVxUPm, https://www.pugetsystems.com/all_hpc.php
+
+demis lecture: https://www.youtube.com/watch?v=Psk5DLpqp3o
+smarter everyday: https://www.youtube.com/watch?v=1PGm8LslEb4
+lex yann lecun
+obama interview: https://www.youtube.com/watch?v=Tjl8ka3F6QU
+
+really warn profs with the potential of GPT-3, and create an interface to automatically generate scripts to amaze them
+
+spectral normalization, seems to fix problems with the discriminator
+
+warn teachers of GPT-3
+
+pytorch hooks
+
+

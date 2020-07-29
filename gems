@@ -35,7 +35,7 @@ Computing:
 - Raven Kwok, Processing
 - htop in depth, talks about how kernels work: https://peteris.rocks/blog/htop/#appendix
 - 12 factor app (best practices guide): https://12factor.net/
-- Good project to reversen engineer: https://github.com/PeeHaa/OpCacheGUI
+- Good project to reverse engineer: https://github.com/PeeHaa/OpCacheGUI
 - Data analysis series: https://www.youtube.com/playlist?list=PLzH6n4zXuckpfMu_4Ff8E7Z1behQks5ba
 - Performance analysis. Not really, but still contain a lot of stuff: http://www.haproxy.org/
 - Designing Distributed Systems, Brendan Burns
@@ -43,6 +43,8 @@ Computing:
 - What docker really is: https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
 - AI alignment problem, why it's hard and important: https://www.youtube.com/watch?v=EUjc1WuyPT8
 - Quick overview of K8S: https://medium.com/easyread/step-by-step-introduction-to-basic-concept-of-kubernetes-e20383bdd118
+- Letsencrypt on K8S: https://runnable.com/blog/how-to-use-lets-encrypt-on-kubernetes
+- https://www.submarinecablemap.com/
 
 Paths:
 - Buy a domain name. Please please please BUY one. Do not use a domain name for free. There are no such thing. If your uni gives out domain names for free, DO NOT TAKE THEM. There is value in doing these things yourself, to learn how these things are actually done in the real world and be autonomous from the uni. It also gives you a better mindset too.
@@ -70,6 +72,7 @@ AI:
 - CGP Grey: https://www.youtube.com/watch?v=7Pq-S557XQU
 - Alphago movie
 - Lex Fridman interviewing elon (especially last few minutes): https://www.youtube.com/watch?v=dEv99vxKjVI
+- PyTorch autograd https://towardsdatascience.com/getting-started-with-pytorch-part-1-understanding-how-automatic-differentiation-works-5008282073ec
 
 Climate:
 - Renewables: TED talk: reality check on renewables
@@ -144,6 +147,7 @@ Games:
   - Mods:
     - Industrial Revolution
     - Angels & Bobs
+    - Aai industry
     - Klonan's mods:
       - Construction drone
       - Repair turrets
@@ -220,6 +224,7 @@ Youtube channels:
 - Joe Rogan Experience
 - duckje3, phineas and ferb songs
 - RT, russian news outlet. G20 summit (12 hours): https://www.youtube.com/watch?v=e7kOjv3E1jE
+- Rob Miles
 
 Movies:
 - Avengers
@@ -248,6 +253,10 @@ Movies:
   - Evil morty intense organ: https://www.youtube.com/watch?v=BeaNRbiiqGg
   - Main theme: https://www.youtube.com/watch?v=rIkQ5P-v1z8
   - Chaos chaos, do you feel it: https://www.youtube.com/watch?v=w04krpq3liU
+  - Don't look back: https://www.youtube.com/watch?v=q_q7bsVQ5IQ
+  - Hurt: https://www.youtube.com/watch?v=UZaigFN0TSE
+- Gravity falls:
+  - Main theme: https://www.youtube.com/watch?v=htYA0hs5NoU
 
 Fetishes:
 - Your neighborhood tentacle shop
@@ -301,12 +310,15 @@ Music gems:
     - Dyson sphere: https://www.youtube.com/watch?v=rnJYlQ_bVP4
     - Stellar engine: https://www.youtube.com/watch?v=wQWGLPxga6A
     - Nuke a city: https://www.youtube.com/watch?v=Xb4czQnm-yg
+    - Bacteriophage: https://www.youtube.com/watch?v=SJ4Y-uYlMn4
+    - Solar storms: https://www.youtube.com/watch?v=3lNItwlLmnI
   - Gold Gun Girls (TS the movie start and end theme): https://www.youtube.com/watch?v=FRtd8ArvH_s
   - BertycoX, The Signal: https://www.youtube.com/watch?v=4BA2POUhCOM
   - Saturn, Sleeping at last: https://www.youtube.com/watch?v=h3lWwMHFhnA
   - Moonbaby, Here we go: https://www.youtube.com/watch?v=IIuZRWr3ODw
   - Some factorio content have really great music
   - Odoru Neko Iwaku: https://www.youtube.com/watch?v=SSixtRi9WYY
+  - Deathly Loneliness Attacks/Mafumafu: https://www.youtube.com/watch?v=KhV57_EH3AA
 - Good, but not excellent:
   - Clockwork clown
   - Bad end night Miku
@@ -326,10 +338,14 @@ Music gems:
   - LSD Genius: https://www.youtube.com/watch?v=HhoATZ1Imtw
   - Smosh assassin: https://www.youtube.com/watch?v=12PWq22E9CQ
   - That russian song: https://www.youtube.com/watch?v=AT9CNOOImM0
-  - Senbonzakura: https://www.youtube.com/watch?v=shs0rAiwsGQ
+  - Senbonzakura:
+    - https://www.youtube.com/watch?v=shs0rAiwsGQ
+    - human piano: https://www.youtube.com/watch?v=sWMsNk_SPa0
   - Love Trial: https://www.youtube.com/watch?v=EKc6EzYZIbQ
   - Sand Planet: https://www.youtube.com/watch?v=9FeUi0I5LRg, live: https://www.youtube.com/watch?v=36yiPn3zFGc
   - What time is it: https://www.youtube.com/watch?v=n9-LH3rgp5Y
+  - No idea how it's spelled: https://www.youtube.com/watch?v=KTZ-y85Erus
+  - Some random girl: https://www.youtube.com/watch?v=JC07VcLg0UE
 - Totally Spies: https://soundcloud.com/pinar-tokbay/sets/totally-spies-ost
   - really nice music at the beginning of this: https://www.youtube.com/watch?v=6Qo9uJnp9Cg
   - suspense and fear
@@ -347,7 +363,7 @@ Music gems:
   - Main theme, piano: https://www.youtube.com/watch?v=LIboeVN58nM
   - Son of Flynn: https://www.youtube.com/watch?v=TWJVgTeNljs
   - The Game Has Changed (lowkey): https://www.youtube.com/watch?v=DmKDVvIEhBY, https://www.youtube.com/watch?v=XqJkdsqeDxw
-  - The Grid: https://www.youtube.com/watch?v=qRUfcp8Ba6g
+  - The Grid: https://www.youtube.com/watch?v=qRUfcp8Ba6g, Alcala remix: https://www.youtube.com/watch?v=-rd24yXC8Jk
   - Ending scene, badass main theme: https://www.youtube.com/watch?v=qolzPKVQa10
   - Entering the grid scene: https://www.youtube.com/watch?v=0Y781Ec0Xzk
   - Action: https://www.youtube.com/watch?v=YyoKXfBQgXw
@@ -365,9 +381,12 @@ Music gems:
   - Grimes song: https://www.youtube.com/watch?v=wK7-4080KMk
   - SpaceX launch you up
   - Rocket Lab's Electron Is Going Reusable: https://www.youtube.com/watch?v=enndCzvZpZk
+  - Rocket Lab's first mid-air recovery demo: https://www.youtube.com/watch?v=N3CWGDhkmbs
   - Crew Dragon Animation: https://www.youtube.com/watch?v=sZlzYzyREAI
   - Hazegrayart's sim: https://www.youtube.com/watch?v=00CpItR97zY
-  - Demo 1 1 year anniversary
+  - Demo 1 1 year anniversary: https://www.youtube.com/watch?v=F-wBgsf8jWY
+  - Crew Dragon | Interior: https://www.youtube.com/watch?v=xjSb_b4TtxI
+  - This is SpaceX - 5 years later: https://www.youtube.com/watch?v=klK0m2AkqB0
 - Nier automata:
   - 1h random music: https://www.youtube.com/watch?v=VJ_aT4T89aU
   - Great trailer: https://www.youtube.com/watch?v=wJxNhJ8fjFk
@@ -376,11 +395,20 @@ Music gems:
 - Ynes:
   - lần cuối: https://www.youtube.com/watch?v=kSjj0LlsqnI
   - O "Fly On", Coldplay: https://www.youtube.com/watch?v=Ap-HeMIKi-c
-  - Thinking About, Lauren Aquilina: https://www.youtube.com/watch?v=0ZLPy3Fea2E
+  - Lauren Aquilina:
+    - Thinking About: https://www.youtube.com/watch?v=0ZLPy3Fea2E
+    - How would you like it? https://www.youtube.com/watch?v=Kw9RSxLgnUw
+    - Irrelevant: https://www.youtube.com/watch?v=XJPG-I7hjNU
+    - Sinners: https://www.youtube.com/watch?v=eoYDzJFqqqE
+    - Sudden strangers: https://www.youtube.com/watch?v=qui3AvnjDZw
+    - Talk to me: https://www.youtube.com/watch?v=zAtvCIx_l9o
 - Wall-E
 - Interstella
   - No Time For Caution: https://www.youtube.com/watch?v=m3zvVGJrTP8
   - Main Theme: https://www.youtube.com/watch?v=4y33h81phKU
+- Hunger games:
+  - survivor: https://www.youtube.com/watch?v=m3USW2-Kiuo
+  - game of survival: https://www.youtube.com/watch?v=piDK-PR31bQ
 - Raven Kwok, also karma fields:
   - Stickup
   - Build the cities
@@ -388,6 +416,8 @@ Music gems:
 - Tokyo bond: https://www.youtube.com/watch?v=zhGnuWwpNxI
 - Cymatics: https://www.youtube.com/watch?v=Q3oItpVa9fs
 - world.execute(me): https://www.youtube.com/watch?v=cn4M-fH08XY
+- 163 braces:
+  - Vaundy: https://www.youtube.com/watch?v=MdE5T5unoyg
 
 Services/tools:
 - High volume of 3d printed stuff: http://www.slant3d.com/

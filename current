@@ -6,6 +6,9 @@ so, priorities now:
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 - book: "pmi-pmbok", "pmbok guide"
 
+hey ynes. Damn you, I'm crying. Am I trading away things that I shouldn't do? I am trading away my youth, I'm trading away my freedom, my sleep time, very much my relationships <gets cut off>
+oh and, just really want you to know that I really appreciate you just hanging around me for this long and just being a total nutcase (:v). Really gives a tasty flavor to my life and almost gives me smiles everyday
+
 try brilliant and skillshare
 so how about I go out, register for a credit card, to then build up a strong credit score that I can use in the future?
 prepare ideas for that lib guy
@@ -26,11 +29,7 @@ file:///home/kelvin/Downloads/James%20Edward%20Gordon%20-%20Structures_%20or,%20
 
 may be I really have to go out and ask for help so I can penetrate these venues even further. Not really tho, for the current situation
 
-and may be do read into the quarterly reports
-
 check robinhood's name, cuz it's currently kel, not my legal name. Yeah contact them and say things are not right. Hasn't answered yet. This is starting to look worrying
-
-the direct air capture thing is sort of viable actually. What they need is a production line, and careful analysis of the actual cost, because I think I can apply the same cost saving methods as elon. So may be that iceland trip is really valuable. And god dammit, this means I have to study chemistry
 
 phase out magento certificates? After I get magento working, or at least the standalone simple financial model working
 
@@ -64,34 +63,15 @@ more complex running code: https://pytorch.org/tutorials/intermediate/reinforcem
 
 look up q learning on youtube or something
 
-try this out some day: https://beta.openai.com/
-
-grants:
-- http://thielfellowship.org/
-- https://www.effectivealtruism.org/grants/
-- https://www.1517fund.com/
-- advice: http://colah.github.io/posts/2020-05-University/
-
-damn: https://colah.github.io/cv.pdf
-https://explorabl.es/
-
-read the superintelligence book again
-
-may be the reason why ppl are unsettling about AI safety is because their solutions are a lot of times too creative and feels uncomfortable to humans, so may be the true solution is to just suggest general research ideas and leave us doing everything?
-
 also see how humans actually do RL too. How can they correlate long distance reward signals? Are they even good at such a task? It seems like I can somehow use attention as this mechanism that spans multiple time frames, so as to make the RL capabilities more pronounced, as that acts kinda like a skip connection
 
 so the model-based RL agents seems interesting, because it can do fundamental experiments in the world to build an accurate model, then use that model as a proxy for the real world, then do experiments on them, instead of on the real world
-
-also, does GPT-2 sort of see "ngyeun" as "nguyen"? I know it's relying on tokens, but I mean, if experiments done on how the agent pay attention to images, then confirming this might be an important validation
 
 do the predicting distances by being consistent thingy, because it's a real possibility that may reveal more what's really going on
 
 https://www.techrepublic.com/article/natural-language-processing-a-cheat-sheet/
 
 how do ppl actually build chatbots from language models? In other words, how to use language models flexibly and in 1 domain. "how chatbots are made"
-
-ask econ prof about all the RL stuff
 
 "neural turing machine" sounds very, very impressive, so look into that
 
@@ -107,34 +87,20 @@ ask econ prof about all the RL stuff
 
 
 
-http://docs.google.com/document/d/1APDC20cPKe4kecrKknVpybOU5sK9ukh9m7Zob38odOk/preview
-
 also, spiking NNs seems interesting, so dive in that as well. Note that this is actually quite controversial
 
 what does it mean for bert to be bidirectional? I mean, aren't attention mechanism don't have a direction?
 
-visuals: stylegan2
-music: openai/jukebox
-text: openai/gpt-2
-
-verify digit additions: https://github.com/openai/gpt-3/tree/master/data
-
-https://www.gwern.net/GPT-3
-scaling laws for neural language models: https://arxiv.org/pdf/2001.08361.pdf
-
 superglue: a stickier benchmark for general-purpose language understanding systems: https://w4ngatang.github.io/static/papers/superglue.pdf
 original glue benchmark: https://openreview.net/pdf?id=rJ4km2R5t7
 
-"gan mode collapse"
-
-gpu rent:
-- https://www.fluidstack.io/
-
-"evolutionary computation"
-
-again, my rejection for training in a cluster is how the hell are you going to transport the gradients and weights to each other? Regular network bandwidth depends on the CPU which is not very fast, so how are you going to make it realistic at all?
-
-"feature attribution, I guess they compute gradients all the way to the input and use that to construct heatmaps of which voxels are most important for a classification"
+"feature attribution, I guess they compute gradients all the way to the input and use that to construct heatmaps of which voxels are most important for a classification". Actually, the heatmaps can be generated with the last CNN layer before the activation. Anyway, bunch of links:
+- https://distill.pub/2020/attribution-baselines/
+- https://cloud.google.com/ai-platform/prediction/docs/ai-explanations/overview
+- (2018) https://mlconf.com/sessions/interpretability-beyond-feature-attribution-quant/
+- https://deep.ghost.io/simple-feature-attribution/
+- https://towardsdatascience.com/one-feature-attribution-method-to-supposedly-rule-them-all-shapley-values-f3e04534983d
+- interpretability beyond feature attribution: quantitative testing with concept activation vectors: https://arxiv.org/pdf/1711.11279.pdf
 
 "robustify black-box controllers from neural nets"
 
@@ -169,13 +135,12 @@ read over his papers to know which areas is he working in: http://www.pages.drex
 - is it easy now to get started on spiking NNs? doesn't seem so
 - is there research left for small labs with may be 4 V100
 - ask ynes about the actual hardware umass used. Are they using it off-the-shelf?
+- funding source???
 
 read over russell's papers: https://people.eecs.berkeley.edu/~russell/research/future/
 
 https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/
 https://towardsdatascience.com/language-models-and-fake-news-the-democratization-of-propaganda-11b1267b3054
-
-fact check brain capacity
 
 "expert iteration", thinking fast and slow with DL and tree search: https://arxiv.org/pdf/1705.08439.pdf
 neural architecture search with RL: https://arxiv.org/pdf/1611.01578.pdf
@@ -183,11 +148,7 @@ neural architecture search: a survey: https://arxiv.org/pdf/1808.05377.pdf
 
 turn faces into anime girls. May be real guy -> anime guy/girl, and real girl -> anime guy/girl as well. Devise a way of switching the network back and fourth, to practice inputting in explicit meaning. This should be the first step in actually extracting information out of a system
 
-may be create a gpu and performance guide for ppl who're into training stuff
-
 may be an extremely dumb question about nano tech. We obviously can move atoms around in a silicon lattice. So why can't we design a self-bootstrapping mechanism that allows us to basically manipulate everything?
-
-https://en.wikipedia.org/wiki/OpenAI
 
 can RL from pixels be as efficient as RL from state? https://bair.berkeley.edu/blog/2020/07/19/curl-rad/
 
@@ -203,19 +164,9 @@ squad:
 - know what you don't know: unanswerable questions for squad: https://arxiv.org/pdf/1806.03822.pdf
 - squad: 100k+ questions for machine comprehension of text: https://nlp.stanford.edu/pubs/rajpurkar2016squad.pdf
 
-search and indexing stuff: solr, lucene. "DescriptionElasticsearch is a search engine based on the Lucene library"
-
-try sorting stuff using a NN? This can be a solid test bed for trying out attention and LSTMs
-
-look up starlink bandwidth
-
 paragraph stuff, "paragraph recognition:
 - http://www.tbluche.com/files/Goog2017.pdf
 - scan, attend, and read: end-to-end handwritten paragraph recognition with MDLSTM attention: https://arxiv.org/pdf/1604.03286.pdf
-
-directly there's no way
-
-"the great hack" movie, cambrige analytica??
 
 covid stuff:
 - https://connect.biorxiv.org/relate/content/181
@@ -225,26 +176,9 @@ covid stuff:
 
 how classical language models be used in any circumstances without it becoming god? I just sort of don't get it
 
-kuchen change images to jpg
-
-word2vec: 2013
-glove: 2014
-
-high performance computing arena again? What do they actually offer?
-
-http://karpathy.github.io/2015/05/21/rnn-effectiveness/
-
-again with the image segmentation but different color for different objects of same class
+again with the image segmentation but different color for different objects of same class, "instance image segmentation"
 
 deepmind's DNC (differential neural computer), mentioned by goertzel
-
-crash course AI: https://www.youtube.com/playlist?list=PL8dPuuaLjXtO65LeD2p4_Sb5XQ51par_b
-
-also, really deal with tabular data, cause that seems to be what ppl lean towards when they're talking about "data scientist". And yeah, this seems to have good practical value, and the stuff with CNNs are like leaf programs trying to do a specific task
-
-what's this? https://www.deepcode.ai/
-
-https://bdtechtalks.com/tag/demystifying-ai/
 
 one weird trick for parallelizing CNNs: https://arxiv.org/pdf/1404.5997v2.pdf
 http://course18.fast.ai/part2.html
@@ -259,10 +193,6 @@ E^2-Train: training SOTA CNNs with over 80% energy savings: https://arxiv.org/pd
 ML: the high interest credit card of technical debt: https://research.google/pubs/pub43146/, https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43146.pdf
 "functional vigilance of drivers while using autopilot", lex's MIT research on autopilot
 
-more body swaps:
-- https://nhentai.net/g/283609/1/
-- https://nhentai.net/g/320221/1/
-
 again, why don't ppl include loss surface visualizations in their papers??? I think this is absolutely necessary to actually gain an intuition of what's going on
 
 attention and its relation to event-based systems?
@@ -272,24 +202,341 @@ so the idea GPT-3 is pushing is that when the big network gets fed a prompt, it 
 also yeah, we already have the A100 GPU, which can do like 600 TFLOPS, more than the human brain already. But the training still takes time tho, because what we're effectively doing is getting the general architecture to pass through billions of years of evolution, so it makes sense that it takes so long and consuming so many resources. But humans learn new things pretty slowly too, which sort of tells us that in learning completely new things, humans take as long as GPT-3. So have numbers to characterize this phenomenon
 
 deepmind, deep RL and its neuroscientific implications: https://deepmind.com/research/publications/Deep-Reinforcement-Learning-and-its-Neuroscientific-Implications
-
 yoshua bengio: from system 1 DL to system 2 DL: https://www.youtube.com/watch?v=T3sxeTgT4qc
-
 seems interesting: https://www.wandb.com/papers
-
 don guy seems interesting: https://www.youtube.com/playlist?list=PLpP2qGSxCw-e0nMetkx41JVrdcivVxUPm, https://www.pugetsystems.com/all_hpc.php
-
-demis lecture: https://www.youtube.com/watch?v=Psk5DLpqp3o
-smarter everyday: https://www.youtube.com/watch?v=1PGm8LslEb4
-lex yann lecun
 obama interview: https://www.youtube.com/watch?v=Tjl8ka3F6QU
-
-really warn profs with the potential of GPT-3, and create an interface to automatically generate scripts to amaze them
 
 spectral normalization, seems to fix problems with the discriminator
 
-warn teachers of GPT-3
+https://www.fast.ai/2018/07/02/adam-weight-decay/
 
-pytorch hooks
+history ppt:
+- eliza, futile attempts, example of "symbolic AI". Then the whole expert systems. Mention the brittleness of it
+- then checkers, proving out RL and markov chains
+- then classic brute force of gary kasparov
+- MNIST benchmark, LeNet, Yann LeCun, first important demonstration that the connectionist view actually works. Also proving that convs also works
+- ImageNet benchmark, a concrete benchmark, 1k labels, 10M images
+- AlexNet, first breakthrough by Alex Krizhevsky & Ilya Sutskever, which blows everyone out of the water. Implementation is so simple too
+- ResNet, huge breakthrough in proving deep systems work, and introduce an idea that deeper is indeed better, and don't have diminishing returns. Also impact on loss landscape is amazing
+- attention is all you need. Seemingly don't have a ceiling. The bigger you go, the better it gets
+- so, ppl have been making it bigger, and consistently get bigger returns. GPT-2, GPT-3, BERT, and results are absolutely amazing
+- returning back to RL, there's the alphago stuff. The impact is that now it can teach us instead of deepblue. Also it can be very creative
+
+path from now? Short and long term goals?
+
+long term goal is to be able to:
+- show others where is this technology at, what can be done with it, how to think about our future and how to be prepared for it
+- understand more about how the brain actually works
+- apply image supervised learning in all other domains
+- do research on my own with language models
+- apply collaborative filtering and dealing with tabular data at scale, and active learning too
+- paragraph recognition
+- object recognition
+- do research on RL
+- accurately model physics
+
+short term goal is to:
+- read over all papers currently, which is quite a lot
+- do all brilliant stuff (by this week)
+- do all jeremy howard stuff
+- do a few kaggle stuff
+- redo scales on the brain capacity thingy, and create a gpu and performance guide for ppl who're into training stuff (actually measure my GPU performance)
+- warn teachers of GPT-3, create an interface to automatically generate scripts to amaze them
+
+https://medium.com/dataseries/google-deepminds-dreamer-is-a-reinforcement-learning-agent-that-can-solve-long-horizon-tasks-5faa6f6b63b
+https://singularityhub.com/2020/07/26/deepminds-newest-ai-programs-itself-to-make-all-the-right-decisions
+
+really do the image label from minh thingy, to prove out everything I've picked up
+
+also really do the mnist thingy over paragraphs, will learn a lot, and it seems like it can tackle machine fonts right away
+
+tell han about GPT-3
+
+also wait, inference energy cost on GPT-3 seems to be quite low (4kWh/100 pages of output). Still 2-3 orders of magnitude away from human brains, but it's actually low enough to be beneficial. So, the bulk energy cost is in the training, where we're essentially doing the evolution thingy again
+
+proximal policy optimization, another popular RL method
+
+intelligence explosion microeconomics: https://intelligence.org/files/IEM.pdf
+
+https://www.lesswrong.com/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai
+https://www.lesswrong.com/posts/Mzrs4MSi58ujBLbBG/you-can-probably-amplify-gpt3-directly
+
+breaking the quadratic attention bottleneck in transformers: https://www.reddit.com/r/MachineLearning/comments/hxvts0/d_breaking_the_quadratic_attention_bottleneck_in/
+
+ready player one
+
+https://www.reddit.com/r/MachineLearning/comments/b179cs/d_the_bitter_lesson/
+
+reddit carreer in researching AGI
+
+again, how to do attention stuff for simple workloads just to test the idea out?
+
+again, think about how to structure an active learning problem to create a fast feedback system. Basic principles should be fairly simple and easy to see, although there need not be actual implementable code to extend from. And yeah, I feel like there is a fear of generating new samples on the go and so ppl are turned away by that and don't necessarily embrace the nonlinearity of the real world
+
+why gpt-3 doesn't use embeddings
+language model encodings
+
+https://mailchi.mp/2485e6b42012/an-102-meta-learning-by-gpt-3-and-a-list-of-full-proposals-for-ai-alignment?e=e50845312e
+
+sparse coding:
+- http://www.scholarpedia.org/article/Sparse_coding
+- https://blog.metaflow.fr/sparse-coding-a-simple-exploration-152a3c900a7c
+- http://ufldl.stanford.edu/tutorial/unsupervised/SparseCoding/
+- https://www.cs.ubc.ca/~schmidtm/MLRG/sparseCoding.pdf
+- https://www.sciencedirect.com/topics/engineering/sparse-coding
+- http://users.ics.aalto.fi/harri/dityo/node3.html
+- https://stats.stackexchange.com/questions/118199/what-are-the-differences-between-sparse-coding-and-autoencoder
+- https://www.youtube.com/watch?v=7a0_iEruGoM
+
+https://waitbutwhy.com/2018/04/picking-career.html
+
+how to actually do outreach programs
+
+how can RL deal with a cold start
+
+ddpg algorithm
+
+world models: https://arxiv.org/pdf/1803.10122.pdf
+
+https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion
+https://www.kaggle.com/twinkle0705/your-starter-notebook-for-osic#Reading-the-data
+https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/data
+
+https://blog.gregbrockman.com/how-i-became-a-machine-learning-practitioner
+https://www.reddit.com/r/MachineLearning/comments/g16s40/r_metalearning_in_neural_networks_a_survey/
+
+https://towardsdatascience.com/visual-attention-model-in-deep-learning-708813c2912c
+https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
+
+next thursday: https://www.facebook.com/events/297524755014780/
+https://dailynous.com/2020/07/30/philosophers-gpt-3/
+
+verify double descent & super convergence with cifar 10
+verify the attention stuff in resnet. Try and grab 2 classes from imagenet
+https://mml-book.github.io/book/mml-book.pdf
+http://www.arxiv-sanity.com/
+
+crafting papers on ML: https://pdfs.semanticscholar.org/3efc/b97c1de1c87832a7a1d99e91801992a938ec.pdf
+http://joschu.net/blog/opinionated-guide-ml-research.html
+ask reddit how to approach the conversation to ppl about AI, "reddit how to discuss impact of machine learning"
+
+https://www.reddit.com/r/learnmachinelearning/
+https://www.reddit.com/r/deeplearning/
+https://www.reddit.com/r/MachineLearning/
+
+so temporal-difference is basically just making sure the internal model of reality is good?
+
+AI community's thought on practical ppl like Jeremy?
+
+https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
+
+scikit-learn is mentioned a whole lot, so what does it actually offer?
+
+again with the automl stuff
+
+jeremy interview: https://www.youtube.com/watch?v=205j37G1cxw
+
+https://forums.fast.ai/
+
+see the connection latency numbers
+
+agi stuff:
+- http://www.hutter1.net/ai/introref.htm
+- https://www.youtube.com/channel/UCCwJ8AV1zMM4j9FTicGimqA
+- https://goertzel.org/agi-curriculum/
+- https://cis.temple.edu/~pwang/AGI-Intro.html
+- https://en.wikipedia.org/wiki/Artificial_intelligence
+- https://www.reddit.com/r/artificial/comments/6cnlr6/monthly_how_to_get_started_with_ai_thread/
+- http://www.agi-society.org/membership/
+- https://content.sciendo.com/view/journals/jagi/jagi-overview.xml
+
+https://rodneybrooks.com/a-better-lesson/
+
+https://placements.openmined.org/
+
+and yeah, check out all the gui stuff for active learning, cause again, that's hugely important that I can do this very quickly. But goddammit why aren't there a processing-like library for python that can display things directly to the notebook?
+
+http://worrydream.com/MagicInk/
+"how much computation the brain does"
+- https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
+- https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/marr.pdf
+- http://www.cs.utexas.edu/~dana/Book1.pdf
+- https://www.frontiersin.org/articles/10.3389/fnsys.2016.00095/full
+
+again with the nas & automl thingy:
+- https://www.youtube.com/watch?v=a6v92P0EbJc
+- https://www.youtube.com/watch?v=tfCA8X4jGjk
+- searching for activation functons: https://arxiv.org/pdf/1710.05941.pdf
+- https://en.wikipedia.org/wiki/Neural_architecture_search
+- an introduction to NAS for convnets: https://arxiv.org/pdf/2005.11074.pdf
+
+try to get beta access again
+
+register for courses
+
+try $1/day thingy of elon
+
+meta learning through hebbian plasticity: https://www.youtube.com/watch?v=v2GRWzIhaqQ
+simulate tearing meat: https://www.youtube.com/watch?v=fE9BqmJrrW0
+neil elon: https://www.youtube.com/watch?v=7EgLKH6Znfo
+
+"positive strand rna": https://en.wikipedia.org/wiki/Positive-sense_single-stranded_RNA_virus
+s1 protein sars-cov-2
+"rna based transcriptase": https://en.wikipedia.org/wiki/Reverse_transcriptase
+
+david silver has the idea that goals are distinct on the scale level. On the human level, the goal is to survive, while on the universe level, the goal is to find the fastest way to increase entropy. This interpretation is sort of unique, cause it shows the same idea as the collapse of the quantum function, and that the collapse has to be thought of in the universe playground
+
+https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
+
+tesla nns: https://twitter.com/elonmusk/status/1294371531133317120
+
+play ksp again
+
+rewatch jeremy again
+
+read superintelligence again
+so are solar panels like, violates 2nd law?
+
+also what's up with eric weinstein? https://www.youtube.com/watch?v=rIAZJNe7YtE
+
+seems like they don't realized that the spontaneous learning happens when you make it big enough
+
+lex's christof koch
+
+check over deepmind wiki
+
+mr rangel, kouwe
+
+https://www.scientificamerican.com/article/scientists-call-for-a-moratorium-on-editing-inherited-genes
+"gene editing research moratorium"
+https://www.npr.org/sections/health-shots/2018/11/29/671657301/international-science-summit-denounces-gene-edited-babies-but-rejects-moratorium
+"scientists stop modifying genes conference"
+
+lex David Chalmers
+kotkin:
+- https://www.youtube.com/watch?v=dqiqUtdFi2I
+- https://www.youtube.com/watch?v=cNmvGTLmg2o
+- https://www.youtube.com/watch?v=0tXvLJXkFFg
+
+eating:
+- "oxygen not included eating"
+- https://oxygennotincluded.gamepedia.com/Guide/Food
+- https://oxygennotincluded.gamepedia.com/Bristle_Blossom
+
+magma?
+
+detect changes
+
+http://www.argmin.net/2018/06/25/outsider-rl/
+http://karpathy.github.io/2016/05/31/rl/
+lex dileep: https://www.youtube.com/watch?v=tg_m_LxxRwM
+lex joscha bach: https://www.youtube.com/watch?v=P-2P3MSZrBM
+lex francois round 2
+
+ask about RL training stability to that redditor
+
+buy proce.com, and make processing demonstrations more vivid, and as a nice place for ppl to go to
+
+jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/watch?v=bHVqO5YyNbU
+
+think about doing an outreach program for AI stuff
+
+live wired book
+
+get a job at neosensory, and get more into what they're doing. May be write explaner blog so ppl can explore. Also there's an API to mess around
+also apply to neuralink?
+
+proposal for gpt-3: manim stuff
+
+cashapp
+
+https://www.reddit.com/r/Oxygennotincluded/comments/f7uppm/some_useful_designs_and_fun_problems_from_a_1700/
+
+actually try out fourier transform on code, so I can have another tool to use
+
+jre robert sapolsky: https://www.youtube.com/watch?v=obmt_PkIfBE
+
+https://www.quantamagazine.org/how-close-are-computers-to-automating-mathematical-reasoning-20200827/
+
+see how jpeg works again, cause it looks like it takes ideas from fourier transforms
+
+again with blockchain stuff???? actually implement 1?
+
+try 23andme again, to know what things am I susceptible to
+
+"Google Learning Certificates", https://soha.vn/google-gay-soc-khi-tuyen-bo-ban-khong-can-phai-hoc-dai-hoc-nua-neu-thay-vua-ton-tien-vua-ton-thoi-gian-20200831143938153.htm
+
+21 lessons for the 21st century
+
+again with the venus project? and resource based economy
+
+openai beta as outreach program
+
+may be deep RL introspection in our current systems help us reason about this take off scenario better
+
+the incognito, david eagleman's book
+
+lex escaping local optimum: https://www.youtube.com/watch?v=5qjA8HPJl_0
+
+try out cocalc
+
+https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
+
+candace against the universe
+
+https://phoenixnap.com/kb/openssl-tutorial-ssl-certificates-private-keys-csrs
+
+https://www.youtube.com/c/ManolisKellis1/videos
+
+on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
+
+fiverr: random stuff, tutoring, youtube connections, local technical solutions
+
+"amazon trackpad"
+
+lex's chollet
+
+text from invoices: https://twitter.com/theaievangelist/status/1300862719969681411
+
+the power of self learning systems: https://www.youtube.com/watch?v=wxis9FrCHbw
+
+check python's random() performance
+
+https://towardsdatascience.com/td-in-reinforcement-learning-the-easy-way-f92ecfa9f3ce
+https://towardsdatascience.com/summary-of-tabular-methods-in-reinforcement-learning-39d653e904af
+
+work on simulation demos now
+
+3d
+scanning
+4d
+henon
+electric field
+phased array
+kernels
+steganography
+henon map
+logistic map, this's gonna take a long time
+lorenz attractor, 3d
+julia sets
+maze
+
+again, do the 3d transformation thingy in torch, so that I have another capability
+
+https://www.facebook.com/steamforvietnam.org/
+https://docs.google.com/forms/d/e/1FAIpQLSeJUyFuOD-NBbP9qDDOenql_29GOqq7_HWJSaaatRyQQKdYnA/viewform
+
+so apparently, carrying 1GW power over 10M volt lines is feasible. So 100 amps, not 10k amps. So that guy may not know about this in depth. So dig more into the numbers and grasp at the fundamentals of these high power systems
+
+also something seems wrong. Why is the hippocampus so small and the cortex so large? Also why the cerebelum is so dense and the cortex so sparse? And what's the energy efficiency (Landauer's limit) of different parts of the brain?
+
+DJ SEO's neural dust: https://arxiv.org/pdf/1307.2196.pdf
+neosensory throughput: http://ww-w.eagleman.com/papers/novich_eagleman_2015.pdf
+
+barto RL book
+neurology of consciousness
+animal architects, building and the evolution of intelligence
+https://www.acrobiosystems.com/P3103-SARS-CoV-2-%28COVID-19%29-S1-protein-His-Tag.html
 
 

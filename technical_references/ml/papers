@@ -2,62 +2,13 @@
 reminders:
 - conv-bn-relu
 
-deep resources:
-- https://pytorch.org/tutorials/
-- https://colah.github.io/
-- http://jalammar.github.io/
-- https://openai.com/progress/
-- https://deepmind.com/careers#internships
-- clear path: https://openai.com/blog/requests-for-research-2/
-- https://spinningup.openai.com/en/latest/
-	- https://github.com/openai/spinningup
-	- https://github.com/kashif/firedup
-	- https://github.com/Kaixhin/spinning-up-basic
-	- https://github.com/MishaLaskin/torchingup
-	- https://github.com/openai/baselines
-	- https://github.com/openai/universe
-- deepmind's course: https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF
-- trask's book
-- human compatible book
-- https://www.lesswrong.com/users/nostalgebraist
-- grad level lectures: https://www.cs.cornell.edu/courses/cs6787/2017fa/Lecture4.pdf
-- https://losslandscape.com/
-- https://alignment-newsletter.libsyn.com/
-- silver, lecture 4: https://www.youtube.com/watch?v=PnHCvfgC_ZA&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=4
-- jeremy, dl: https://www.youtube.com/watch?v=CJKnDu2dxOE
-- suggested by openai:
-	- deep rl bootcamp: https://sites.google.com/view/deep-rl-bootcamp/lectures
-	- CS285 deep rl learning: http://rail.eecs.berkeley.edu/deeprlcourse/
-	- david silver: https://www.davidsilver.uk/teaching/
-	- random pdf: http://joschu.net/docs/nuts-and-bolts.pdf
-	- random pdf: https://github.com/jachiam/rl-intro/blob/master/Presentation/rl_intro.pdf
-	- https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html
-	- algorithms for RL: https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
-	- optimizing expectations: from deep RL to stochastic computational graphs: http://joschu.net/docs/thesis.pdf
-	- https://github.com/rll/rllab
-	- gym walkthrough: https://gym.openai.com/docs/#review
-	- https://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/, good q-learning intro
-- training RNNs by Sutskever: http://www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf
-- https://aiweirdness.com/
-- https://distill.pub/
-- https://www.reddit.com/r/artificial/wiki/learning-materials
-- https://microscope.openai.com/models
-- https://agi.mit.edu
-- https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw/videos
-- https://www.youtube.com/c/ArxivInsights/videos
-- https://huggingface.co/
-
 talks:
-- yann lecun: https://www.youtube.com/watch?v=SGSOCuByo24
 - ian goodfellow talk: https://www.youtube.com/watch?v=sucqskXRkss
 - joshua bengio talk, backprop in the brain: https://www.youtube.com/watch?v=FhRW77rZUS8
 - covid 19, howard: https://www.youtube.com/watch?v=GZ0yNMnvwqY
 - deepmind energy: https://www.youtube.com/watch?v=ba1tND0B0xk
-- lex's dawn song, adversarial ML and computer security: https://www.youtube.com/watch?v=HhY95m-WD_E
-- lex's matt botvinick: https://www.youtube.com/watch?v=3t06ajvBtl0, https://scholar.google.com/citations?hl=en&user=eM916YMAAAAJ&view_op=list_works&sortby=pubdate
 - ian: https://www.youtube.com/watch?v=HGYYEUSm-0Q
 - lex's ppt, with list of other speakers: https://www.youtube.com/watch?v=-GV_A9Js2nM
-- sutskever: https://www.youtube.com/watch?v=9EN_HoEk3KY, https://www.youtube.com/watch?v=9EN_HoEk3KY
 
 DeepMind:
 - (8/10) Understanding Synthetic Gradients and Decoupled Neural Interfaces:
@@ -73,21 +24,14 @@ DeepMind:
 detecting crime, without risking privacy: https://iamtrask.github.io/2017/06/05/homomorphic-surveillance/
 
 CNNs:
-- mask rcnn, like unet, but can differentiate between differences
-- ensemble: https://arxiv.org/pdf/1804.09803.pdf
-- object saliency detection, image segmentation: https://arxiv.org/pdf/1505.01173.pdf
-- good end-to-end document recognition: https://dropbox.tech/machine-learning/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning
 - (8/10) readable paper about predicting wind farms: https://arxiv.org/pdf/1810.12611.pdf
 - (7/10) end-to-end recognition: https://arxiv.org/pdf/1604.03286.pdf, "paragraph recognition"
 - An Autonomous method for finding objects: https://towardsdatascience.com/saliency-based-image-segmentation-473b4cb31774
 - details on how the imagenet competition is structured and what is learned: https://arxiv.org/pdf/1409.0575.pdf
-- (9/10) selective search for object recognition: https://ivi.fnwi.uva.nl/isis/publications/2013/UijlingsIJCV2013/UijlingsIJCV2013.pdf
 - overfitting cifar 10: https://arxiv.org/pdf/1806.00451.pdf, https://arxiv.org/pdf/1711.11561.pdf
-- RetinaNet: https://arxiv.org/pdf/1708.02002.pdf, https://towardsdatascience.com/review-retinanet-focal-loss-object-detection-38fba6afabe4
 - SlowFast: video and time component, to remove flickering in static images
 - Aggregated Residual Transformations for DNNs: https://arxiv.org/pdf/1611.05431.pdf
 - group equivariant convolutional networks: http://proceedings.mlr.press/v48/cohenc16.pdf
-- perceptual losses for real-time style transfer and super resolution: https://arxiv.org/pdf/1603.08155.pdf
 
 adversarial & security:
 - intriguing properties of nn: https://arxiv.org/pdf/1312.6199v4.pdf, the adversarial images part
@@ -124,7 +68,7 @@ tuning:
 	- black-box adversarial attacks with limited queries and information: https://arxiv.org/pdf/1804.08598.pdf
 	- adversarial risk and the dangers of evaluating against weak attacks: https://arxiv.org/pdf/1802.05666.pdf
 	- reliable evaluation of adversarial robustness with an ensemble of diverse parameter-free attacks: https://arxiv.org/pdf/2003.01690.pdf
-	- https://www.technologyreview.com/2020/07/10/1005048/ai-deep-learning-safe-from-hackers-adversarial-attacks/?fbclid=IwAR0qc7C4OyLf79jR5c7BEZNj9lfbp7D-6YiAMLoeIiZkPcocDO0e5lXAnUI
+	- https://www.technologyreview.com/2020/07/10/1005048/ai-deep-learning-safe-from-hackers-adversarial-attacks/
 - (redditors find this fishy) learned optimizers that scale and generalize: https://arxiv.org/pdf/1703.04813.pdf
 - scaling laws for neural language models: https://arxiv.org/pdf/2001.08361.pdf, https://www.reddit.com/r/MachineLearning/comments/gz310a/p_how_big_should_my_language_model_be_an/
 
@@ -192,8 +136,6 @@ RL:
 - environmental drivers of systematicity and generalization in a situated agent: https://arxiv.org/pdf/1910.00571.pdf, https://deepmind.com/research/publications/Emergent-Systematic-Generalization-in-a-Situated-Agent
 
 attention:
-- luong: https://arxiv.org/pdf/1508.04025.pdf
-- bahdanau attention: https://arxiv.org/pdf/1409.0473.pdf
 - layer normalization: https://arxiv.org/pdf/1607.06450.pdf
 - https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
 - https://kazemnejad.com/blog/transformer_architecture_positional_encoding/
@@ -224,16 +166,11 @@ NLP:
 - syntactic parsing:
 	- globally normalized transition-based NNs: https://arxiv.org/pdf/1603.06042.pdf
 	- grammar as a foreign language: https://arxiv.org/pdf/1412.7449.pdf
-- machine translation:
-	- seq2seq with NNs (original paper, I think): https://arxiv.org/pdf/1409.3215.pdf
-	- neural machine translation by jointly learning to align and translate: https://arxiv.org/pdf/1409.0473.pdf
-- neural machine translation by jointly learning to align and translate: https://arxiv.org/pdf/1409.0473.pdf
 - the woman worked as a babysitter, on biases in language generation: https://arxiv.org/pdf/1909.01326.pdf, shows bias in GPT-2
 - https://www.reddit.com/r/MachineLearning/comments/f7z5sa/news_500000_prize_for_distilling_wikipedia_to_its/
 - https://ai.googleblog.com/2020/07/grounding-natural-language-instructions.html
 
 NLP and images, which I consider as a pretty strong AI btw:
-- show, attend, and tell: https://arxiv.org/pdf/1502.03044.pdf
 - img captioning and visual question answering: https://arxiv.org/pdf/1707.07998.pdf
 - video "paragraph" captioning using hierarchical RNN: https://www.cv-foundation.org/openaccess/content_cvpr_2016/app/S19-04.pdf
 - action labeling in videos: https://arxiv.org/pdf/1507.05738.pdf
@@ -269,7 +206,6 @@ neuroscience:
 	- supplementary motor area
 	- dorsal premotor cortex
 	- primary somatosensory cortex
-- very good paper about visualizing brain with fmri: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/. With demo: https://gallantlab.org/huth2016/
 
 concepts to look forward to:
 - explainable ai, speak directly to an agent
@@ -350,6 +286,7 @@ projects:
 - an idea to combine text and images is to build complex knowledge representation in 2 models, then try to make them slowly merge into each other using another, small, labeled dataset. Or create a mapping between the meanings themselves to try to directly transfer knowledge across
 - also for minh's labels, how about just try to apply super resolution on that and recover the losses? That would be cool
 - so how about, predict an image to be a cat, then distort the images so that the dog label pops up?
+- try sorting stuff using a NN? This can be a solid test bed for trying out attention and LSTMs
 
 references papers (read it, understood, but just leave it here in case I need them):
 - image captioning basics, just basically cnn stacked with lstm: https://arxiv.org/pdf/1411.4389.pdf
@@ -384,6 +321,12 @@ employment:
 - https://allenai.org/
 - MIRI, but this is super math-heavy, so may be not
 - https://www.tesla.com/careers/search#/?keyword=internship
+
+grants:
+- http://thielfellowship.org/
+- https://www.effectivealtruism.org/grants/
+- https://www.1517fund.com/
+- advice: http://colah.github.io/posts/2020-05-University/
 
 thoughts and goals distilled down:
 ### Should I do a gap year to explore the cutting edge of ML?

@@ -45,6 +45,11 @@ Computing:
 - Quick overview of K8S: https://medium.com/easyread/step-by-step-introduction-to-basic-concept-of-kubernetes-e20383bdd118
 - Letsencrypt on K8S: https://runnable.com/blog/how-to-use-lets-encrypt-on-kubernetes
 - https://www.submarinecablemap.com/
+- https://www.happyassassin.net/posts/2014/01/25/uefi-boot-how-does-that-actually-work-then/
+- https://www.internetlivestats.com/one-second/#traffic-band
+- https://stackoverflow.com/questions/7580508/getting-chrome-to-accept-self-signed-localhost-certificate
+- https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl`
+- https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
 
 Paths:
 - Buy a domain name. Please please please BUY one. Do not use a domain name for free. There are no such thing. If your uni gives out domain names for free, DO NOT TAKE THEM. There is value in doing these things yourself, to learn how these things are actually done in the real world and be autonomous from the uni. It also gives you a better mindset too.
@@ -257,6 +262,9 @@ Movies:
   - Hurt: https://www.youtube.com/watch?v=UZaigFN0TSE
 - Gravity falls:
   - Main theme: https://www.youtube.com/watch?v=htYA0hs5NoU
+- hunger games:
+  - katniss everdeen, survivor: https://www.youtube.com/watch?v=m3USW2-Kiuo
+  - game of survival: https://www.youtube.com/watch?v=piDK-PR31bQ
 
 Fetishes:
 - Your neighborhood tentacle shop
@@ -345,7 +353,10 @@ Music gems:
   - Sand Planet: https://www.youtube.com/watch?v=9FeUi0I5LRg, live: https://www.youtube.com/watch?v=36yiPn3zFGc
   - What time is it: https://www.youtube.com/watch?v=n9-LH3rgp5Y
   - No idea how it's spelled: https://www.youtube.com/watch?v=KTZ-y85Erus
+  - Baby Maniacs: https://www.youtube.com/watch?v=gBhK_Los8B0
   - Some random girl: https://www.youtube.com/watch?v=JC07VcLg0UE
+  - Rosemary cover: https://www.youtube.com/watch?v=zmv1L4j3b-s
+  - Satisfaction: https://www.youtube.com/watch?v=gSizjYhWLcs
 - Totally Spies: https://soundcloud.com/pinar-tokbay/sets/totally-spies-ost
   - really nice music at the beginning of this: https://www.youtube.com/watch?v=6Qo9uJnp9Cg
   - suspense and fear
@@ -402,6 +413,7 @@ Music gems:
     - Sinners: https://www.youtube.com/watch?v=eoYDzJFqqqE
     - Sudden strangers: https://www.youtube.com/watch?v=qui3AvnjDZw
     - Talk to me: https://www.youtube.com/watch?v=zAtvCIx_l9o
+    - Wicked game: https://www.youtube.com/watch?v=y58r5vpIU1c
 - Wall-E
 - Interstella
   - No Time For Caution: https://www.youtube.com/watch?v=m3zvVGJrTP8
@@ -429,3 +441,4 @@ Services/tools:
 - prq.se: VPS provider in sweden, where everything is anonymous
 - Bahnhof AB: an ISP (which imply they can sell floating IPs, and thus hosting), from sweden (again) and located in pionen, a literal cold war bomb shelter
 - VxWorks: OS that Curiosity ran. Also RTLinux for OS in spacecrafts
+- https://www.simscale.com/product/pricing/

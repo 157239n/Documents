@@ -5,6 +5,57 @@ on the difficulty of training RNNs: https://arxiv.org/pdf/1211.5063.pdf
 batch norm: https://arxiv.org/pdf/1502.03167.pdf
 training highly effective connectivities within NNs with randomly initialized, fixed weights: https://arxiv.org/pdf/2006.16627.pdf
 
+deep resources:
+- https://pytorch.org/tutorials/
+- https://colah.github.io/
+- http://jalammar.github.io/
+- https://openai.com/progress/
+- https://deepmind.com/careers#internships
+- clear path: https://openai.com/blog/requests-for-research-2/
+- https://spinningup.openai.com/en/latest/
+	- https://github.com/openai/spinningup
+	- https://github.com/kashif/firedup
+	- https://github.com/Kaixhin/spinning-up-basic
+	- https://github.com/MishaLaskin/torchingup
+	- https://github.com/openai/baselines
+	- https://github.com/openai/universe
+- deepmind's course: https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF
+- trask's book
+- human compatible book
+- https://www.lesswrong.com/users/nostalgebraist
+- grad level lectures: https://www.cs.cornell.edu/courses/cs6787/2017fa/Lecture4.pdf
+- https://losslandscape.com/
+- https://alignment-newsletter.libsyn.com/
+- silver, lecture 4: https://www.youtube.com/watch?v=PnHCvfgC_ZA&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=4
+- jeremy, dl: https://www.youtube.com/watch?v=CJKnDu2dxOE
+- suggested by openai:
+	- deep rl bootcamp: https://sites.google.com/view/deep-rl-bootcamp/lectures
+	- CS285 deep rl learning: http://rail.eecs.berkeley.edu/deeprlcourse/
+	- david silver: https://www.davidsilver.uk/teaching/
+	- random pdf: http://joschu.net/docs/nuts-and-bolts.pdf
+	- random pdf: https://github.com/jachiam/rl-intro/blob/master/Presentation/rl_intro.pdf
+	- https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html
+	- algorithms for RL: https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
+	- optimizing expectations: from deep RL to stochastic computational graphs: http://joschu.net/docs/thesis.pdf
+	- https://github.com/rll/rllab
+	- gym walkthrough: https://gym.openai.com/docs/#review
+	- https://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/, good q-learning intro
+- training RNNs by Sutskever: http://www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf
+- https://aiweirdness.com/
+- https://distill.pub/
+- https://www.reddit.com/r/artificial/wiki/learning-materials
+- https://microscope.openai.com/models
+- https://agi.mit.edu
+- https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw/videos
+- https://www.youtube.com/c/ArxivInsights/videos
+- https://huggingface.co/
+- https://bdtechtalks.com/tag/demystifying-ai/
+- https://explorabl.es/
+- https://www.youtube.com/c/YannicKilcher/videos
+- https://gregbrockman.com/
+- done:
+	- https://lilianweng.github.io/lil-log/2017/10/29/object-recognition-for-dummies-part-1.html
+
 neuroscience:
 - hippocampus doing RL:
 	- https://www.nature.com/articles/s41467-019-08998-1
@@ -38,6 +89,7 @@ super resolution:
 - https://arxiv.org/pdf/1609.05158.pdf
 - https://arxiv.org/pdf/1707.02921.pdf
 - no gans, lots of techniques to unpack: https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5
+- perceptual losses for real-time style transfer and super resolution: https://arxiv.org/pdf/1603.08155.pdf
 
 CNNs:
 - trippy images generation:
@@ -54,6 +106,13 @@ CNNs:
 	- https://openaccess.thecvf.com/content_ECCV_2018/papers/SouYoung_Jin_Unsupervised_Hard-Negative_Mining_ECCV_2018_paper.pdf
 	- https://arxiv.org/pdf/1604.03540.pdf
 	- https://arxiv.org/pdf/1906.09681.pdf
+- detection & segmentation:
+	- mask rcnn, like unet, but can differentiate between differences: https://arxiv.org/pdf/1703.06870.pdf
+	- ensemble: https://arxiv.org/pdf/1804.09803.pdf
+	- object saliency detection, image segmentation: https://arxiv.org/pdf/1505.01173.pdf
+	- good end-to-end document recognition: https://dropbox.tech/machine-learning/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning
+	- (9/10) selective search for object recognition (R-CNN): https://ivi.fnwi.uva.nl/isis/publications/2013/UijlingsIJCV2013/UijlingsIJCV2013.pdf
+	- RetinaNet: https://arxiv.org/pdf/1708.02002.pdf, https://towardsdatascience.com/review-retinanet-focal-loss-object-detection-38fba6afabe4
 
 may be unproductive to think about, or ideas that are not of value:
 

@@ -547,8 +547,6 @@ yeah, so "how it works" section for the virus
 
 pick up an epidemiology book
 
-clean up sweep mechanism, so there's only 1 sweep happening
-
 stalin vol 1 & 2
 
 flow tutorial:
@@ -561,13 +559,15 @@ flow tutorial:
 7. (done) launch a onetime attack
 8. (done) dormant
 9. (done) deployed
-- one time attack executed
-- go back and forth between attacks
-- launch a background attack
-- see executed background attacks
-- show list of safe and simple attacks (blurs out dangerous ones)
-- show list of dangerous attacks
-- show list of unstable attacks
+10. (done) one time attack executed, go back and forth between attacks
+11. (done) launch a background attack
+12. (done) see executed background attacks & save
+13. (done) same thing & forget
 
-detailed tutorial for each packages:
-- 
+nice features should mention somewhere:
+- dark mode
+- ctrl-clicking (btw, perfect this)
+
+blue arrow color: 30499d
+
+don't refresh dashboard if user is looking at the demos

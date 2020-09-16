@@ -548,26 +548,3 @@ yeah, so "how it works" section for the virus
 pick up an epidemiology book
 
 stalin vol 1 & 2
-
-flow tutorial:
-1. (done) login
-- open cmd, type in the command & command outputs
-- show a list of other urls
-- virus appeared in expecting viruses
-5. (done) then appeared in active and dormant viruses
-6. (done) go back and forth in the daily active view
-7. (done) launch a onetime attack
-8. (done) dormant
-9. (done) deployed
-10. (done) one time attack executed, go back and forth between attacks
-11. (done) launch a background attack
-12. (done) see executed background attacks & save
-13. (done) same thing & forget
-
-nice features should mention somewhere:
-- dark mode
-- ctrl-clicking (btw, perfect this)
-
-blue arrow color: 30499d
-
-don't refresh dashboard if user is looking at the demos

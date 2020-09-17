@@ -548,3 +548,46 @@ yeah, so "how it works" section for the virus
 pick up an epidemiology book
 
 stalin vol 1 & 2
+
+"bad magic number in super-block"
+https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock
+https://www.serveradminz.com/blog/bad-magic-number-in-superblock/
+
+"mount segmentation fault"
+https://forums.linuxmint.com/viewtopic.php?t=81187
+https://www.linuxquestions.org/questions/linux-general-1/mount-segmentation-fault-260286/
+
+"linux format with ext4"
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/s1-filesystem-ext4-create
+
+"wrong fs type, bad option, bad superblock on /dev/sdb, missing codepage or helper program, or other error"
+
+"gparted no exfat"
+https://askubuntu.com/questions/999580/why-is-exfat-greyed-out-in-gparted
+https://www.reddit.com/r/Frugal/comments/1pg4nj/where_can_i_get_cheap_but_ok_quality_flash_drives/
+
+also amazon fresh?
+
+https://en.wikipedia.org/wiki/XFS
+
+"inode tables", "superblock disk"
+https://ubuntuforums.org/showthread.php?t=1898721
+http://erikimh.com/linux-recover-corrupted-partition-from-a-bad-superblock/
+https://askubuntu.com/questions/539880/cant-mount-an-ide-hdd-cant-read-superblock-error-message
+
+"can't read superblock on /dev/sdb1"
+https://forums.gentoo.org/viewtopic-t-921574-start-0.html
+https://askubuntu.com/questions/671248/can-t-mount-cd-or-dvd
+
+"Corrupt extent header while reading journal super block"
+https://unix.stackexchange.com/questions/33284/recovering-ext4-superblocks
+https://www.linuxquestions.org/questions/linux-hardware-18/ext4-partition-failed-to-mount-after-unsuccessful-unmounting-4175460176/
+https://linuxexpresso.wordpress.com/2010/03/31/repair-a-broken-ext4-superblock-in-ubuntu/
+
+"virt manager paused io error"
+https://serverfault.com/questions/660347/xen-libvirt-end-of-file-while-reading-data-input-output-error-when-attemp
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-troubleshooting-common_libvirt_errors_and_troubleshooting
+https://bbs.archlinux.org/viewtopic.php?id=234654
+https://forum.proxmox.com/threads/pause-virtual-machine-od-i-o-error.4176/
+
+https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion

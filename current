@@ -593,3 +593,34 @@ supernovas are standard candles??? https://www.astro.umass.edu/~weinberg/a114/le
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
 simulation demos of firing engines out to space to lower altitude and why it wouldn't work
+
+https://reactrouter.com/web/guides/primary-components
+https://redux.js.org/introduction/getting-started
+https://redux.js.org/introduction/core-concepts
+https://redux.js.org/basics/usage-with-react
+https://reactjs.org/docs/faq-styling.html
+https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e#.re1pdcz87
+https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
+https://create-react-app.dev/docs/adding-a-stylesheet/
+https://reactjs.org/docs/getting-started.html
+https://reactjs.org/docs/hooks-rules.html
+
+https://medium.com/@nainaakash012/efficientnet-rethinking-model-scaling-for-convolutional-neural-networks-92941c5bfb95
+domain experts:
+- https://www.kaggle.com/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165727
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166123
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165253
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169658
+top:
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169121
+
+https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/164870
+dicom image position & reference frames:
+- https://stackoverflow.com/questions/14930222/how-to-calculate-space-between-dicom-slices-for-mpr
+- https://dicom.innolitics.com/ciods/digital-x-ray-image/x-ray-generation/00180060
+- https://www.dicomlibrary.com/dicom/dicom-tags/
+- http://dicomlookup.com/
+- https://stackoverflow.com/questions/30814720/dicom-and-the-image-position-patient
+- http://dicom.nema.org/MEDICAL/DICOM/2014c/output/chtml/part03/sect_C.7.6.2.html#sect_C.7.6.2.1.1
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/174433

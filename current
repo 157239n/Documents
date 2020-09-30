@@ -565,6 +565,10 @@ https://www.reddit.com/r/learnpython/comments/ivddy4/i_am_currently_making_a_pyt
 https://github.com/Dogeek/pyprocessing
 
 seems sort of hopeless to build a computer from reversible components?
+- https://en.wikipedia.org/wiki/Reversible_computing
+- https://spectrum.ieee.org/computing/hardware/the-future-of-computing-depends-on-making-it-reversible
+- https://www.americanscientist.org/article/computers-that-can-run-backwards
+- https://www.technologyreview.com/2011/01/25/197408/the-fantastical-promise-of-reversible-computing/
 
 https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model
 
@@ -580,10 +584,6 @@ projective stuff again, but this time do it right, in terms of matricies
 https://www.reddit.com/r/Entrepreneur/comments/7madgj/ive_been_hoarding_40_domains_its_time_to_sell/
 "reddit domain hoarding"
 
-so will a linear graph with 2 log axis be linear in a normal graph?
-
-ask c string initialization on stack overflow
-
 https://drexel.edu/scdc/resources/coronavirus-response/
 
 David Sinclair
@@ -595,19 +595,11 @@ this as reference for the NMRI model: https://deepmind.com/blog/article/neural-s
 simulation demos of firing engines out to space to lower altitude and why it wouldn't work
 
 https://reactrouter.com/web/guides/primary-components
-https://redux.js.org/introduction/getting-started
-https://redux.js.org/introduction/core-concepts
-https://redux.js.org/basics/usage-with-react
-https://reactjs.org/docs/faq-styling.html
-https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e#.re1pdcz87
-https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
-https://create-react-app.dev/docs/adding-a-stylesheet/
-https://reactjs.org/docs/getting-started.html
-https://reactjs.org/docs/hooks-rules.html
 
 https://medium.com/@nainaakash012/efficientnet-rethinking-model-scaling-for-convolutional-neural-networks-92941c5bfb95
 domain experts:
 - https://www.kaggle.com/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk
+- https://www.kaggle.com/anarthal/dicom-metadata-eda
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165727
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166123
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165253
@@ -624,3 +616,26 @@ dicom image position & reference frames:
 - https://stackoverflow.com/questions/30814720/dicom-and-the-image-position-patient
 - http://dicom.nema.org/MEDICAL/DICOM/2014c/output/chtml/part03/sect_C.7.6.2.html#sect_C.7.6.2.1.1
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/174433
+
+https://www.jetbrains.com/help/idea/run-debug-configuration-tomcat-server.html#deployment
+
+useHistory and useLocation?? https://css-tricks.com/the-hooks-of-react-router/
+https://reactrouter.com/web/api/history
+https://scotch.io/courses/using-react-router-4/using-history
+https://reacttraining.com/blog/react-router-v5-1/
+history and store in router?? https://react-redux.js.org/api/provider
+
+https://www.youtube.com/c/Neuroscientificallychallenged/videos
+https://stackoverflow.com/questions/33602185/speed-up-plotting-images-in-matplotlib
+
+"ImagePositionPatient", "ImageOrientationPatient", "FrameOfReferenceUID", "SliceLocation", "SamplesPerPixel", "PhotometricInterpretation", "PixelSpacing", 
+"BitsAllocated", "BitsStored", "HighBit", "WindowCenter", "WindowWidth", "RescaleIntercept"
+
+levels of sameness: 
+- lv 1: same across images in a particular patient
+- lv 2: same across images across all patients
+
+fields that don't seem to change at all:
+- PixelSpacing - neither (nearly lv 1, outlier in patient ID00099637202206203080121 which changes a heck lot)
+- WindowCenter - lv 1. This throws the ragging error. More analysis to follow
+- WindowWidth - lv 1. Also throws the ragging error

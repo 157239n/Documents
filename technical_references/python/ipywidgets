@@ -9,6 +9,8 @@ interact(f, x = (0., 4., .25))
 interact(f, x=['apples','oranges']), drop down menus
 interact(f, x=[('one', 10), ('two', 20)]), "one" and "two" displayed, but 10 and 20 is passed into the function
 
+jupyter nbextension enable --py widgetsnbextension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 from ipywidgets import interact
 @interact
 def echo(str="Hello, world", times=[1, 5, 1]):

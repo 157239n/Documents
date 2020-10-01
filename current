@@ -625,7 +625,6 @@ https://scotch.io/courses/using-react-router-4/using-history
 https://reacttraining.com/blog/react-router-v5-1/
 history and store in router?? https://react-redux.js.org/api/provider
 
-https://www.youtube.com/c/Neuroscientificallychallenged/videos
 https://stackoverflow.com/questions/33602185/speed-up-plotting-images-in-matplotlib
 
 "ImagePositionPatient", "ImageOrientationPatient", "FrameOfReferenceUID", "SliceLocation", "SamplesPerPixel", "PhotometricInterpretation", "PixelSpacing", 
@@ -639,3 +638,8 @@ fields that don't seem to change at all:
 - PixelSpacing - neither (nearly lv 1, outlier in patient ID00099637202206203080121 which changes a heck lot)
 - WindowCenter - lv 1. This throws the ragging error. More analysis to follow
 - WindowWidth - lv 1. Also throws the ragging error
+
+videoscribe
+
+python pil 3d projections
+https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???

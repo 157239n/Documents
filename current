@@ -643,3 +643,14 @@ videoscribe
 
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
+
+https://www.xspdf.com/resolution/50487226.html
+https://stackoverflow.com/questions/44213921/python-3-installing-gi-package-with-pip
+
+actually measure access speeds of PIL and profile it
+
+with mocking stuff: https://jestjs.io/docs/en/tutorial-react-native
+
+seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
+
+reconstruction seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work

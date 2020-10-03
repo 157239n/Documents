@@ -544,11 +544,7 @@ pick up an epidemiology book
 
 stalin vol 1 & 2
 
-also amazon fresh?
-
 https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion
-
-tim's rant & kurz stuff
 
 logging every request down, and dig about the log rotate thingy
 
@@ -619,13 +615,7 @@ dicom image position & reference frames:
 
 https://www.jetbrains.com/help/idea/run-debug-configuration-tomcat-server.html#deployment
 
-useHistory and useLocation?? https://css-tricks.com/the-hooks-of-react-router/
-https://reactrouter.com/web/api/history
-https://scotch.io/courses/using-react-router-4/using-history
-https://reacttraining.com/blog/react-router-v5-1/
 history and store in router?? https://react-redux.js.org/api/provider
-
-https://stackoverflow.com/questions/33602185/speed-up-plotting-images-in-matplotlib
 
 "ImagePositionPatient", "ImageOrientationPatient", "FrameOfReferenceUID", "SliceLocation", "SamplesPerPixel", "PhotometricInterpretation", "PixelSpacing", 
 "BitsAllocated", "BitsStored", "HighBit", "WindowCenter", "WindowWidth", "RescaleIntercept"
@@ -654,3 +644,11 @@ with mocking stuff: https://jestjs.io/docs/en/tutorial-react-native
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
 reconstruction seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
+
+rocket propulsion elements and ignition again
+
+https://www.reddit.com/r/spacex/comments/d9tkqj/on_regenerative_cooling_raptor_uses_milled_copper/
+
+actually do the 23andme thingy
+
+family of serotonin receptors

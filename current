@@ -671,3 +671,7 @@ Convolution Kernel
 PatientPosition
 RescaleSlope
 GantryDetectorTilt
+
+batch file get location using gps
+
+map out actual zoom levels for devices

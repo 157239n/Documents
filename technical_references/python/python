@@ -12,3 +12,7 @@ Path("/home/user/setup.py")
 
 import inspect
 inspect.getsource(len)
+
+
+standalone python script (don't even need to have python binary installed)
+pyinstaller --onefile abc.py

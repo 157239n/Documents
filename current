@@ -657,21 +657,26 @@ with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 brain surgery: https://www.youtube.com/c/SanjoySanyal/videos
 anatomy 3d slices: https://www.youtube.com/c/AboutMedicine/videos
 
+["Modality", "Manufacturer", "ManufacturerModelName", "SliceThickness", "KVP", "SpacingBetweenSlices", "TableHeight", "RotationDirection", "XRayTubeCurrent", "Convolution Kernel", "PatientPosition", "RescaleSlope", "GantryDetectorTilt"]
 
-Modality
-Manufacturer
-ManufacturerModelName
-SliceThickness
-KVP
-SpacingBetweenSlices
-TableHeight
-RotationDirection
-XRayTubeCurrent
-Convolution Kernel
-PatientPosition
-RescaleSlope
-GantryDetectorTilt
-
-batch file get location using gps
+batch file get location using gps ("python gps windows 10"):
+- https://stackoverflow.com/questions/44400560/using-windows-gps-location-service-in-a-python-script
+https://stackoverflow.com/questions/6146131/python-gps-module-reading-latest-gps-data
+https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi
+https://community.emlid.com/t/gps-example-python-vs-c/755
+https://docs.microsoft.com/en-us/windows/win32/locationapi/windows-location-programming-reference
 
 map out actual zoom levels for devices
+
+https://en.wikipedia.org/wiki/X-ray_crystallography
+https://en.wikipedia.org/wiki/Crystallization_of_polymers#Degree_of_crystallinity
+polymer crystallinity xc
+degree of crystallinity xc
+https://www.researchgate.net/post/How_do_I_calculate_crystallinity_using_a_DSC_curve
+polymer heat of crystallization
+https://en.wikipedia.org/wiki/Differential_scanning_calorimetry
+
+jre malice
+new R&M: https://www.youtube.com/channel/UCUF4kaETVSAnUdRBL999q9g/videos
+
+29736096

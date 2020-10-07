@@ -395,9 +395,6 @@ play ksp again
 
 rewatch jeremy again
 
-read superintelligence again
-so are solar panels like, violates 2nd law?
-
 also what's up with eric weinstein? https://www.youtube.com/watch?v=rIAZJNe7YtE
 
 seems like they don't realized that the spontaneous learning happens when you make it big enough
@@ -418,13 +415,6 @@ kotkin:
 - https://www.youtube.com/watch?v=dqiqUtdFi2I
 - https://www.youtube.com/watch?v=cNmvGTLmg2o
 - https://www.youtube.com/watch?v=0tXvLJXkFFg
-
-eating:
-- "oxygen not included eating"
-- https://oxygennotincluded.gamepedia.com/Guide/Food
-- https://oxygennotincluded.gamepedia.com/Bristle_Blossom
-
-magma?
 
 detect changes
 
@@ -620,10 +610,6 @@ history and store in router?? https://react-redux.js.org/api/provider
 "ImagePositionPatient", "ImageOrientationPatient", "FrameOfReferenceUID", "SliceLocation", "SamplesPerPixel", "PhotometricInterpretation", "PixelSpacing", 
 "BitsAllocated", "BitsStored", "HighBit", "WindowCenter", "WindowWidth", "RescaleIntercept"
 
-levels of sameness: 
-- lv 1: same across images in a particular patient
-- lv 2: same across images across all patients
-
 fields that don't seem to change at all:
 - PixelSpacing - neither (nearly lv 1, outlier in patient ID00099637202206203080121 which changes a heck lot)
 - WindowCenter - lv 1. This throws the ragging error. More analysis to follow
@@ -634,12 +620,7 @@ videoscribe
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
 
-https://www.xspdf.com/resolution/50487226.html
-https://stackoverflow.com/questions/44213921/python-3-installing-gi-package-with-pip
-
 actually measure access speeds of PIL and profile it
-
-with mocking stuff: https://jestjs.io/docs/en/tutorial-react-native
 
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
@@ -654,8 +635,7 @@ actually do the 23andme thingy
 family of serotonin receptors
 
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
-brain surgery: https://www.youtube.com/c/SanjoySanyal/videos
-anatomy 3d slices: https://www.youtube.com/c/AboutMedicine/videos
+more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
 
 ["Modality", "Manufacturer", "ManufacturerModelName", "SliceThickness", "KVP", "SpacingBetweenSlices", "TableHeight", "RotationDirection", "XRayTubeCurrent", "Convolution Kernel", "PatientPosition", "RescaleSlope", "GantryDetectorTilt"]
 
@@ -668,15 +648,5 @@ https://docs.microsoft.com/en-us/windows/win32/locationapi/windows-location-prog
 
 map out actual zoom levels for devices
 
-https://en.wikipedia.org/wiki/X-ray_crystallography
-https://en.wikipedia.org/wiki/Crystallization_of_polymers#Degree_of_crystallinity
-polymer crystallinity xc
-degree of crystallinity xc
-https://www.researchgate.net/post/How_do_I_calculate_crystallinity_using_a_DSC_curve
-polymer heat of crystallization
-https://en.wikipedia.org/wiki/Differential_scanning_calorimetry
-
-jre malice
-new R&M: https://www.youtube.com/channel/UCUF4kaETVSAnUdRBL999q9g/videos
-
-29736096
+things to research after brain is generally understood:
+- claustrum's function & connections

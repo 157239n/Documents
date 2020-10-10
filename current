@@ -580,8 +580,6 @@ this as reference for the NMRI model: https://deepmind.com/blog/article/neural-s
 
 simulation demos of firing engines out to space to lower altitude and why it wouldn't work
 
-https://reactrouter.com/web/guides/primary-components
-
 https://medium.com/@nainaakash012/efficientnet-rethinking-model-scaling-for-convolutional-neural-networks-92941c5bfb95
 domain experts:
 - https://www.kaggle.com/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk
@@ -602,13 +600,6 @@ dicom image position & reference frames:
 - https://stackoverflow.com/questions/30814720/dicom-and-the-image-position-patient
 - http://dicom.nema.org/MEDICAL/DICOM/2014c/output/chtml/part03/sect_C.7.6.2.html#sect_C.7.6.2.1.1
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/174433
-
-https://www.jetbrains.com/help/idea/run-debug-configuration-tomcat-server.html#deployment
-
-history and store in router?? https://react-redux.js.org/api/provider
-
-"ImagePositionPatient", "ImageOrientationPatient", "FrameOfReferenceUID", "SliceLocation", "SamplesPerPixel", "PhotometricInterpretation", "PixelSpacing", 
-"BitsAllocated", "BitsStored", "HighBit", "WindowCenter", "WindowWidth", "RescaleIntercept"
 
 fields that don't seem to change at all:
 - PixelSpacing - neither (nearly lv 1, outlier in patient ID00099637202206203080121 which changes a heck lot)
@@ -637,18 +628,10 @@ family of serotonin receptors
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
 
-["Modality", "Manufacturer", "ManufacturerModelName", "SliceThickness", "KVP", "SpacingBetweenSlices", "TableHeight", "RotationDirection", "XRayTubeCurrent", "Convolution Kernel", "PatientPosition", "RescaleSlope", "GantryDetectorTilt"]
-
-batch file get location using gps ("python gps windows 10"):
-- https://stackoverflow.com/questions/44400560/using-windows-gps-location-service-in-a-python-script
-https://stackoverflow.com/questions/6146131/python-gps-module-reading-latest-gps-data
-https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi
-https://community.emlid.com/t/gps-example-python-vs-c/755
-https://docs.microsoft.com/en-us/windows/win32/locationapi/windows-location-programming-reference
-
-map out actual zoom levels for devices
-
 things to research after brain is generally understood:
 - claustrum's function & connections
 
-selenium stuff again
+https://www.technologyreview.com/2020/10/08/1009845/a-gpt-3-bot-posted-comments-on-reddit-for-a-week-and-no-one-noticed/
+
+https://www.kaggle.com/eladwar/20-seconds-or-less
+https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166957

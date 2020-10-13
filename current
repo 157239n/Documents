@@ -639,3 +639,25 @@ https://stackoverflow.com/questions/61034839/pytorch-indexing-a-range-of-multipl
 how emotions are made & 7 1/2 lessons about the brain, lisa feldman barrett
 
 model Y sample reports: https://munrolive.com/support-%2F-store/ols/products/model-y-sample-reports
+
+https://distill.pub/2017/aia/
+http://lernapparat.de/
+
+dcm rescale slope and intercept
+https://blog.kitware.com/dicom-rescale-intercept-rescale-slope-and-itk/
+https://stackoverflow.com/questions/10193971/rescale-slope-and-rescale-intercept
+
+matplotlib 3d
+https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html
+https://matplotlib.org/3.1.0/gallery/mplot3d/surface3d.html
+https://matplotlib.org/3.1.1/gallery/mplot3d/scatter3d.html
+https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html
+https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725
+
+pytorch check if fusing happens
+https://pytorch.org/docs/stable/quantization.html
+https://discuss.pytorch.org/t/question-about-quantization-tutorial-and-fusing-model/80652
+
+https://wiki.freecadweb.org/Getting_started
+
+formik seems unnecessarily complicated

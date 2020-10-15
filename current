@@ -665,3 +665,29 @@ formik seems unnecessarily complicated
 https://pytorch.org/blog/optimizing-cuda-rnn-with-torchscript/
 
 PixelRepresentation
+
+"pytorch profile gpu"
+https://pytorch.org/tutorials/recipes/recipes/profiler.html
+https://gist.github.com/XinDongol/fe066cb76e1c5238ecbc0cb729806410
+https://docs.nvidia.com/deeplearning/frameworks/pyprof-user-guide/profile.html
+
+so apparently, the reason I can't render 200x200 screen is because 40M variables are moving around (resnet50 has 2M variables moving around), and so garbage collection must happen in between. So how can normal games do this then? Looping over objects is pretty lame, cause that don't seem like a good use of resources, and they can't possibly fit >1k triangles in a 4GB GPU if there are 2M primary rays. So how are they doing it?????
+
+also, transpose seems to require synchronization, although it's not apparent why
+
+http://fragmentbuffer.com/gpu-performance-for-game-artists/
+https://computergraphics.stackexchange.com/questions/1793/how-many-polygons-in-a-scene-can-modern-hardware-reach-while-maintaining-realtim
+https://developer.nvidia.com/blog/rtx-best-practices/
+
+sphere: 0.2m radius
+cameras at 1.75m radius
+
+"blender set origin of object"
+https://daler.github.io/blender-for-3d-printing/mesh_modeling/object-origin.html
+
+https://b3d.interplanety.org/en/how-to-append-an-object-from-another-blend-file-to-the-scene-using-the-blender-python-api/
+https://docs.blender.org/api/current/bpy.ops.import_scene.html
+https://stackoverflow.com/questions/57523374/how-to-import-obj-file-from-blender-to-blender-game-engine-in-python-script
+https://blenderscripting.blogspot.com/2012/03/importing-obj.html
+https://blender.stackexchange.com/questions/72928/blender-2-78-obj-import-via-script
+https://docs.blender.org/api/current/bpy.ops.export_scene.html

@@ -1,0 +1,11 @@
+import bpy
+
+for cam in [obj for obj in bpy.data.objects if obj.type == 'CAMERA']:
+    bpy.context.scene.camera = cam
+    bpy.context.scene.render.filepath = f"/home/kelvin/repos/blender/room renders/{cam.name}"
+    bpy.ops.render.render(write_still=True)
+
+
+
+
+https://blender.stackexchange.com/questions/5287/using-3rd-party-python-modules

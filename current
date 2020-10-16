@@ -681,13 +681,3 @@ https://developer.nvidia.com/blog/rtx-best-practices/
 
 sphere: 0.2m radius
 cameras at 1.75m radius
-
-"blender set origin of object"
-https://daler.github.io/blender-for-3d-printing/mesh_modeling/object-origin.html
-
-https://b3d.interplanety.org/en/how-to-append-an-object-from-another-blend-file-to-the-scene-using-the-blender-python-api/
-https://docs.blender.org/api/current/bpy.ops.import_scene.html
-https://stackoverflow.com/questions/57523374/how-to-import-obj-file-from-blender-to-blender-game-engine-in-python-script
-https://blenderscripting.blogspot.com/2012/03/importing-obj.html
-https://blender.stackexchange.com/questions/72928/blender-2-78-obj-import-via-script
-https://docs.blender.org/api/current/bpy.ops.export_scene.html

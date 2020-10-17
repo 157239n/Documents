@@ -681,3 +681,12 @@ https://developer.nvidia.com/blog/rtx-best-practices/
 
 sphere: 0.2m radius
 cameras at 1.75m radius
+
+bpy.ops.material.new()
+https://docs.blender.org/api/current/bpy.context.html
+https://docs.blender.org/api/blender_python_api_current/bpy.ops.material.html
+https://blenderartists.org/t/bpy-ops-material-new/550507
+
+https://www.technologyreview.com/2020/10/16/1010566/ai-machine-learning-with-tiny-data/
+
+figure out how to make subl not lag when gpu is running 100%

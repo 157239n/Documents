@@ -710,3 +710,22 @@ https://www.skillshare.com/classes/Motion-Graphics-with-Kurzgesagt-%E2%80%93-Par
 https://en.wikipedia.org/wiki/Debiasing
 
 ablation studies in NNs: https://arxiv.org/pdf/1901.08644.pdf
+https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it
+
+just in case:
+- https://stackoverflow.com/questions/12540290/how-to-organize-multiple-python-files-into-a-single-module-without-it-behaving-l
+- https://packaging.python.org/guides/packaging-namespace-packages/
+- https://stackoverflow.com/questions/448271/what-is-init-py-for
+
+fastai data block api:
+- https://docs.fast.ai/data.block
+- https://muellerzr.github.io/fastblog/datablock/2020/03/21/DataBlockAPI.html
+- https://www.kaggle.com/getting-started/168549
+
+so goals now:
+- training loop
+- callbacks
+
+just a suggestion, but shouldn't we refactor the style of the endpoints real fast? Like, it's not intuitive at all, and camel, kebab cases. We still keep the old endpoints for backwards compatibility, but create a new one in a day that simply reroutes to the old endpoints
+
+https://www.iflscience.com/health-and-medicine/scientists-accidentally-discover-new-organ-inside-the-human-head/

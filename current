@@ -723,9 +723,26 @@ fastai data block api:
 - https://www.kaggle.com/getting-started/168549
 
 so goals now:
-- training loop
-- callbacks
-
-just a suggestion, but shouldn't we refactor the style of the endpoints real fast? Like, it's not intuitive at all, and camel, kebab cases. We still keep the old endpoints for backwards compatibility, but create a new one in a day that simply reroutes to the old endpoints
+- gradient stats
 
 https://www.iflscience.com/health-and-medicine/scientists-accidentally-discover-new-organ-inside-the-human-head/
+
+https://www.fast.ai/2019/12/02/nbdev/
+
+"pytorch adam set learning rate"
+https://discuss.pytorch.org/t/adaptive-learning-rate/320/19
+https://stackoverflow.com/questions/48324152/pytorch-how-to-change-the-learning-rate-of-an-optimizer-at-any-given-moment-no
+https://discuss.pytorch.org/t/change-learning-rate-in-pytorch/14653
+"pytorch param groups"
+https://discuss.pytorch.org/t/build-custom-param-groups-for-optimizer/43784/2
+https://stackoverflow.com/questions/51756913/in-pytorch-how-do-you-use-add-param-group-with-a-optimizer
+
+write for money? https://blog.floydhub.com/ten-techniques-from-fast-ai/
+
+https://www.fast.ai/2018/04/30/dawnbench-fastai/
+
+"wasserstein distance": GAN: https://arxiv.org/pdf/1701.07875.pdf
+
+"pytorch deep copy model"
+https://discuss.pytorch.org/t/are-there-any-recommended-methods-to-clone-a-model/483/6
+https://discuss.pytorch.org/t/can-i-deepcopy-a-model/52192

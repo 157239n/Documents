@@ -55,3 +55,7 @@ diagram G {
 	world -> of -> warcraft;
 	world -> on -> fire;
 }
+
+
+
+IPython rich display: _repr_html_(), _ipython_display_()

@@ -746,3 +746,11 @@ https://www.fast.ai/2018/04/30/dawnbench-fastai/
 "pytorch deep copy model"
 https://discuss.pytorch.org/t/are-there-any-recommended-methods-to-clone-a-model/483/6
 https://discuss.pytorch.org/t/can-i-deepcopy-a-model/52192
+
+"pytorch detach first or not", "pytorch detach"
+https://discuss.pytorch.org/t/difference-between-detach-clone-and-clone-detach/34173/5
+https://discuss.pytorch.org/t/detach-no-grad-and-requires-grad/16915/12
+https://discuss.pytorch.org/t/how-does-detach-work/2308
+http://www.bnikolic.co.uk/blog/pytorch-detach.html
+https://stackoverflow.com/questions/56816241/difference-between-detach-and-with-torch-nograd-in-pytorch/56817594
+https://stackoverflow.com/questions/63582590/why-do-we-call-detach-before-calling-numpy-on-a-pytorch-tensor

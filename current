@@ -724,6 +724,8 @@ fastai data block api:
 
 so goals now:
 - gradient stats
+- make it so that reusing modules like ReLU are counted separately
+- document fallback
 
 https://www.iflscience.com/health-and-medicine/scientists-accidentally-discover-new-organ-inside-the-human-head/
 

@@ -723,8 +723,6 @@ fastai data block api:
 - https://www.kaggle.com/getting-started/168549
 
 so goals now:
-- gradient stats
-- make it so that reusing modules like ReLU are counted separately
 - document fallback
 
 https://www.iflscience.com/health-and-medicine/scientists-accidentally-discover-new-organ-inside-the-human-head/
@@ -756,3 +754,9 @@ https://discuss.pytorch.org/t/how-does-detach-work/2308
 http://www.bnikolic.co.uk/blog/pytorch-detach.html
 https://stackoverflow.com/questions/56816241/difference-between-detach-and-with-torch-nograd-in-pytorch/56817594
 https://stackoverflow.com/questions/63582590/why-do-we-call-detach-before-calling-numpy-on-a-pytorch-tensor
+
+https://www.kaggle.com/sironghuang/understanding-pytorch-hooks
+
+"ulmfit vs bert"
+https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html
+http://jalammar.github.io/illustrated-bert/

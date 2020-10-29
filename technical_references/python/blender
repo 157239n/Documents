@@ -9,3 +9,6 @@ for cam in [obj for obj in bpy.data.objects if obj.type == 'CAMERA']:
 
 
 https://blender.stackexchange.com/questions/5287/using-3rd-party-python-modules
+
+sphere: 0.2m radius
+cameras at 1.75m radius

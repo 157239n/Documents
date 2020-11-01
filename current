@@ -785,3 +785,9 @@ swift concurrency manifesto: https://gist.github.com/lattner/31ed37682ef1576b16b
 look up __all__ again, to stop polluting the namespace
 
 fastwebhook and nbdev again
+
+"conda swift jupyter kernel", "jupyter notebook swift":
+- https://forums.fast.ai/t/up-running-swift-for-tensorflow-with-jupyter-on-macos/54250/6
+- https://www.macinchem.org/blog/files/8e3e355358bcfcb170848ba6faca9699-2405.php
+- https://medium.com/@walterfwiggins/setting-up-a-swift-for-tensorflow-dev-enviroment-with-jupyter-on-ubuntu-c7dc6764f9cd
+- https://github.com/google/swift-jupyter/blob/master/register.py

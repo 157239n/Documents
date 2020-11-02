@@ -456,10 +456,6 @@ may be deep RL introspection in our current systems help us reason about this ta
 
 the incognito, david eagleman's book
 
-lex escaping local optimum: https://www.youtube.com/watch?v=5qjA8HPJl_0
-
-try out cocalc
-
 https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
 
 candace against the universe
@@ -470,13 +466,9 @@ on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
 
 fiverr: random stuff, tutoring, youtube connections, local technical solutions
 
-"amazon trackpad"
-
 lex's chollet
 
 text from invoices: https://twitter.com/theaievangelist/status/1300862719969681411
-
-the power of self learning systems: https://www.youtube.com/watch?v=wxis9FrCHbw
 
 check python's random() performance
 
@@ -500,9 +492,6 @@ julia sets
 maze
 
 again, do the 3d transformation thingy in torch, so that I have another capability
-
-https://www.facebook.com/steamforvietnam.org/
-https://docs.google.com/forms/d/e/1FAIpQLSeJUyFuOD-NBbP9qDDOenql_29GOqq7_HWJSaaatRyQQKdYnA/viewform
 
 so apparently, carrying 1GW power over 10M volt lines is feasible. So 100 amps, not 10k amps. So that guy may not know about this in depth. So dig more into the numbers and grasp at the fundamentals of these high power systems
 
@@ -529,14 +518,6 @@ documentary about gobota
 
 try out wolfram and new kind of science book
 
-https://en.wikipedia.org/wiki/List_of_thalamic_nuclei
-https://en.wikipedia.org/wiki/Midline_nuclear_group
-https://en.wikipedia.org/wiki/Intralaminar_nuclei_of_thalamus
-"intralaminar nuclei"
-
-https://www.reddit.com/r/learnpython/comments/ivddy4/i_am_currently_making_a_python_version_of_the
-https://github.com/Dogeek/pyprocessing
-
 seems sort of hopeless to build a computer from reversible components?
 - https://en.wikipedia.org/wiki/Reversible_computing
 - https://spectrum.ieee.org/computing/hardware/the-future-of-computing-depends-on-making-it-reversible
@@ -544,8 +525,6 @@ seems sort of hopeless to build a computer from reversible components?
 - https://www.technologyreview.com/2011/01/25/197408/the-fantastical-promise-of-reversible-computing/
 
 https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model
-
-shapez.io
 
 see options to hoard domains
 
@@ -555,8 +534,6 @@ https://www.reddit.com/r/Entrepreneur/comments/7madgj/ive_been_hoarding_40_domai
 "reddit domain hoarding"
 
 https://drexel.edu/scdc/resources/coronavirus-response/
-
-David Sinclair
 
 supernovas are standard candles??? https://www.astro.umass.edu/~weinberg/a114/lectures/lec22.pdf
 
@@ -590,16 +567,12 @@ fields that don't seem to change at all:
 - WindowCenter - lv 1. This throws the ragging error. More analysis to follow
 - WindowWidth - lv 1. Also throws the ragging error
 
-videoscribe
-
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
 
-actually measure access speeds of PIL and profile it
-
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
-reconstruction seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
+reconstruction (think MRIs) seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
 
 rocket propulsion elements and ignition again
 
@@ -607,15 +580,11 @@ https://www.reddit.com/r/spacex/comments/d9tkqj/on_regenerative_cooling_raptor_u
 
 actually do the 23andme thingy
 
-family of serotonin receptors
-
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
 
 things to research after brain is generally understood:
 - claustrum's function & connections
-
-https://www.technologyreview.com/2020/10/08/1009845/a-gpt-3-bot-posted-comments-on-reddit-for-a-week-and-no-one-noticed/
 
 https://www.kaggle.com/eladwar/20-seconds-or-less
 https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166957
@@ -644,14 +613,9 @@ https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plot
 https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725
 
 pytorch check if fusing happens
-https://pytorch.org/docs/stable/quantization.html
-https://discuss.pytorch.org/t/question-about-quantization-tutorial-and-fusing-model/80652
-
-https://wiki.freecadweb.org/Getting_started
-
-formik seems unnecessarily complicated
-
-https://pytorch.org/blog/optimizing-cuda-rnn-with-torchscript/
+- https://pytorch.org/docs/stable/quantization.html
+- https://discuss.pytorch.org/t/question-about-quantization-tutorial-and-fusing-model/80652
+- https://pytorch.org/blog/optimizing-cuda-rnn-with-torchscript/
 
 PixelRepresentation
 
@@ -660,23 +624,7 @@ https://pytorch.org/tutorials/recipes/recipes/profiler.html
 https://gist.github.com/XinDongol/fe066cb76e1c5238ecbc0cb729806410
 https://docs.nvidia.com/deeplearning/frameworks/pyprof-user-guide/profile.html
 
-so apparently, the reason I can't render 200x200 screen is because 40M variables are moving around (resnet50 has 2M variables moving around), and so garbage collection must happen in between. So how can normal games do this then? Looping over objects is pretty lame, cause that don't seem like a good use of resources, and they can't possibly fit >1k triangles in a 4GB GPU if there are 2M primary rays. So how are they doing it?????
-
-also, transpose seems to require synchronization, although it's not apparent why
-
-http://fragmentbuffer.com/gpu-performance-for-game-artists/
-https://computergraphics.stackexchange.com/questions/1793/how-many-polygons-in-a-scene-can-modern-hardware-reach-while-maintaining-realtim
-https://developer.nvidia.com/blog/rtx-best-practices/
-
-bpy.ops.material.new()
-https://docs.blender.org/api/current/bpy.context.html
-https://docs.blender.org/api/blender_python_api_current/bpy.ops.material.html
-https://blenderartists.org/t/bpy-ops-material-new/550507
-
 https://www.technologyreview.com/2020/10/16/1010566/ai-machine-learning-with-tiny-data/
-https://www.sciencenews.org/article/physics-first-room-temperature-superconductor-discovery
-
-figure out how to make subl not lag when gpu is running 100%
 
 hbo elon series
 
@@ -703,25 +651,8 @@ just in case:
 - https://packaging.python.org/guides/packaging-namespace-packages/
 - https://stackoverflow.com/questions/448271/what-is-init-py-for
 
-fastai data block api:
-- https://docs.fast.ai/data.block
-- https://muellerzr.github.io/fastblog/datablock/2020/03/21/DataBlockAPI.html
-- https://www.kaggle.com/getting-started/168549
-
 so goals now:
 - document fallback
-
-https://www.iflscience.com/health-and-medicine/scientists-accidentally-discover-new-organ-inside-the-human-head/
-
-https://www.fast.ai/2019/12/02/nbdev/
-
-"pytorch adam set learning rate"
-https://discuss.pytorch.org/t/adaptive-learning-rate/320/19
-https://stackoverflow.com/questions/48324152/pytorch-how-to-change-the-learning-rate-of-an-optimizer-at-any-given-moment-no
-https://discuss.pytorch.org/t/change-learning-rate-in-pytorch/14653
-"pytorch param groups"
-https://discuss.pytorch.org/t/build-custom-param-groups-for-optimizer/43784/2
-https://stackoverflow.com/questions/51756913/in-pytorch-how-do-you-use-add-param-group-with-a-optimizer
 
 write for money? https://blog.floydhub.com/ten-techniques-from-fast-ai/
 
@@ -762,11 +693,7 @@ how long does it take normally for a scanning electron microscope to scan a 1mm 
 also, always keep in mind the actual precision required for these scopes. If we can make a more generizable result, then it's better
 https://en.wikipedia.org/wiki/Scanning_electron_microscope
 
-bookmark dream, lex guitar
-
 so do ppl do gene mapping by hand or individual experiments??? Cause that doesn't seem feasible though
-
-actually figure out average age of humans back in the day
 
 alertness
 arousal
@@ -780,14 +707,23 @@ https://developers.google.com/web/tools/chrome-devtools?utm_source=dcc&utm_mediu
 https://github.com/electron/electron/issues/8466
 https://stackoverflow.com/questions/42636151/electron-failed-to-install-correctly-please-delete-node-modules-and-try-instal
 
-swift concurrency manifesto: https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782
-
 look up __all__ again, to stop polluting the namespace
 
-fastwebhook and nbdev again
+fastwebhook, fastcore.utils and nbdev again
+- https://github.com/fastai/fastcore/blob/master/fastcore/foundation.py#L43
+- https://github.com/fastai/nbdev/tree/master/nbdev
+- https://www.fast.ai/2019/12/02/nbdev/
 
-"conda swift jupyter kernel", "jupyter notebook swift":
-- https://forums.fast.ai/t/up-running-swift-for-tensorflow-with-jupyter-on-macos/54250/6
-- https://www.macinchem.org/blog/files/8e3e355358bcfcb170848ba6faca9699-2405.php
-- https://medium.com/@walterfwiggins/setting-up-a-swift-for-tensorflow-dev-enviroment-with-jupyter-on-ubuntu-c7dc6764f9cd
-- https://github.com/google/swift-jupyter/blob/master/register.py
+swift:
+- https://docs.swift.org/swift-book/
+- https://www.fast.ai/2019/01/10/swift-numerics/
+- concurrency manifesto: https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782
+
+mlir:
+- https://heartbeat.fritz.ai/tensorflow-mlir-an-introduction-4e195d3b872c
+- http://www.cs.utah.edu/~mhall/mlir4hpc/pienaar-MLIR-Tutorial.pdf
+- https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d
+- https://arxiv.org/pdf/2002.11054.pdf
+- https://mlir.llvm.org/
+
+dog whisperer

@@ -12,3 +12,15 @@ https://blender.stackexchange.com/questions/5287/using-3rd-party-python-modules
 
 sphere: 0.2m radius
 cameras at 1.75m radius
+
+
+
+bpy.ops.material.new()
+https://docs.blender.org/api/current/bpy.context.html
+https://docs.blender.org/api/blender_python_api_current/bpy.ops.material.html
+https://blenderartists.org/t/bpy-ops-material-new/550507
+
+
+http://fragmentbuffer.com/gpu-performance-for-game-artists/
+https://computergraphics.stackexchange.com/questions/1793/how-many-polygons-in-a-scene-can-modern-hardware-reach-while-maintaining-realtim
+https://developer.nvidia.com/blog/rtx-best-practices/

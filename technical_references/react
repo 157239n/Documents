@@ -1,0 +1,25 @@
+
+https://reactnative.dev/docs/environment-setup/
+https://reactnative.dev/docs/running-on-device/
+https://reactnative.dev/docs/debugging/#accessing-the-in-app-developer-menu
+https://developers.google.com/web/tools/chrome-devtools?utm_source=dcc&utm_medium=redirect&utm_campaign=2018Q2
+https://github.com/electron/electron/issues/8466
+https://stackoverflow.com/questions/42636151/electron-failed-to-install-correctly-please-delete-node-modules-and-try-instal
+
+default start:
+import logo from './logo.svg';
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+          <RedSquare/>
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>

@@ -700,13 +700,6 @@ arousal
 attention
 awareness
 
-https://reactnative.dev/docs/environment-setup/
-https://reactnative.dev/docs/running-on-device/
-https://reactnative.dev/docs/debugging/#accessing-the-in-app-developer-menu
-https://developers.google.com/web/tools/chrome-devtools?utm_source=dcc&utm_medium=redirect&utm_campaign=2018Q2
-https://github.com/electron/electron/issues/8466
-https://stackoverflow.com/questions/42636151/electron-failed-to-install-correctly-please-delete-node-modules-and-try-instal
-
 look up __all__ again, to stop polluting the namespace
 
 fastwebhook, fastcore.utils and nbdev again
@@ -727,3 +720,41 @@ mlir:
 - https://mlir.llvm.org/
 
 dog whisperer
+
+reach out to that guy on fb?
+
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
+
+"chemistry file formats", "rxn format", "chemdraw file format", "reddit molecular exchange format":
+- https://en.wikipedia.org/wiki/Category:Chemical_file_formats
+- https://chem.libretexts.org/Courses/Intercollegiate_Courses/Cheminformatics_OLCC_(2019)/2._Representing_Small_Molecules_on_Computers/2.5%3A_Structural_Data_Files
+- https://pubs.acs.org/doi/10.1021/ci00007a012
+- https://en.wikipedia.org/wiki/Chemical_table_file
+- https://en.wikipedia.org/wiki/CDXML
+- https://en.wikipedia.org/wiki/CDX_Format
+- https://en.wikipedia.org/wiki/ChemDraw
+- https://www.reddit.com/r/askscience/comments/accnx4/what_is_the_difference_between_timedependent/
+
+organic chem, "steric hindrance":
+- https://www.masterorganicchemistry.com/2012/06/05/nucleophiles-and-electrophiles/
+- https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
+
+https://www.pluralsight.com/guides/how-to-use-variables-within-classes
+https://github.com/bvaughn/react-devtools-experimental/issues/357
+https://www.freecodecamp.org/news/react-under-the-hood/
+https://bogdan-lyashenko.github.io/Under-the-hood-ReactJS/
+https://www.reddit.com/r/reactjs/comments/9ga8ba/where_can_i_learn_how_react_works_under_the_hood/
+https://itnext.io/under-the-hood-of-react-hooks-805dc68581c3
+"access react component from javascript"
+https://brettdewoody.com/accessing-component-methods-and-state-from-outside-react/
+https://stackoverflow.com/questions/31612598/call-a-react-component-method-from-outside
+https://reactjs.org/docs/react-component.html#statics
+https://stackoverflow.com/questions/24841855/how-to-access-component-methods-from-outside-in-reactjs/24848228
+https://reactjs.org/docs/refs-and-the-dom.html
+
+"react functional components functions", "react expose variable to console":
+- https://stackoverflow.com/questions/46138145/functions-in-stateless-components
+- https://www.freecodecamp.org/news/a-few-questions-on-functional-components/
+- https://justinnoel.dev/2018/10/24/use-browsers-console-temporary-local-variables-in-react-native/
+- https://corbt.com/posts/2015/12/19/debugging-with-global-variables-in-react-native.html
+- https://stackoverflow.com/questions/31209998/find-and-manipulate-a-react-js-component-from-the-javascript-console

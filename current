@@ -477,7 +477,6 @@ https://towardsdatascience.com/summary-of-tabular-methods-in-reinforcement-learn
 
 work on simulation demos now
 
-3d
 scanning
 4d
 henon
@@ -490,6 +489,8 @@ logistic map, this's gonna take a long time
 lorenz attractor, 3d
 julia sets
 maze
+pedios
+vsepr
 
 again, do the 3d transformation thingy in torch, so that I have another capability
 
@@ -738,3 +739,18 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 organic chem, "steric hindrance":
 - https://www.masterorganicchemistry.com/2012/06/05/nucleophiles-and-electrophiles/
 - https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
+
+docker permissions:
+- https://stackoverflow.com/questions/26500270/understanding-user-file-ownership-in-docker-how-to-avoid-changing-permissions-o
+- https://docs.docker.com/engine/install/linux-postinstall/
+- https://vsupalov.com/docker-shared-permissions/
+- https://blog.ippon.tech/docker-and-permission-management/
+- https://medium.com/@nielssj/docker-volumes-and-file-system-permissions-772c1aee23ca
+
+https://read.amazon.com/?asin=B014TMUFX6
+https://en.wikipedia.org/wiki/Epigenetics
+https://github.com/fastai/course-v3/blob/master/nbs/swift/01_matmul.ipynb
+https://github.com/fastai/course-v3/tree/master/nbs/dl2
+https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md
+https://www.fast.ai/2019/01/10/swift-numerics/
+https://en.wikipedia.org/wiki/Value_type_and_reference_type

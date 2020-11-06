@@ -1,0 +1,12 @@
+
+swift:
+- https://docs.swift.org/swift-book/
+- https://www.fast.ai/2019/01/10/swift-numerics/
+- concurrency manifesto: https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782
+
+mlir:
+- https://heartbeat.fritz.ai/tensorflow-mlir-an-introduction-4e195d3b872c
+- http://www.cs.utah.edu/~mhall/mlir4hpc/pienaar-MLIR-Tutorial.pdf
+- https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d
+- https://arxiv.org/pdf/2002.11054.pdf
+- https://mlir.llvm.org/

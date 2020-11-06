@@ -16,3 +16,23 @@ inspect.getsource(len)
 
 standalone python script (don't even need to have python binary installed)
 pyinstaller --onefile abc.py
+
+
+
+
+import functools
+def do_twice(func):
+    @functools.wraps(func) # to preserve docs of func and whatnot
+    def wrapper_do_twice(*args, **kwargs):
+        func(*args, **kwargs)
+        return func(*args, **kwargs)
+    return wrapper_do_twice
+
+https://wiki.python.org/moin/PythonDecorators
+https://www.programiz.com/python-programming/decorator
+https://realpython.com/primer-on-python-decorators/
+
+just in case:
+- https://stackoverflow.com/questions/12540290/how-to-organize-multiple-python-files-into-a-single-module-without-it-behaving-l
+- https://packaging.python.org/guides/packaging-namespace-packages/
+- https://stackoverflow.com/questions/448271/what-is-init-py-for

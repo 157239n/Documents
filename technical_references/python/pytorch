@@ -121,3 +121,25 @@ tensor.load()
 nice reshaping capabilities: https://stackoverflow.com/questions/48686945/reshaping-a-tensor-with-padding-in-pytorch
 
 module.training for evaluation or training mode
+
+
+
+
+
+
+
+pytorch check if fusing happens
+- https://pytorch.org/docs/stable/quantization.html
+- https://discuss.pytorch.org/t/question-about-quantization-tutorial-and-fusing-model/80652
+- https://pytorch.org/blog/optimizing-cuda-rnn-with-torchscript/
+
+"pytorch profile gpu"
+https://pytorch.org/tutorials/recipes/recipes/profiler.html
+https://gist.github.com/XinDongol/fe066cb76e1c5238ecbc0cb729806410
+https://docs.nvidia.com/deeplearning/frameworks/pyprof-user-guide/profile.html
+
+https://www.kaggle.com/sironghuang/understanding-pytorch-hooks
+
+"pytorch index tensor with range"
+https://medium.com/emulation-nerd/every-index-based-operation-youll-ever-need-in-pytorch-a7cef65ea94c
+https://stackoverflow.com/questions/61034839/pytorch-indexing-a-range-of-multiple-indices

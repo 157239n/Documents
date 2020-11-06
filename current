@@ -389,44 +389,21 @@ david silver has the idea that goals are distinct on the scale level. On the hum
 
 https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
 
-tesla nns: https://twitter.com/elonmusk/status/1294371531133317120
-
 play ksp again
 
 rewatch jeremy again
 
 also what's up with eric weinstein? https://www.youtube.com/watch?v=rIAZJNe7YtE
 
-seems like they don't realized that the spontaneous learning happens when you make it big enough
-
 lex's christof koch
 
 check over deepmind wiki
 
-mr rangel, kouwe
-
-https://www.scientificamerican.com/article/scientists-call-for-a-moratorium-on-editing-inherited-genes
-"gene editing research moratorium"
-https://www.npr.org/sections/health-shots/2018/11/29/671657301/international-science-summit-denounces-gene-edited-babies-but-rejects-moratorium
-"scientists stop modifying genes conference"
-
-lex David Chalmers
-kotkin:
-- https://www.youtube.com/watch?v=dqiqUtdFi2I
-- https://www.youtube.com/watch?v=cNmvGTLmg2o
-- https://www.youtube.com/watch?v=0tXvLJXkFFg
-
-detect changes
-
 http://www.argmin.net/2018/06/25/outsider-rl/
 http://karpathy.github.io/2016/05/31/rl/
-lex dileep: https://www.youtube.com/watch?v=tg_m_LxxRwM
-lex joscha bach: https://www.youtube.com/watch?v=P-2P3MSZrBM
 lex francois round 2
 
 ask about RL training stability to that redditor
-
-buy proce.com, and make processing demonstrations more vivid, and as a nice place for ppl to go to
 
 jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/watch?v=bHVqO5YyNbU
 
@@ -434,19 +411,13 @@ think about doing an outreach program for AI stuff
 
 live wired book
 
-proposal for gpt-3: manim stuff
-
 cashapp
-
-jre robert sapolsky: https://www.youtube.com/watch?v=obmt_PkIfBE
 
 again with blockchain stuff???? actually implement 1?
 
 try 23andme again, to know what things am I susceptible to
 
 "Google Learning Certificates", https://soha.vn/google-gay-soc-khi-tuyen-bo-ban-khong-can-phai-hoc-dai-hoc-nua-neu-thay-vua-ton-tien-vua-ton-thoi-gian-20200831143938153.htm
-
-21 lessons for the 21st century
 
 again with the venus project? and resource based economy
 
@@ -458,39 +429,21 @@ the incognito, david eagleman's book
 
 https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
 
-candace against the universe
-
 https://www.youtube.com/c/ManolisKellis1/videos
 
 on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
 
-fiverr: random stuff, tutoring, youtube connections, local technical solutions
-
-lex's chollet
-
-text from invoices: https://twitter.com/theaievangelist/status/1300862719969681411
-
-check python's random() performance
-
 https://towardsdatascience.com/td-in-reinforcement-learning-the-easy-way-f92ecfa9f3ce
 https://towardsdatascience.com/summary-of-tabular-methods-in-reinforcement-learning-39d653e904af
 
-work on simulation demos now
-
-scanning
-4d
-henon
-electric field
-phased array
-kernels
-steganography
-henon map
-logistic map, this's gonna take a long time
-lorenz attractor, 3d
-julia sets
-maze
-pedios
-vsepr
+work on simulation demos now:
+important:
+- electric field
+- phased array
+- logistic map
+- lorenz attractor, 3d
+- julia sets
+- vsepr
 
 again, do the 3d transformation thingy in torch, so that I have another capability
 
@@ -503,19 +456,13 @@ neosensory throughput: http://ww-w.eagleman.com/papers/novich_eagleman_2015.pdf
 
 https://www.acrobiosystems.com/P3103-SARS-CoV-2-%28COVID-19%29-S1-protein-His-Tag.html
 
-graph problems
-
 does catastrophic forgetting occur in RL systems?
 
 pick up an epidemiology book
 
-stalin vol 1 & 2
-
 https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion
 
 logging every request down, and dig about the log rotate thingy
-
-documentary about gobota
 
 try out wolfram and new kind of science book
 
@@ -535,8 +482,6 @@ https://www.reddit.com/r/Entrepreneur/comments/7madgj/ive_been_hoarding_40_domai
 "reddit domain hoarding"
 
 https://drexel.edu/scdc/resources/coronavirus-response/
-
-supernovas are standard candles??? https://www.astro.umass.edu/~weinberg/a114/lectures/lec22.pdf
 
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
@@ -593,10 +538,6 @@ https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166957
 https://www.youtube.com/c/Neuroscientificallychallenged/videos
 brain book
 
-"pytorch index tensor with range"
-https://medium.com/emulation-nerd/every-index-based-operation-youll-ever-need-in-pytorch-a7cef65ea94c
-https://stackoverflow.com/questions/61034839/pytorch-indexing-a-range-of-multiple-indices
-
 how emotions are made & 7 1/2 lessons about the brain, lisa feldman barrett
 
 https://distill.pub/2017/aia/
@@ -613,21 +554,9 @@ https://matplotlib.org/3.1.1/gallery/mplot3d/scatter3d.html
 https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html
 https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725
 
-pytorch check if fusing happens
-- https://pytorch.org/docs/stable/quantization.html
-- https://discuss.pytorch.org/t/question-about-quantization-tutorial-and-fusing-model/80652
-- https://pytorch.org/blog/optimizing-cuda-rnn-with-torchscript/
-
 PixelRepresentation
 
-"pytorch profile gpu"
-https://pytorch.org/tutorials/recipes/recipes/profiler.html
-https://gist.github.com/XinDongol/fe066cb76e1c5238ecbc0cb729806410
-https://docs.nvidia.com/deeplearning/frameworks/pyprof-user-guide/profile.html
-
 https://www.technologyreview.com/2020/10/16/1010566/ai-machine-learning-with-tiny-data/
-
-hbo elon series
 
 "python jupyter gui"
 https://stackoverflow.com/questions/53502742/gui-tools-for-jupyter-notebook
@@ -636,10 +565,6 @@ https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interact
 
 another leslie paper: https://arxiv.org/pdf/1506.01186.pdf
 
-https://wiki.python.org/moin/PythonDecorators
-https://www.programiz.com/python-programming/decorator
-https://realpython.com/primer-on-python-decorators/
-
 https://www.skillshare.com/classes/Motion-Graphics-with-Kurzgesagt-%E2%80%93-Part-1/631970755
 
 https://en.wikipedia.org/wiki/Debiasing
@@ -647,33 +572,9 @@ https://en.wikipedia.org/wiki/Debiasing
 ablation studies in NNs: https://arxiv.org/pdf/1901.08644.pdf
 https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it
 
-just in case:
-- https://stackoverflow.com/questions/12540290/how-to-organize-multiple-python-files-into-a-single-module-without-it-behaving-l
-- https://packaging.python.org/guides/packaging-namespace-packages/
-- https://stackoverflow.com/questions/448271/what-is-init-py-for
-
-so goals now:
-- document fallback
-
-write for money? https://blog.floydhub.com/ten-techniques-from-fast-ai/
-
 https://www.fast.ai/2018/04/30/dawnbench-fastai/
 
 "wasserstein distance": GAN: https://arxiv.org/pdf/1701.07875.pdf
-
-"pytorch deep copy model"
-https://discuss.pytorch.org/t/are-there-any-recommended-methods-to-clone-a-model/483/6
-https://discuss.pytorch.org/t/can-i-deepcopy-a-model/52192
-
-"pytorch detach first or not", "pytorch detach"
-https://discuss.pytorch.org/t/difference-between-detach-clone-and-clone-detach/34173/5
-https://discuss.pytorch.org/t/detach-no-grad-and-requires-grad/16915/12
-https://discuss.pytorch.org/t/how-does-detach-work/2308
-http://www.bnikolic.co.uk/blog/pytorch-detach.html
-https://stackoverflow.com/questions/56816241/difference-between-detach-and-with-torch-nograd-in-pytorch/56817594
-https://stackoverflow.com/questions/63582590/why-do-we-call-detach-before-calling-numpy-on-a-pytorch-tensor
-
-https://www.kaggle.com/sironghuang/understanding-pytorch-hooks
 
 "ulmfit vs bert"
 https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html
@@ -689,11 +590,6 @@ https://en.wikipedia.org/wiki/Mechanotransduction
 
 nanoparticle fabrication: https://www.researchgate.net/publication/226347418_Nanoparticle_Fabrication
 
-why electron spectroscopy can't be done using like, ultraviolet and has to resort to x rays?
-how long does it take normally for a scanning electron microscope to scan a 1mm x 1mm surface?
-also, always keep in mind the actual precision required for these scopes. If we can make a more generizable result, then it's better
-https://en.wikipedia.org/wiki/Scanning_electron_microscope
-
 so do ppl do gene mapping by hand or individual experiments??? Cause that doesn't seem feasible though
 
 alertness
@@ -708,21 +604,7 @@ fastwebhook, fastcore.utils and nbdev again
 - https://github.com/fastai/nbdev/tree/master/nbdev
 - https://www.fast.ai/2019/12/02/nbdev/
 
-swift:
-- https://docs.swift.org/swift-book/
-- https://www.fast.ai/2019/01/10/swift-numerics/
-- concurrency manifesto: https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782
-
-mlir:
-- https://heartbeat.fritz.ai/tensorflow-mlir-an-introduction-4e195d3b872c
-- http://www.cs.utah.edu/~mhall/mlir4hpc/pienaar-MLIR-Tutorial.pdf
-- https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d
-- https://arxiv.org/pdf/2002.11054.pdf
-- https://mlir.llvm.org/
-
 dog whisperer
-
-reach out to that guy on fb?
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 

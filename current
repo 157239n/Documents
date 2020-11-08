@@ -637,4 +637,6 @@ https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md
 https://www.fast.ai/2019/01/10/swift-numerics/
 https://en.wikipedia.org/wiki/Value_type_and_reference_type
 
-add more description to the 4d cube
+add more description to the 4d cube and how they are cubes, but doesn't look like it, and note 4 colors of the axis
+
+https://github.com/gordicaleksa/pytorch-original-transformer

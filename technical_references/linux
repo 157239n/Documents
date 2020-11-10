@@ -227,3 +227,9 @@ some interesting "drivers":
 ctrl-tab in terminals
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab '<Primary>Tab'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ prev-tab '<Primary><Shift>Tab'
+
+
+https://askubuntu.com/questions/973500/start-every-window-on-all-workspaces-with-a-few-exclusions
+wmctrl -i -r 0x0120002 -b add,sticky
+wmctrl -r mozilla -b add,sticky
+wmctrl -l

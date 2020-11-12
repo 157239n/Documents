@@ -651,3 +651,12 @@ cortical columns: https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00186/
 reticular activating system
 galanin
 arcuate fasciculus
+
+dealing with smiles:
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6764162/
+- smiles self attention: https://pubs.acs.org/doi/10.1021/acs.jcim.8b00803
+- CNN for detecting chemical motifs
+
+rewatch tesla and neuralink ppts
+
+optimize vector stuff, so that array creation overhead will be gone

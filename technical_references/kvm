@@ -69,3 +69,5 @@ virsh -c qemu:///system list
 virsh create config_file.xml
 virsh define config_file.xml
 virsh start foo
+
+https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe

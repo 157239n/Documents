@@ -663,3 +663,10 @@ optimize vector stuff, so that array creation overhead will be gone
 
 - integrative analysis of 111 reference human epigenomics: https://www.nature.com/articles/nature14248
 - FTO obesity: https://www.nejm.org/doi/full/10.1056/NEJMoa1502214
+
+custom elements:
+- https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define
+- https://www.html5rocks.com/en/tutorials/webcomponents/customelements/
+- https://developers.google.com/web/fundamentals/web-components/customelements
+- https://blog.teamtreehouse.com/create-custom-html-elements-2
+- https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements

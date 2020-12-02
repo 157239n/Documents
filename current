@@ -659,8 +659,6 @@ dealing with smiles:
 
 rewatch tesla and neuralink ppts
 
-optimize vector stuff, so that array creation overhead will be gone
-
 - integrative analysis of 111 reference human epigenomics: https://www.nature.com/articles/nature14248
 - FTO obesity: https://www.nejm.org/doi/full/10.1056/NEJMoa1502214
 
@@ -682,13 +680,10 @@ cortex layer 5
 5ht 2a/2c receptors: https://en.wikipedia.org/wiki/5-HT2A_receptor
 
 nmn, cd38 protein, mtor pathway, foxo3 gene, ccr5 gene, doxycycline, exosome injection, prp injection, yamanaka reprogramming factors, aav virus
-https://semiengineering.com/risc-v-pros-cons/
 
 so seems like, you can plug everything into pcie and it will just magically work?
 
 https://github.blog/2020-11-20-nbdev-a-literate-programming-environment-that-democratizes-software-engineering-best-practices/
-
-https://www.sifive.com/core-designer
 
 https://www.researchgate.net/publication/317841703_The_oldest_fossil_mushroom
 https://www.researchgate.net/publication/343188979_Fungi_in_the_rear_mirror_A_brief_history_of_the_fungi_during_the_last_two_billion_years
@@ -696,18 +691,4 @@ https://en.wikipedia.org/wiki/Pseudomonas_aeruginosa
 
 pfizer vaccine paper: https://www.medrxiv.org/content/10.1101/2020.06.30.20142570v1
 
-https://www.reddit.com/r/KerbalSpaceProgram/comments/34jysx/the_mobile_processing_lab_an_indepth_look_at_how/
-https://wiki.kerbalspaceprogram.com/wiki/Mobile_Processing_Lab_MPL-LG-2
-
 https://en.wikipedia.org/wiki/MARS-500
-
-https://ksp-kos.github.io/KOS/structures/orbits/orbit.html
-https://ksp-kos.github.io/KOS/general/cpu_hardware.html
-https://ksp-kos.github.io/KOS/commands.html
-https://ksp-kos.github.io/KOS/structures.html
-https://ksp-kos.github.io/KOS/general/volumes.html#volumes
-
-https://www.simplypsychology.org/personality-a.html
-https://en.wikipedia.org/wiki/Type_A_and_Type_B_personality_theory
-https://forum.kerbalspaceprogram.com/index.php?/topic/192905-data-size-mits-for-deployed-science-reports/
-https://forum.kerbalspaceprogram.com/index.php?/topic/180022-direct-vs-relay-antennas/

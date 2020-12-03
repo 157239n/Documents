@@ -387,4 +387,9 @@ aws essential course: https://www.youtube.com/watch?v=vJzHn24TNQE&list=PLv2a_5pN
 
 good article for visualizing the landscape, but they used an artificial landscape tho: http://louistiao.me/notes/visualizing-and-animating-optimization-algorithms-with-matplotlib/. I still want to visualize the landscape as it's training, but this provides the animation process
 
-toasts for virus
+custom elements:
+- https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define
+- https://www.html5rocks.com/en/tutorials/webcomponents/customelements/
+- https://developers.google.com/web/fundamentals/web-components/customelements
+- https://blog.teamtreehouse.com/create-custom-html-elements-2
+- https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements

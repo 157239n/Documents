@@ -249,10 +249,6 @@ https://singularityhub.com/2020/07/26/deepminds-newest-ai-programs-itself-to-mak
 
 really do the image label from minh thingy, to prove out everything I've picked up
 
-also really do the mnist thingy over paragraphs, will learn a lot, and it seems like it can tackle machine fonts right away
-
-tell han about GPT-3
-
 also wait, inference energy cost on GPT-3 seems to be quite low (4kWh/100 pages of output). Still 2-3 orders of magnitude away from human brains, but it's actually low enough to be beneficial. So, the bulk energy cost is in the training, where we're essentially doing the evolution thingy again
 
 proximal policy optimization, another popular RL method
@@ -339,8 +335,6 @@ jeremy interview: https://www.youtube.com/watch?v=205j37G1cxw
 
 https://forums.fast.ai/
 
-see the connection latency numbers
-
 agi stuff:
 - http://www.hutter1.net/ai/introref.htm
 - https://www.youtube.com/channel/UCCwJ8AV1zMM4j9FTicGimqA
@@ -375,11 +369,7 @@ try to get beta access again
 
 register for courses
 
-try $1/day thingy of elon
-
 meta learning through hebbian plasticity: https://www.youtube.com/watch?v=v2GRWzIhaqQ
-simulate tearing meat: https://www.youtube.com/watch?v=fE9BqmJrrW0
-neil elon: https://www.youtube.com/watch?v=7EgLKH6Znfo
 
 "positive strand rna": https://en.wikipedia.org/wiki/Positive-sense_single-stranded_RNA_virus
 s1 protein sars-cov-2
@@ -388,8 +378,6 @@ s1 protein sars-cov-2
 david silver has the idea that goals are distinct on the scale level. On the human level, the goal is to survive, while on the universe level, the goal is to find the fastest way to increase entropy. This interpretation is sort of unique, cause it shows the same idea as the collapse of the quantum function, and that the collapse has to be thought of in the universe playground
 
 https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
-
-play ksp again
 
 rewatch jeremy again
 
@@ -409,8 +397,6 @@ jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/wa
 
 think about doing an outreach program for AI stuff
 
-live wired book
-
 cashapp
 
 again with blockchain stuff???? actually implement 1?
@@ -424,8 +410,6 @@ again with the venus project? and resource based economy
 openai beta as outreach program
 
 may be deep RL introspection in our current systems help us reason about this take off scenario better
-
-the incognito, david eagleman's book
 
 https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
 
@@ -443,9 +427,6 @@ important:
 - logistic map
 - lorenz attractor, 3d
 - julia sets
-- vsepr
-
-again, do the 3d transformation thingy in torch, so that I have another capability
 
 so apparently, carrying 1GW power over 10M volt lines is feasible. So 100 amps, not 10k amps. So that guy may not know about this in depth. So dig more into the numbers and grasp at the fundamentals of these high power systems
 
@@ -529,17 +510,10 @@ actually do the 23andme thingy
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
 
-things to research after brain is generally understood:
-- claustrum's function & connections
-
 https://www.kaggle.com/eladwar/20-seconds-or-less
 https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166957
 
-https://www.youtube.com/c/Neuroscientificallychallenged/videos
 https://www.youtube.com/c/Brainbook/videos
-brain book
-
-how emotions are made & 7 1/2 lessons about the brain, lisa feldman barrett
 
 https://distill.pub/2017/aia/
 http://lernapparat.de/
@@ -638,8 +612,6 @@ https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md
 https://www.fast.ai/2019/01/10/swift-numerics/
 https://en.wikipedia.org/wiki/Value_type_and_reference_type
 
-add more description to the 4d cube and how they are cubes, but doesn't look like it, and note 4 colors of the axis
-
 https://github.com/gordicaleksa/pytorch-original-transformer
 
 https://syncedreview.com/2020/11/06/deepmind-proposes-graph-theoretic-investigation-of-the-multiplayer-games-landscape
@@ -699,4 +671,7 @@ drug design and discovery: principles and applications: https://www.ncbi.nlm.nih
 could a neuroscientist understand a microprocessor: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268
 https://www.sciencemag.org/news/2020/11/game-has-changed-ai-triumphs-solving-protein-structures
 https://www.nih.gov/coronavirus
-
+https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
+https://www.nature.com/scitable/topicpage/the-role-of-methylation-in-gene-expression-1070/
+https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/beans.html
+do the pid loop simulation

@@ -663,7 +663,6 @@ transcranial magnetic stimulation
 fusiform face area
 middle temporal visual area (V5)
 
-extract "she's my bitch of a sister"
 16 psyche
 making sense of pharmacology: inverse agonism and functional selectivity, https://academic.oup.com/ijnp/article/21/10/962/5066769
 drug design and discovery: principles and applications: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155886/
@@ -693,3 +692,16 @@ curious stuff:
 - rainbow: https://arxiv.org/pdf/1710.02298v1.pdf
 
 also make videos on youtube about my collection of kerboscripts
+
+interesting things that don't really make sense:
+- epsilon = 0, virtually no exploring, yet it can still does it. How? Could be the large learning rate pushes it to explore everywhere?
+- update5 won't work if input is not normalized to [-root3, root3]
+- update5 won't work if decay is too low
+- fourier won't work if normalized to [-root3, root3]
+
+things went according to plan:
+- epsilon = 1, explores all the way, can't find a solution
+
+other interesting notes:
+- a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
+- can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments

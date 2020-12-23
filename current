@@ -672,7 +672,7 @@ https://www.nih.gov/coronavirus
 https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
 https://www.nature.com/scitable/topicpage/the-role-of-methylation-in-gene-expression-1070/
 https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/beans.html
-do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html
+do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html, https://en.wikipedia.org/wiki/PID_controller
 architecture of sars-cov-2 transcriptome: https://www.sciencedirect.com/science/article/pii/S0092867420304062
 d614g mutation: https://www.nature.com/articles/s41586-020-2895-3
 entire covid 19's genome: https://www.ncbi.nlm.nih.gov/gene/43740568
@@ -705,3 +705,7 @@ things went according to plan:
 other interesting notes:
 - a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
 - can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
+
+simulationdemos on moving averages and debiasing
+
+also ksp automated flight and landing. Also executeNode

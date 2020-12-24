@@ -706,6 +706,4 @@ other interesting notes:
 - a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
 - can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
 
-simulationdemos on moving averages and debiasing
-
 also ksp automated flight and landing. Also executeNode

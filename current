@@ -706,4 +706,14 @@ other interesting notes:
 - a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
 - can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
 
-also ksp automated flight and landing. Also executeNode
+also ksp automated flight and landing
+
+post my stuff on kos subreddit
+
+try to use manim
+
+https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
+
+that combined knowledge thing:
+https://deepmind.com/blog/article/neural-scene-representation-and-rendering
+https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1ckHD6&keytype=ref&siteid=sci

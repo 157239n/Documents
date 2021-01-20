@@ -691,15 +691,6 @@ curious stuff:
 
 also make videos on youtube about my collection of kerboscripts
 
-interesting things that don't really make sense:
-- epsilon = 0, virtually no exploring, yet it can still does it. How? Could be the large learning rate pushes it to explore everywhere?
-- update5 won't work if input is not normalized to [-root3, root3]
-- update5 won't work if decay is too low
-- fourier won't work if normalized to [-root3, root3]
-
-things went according to plan:
-- epsilon = 1, explores all the way, can't find a solution
-
 other interesting notes:
 - a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
 - can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
@@ -809,3 +800,13 @@ signal strength stuff
 apparently they machine manufacture machines right in house? Isn't that super complicated though? How did they do it?
 
 2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
+
+yeah so I've heard that antiviral drugs sort of uses small molecules to change the shape of some proteins, like S1. Have anyone sort of design proteins so that they can directly bind to them?
+
+why can't I flood the body with AC2 receptors with some pieces of cell membrane attached to it, to simulate an actual cell, so that all the covid 19 viruses sort of binds there and therefore can't bind to the AC2s in actual cells?
+
+buy those bio hacking kits?
+
+ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
+mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
+anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified

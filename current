@@ -817,3 +817,73 @@ https://en.wikipedia.org/wiki/Forward-looking_infrared
 https://en.wikipedia.org/wiki/Combat_air_patrol
 https://en.wikipedia.org/wiki/Aegis_Ballistic_Missile_Defense_System
 https://en.wikipedia.org/wiki/Aegis_Combat_System
+antenna gain
+https://www.spaceinterns.org/share?id=4688f981-7d05-4c3c-a78c-145fc2db25f3
+
+squarespace again? how to integrate with that?
+
+magento visit? also buy iphone and test out react native on that, or figure out kvm really deeply so that things will be indistinguishable from there
+
+how to actually control a stepper motor??? This is the high power electronics I was talking about
+
+buy a cheap iphone to test things out, and to know the infrastructure well enough
+
+and how to do the packaging stuff and sending stuff to usps???
+
+industrial design
+
+etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
+
+https://en.wikipedia.org/wiki/Glass_transition
+https://en.wikipedia.org/wiki/Laminated_glass
+https://en.wikipedia.org/wiki/Test_tube
+https://en.wikipedia.org/wiki/Laboratory_glassware
+schott bk7
+k9 borosilicate glass
+
+https://en.wikipedia.org/wiki/Gas_laser
+seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-switching
+
+also what's up with CNC machines?? milling and lathe seems good enough tho?
+
+may be pick up a little chinese
+
+why braze?
+
+how is lead poisonous? like, what pathways???
+
+see also links: https://en.wikipedia.org/wiki/Tempered_glass
+https://en.wikipedia.org/wiki/Flux_(metallurgy)
+
+https://en.wikipedia.org/wiki/Shielding_gas
+https://en.wikipedia.org/wiki/Gas_metal_arc_welding
+https://en.wikipedia.org/wiki/Gas_tungsten_arc_welding
+https://en.wikipedia.org/wiki/Shielded_metal_arc_welding
+
+okay, so everything seems to be going well so far... Still have that problem of controlling high power electronics with low power digital systems like arduinos ("arduino with mains voltage controller") though, so look more into that. And where the hell can I buy gears????
+
+https://www.homedepot.com/c/ab/types-of-nuts-and-bolts/9ba683603be9fa5395fab901b39a8293
+
+tempered glass vs acrylic??
+
+also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
+
+how it's made, steel again, but focus on hot vs cold rolled
+
+also calculate stress structures within a home, and see what material properties do the concrete blocks need
+
+https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipedia.org/wiki/Digital_signal_controller, "stepper driver controllers", https://www.orientalmotor.com/stepper-motors/index.html
+
+there also has got to be more aluminum predefined structures that's easy to use like v slots right? So look for those
+
+for the high power thingy, see over 24V power supplies pcb designs, to get a sense of what things are on there
+
+also, what's the curing process involving an autoclave looks like for carbon fiber?
+
+and finally, analyze tesla's costs to make sense of everything
+
+also, the way I sort of work is to build a small scale model, make sure it works, then do the large scale one. Only after then do I really commit large amounts of money, time and effort into something, and start worrying about selling those to customers. This might be sort of undesirable, cause like, in every other case, 
+
+https://nanografi.com/blog/explained-molybdenum-sputtering-targets-and-applications/
+
+gene therapy again

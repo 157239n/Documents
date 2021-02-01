@@ -1,0 +1,9 @@
+
+gsettings list-schemas
+gsettings list-recursively
+gsettings list-keys org.gnome.desktop.interface
+gsettings get org.gnome.desktop.interface gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme 'Mint-Y'
+
+dconf-editor
+watches for access: dconf watch /

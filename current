@@ -891,9 +891,7 @@ tool and die machine shop
 https://en.wikipedia.org/wiki/Tool_and_die_maker
 https://en.wikipedia.org/wiki/Forge_welding
 can you weld steel with a propane torch
-https://weldingtroop.com/blowtorch-welding/
-https://www.youtube.com/watch?v=0f4nK3sWK7A
-disadvantages of quick connects
+https://weldingtroop.com/blowtorch-welding/ 
 
 kvm resume
 
@@ -911,3 +909,26 @@ update story of energy
 https://en.wikipedia.org/wiki/DNA_nanotechnology
 https://en.wikipedia.org/wiki/Molecular_self-assembly
 https://en.wikipedia.org/wiki/Non-contact_atomic_force_microscopy
+
+https://en.wikipedia.org/wiki/ELISA
+https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-elisa.html
+
+goals for this trip?
+- take over truckbux operations
+- grow stocks
+- have some skills in building simple products, like just laser cutting stuff, or metal injection molding parts, starship-related
+- machine parts for complicated machine. Goal should be to machine dies or complicated parts for precision instruments
+- get a good feeling of how things work in AI, especially how to debug stuff, and really analyze stuff from the inside. Pretty much what I'm doing right now, but just do it over and over again
+- actually do some genetics, and see if there's actually a real chance to do this or not
+
+https://www.chems.msu.edu/resources/tutorials/ASPEN
+https://en.wikipedia.org/wiki/Process_manufacturing
+https://en.wikipedia.org/wiki/Aspen_Technology
+
+https://www.ncbi.nlm.nih.gov/tools/gbench/tutorial1/
+https://en.wikipedia.org/wiki/Contig
+https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)
+
+recalculate fundamental energy costs again, this time with a focus of training RL agents for molecular bio's degrees of freedom. Figure out if Tesla's 10TWh/yr throughput is enough
+
+Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/

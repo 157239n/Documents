@@ -932,3 +932,11 @@ https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)
 recalculate fundamental energy costs again, this time with a focus of training RL agents for molecular bio's degrees of freedom. Figure out if Tesla's 10TWh/yr throughput is enough
 
 Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/
+
+vercel
+
+experiment with ksp map, with specific coordinates
+
+biowin
+
+tweak suicide so that it accounts for the horizontal velocity too. Gonna be harddd. May be do the tutorial on this first

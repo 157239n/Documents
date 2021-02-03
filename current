@@ -920,6 +920,9 @@ goals for this trip?
 - machine parts for complicated machine. Goal should be to machine dies or complicated parts for precision instruments
 - get a good feeling of how things work in AI, especially how to debug stuff, and really analyze stuff from the inside. Pretty much what I'm doing right now, but just do it over and over again
 - actually do some genetics, and see if there's actually a real chance to do this or not
+- demonstrate plasmid cloning. Heard it's super simple and whatnot
+- demonstrate PCR, to get in touch with the querying tools
+- understand the compliment system designs, and see if I can come up with comparable systems
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 https://en.wikipedia.org/wiki/Process_manufacturing
@@ -940,3 +943,22 @@ experiment with ksp map, with specific coordinates
 biowin
 
 tweak suicide so that it accounts for the horizontal velocity too. Gonna be harddd. May be do the tutorial on this first
+
+why is aluminum more expensive than steel? Like, aluminum melts at a much lower temperature right?
+
+also why 3.3V, 5V, 9V and 12V? Elon sort of mentioned 48V, so how exactly can you design electronics for
+
+covid genome: https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
+covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
+aryl: https://www.ncbi.nlm.nih.gov/protein/NP_001612.1
+
+k8s again, see if I can serve exactly the same thing on 2 different places on the planet, to speed things up?
+
+https://hostdefense.com/
+https://fungi.com/
+
+YP_009724389.1
+
+https://en.wikipedia.org/wiki/Proteolysis
+https://en.wikipedia.org/wiki/Glycosylation
+

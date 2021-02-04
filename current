@@ -923,6 +923,12 @@ goals for this trip?
 - demonstrate plasmid cloning. Heard it's super simple and whatnot
 - demonstrate PCR, to get in touch with the querying tools
 - understand the compliment system designs, and see if I can come up with comparable systems
+- create a system that accurately maps out distances of a camera feed when also given the coordinate system
+- do a bunch of comparative genomics. Basically figure out the story of every life on earth. Also try to run AlphaFold2. Targets:
+	- DNA polymerase
+	- cap binding complexes
+	- ribosome subunits
+	- pseudouridine synthase: Z71568, YNL292w, https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=18158779
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 https://en.wikipedia.org/wiki/Process_manufacturing
@@ -935,8 +941,6 @@ https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)
 recalculate fundamental energy costs again, this time with a focus of training RL agents for molecular bio's degrees of freedom. Figure out if Tesla's 10TWh/yr throughput is enough
 
 Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/
-
-vercel
 
 experiment with ksp map, with specific coordinates
 
@@ -961,4 +965,13 @@ YP_009724389.1
 
 https://en.wikipedia.org/wiki/Proteolysis
 https://en.wikipedia.org/wiki/Glycosylation
+https://en.wikipedia.org/wiki/Psilocybe
+refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
+https://en.wikipedia.org/wiki/Plasmid
+https://en.wikipedia.org/wiki/Baltimore_classification
 
+question: can everything be built using proteins alone? Like, can stuff like cell membrane (lipid bilayer) be produced just by using proteins? If they can, then what's the exact mechanism
+
+https://codexdna.com/products/bioxp-system/
+
+comprehensive source: https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/

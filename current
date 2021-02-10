@@ -887,7 +887,7 @@ gene therapy again
 
 reddit thread about ACE2 receptors
 
-tool and die machine shop
+tool and die machine shop. Like, the tool has to be made of some crazy alloy rite? I mean, it has to be able to withstand crazy hot temps from molten metal
 https://en.wikipedia.org/wiki/Tool_and_die_maker
 https://en.wikipedia.org/wiki/Forge_welding
 can you weld steel with a propane torch
@@ -934,8 +934,10 @@ goals for this trip?
 - create a small server farm at home in vn that I can easily access via the internet to run my heavy workloads
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
 - intercept seek thermal communications
+- try to build robot arms that can do things quickly, and have a good internal model of reality
 - another posibility for sequencing techniques is to have a sort of ribosome that enlarges the base pairs, so we can see them exactly with a regular microscope
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
+- consider buying a 3d printer
 - build pc as remote station. Also has a current, voltage and temperature indicator as well. Double check:
 	- pcie slots
 
@@ -1035,3 +1037,20 @@ sandy munroe says that casting process can take 16ms??? How so? And how much fas
 go through raid real quick
 
 what is transparent in infrared
+
+https://www.youtube.com/c/Thesignalpath/videos
+
+band gap transparency
+https://www.quora.com/What-makes-an-object-transparent
+https://physics.stackexchange.com/questions/46673/transparency-of-solids-using-bandgaps-and-relation-to-conduction-and-valence-ban
+https://www.quora.com/What-is-opaque-to-visible-light-but-transparent-to-infrared-light
+https://physics.stackexchange.com/questions/121696/why-does-glass-absorb-infrared-light
+https://physics.stackexchange.com/questions/267793/why-is-glass-transparent-to-visible-light-and-opaque-to-ultraviolet-amd-infrared
+
+https://learn.sparkfun.com/tutorials/i2c
+
+so apparently, spi fastest speeds are 60Mbps, while USB 2.0 are at 480Mbps. So why the difference?? I'm guessing it's the system clock speed. And like, cause USB has D+ and D- lines, so it can stop interference much better, so I guess they can tolerate a much higher clock speed?
+
+figure out how to use multiple monitors for productive workloads
+
+but like, again, everything sort of depends on the firebase db, and right now it's a blackbox to me, so I can't really replicate absolutely everything locally, which really bugs me or a long time

@@ -1,4 +1,94 @@
 
 this is for all of the interesting reactions from seablock, a factorio mod
 
-water -> green & brown algae
+ores seem to require sulfuric acid a lot
+metals like manganese seem to transform to cathode/anode, so see what's up
+
+H2O -> green algae, brown algae
+green algae -> fiber
+brown algae -> alginic acid
+alginic acid, fiber -> pulp
+silicon ore, lime -> cement
+LiCl, H2O -> LiClO4, H2
+LiClO4, LiCoO2, carbon -> lithium ion battery | lithium cobalt oxide is the cathode
+steel plate, carbon -> electrolyser electrode | this happens??
+
+algae liquefaction, blue algae liquefaction, thermal water
+
+flotation cell, hydro refining
+
+---------------
+
+100 water -> 30 oxygen, 40 hydrogen???
+100 purified water -> 40 oxygen, 60 hydrogen??? Why the mass imbalance? May be just for the game's sake
+
+2H2O -> O2 + 2H2
+2 * 18 -> 32, 4 (1 O2, 2 H2) 
+2 mole water -> 1 mole oxygen, 2 mole hydrogen
+
+There is no fucking reason that more hydrogen would be produced
+
+---------------
+
+CO + H2O -> CO2 + H2, makes sense
+
+---------------
+
+LiCl + 4 H2O -> LiClO4 + 4 H2
+
+makes sense that there's a lot of water and hydrogen. Still don't make sense the correct ratio tho
+
+---------------
+
+4 NaOH -> 4 Na + 2 H2O + O2
+
+amounts sort of make sense, but not entirely
+
+---------------
+
+Na2SO4 -> Na + S
+
+doesn't really make sense, so see what's up
+
+---------------
+
+NaOH + charcoal + N2 -> carbon + NaCO3 + H2O
+
+where does the nitrogen goes??
+
+---------------
+
+CH3OH --green catalyst--> CH2O
+real: CH3OH + 0.5 O2 --silver+iron--> CH2O + H2O
+
+green catalyst is made from aluminum and silver btw, so kinda checks out
+
+---------------
+
+CO + 2 H2 --green catalyst--> CH3OH
+
+---------------
+
+CH3OH + CO + H2O -> CH3COOH
+real:
+CH3OH + HI -> CH3I + H2O
+CH3I + CO -> CH3COI
+CH3COI + H2O -> CH3COOH + HI
+
+---------------
+
+Cl2 + CH4 -> CH3Cl
+real (?): Cl2 + CH4 -> CH3Cl + HCl
+
+where is my HCl lol
+
+another real reaction: CH3OH + HCl -> CH3Cl + H2O
+
+---------------
+
+NaOH + Cl2 -> NaClO
+real: 2NaOH + Cl2 -> NaCl + NaClO + H2O
+
+---------------
+
+NaCl + H2O -> NaOCl + H2, endothermic

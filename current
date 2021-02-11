@@ -924,12 +924,13 @@ goals for this trip?
 - demonstrate PCR, to get in touch with the querying tools
 - understand the compliment system designs, and see if I can come up with comparable systems
 - create a system that accurately maps out distances of a camera feed when also given the coordinate system
-- do a bunch of comparative genomics. Basically figure out the story of every life on earth. Also try to run AlphaFold2. Targets:
+- do a bunch of comparative genomics. Basically figure out the story of every life on earth. Also try to run AlphaFold2. Also try to figure out the energy landscape in all of this. Targets:
 	- DNA polymerase
 	- cap binding complexes
 	- ribosome subunits
 	- pseudouridine synthase: Z71568, YNL292w, https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=18158779
 	- mitochondria, atp synthase: NC_012920, 251831106
+	- methane monooxygenase: CH4 + O2 + NAD(P)H + H+ -> CH3OH + NAD(P)+ + H2O, single bond replacements
 - try to infect cells with modified virus with a specific payload
 - create a small server farm at home in vn that I can easily access via the internet to run my heavy workloads
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
@@ -938,6 +939,7 @@ goals for this trip?
 - another posibility for sequencing techniques is to have a sort of ribosome that enlarges the base pairs, so we can see them exactly with a regular microscope
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
 - consider buying a 3d printer
+- figure out all reactions in seablock
 - build pc as remote station. Also has a current, voltage and temperature indicator as well. Double check:
 	- pcie slots
 
@@ -1034,8 +1036,6 @@ this company offers a virtual tour, so check it out: https://www.sageglass.com/e
 
 sandy munroe says that casting process can take 16ms??? How so? And how much faster do techniques like strand casting provide?
 
-go through raid real quick
-
 what is transparent in infrared
 
 https://www.youtube.com/c/Thesignalpath/videos
@@ -1054,3 +1054,20 @@ so apparently, spi fastest speeds are 60Mbps, while USB 2.0 are at 480Mbps. So w
 figure out how to use multiple monitors for productive workloads
 
 but like, again, everything sort of depends on the firebase db, and right now it's a blackbox to me, so I can't really replicate absolutely everything locally, which really bugs me or a long time
+
+revamp seablock, so that it's realistic
+
+https://github.com/albfan/miraclecast
+gnome-screencast: https://github.com/benzea/gnome-network-displays, https://blogs.gnome.org/benzea/2019/01/30/gnome-screencast/
+
+furmark, GPU stress test
+y cruncher, CPU stress test
+
+hostile takeover?
+
+https://en.wikipedia.org/wiki/Steam_reforming
+https://en.wikipedia.org/wiki/Steam_cracking
+
+also apparently there's this thing called catalytic reforming, that can shape small hydrocarbon chains into aromatic hydrocarbons, like benzene
+
+also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample

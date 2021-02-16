@@ -505,8 +505,6 @@ rocket propulsion elements and ignition again
 
 https://www.reddit.com/r/spacex/comments/d9tkqj/on_regenerative_cooling_raptor_uses_milled_copper/
 
-actually do the 23andme thingy
-
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
 
@@ -790,8 +788,6 @@ zinc fingers sound super useful tho, but manolis said it's a pain in the ass to 
 play fold it again? just to see what the problem actually is
 https://en.wikipedia.org/wiki/Structural_alignment
 
-bob angels again, for the industrial processes
-
 signal strength stuff
 
 apparently they machine manufacture machines right in house? Isn't that super complicated though? How did they do it?
@@ -940,8 +936,7 @@ goals for this trip?
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
 - consider buying a 3d printer
 - figure out all reactions in seablock
-- build pc as remote station. Also has a current, voltage and temperature indicator as well. Double check:
-	- pcie slots
+- buy glasses
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 https://en.wikipedia.org/wiki/Process_manufacturing
@@ -968,8 +963,6 @@ also why 3.3V, 5V, 9V and 12V? Elon sort of mentioned 48V, so how exactly can yo
 covid genome: https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
 covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
 aryl: https://www.ncbi.nlm.nih.gov/protein/NP_001612.1
-
-k8s again, see if I can serve exactly the same thing on 2 different places on the planet, to speed things up?
 
 https://hostdefense.com/
 https://fungi.com/
@@ -1051,31 +1044,66 @@ https://learn.sparkfun.com/tutorials/i2c
 
 so apparently, spi fastest speeds are 60Mbps, while USB 2.0 are at 480Mbps. So why the difference?? I'm guessing it's the system clock speed. And like, cause USB has D+ and D- lines, so it can stop interference much better, so I guess they can tolerate a much higher clock speed?
 
-figure out how to use multiple monitors for productive workloads
-
 but like, again, everything sort of depends on the firebase db, and right now it's a blackbox to me, so I can't really replicate absolutely everything locally, which really bugs me or a long time
 
 revamp seablock, so that it's realistic
-
-https://github.com/albfan/miraclecast
-gnome-screencast: https://github.com/benzea/gnome-network-displays, https://blogs.gnome.org/benzea/2019/01/30/gnome-screencast/
-
-furmark, GPU stress test
-y cruncher, CPU stress test
 
 hostile takeover?
 
 https://en.wikipedia.org/wiki/Steam_reforming
 https://en.wikipedia.org/wiki/Steam_cracking
+https://en.wikipedia.org/wiki/Cracking_(chemistry)
 
 also apparently there's this thing called catalytic reforming, that can shape small hydrocarbon chains into aromatic hydrocarbons, like benzene
 
-also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample
+also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample: PMMA, PS, PE and PP, PETE, ABS, Nylon
 
 what's up with otter, the company?
 
-nvidia pcat tool, for logging power consumption
+go over 23andme analysis
 
-specviewperf
+iron or nickel cathode
+cobalt stabilizes nickel
+carbon lattice with silica as anode
 
-all ampere based cards support sr-iov, so basically I can share GPU with multiple VMs
+may be the only reason ppl can't automate stuff like plaque assays is because they sort of require lots of different instruments that are bulky and expensive. But why are they so freaking expensive? Like, what's the actual cost of assembling 1 for myself that meets international standards???
+
+crystal violet seems to be a really popular staining method. It's also used in gram's method and whatnot
+
+https://en.wikipedia.org/wiki/Virus_quantification, pfu/ml
+https://en.wikipedia.org/wiki/Fluid_catalytic_cracking
+
+oxygen not included, for an efficient diesel generator. This also to test out how to actually manufacture these, and what are the alternative designs
+
+https://mods.factorio.com/mod/more-petrochem-hell
+
+https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
+
+subgenual cingulate cortex
+
+old aging stuff:
+- https://sites.google.com/view/sources-aging-part-ii/startseite
+- https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
+- https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
+
+irx3 and irx5: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6749179/
+45 year CPU evolution: https://arxiv.org/pdf/1803.00254.pdf
+methylated dna
+endogenous opiates
+
+vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Research/vmd/vmd-1.3/ug/node132.html
+
+high-speed synchrotron x-ray imaging
+
+also, what's the diamond, graphene and carbon nanotubes making process? All 3 of them seems to be in very different configurations, so the heating solution doesn't seem to be that effective
+
+why brass?
+perchloric acid
+ammonium nitrate
+why gunmetal?
+
+cfd linux
+
+https://www.reddit.com/r/metallurgy/comments/lk90ud/steel_manufacturing_process_sounds/
+
+atomic forced microscopy

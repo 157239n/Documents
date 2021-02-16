@@ -98,3 +98,8 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('http://157239n.com
 http://157239n.com/files/shortcuts.zip
 
 2019-06-21
+
+
+
+
+mysqldump --column-statistics=0, that option is to fix an error

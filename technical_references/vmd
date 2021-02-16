@@ -1,0 +1,13 @@
+
+https://www.ks.uiuc.edu/Training/Tutorials/vmd/tutorial-html/node2.html
+
+secondary structure codes:
+- T turn: teal
+- E extended conformation: yellow
+- B isolated bridge: gold
+- H alpha helix: dark pink
+- G 3-10 helix: light pink
+- I pi helix: red
+- C coil: white
+
+extension -> analysis -> sequence viewer

@@ -31,3 +31,12 @@ for cuda version: nvcc --version
 3070, $500, 20 teraflops, 220W (650W), 8GB
 3090, $1500, 36 teraflops, 350W (750W), 24GB
 Titan V, $3000, 12GB, 110 teraflops, L2 cache 4.6M, 652GB/s, 250W
+
+furmark, GPU stress test
+y cruncher, CPU stress test
+
+nvidia pcat tool, for logging power consumption
+
+specviewperf
+
+all ampere based cards support sr-iov, so basically I can share GPU with multiple VMs. But the feature is locked for non-enterprise users

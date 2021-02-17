@@ -927,6 +927,7 @@ goals for this trip?
 	- pseudouridine synthase: Z71568, YNL292w, https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=18158779
 	- mitochondria, atp synthase: NC_012920, 251831106
 	- methane monooxygenase: CH4 + O2 + NAD(P)H + H+ -> CH3OH + NAD(P)+ + H2O, single bond replacements
+	- amylase, alcohol dehydrogenase, hemoglobin, fibrin, collagen, actin, insulin, potassium channels, luciferase, hemagglutinin, HIV-1 protease, p53 tumor suppressor, cellulases
 - try to infect cells with modified virus with a specific payload
 - create a small server farm at home in vn that I can easily access via the internet to run my heavy workloads
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
@@ -996,9 +997,9 @@ comprehensive source: https://berthub.eu/articles/posts/reverse-engineering-sour
 
 again, what's up with bacteriophages???
 
-also, the recording stuff is really, really crude. Like, simple pink colors for acid/bases??? That's it? That's like 1 bit of information dude. So how about, bind rare atoms to specific complexes, and have those attaches to any structure you want. Then we can excite those rare atoms, and record their EM spectrum, for a lot of data bits. Also apparently florescent systems don't have rare atoms, so figure out how the hell can they do that???
+also, the recording stuff is really, really crude. Like, simple pink colors for acid/bases??? That's it? That's like 1 bit of information dude. So how about, bind rare atoms to specific complexes, and have those attaches to any structure you want. Then we can excite those rare atoms, and record their EM spectrum, for a lot of data bits. Also apparently florescent systems don't have rare atoms, so figure out how the hell can they do that??? Edit: specific proteins to find: luciferase
 
-also, what's up with the polyprotein nature of covid?
+also, what's up with the polyprotein nature of covid? Actually you know what, I heard many proteins are like that too, like histones, or hemoglobin, or atp synthase, so figure out the general dynamics of these systems
 
 also apparently, some staining methods like gram pos/neg ppl have no idea how they work. And methods to visualize brains too, with silver atoms or sth like that
 
@@ -1014,10 +1015,7 @@ https://www.reddit.com/r/Coronavirus/comments/fcs3rk/you_can_help_scientists_bea
 https://www.reddit.com/r/MachineLearning/comments/fd43g9/d_covid19coronavirus_challenge_help_scientists/
 https://www.reddit.com/r/todayilearned/comments/2d3leg/til_in_2011_people_playing_foldit_an_online/
 
-https://fold.it/portal/info/science
 https://foldit.fandom.com/wiki/Foldit_Wiki
-
-https://www.wepc.com/how-to/make-sure-all-pc-components-compatible/
 
 https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/
 
@@ -1039,12 +1037,6 @@ https://physics.stackexchange.com/questions/46673/transparency-of-solids-using-b
 https://www.quora.com/What-is-opaque-to-visible-light-but-transparent-to-infrared-light
 https://physics.stackexchange.com/questions/121696/why-does-glass-absorb-infrared-light
 https://physics.stackexchange.com/questions/267793/why-is-glass-transparent-to-visible-light-and-opaque-to-ultraviolet-amd-infrared
-
-https://learn.sparkfun.com/tutorials/i2c
-
-so apparently, spi fastest speeds are 60Mbps, while USB 2.0 are at 480Mbps. So why the difference?? I'm guessing it's the system clock speed. And like, cause USB has D+ and D- lines, so it can stop interference much better, so I guess they can tolerate a much higher clock speed?
-
-but like, again, everything sort of depends on the firebase db, and right now it's a blackbox to me, so I can't really replicate absolutely everything locally, which really bugs me or a long time
 
 revamp seablock, so that it's realistic
 
@@ -1105,5 +1097,6 @@ why gunmetal?
 cfd linux
 
 https://www.reddit.com/r/metallurgy/comments/lk90ud/steel_manufacturing_process_sounds/
+https://en.wikipedia.org/wiki/Ellingham_diagram
 
 atomic forced microscopy

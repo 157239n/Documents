@@ -1103,4 +1103,12 @@ dig again at clearinghouses
 
 world models: https://arxiv.org/pdf/1803.10122.pdf
 
-if cancel run, then unregister hooks
+investigate the all horizontal lines, cause that also seem to be a nice steady state
+
+extract the functional dataset thingy
+
+right, so do detailed docs for the entire workflow too
+
+weird thing is, the loss landscape seems to be sort of flat, and is indeed at the bottom of a well. But the performance is not there at all. Furthermore, performance later on seems to linearly decreasing over time, which is like, what? Why does that happen? And like, it should plateau after a while, right?
+
+ipyvolume again

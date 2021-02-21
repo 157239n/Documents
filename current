@@ -807,9 +807,6 @@ anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars
 https://en.wikipedia.org/wiki/Radar_jamming_and_deception
 https://forums.vrsimulations.com/support/index.php/A/A_Forward_Looking_Infrared_(FLIR)
 https://en.wikipedia.org/wiki/Forward-looking_infrared
-https://en.wikipedia.org/wiki/Combat_air_patrol
-https://en.wikipedia.org/wiki/Aegis_Ballistic_Missile_Defense_System
-https://en.wikipedia.org/wiki/Aegis_Combat_System
 antenna gain
 https://www.spaceinterns.org/share?id=4688f981-7d05-4c3c-a78c-145fc2db25f3
 
@@ -857,8 +854,6 @@ okay, so everything seems to be going well so far... Still have that problem of 
 
 https://www.homedepot.com/c/ab/types-of-nuts-and-bolts/9ba683603be9fa5395fab901b39a8293
 
-tempered glass vs acrylic??
-
 also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
 
 how it's made, steel again, but focus on hot vs cold rolled
@@ -890,11 +885,6 @@ can you weld steel with a propane torch
 https://weldingtroop.com/blowtorch-welding/ 
 
 kvm resume
-
-stuff to download wiki for:
-- RL
-- neoroscience
-- metallurgy
 
 https://en.wikipedia.org/wiki/Die_casting
 https://en.wikipedia.org/wiki/Tool_steel
@@ -959,7 +949,7 @@ tweak suicide so that it accounts for the horizontal velocity too. Gonna be hard
 
 why is aluminum more expensive than steel? Like, aluminum melts at a much lower temperature right?
 
-also why 3.3V, 5V, 9V and 12V? Elon sort of mentioned 48V, so how exactly can you design electronics for
+also why 3.3V, 5V, 9V and 12V? Elon sort of mentioned 48V, so how exactly can you design electronics for. So apparently, heat dissipation increases with the square of voltage, so you'd want as low voltage as possible
 
 covid genome: https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
 covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
@@ -1009,12 +999,6 @@ https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2
 
 so far, this seems really, really hard. But giving up is for pussies, so play foldit for a long time to roughly understand how stuff works in this domain
 
-reddit effectiveness of foldit
-https://www.reddit.com/r/askscience/comments/zk05o/how_do_scientists_benefit_from_foldit/
-https://www.reddit.com/r/Coronavirus/comments/fcs3rk/you_can_help_scientists_beat_coronavirus_by/
-https://www.reddit.com/r/MachineLearning/comments/fd43g9/d_covid19coronavirus_challenge_help_scientists/
-https://www.reddit.com/r/todayilearned/comments/2d3leg/til_in_2011_people_playing_foldit_an_online/
-
 https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/
 
 make ksp hop good enough for 1/4 planet hops
@@ -1046,7 +1030,7 @@ https://en.wikipedia.org/wiki/Cracking_(chemistry)
 
 also apparently there's this thing called catalytic reforming, that can shape small hydrocarbon chains into aromatic hydrocarbons, like benzene
 
-also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample: PMMA, PS, PE and PP, PETE, ABS, Nylon
+also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample: PMMA, PS, PE and PP, PETE, ABS, Nylon, PMMA (acrylic), PC (polycarbonate)
 
 what's up with otter, the company?
 
@@ -1077,9 +1061,7 @@ old aging stuff:
 - https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
 
 irx3 and irx5: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6749179/
-45 year CPU evolution: https://arxiv.org/pdf/1803.00254.pdf
 methylated dna
-endogenous opiates
 
 vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Research/vmd/vmd-1.3/ug/node132.html
 
@@ -1097,18 +1079,20 @@ cfd linux
 https://www.reddit.com/r/metallurgy/comments/lk90ud/steel_manufacturing_process_sounds/
 https://en.wikipedia.org/wiki/Ellingham_diagram
 
-atomic forced microscopy
+https://en.wikipedia.org/wiki/Quantum_dot
 
 dig again at clearinghouses
 
 world models: https://arxiv.org/pdf/1803.10122.pdf
 
-investigate the all horizontal lines, cause that also seem to be a nice steady state
+create my own vpn lol, that can be cheaper and quicker
 
-extract the functional dataset thingy
+do cifar 10 again, to get any insights possible, then my custom labels
 
-right, so do detailed docs for the entire workflow too
+also try again the style transfer, to see how my architecture can deal with such a dynamic environment
 
-weird thing is, the loss landscape seems to be sort of flat, and is indeed at the bottom of a well. But the performance is not there at all. Furthermore, performance later on seems to linearly decreasing over time, which is like, what? Why does that happen? And like, it should plateau after a while, right?
+try a normal batch size, like 128, to see how long do we actually have to wait
 
-ipyvolume again
+also benchmark everything inside k1lib, to get a feeling of how all the scales work with each other, and to verify jeremy's statement that custom RNN architectures are terrible. Also to understand where to optimize stuff too, and to use this info with deep computer architecture stuff to understand the whole thing
+
+also for ksp, develop a program for a missile to hit a plane. Should be ground to air

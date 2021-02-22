@@ -804,11 +804,8 @@ ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org
 mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
 anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
 
-https://en.wikipedia.org/wiki/Radar_jamming_and_deception
-https://forums.vrsimulations.com/support/index.php/A/A_Forward_Looking_Infrared_(FLIR)
-https://en.wikipedia.org/wiki/Forward-looking_infrared
 antenna gain
-https://www.spaceinterns.org/share?id=4688f981-7d05-4c3c-a78c-145fc2db25f3
+https://joininteract.com/fellowship/
 
 squarespace again? how to integrate with that?
 
@@ -1096,3 +1093,5 @@ try a normal batch size, like 128, to see how long do we actually have to wait
 also benchmark everything inside k1lib, to get a feeling of how all the scales work with each other, and to verify jeremy's statement that custom RNN architectures are terrible. Also to understand where to optimize stuff too, and to use this info with deep computer architecture stuff to understand the whole thing
 
 also for ksp, develop a program for a missile to hit a plane. Should be ground to air
+
+nixie tubes: https://www.youtube.com/watch?v=wxL4ElboiuA

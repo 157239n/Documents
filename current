@@ -1082,16 +1082,15 @@ dig again at clearinghouses
 
 world models: https://arxiv.org/pdf/1803.10122.pdf
 
-create my own vpn lol, that can be cheaper and quicker
-
 do cifar 10 again, to get any insights possible, then my custom labels
 
 also try again the style transfer, to see how my architecture can deal with such a dynamic environment
-
-try a normal batch size, like 128, to see how long do we actually have to wait
 
 also benchmark everything inside k1lib, to get a feeling of how all the scales work with each other, and to verify jeremy's statement that custom RNN architectures are terrible. Also to understand where to optimize stuff too, and to use this info with deep computer architecture stuff to understand the whole thing
 
 also for ksp, develop a program for a missile to hit a plane. Should be ground to air
 
 nixie tubes: https://www.youtube.com/watch?v=wxL4ElboiuA
+
+https://en.wikipedia.org/wiki/Casting_(metalworking)
+https://abc-vietnam.com/

@@ -835,8 +835,6 @@ also what's up with CNC machines?? milling and lathe seems good enough tho?
 
 may be pick up a little chinese
 
-why braze?
-
 how is lead poisonous? like, what pathways???
 
 see also links: https://en.wikipedia.org/wiki/Tempered_glass
@@ -925,6 +923,7 @@ goals for this trip?
 - consider buying a 3d printer
 - figure out all reactions in seablock
 - buy glasses
+- attempt to make a kiln
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 https://en.wikipedia.org/wiki/Process_manufacturing
@@ -942,11 +941,7 @@ experiment with ksp map, with specific coordinates
 
 biowin
 
-tweak suicide so that it accounts for the horizontal velocity too. Gonna be harddd. May be do the tutorial on this first
-
 why is aluminum more expensive than steel? Like, aluminum melts at a much lower temperature right?
-
-also why 3.3V, 5V, 9V and 12V? Elon sort of mentioned 48V, so how exactly can you design electronics for. So apparently, heat dissipation increases with the square of voltage, so you'd want as low voltage as possible
 
 covid genome: https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
 covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
@@ -1066,11 +1061,6 @@ high-speed synchrotron x-ray imaging
 
 also, what's the diamond, graphene and carbon nanotubes making process? All 3 of them seems to be in very different configurations, so the heating solution doesn't seem to be that effective
 
-why brass?
-perchloric acid
-ammonium nitrate
-why gunmetal?
-
 cfd linux
 
 https://www.reddit.com/r/metallurgy/comments/lk90ud/steel_manufacturing_process_sounds/
@@ -1097,6 +1087,16 @@ https://abc-vietnam.com/
 
 how can ppl like, forge big complex shapes out of steel, like bridges and so on?
 
-back up mom's stuff on github automatically, so accidental overwrites won't happen
-
 https://www.nature.com/articles/s41594-020-0479-4
+
+https://www.reddit.com/r/factorio/comments/dxxoss/mod_review_bobsangels_vs_irkrastorio/
+
+buy a compressed air can
+
+"topological computation", is what jim keller refer to AI stuff
+
+dive into mlir and llvm again, to see where are they headed, cause that's pretty critical for everything
+
+zinc and lead, why input oxygen and output sulfur dioxide?
+
+I don't understand the locking mechanism and chirality that much. Thought experiment seems to invalidate that. So look up for cis and trans 1-4 polyisoprene (natural rubber)

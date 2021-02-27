@@ -831,11 +831,11 @@ k9 borosilicate glass
 https://en.wikipedia.org/wiki/Gas_laser
 seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-switching
 
-also what's up with CNC machines?? milling and lathe seems good enough tho?
+also how are drill bits manufactured? Especially gear hobbing
+
+also see gear hob designs, and what are the actual tolerances
 
 may be pick up a little chinese
-
-how is lead poisonous? like, what pathways???
 
 see also links: https://en.wikipedia.org/wiki/Tempered_glass
 https://en.wikipedia.org/wiki/Flux_(metallurgy)
@@ -1016,8 +1016,6 @@ revamp seablock, so that it's realistic
 
 hostile takeover?
 
-https://en.wikipedia.org/wiki/Steam_reforming
-https://en.wikipedia.org/wiki/Steam_cracking
 https://en.wikipedia.org/wiki/Cracking_(chemistry)
 
 also apparently there's this thing called catalytic reforming, that can shape small hydrocarbon chains into aromatic hydrocarbons, like benzene
@@ -1089,11 +1087,9 @@ how can ppl like, forge big complex shapes out of steel, like bridges and so on?
 
 https://www.nature.com/articles/s41594-020-0479-4
 
-https://www.reddit.com/r/factorio/comments/dxxoss/mod_review_bobsangels_vs_irkrastorio/
-
 buy a compressed air can
 
-"topological computation", is what jim keller refer to AI stuff
+"topological computation", is what jim keller refer to AI stuff. See if ppl refer to the same thing
 
 dive into mlir and llvm again, to see where are they headed, cause that's pretty critical for everything
 
@@ -1112,3 +1108,13 @@ also how do they actually mine helium? Like, shouldn't they all float to the upp
 actually try to implement the attention idea that creates consciousness
 
 jre bigelow
+
+blender again
+
+dive more into crystal structures of steel, cause it seems like martensite has a lot more than just "great internal stress". Look into nitinol (nickel titanium) too. And titanium production
+
+also, how can small, biocompatible stuff like stents be made efficiently? Cause this seems to require a completely different mindset from typical machining and whatnot. Apparently they use laser cutting lol
+
+list of gibbs free energy: https://www.drjez.com/uco/ChemTools/Standard%20Thermodynamic%20Values.pdf, what happens with the values? Gibbs, entropy, enthalpy and whatnot? also do ppl actually go deep into individual molecule binding energy for their analysis?
+
+what are the standards for a lab to ask for materials from an oil rig?

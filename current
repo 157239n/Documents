@@ -710,7 +710,7 @@ https://en.wikipedia.org/wiki/Homeobox
 
 citric acid cycle again
 
-simulate synthetic aperture radar
+simulate synthetic aperture radar, start from scott manley's vid
 
 simulate a simple pid, with initial state at 0 and new state at 1. Still worse than the intended thing, but just to get this out quickly
 
@@ -850,8 +850,6 @@ okay, so everything seems to be going well so far... Still have that problem of 
 https://www.homedepot.com/c/ab/types-of-nuts-and-bolts/9ba683603be9fa5395fab901b39a8293
 
 also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
-
-how it's made, steel again, but focus on hot vs cold rolled
 
 also calculate stress structures within a home, and see what material properties do the concrete blocks need
 
@@ -1039,8 +1037,6 @@ https://en.wikipedia.org/wiki/Fluid_catalytic_cracking
 
 oxygen not included, for an efficient diesel generator. This also to test out how to actually manufacture these, and what are the alternative designs
 
-https://mods.factorio.com/mod/more-petrochem-hell
-
 https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
 
 subgenual cingulate cortex
@@ -1061,9 +1057,6 @@ also, what's the diamond, graphene and carbon nanotubes making process? All 3 of
 
 cfd linux
 
-https://www.reddit.com/r/metallurgy/comments/lk90ud/steel_manufacturing_process_sounds/
-https://en.wikipedia.org/wiki/Ellingham_diagram
-
 https://en.wikipedia.org/wiki/Quantum_dot
 
 dig again at clearinghouses
@@ -1076,12 +1069,7 @@ also try again the style transfer, to see how my architecture can deal with such
 
 also benchmark everything inside k1lib, to get a feeling of how all the scales work with each other, and to verify jeremy's statement that custom RNN architectures are terrible. Also to understand where to optimize stuff too, and to use this info with deep computer architecture stuff to understand the whole thing
 
-also for ksp, develop a program for a missile to hit a plane. Should be ground to air
-
 nixie tubes: https://www.youtube.com/watch?v=wxL4ElboiuA
-
-https://en.wikipedia.org/wiki/Casting_(metalworking)
-https://abc-vietnam.com/
 
 how can ppl like, forge big complex shapes out of steel, like bridges and so on?
 
@@ -1089,15 +1077,9 @@ https://www.nature.com/articles/s41594-020-0479-4
 
 buy a compressed air can
 
-"topological computation", is what jim keller refer to AI stuff. See if ppl refer to the same thing
-
 dive into mlir and llvm again, to see where are they headed, cause that's pretty critical for everything
 
-zinc and lead, why input oxygen and output sulfur dioxide?
-
 I don't understand the locking mechanism and chirality that much. Thought experiment seems to invalidate that. So look up for cis and trans 1-4 polyisoprene (natural rubber)
-
-see how feasible it is to actually manufacture 
 
 calculate fuel usage of blast furnace in seablock and whatnot
 
@@ -1107,25 +1089,19 @@ also how do they actually mine helium? Like, shouldn't they all float to the upp
 
 actually try to implement the attention idea that creates consciousness
 
-jre bigelow
-
 blender again
 
 dive more into crystal structures of steel, cause it seems like martensite has a lot more than just "great internal stress". Look into nitinol (nickel titanium) too. And titanium production
 
-also, how can small, biocompatible stuff like stents be made efficiently? Cause this seems to require a completely different mindset from typical machining and whatnot. Apparently they use laser cutting lol
-
-list of gibbs free energy: https://www.drjez.com/uco/ChemTools/Standard%20Thermodynamic%20Values.pdf, what happens with the values? Gibbs, entropy, enthalpy and whatnot? also do ppl actually go deep into individual molecule binding energy for their analysis?
+also, how can small, biocompatible stuff like stents be made efficiently? Cause this seems to require a completely different mindset from typical machining and whatnot. Apparently they just use regular ass laser cutting lol
 
 what are the standards for a lab to ask for materials from an oil rig?
 
 silicon nitride's ceramic properties?
-titanium production process? Heard from elon that it's quite complicated. Also inox
-
-electrowinning: powder -> sludge -> dust -> slurry -> concentrate -> anodized concentrate -> crystal
+titanium production process? Heard from elon that it's quite complicated
 
 lead anode, nickel cathode??? So that's why they sometimes go together. See if they actually couple them together in real life or not. Also copper anode, gold cathode
 
-also see workability of different metals
+build some exotic shaped metal, following generative design, and see if stresses hold up. Then deduce if doing it that way is worth it or not
 
-so from my understanding, you just need to stick conductive wires to water and boom, electrolysis. But seems like ppl make cathode and anode out of exotic stuff, so what's going on there?
+rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who are actually working on that

@@ -780,9 +780,6 @@ temp discarded:
 
 how can I know chemical concentrations of my blood to track it pretty much daily? Does such a device even exist?
 
-turn off coal liquefaction if not needed (less than 15000)
-investigate fluid wagon's auto train
-
 interactome
 zinc fingers sound super useful tho, but manolis said it's a pain in the ass to deal with
 play fold it again? just to see what the problem actually is
@@ -790,7 +787,7 @@ https://en.wikipedia.org/wiki/Structural_alignment
 
 signal strength stuff
 
-apparently they machine manufacture machines right in house? Isn't that super complicated though? How did they do it?
+apparently they machine manufacture machines right in house? Isn't that super complicated though? How did they do it? Talk to someone who has designed such a thing before
 
 2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
 
@@ -830,10 +827,6 @@ k9 borosilicate glass
 
 https://en.wikipedia.org/wiki/Gas_laser
 seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-switching
-
-also how are drill bits manufactured? Especially gear hobbing
-
-also see gear hob designs, and what are the actual tolerances
 
 may be pick up a little chinese
 
@@ -879,10 +872,6 @@ https://weldingtroop.com/blowtorch-welding/
 
 kvm resume
 
-https://en.wikipedia.org/wiki/Die_casting
-https://en.wikipedia.org/wiki/Tool_steel
-https://insideevs.com/news/427179/tesla-model-y-casting-machine-idra-group/
-
 update story of energy
 
 https://en.wikipedia.org/wiki/DNA_nanotechnology
@@ -912,7 +901,6 @@ goals for this trip?
 	- methane monooxygenase: CH4 + O2 + NAD(P)H + H+ -> CH3OH + NAD(P)+ + H2O, single bond replacements
 	- amylase, alcohol dehydrogenase, hemoglobin, fibrin, collagen, actin, insulin, potassium channels, luciferase, hemagglutinin, HIV-1 protease, p53 tumor suppressor, cellulases
 - try to infect cells with modified virus with a specific payload
-- create a small server farm at home in vn that I can easily access via the internet to run my heavy workloads
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
 - intercept seek thermal communications
 - try to build robot arms that can do things quickly, and have a good internal model of reality
@@ -1067,11 +1055,7 @@ do cifar 10 again, to get any insights possible, then my custom labels
 
 also try again the style transfer, to see how my architecture can deal with such a dynamic environment
 
-also benchmark everything inside k1lib, to get a feeling of how all the scales work with each other, and to verify jeremy's statement that custom RNN architectures are terrible. Also to understand where to optimize stuff too, and to use this info with deep computer architecture stuff to understand the whole thing
-
 nixie tubes: https://www.youtube.com/watch?v=wxL4ElboiuA
-
-how can ppl like, forge big complex shapes out of steel, like bridges and so on?
 
 https://www.nature.com/articles/s41594-020-0479-4
 
@@ -1085,23 +1069,33 @@ calculate fuel usage of blast furnace in seablock and whatnot
 
 have the lib of youtube speed adjust local only
 
-also how do they actually mine helium? Like, shouldn't they all float to the upper atmosphere? Not to mention that it's a noble gas
-
 actually try to implement the attention idea that creates consciousness
 
 blender again
 
 dive more into crystal structures of steel, cause it seems like martensite has a lot more than just "great internal stress". Look into nitinol (nickel titanium) too. And titanium production
 
-also, how can small, biocompatible stuff like stents be made efficiently? Cause this seems to require a completely different mindset from typical machining and whatnot. Apparently they just use regular ass laser cutting lol
-
-what are the standards for a lab to ask for materials from an oil rig?
-
 silicon nitride's ceramic properties?
 titanium production process? Heard from elon that it's quite complicated
-
-lead anode, nickel cathode??? So that's why they sometimes go together. See if they actually couple them together in real life or not. Also copper anode, gold cathode
 
 build some exotic shaped metal, following generative design, and see if stresses hold up. Then deduce if doing it that way is worth it or not
 
 rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who are actually working on that
+
+also, how can you sort of figure out what the reactants are going to be? Like, just record a bunch of properties, and devise a bunch of hypothesis?
+
+also buy basic atmospheric sensors, to at least have a metric to understand stuff
+
+actually analyze and simulate forces in buildings and dynamic systems, to verify a lot of the theory behind it
+
+also what's the cost of galvanized steel vs stainless steel? Like, stainless steel seems much more straightforward, and lasts a long time, so why does galvanized steel even exists?
+
+what actually stops a regular person from actually building an oil refinery? Like, it's just a distillation column that you have to manage pressures and whatnot right? So what's up?
+
+so it appears the reason why a lot of instruments are expensive is because they're made of steel, and that comes with a lot of machining costs. So see if 3d printed parts can actually surpasses that
+
+also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
+
+mri scanners apparently uses liquid helium as a coolant for its superconducting magnets. So what's up?
+
+cryogenic distillation

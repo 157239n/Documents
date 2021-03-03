@@ -731,8 +731,6 @@ tesla's quarterly reports?
 
 also figure out what is the current staining capability? Cause that's what I expect how engineering proteins can be useful
 
-also mass production stuff? The kinds that Tesla are doing?
-
 https://decatopus.com/project/thouless-pump-simulation/
 https://decatopus.com/wp-content/uploads/application/pdf/Thesis.pdf
 
@@ -742,11 +740,8 @@ mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrep
 
 borg warner, cost analysis
 
-again, seems like my limitation is with high power machines
-
 get that simple mic?
 
-mig welding?
 https://en.wikipedia.org/wiki/Stainless_steel
 https://en.wikipedia.org/wiki/Carbon_nanotube
 
@@ -831,12 +826,6 @@ seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-
 may be pick up a little chinese
 
 see also links: https://en.wikipedia.org/wiki/Tempered_glass
-https://en.wikipedia.org/wiki/Flux_(metallurgy)
-
-https://en.wikipedia.org/wiki/Shielding_gas
-https://en.wikipedia.org/wiki/Gas_metal_arc_welding
-https://en.wikipedia.org/wiki/Gas_tungsten_arc_welding
-https://en.wikipedia.org/wiki/Shielded_metal_arc_welding
 
 okay, so everything seems to be going well so far... Still have that problem of controlling high power electronics with low power digital systems like arduinos ("arduino with mains voltage controller") though, so look more into that. And where the hell can I buy gears????
 
@@ -908,7 +897,6 @@ goals for this trip?
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
 - consider buying a 3d printer
 - figure out all reactions in seablock
-- buy glasses
 - attempt to make a kiln
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
@@ -1012,10 +1000,6 @@ what's up with otter, the company?
 
 go over 23andme analysis
 
-iron or nickel cathode
-cobalt stabilizes nickel
-carbon lattice with silica as anode
-
 may be the only reason ppl can't automate stuff like plaque assays is because they sort of require lots of different instruments that are bulky and expensive. But why are they so freaking expensive? Like, what's the actual cost of assembling 1 for myself that meets international standards???
 
 crystal violet seems to be a really popular staining method. It's also used in gram's method and whatnot
@@ -1099,3 +1083,9 @@ also see how advanced stuff-pickup programs are, and can they do stuff really fr
 mri scanners apparently uses liquid helium as a coolant for its superconducting magnets. So what's up?
 
 cryogenic distillation
+
+alternative steel making process, for a glimpse of what's the direction now: https://www.sciencedirect.com/science/article/pii/S0959652618326301
+
+actually attempt to build a computer from scratch in factorio, so as to understand how the linux kernel works, and how computers work in general
+
+invest in rocket lab

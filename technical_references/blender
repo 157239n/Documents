@@ -1,0 +1,39 @@
+
+https://daler.github.io/blender-for-3d-printing/contents.html
+
+alt is usually used as shift (inverse meaning)
+
+hot keys:
+- g: grab
+- r: rotate
+- s: scale
+- numpad .: focuses on object
+- o: proportional editing, in mesh edit mode
+- f9 for changing mesh settings after clicked somewhere else
+- shift d: copy paste stuff
+- p: separate into new object in edit mode
+- a: select all
+- alt click: select particular edge of mesh
+- ctrl i: invert selection
+- h: hide, alt h: unhide
+- f: change brush size in scupting mode
+- ctrl drag: inverse effect in scupting mode
+- shift + right click: changes 3d cursor (where new objects are dropped) location
+- shift + c: places 3d cursor at origin
+- shift click: select multiple objects
+- ctrl r: loop cut. Can use scroll wheel to change repetitions
+- ctrl shift click: preview material shading
+
+menus:
+- ~: moving around
+- z: view modes
+- shift a: add
+- f3: search features
+- n: (optional) properties sidebar
+- ctrl p: set parent. Select leaf first, then main object second
+
+middle mouse to orbit, shift middle mouse to pan
+
+modifiers:
+- subdivision surface: smoothes out the mesh at render time. Mesh is still the same. If want to permanently do it, then click apply, and then you can move the mesh around, but else, don't need to
+- solidify: mesh -> mesh with thickness???

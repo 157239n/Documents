@@ -23,6 +23,9 @@ hot keys:
 - shift click: select multiple objects
 - ctrl r: loop cut. Can use scroll wheel to change repetitions
 - ctrl shift click: preview material shading
+- f: forms a face when selected 4 points. Can work with 3, idk
+- i: insert a loop cut onto itself. normal loop cut may be enough tho
+- shift n: recalculate normals
 
 menus:
 - ~: moving around
@@ -31,6 +34,8 @@ menus:
 - f3: search features
 - n: (optional) properties sidebar
 - ctrl p: set parent. Select leaf first, then main object second
+- ctrl e: edge stuff
+- u: unwrap
 
 middle mouse to orbit, shift middle mouse to pan
 

@@ -4,7 +4,7 @@ https://daler.github.io/blender-for-3d-printing/contents.html
 alt is usually used as shift (inverse meaning)
 
 hot keys:
-- g: grab
+- g: grab. gg: grab and slide along edge
 - r: rotate
 - s: scale
 - numpad .: focuses on object
@@ -26,6 +26,10 @@ hot keys:
 - f: forms a face when selected 4 points. Can work with 3, idk
 - i: insert a loop cut onto itself. normal loop cut may be enough tho
 - shift n: recalculate normals
+- alt m: merge verticies together
+- e, f: edge loop cut snap mode
+- shift e: forms a crease
+- m: move to another layer
 
 menus:
 - ~: moving around

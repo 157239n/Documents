@@ -802,15 +802,13 @@ may be pick up a little chinese
 
 okay, so everything seems to be going well so far... Still have that problem of controlling high power electronics with low power digital systems like arduinos ("arduino with mains voltage controller") though, so look more into that. And where the hell can I buy gears????
 
-https://www.homedepot.com/c/ab/types-of-nuts-and-bolts/9ba683603be9fa5395fab901b39a8293
-
 also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
+
+ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
 
 also calculate stress structures within a home, and see what material properties do the concrete blocks need
 
 https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipedia.org/wiki/Digital_signal_controller, "stepper driver controllers", https://www.orientalmotor.com/stepper-motors/index.html
-
-there also has got to be more aluminum predefined structures that's easy to use like v slots right? So look for those
 
 for the high power thingy, see over 24V power supplies pcb designs, to get a sense of what things are on there
 
@@ -818,19 +816,9 @@ also, what's the curing process involving an autoclave looks like for carbon fib
 
 and finally, analyze tesla's costs to make sense of everything
 
-also, the way I sort of work is to build a small scale model, make sure it works, then do the large scale one. Only after then do I really commit large amounts of money, time and effort into something, and start worrying about selling those to customers. This might be sort of undesirable, cause like, in every other case, 
-
-https://nanografi.com/blog/explained-molybdenum-sputtering-targets-and-applications/
-
 gene therapy again
 
 reddit thread about ACE2 receptors
-
-tool and die machine shop. Like, the tool has to be made of some crazy alloy rite? I mean, it has to be able to withstand crazy hot temps from molten metal
-https://en.wikipedia.org/wiki/Tool_and_die_maker
-https://en.wikipedia.org/wiki/Forge_welding
-can you weld steel with a propane torch
-https://weldingtroop.com/blowtorch-welding/ 
 
 kvm resume
 
@@ -946,6 +934,8 @@ this company offers a virtual tour, so check it out: https://www.sageglass.com/e
 
 sandy munroe says that casting process can take 16ms??? How so? And how much faster do techniques like strand casting provide?
 
+probably not needed, but calculate cost of hydrogen electrolysis as fuel, and compare that to just ordering methane
+
 what is transparent in infrared
 
 https://www.youtube.com/c/Thesignalpath/videos
@@ -997,8 +987,6 @@ vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Res
 high-speed synchrotron x-ray imaging
 
 also, what's the diamond, graphene and carbon nanotubes making process? All 3 of them seems to be in very different configurations, so the heating solution doesn't seem to be that effective
-
-cfd linux
 
 https://en.wikipedia.org/wiki/Quantum_dot
 
@@ -1056,3 +1044,5 @@ actually attempt to build a computer from scratch in factorio, so as to understa
 invest in rocket lab
 
 find a shared office space and see if prices are right
+
+https://www.mt.com/vn/vi/home/products/Laboratory_Analytics_Browse/pH-meter/sensor/ion-selective-electrode.html

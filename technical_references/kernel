@@ -1,0 +1,21 @@
+
+https://cirosantilli.com/linux-kernel-module-cheat/
+linux device drivers, 4th edition
+essential linux device drivers
+the linux programming interface
+https://0xax.gitbooks.io/linux-insides/content/index.html, https://github.com/0xAX/linux-insides
+https://kernelnewbies.org/
+https://github.com/torvalds/linux/blob/master/init/main.c#L479
+linux kernel in a nutshell
+https://linuxjourney.com/
+https://www.reddit.com/r/kernel/comments/6zpn6s/learning_path_recommendations_for_kernel/
+localhost:4000
+
+nasm assembler
+
+~/repos/linux/arch/x86/boot
+/boot/efi
+/usr/include/linux
+~/repos/linux-insides/explore
+
+hexdump -C file

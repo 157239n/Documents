@@ -1071,16 +1071,6 @@ how the hell do biotinylation works??? Like, where does the protein-specific sel
 
 overarching goal: fast, static and dynamic? See over LLVM deeply first
 
-mint low power monitor?
-
-https://davidyat.es/2016/09/08/gpu-passthrough/
-https://github.com/foxlet/macOS-Simple-KVM
-https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration
-kvm 3d acceleration
-https://www.reddit.com/r/VFIO/
-https://www.reddit.com/r/linux/comments/57rzxc/wayland_are_you_experiencing_better_performance/
-reddit guest os responsive snappier
-
 https://en.wikipedia.org/wiki/Genome-wide_association_study
 
 okay I get how zinc fingers can sort of be used to replace dna segments. So is it that hard to design them? Look for stories from ppl who actually designed them

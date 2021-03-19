@@ -19,3 +19,55 @@ nasm assembler
 ~/repos/linux-insides/explore
 
 hexdump -C file
+
+
+
+
+
+
+mint low power monitor?
+
+https://davidyat.es/2016/09/08/gpu-passthrough/
+https://github.com/foxlet/macOS-Simple-KVM
+https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration
+kvm 3d acceleration
+https://www.reddit.com/r/VFIO/
+https://www.reddit.com/r/linux/comments/57rzxc/wayland_are_you_experiencing_better_performance/
+reddit guest os responsive snappier
+
+
+some fpga contents: https://www.youtube.com/user/intrigano/videos
+
+https://en.wikipedia.org/wiki/CPUID
+https://en.wikipedia.org/wiki/Linux_startup_process
+http://www.linusakesson.net/programming/tty/index.php
+http://curiousthing.org/sigttin-sigttou-deep-dive-linux
+https://www.gnu.org/software/libc/manual/html_node/Job-Control-Signals.html
+analyze dmesg logs
+distcc, distributed compiler
+pciutils
+lspci -vvv
+https://elixir.bootlin.com/linux/latest/source/drivers/iommu/iommu.c
+
+so, have a kernel module-
+
+netflix freebsd high bandwidth TLS: https://openconnect.netflix.com/publications/asiabsd_tls_improved.pdf
+
+linux lock down command line
+
+/dev/vfio/vfio is a character device file. Interesting
+
+virt-host-validate
+
+intel_iommu=on iommu=pt
+
+vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd
+
+weeds:
+- https://www.kernel.org/doc/html/latest/x86/intel-iommu.html
+- https://01.org/linuxgraphics/gfx-docs/drm/driver-api/vfio.html
+
+sr-iov details

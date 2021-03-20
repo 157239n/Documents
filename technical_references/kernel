@@ -71,3 +71,40 @@ weeds:
 - https://01.org/linuxgraphics/gfx-docs/drm/driver-api/vfio.html
 
 sr-iov details
+
+pci-stub:
+- https://unix.stackexchange.com/questions/328422/pci-stub-vs-vfio-pci
+- https://www.reddit.com/r/virtualization/comments/67bl17/pcistub_vs_vfiopci/
+
+canonical:
+- https://gist.github.com/kaapstorm/4e51ff5f500eb7e93820d2e630dfdbbc
+- https://vfio.blogspot.com/2014/08/iommu-groups-inside-and-out.html
+- https://01.org/linuxgraphics/gfx-docs/drm/driver-api/vfio.html
+- https://davidyat.es/2016/09/08/gpu-passthrough/
+- https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF
+- https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.1/html/installation_guide/appe-configuring_a_hypervisor_host_for_pci_passthrough
+- https://pve.proxmox.com/wiki/Pci_passthrough
+- https://en.wikipedia.org/wiki/Booting
+- https://www.youtube.com/watch?v=qQiMMeVNw-o
+
+"pcie iommu isolation"
+https://superuser.com/questions/1350451/isolate-single-device-into-separate-iommu-group-for-pci-passthrough
+https://queuecumber.gitlab.io/linux-acs-override/
+
+also apparently, I have to apply a kernel patch, which sounds really scary lmao
+
+"gpu passthrough windows code 43"
+https://forum.level1techs.com/t/nvidia-gpu-passthrough-with-virtual-machine-manager-how-to-fix-error-43/162250/4
+https://shuttletitan.com/vsphere/passthrough-enabled-pci-graphic-card-reports-problems-code-43-in-windows-os-guest-vm/
+https://bbs.archlinux.org/viewtopic.php?id=249199
+https://communities.vmware.com/t5/ESXi-Discussions/I-found-clues-about-NVIDIA-passthrough-error-code-43/td-p/2297681
+https://stackoverflow.com/questions/41362981/nvidia-gpu-passthrough-fail-with-code-43
+https://superuser.com/questions/1544375/kvm-gpu-passthrough-nvidia-error-43
+
+
+lspci:
+- https://serverfault.com/questions/103629/windows-equivalent-for-lspci
+- https://answers.microsoft.com/en-us/windows/forum/all/list-of-pci-devices/32c9a0ad-592a-4b06-82b3-43193063efb1
+
+"windows gpu shows up in display adaptor, but not task manager":
+- https://answers.microsoft.com/en-us/windows/forum/all/gpu-not-showing-up-in-task-manager-wddm-22/3473c933-ddec-412f-b3b1-c5d623126236

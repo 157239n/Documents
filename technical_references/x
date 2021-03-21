@@ -1,0 +1,13 @@
+
+for x server and stuff
+
+so, there're a fuckton of different stuff, all very confusing:
+- window manager: awesome, compiz, i3
+- desktop environment: xfce, kde plasma
+- display manager: lightdm. Apparently, this is the login part before entering a desktop environment
+
+display managers are sort of "tied" to desktop environments. Like, kdm for kde plasma, gdm for gnome, lightdm for xfce. Apparently, you can "launch gnome with lightdm", so I guess the lightdm stuff is pretty insignificant?
+
+ssh -X <address>, then open a GUI, and that gui will appear in the current window. Pretty cool
+
+lightdm stopped, but I can still do stuff? Right, so that just kills the login screen, but X is still running in tty1, and I have already logged in, so that doesn't really matter. When I kill X directly, that kills tty1's x, so that makes sense. Interesting thing is, when I enable lightdm, tty7 shows up

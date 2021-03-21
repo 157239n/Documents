@@ -1098,3 +1098,15 @@ samsung monitor lagging problems?
 "start" script for quick start
 
 dig more into openrgb
+
+comb through and fix loading schemes
+
+x forwarding as a new monitor? Interesting possibility: have a central code server, then run X there, then have multiple monitors viewing the same window application, then have them sync together. This seems far better than teamviewer or sth like that
+
+yeah what's the different desktop environments again? gnome, kde plasma, xfce
+
+what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
+
+vm basic sharing files and clipboard too. Also dig into how they actually work
+
+create a system on the red wire to check how many stations of a particular kind still has resources, so you can be notified when a paticular resource is limiting

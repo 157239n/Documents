@@ -11,3 +11,17 @@ display managers are sort of "tied" to desktop environments. Like, kdm for kde p
 ssh -X <address>, then open a GUI, and that gui will appear in the current window. Pretty cool
 
 lightdm stopped, but I can still do stuff? Right, so that just kills the login screen, but X is still running in tty1, and I have already logged in, so that doesn't really matter. When I kill X directly, that kills tty1's x, so that makes sense. Interesting thing is, when I enable lightdm, tty7 shows up
+
+"tiling window manager"
+
+new mint VM completely, without GPU and whatnot, just to test out awesome
+
+i3 vs awesome?
+https://github.com/awesomeWM/awesome/tree/master/docs
+https://awesomewm.org/recipes/
+https://awesomewm.org/apidoc/documentation/07-my-first-awesome.md.html#
+https://github.com/guotsuan/awesome-revelation
+https://www.reddit.com/r/unixporn/comments/ibx1jt/awesome_a_wm_noobs_workflow/
+https://www.reddit.com/r/awesomewm/comments/antmht/awesome_material_awesome_workflow/
+
+x forwarding as a new monitor? Interesting possibility: have a central code server, then run X there, then have multiple monitors viewing the same window application, then have them sync together. This seems far better than teamviewer or sth like that

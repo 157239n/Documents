@@ -1089,24 +1089,16 @@ titanium: $4.5k/tonne
 aluminium: $1.5k/tonne, 2.7kg/L, 10000W/kg?
 iron: $85/tonne, 8kg/L
 
-why energy from carbon is cheaper than from electrolysis? Considering renewables are down by quite a lot? And is aluminum carbide really a lot more stable than CO2? Cause CO2 seems hella stable
+why energy from carbon is cheaper than from electrolysis? Considering renewables are dowxn by quite a lot? And is aluminum carbide really a lot more stable than CO2? Cause CO2 seems hella stable
 
 kroll process
 
-samsung monitor lagging problems?
-
-"start" script for quick start
-
 dig more into openrgb
-
-comb through and fix loading schemes
-
-x forwarding as a new monitor? Interesting possibility: have a central code server, then run X there, then have multiple monitors viewing the same window application, then have them sync together. This seems far better than teamviewer or sth like that
-
-yeah what's the different desktop environments again? gnome, kde plasma, xfce
 
 what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
 
-vm basic sharing files and clipboard too. Also dig into how they actually work
-
 create a system on the red wire to check how many stations of a particular kind still has resources, so you can be notified when a paticular resource is limiting
+
+try arch? Heard you'll learn a bunch of low level stuff by doing it. Probably not good for my day-to-day stuff, but will give me solid foundation. So do it 2 weeks from now or sth
+
+analyze python's grammar file

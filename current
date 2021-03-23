@@ -1093,12 +1093,22 @@ why energy from carbon is cheaper than from electrolysis? Considering renewables
 
 kroll process
 
-dig more into openrgb
-
 what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
 
 create a system on the red wire to check how many stations of a particular kind still has resources, so you can be notified when a paticular resource is limiting
 
 try arch? Heard you'll learn a bunch of low level stuff by doing it. Probably not good for my day-to-day stuff, but will give me solid foundation. So do it 2 weeks from now or sth
 
-analyze python's grammar file
+analyze python's grammar file, and python's integration with other things, like C++ for numpy. And try to build it from source. Try to build pytorch from source too
+
+analyze processing's workflow, and how it interacts with opengl. There's a bunch of glsl shader files in the core folder, so that should be interesting: https://github.com/processing/processing/blob/master/core/src/processing/opengl/PGraphicsOpenGL.java
+
+binding languages together: https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html#interacting-with-code-binding-cpp
+
+how qt communicates with x server, https://stackoverflow.com/questions/9442532/resources-for-programming-the-linux-x-server
+
+try to create an agent that has some sense of higher dimensions
+
+basic energy computer analysis again
+
+https://phim1080.me/tim-kiem/raya

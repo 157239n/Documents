@@ -1,0 +1,19 @@
+
+good overviews:
+- https://www.cs.cornell.edu/~asampson/blog/llvm.html
+- http://www.aosabook.org/en/llvm.html
+- https://llvm.org/pubs/2004-01-30-CGO-LLVM.pdf
+- https://llvm.org/pubs/2002-12-LattnerMSThesis.pdf
+- https://mukulrathi.co.uk/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/
+
+interesting meats:
+- https://llvm.org/docs/GettingStarted.html
+- https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl03.html
+- https://llvm.org/docs/tutorial/BuildingAJIT3.html
+
+mlir:
+- https://arxiv.org/pdf/2002.11054.pdf
+- https://drive.google.com/file/d/1hUeAJXcAXwz82RXA5VtO5ZoH8cVQhrOK/view
+- https://ieeexplore.ieee.org/document/9370308
+
+"xla compiler" too?

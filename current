@@ -864,7 +864,6 @@ https://www.chems.msu.edu/resources/tutorials/ASPEN
 https://en.wikipedia.org/wiki/Process_manufacturing
 https://en.wikipedia.org/wiki/Aspen_Technology
 
-https://www.ncbi.nlm.nih.gov/tools/gbench/tutorial1/
 https://en.wikipedia.org/wiki/Contig
 https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)
 
@@ -1083,6 +1082,8 @@ discovery path for proteins? Where are the entropy leaks?
 
 https://en.wikipedia.org/wiki/Transcription_factor
 https://en.wikipedia.org/wiki/Transfection
+https://en.wikipedia.org/wiki/Mutagenesis
+https://en.wikipedia.org/wiki/Crosslinking_of_DNA
 zinc finger vs crispr
 
 titanium: $4.5k/tonne
@@ -1146,3 +1147,66 @@ build llvm from source sounds terrifying tho
 see a little bit over cudnn, and write a series of blog posts about how it works underneath, and show concrete numbers and visualizations to talk about
 
 I've heard pytorch has a built-in JIT, so what's up with that? JIT for what? Cause CUDA kernel calls don't really need that rite?
+
+try to find ways to utilize a big screen as 4 small screens, and still preserve aspect ratio of every application. Set fractional scaling to 50%?
+
+actually have a go ahead at awesome window manager, cause there's a lot of spaces now. Also rethink how spaces should be distributed. Also try to make every utilities as normal as possible. But first, list out features/applications I want, then try to replicate that basic functionality on the VM, then do other things. Read pdfs on chrome too. Separate that pdf tab to a new window quickly too
+
+mouse: should interact with windows as normal. Just not moving windows around. May be increase cursor size, cause right now it's a bit small. Graphics stuff like CAD/Blender should feel good
+
+tmux: mouse interaction, for stats window. If can be finely controlled by the window manager, then don't worry about this
+
+applications I want to run:
+- ncbi, with popups, for graphical sequence view and whatnot
+- chrome
+- steam: factorio, ksp. This is the interesting bit. Do games sort of always take up the whole screen? Does it sort of listen to the window manager or just bypasses it completely?
+- settings stuff
+- gnome-terminal
+- nemo
+toolbar tools I want to have. Preferably there's a shortcut that will focuses there (go look for standards in normal mint):
+- bluetooth
+- update manager
+- network manager
+- time
+
+good enough theme too, for visual pleasing-ness. Should have flat, modern and clean looks
+
+there should also be a nice GUI menu, for stuff like disk usage analyzer and whatnot
+
+run (alt + F2) should have the same binding, and appearing in the middle of the screen, not at the top or sth. This is a light restriction tho
+
+navigation styles must be at least better than alt tab. but having alt tab for quick memory stuff must also be available, cause too much key bindings change kinda sucks. Navigation to any window should take at most 4 button presses, preferably 2 presses, but that has to be intuitive. Or 3 button press but less intuitive. Simple solution is super + number. Normal 
+
+should make use of the super key a lot. Should be intuitive enough to switch between modes/workspaces
+
+if not clear what to do, then should always do floating, so as not to mess up with stuff
+
+should be extremely clear what window is in focus. Not a stark-contrast border, but title bar or sth should be faded by a lot
+
+should not waste any spaces at all
+
+menus should always stay attached to the local window, not sitting on bar of the screen
+
+carnot efficiency of the universe?
+
+eric weinstein 3 & 4 again
+
+does linux need autohotkey and whatnot?
+
+tune vimium, or see if it actually contributes something meaningful
+
+electron.js or sth like that. Heard vscode is made using it, so should be simple to do the same for pretty much everything else rite? And that's just the cost of 1 chrome browser tab, so should be quite minimal
+
+stuff I really shouldn't put in nodes cause I want to do them so bad:
+- https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
+- https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
+- file:///home/kelvin/Downloads/David%20A%20Sinclair%20-%20David%20A%20Sinclair%20Lifespan%20Why%20We%20Age%20and%20Why%20We%20Dont%20Have%20To%20with%20Matthew%20D%20LaPlante%202019%20ISBN%20978-1501191978%20(2019).pdf
+- https://www.ncbi.nlm.nih.gov/tools/gbench/tutorial1/
+
+also easy kvm manipulation? Like, just resize the screen automatically if I forces the outside screen to a corner. Also look up the beneath window for dpi and resolution information
+
+watches file access?
+
+so right now I use xrandr for scaling screen to correct resolution. What does this actually do underneath?
+
+also, I've heard that something called a "compositor", like "compton fork" is actually the thing that's responsible for blurs and animations. So how does this fit into the picture???

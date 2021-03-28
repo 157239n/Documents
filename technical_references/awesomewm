@@ -1,4 +1,44 @@
 
+https://forums.bunsenlabs.org/viewtopic.php?id=5766
+
+interesting commands to check out:
+
+beautiful:xresources:{get_dpi, get_current_theme, set_dpi, dpi, apply_dpi}
+awful.layout.layouts[1]: this is actually set from awful.layout.suit inside rc.lua
+awful.layout.suit.tile
+freedesktop.menu.build
+naughty.notify({ preset = naughty.config.presets.ok, title = "Some title", text = "Some text" })
+
+all layouts (awful.layout.suit.):
+- max
+	- fullscreen
+- magnifier
+- corner
+	- sw
+	- ne
+	- se
+	- nw
+- floating
+- tile
+	- bottom
+	- left
+	- top
+	- right (default namespace)
+- fair
+	- horizontal
+- spiral
+	- dwindle
+
+has_fdo: true. What does this do?
+
+so, seems like I can set different layouts for different tags and different screens. This is pretty awesome. Integration between modes will be sort of challenging tho
+
+master: https://awesomewm.org/doc/api/index.html
+seems like for custom windows and whatnot: https://awesomewm.org/doc/api/classes/awful.wibar.html#
+screen: https://awesomewm.org/doc/api/classes/screen.html#
+client: https://awesomewm.org/doc/api/classes/client.html
+
+
 Gears: -----------
 - filesystem:table
 	- dir_readable:function

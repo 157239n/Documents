@@ -71,3 +71,11 @@ virsh define config_file.xml
 virsh start foo
 
 https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe
+
+
+
+also easy kvm manipulation? Like, just resize the screen automatically if I forces the outside screen to a corner. Also look up the beneath window for dpi and resolution information
+
+https://www.reddit.com/r/Fedora/comments/9feqra/how_to_get_autoresizing_guest_os_display_on/
+https://askubuntu.com/questions/1219817/how-to-set-up-dynamic-screen-sizing-for-a-qemu-windows-10-guest-on-ubuntu-18-04
+"virt-manager resize guest based on host window"

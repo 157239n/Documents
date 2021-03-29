@@ -978,9 +978,6 @@ old aging stuff:
 - https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 - https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
 
-irx3 and irx5: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6749179/
-methylated dna
-
 vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Research/vmd/vmd-1.3/ug/node132.html
 
 high-speed synchrotron x-ray imaging
@@ -999,11 +996,9 @@ also try again the style transfer, to see how my architecture can deal with such
 
 nixie tubes: https://www.youtube.com/watch?v=wxL4ElboiuA
 
-https://www.nature.com/articles/s41594-020-0479-4
+how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
 
 buy a compressed air can
-
-dive into mlir and llvm again, to see where are they headed, cause that's pretty critical for everything
 
 I don't understand the locking mechanism and chirality that much. Thought experiment seems to invalidate that. So look up for cis and trans 1-4 polyisoprene (natural rubber)
 
@@ -1068,8 +1063,6 @@ chaperonin, huge protein complex where the folding takes place in. Sort of like 
 
 how the hell do biotinylation works??? Like, where does the protein-specific selection happen? streptavidin too, cause this is the labelling mechanism
 
-overarching goal: fast, static and dynamic? See over LLVM deeply first
-
 https://en.wikipedia.org/wiki/Genome-wide_association_study
 
 okay I get how zinc fingers can sort of be used to replace dna segments. So is it that hard to design them? Look for stories from ppl who actually designed them
@@ -1097,8 +1090,6 @@ kroll process
 what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
 
 create a system on the red wire to check how many stations of a particular kind still has resources, so you can be notified when a paticular resource is limiting
-
-try arch? Heard you'll learn a bunch of low level stuff by doing it. Probably not good for my day-to-day stuff, but will give me solid foundation. So do it 2 weeks from now or sth
 
 analyze python's grammar file, and python's integration with other things, like C++ for numpy. And try to build it from source. Try to build pytorch from source too
 
@@ -1132,8 +1123,6 @@ https://riscv.org/community/learn/
 
 jim keller said that if you implement matrix multiply willy nilly using cuda and whatnot, you'll get 10% GPU utilization. Actually try to do this. If successful, then try to find out if I can rebuild the PyTorch stack for swift right from the fundamentals
 
-chappie movie
-
 also see how spring boot really works from the inside out, so I can really get rid of stuff
 
 again with jim keller. He said that the CPU outrageously run things out of order, and do things ahead of time, even after a branching instruction. But I thought every detail on how memory is loaded into registers are contained within the assembly code itself already? How the hell can you change execution flow without also changing what the assembly code does?
@@ -1141,8 +1130,6 @@ again with jim keller. He said that the CPU outrageously run things out of order
 add llvm to resume lmao
 
 how jupyter works underneath again?
-
-build llvm from source sounds terrifying tho
 
 see a little bit over cudnn, and write a series of blog posts about how it works underneath, and show concrete numbers and visualizations to talk about
 
@@ -1152,27 +1139,17 @@ carnot efficiency of the universe?
 
 eric weinstein 3 & 4 again
 
-does linux need autohotkey and whatnot?
-
-tune vimium, or see if it actually contributes something meaningful
-
-electron.js or sth like that. Heard vscode is made using it, so should be simple to do the same for pretty much everything else rite? And that's just the cost of 1 chrome browser tab, so should be quite minimal
-
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
 - file:///home/kelvin/Downloads/David%20A%20Sinclair%20-%20David%20A%20Sinclair%20Lifespan%20Why%20We%20Age%20and%20Why%20We%20Dont%20Have%20To%20with%20Matthew%20D%20LaPlante%202019%20ISBN%20978-1501191978%20(2019).pdf
 - https://www.ncbi.nlm.nih.gov/tools/gbench/tutorial1/
 
-also easy kvm manipulation? Like, just resize the screen automatically if I forces the outside screen to a corner. Also look up the beneath window for dpi and resolution information
+orf3a, tiny gene encoded within the other gene
+ridiculous evolution: s1, orf8, orf6
 
-so right now I use xrandr for scaling screen to correct resolution. What does this actually do underneath?
-https://www.reddit.com/r/Fedora/comments/9feqra/how_to_get_autoresizing_guest_os_display_on/
-https://askubuntu.com/questions/1219817/how-to-set-up-dynamic-screen-sizing-for-a-qemu-windows-10-guest-on-ubuntu-18-04
-"virt-manager resize guest based on host window"
+pcr measuring virus particles, actually I just want to understand the testing method for covid
 
-lol, could it be it's not smooth inside the vm because the outside monitor is also kinda jerky? Try on the old monitor
+try out cython again?
 
-shift super right does nothing
-
-move stuff over tools/, to back them up
+you know what, I'll bediving into python inderlying infrastructure anyway, so compile the damn llvm

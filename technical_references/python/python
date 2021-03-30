@@ -36,3 +36,13 @@ just in case:
 - https://stackoverflow.com/questions/12540290/how-to-organize-multiple-python-files-into-a-single-module-without-it-behaving-l
 - https://packaging.python.org/guides/packaging-namespace-packages/
 - https://stackoverflow.com/questions/448271/what-is-init-py-for
+
+
+
+
+
+C integration:
+- http://scipy-lectures.org/advanced/interfacing_with_c/interfacing_with_c.html
+- cython?
+- "how does python interop with C"
+- https://realpython.com/python-bindings-overview/

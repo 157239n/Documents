@@ -1149,7 +1149,3 @@ orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
 
 pcr measuring virus particles, actually I just want to understand the testing method for covid
-
-try out cython again?
-
-you know what, I'll bediving into python inderlying infrastructure anyway, so compile the damn llvm

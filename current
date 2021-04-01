@@ -1123,8 +1123,6 @@ https://riscv.org/community/learn/
 
 jim keller said that if you implement matrix multiply willy nilly using cuda and whatnot, you'll get 10% GPU utilization. Actually try to do this. If successful, then try to find out if I can rebuild the PyTorch stack for swift right from the fundamentals
 
-also see how spring boot really works from the inside out, so I can really get rid of stuff
-
 again with jim keller. He said that the CPU outrageously run things out of order, and do things ahead of time, even after a branching instruction. But I thought every detail on how memory is loaded into registers are contained within the assembly code itself already? How the hell can you change execution flow without also changing what the assembly code does?
 
 add llvm to resume lmao
@@ -1149,3 +1147,7 @@ orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
 
 pcr measuring virus particles, actually I just want to understand the testing method for covid
+
+heard they have opened up for hs graduates: https://www.tesla.com/careers/search/?country=US&location=Austin&state=TX
+
+https://www.technologyreview.com/2019/08/02/131198/china-squirrel-has-started-a-grand-experiment-in-ai-education-it-could-reshape-how-the/

@@ -19,3 +19,16 @@ mouseDragged(), touchMoved()
 mouseReleased(), touchEnded()
 random(100)
 let x = new Array(20)
+
+
+
+reverse engineering it:
+JOGL interface:
+- GLEventListener interface
+- GLAutoDrawable interface
+- GLCanvas class
+- GLCapabilities class
+- GLProfile class
+- GLJPanel class
+
+actually, looks like Processing is just a pleasant wrapper around JOGL lol. You can technically use JOGL for everything, but the interface is absolutely horrible that you can't do anything anymore

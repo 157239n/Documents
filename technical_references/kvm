@@ -79,3 +79,19 @@ also easy kvm manipulation? Like, just resize the screen automatically if I forc
 https://www.reddit.com/r/Fedora/comments/9feqra/how_to_get_autoresizing_guest_os_display_on/
 https://askubuntu.com/questions/1219817/how-to-set-up-dynamic-screen-sizing-for-a-qemu-windows-10-guest-on-ubuntu-18-04
 "virt-manager resize guest based on host window"
+
+
+ethernet:
+- "kvm ethernet pci passthrough"
+- https://subscription.packtpub.com/book/virtualization_and_cloud/9781788294676/3/ch03lvl1sec37/configuring-pci-passthrough-network
+- https://forums.unraid.net/topic/34507-ethernet-passthrough/
+- load pci-stub for an ethernet controller
+- http://vfio.blogspot.com/2015/05/vfio-gpu-how-to-series-part-3-host.html
+- (mine) https://stackoverflow.com/questions/66925168/cant-pass-ethernet-device-to-a-virtual-machine
+
+
+R465 or higher drivers, Kepler and later for Desktop; Maxwell and later for Notebook
+
+"gpu passthrough you are not currently using a display attached to an nvidia gpu"
+https://gist.github.com/Misairu-G/616f7b2756c488148b7309addc940b28
+"desktop window manager using gpu"

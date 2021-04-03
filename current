@@ -1089,15 +1089,11 @@ kroll process
 
 what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
 
-create a system on the red wire to check how many stations of a particular kind still has resources, so you can be notified when a paticular resource is limiting
-
 analyze python's grammar file, and python's integration with other things, like C++ for numpy. And try to build it from source. Try to build pytorch from source too
 
 analyze processing's workflow, and how it interacts with opengl. There's a bunch of glsl shader files in the core folder, so that should be interesting: https://github.com/processing/processing/blob/master/core/src/processing/opengl/PGraphicsOpenGL.java
 
 binding languages together: https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html#interacting-with-code-binding-cpp
-
-how qt communicates with x server, https://stackoverflow.com/questions/9442532/resources-for-programming-the-linux-x-server
 
 try to create an agent that has some sense of higher dimensions
 
@@ -1108,13 +1104,7 @@ http://www.aosabook.org/en/index.html
 https://caseyhandmer.wordpress.com/2020/02/15/dont-stage-off-starship/
 https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/
 
-what's the actual important parts in the address field? Can I use formatted address alone?
-
-altium designer, pcb stuff, jlcpcb, oshpark
-
 placeId? Autocomplete
-
-ask in r/vfio for guidance on avoiding errors
 
 I really should include a projects section in the resume if space is a lot
 
@@ -1126,6 +1116,7 @@ jim keller said that if you implement matrix multiply willy nilly using cuda and
 again with jim keller. He said that the CPU outrageously run things out of order, and do things ahead of time, even after a branching instruction. But I thought every detail on how memory is loaded into registers are contained within the assembly code itself already? How the hell can you change execution flow without also changing what the assembly code does?
 
 add llvm to resume lmao
+also add JOGL
 
 how jupyter works underneath again?
 
@@ -1134,8 +1125,6 @@ see a little bit over cudnn, and write a series of blog posts about how it works
 I've heard pytorch has a built-in JIT, so what's up with that? JIT for what? Cause CUDA kernel calls don't really need that rite?
 
 carnot efficiency of the universe?
-
-eric weinstein 3 & 4 again
 
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
@@ -1152,8 +1141,13 @@ heard they have opened up for hs graduates: https://www.tesla.com/careers/search
 
 https://www.technologyreview.com/2019/08/02/131198/china-squirrel-has-started-a-grand-experiment-in-ai-education-it-could-reshape-how-the/
 
-R465 or higher drivers, Kepler and later for Desktop; Maxwell and later for Notebook
+actually work out cost of helicopter ownership
 
-"gpu passthrough you are not currently using a display attached to an nvidia gpu"
-https://gist.github.com/Misairu-G/616f7b2756c488148b7309addc940b28
-"desktop window manager using gpu"
+try spice, and plug a new comp directly into a gpu this time
+I mean, like, there's another option. Still use the best CPU spice implementation, and GPU for rendering, then push that to cpu and then to spice? Cause that seems like the only way you can have a screen within another screen
+
+event-driven knowledge seeking seems to be much, much more efficient than just a clean sweep. But you kinda have to seek out turbulence and ready to bite the bullet. See if this fundamental behavior/preference is replicated in RL and whatnot. Also again, have an intuitive understanding of the limits of the networks, and where the bottlenecks are
+
+radar vs ultrasonic? Why both on a tesla?
+
+https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell

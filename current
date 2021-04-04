@@ -448,8 +448,6 @@ https://www.reddit.com/r/Entrepreneur/comments/7madgj/ive_been_hoarding_40_domai
 
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
-simulation demos of firing engines out to space to lower altitude and why it wouldn't work
-
 https://medium.com/@nainaakash012/efficientnet-rethinking-model-scaling-for-convolutional-neural-networks-92941c5bfb95
 domain experts:
 - https://www.kaggle.com/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk
@@ -535,8 +533,6 @@ https://www.fast.ai/2018/04/30/dawnbench-fastai/
 https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html
 http://jalammar.github.io/illustrated-bert/
 
-https://www.amazon.com/Gentle-Introduction-Unqualified-Reservations-ebook/dp/B011DPHUE4
-
 create alternate endpoints that make sense, then present it to them
 
 how about creating a lab system to automatically play with chemicals somewhere
@@ -553,11 +549,6 @@ attention
 awareness
 
 look up __all__ again, to stop polluting the namespace
-
-fastwebhook, fastcore.utils and nbdev again
-- https://github.com/fastai/fastcore/blob/master/fastcore/foundation.py#L43
-- https://github.com/fastai/nbdev/tree/master/nbdev
-- https://www.fast.ai/2019/12/02/nbdev/
 
 dog whisperer
 
@@ -696,8 +687,6 @@ simulate synthetic aperture radar, start from scott manley's vid
 
 simulate a simple pid, with initial state at 0 and new state at 1. Still worse than the intended thing, but just to get this out quickly
 
-create p5js graph library
-
 https://en.wikipedia.org/wiki/Schlenk_line
 
 genome enrichment, epigenomic enrichment, gene set enrichment analysis
@@ -721,8 +710,6 @@ full genome sequencing price, https://www.cnbc.com/2019/07/01/for-600-veritas-ge
 mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrepreneurship_i_took_an_idea_to_mass/
 
 borg warner, cost analysis
-
-get that simple mic?
 
 https://en.wikipedia.org/wiki/Stainless_steel
 https://en.wikipedia.org/wiki/Carbon_nanotube
@@ -780,10 +767,6 @@ anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars
 
 antenna gain
 https://joininteract.com/fellowship/
-
-squarespace again? how to integrate with that?
-
-magento visit? also buy iphone and test out react native on that, or figure out kvm really deeply so that things will be indistinguishable from there
 
 how to actually control a stepper motor??? This is the high power electronics I was talking about
 
@@ -1037,8 +1020,6 @@ actually attempt to build a computer from scratch in factorio, so as to understa
 
 invest in rocket lab
 
-find a shared office space and see if prices are right
-
 https://www.mt.com/vn/vi/home/products/Laboratory_Analytics_Browse/pH-meter/sensor/ion-selective-electrode.html
 
 uniprot
@@ -1091,8 +1072,6 @@ what's up with system V? How does that compare with init? By extension, dig into
 
 analyze python's grammar file, and python's integration with other things, like C++ for numpy. And try to build it from source. Try to build pytorch from source too
 
-analyze processing's workflow, and how it interacts with opengl. There's a bunch of glsl shader files in the core folder, so that should be interesting: https://github.com/processing/processing/blob/master/core/src/processing/opengl/PGraphicsOpenGL.java
-
 binding languages together: https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html#interacting-with-code-binding-cpp
 
 try to create an agent that has some sense of higher dimensions
@@ -1137,11 +1116,7 @@ ridiculous evolution: s1, orf8, orf6
 
 pcr measuring virus particles, actually I just want to understand the testing method for covid
 
-heard they have opened up for hs graduates: https://www.tesla.com/careers/search/?country=US&location=Austin&state=TX
-
 https://www.technologyreview.com/2019/08/02/131198/china-squirrel-has-started-a-grand-experiment-in-ai-education-it-could-reshape-how-the/
-
-actually work out cost of helicopter ownership
 
 try spice, and plug a new comp directly into a gpu this time
 I mean, like, there's another option. Still use the best CPU spice implementation, and GPU for rendering, then push that to cpu and then to spice? Cause that seems like the only way you can have a screen within another screen
@@ -1151,3 +1126,7 @@ event-driven knowledge seeking seems to be much, much more efficient than just a
 radar vs ultrasonic? Why both on a tesla?
 
 https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell
+https://en.wikipedia.org/wiki/Reprogramming
+https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
+
+gbench marge views?

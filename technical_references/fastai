@@ -1,0 +1,5 @@
+
+fastwebhook, fastcore.utils and nbdev again
+- https://github.com/fastai/fastcore/blob/master/fastcore/foundation.py#L43
+- https://github.com/fastai/nbdev/tree/master/nbdev
+- https://www.fast.ai/2019/12/02/nbdev/

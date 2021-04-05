@@ -4,3 +4,8 @@ many views:
 - search
 - task
 
+fasta file formats:
+- .fas
+- .fa
+- .faa: typically used for amino acids -> protein file
+- .fna: nucleotide (aka DNA or RNA) AND protein sequence alignment

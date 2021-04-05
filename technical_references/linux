@@ -237,3 +237,6 @@ wmctrl -l
 copying last command to clipboard: fc -ln -1 | xsel --clipboard, can set as copy's alias
 
 watches file accesses: inotifywait -m /tmp
+
+systemd-analyze time
+systemd-analyze blame

@@ -1130,3 +1130,51 @@ https://en.wikipedia.org/wiki/Reprogramming
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
 gbench marge views?
+
+supercomputer/cluster stuff that I don't really understand:
+- "mpi rank"
+- https://stackoverflow.com/questions/5399110/what-is-the-difference-between-ranks-and-processes-in-mpi
+- https://www.codingame.com/playgrounds/349/introduction-to-mpi/mpi_comm_world-size-and-ranks
+- https://www.open-mpi.org/doc/v4.0/man3/MPI_Comm_rank.3.php
+- https://wgropp.cs.illinois.edu/courses/cs598-s15/lectures/lecture22.pdf
+
+how the hell can heme be a protein?
+
+damn, quick visualization tools online for specific proteins kinda sucks
+
+so, all the stuff in biology has to sort of be resilient to tiny changes in the DNA. Like, at least something like 70-90% of mutations (SNV) won't affect how it works at all (<0.001% for engineered systems. Like, if you change 1 bit about code, the program won't compile at all). But there has to also be a massively parallel compute engine to actually make it work. Luckily there are literally trillions and more quantum computers just doing all the data crunching called organisms/viruses. So analyze the compute scale we're talking about here?
+
+why pfizer needs to be really cold? I mean, I've heard that normally, specific proteins within the cells break mrna down. Dna is ridiculously strong (single strand can survive in boiling water just fine), so they don't break at all. So may be just don't include in the proteins that break them down? May be it's hard to separate proteins? But like seriously, that problem seems really lame that we should be able to do it by now
+
+also how does the intelligence cells (macrophage) actually determines who's us and who's the enemy? Like, how does that association even happen? Cause like, this is already a challenge in RL systems
+
+also check claim that coding regions have more GC-content, and longer ones have even more
+
+how pcr tests work again? And why are they so god damn expensive?
+
+how to know resonance frequency of a static structure? Are there general guidelines?
+
+see how vmd interfaces with the embedded tcl interpreter, so that I can hopefully do the same one day with python (https://docs.python.org/3/extending/embedding.html)
+
+so, let's say I have a gene file, then a transcription of that, and a translation of that as separate files. How to I merge them together? SOD1_datasets file seems like it will be impossible, cause like, there are no spacing information inside of the mrna and protein files
+
+actually, shader pipeline seems approachable now, so dig into it at a later time. Both processing and vmd has those shader programs, and they really don't look that intimidating
+
+https://en.wikipedia.org/wiki/Structural_genomics
+https://en.wikipedia.org/wiki/Structural_biology
+
+vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those should be interesting
+
+ncbi also has some kind of selection language, so see over that: 21[Chr] AND "Homo sapiens"[Organism] AND ("has ccds"[Properties] AND alive[prop]) 
+
+also why the hell are there so many superoxide dismutase? Shouldn't 1 be enough tho? And again, they appear all over the place
+
+again, how do inverters work? And like, it seems like I have to try to match the grid's frequency and phase, or else it might blow it up. If basic electronics are worked out to a reasonable level of confidence, I can consume as much energy as I wanted and not feel guilty lol
+
+actually work out the cost to lay out landlines across a country, cause like, rural parts of VN still seems to have internet connection just fine
+
+see over NC sequences, and see if they have gap information or not
+
+see how to do a local blast
+
+try blast on ncbi's website, cause I suspect the problem is with mint itself, with some invalid URL requests

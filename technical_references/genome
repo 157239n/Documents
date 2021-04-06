@@ -10,3 +10,7 @@ https://www.sciencedirect.com/science/article/pii/S1525001616326818
 - http://web.mit.edu/manoli/
 - lots of snippets: http://web.mit.edu/manoli/www/inthenews.html
 - http://compbio.mit.edu/publications/139_Claussnitzer_NEJM_15.pdf
+
+so, Needleman-Wunsch for global alignment (easy to understand why as negative scores are possible), and Smith-Waterman for local alignment. But I mean, heard BLAST is used for local alignment, so is Smith-Waterson actually in use anymore?
+
+so sort of understood how blast works, but do come back at a later time: https://en.wikipedia.org/wiki/BLAST_(biotechnology)

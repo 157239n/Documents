@@ -1163,7 +1163,7 @@ actually, shader pipeline seems approachable now, so dig into it at a later time
 https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
 
-vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those should be interesting
+vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those should be interesting. gbench's: https://www.ncbi.nlm.nih.gov/tools/gbench/releasenotes/
 
 ncbi also has some kind of selection language, so see over that: 21[Chr] AND "Homo sapiens"[Organism] AND ("has ccds"[Properties] AND alive[prop]) 
 
@@ -1178,3 +1178,9 @@ see over NC sequences, and see if they have gap information or not
 see how to do a local blast
 
 try blast on ncbi's website, cause I suspect the problem is with mint itself, with some invalid URL requests
+
+seems like a nice primer: https://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+try to align 2 serparate superoxide dismutase, in regular python
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/

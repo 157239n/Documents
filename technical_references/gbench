@@ -9,3 +9,7 @@ fasta file formats:
 - .fa
 - .faa: typically used for amino acids -> protein file
 - .fna: nucleotide (aka DNA or RNA) AND protein sequence alignment
+
+ip: 130.14.29.112
+
+https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/doxyhtml/index.html

@@ -11,3 +11,7 @@ git mv <file1> <file2>, moves inner representation and tracking from file1 to fi
 
 git log --graph HEAD~3..HEAD
 git reflog show
+
+
+
+git config credential.helper store

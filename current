@@ -1190,3 +1190,25 @@ try pyanodons
 so I heard that the payments settlement takes place later than the agreement, so why the hell is that? And why are there layered structures in the economic model?
 
 alright, so coffee stuff
+half life: 3-7 hours, decrease 30-50% in male smokers
+pregnant woman: <200mg/day = 2 cups instant coffee = 0.5-2 cups fresh coffee
+normal ppl: up to 400mg appears to be okay
+ld50: 150mg/kg
+
+while doing pyanodon, try to pay attention to a few fundamental questions:
+- how to balance figuring out the rules of the game, the time taken, and throughput/effectiveness produced? Right now, the general way is to at least have a grasp of what things are like, and see their natural language description, and match that with reality, to see whether it's actually an important process in a lot of things. Hard start situations in AI systems seems a lot harder tho. Once basic mechanism is worked out, see if I can get rid of side effects, as much as possible (multiple elements in, 1 element out). If side effects (multiple elements out possible), then figure out at least 2 mechanism with those 2 side effects, but one is more and the other is less, so as to have a speed dial on everything. And try to figure out loops for the side effect
+
+attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
+
+wait, how does grid bases work before train limits?
+
+nexys a7 for experimental fpga, artix 7 xc7a100t, can be configured using jtag
+- https://store.digilentinc.com/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/
+- https://reference.digilentinc.com/start
+- https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/reference-manual
+- https://www.xilinx.com/support/documentation/data_sheets/ds180_7Series_Overview.pdf
+- https://reference.digilentinc.com/_media/reference/programmable-logic/nexys-4-ddr/nexys-4-ddr_sch.pdf
+
+why 1/2 term in capacitor energy? Think about springs and energy that they have
+
+how does an inverter actually works? Like, it seems like options for solar to AC means I HAVE to disconnect from the grid entirely, or else I have to make it magnetically coupled with the rest of the system, which seems really hard for a system that's digital in nature. So see how ppl are doing it

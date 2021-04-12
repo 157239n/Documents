@@ -3,6 +3,8 @@ Or, mysql --user=admin --password
 
 data location: /var/lib/mysql
 
+pager less -S, for scrolling nicely in terminals
+
 show databases;
 create database db_name;
 drop database db_name;
@@ -57,7 +59,7 @@ GRANT <permission> ON <database name>.table TO 'user'@'localhost'
 - update
 GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
 SHOW GRANTS FOR 'testuser'@'localhost';
-
+DROP USER `testuser`;
 
 Integrating with PHP
 

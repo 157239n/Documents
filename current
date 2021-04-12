@@ -1212,3 +1212,5 @@ nexys a7 for experimental fpga, artix 7 xc7a100t, can be configured using jtag
 why 1/2 term in capacitor energy? Think about springs and energy that they have
 
 how does an inverter actually works? Like, it seems like options for solar to AC means I HAVE to disconnect from the grid entirely, or else I have to make it magnetically coupled with the rest of the system, which seems really hard for a system that's digital in nature. So see how ppl are doing it
+
+https://spacexfleet.com/

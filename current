@@ -1202,15 +1202,30 @@ attention mechanism. Great that the basic system is working, but what is the fun
 
 wait, how does grid bases work before train limits?
 
-nexys a7 for experimental fpga, artix 7 xc7a100t, can be configured using jtag
-- https://store.digilentinc.com/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/
-- https://reference.digilentinc.com/start
-- https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/reference-manual
-- https://www.xilinx.com/support/documentation/data_sheets/ds180_7Series_Overview.pdf
-- https://reference.digilentinc.com/_media/reference/programmable-logic/nexys-4-ddr/nexys-4-ddr_sch.pdf
-
 why 1/2 term in capacitor energy? Think about springs and energy that they have
 
 how does an inverter actually works? Like, it seems like options for solar to AC means I HAVE to disconnect from the grid entirely, or else I have to make it magnetically coupled with the rest of the system, which seems really hard for a system that's digital in nature. So see how ppl are doing it
 
 https://spacexfleet.com/
+
+oxygen not included materials experimentation and not steady state in petroleum boiler
+
+shopping for stuff:
+- glue gun (and glue rods), check existing
+- valve
+- power brick
+- transistors, with mosfet considerations, check existing
+- breadboard, check existing
+- nice "official" breadboard (not custom pcb)
+- tubing (for valve)
+- pressure guage
+- hinge (for opening stuff)
+- small fans (for airflow), check existing
+- zip ties, a lot of them, to tie related sensors together, for wire management
+- power measuring tool, and multimeter, check existing
+
+check cpu over clocking config in bios
+
+cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often?
+
+raspberry pi screen emulator?

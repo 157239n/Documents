@@ -1000,10 +1000,6 @@ rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who a
 
 also, how can you sort of figure out what the reactants are going to be? Like, just record a bunch of properties, and devise a bunch of hypothesis?
 
-also buy basic atmospheric sensors, to at least have a metric to understand stuff
-
-actually analyze and simulate forces in buildings and dynamic systems, to verify a lot of the theory behind it
-
 also what's the cost of galvanized steel vs stainless steel? Like, stainless steel seems much more straightforward, and lasts a long time, so why does galvanized steel even exists?
 
 what actually stops a regular person from actually building an oil refinery? Like, it's just a distillation column that you have to manage pressures and whatnot right? So what's up?
@@ -1076,7 +1072,7 @@ binding languages together: https://emscripten.org/docs/porting/connecting_cpp_a
 
 try to create an agent that has some sense of higher dimensions
 
-basic energy computer analysis again
+basic energy computer analysis again. flip flop high resistor value: 1/(1.4*C*f), capacitor consumption: CV^2 joules/cycle. Not sure about individual computations tho, and not sure how this's supposed to work in GPUs
 
 http://www.aosabook.org/en/index.html
 
@@ -1096,6 +1092,7 @@ again with jim keller. He said that the CPU outrageously run things out of order
 
 add llvm to resume lmao
 also add JOGL
+also xilinx vivado
 
 how jupyter works underneath again?
 
@@ -1202,13 +1199,7 @@ attention mechanism. Great that the basic system is working, but what is the fun
 
 wait, how does grid bases work before train limits?
 
-why 1/2 term in capacitor energy? Think about springs and energy that they have
-
-how does an inverter actually works? Like, it seems like options for solar to AC means I HAVE to disconnect from the grid entirely, or else I have to make it magnetically coupled with the rest of the system, which seems really hard for a system that's digital in nature. So see how ppl are doing it
-
 https://spacexfleet.com/
-
-oxygen not included materials experimentation and not steady state in petroleum boiler
 
 shopping for stuff:
 - glue gun (and glue rods), check existing
@@ -1223,6 +1214,8 @@ shopping for stuff:
 - small fans (for airflow), check existing
 - zip ties, a lot of them, to tie related sensors together, for wire management
 - power measuring tool, and multimeter, check existing
+- actual spray head
+- basic atmospheric sensors, to at least have a metric to understand stuff
 
 check cpu over clocking config in bios
 

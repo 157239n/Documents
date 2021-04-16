@@ -1222,3 +1222,5 @@ check cpu over clocking config in bios
 cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often?
 
 raspberry pi screen emulator?
+
+fluidics again

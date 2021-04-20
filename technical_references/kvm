@@ -95,3 +95,6 @@ R465 or higher drivers, Kepler and later for Desktop; Maxwell and later for Note
 "gpu passthrough you are not currently using a display attached to an nvidia gpu"
 https://gist.github.com/Misairu-G/616f7b2756c488148b7309addc940b28
 "desktop window manager using gpu"
+
+try spice, and plug a new comp directly into a gpu this time
+I mean, like, there's another option. Still use the best CPU spice implementation, and GPU for rendering, then push that to cpu and then to spice? Cause that seems like the only way you can have a screen within another screen

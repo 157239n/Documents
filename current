@@ -774,8 +774,6 @@ buy a cheap iphone to test things out, and to know the infrastructure well enoug
 
 and how to do the packaging stuff and sending stuff to usps???
 
-industrial design
-
 etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
 
 https://en.wikipedia.org/wiki/Gas_laser
@@ -839,7 +837,6 @@ goals for this trip?
 - try to build robot arms that can do things quickly, and have a good internal model of reality
 - another posibility for sequencing techniques is to have a sort of ribosome that enlarges the base pairs, so we can see them exactly with a regular microscope
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
-- consider buying a 3d printer
 - figure out all reactions in seablock
 - attempt to make a kiln
 
@@ -853,8 +850,6 @@ https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)
 recalculate fundamental energy costs again, this time with a focus of training RL agents for molecular bio's degrees of freedom. Figure out if Tesla's 10TWh/yr throughput is enough
 
 Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/
-
-experiment with ksp map, with specific coordinates
 
 biowin
 
@@ -908,13 +903,9 @@ so far, this seems really, really hard. But giving up is for pussies, so play fo
 
 https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/
 
-make ksp hop good enough for 1/4 planet hops
-
 do factorio bad apple track
 
 this company offers a virtual tour, so check it out: https://www.sageglass.com/en/article/what-electrochromic-glass
-
-sandy munroe says that casting process can take 16ms??? How so? And how much faster do techniques like strand casting provide?
 
 probably not needed, but calculate cost of hydrogen electrolysis as fuel, and compare that to just ordering methane
 
@@ -949,8 +940,6 @@ crystal violet seems to be a really popular staining method. It's also used in g
 
 https://en.wikipedia.org/wiki/Virus_quantification, pfu/ml
 https://en.wikipedia.org/wiki/Fluid_catalytic_cracking
-
-oxygen not included, for an efficient diesel generator. This also to test out how to actually manufacture these, and what are the alternative designs
 
 https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
 
@@ -1003,8 +992,6 @@ also, how can you sort of figure out what the reactants are going to be? Like, j
 also what's the cost of galvanized steel vs stainless steel? Like, stainless steel seems much more straightforward, and lasts a long time, so why does galvanized steel even exists?
 
 what actually stops a regular person from actually building an oil refinery? Like, it's just a distillation column that you have to manage pressures and whatnot right? So what's up?
-
-so it appears the reason why a lot of instruments are expensive is because they're made of steel, and that comes with a lot of machining costs. So see if 3d printed parts can actually surpasses that
 
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
 
@@ -1079,8 +1066,6 @@ http://www.aosabook.org/en/index.html
 https://caseyhandmer.wordpress.com/2020/02/15/dont-stage-off-starship/
 https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/
 
-placeId? Autocomplete
-
 I really should include a projects section in the resume if space is a lot
 
 https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+1T2021/home
@@ -1114,9 +1099,6 @@ ridiculous evolution: s1, orf8, orf6
 pcr measuring virus particles, actually I just want to understand the testing method for covid
 
 https://www.technologyreview.com/2019/08/02/131198/china-squirrel-has-started-a-grand-experiment-in-ai-education-it-could-reshape-how-the/
-
-try spice, and plug a new comp directly into a gpu this time
-I mean, like, there's another option. Still use the best CPU spice implementation, and GPU for rendering, then push that to cpu and then to spice? Cause that seems like the only way you can have a screen within another screen
 
 event-driven knowledge seeking seems to be much, much more efficient than just a clean sweep. But you kinda have to seek out turbulence and ready to bite the bullet. See if this fundamental behavior/preference is replicated in RL and whatnot. Also again, have an intuitive understanding of the limits of the networks, and where the bottlenecks are
 
@@ -1180,8 +1162,6 @@ try to align 2 serparate superoxide dismutase, in regular python
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/
 
-how it's made coffee makers
-
 try pyanodons
 
 so I heard that the payments settlement takes place later than the agreement, so why the hell is that? And why are there layered structures in the economic model?
@@ -1197,27 +1177,20 @@ while doing pyanodon, try to pay attention to a few fundamental questions:
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
 
-wait, how does grid bases work before train limits?
-
 https://spacexfleet.com/
-
-shopping for stuff:
-- glue rods
-- valve
-- power brick
-- transistors, with mosfet considerations, check existing
-- breadboard, check existing
-- nice "official" breadboard (not custom pcb)
-- tubing (for valve)
-- pressure guage
-- hinge (for opening stuff)
-- zip ties, a lot of them, to tie related sensors together, for wire management
-- power measuring tool, and multimeter, check existing
-- actual spray head
-- basic atmospheric sensors, to at least have a metric to understand stuff
 
 check cpu over clocking config in bios
 
 cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often?
 
 fluidics again
+
+what does it take to build a custom fab lab?
+
+actually capture a bit flip in memory, to measure the rate. Others reported 1 error/(h * GB). memtest86 already did this?
+
+seems like everywhere I go, the concept of JIT compilation crops up all the time. And the compiler infrastructure where layers of compilers perform translation between different domains, just because separating a task into multiple domains can help accelerate the technology. This is how you beat the S curve and make it into an exponential curve. The domains has to sort of be completely separate, and communicates with each other using a simple interface only, and domains spaced apart by another domain should not know each other at all
+
+can't you like, heat treat 3d printed metal parts?
+
+backend fundamentals, add a note by saying that a lot of stuff don't really make sense, so just suggest ideas right away to improve code quality and whatnot

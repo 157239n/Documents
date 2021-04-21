@@ -1181,9 +1181,7 @@ https://spacexfleet.com/
 
 check cpu over clocking config in bios
 
-cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often?
-
-fluidics again
+cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often? Also sometimes it even bossts to 5GHz???? How?
 
 what does it take to build a custom fab lab?
 
@@ -1194,3 +1192,5 @@ seems like everywhere I go, the concept of JIT compilation crops up all the time
 can't you like, heat treat 3d printed metal parts?
 
 backend fundamentals, add a note by saying that a lot of stuff don't really make sense, so just suggest ideas right away to improve code quality and whatnot
+
+so seems like, there's a hard limit on performance for each process node. So, intel's 'innovation' at 14nm is really just trying to squeeze out performance to get to this ideal? See if the actual performance numbers reflect that

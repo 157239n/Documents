@@ -1195,22 +1195,4 @@ backend fundamentals, add a note by saying that a lot of stuff don't really make
 
 so seems like, there's a hard limit on performance for each process node. So, intel's 'innovation' at 14nm is really just trying to squeeze out performance to get to this ideal? See if the actual performance numbers reflect that
 
-so, deconstructing vendor app?
-- read through the code to roughly knows what it's like
-- identify interesting infrastructure components
-- try to do a vanilla app and test it on my phone/emulator
-- try to actually run the vendor app on my phone/emulator
-meanwhile, deconstruct as much blackboxes as possible
-
-also how updates work?
-
-https://www.hexnode.com/mobile-device-management/help/how-to-allow-auto-update-of-selected-apps-from-google-play-store/
-https://developer.android.com/guide/playcore/in-app-updates
-https://support.google.com/googleplay/answer/113412?hl=en
-https://www.hexnode.com/mobile-device-management/help/how-to-allow-auto-update-of-selected-apps-from-google-play-store/
-https://stackoverflow.com/questions/34251575/how-to-autoupdate-android-app-without-playstore-like-facebook-app-or-any-contes
-https://support.google.com/googleplay/android-developer/answer/10355942
-
-https://bogdan-lyashenko.github.io/Under-the-hood-ReactJS/
-
-https://developer.android.com/guide
+go over tier zoo again

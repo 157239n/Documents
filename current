@@ -1196,3 +1196,9 @@ backend fundamentals, add a note by saying that a lot of stuff don't really make
 so seems like, there's a hard limit on performance for each process node. So, intel's 'innovation' at 14nm is really just trying to squeeze out performance to get to this ideal? See if the actual performance numbers reflect that
 
 go over tier zoo again
+
+die size vs performance calculations? https://www.alternatewars.com/BBOW/Computing/Computing_Power.htm, https://www.techpowerup.com/forums/threads/processor-gflops-compilation.94721/
+
+what actually happens under the hood with cython?
+
+CLC Genomics Workbench: https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/User_Manual.pdf

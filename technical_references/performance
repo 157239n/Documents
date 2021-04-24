@@ -1,0 +1,15 @@
+
+10700k, advertised performance: 30 GFLOPS/core
+
+practical performance:
+C loop, dummy sum: 0.6 GFLOPS
+Python loop, dummy sum: 12 MFLOPS
+C loop, buffered writes: 0.1 GFLOPS
+Python loop, np buffered writes: 0.1 GFLOPS
+
+expectations:
+- 50x less performance than advertised, for C
+- 50x less performance than C, for Python
+
+sequence alignment:
+- 18%, 82s

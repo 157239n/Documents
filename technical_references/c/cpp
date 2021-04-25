@@ -238,3 +238,7 @@ sqrt(-1);
 if (errno == EDOM) // EDOM for error in the domain, ERANGE for error in the range
     cout << "sqrt() not defined for negative number"
 
+
+
+auto glambda = [](auto a, auto&& b) { return a < b; };
+

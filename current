@@ -1202,3 +1202,15 @@ die size vs performance calculations? https://www.alternatewars.com/BBOW/Computi
 what actually happens under the hood with cython?
 
 CLC Genomics Workbench: https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/User_Manual.pdf
+
+raspberry pi don't go to sleep
+
+jupyter notebook has a C kernel, so check that out. Apparently, it's just a C++ interpreter lmao. Look up "cling" and "xeus": https://github.com/jupyter-xeus/xeus-cling/tree/4b06e191fa6efe6850f024f583ade3824b7ea5e2
+
+jupyter also seems to have a fasta viewer, so see over its capabilities. https://www.nature.com/articles/nature22402
+
+ipython says it can do lots of multithreading operations: https://ipython.org/ipython-doc/3/overview.html
+
+jupyter display current memory usages and whatnot
+
+how to actually display a graph of page swaps

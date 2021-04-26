@@ -1,0 +1,4 @@
+
+%load_ext cython, for importing
+%%cython, for compilation
+%%cython --annotate, for analysis

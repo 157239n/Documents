@@ -1158,8 +1158,6 @@ see how to do a local blast
 
 seems like a nice primer: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
-try to align 2 serparate superoxide dismutase, in regular python
-
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/
 
 try pyanodons
@@ -1199,13 +1197,9 @@ go over tier zoo again
 
 die size vs performance calculations? https://www.alternatewars.com/BBOW/Computing/Computing_Power.htm, https://www.techpowerup.com/forums/threads/processor-gflops-compilation.94721/
 
-what actually happens under the hood with cython?
-
 CLC Genomics Workbench: https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/User_Manual.pdf
 
 raspberry pi don't go to sleep
-
-jupyter notebook has a C kernel, so check that out. Apparently, it's just a C++ interpreter lmao. Look up "cling" and "xeus": https://github.com/jupyter-xeus/xeus-cling/tree/4b06e191fa6efe6850f024f583ade3824b7ea5e2
 
 jupyter also seems to have a fasta viewer, so see over its capabilities. https://www.nature.com/articles/nature22402
 
@@ -1214,3 +1208,24 @@ ipython says it can do lots of multithreading operations: https://ipython.org/ip
 jupyter display current memory usages and whatnot
 
 how to actually display a graph of page swaps
+
+also how to open and view large files?
+
+ipyparallel
+
+how does cython interact with complex objects? like np.array or torch.tensor? Memory views, of course, but besides those regular, normal stuff, you basically can't do that, so you're better off doing regular ass functions
+
+how fast is pcie4 again? "pcie x16 4.0 speed", compare this to the freq limits in cpus
+
+where is the module name definition? What's a .pyx file hierarchy looks like?
+
+numba also seems interesting. Basically a JIT, but for a limited subset of python
+- http://people.duke.edu/~ccc14/sta-663-2016/18D_Cython.html
+- http://people.duke.edu/~ccc14/sta-663-2016/18C_Numba.html
+
+also benchmark pypy, as it's also a JIT
+
+https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science_and_ml_resources/
+https://mit6874.github.io/
+
+killer app for cython+cudnn: sparse CNN

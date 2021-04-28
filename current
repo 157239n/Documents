@@ -1229,3 +1229,18 @@ https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science
 https://mit6874.github.io/
 
 killer app for cython+cudnn: sparse CNN
+
+so the unreliable thing is actually the reverse ssh tunnel. So find ways to make it super responsive
+
+wpa_supplicant.conf, https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
+
+devices: 
+- 84:C0:EF:37:56:59: samsung tv
+- 88:D5:0C:C4:72:C8: oppo
+- 0C:96:E6:12:26:FA: pi?
+- EC:81:93:12:20:86
+- 6B:A8:B2:16:43:F1
+- 7F:AA:65:BD:BC:C9
+- D6:75:D8:1F:29:7C: buzz thingy. This has to be remembered by the phone
+
+https://en.wikipedia.org/wiki/Signal_strength_in_telecommunications

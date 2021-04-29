@@ -1235,6 +1235,7 @@ so the unreliable thing is actually the reverse ssh tunnel. So find ways to make
 wpa_supplicant.conf, https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
 
 devices: 
+- C8:E2:65:FF:2F:3E: mint-2
 - 84:C0:EF:37:56:59: samsung tv
 - 88:D5:0C:C4:72:C8: oppo
 - 0C:96:E6:12:26:FA: pi?
@@ -1244,3 +1245,9 @@ devices:
 - D6:75:D8:1F:29:7C: buzz thingy. This has to be remembered by the phone
 
 https://en.wikipedia.org/wiki/Signal_strength_in_telecommunications
+
+to verify, change ssid of wifi to something different, then change back, to see if phone and pi can restore the connection right away
+
+so I thought clock signal is what's the limiting factor in CMOS circuitry, cause there's the CV^2f equation for dynamic power in that paper. But appears that broadcasting signals are also really power hungry and sort of important as well. So central question: does clock speed or signal intensity matter more in low energy bluetooth? May be good question: "power dissipation of CMOS circuits". "CC2564C" as bluetooth sample product
+
+do /tools/path, and move mission critical stuff there

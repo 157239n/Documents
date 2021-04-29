@@ -1,0 +1,7 @@
+
+hciconfig -a hci0, I'm guessing for comp's bluetooth controller ("bluetooth adapter")
+btmon
+
+acronyms:
+- hci: host controller interface
+- btsnoop: file format

@@ -5,3 +5,9 @@ btmon
 acronyms:
 - hci: host controller interface
 - btsnoop: file format
+- acl: async packets (not access control list)
+- sco: sync packets
+- ssp: serial port profile, or sim access profile
+
+BluetoothDevice.createRfcommSocketToServiceRecord(UUID); // create client
+BluetoothAdapter.listenUsingRfcommWithServiceRecord(String, UUID); // create server

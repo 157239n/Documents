@@ -4,3 +4,6 @@ nparray.reshape(5, 3)
 np.ones([2, 3, 5])
 np.exp(x)
 np.arange(-2, 2, 0.01)
+
+np.byte_bounds(a), for memory address boundaries
+np.may_share_memory(a, b), for detecting copy or view

@@ -2,3 +2,34 @@
 %load_ext cython, for importing
 %%cython, for compilation
 %%cython --annotate, for analysis
+%%cython --force, for forcing recompilation even if code doesn't change
+
+ctypedef fused my_type:
+	int
+	double
+	long long
+
+@cython.boundscheck(False)
+@cython.wraparound(False)
+def compute(my_type[:, ::1] array_1, my_type[:, ::1] array_2, my_type a, my_type b, my_type c):
+	pass
+
+
+
+
+from libc.math cimport sin as m_sin
+cpdef float sin(float x):
+	return m_sin(x)
+
+
+
+
+# distutils: extra_compile_args=-fopenmp
+# distutils: extra_link_args=-fopenmp
+cimport cython
+from cython.parallel import prange
+def something(x) nogil:
+	pass
+for x in prange(1000000, nogil=True):
+	something(x)
+

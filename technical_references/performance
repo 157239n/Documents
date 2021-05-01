@@ -1,11 +1,16 @@
 
 10700k, advertised performance: 30 GFLOPS/core
 
+SIMD option: -march=native
+
 practical performance:
-C loop, dummy sum: 0.6 GFLOPS
-Python loop, dummy sum: 12 MFLOPS
-C loop, buffered writes: 0.1 GFLOPS
-Python loop, np buffered writes: 0.1 GFLOPS
+- dummy sum: 2 nested for loops. Inner one lots, outer one not as much, progress printing outer
+	- C: 6 GFLOPS (0.6 GFLOPS unoptimized). SIMD: 20 GFLOPS
+	- Python: 12 MFLOPS
+	- Cython: 2.6 GFLOPS. SIMD: 5 GFLOPS
+- buffered writes: 2 nested for loops, writes into a buffer space
+	- C: 0.1 GFLOPS
+	- Python: 9.3 MFLOPS
 
 expectations:
 - 50x less performance than advertised, for C

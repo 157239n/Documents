@@ -398,3 +398,5 @@ experiment with ksp map, with specific coordinates
 make ksp hop good enough for 1/4 planet hops
 
 https://root.cern/
+
+also benchmark pypy, as it's also a JIT

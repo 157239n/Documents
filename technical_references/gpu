@@ -40,3 +40,18 @@ nvidia pcat tool, for logging power consumption
 specviewperf
 
 all ampere based cards support sr-iov, so basically I can share GPU with multiple VMs. But the feature is locked for non-enterprise users
+
+
+
+
+SM: streaming multiprocessor, each with:
+- 32 cuda cores
+	- 1 dispatch port
+	- 1 operand collector
+	- 1 fp unit, 1 int unit
+	- 1 result queue
+- 2 warp scheduler & dispatch unit
+
+
+
+

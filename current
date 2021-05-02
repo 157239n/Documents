@@ -1235,9 +1235,14 @@ https://blog.kevindoran.co/bluetooth-programming-with-python-3/
 https://developer.android.com/guide/topics/connectivity/bluetooth
 https://stackoverflow.com/questions/13450406/how-to-receive-serial-data-using-android-bluetooth
 
--march=name
--march=cpu (C6X options)
--march=gpu (AMD GCN options)
--march=arch (C-SKY options)
-
 what's up with 2 threads per core thingy? How can they be like, "1 core" if they can do different things? Where are the clock domains?
+
+do gpus have different level caches?
+
+ksp man, do really badass navigation and control, while reading rocket propulsion elements
+
+"die and block diagram"
+
+change ppa back to singapore
+
+does signals from the gpu go to the screen directly? or through the cpu? seems like it goes to the screen directly right? Cause like, I plug the screen into the gpu directly

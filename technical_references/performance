@@ -9,7 +9,7 @@ practical performance:
 	- Python: 12 MFLOPS
 	- Cython: 2.6 GFLOPS. SIMD: 5 GFLOPS
 - buffered writes: 2 nested for loops, writes into a buffer space
-	- C: 0.1 GFLOPS
+	- C: 0.13 GFLOPS (same for unoptimized). Mainly because writing to a large buffer means the bottleneck here is actually memory latency. My RAM is DDR4 3200GHz, CL 15, so fits right within that calculation
 	- Python: 9.3 MFLOPS
 
 expectations:
@@ -18,3 +18,20 @@ expectations:
 
 sequence alignment:
 - 18%, 82s
+
+processors:
+- 10700k:
+	- size: die (200 mm^2), package (1400 mm^2), 14nm process, 3B transistors
+	- 1.3 TFLOPs, others say 640 GFLOPs
+	- TDP: 95W - 125W
+	- clock: 3.8 - 5.1 GHz
+	- speed: bus (8 GT/s), memory (45.8 GB/s)
+	- cache: 512 KB - 2 MB - 16 MB
+	- pcie: 16 lanes 3.0
+- gtx 980:
+	- size: die (400 mm^2), 28nm process, 5B transistors
+	- 5 TFLOPS
+- 3950x:
+	- size: die (74 mm^2), 7nm process, 4B transistors
+	- cache: 1 MB - 8 MB - 64 MB
+	- 3 TFLOPs

@@ -31,6 +31,11 @@ processors:
 - gtx 980:
 	- size: die (400 mm^2), 28nm process, 5B transistors
 	- 5 TFLOPS
+- r9 290:
+	- size: 28nm process, 6B transistors
+- rtx 3080:
+	- size: die (630 mm^2), 8nm process, 30B transistors
+	- 230 TFLOPs
 - 3950x:
 	- size: die (74 mm^2), 7nm process, 4B transistors
 	- cache: 1 MB - 8 MB - 64 MB

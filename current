@@ -1212,8 +1212,6 @@ https://mit6874.github.io/
 
 killer app for cython+cudnn: sparse CNN
 
-wpa_supplicant.conf, https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
-
 https://en.wikipedia.org/wiki/Signal_strength_in_telecommunications
 
 to verify, change ssid of wifi to something different, then change back, to see if phone and pi can restore the connection right away
@@ -1221,8 +1219,6 @@ to verify, change ssid of wifi to something different, then change back, to see 
 so I thought clock signal is what's the limiting factor in CMOS circuitry, cause there's the CV^2f equation for dynamic power in that paper. But appears that broadcasting signals are also really power hungry and sort of important as well. So central question: does clock speed or signal intensity matter more in low energy bluetooth? May be good question: "power dissipation of CMOS circuits". "CC2564C" as bluetooth sample product
 
 what's up with 2 threads per core thingy? How can they be like, "1 core" if they can do different things? Where are the clock domains?
-
-do gpus have different level caches?
 
 ksp man, do really badass navigation and control, while reading rocket propulsion elements
 
@@ -1247,3 +1243,5 @@ https://stefanobosisio1.medium.com/cython-fast-as-gpus-without-gpus-2c2e52cc4c42
 
 https://rastergrid.com/blog/gpu-tech/2020/11/memory-types-of-discrete-gpus/
 https://rastergrid.com/blog/gpu-tech/2021/01/understanding-gpu-caches/
+
+setup c++ toolchain, so as to develop native libs and its cython interfaces quickly

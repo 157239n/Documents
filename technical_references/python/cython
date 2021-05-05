@@ -18,6 +18,7 @@ def compute(my_type[:, ::1] array_1, my_type[:, ::1] array_2, my_type a, my_type
 
 
 from libc.math cimport sin as m_sin
+from libcpp.vector cimport vector
 cpdef float sin(float x):
 	return m_sin(x)
 

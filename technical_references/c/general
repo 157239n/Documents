@@ -4,3 +4,7 @@ configure files:
 
 -march=native
 --help=target
+
+where are the include files:
+- `gcc -print-prog-name=cc1plus` -v
+- g++ -print-search-dirs

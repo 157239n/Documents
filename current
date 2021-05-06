@@ -1229,7 +1229,6 @@ does signals from the gpu go to the screen directly? or through the cpu? seems l
 wtf is dream smp?
 
 https://en.wikipedia.org/wiki/Non-uniform_memory_access
-go through the linux kernel once more
 https://videocardz.com/newz/nvidia-details-geforce-rtx-30-ampere-architecture
 https://www.nvidia.com/content/PDF/fermi_white_papers/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf
 https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf
@@ -1245,3 +1244,18 @@ https://rastergrid.com/blog/gpu-tech/2020/11/memory-types-of-discrete-gpus/
 https://rastergrid.com/blog/gpu-tech/2021/01/understanding-gpu-caches/
 
 setup c++ toolchain, so as to develop native libs and its cython interfaces quickly
+
+http://www.cslab.ece.ntua.gr/courses/advcomparch/2007/material/readings/Intel%20Hyper-Threading%20Technology.pdf
+
+setting up toolchain:
+- setup pure c++ toolchain: done
+- go over linux kernel. This is just to understand roughly how the chip-firmware-kernel interface are built. Specific example include how LD/ST sections on die actually works
+- go over nvcc basics
+- setup nvcc toolchain
+- go over cython
+	- check out ~/anaconda3/envs/torch/lib/python3.8/site-packages/Cython/Includes
+	- https://cython.readthedocs.io/en/latest/
+	- https://github.com/cython/cython/wiki/FAQ
+- setup cython toolchain
+- go over numba book, understanding how things work deeply
+- setup cython, pure c++, and nvcc toolchains

@@ -1259,3 +1259,7 @@ setting up toolchain:
 - setup cython toolchain
 - go over numba book, understanding how things work deeply
 - setup cython, pure c++, and nvcc toolchains
+
+https://arxiv.org/vc/arxiv/papers/1005/1005.2581v1.pdf
+
+actually, try space exploration mod again, this time with a proper train network

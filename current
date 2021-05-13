@@ -1266,3 +1266,9 @@ actually, try space exploration mod again, this time with a proper train network
 
 https://en.wikipedia.org/wiki/Kraft_process
 lignin, creosote, flue gas, tail oil, shale oil, coal gas
+
+test compile cuda functions inside of k2lib
+
+https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
+https://www.kaggle.com/questions-and-answers/150725
+pycuda, pycublas, cupy

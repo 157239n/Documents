@@ -1,0 +1,12 @@
+
+mvn help:describe -e -Dplugin=site, help menu for "site" plugin
+mvn dependency:help, to list goals of the "dependency" plugin
+
+mvn help:effective-pom
+mvn help:active-profiles
+mvn package -P integration-tests,mutation-tests, do package phase, then integration-tests profile
+
+lifecycle has multiple phases. Call `mvn <phase>` to execute that phase
+a phase has many plugin's goals
+goal
+

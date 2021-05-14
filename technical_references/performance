@@ -36,7 +36,14 @@ processors:
 - rtx 3080:
 	- size: die (630 mm^2), 8nm process, 30B transistors
 	- 230 TFLOPs
+- v100:
+	- size: die (815 mm^2), 12nm process, 21B transistors
+	- 125 TFLOPs
 - 3950x:
 	- size: die (74 mm^2), 7nm process, 4B transistors
 	- cache: 1 MB - 8 MB - 64 MB
 	- 3 TFLOPs
+
+so die size of 3080 @ 8nm process:
+- SM: 10mm^2, 1/4 of that is 2.5 mm^2 (1.58mm x 1.58mm)
+- single core: 0.04 mm^2 (0.2mm x 0.2mm)

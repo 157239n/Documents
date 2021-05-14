@@ -109,3 +109,28 @@ might be valuable articles:
 grub> linux  (hd0,1)/vmlinuz root=/dev/sda1
 grub> initrd  (hd0,1)/initrd.img
 grub> boot
+
+
+
+
+
+
+
+
+
+
+
+
+
+- load os from boot disk, prepare main function
+	- load bios
+	- build interrupt vector table (256 interrupt vectors, 4 bytes/vector)
+	- start interrupt service routines (real address mode)
+	- load os program from boot disk using interrupt service routines
+	- other prep to run 32-bit main function
+
+bios executes 0xffff0. CS = 0xffff, ip = 0x0000 -> cs:ip = 0xffff0. CPU preprogrammed to do this
+
+set interrupt descriptor table & global descriptor tabl
+
+gdt stuff, contains local descriptor table and task structure segment for each task

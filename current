@@ -1222,36 +1222,18 @@ what's up with 2 threads per core thingy? How can they be like, "1 core" if they
 
 ksp man, do really badass navigation and control, while reading rocket propulsion elements
 
-"die and block diagram"
-
-does signals from the gpu go to the screen directly? or through the cpu? seems like it goes to the screen directly right? Cause like, I plug the screen into the gpu directly
-
 wtf is dream smp?
 
 https://en.wikipedia.org/wiki/Non-uniform_memory_access
-https://videocardz.com/newz/nvidia-details-geforce-rtx-30-ampere-architecture
-https://www.nvidia.com/content/PDF/fermi_white_papers/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf
-https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf
-https://en.wikipedia.org/wiki/High_Bandwidth_Memory
-https://www.nvidia.com/content/PDF/product-specifications/GeForce_GTX_680_Whitepaper_FINAL.pdf
-https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-product-literature/NVIDIA-Kepler-GK110-GK210-Architecture-Whitepaper.pdf
-
-https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html
-https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
 https://stefanobosisio1.medium.com/cython-fast-as-gpus-without-gpus-2c2e52cc4c42
-
-https://rastergrid.com/blog/gpu-tech/2020/11/memory-types-of-discrete-gpus/
-https://rastergrid.com/blog/gpu-tech/2021/01/understanding-gpu-caches/
-
-setup c++ toolchain, so as to develop native libs and its cython interfaces quickly
 
 http://www.cslab.ece.ntua.gr/courses/advcomparch/2007/material/readings/Intel%20Hyper-Threading%20Technology.pdf
 
 setting up toolchain:
 - setup pure c++ toolchain: done
 - go over linux kernel. This is just to understand roughly how the chip-firmware-kernel interface are built. Specific example include how LD/ST sections on die actually works
-- go over nvcc basics
-- setup nvcc toolchain
+- go over nvcc basics: done
+- setup nvcc toolchain: done
 - go over cython
 	- check out ~/anaconda3/envs/torch/lib/python3.8/site-packages/Cython/Includes
 	- https://cython.readthedocs.io/en/latest/
@@ -1266,8 +1248,6 @@ actually, try space exploration mod again, this time with a proper train network
 
 https://en.wikipedia.org/wiki/Kraft_process
 lignin, creosote, flue gas, tail oil, shale oil, coal gas
-
-test compile cuda functions inside of k2lib
 
 https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725

@@ -43,6 +43,9 @@ processors:
 	- size: die (74 mm^2), 7nm process, 4B transistors
 	- cache: 1 MB - 8 MB - 64 MB
 	- 3 TFLOPs
+- fsd:
+	- size: die (260 mm^2), 14nm process, 6B transistors, 250M gates
+	- 72 TFLOPs
 
 so die size of 3080 @ 8nm process:
 - SM: 10mm^2, 1/4 of that is 2.5 mm^2 (1.58mm x 1.58mm)

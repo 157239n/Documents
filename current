@@ -1183,23 +1183,15 @@ die size vs performance calculations? https://www.alternatewars.com/BBOW/Computi
 
 CLC Genomics Workbench: https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/User_Manual.pdf
 
-raspberry pi don't go to sleep
-
 jupyter also seems to have a fasta viewer, so see over its capabilities. https://www.nature.com/articles/nature22402
 
 ipython says it can do lots of multithreading operations: https://ipython.org/ipython-doc/3/overview.html
 
 jupyter display current memory usages and whatnot
 
-how to actually display a graph of page swaps
-
-also how to open and view large files?
-
 ipyparallel
 
 how does cython interact with complex objects? like np.array or torch.tensor? Memory views, of course, but besides those regular, normal stuff, you basically can't do that, so you're better off doing regular ass functions
-
-how fast is pcie4 again? "pcie x16 4.0 speed", compare this to the freq limits in cpus
 
 where is the module name definition? What's a .pyx file hierarchy looks like?
 
@@ -1213,10 +1205,6 @@ https://mit6874.github.io/
 killer app for cython+cudnn: sparse CNN
 
 https://en.wikipedia.org/wiki/Signal_strength_in_telecommunications
-
-to verify, change ssid of wifi to something different, then change back, to see if phone and pi can restore the connection right away
-
-so I thought clock signal is what's the limiting factor in CMOS circuitry, cause there's the CV^2f equation for dynamic power in that paper. But appears that broadcasting signals are also really power hungry and sort of important as well. So central question: does clock speed or signal intensity matter more in low energy bluetooth? May be good question: "power dissipation of CMOS circuits". "CC2564C" as bluetooth sample product
 
 what's up with 2 threads per core thingy? How can they be like, "1 core" if they can do different things? Where are the clock domains?
 
@@ -1238,7 +1226,7 @@ setting up toolchain:
 	- check out ~/anaconda3/envs/torch/lib/python3.8/site-packages/Cython/Includes
 	- https://cython.readthedocs.io/en/latest/
 	- https://github.com/cython/cython/wiki/FAQ
-- setup cython toolchain
+- setup cython toolchain, then return to smith walterman
 - go over numba book, understanding how things work deeply
 - setup cython, pure c++, and nvcc toolchains
 

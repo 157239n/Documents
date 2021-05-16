@@ -1148,8 +1148,6 @@ seems like a nice primer: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/
 
-try pyanodons
-
 so I heard that the payments settlement takes place later than the agreement, so why the hell is that? And why are there layered structures in the economic model?
 
 alright, so coffee stuff
@@ -1204,31 +1202,25 @@ https://mit6874.github.io/
 
 killer app for cython+cudnn: sparse CNN
 
-https://en.wikipedia.org/wiki/Signal_strength_in_telecommunications
-
-what's up with 2 threads per core thingy? How can they be like, "1 core" if they can do different things? Where are the clock domains?
-
 ksp man, do really badass navigation and control, while reading rocket propulsion elements
 
 wtf is dream smp?
 
 https://en.wikipedia.org/wiki/Non-uniform_memory_access
-https://stefanobosisio1.medium.com/cython-fast-as-gpus-without-gpus-2c2e52cc4c42
-
-http://www.cslab.ece.ntua.gr/courses/advcomparch/2007/material/readings/Intel%20Hyper-Threading%20Technology.pdf
 
 setting up toolchain:
 - setup pure c++ toolchain: done
 - go over linux kernel. This is just to understand roughly how the chip-firmware-kernel interface are built. Specific example include how LD/ST sections on die actually works
 - go over nvcc basics: done
 - setup nvcc toolchain: done
-- go over cython
+- go over cython: done
 	- check out ~/anaconda3/envs/torch/lib/python3.8/site-packages/Cython/Includes
 	- https://cython.readthedocs.io/en/latest/
 	- https://github.com/cython/cython/wiki/FAQ
-- setup cython toolchain, then return to smith walterman
+- setup cython toolchain: done
+- return to smith walterman
 - go over numba book, understanding how things work deeply
-- setup cython, pure c++, and nvcc toolchains
+- setup cython, pure c++, and nvcc toolchains: done
 
 https://arxiv.org/vc/arxiv/papers/1005/1005.2581v1.pdf
 
@@ -1240,3 +1232,5 @@ lignin, creosote, flue gas, tail oil, shale oil, coal gas
 https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
 pycuda, pycublas, cupy
+
+use -march=native to compile cython code

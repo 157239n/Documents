@@ -1049,11 +1049,7 @@ kroll process
 
 what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
 
-binding languages together: https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html#interacting-with-code-binding-cpp
-
 try to create an agent that has some sense of higher dimensions
-
-basic energy computer analysis again. flip flop high resistor value: 1/(1.4*C*f), capacitor consumption: CV^2 joules/cycle. Not sure about individual computations tho, and not sure how this's supposed to work in GPUs
 
 http://www.aosabook.org/en/index.html
 
@@ -1063,23 +1059,14 @@ https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/
 https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+1T2021/home
 https://riscv.org/community/learn/
 
-jim keller said that if you implement matrix multiply willy nilly using cuda and whatnot, you'll get 10% GPU utilization. Actually try to do this. If successful, then try to find out if I can rebuild the PyTorch stack for swift right from the fundamentals
-
-again with jim keller. He said that the CPU outrageously run things out of order, and do things ahead of time, even after a branching instruction. But I thought every detail on how memory is loaded into registers are contained within the assembly code itself already? How the hell can you change execution flow without also changing what the assembly code does?
-
-how jupyter works underneath again?
-
 see a little bit over cudnn, and write a series of blog posts about how it works underneath, and show concrete numbers and visualizations to talk about
 
 I've heard pytorch has a built-in JIT, so what's up with that? JIT for what? Cause CUDA kernel calls don't really need that rite?
-
-carnot efficiency of the universe?
 
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
 - file:///home/kelvin/Downloads/David%20A%20Sinclair%20-%20David%20A%20Sinclair%20Lifespan%20Why%20We%20Age%20and%20Why%20We%20Dont%20Have%20To%20with%20Matthew%20D%20LaPlante%202019%20ISBN%20978-1501191978%20(2019).pdf
-- https://www.ncbi.nlm.nih.gov/tools/gbench/tutorial1/
 
 orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
@@ -1121,11 +1108,7 @@ how pcr tests work again? And why are they so god damn expensive?
 
 how to know resonance frequency of a static structure? Are there general guidelines?
 
-see how vmd interfaces with the embedded tcl interpreter, so that I can hopefully do the same one day with python (https://docs.python.org/3/extending/embedding.html)
-
 so, let's say I have a gene file, then a transcription of that, and a translation of that as separate files. How to I merge them together? SOD1_datasets file seems like it will be impossible, cause like, there are no spacing information inside of the mrna and protein files
-
-actually, shader pipeline seems approachable now, so dig into it at a later time. Both processing and vmd has those shader programs, and they really don't look that intimidating
 
 https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
@@ -1134,8 +1117,6 @@ vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those sho
 
 ncbi also has some kind of selection language, so see over that: 21[Chr] AND "Homo sapiens"[Organism] AND ("has ccds"[Properties] AND alive[prop]) 
 
-also why the hell are there so many superoxide dismutase? Shouldn't 1 be enough tho? And again, they appear all over the place
-
 again, how do inverters work? And like, it seems like I have to try to match the grid's frequency and phase, or else it might blow it up. If basic electronics are worked out to a reasonable level of confidence, I can consume as much energy as I wanted and not feel guilty lol
 
 actually work out the cost to lay out landlines across a country, cause like, rural parts of VN still seems to have internet connection just fine
@@ -1143,9 +1124,7 @@ actually work out the cost to lay out landlines across a country, cause like, ru
 see over NC sequences, and see if they have gap information or not
 
 see how to do a local blast
-
 seems like a nice primer: https://blast.ncbi.nlm.nih.gov/Blast.cgi
-
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/
 
 so I heard that the payments settlement takes place later than the agreement, so why the hell is that? And why are there layered structures in the economic model?
@@ -1161,8 +1140,6 @@ while doing pyanodon, try to pay attention to a few fundamental questions:
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
 
-check cpu over clocking config in bios
-
 cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often? Also sometimes it even bossts to 5GHz???? How?
 
 what does it take to build a custom fab lab?
@@ -1172,8 +1149,6 @@ actually capture a bit flip in memory, to measure the rate. Others reported 1 er
 seems like everywhere I go, the concept of JIT compilation crops up all the time. And the compiler infrastructure where layers of compilers perform translation between different domains, just because separating a task into multiple domains can help accelerate the technology. This is how you beat the S curve and make it into an exponential curve. The domains has to sort of be completely separate, and communicates with each other using a simple interface only, and domains spaced apart by another domain should not know each other at all
 
 can't you like, heat treat 3d printed metal parts?
-
-so seems like, there's a hard limit on performance for each process node. So, intel's 'innovation' at 14nm is really just trying to squeeze out performance to get to this ideal? See if the actual performance numbers reflect that
 
 go over tier zoo again
 
@@ -1185,28 +1160,16 @@ jupyter also seems to have a fasta viewer, so see over its capabilities. https:/
 
 ipython says it can do lots of multithreading operations: https://ipython.org/ipython-doc/3/overview.html
 
-jupyter display current memory usages and whatnot
-
 ipyparallel
-
-how does cython interact with complex objects? like np.array or torch.tensor? Memory views, of course, but besides those regular, normal stuff, you basically can't do that, so you're better off doing regular ass functions
-
-where is the module name definition? What's a .pyx file hierarchy looks like?
-
-numba also seems interesting. Basically a JIT, but for a limited subset of python
-- http://people.duke.edu/~ccc14/sta-663-2016/18D_Cython.html
-- http://people.duke.edu/~ccc14/sta-663-2016/18C_Numba.html
 
 https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science_and_ml_resources/
 https://mit6874.github.io/
 
-killer app for cython+cudnn: sparse CNN
+killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
 
 ksp man, do really badass navigation and control, while reading rocket propulsion elements
 
 wtf is dream smp?
-
-https://en.wikipedia.org/wiki/Non-uniform_memory_access
 
 setting up toolchain:
 - setup pure c++ toolchain: done
@@ -1218,8 +1181,8 @@ setting up toolchain:
 	- https://cython.readthedocs.io/en/latest/
 	- https://github.com/cython/cython/wiki/FAQ
 - setup cython toolchain: done
-- return to smith walterman
-- go over numba book, understanding how things work deeply
+- return to smith walterman: done
+- go over numba book, understanding how things work deeply: done
 - setup cython, pure c++, and nvcc toolchains: done
 
 https://arxiv.org/vc/arxiv/papers/1005/1005.2581v1.pdf
@@ -1233,4 +1196,8 @@ https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
 pycuda, pycublas, cupy
 
-use -march=native to compile cython code
+watch stowaway
+
+really implement that random hit smith walterman, cause that seems awfully cool, and has potential to use a lot of gpu stuff
+
+measure bit flip rate and disk speeds

@@ -50,3 +50,5 @@ processors:
 so die size of 3080 @ 8nm process:
 - SM: 10mm^2, 1/4 of that is 2.5 mm^2 (1.58mm x 1.58mm)
 - single core: 0.04 mm^2 (0.2mm x 0.2mm)
+
+flip flop high resistor value: 1/(1.4*C*f), capacitor consumption: CV^2 joules/cycle

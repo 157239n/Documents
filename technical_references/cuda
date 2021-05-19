@@ -1,0 +1,3 @@
+
+cudaDeviceSynchronize(): halts host code running along side, until the GPU has finished processing
+cudaStreamSynchronize()

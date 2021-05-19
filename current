@@ -1171,20 +1171,6 @@ ksp man, do really badass navigation and control, while reading rocket propulsio
 
 wtf is dream smp?
 
-setting up toolchain:
-- setup pure c++ toolchain: done
-- go over linux kernel. This is just to understand roughly how the chip-firmware-kernel interface are built. Specific example include how LD/ST sections on die actually works
-- go over nvcc basics: done
-- setup nvcc toolchain: done
-- go over cython: done
-	- check out ~/anaconda3/envs/torch/lib/python3.8/site-packages/Cython/Includes
-	- https://cython.readthedocs.io/en/latest/
-	- https://github.com/cython/cython/wiki/FAQ
-- setup cython toolchain: done
-- return to smith walterman: done
-- go over numba book, understanding how things work deeply: done
-- setup cython, pure c++, and nvcc toolchains: done
-
 https://arxiv.org/vc/arxiv/papers/1005/1005.2581v1.pdf
 
 actually, try space exploration mod again, this time with a proper train network
@@ -1200,4 +1186,8 @@ watch stowaway
 
 really implement that random hit smith walterman, cause that seems awfully cool, and has potential to use a lot of gpu stuff
 
-measure bit flip rate and disk speeds
+measure bit flip rate
+
+intel microcode
+
+checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()

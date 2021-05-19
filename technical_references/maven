@@ -6,7 +6,27 @@ mvn help:effective-pom
 mvn help:active-profiles
 mvn package -P integration-tests,mutation-tests, do package phase, then integration-tests profile
 
-lifecycle has multiple phases. Call `mvn <phase>` to execute that phase
+lifecycle has multiple phases. Call `mvn <phase>` to execute that phase:
+- validate
+- compile
+- test
+- package
+- verify
+- install
+- deploy
+
 a phase has many plugin's goals
 goal
+
+
+some common plugins. Just do `mvn javadoc:help` for help:
+- clean
+- compiler
+- surefile: for junit stuff
+- jar: builds jar
+- war
+- javadoc
+
+mojo = maven plain old java object. It's an executable goal
+
 

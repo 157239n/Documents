@@ -9,3 +9,131 @@ spring overview talk: https://www.youtube.com/watch?v=jDchAEHIht0
 https://spring.io/guides/gs/accessing-data-jpa/
 https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
 https://spring.io/guides/gs/spring-boot/
+
+
+
+
+sample spring-beans.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="org.kelvinho.demo2"/>
+</beans>
+
+
+//context = new ClassPathXmlApplicationContext("spring-beans.xml");
+
+
+
+<servlet>
+	<servlet-name>some_cute_name</servlet-name>
+	<servlet-class>mysite.server.SomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>some_cute_name</servlet-name>
+	<url-pattern>/*</url-pattern>
+</servlet-mapping>
+
+
+
+1: org.apache.catalina.servlets.DefaultServlet
+3: org.apache.jasper.servlet.JspServlet
+
+ calls org.springframework.web.servlet.DispatcherServlet???
+
+"servlet 3.0 specification". I'm assuming this is a generic specification for all things related to servlets. So, Tomcat can read annotations and class types and whatnot, so it seeks out WebApplicationInitializer. This then boots up the Spring Application Context, then also gives requests control to Spring by including in DispatcherServlet
+
+WebApplicationInitializer: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/WebApplicationInitializer.html
+
+example: https://stackoverflow.com/questions/35971082/spring-webapplicationinitializer
+
+actually this thing instead: org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer
+this mf actually extends WebApplicationInitializer, which has AppConfig
+
+"deployment descriptor file"
+
+https://docs.spring.io/spring-framework/docs/3.1.x/spring-framework-reference/html/beans.html
+
+https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial
+
+
+https://tomcat.apache.org/tomcat-3.3-doc/internal.html
+
+"how does tomcat starts spring application context"
+
+for jdbc transaction stuff:
+- https://www.marcobehler.com/guides/spring-transaction-management-transactional-in-depth
+- https://examples.javacodegeeks.com/enterprise-java/spring/jdbc/spring-transaction-management-example-with-jdbc-example/
+- https://spring.io/blog/2018/09/17/introducing-spring-data-jdbc
+- https://spring.io/guides/gs/managing-transactions/
+- https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/transaction.html
+- https://o7planning.org/11663/spring-boot-spring-jdbc-and-spring-transaction
+- "jdbc spring master transaction"
+- "jdbc spring push and pop database state for testing"
+
+and integration tests:
+- https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sort of trash
+
+    public static BeanFactory getBeanFactory() {
+        beanFactory = new XmlBeanFactory(new ClassPathResource("/spring-beans.xml"));
+        return beanFactory;
+    }
+
+
+        //userService = (UserService)beanFactory.getBean("userService");
+        //factory.autowireBean(this);
+        //userService = factory.createBean(UserServiceImpl.class);
+
+        
+    <bean id="user" class="org.kelvinho.demo2.User">
+        <property name="username" value="Java Code Geek"/>
+    </bean>
+
+
+
+//@RunWith(SpringRunner.class)
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(com.truckbux.core.AppConfig.class)
+//@EnableWebMvc
+//@ContextConfiguration(classes = {SwaggerConfig.class, AppConfig.class})
+
+//@RunWith(SpringRunner.class)
+//@WebAppConfiguration
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(com.truckbux.core.AppConfig.class)
+//@ContextConfiguration(classes = {AsyncConfiguration.class})
+

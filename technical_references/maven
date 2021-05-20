@@ -30,3 +30,16 @@ some common plugins. Just do `mvn javadoc:help` for help:
 mojo = maven plain old java object. It's an executable goal
 
 
+minimal example (demo2):
+- spring-core
+- spring-beans
+- spring-context
+
+may be needed for web stuff:
+- spring-web
+- spring-webmvc
+- spring-test: advertised as "spring testcontext framework", so may be that sets up the context that I'm struggling with
+
+
+
+

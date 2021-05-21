@@ -1186,8 +1186,9 @@ watch stowaway
 
 really implement that random hit smith walterman, cause that seems awfully cool, and has potential to use a lot of gpu stuff
 
-measure bit flip rate
-
 intel microcode
 
 checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()
+
+potential recorded bitFlip:
+- 23026s = 6.4 hours

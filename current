@@ -962,11 +962,7 @@ do cifar 10 again, to get any insights possible, then my custom labels
 
 also try again the style transfer, to see how my architecture can deal with such a dynamic environment
 
-nixie tubes: https://www.youtube.com/watch?v=wxL4ElboiuA
-
 how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
-
-buy a compressed air can
 
 I don't understand the locking mechanism and chirality that much. Thought experiment seems to invalidate that. So look up for cis and trans 1-4 polyisoprene (natural rubber)
 
@@ -990,8 +986,6 @@ also what's the cost of galvanized steel vs stainless steel? Like, stainless ste
 what actually stops a regular person from actually building an oil refinery? Like, it's just a distillation column that you have to manage pressures and whatnot right? So what's up?
 
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
-
-mri scanners apparently uses liquid helium as a coolant for its superconducting magnets. So what's up?
 
 alternative steel making process, for a glimpse of what's the direction now: https://www.sciencedirect.com/science/article/pii/S0959652618326301
 
@@ -1055,11 +1049,10 @@ http://www.aosabook.org/en/index.html
 
 https://caseyhandmer.wordpress.com/2020/02/15/dont-stage-off-starship/
 https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/
+https://caseyhandmer.wordpress.com/2021/05/21/new-opportunities-for-space-companies/
 
 https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+1T2021/home
 https://riscv.org/community/learn/
-
-see a little bit over cudnn, and write a series of blog posts about how it works underneath, and show concrete numbers and visualizations to talk about
 
 I've heard pytorch has a built-in JIT, so what's up with that? JIT for what? Cause CUDA kernel calls don't really need that rite?
 

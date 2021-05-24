@@ -885,8 +885,6 @@ https://codexdna.com/products/bioxp-system/
 
 comprehensive source: https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/
 
-again, what's up with bacteriophages???
-
 also, the recording stuff is really, really crude. Like, simple pink colors for acid/bases??? That's it? That's like 1 bit of information dude. So how about, bind rare atoms to specific complexes, and have those attaches to any structure you want. Then we can excite those rare atoms, and record their EM spectrum, for a lot of data bits. Also apparently florescent systems don't have rare atoms, so figure out how the hell can they do that??? Edit: specific proteins to find: luciferase
 
 also, what's up with the polyprotein nature of covid? Actually you know what, I heard many proteins are like that too, like histones, or hemoglobin, or atp synthase, so figure out the general dynamics of these systems
@@ -900,8 +898,6 @@ https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2
 so far, this seems really, really hard. But giving up is for pussies, so play foldit for a long time to roughly understand how stuff works in this domain
 
 https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/
-
-do factorio bad apple track
 
 this company offers a virtual tour, so check it out: https://www.sageglass.com/en/article/what-electrochromic-glass
 
@@ -918,24 +914,15 @@ https://www.quora.com/What-is-opaque-to-visible-light-but-transparent-to-infrare
 https://physics.stackexchange.com/questions/121696/why-does-glass-absorb-infrared-light
 https://physics.stackexchange.com/questions/267793/why-is-glass-transparent-to-visible-light-and-opaque-to-ultraviolet-amd-infrared
 
-revamp seablock, so that it's realistic
-
 hostile takeover?
-
-https://en.wikipedia.org/wiki/Cracking_(chemistry)
-
-also apparently there's this thing called catalytic reforming, that can shape small hydrocarbon chains into aromatic hydrocarbons, like benzene
 
 also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample: PMMA, PS, PE and PP, PETE, ABS, Nylon, PMMA (acrylic), PC (polycarbonate)
 
 go over 23andme analysis
 
-may be the only reason ppl can't automate stuff like plaque assays is because they sort of require lots of different instruments that are bulky and expensive. But why are they so freaking expensive? Like, what's the actual cost of assembling 1 for myself that meets international standards???
-
 crystal violet seems to be a really popular staining method. It's also used in gram's method and whatnot
 
 https://en.wikipedia.org/wiki/Virus_quantification, pfu/ml
-https://en.wikipedia.org/wiki/Fluid_catalytic_cracking
 
 https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
 
@@ -975,11 +962,7 @@ dive more into crystal structures of steel, cause it seems like martensite has a
 silicon nitride's ceramic properties?
 titanium production process? Heard from elon that it's quite complicated
 
-build some exotic shaped metal, following generative design, and see if stresses hold up. Then deduce if doing it that way is worth it or not
-
 rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who are actually working on that
-
-also, how can you sort of figure out what the reactants are going to be? Like, just record a bunch of properties, and devise a bunch of hypothesis?
 
 also what's the cost of galvanized steel vs stainless steel? Like, stainless steel seems much more straightforward, and lasts a long time, so why does galvanized steel even exists?
 
@@ -988,8 +971,6 @@ what actually stops a regular person from actually building an oil refinery? Lik
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
 
 alternative steel making process, for a glimpse of what's the direction now: https://www.sciencedirect.com/science/article/pii/S0959652618326301
-
-actually attempt to build a computer from scratch in factorio, so as to understand how the linux kernel works, and how computers work in general. May be just play with older hardware, as there wasn't any paging stuff going on
 
 invest in rocket lab
 
@@ -1000,8 +981,6 @@ uniprot
 https://8020.net/
 
 novozyme, research lab that produces industrial enzymes, microorganisms & biopharmaceutical ingredients. Not billion dollars yet, just on the million dollar scale
-
-how to actually observe protein mechanics as it's happening?
 
 https://en.wikipedia.org/wiki/Pattern_recognition_receptor
 
@@ -1041,8 +1020,6 @@ why energy from carbon is cheaper than from electrolysis? Considering renewables
 
 kroll process
 
-what's up with system V? How does that compare with init? By extension, dig into /etc/inittab
-
 try to create an agent that has some sense of higher dimensions
 
 http://www.aosabook.org/en/index.html
@@ -1065,8 +1042,6 @@ orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
 
 pcr measuring virus particles, actually I just want to understand the testing method for covid
-
-https://www.technologyreview.com/2019/08/02/131198/china-squirrel-has-started-a-grand-experiment-in-ai-education-it-could-reshape-how-the/
 
 event-driven knowledge seeking seems to be much, much more efficient than just a clean sweep. But you kinda have to seek out turbulence and ready to bite the bullet. See if this fundamental behavior/preference is replicated in RL and whatnot. Also again, have an intuitive understanding of the limits of the networks, and where the bottlenecks are
 
@@ -1112,8 +1087,6 @@ ncbi also has some kind of selection language, so see over that: 21[Chr] AND "Ho
 
 again, how do inverters work? And like, it seems like I have to try to match the grid's frequency and phase, or else it might blow it up. If basic electronics are worked out to a reasonable level of confidence, I can consume as much energy as I wanted and not feel guilty lol
 
-actually work out the cost to lay out landlines across a country, cause like, rural parts of VN still seems to have internet connection just fine
-
 see over NC sequences, and see if they have gap information or not
 
 see how to do a local blast
@@ -1122,26 +1095,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/
 
 so I heard that the payments settlement takes place later than the agreement, so why the hell is that? And why are there layered structures in the economic model?
 
-alright, so coffee stuff
-half life: 3-7 hours, decrease 30-50% in male smokers
-pregnant woman: <200mg/day = 2 cups instant coffee = 0.5-2 cups fresh coffee
-normal ppl: up to 400mg appears to be okay
-ld50: 150mg/kg
-
 while doing pyanodon, try to pay attention to a few fundamental questions:
 - how to balance figuring out the rules of the game, the time taken, and throughput/effectiveness produced? Right now, the general way is to at least have a grasp of what things are like, and see their natural language description, and match that with reality, to see whether it's actually an important process in a lot of things. Hard start situations in AI systems seems a lot harder tho. Once basic mechanism is worked out, see if I can get rid of side effects, as much as possible (multiple elements in, 1 element out). If side effects (multiple elements out possible), then figure out at least 2 mechanism with those 2 side effects, but one is more and the other is less, so as to have a speed dial on everything. And try to figure out loops for the side effect
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
-
-cpu clock sometimes increases to 4.7GHz boost really quickly. But CPU usage in htop is still really low. So how is utilization measured? Does the CPU like, go to sleep that often? Also sometimes it even bossts to 5GHz???? How?
-
-what does it take to build a custom fab lab?
-
-actually capture a bit flip in memory, to measure the rate. Others reported 1 error/(h * GB). memtest86 already did this?
-
-seems like everywhere I go, the concept of JIT compilation crops up all the time. And the compiler infrastructure where layers of compilers perform translation between different domains, just because separating a task into multiple domains can help accelerate the technology. This is how you beat the S curve and make it into an exponential curve. The domains has to sort of be completely separate, and communicates with each other using a simple interface only, and domains spaced apart by another domain should not know each other at all
-
-can't you like, heat treat 3d printed metal parts?
 
 go over tier zoo again
 
@@ -1162,14 +1119,14 @@ killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does
 
 ksp man, do really badass navigation and control, while reading rocket propulsion elements
 
-wtf is dream smp?
-
 https://arxiv.org/vc/arxiv/papers/1005/1005.2581v1.pdf
 
 actually, try space exploration mod again, this time with a proper train network
 
 https://en.wikipedia.org/wiki/Kraft_process
-lignin, creosote, flue gas, tail oil, shale oil, coal gas
+lignin, creosote, tail oil, shale oil
+
+formica, fiberboard, melamine resin
 
 https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
@@ -1179,9 +1136,11 @@ watch stowaway
 
 really implement that random hit smith walterman, cause that seems awfully cool, and has potential to use a lot of gpu stuff
 
-intel microcode
-
 checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()
 
 potential recorded bitFlip:
 - 23026s = 6.4 hours
+
+actually do a memory test in bios boot up screen
+
+create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)

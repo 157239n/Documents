@@ -1123,14 +1123,8 @@ https://arxiv.org/vc/arxiv/papers/1005/1005.2581v1.pdf
 
 actually, try space exploration mod again, this time with a proper train network
 
-https://en.wikipedia.org/wiki/Kraft_process
-lignin, creosote, tail oil, shale oil
-
-formica, fiberboard, melamine resin
-
 https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
-pycuda, pycublas, cupy
 
 watch stowaway
 
@@ -1144,3 +1138,5 @@ potential recorded bitFlip:
 actually do a memory test in bios boot up screen
 
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
+
+may be the best way of doing all the DL stuff is to create a mechanism to save results from an independent python run to a notebook file, then I can just recreate every results from the beginning. So create a framework to do just that

@@ -74,7 +74,9 @@ for jdbc transaction stuff:
 - https://spring.io/blog/2018/09/17/introducing-spring-data-jdbc
 - https://spring.io/guides/gs/managing-transactions/
 - https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/transaction.html
+- https://docs.spring.io/spring-framework/docs/current/reference/html/data-access.html
 - https://o7planning.org/11663/spring-boot-spring-jdbc-and-spring-transaction
+- https://spring.io/guides/gs/managing-transactions/
 - "jdbc spring master transaction"
 - "jdbc spring push and pop database state for testing"
 

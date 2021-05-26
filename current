@@ -1095,8 +1095,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3018811/
 
 so I heard that the payments settlement takes place later than the agreement, so why the hell is that? And why are there layered structures in the economic model?
 
-while doing pyanodon, try to pay attention to a few fundamental questions:
+while doing pyanodons, try to pay attention to a few fundamental questions:
 - how to balance figuring out the rules of the game, the time taken, and throughput/effectiveness produced? Right now, the general way is to at least have a grasp of what things are like, and see their natural language description, and match that with reality, to see whether it's actually an important process in a lot of things. Hard start situations in AI systems seems a lot harder tho. Once basic mechanism is worked out, see if I can get rid of side effects, as much as possible (multiple elements in, 1 element out). If side effects (multiple elements out possible), then figure out at least 2 mechanism with those 2 side effects, but one is more and the other is less, so as to have a speed dial on everything. And try to figure out loops for the side effect
+- Update: I actually have a pretty strong prior, and that is energy content in substance. Like, I really try to save both coal gas and tar, because I know they're oil products, meaning they have energy, meaning it sort of fundamentally matters for an advanced civilization. For things like tailings, ash, flue gas, and whatnot, I know there are chemistry chains (mostly bio-based where they can take energy from sun) that actually utilizes that, but if there are too much of them for too long, I just get rid of them. On a more meta aspect, each grid block sort of represents a company on earth. There's a company for producing paper and dealing with the kraft process, there's a company producing crazy titanium alloys and have to deal with the oil chain that supplies it with drilling fluid. Here, downsides of companies sort of emerges, and that is they can't adapt quickly enough, and they can't get too big. I mean, it takes a while for surplus/demand to really shows itself as that. Stuff like seaweed initially looks like it's in low demand, but I overbuilt them (some stupid high number of factories like 20 or sth like that). And some things looks like it's over-supplied like iron plate (lol haha, jokes are on me), actually are very much in demand. So as a company, you really are at the mercy of what the supply chain is feeling on that day. Vertical integration is useful in that you turn a specialized company into multiple specialized divisions within a company, but still pursuing some goals. And when that singular goal on the top changes, you can calculate in advanced how much the internal supply chain will have to adapt, and just adapt right away, giving you a lot of time to beat the competitors.
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
 
@@ -1107,10 +1108,6 @@ die size vs performance calculations? https://www.alternatewars.com/BBOW/Computi
 CLC Genomics Workbench: https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/User_Manual.pdf
 
 jupyter also seems to have a fasta viewer, so see over its capabilities. https://www.nature.com/articles/nature22402
-
-ipython says it can do lots of multithreading operations: https://ipython.org/ipython-doc/3/overview.html
-
-ipyparallel
 
 https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science_and_ml_resources/
 https://mit6874.github.io/
@@ -1140,3 +1137,5 @@ actually do a memory test in bios boot up screen
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
 
 may be the best way of doing all the DL stuff is to create a mechanism to save results from an independent python run to a notebook file, then I can just recreate every results from the beginning. So create a framework to do just that
+
+really understand how k1lib packaging process works, to get rid of stuff if not necessary

@@ -83,7 +83,9 @@ for jdbc transaction stuff:
 and integration tests:
 - https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html
 
+https://stackoverflow.com/questions/19633534/what-is-com-sun-proxy-proxy
 
+https://stackoverflow.com/questions/24655520/spring-aop-transaction-annotation-not-working-on-method-invoked-using-java-refle
 
 
 

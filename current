@@ -1132,8 +1132,6 @@ checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speed
 potential recorded bitFlip:
 - 23026s = 6.4 hours
 
-actually do a memory test in bios boot up screen
-
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
 
 may be the best way of doing all the DL stuff is to create a mechanism to save results from an independent python run to a notebook file, then I can just recreate every results from the beginning. So create a framework to do just that

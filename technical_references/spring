@@ -79,6 +79,7 @@ for jdbc transaction stuff:
 - https://spring.io/guides/gs/managing-transactions/
 - "jdbc spring master transaction"
 - "jdbc spring push and pop database state for testing"
+- https://docs.spring.io/spring-framework/docs/3.1.x/spring-framework-reference/html/transaction.html#tx-propagation
 
 and integration tests:
 - https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html

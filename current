@@ -660,17 +660,9 @@ curious stuff:
 - https://www.youtube.com/watch?v=0yI2wJ6F8r0
 - rainbow: https://arxiv.org/pdf/1710.02298v1.pdf
 
-also make videos on youtube about my collection of kerboscripts
-
 other interesting notes:
 - a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
 - can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
-
-also ksp automated flight and landing
-
-post my stuff on kos subreddit
-
-try to use manim
 
 https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
 
@@ -694,10 +686,6 @@ omics
 neuronal energetics: https://www.sciencedirect.com/science/article/pii/S0960982214002723
 rs1421085
 
-how to see crystal structures within a metal?
-
-also good bg music for videos?
-
 tesla's quarterly reports?
 
 also figure out what is the current staining capability? Cause that's what I expect how engineering proteins can be useful
@@ -708,8 +696,6 @@ https://decatopus.com/wp-content/uploads/application/pdf/Thesis.pdf
 full genome sequencing price, https://www.cnbc.com/2019/07/01/for-600-veritas-genetics-sequences-6point4-billion-letters-of-your-dna.html
 
 mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrepreneurship_i_took_an_idea_to_mass/
-
-borg warner, cost analysis
 
 https://en.wikipedia.org/wiki/Stainless_steel
 https://en.wikipedia.org/wiki/Carbon_nanotube
@@ -742,22 +728,12 @@ temp discarded:
 - https://www.kaggle.com/nxrprime/fibrosis-eda-fast-ai
 - https://www.kaggle.com/dipam7/intel-scene-progressive-image-resizing
 
-how can I know chemical concentrations of my blood to track it pretty much daily? Does such a device even exist?
-
 interactome
-zinc fingers sound super useful tho, but manolis said it's a pain in the ass to deal with
-play fold it again? just to see what the problem actually is
 https://en.wikipedia.org/wiki/Structural_alignment
-
-signal strength stuff
-
-apparently they machine manufacture machines right in house? Isn't that super complicated though? How did they do it? Talk to someone who has designed such a thing before
 
 2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
 
 yeah so I've heard that antiviral drugs sort of uses small molecules to change the shape of some proteins, like S1. Have anyone sort of design proteins so that they can directly bind to them?
-
-why can't I flood the body with AC2 receptors with some pieces of cell membrane attached to it, to simulate an actual cell, so that all the covid 19 viruses sort of binds there and therefore can't bind to the AC2s in actual cells?
 
 buy those bio hacking kits?
 
@@ -765,12 +741,9 @@ ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org
 mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
 anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
 
-antenna gain
 https://joininteract.com/fellowship/
 
 how to actually control a stepper motor??? This is the high power electronics I was talking about
-
-buy a cheap iphone to test things out, and to know the infrastructure well enough
 
 and how to do the packaging stuff and sending stuff to usps???
 
@@ -778,10 +751,6 @@ etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
 
 https://en.wikipedia.org/wiki/Gas_laser
 seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-switching
-
-may be pick up a little chinese
-
-okay, so everything seems to be going well so far... Still have that problem of controlling high power electronics with low power digital systems like arduinos ("arduino with mains voltage controller") though, so look more into that. And where the hell can I buy gears????
 
 also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
 
@@ -791,11 +760,7 @@ also calculate stress structures within a home, and see what material properties
 
 https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipedia.org/wiki/Digital_signal_controller, "stepper driver controllers", https://www.orientalmotor.com/stepper-motors/index.html
 
-for the high power thingy, see over 24V power supplies pcb designs, to get a sense of what things are on there
-
 also, what's the curing process involving an autoclave looks like for carbon fiber?
-
-and finally, analyze tesla's costs to make sense of everything
 
 gene therapy again
 
@@ -831,7 +796,6 @@ goals for this trip?
 	- amylase, alcohol dehydrogenase, hemoglobin, fibrin, collagen, actin, insulin, potassium channels, luciferase, hemagglutinin, HIV-1 protease, p53 tumor suppressor, cellulases
 - try to infect cells with modified virus with a specific payload
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
-- intercept seek thermal communications
 - try to build robot arms that can do things quickly, and have a good internal model of reality
 - another posibility for sequencing techniques is to have a sort of ribosome that enlarges the base pairs, so we can see them exactly with a regular microscope
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
@@ -916,8 +880,6 @@ https://physics.stackexchange.com/questions/267793/why-is-glass-transparent-to-v
 
 hostile takeover?
 
-also why the hell are there so many polymers? like pvc, polystyrene, and whatnot. See advantages and disadvantages of each of them, and see if I can replicate a small sample: PMMA, PS, PE and PP, PETE, ABS, Nylon, PMMA (acrylic), PC (polycarbonate)
-
 go over 23andme analysis
 
 crystal violet seems to be a really popular staining method. It's also used in gram's method and whatnot
@@ -953,11 +915,7 @@ how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
 
 I don't understand the locking mechanism and chirality that much. Thought experiment seems to invalidate that. So look up for cis and trans 1-4 polyisoprene (natural rubber)
 
-calculate fuel usage of blast furnace in seablock and whatnot. This also means that I should translate all values to real life production rate values
-
 actually try to implement the attention idea that creates consciousness
-
-dive more into crystal structures of steel, cause it seems like martensite has a lot more than just "great internal stress". Look into nitinol (nickel titanium) too. And titanium production
 
 silicon nitride's ceramic properties?
 titanium production process? Heard from elon that it's quite complicated
@@ -965,8 +923,6 @@ titanium production process? Heard from elon that it's quite complicated
 rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who are actually working on that
 
 also what's the cost of galvanized steel vs stainless steel? Like, stainless steel seems much more straightforward, and lasts a long time, so why does galvanized steel even exists?
-
-what actually stops a regular person from actually building an oil refinery? Like, it's just a distillation column that you have to manage pressures and whatnot right? So what's up?
 
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
 
@@ -990,8 +946,6 @@ transcription seems really energy intensive. Like, it has to break a ton of thos
 
 those microarrays? episomal reporter assay? massively parallel reporter assays? also just common plasmid tech used to make a bunch of proteins? microfluidics?
 
-also how to ppl do genetics in crime detective stuff?
-
 chaperonin, huge protein complex where the folding takes place in. Sort of like a shield from interactions from the outside world
 
 how the hell do biotinylation works??? Like, where does the protein-specific selection happen? streptavidin too, cause this is the labelling mechanism
@@ -1000,16 +954,12 @@ https://en.wikipedia.org/wiki/Genome-wide_association_study
 
 okay I get how zinc fingers can sort of be used to replace dna segments. So is it that hard to design them? Look for stories from ppl who actually designed them
 
-type 2 restriction enzyme = halk folk endonuclease
-
 also direction and stranded-ness of everything??
 
 discovery path for proteins? Where are the entropy leaks?
 
 https://en.wikipedia.org/wiki/Transcription_factor
 https://en.wikipedia.org/wiki/Transfection
-https://en.wikipedia.org/wiki/Mutagenesis
-https://en.wikipedia.org/wiki/Crosslinking_of_DNA
 zinc finger vs crispr
 
 titanium: $4.5k/tonne
@@ -1052,13 +1002,6 @@ https://en.wikipedia.org/wiki/Reprogramming
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
 gbench marge views?
-
-supercomputer/cluster stuff that I don't really understand:
-- "mpi rank"
-- https://stackoverflow.com/questions/5399110/what-is-the-difference-between-ranks-and-processes-in-mpi
-- https://www.codingame.com/playgrounds/349/introduction-to-mpi/mpi_comm_world-size-and-ranks
-- https://www.open-mpi.org/doc/v4.0/man3/MPI_Comm_rank.3.php
-- https://wgropp.cs.illinois.edu/courses/cs598-s15/lectures/lecture22.pdf
 
 how the hell can heme be a protein?
 
@@ -1123,17 +1066,16 @@ actually, try space exploration mod again, this time with a proper train network
 https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
 
-watch stowaway
-
 really implement that random hit smith walterman, cause that seems awfully cool, and has potential to use a lot of gpu stuff
 
 checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()
-
-potential recorded bitFlip:
-- 23026s = 6.4 hours
 
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
 
 may be the best way of doing all the DL stuff is to create a mechanism to save results from an independent python run to a notebook file, then I can just recreate every results from the beginning. So create a framework to do just that
 
 really understand how k1lib packaging process works, to get rid of stuff if not necessary
+
+https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
+
+limited memory: https://arxiv.org/abs/2002.05645v5

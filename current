@@ -381,38 +381,22 @@ ask about RL training stability to that redditor
 
 jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/watch?v=bHVqO5YyNbU
 
-think about doing an outreach program for AI stuff
-
 cashapp
 
 again with blockchain stuff???? actually implement 1?
-
-try 23andme again, to know what things am I susceptible to
 
 "Google Learning Certificates", https://soha.vn/google-gay-soc-khi-tuyen-bo-ban-khong-can-phai-hoc-dai-hoc-nua-neu-thay-vua-ton-tien-vua-ton-thoi-gian-20200831143938153.htm
 
 again with the venus project? and resource based economy
 
-openai beta as outreach program
-
 may be deep RL introspection in our current systems help us reason about this take off scenario better
 
 https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
-
-https://www.youtube.com/c/ManolisKellis1/videos
 
 on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
 
 https://towardsdatascience.com/td-in-reinforcement-learning-the-easy-way-f92ecfa9f3ce
 https://towardsdatascience.com/summary-of-tabular-methods-in-reinforcement-learning-39d653e904af
-
-work on simulation demos now:
-important:
-- electric field
-- phased array
-- logistic map
-- lorenz attractor, 3d
-- julia sets
 
 so apparently, carrying 1GW power over 10M volt lines is feasible. So 100 amps, not 10k amps. So that guy may not know about this in depth. So dig more into the numbers and grasp at the fundamentals of these high power systems
 
@@ -429,15 +413,7 @@ pick up an epidemiology book
 
 https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion
 
-logging every request down, and dig about the log rotate thingy
-
 try out wolfram and new kind of science book
-
-seems sort of hopeless to build a computer from reversible components?
-- https://en.wikipedia.org/wiki/Reversible_computing
-- https://spectrum.ieee.org/computing/hardware/the-future-of-computing-depends-on-making-it-reversible
-- https://www.americanscientist.org/article/computers-that-can-run-backwards
-- https://www.technologyreview.com/2011/01/25/197408/the-fantastical-promise-of-reversible-computing/
 
 https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model
 
@@ -548,8 +524,6 @@ arousal
 attention
 awareness
 
-look up __all__ again, to stop polluting the namespace
-
 dog whisperer
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
@@ -600,8 +574,6 @@ dealing with smiles:
 - smiles self attention: https://pubs.acs.org/doi/10.1021/acs.jcim.8b00803
 - CNN for detecting chemical motifs
 
-rewatch tesla and neuralink ppts
-
 - integrative analysis of 111 reference human epigenomics: https://www.nature.com/articles/nature14248
 - FTO obesity: https://www.nejm.org/doi/full/10.1056/NEJMoa1502214
 
@@ -613,8 +585,6 @@ cortex layer 5
 5ht 2a/2c receptors: https://en.wikipedia.org/wiki/5-HT2A_receptor
 
 nmn, cd38 protein, mtor pathway, foxo3 gene, ccr5 gene, doxycycline, exosome injection, prp injection, yamanaka reprogramming factors, aav virus
-
-so seems like, you can plug everything into pcie and it will just magically work?
 
 https://github.blog/2020-11-20-nbdev-a-literate-programming-environment-that-democratizes-software-engineering-best-practices/
 
@@ -673,10 +643,6 @@ https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1
 https://www.researchgate.net/post/Can_anyone_suggest_to_me_software_to_view_gene_annotations
 https://en.wikipedia.org/wiki/Homeobox
 
-citric acid cycle again
-
-simulate synthetic aperture radar, start from scott manley's vid
-
 simulate a simple pid, with initial state at 0 and new state at 1. Still worse than the intended thing, but just to get this out quickly
 
 https://en.wikipedia.org/wiki/Schlenk_line
@@ -715,8 +681,6 @@ extrachromosomal ribosomal dna circles, or ERCs
 tamoxifen activates I-PpoI gene? How does that work?
 also apparently, that protein in milk, casein, does not break down fast while in the body. This is kinda strange, so look into it, https://en.wikipedia.org/wiki/Protease
 https://en.wikipedia.org/wiki/Archaea
-https://en.wikipedia.org/wiki/Southern_blot
-radioactive dna probe, hybridization probe
 also look up how insulin is made, to understand how recombinant dna works
 
 https://www.ncbi.nlm.nih.gov/nuccore/NR_034146.1
@@ -743,8 +707,6 @@ anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars
 
 https://joininteract.com/fellowship/
 
-how to actually control a stepper motor??? This is the high power electronics I was talking about
-
 and how to do the packaging stuff and sending stuff to usps???
 
 etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
@@ -755,8 +717,6 @@ seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-
 also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
 
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
-
-also calculate stress structures within a home, and see what material properties do the concrete blocks need
 
 https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipedia.org/wiki/Digital_signal_controller, "stepper driver controllers", https://www.orientalmotor.com/stepper-motors/index.html
 
@@ -800,7 +760,6 @@ goals for this trip?
 - another posibility for sequencing techniques is to have a sort of ribosome that enlarges the base pairs, so we can see them exactly with a regular microscope
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
 - figure out all reactions in seablock
-- attempt to make a kiln
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 https://en.wikipedia.org/wiki/Process_manufacturing
@@ -837,11 +796,11 @@ https://en.wikipedia.org/wiki/Plasmid
 https://en.wikipedia.org/wiki/Baltimore_classification
 https://en.wikipedia.org/wiki/Molecular_machine
 https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
-https://en.wikipedia.org/wiki/ATP_synthase
 https://en.wikipedia.org/wiki/Ribosomal_frameshift
 https://en.wikipedia.org/wiki/Beta_sheet
 https://en.wikipedia.org/wiki/TIM_barrel
 https://en.wikipedia.org/wiki/Physarum_polycephalum
+https://en.wikipedia.org/wiki/RNA-binding_protein
 
 question: can everything be built using proteins alone? Like, can stuff like cell membrane (lipid bilayer) be produced just by using proteins? If they can, then what's the exact mechanism
 
@@ -853,38 +812,19 @@ also, the recording stuff is really, really crude. Like, simple pink colors for 
 
 also, what's up with the polyprotein nature of covid? Actually you know what, I heard many proteins are like that too, like histones, or hemoglobin, or atp synthase, so figure out the general dynamics of these systems
 
-also apparently, some staining methods like gram pos/neg ppl have no idea how they work. And methods to visualize brains too, with silver atoms or sth like that
-
 https://fold.it/portal/node/2010076
 https://fold.it/portal/node/2007798
 https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2_explained_ai_breakthrough/
-
-so far, this seems really, really hard. But giving up is for pussies, so play foldit for a long time to roughly understand how stuff works in this domain
-
-https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/
 
 this company offers a virtual tour, so check it out: https://www.sageglass.com/en/article/what-electrochromic-glass
 
 probably not needed, but calculate cost of hydrogen electrolysis as fuel, and compare that to just ordering methane
 
-what is transparent in infrared
-
 https://www.youtube.com/c/Thesignalpath/videos
-
-band gap transparency
-https://www.quora.com/What-makes-an-object-transparent
-https://physics.stackexchange.com/questions/46673/transparency-of-solids-using-bandgaps-and-relation-to-conduction-and-valence-ban
-https://www.quora.com/What-is-opaque-to-visible-light-but-transparent-to-infrared-light
-https://physics.stackexchange.com/questions/121696/why-does-glass-absorb-infrared-light
-https://physics.stackexchange.com/questions/267793/why-is-glass-transparent-to-visible-light-and-opaque-to-ultraviolet-amd-infrared
 
 hostile takeover?
 
 go over 23andme analysis
-
-crystal violet seems to be a really popular staining method. It's also used in gram's method and whatnot
-
-https://en.wikipedia.org/wiki/Virus_quantification, pfu/ml
 
 https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
 
@@ -896,8 +836,6 @@ old aging stuff:
 - https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
 
 vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Research/vmd/vmd-1.3/ug/node132.html
-
-high-speed synchrotron x-ray imaging
 
 also, what's the diamond, graphene and carbon nanotubes making process? All 3 of them seems to be in very different configurations, so the heating solution doesn't seem to be that effective
 
@@ -942,8 +880,6 @@ https://en.wikipedia.org/wiki/Pattern_recognition_receptor
 
 epimap
 
-transcription seems really energy intensive. Like, it has to break a ton of those hydrogen bonds. So how can we actually calculate the energy of the breakage, and how much energy is actually consumed by the ribosome?
-
 those microarrays? episomal reporter assay? massively parallel reporter assays? also just common plasmid tech used to make a bunch of proteins? microfluidics?
 
 chaperonin, huge protein complex where the folding takes place in. Sort of like a shield from interactions from the outside world
@@ -953,8 +889,6 @@ how the hell do biotinylation works??? Like, where does the protein-specific sel
 https://en.wikipedia.org/wiki/Genome-wide_association_study
 
 okay I get how zinc fingers can sort of be used to replace dna segments. So is it that hard to design them? Look for stories from ppl who actually designed them
-
-also direction and stranded-ness of everything??
 
 discovery path for proteins? Where are the entropy leaks?
 
@@ -981,8 +915,6 @@ https://caseyhandmer.wordpress.com/2021/05/21/new-opportunities-for-space-compan
 https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+1T2021/home
 https://riscv.org/community/learn/
 
-I've heard pytorch has a built-in JIT, so what's up with that? JIT for what? Cause CUDA kernel calls don't really need that rite?
-
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
@@ -991,8 +923,6 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
 
-pcr measuring virus particles, actually I just want to understand the testing method for covid
-
 event-driven knowledge seeking seems to be much, much more efficient than just a clean sweep. But you kinda have to seek out turbulence and ready to bite the bullet. See if this fundamental behavior/preference is replicated in RL and whatnot. Also again, have an intuitive understanding of the limits of the networks, and where the bottlenecks are
 
 radar vs ultrasonic? Why both on a tesla?
@@ -1000,8 +930,6 @@ radar vs ultrasonic? Why both on a tesla?
 https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell
 https://en.wikipedia.org/wiki/Reprogramming
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
-
-gbench marge views?
 
 how the hell can heme be a protein?
 
@@ -1015,8 +943,6 @@ also how does the intelligence cells (macrophage) actually determines who's us a
 
 also check claim that coding regions have more GC-content, and longer ones have even more
 
-how pcr tests work again? And why are they so god damn expensive?
-
 how to know resonance frequency of a static structure? Are there general guidelines?
 
 so, let's say I have a gene file, then a transcription of that, and a translation of that as separate files. How to I merge them together? SOD1_datasets file seems like it will be impossible, cause like, there are no spacing information inside of the mrna and protein files
@@ -1027,8 +953,6 @@ https://en.wikipedia.org/wiki/Structural_biology
 vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those should be interesting. gbench's: https://www.ncbi.nlm.nih.gov/tools/gbench/releasenotes/
 
 ncbi also has some kind of selection language, so see over that: 21[Chr] AND "Homo sapiens"[Organism] AND ("has ccds"[Properties] AND alive[prop]) 
-
-again, how do inverters work? And like, it seems like I have to try to match the grid's frequency and phase, or else it might blow it up. If basic electronics are worked out to a reasonable level of confidence, I can consume as much energy as I wanted and not feel guilty lol
 
 see over NC sequences, and see if they have gap information or not
 
@@ -1079,3 +1003,4 @@ really understand how k1lib packaging process works, to get rid of stuff if not 
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
 limited memory: https://arxiv.org/abs/2002.05645v5
+dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf

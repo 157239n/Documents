@@ -43,7 +43,6 @@ skillshare, entrepreneurship hustle: from business plan to real success
 also planet (company) now offers unrivalled access and rapid response to any part of the world. See their plans
 do things with planets-only.net
 210, 23rd. 248, section 12b, 22nd
-reason about cpu-gpu communication speed and determine if training on multiple gpus are really worth it
 
 can RL agents always be reasonable when framerate switches to 30fps to 60 or higher? If they are influenced by this then it seems like the error signal attenuation still applies right? So at that point, why not just create a much simpler policy-only optimization process?
 
@@ -192,8 +191,6 @@ again, why don't ppl include loss surface visualizations in their papers??? I th
 attention and its relation to event-based systems?
 
 so the idea GPT-3 is pushing is that when the big network gets fed a prompt, it forms this little network on the go that's specialized to handle the task, which sort of explains why GPT-3 needs to be so big, and it also sort of explains the power-law relationship. So really reason about the relative sizes of these networks. How large is the actual specialized network and the full one? Then make comparisons to other animals
-
-also yeah, we already have the A100 GPU, which can do like 600 TFLOPS, more than the human brain already. But the training still takes time tho, because what we're effectively doing is getting the general architecture to pass through billions of years of evolution, so it makes sense that it takes so long and consuming so many resources. But humans learn new things pretty slowly too, which sort of tells us that in learning completely new things, humans take as long as GPT-3. So have numbers to characterize this phenomenon
 
 deepmind, deep RL and its neuroscientific implications: https://deepmind.com/research/publications/Deep-Reinforcement-Learning-and-its-Neuroscientific-Implications
 yoshua bengio: from system 1 DL to system 2 DL: https://www.youtube.com/watch?v=T3sxeTgT4qc
@@ -789,10 +786,10 @@ https://en.wikipedia.org/wiki/Secretion
 https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
 https://en.wikipedia.org/wiki/Post-translational_modification
 https://en.wikipedia.org/wiki/Cytosol
+https://en.wikipedia.org/wiki/Macromolecular_crowding
 https://en.wikipedia.org/wiki/Glycosylation
 https://en.wikipedia.org/wiki/Psilocybe
 refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
-https://en.wikipedia.org/wiki/Plasmid
 https://en.wikipedia.org/wiki/Baltimore_classification
 https://en.wikipedia.org/wiki/Molecular_machine
 https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
@@ -801,6 +798,9 @@ https://en.wikipedia.org/wiki/Beta_sheet
 https://en.wikipedia.org/wiki/TIM_barrel
 https://en.wikipedia.org/wiki/Physarum_polycephalum
 https://en.wikipedia.org/wiki/RNA-binding_protein
+https://en.wikipedia.org/wiki/Origin_of_replication
+
+okay, so producing insulin using bacteria seems possible, but how do you actually filter out the insulin only, and not other things?
 
 question: can everything be built using proteins alone? Like, can stuff like cell membrane (lipid bilayer) be produced just by using proteins? If they can, then what's the exact mechanism
 
@@ -842,8 +842,6 @@ also, what's the diamond, graphene and carbon nanotubes making process? All 3 of
 https://en.wikipedia.org/wiki/Quantum_dot
 
 dig again at clearinghouses
-
-world models: https://arxiv.org/pdf/1803.10122.pdf
 
 do cifar 10 again, to get any insights possible, then my custom labels
 
@@ -1004,3 +1002,9 @@ https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
 limited memory: https://arxiv.org/abs/2002.05645v5
 dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
+
+okay, so ai stuff again. The theme for this push is to separate out distinct functionalities, and to have clear interfaces between components. The 3 main components I can think of is:
+- data loading
+- actual training, collect data, saves network and environment on disk
+- benchmark networks, form reports of what seems to work with what
+for saving stuff, test out pytorch and other options for saving nb state first

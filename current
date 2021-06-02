@@ -1008,3 +1008,4 @@ okay, so ai stuff again. The theme for this push is to separate out distinct fun
 - actual training, collect data, saves network and environment on disk
 - benchmark networks, form reports of what seems to work with what
 for saving stuff, test out pytorch and other options for saving nb state first
+also, the main focus of the push this time around is to actually utilize the scientific method and make things extremely concrete and reproducible.

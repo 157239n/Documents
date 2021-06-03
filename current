@@ -941,8 +941,6 @@ also how does the intelligence cells (macrophage) actually determines who's us a
 
 also check claim that coding regions have more GC-content, and longer ones have even more
 
-how to know resonance frequency of a static structure? Are there general guidelines?
-
 so, let's say I have a gene file, then a transcription of that, and a translation of that as separate files. How to I merge them together? SOD1_datasets file seems like it will be impossible, cause like, there are no spacing information inside of the mrna and protein files
 
 https://en.wikipedia.org/wiki/Structural_genomics
@@ -996,8 +994,6 @@ create a program to quickly analyze and predict gibbs free energy of a lot of re
 
 may be the best way of doing all the DL stuff is to create a mechanism to save results from an independent python run to a notebook file, then I can just recreate every results from the beginning. So create a framework to do just that
 
-really understand how k1lib packaging process works, to get rid of stuff if not necessary
-
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
 limited memory: https://arxiv.org/abs/2002.05645v5
@@ -1009,3 +1005,27 @@ okay, so ai stuff again. The theme for this push is to separate out distinct fun
 - benchmark networks, form reports of what seems to work with what
 for saving stuff, test out pytorch and other options for saving nb state first
 also, the main focus of the push this time around is to actually utilize the scientific method and make things extremely concrete and reproducible.
+
+what's inside torch.save()?
+
+also cont refactor old code, until it's absolutely majestic so as to improve improvement time
+
+also super important point: this time around, spend time experimenting with HookModule, to train myself to identify signals that show what the network is actually thinking about. The goal is to be able to look at a failed network's internals, and diagnose potentially stupid params and whatnot immediately, to waste as little time as possible. With HookModule, there should be no need to actually rely on "magic" as the explanation
+
+also really make the process of using these tools as intuitive as possible, as that's extremely vital in actually using the diagnostic tools
+
+also, seems possible to have a python object that implements _repr_html_(), that will actually return legit html that can run p5. So use this for a bunch of visualizations:
+- 3d loss landscape
+actually, see over "matplotlib jupyter interactive" first, before doing anything by myself, cause that's pretty rough:
+- https://towardsdatascience.com/how-to-produce-interactive-matplotlib-plots-in-jupyter-environment-1e4329d71651
+- https://stackoverflow.com/questions/14261903/how-can-i-open-the-interactive-matplotlib-window-in-ipython-notebook
+
+actually, for all plot regions from now on, allow normal slicing, to quickly view the slice without having to pass in weird params names like "_slice"
+
+do concrete time analysis on all the callback and hooks overhead later. Also actually understand how hooks work, because for some reason, the backward pass's output in some cases is a tuple. That's why I have to have the function k1lib.getFirst(). I just glossed over it previously, but now actually understand what's going on
+
+also implement the triple run policy. Every learner.run() will automatically run 3 times, saving results each time ("learner-id-0.pth" file), and allow easy access to those saved learners, as if they're in memory (but swap them out of memory after they're done to conserve memory)
+
+actually, most important thing is to always think about meta stuff, and apply it to several places, including the current impl, current way to think about the impl as rank 1, and move further upwards. Also think about how an RL agent might do this/do it differently, although that's for later
+
+reason how I would detect that the loss function is not normalized

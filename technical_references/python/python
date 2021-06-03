@@ -46,3 +46,17 @@ C integration:
 - cython?
 - "how does python interop with C"
 - https://realpython.com/python-bindings-overview/
+
+
+
+relative imports:
+- https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
+- https://stackoverflow.com/questions/14132789/relative-imports-for-the-billionth-time/14132912#14132912
+- https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html
+- https://realpython.com/absolute-vs-relative-python-imports/
+- https://docs.python.org/3/reference/import.html
+- cyclical imports: https://stackoverflow.com/questions/744373/circular-or-cyclic-imports-in-python
+- https://stackoverflow.com/questions/30669474/beyond-top-level-package-error-in-relative-import
+- https://stackoverflow.com/questions/6323860/sibling-package-imports
+
+

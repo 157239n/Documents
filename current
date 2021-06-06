@@ -1015,3 +1015,11 @@ actually, see over "matplotlib jupyter interactive" first, before doing anything
 also implement the triple run policy. Every learner.run() will automatically run 3 times, saving results each time ("learner-id-0.pth" file), and allow easy access to those saved learners, as if they're in memory (but swap them out of memory after they're done to conserve memory)
 
 reason how I would detect that the loss function is not normalized
+
+add evaluation method inside learner, so I can visually, roughly judge how it's doing
+
+so, basic questions:
+- all else equals, plot batch size vs SGD vs Adam execution times
+- all else equals (# samples seen too), plot batch size vs loss
+
+SGD 3e-3 is too big. 3e-5 is more like it. It explodes earlier because it's high lr, not because lossF is means of y, but because lr is so big

@@ -1012,14 +1012,10 @@ actually, see over "matplotlib jupyter interactive" first, before doing anything
 - https://towardsdatascience.com/how-to-produce-interactive-matplotlib-plots-in-jupyter-environment-1e4329d71651
 - https://stackoverflow.com/questions/14261903/how-can-i-open-the-interactive-matplotlib-window-in-ipython-notebook
 
-also implement the triple run policy. Every learner.run() will automatically run 3 times, saving results each time ("learner-id-0.pth" file), and allow easy access to those saved learners, as if they're in memory (but swap them out of memory after they're done to conserve memory)
-
-reason how I would detect that the loss function is not normalized
-
 add evaluation method inside learner, so I can visually, roughly judge how it's doing
 
-so, basic questions:
-- all else equals, plot batch size vs SGD vs Adam execution times
-- all else equals (# samples seen too), plot batch size vs loss
+try out high accuracy loss function (applying an exp, and make sure it's in the right range), to see if that really improves anything at all
 
-SGD 3e-3 is too big. 3e-5 is more like it. It explodes earlier because it's high lr, not because lossF is means of y, but because lr is so big
+do a skip connection thingy. Try to lengthen the existing network first, until it can't do anything anymore, and look at HookParam, to be sure that gradients are actually fading away. Then add skip connections, to be sure that the network actually utilizes that
+
+lots of different middle layers, see progress at low loss point

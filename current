@@ -1016,6 +1016,15 @@ try out high accuracy loss function (applying an exp, and make sure it's in the 
 
 do a skip connection thingy. Try to lengthen the existing network first, until it can't do anything anymore, and look at HookParam, to be sure that gradients are actually fading away. Then add skip connections, to be sure that the network actually utilizes that
 
-lots of different middle layers, see progress at low loss point
-
 plt decorators functionality, to automatically customize plots quickly
+
+does std 0.15 means that majority will be from -0.15 to +0.15?
+
+also check loss landscape of deep networks
+
+for skip connections, do:
+- vanilla, like in resnet
+- static controllable. Changes slowly, according to optimizer
+- dynamic controllable. Changes wildly, based on input
+
+limit lines functionality. If model is really big, then whenever I type in l.__repr__(), it will only display parts of l.model

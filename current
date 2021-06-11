@@ -1014,13 +1014,11 @@ actually, see over "matplotlib jupyter interactive" first, before doing anything
 
 try out high accuracy loss function (applying an exp, and make sure it's in the right range), to see if that really improves anything at all
 
-do a skip connection thingy. Try to lengthen the existing network first, until it can't do anything anymore, and look at HookParam, to be sure that gradients are actually fading away. Then add skip connections, to be sure that the network actually utilizes that
-
-plt decorators functionality, to automatically customize plots quickly
-
 does std 0.15 means that majority will be from -0.15 to +0.15?
 
 also check loss landscape of deep networks
+
+also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
 for skip connections, do:
 - vanilla, like in resnet
@@ -1028,3 +1026,5 @@ for skip connections, do:
 - dynamic controllable. Changes wildly, based on input
 
 limit lines functionality. If model is really big, then whenever I type in l.__repr__(), it will only display parts of l.model
+
+skip connection widen it, to see if it can still learn and be stable. Just to make sure "curse of high dimensionality" is really no longer there

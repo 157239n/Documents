@@ -60,3 +60,7 @@ relative imports:
 - https://stackoverflow.com/questions/6323860/sibling-package-imports
 
 
+
+./setup.py sdist
+twine upload dist/*
+

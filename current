@@ -964,8 +964,6 @@ while doing pyanodons, try to pay attention to a few fundamental questions:
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
 
-go over tier zoo again
-
 die size vs performance calculations? https://www.alternatewars.com/BBOW/Computing/Computing_Power.htm, https://www.techpowerup.com/forums/threads/processor-gflops-compilation.94721/
 
 CLC Genomics Workbench: https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/User_Manual.pdf
@@ -990,33 +988,14 @@ checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speed
 
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
 
-may be the best way of doing all the DL stuff is to create a mechanism to save results from an independent python run to a notebook file, then I can just recreate every results from the beginning. So create a framework to do just that
-
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
 limited memory: https://arxiv.org/abs/2002.05645v5
 dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
 
-okay, so ai stuff again. The theme for this push is to separate out distinct functionalities, and to have clear interfaces between components. The 3 main components I can think of is:
-- data loading
-- actual training, collect data, saves network and environment on disk
-- benchmark networks, form reports of what seems to work with what
-for saving stuff, test out pytorch and other options for saving nb state first
-also, the main focus of the push this time around is to actually utilize the scientific method and make things extremely concrete and reproducible.
-
-also super important point: this time around, spend time experimenting with HookModule, to train myself to identify signals that show what the network is actually thinking about. The goal is to be able to look at a failed network's internals, and diagnose potentially stupid params and whatnot immediately, to waste as little time as possible. With HookModule, there should be no need to actually rely on "magic" as the explanation
-
-also, seems possible to have a python object that implements _repr_html_(), that will actually return legit html that can run p5. So use this for a bunch of visualizations:
-- 3d loss landscape
-actually, see over "matplotlib jupyter interactive" first, before doing anything by myself, cause that's pretty rough:
-- https://towardsdatascience.com/how-to-produce-interactive-matplotlib-plots-in-jupyter-environment-1e4329d71651
-- https://stackoverflow.com/questions/14261903/how-can-i-open-the-interactive-matplotlib-window-in-ipython-notebook
-
 try out high accuracy loss function (applying an exp, and make sure it's in the right range), to see if that really improves anything at all
 
 does std 0.15 means that majority will be from -0.15 to +0.15?
-
-also check loss landscape of deep networks
 
 also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
@@ -1025,6 +1004,8 @@ for skip connections, do:
 - static controllable. Changes slowly, according to optimizer
 - dynamic controllable. Changes wildly, based on input
 
-limit lines functionality. If model is really big, then whenever I type in l.__repr__(), it will only display parts of l.model
-
 skip connection widen it, to see if it can still learn and be stable. Just to make sure "curse of high dimensionality" is really no longer there
+
+skip connection lengthens it to crazy lengths to see it there's a limit
+
+selector comma

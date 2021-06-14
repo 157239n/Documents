@@ -1006,6 +1006,12 @@ for skip connections, do:
 
 skip connection widen it, to see if it can still learn and be stable. Just to make sure "curse of high dimensionality" is really no longer there
 
-skip connection lengthens it to crazy lengths to see it there's a limit
+wide-depth plot, to have a visual on what actually works
 
-selector comma
+skip connection lengthens it to crazy lengths to see it there's a limit. Apparently, there's a startup limit, cause the network has to sort of go through cold start which takes a bit of time to setup. So I reckon that going longer than 300 blocks (1k linear layers) should be okay, if given an opportunity to ease in extra layers, like what progressive deepening is doing
+
+cooking bones to make bone meal sounds really energy intensive, just as much as steel production process, so what the hell?
+
+extra selectors to finetune even more in HookParam and HookModule??? Should have form of f.HookModule.css("").plot() or sth like that
+
+make sure slice stuff in sliceableplot actually takes care of the step param

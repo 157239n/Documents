@@ -1015,3 +1015,7 @@ cooking bones to make bone meal sounds really energy intensive, just as much as 
 extra selectors to finetune even more in HookParam and HookModule??? Should have form of f.HookModule.css("").plot() or sth like that
 
 make sure slice stuff in sliceableplot actually takes care of the step param
+
+actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
+
+garden keep track of times pressed within a day

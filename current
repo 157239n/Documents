@@ -1019,3 +1019,7 @@ make sure slice stuff in sliceableplot actually takes care of the step param
 actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
 
 garden keep track of times pressed within a day
+
+docs rename moduleSelector to selector
+
+do like finance under programmer's eyes

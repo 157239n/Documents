@@ -126,3 +126,21 @@ traders, after switch:
 - F: 1 apple = 1.1 USD, willing to give out USD. Has 100 apples, equivalent to 100 apples
 
 question is, will traders A-F and consumers 1-3 be all satisfied?
+
+
+
+
+
+
+
+important scales:
+- ach (2003): 6.5B trans, total $16.8T
+- fedwire (2003): 123M trans, total $436T
+- fedwire (2016): 148M trans, total $766T
+- visa (?): 100B trans
+
+"swift does not hold accounts for its members and does not perform any form of clearing or settlement" okay interesting
+
+https://www.linkedin.com/pulse/under-hood-merchant-payment-process-jas-shah/
+glossary of terms used in payments and settlement systems: https://www.bis.org/cpmi/glossary_030301.pdf
+https://gendal.me/2013/11/24/a-simple-explanation-of-how-money-moves-around-the-banking-system/

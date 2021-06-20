@@ -995,8 +995,6 @@ dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
 
 try out high accuracy loss function (applying an exp, and make sure it's in the right range), to see if that really improves anything at all
 
-does std 0.15 means that majority will be from -0.15 to +0.15?
-
 also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
 for skip connections, do:
@@ -1012,14 +1010,10 @@ skip connection lengthens it to crazy lengths to see it there's a limit. Apparen
 
 cooking bones to make bone meal sounds really energy intensive, just as much as steel production process, so what the hell?
 
-extra selectors to finetune even more in HookParam and HookModule??? Should have form of f.HookModule.css("").plot() or sth like that
-
 make sure slice stuff in sliceableplot actually takes care of the step param
 
 actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
 
 docs rename moduleSelector to selector
-
-do like finance under programmer's eyes
 
 /integration/{className}

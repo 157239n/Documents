@@ -980,8 +980,6 @@ actually, try space exploration mod again, this time with a proper train network
 https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
 
-really implement that random hit smith walterman, cause that seems awfully cool, and has potential to use a lot of gpu stuff
-
 checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()
 
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
@@ -995,21 +993,13 @@ try out high accuracy loss function (applying an exp, and make sure it's in the 
 
 also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
-wide-depth plot, to have a visual on what actually works
-
-skip connection lengthens it to crazy lengths to see it there's a limit. Apparently, there's a startup limit, cause the network has to sort of go through cold start which takes a bit of time to setup. So I reckon that going longer than 300 blocks (1k linear layers) should be okay, if given an opportunity to ease in extra layers, like what progressive deepening is doing
-
 cooking bones to make bone meal sounds really energy intensive, just as much as steel production process, so what the hell?
-
-make sure slice stuff in sliceableplot actually takes care of the step param
 
 actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
 
 docs rename moduleSelector to selector
 
 /integration/{className}
-
-paramscheduler add css support. To do this, kind have to break the network down into multiple param groups. So really test performance of this to be sure
 
 so, after experimenting with skip blocks:
 - mnist again, try doing the same things, measure really foundational vars
@@ -1025,3 +1015,5 @@ python __getattr__ for entire environment
 - http://pythonwise.blogspot.com/2020/07/using-module-dir-and-getattr-for.html
 - https://stackoverflow.com/questions/4075190/what-is-getattr-exactly-and-how-do-i-use-it
 - https://www.python.org/dev/peps/pep-0562/
+
+gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/

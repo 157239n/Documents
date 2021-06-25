@@ -1011,11 +1011,8 @@ so, after experimenting with skip blocks:
 - then gans, and stuff like cycle gan too
 - then graph nns, then try to tackle some chemistry problems
 
-python __getattr__ for entire environment
-- http://pythonwise.blogspot.com/2020/07/using-module-dir-and-getattr-for.html
-- https://stackoverflow.com/questions/4075190/what-is-getattr-exactly-and-how-do-i-use-it
-- https://www.python.org/dev/peps/pep-0562/
-
 gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
 
 20 days passed, no errors
+
+see backends in pytorch c++ code, and see if cpu is actually mkl in disguise

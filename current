@@ -921,8 +921,6 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
 
-event-driven knowledge seeking seems to be much, much more efficient than just a clean sweep. But you kinda have to seek out turbulence and ready to bite the bullet. See if this fundamental behavior/preference is replicated in RL and whatnot. Also again, have an intuitive understanding of the limits of the networks, and where the bottlenecks are
-
 radar vs ultrasonic? Why both on a tesla?
 
 https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell
@@ -930,8 +928,6 @@ https://en.wikipedia.org/wiki/Reprogramming
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
 how the hell can heme be a protein?
-
-damn, quick visualization tools online for specific proteins kinda sucks
 
 so, all the stuff in biology has to sort of be resilient to tiny changes in the DNA. Like, at least something like 70-90% of mutations (SNV) won't affect how it works at all (<0.001% for engineered systems. Like, if you change 1 bit about code, the program won't compile at all). But there has to also be a massively parallel compute engine to actually make it work. Luckily there are literally trillions and more quantum computers just doing all the data crunching called organisms/viruses. So analyze the compute scale we're talking about here?
 
@@ -977,7 +973,6 @@ ksp man, do really badass navigation and control, while reading rocket propulsio
 
 actually, try space exploration mod again, this time with a proper train network
 
-https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf
 https://www.kaggle.com/questions-and-answers/150725
 
 checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()
@@ -999,8 +994,6 @@ actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
 
 docs rename moduleSelector to selector
 
-/integration/{className}
-
 so, after experimenting with skip blocks:
 - mnist again, try doing the same things, measure really foundational vars
 - then cifar
@@ -1015,4 +1008,29 @@ gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
 
 20 days passed, no errors
 
-see backends in pytorch c++ code, and see if cpu is actually mkl in disguise
+https://docs.python.org/3/c-api/buffer.html
+https://github.com/pytorch/vision/tree/master/torchvision/models
+https://github.com/pytorch/vision/blob/master/hubconf.py
+
+callback that limits the gradient backwards? checkout nn.Module impl first
+
+even specialize the core training loop so that it becomes a callback? that way, different ecosystems of callbacks are possible, and this can be adapted to the RL environment just fine. Tread very carefully along this line, as rigorous schemes are required to make the entire thing work seemlessly
+
+also think about how hierarchies of callbacks can work. Like,
+class Callback:
+	def __init__(self):
+		super().__init__()
+		self.childCbs = []
+
+class Callbacks:
+	def __init__(self):
+		pass
+	def __call__(self, checkpoint):
+		cb.startRun()
+		cb.childCbs.startRun()
+
+but yeah, actually see if this massive change in architecture is really necessary, and try to avoid it as much as possible
+
+make Callback.dependents Callback._dependents
+
+callback that reveals where the computational intensity is?

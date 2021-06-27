@@ -15,3 +15,6 @@ conda info --envs
 conda info
 
 anaconda-navigator
+
+conda config --show channels
+conda config --add channels bioconda

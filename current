@@ -1031,7 +1031,7 @@ class Callbacks:
 
 but yeah, actually see if this massive change in architecture is really necessary, and try to avoid it as much as possible
 
-make Callback.dependents Callback._dependents
+make Callback.dependents Callback._dependents. Actually hide it within resolve deps
 
 callback that reveals where the computational intensity is?
 

@@ -5,9 +5,14 @@ infoseq chr22.fa
 efetch -db nuccore -id NM_000020 -format gb | head
 - -seq_start=1 -seq_stop=5 -strand=2
 - https://www.ncbi.nlm.nih.gov/books/NBK179288/
+- efetch -db taxonomy -id 9606,7227,10090 -format xml > output.xml
 esearch -db nucleotide -query PRJNA257197 | efetch -format=fasta
 - dbs: nuccore, nucleotide, protein, taxonomy
+- esearch -db sra -query PRJNA257197 | efetch -format runinfo > runinfo.csv
+- esearch -db sra -query PRJNA257197 | efetch -format summary > summary.xml
 fastq-dump -X 100 -Z SRR1553607 | head
+cat summary.xml | xtract -pattern RUN_SET -element @accession | head
+cat NC_001501.gb | readseq -p -format=FASTA > NC_001501-version3.fa
 samtools view demo.bam | head
 bcftools view -H subset_hg19.vcf.gz | head
 cat AF086833.gb | seqret -filter -feature -osformat fasta

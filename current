@@ -1038,3 +1038,7 @@ callback that reveals where the computational intensity is?
 one cycle log scale
 
 biopython: python setup.py test
+
+removing getters and setters? See if there're any problems
+
+create bioinfo package in k1lib, with advanced context and caching, and most importantly, a really nice UI, like ">" operation with string to save everything to a file. Cause like, my memory sucks, and doing stuff like this, with useful annotations will greatly improve the experience

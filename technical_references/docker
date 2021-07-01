@@ -556,3 +556,15 @@ RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log && \
 to override the log files with a symbolic link which will dump it to the output. Can replace the file descriptor files with /dev/stdin and /dev/stdout, but some said that they're not guaranteed to be there all the time.
 
 
+
+
+
+
+
+
+docker permissions:
+- https://stackoverflow.com/questions/26500270/understanding-user-file-ownership-in-docker-how-to-avoid-changing-permissions-o
+- https://docs.docker.com/engine/install/linux-postinstall/
+- https://vsupalov.com/docker-shared-permissions/
+- https://blog.ippon.tech/docker-and-permission-management/
+- https://medium.com/@nielssj/docker-volumes-and-file-system-permissions-772c1aee23ca

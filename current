@@ -6,43 +6,15 @@ so, priorities now:
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 - book: "pmi-pmbok", "pmbok guide"
 
-hey ynes. Damn you, I'm crying. Am I trading away things that I shouldn't do? I am trading away my youth, I'm trading away my freedom, my sleep time, very much my relationships <gets cut off>
-oh and, just really want you to know that I really appreciate you just hanging around me for this long and just being a total nutcase (:v). Really gives a tasty flavor to my life and almost gives me smiles everyday
-
 read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good
-
-file:///home/kelvin/Downloads/James%20Edward%20Gordon%20-%20Structures_%20or,%20Why%20things%20don't%20fall%20down-Penguin%20Books%20(1978).pdf
-7. joints, fastenings and people - also about creep and chariot wheels
-8. soft materials and living structures - or how to design a worm
-9. walls, arches and dams - or cloud towers and the stability of masonry
-10. something about bridges - or saint... and saint...
-11. advantage of being a beam - with observations on roofs, trusses, and masts
-12. mystery of shear and torsion - or polaris and the bias-cut nightie
-13. the various ways of failing in compression - or sandwiches, skulls, and dr euler
-14. philosophy of design - or the shape, the weight and the cost
-15. chapter of accidents - a study in sin, error, and metal fatigue
-16. efficiency and aesthetic - or the world we have to live in
-
-check robinhood's name, cuz it's currently kel, not my legal name. Yeah contact them and say things are not right. Hasn't answered yet. This is starting to look worrying
-
-phase out magento certificates? After I get magento working, or at least the standalone simple financial model working
 
 masterclass.comds
 
 chapter 11 of the bankruptcy code
 
-also connect with that girl who used to do lstm stuff, Nhu right?, and see what she has been up to lately
-
 effective altruism global:
 - https://www.eaglobal.org/events/ea-global-2017-uk/
 - https://www.youtube.com/channel/UCEfASxwPxzsHlG5Rf1-4K9w
-
-get to the angel thingy
-Drexel University - Baiada Startup Incubator
-skillshare, entrepreneurship hustle: from business plan to real success
-also planet (company) now offers unrivalled access and rapid response to any part of the world. See their plans
-do things with planets-only.net
-210, 23rd. 248, section 12b, 22nd
 
 can RL agents always be reasonable when framerate switches to 30fps to 60 or higher? If they are influenced by this then it seems like the error signal attenuation still applies right? So at that point, why not just create a much simpler policy-only optimization process?
 
@@ -68,19 +40,7 @@ how do ppl actually build chatbots from language models? In other words, how to 
 
 "neural turing machine" sounds very, very impressive, so look into that
 
-
-
-
-
-
-
-
-
-
-
-
-
-also, spiking NNs seems interesting, so dive in that as well. Note that this is actually quite controversial
+https://arxiv.org/pdf/1709.08568.pdf
 
 what does it mean for bert to be bidirectional? I mean, aren't attention mechanism don't have a direction?
 
@@ -141,13 +101,7 @@ neural architecture search: a survey: https://arxiv.org/pdf/1808.05377.pdf
 
 turn faces into anime girls. May be real guy -> anime guy/girl, and real girl -> anime guy/girl as well. Devise a way of switching the network back and fourth, to practice inputting in explicit meaning. This should be the first step in actually extracting information out of a system
 
-may be an extremely dumb question about nano tech. We obviously can move atoms around in a silicon lattice. So why can't we design a self-bootstrapping mechanism that allows us to basically manipulate everything?
-
 can RL from pixels be as efficient as RL from state? https://bair.berkeley.edu/blog/2020/07/19/curl-rad/
-
-https://iclr.cc/
-
-SNN: https://www.youtube.com/watch?v=ICw2_49dSNw
 
 discovering RL algorithms: https://arxiv.org/pdf/2007.08794.pdf
 
@@ -166,8 +120,6 @@ covid stuff:
 - continual bert: continual learning for adaptive extractive summarization of covid-19 literature: https://arxiv.org/pdf/2007.03405.pdf
 - a survey on applications of AI in fighting against covid-19: https://arxiv.org/pdf/2007.02202.pdf
 - IoT for current covid-19 and future pandemics: an exploratory study: https://arxiv.org/pdf/2007.11147.pdf
-
-how classical language models be used in any circumstances without it becoming god? I just sort of don't get it
 
 again with the image segmentation but different color for different objects of same class, "instance image segmentation"
 
@@ -201,18 +153,6 @@ obama interview: https://www.youtube.com/watch?v=Tjl8ka3F6QU
 spectral normalization, seems to fix problems with the discriminator
 
 https://www.fast.ai/2018/07/02/adam-weight-decay/
-
-history ppt:
-- eliza, futile attempts, example of "symbolic AI". Then the whole expert systems. Mention the brittleness of it
-- then checkers, proving out RL and markov chains
-- then classic brute force of gary kasparov
-- MNIST benchmark, LeNet, Yann LeCun, first important demonstration that the connectionist view actually works. Also proving that convs also works
-- ImageNet benchmark, a concrete benchmark, 1k labels, 10M images
-- AlexNet, first breakthrough by Alex Krizhevsky & Ilya Sutskever, which blows everyone out of the water. Implementation is so simple too
-- ResNet, huge breakthrough in proving deep systems work, and introduce an idea that deeper is indeed better, and don't have diminishing returns. Also impact on loss landscape is amazing
-- attention is all you need. Seemingly don't have a ceiling. The bigger you go, the better it gets
-- so, ppl have been making it bigger, and consistently get bigger returns. GPT-2, GPT-3, BERT, and results are absolutely amazing
-- returning back to RL, there's the alphago stuff. The impact is that now it can teach us instead of deepblue. Also it can be very creative
 
 path from now? Short and long term goals?
 
@@ -261,9 +201,6 @@ again, how to do attention stuff for simple workloads just to test the idea out?
 
 again, think about how to structure an active learning problem to create a fast feedback system. Basic principles should be fairly simple and easy to see, although there need not be actual implementable code to extend from. And yeah, I feel like there is a fear of generating new samples on the go and so ppl are turned away by that and don't necessarily embrace the nonlinearity of the real world
 
-why gpt-3 doesn't use embeddings
-language model encodings
-
 https://mailchi.mp/2485e6b42012/an-102-meta-learning-by-gpt-3-and-a-list-of-full-proposals-for-ai-alignment?e=e50845312e
 
 sparse coding:
@@ -296,7 +233,6 @@ https://www.reddit.com/r/MachineLearning/comments/g16s40/r_metalearning_in_neura
 https://towardsdatascience.com/visual-attention-model-in-deep-learning-708813c2912c
 https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
 
-next thursday: https://www.facebook.com/events/297524755014780/
 https://dailynous.com/2020/07/30/philosophers-gpt-3/
 
 verify double descent & super convergence with cifar 10
@@ -321,8 +257,6 @@ https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 scikit-learn is mentioned a whole lot, so what does it actually offer?
 
 again with the automl stuff
-
-jeremy interview: https://www.youtube.com/watch?v=205j37G1cxw
 
 https://forums.fast.ai/
 
@@ -491,8 +425,6 @@ https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interact
 
 another leslie paper: https://arxiv.org/pdf/1506.01186.pdf
 
-https://www.skillshare.com/classes/Motion-Graphics-with-Kurzgesagt-%E2%80%93-Part-1/631970755
-
 https://en.wikipedia.org/wiki/Debiasing
 
 ablation studies in NNs: https://arxiv.org/pdf/1901.08644.pdf
@@ -516,10 +448,7 @@ nanoparticle fabrication: https://www.researchgate.net/publication/226347418_Nan
 
 so do ppl do gene mapping by hand or individual experiments??? Cause that doesn't seem feasible though
 
-alertness
-arousal
-attention
-awareness
+alertness, arousal, attention, awareness
 
 dog whisperer
 
@@ -538,13 +467,6 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 organic chem, "steric hindrance":
 - https://www.masterorganicchemistry.com/2012/06/05/nucleophiles-and-electrophiles/
 - https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
-
-docker permissions:
-- https://stackoverflow.com/questions/26500270/understanding-user-file-ownership-in-docker-how-to-avoid-changing-permissions-o
-- https://docs.docker.com/engine/install/linux-postinstall/
-- https://vsupalov.com/docker-shared-permissions/
-- https://blog.ippon.tech/docker-and-permission-management/
-- https://medium.com/@nielssj/docker-volumes-and-file-system-permissions-772c1aee23ca
 
 https://read.amazon.com/?asin=B014TMUFX6
 https://en.wikipedia.org/wiki/Epigenetics
@@ -637,7 +559,6 @@ that combined knowledge thing:
 https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1ckHD6&keytype=ref&siteid=sci
 
-https://www.researchgate.net/post/Can_anyone_suggest_to_me_software_to_view_gene_annotations
 https://en.wikipedia.org/wiki/Homeobox
 
 simulate a simple pid, with initial state at 0 and new state at 1. Still worse than the intended thing, but just to get this out quickly
@@ -733,12 +654,12 @@ https://en.wikipedia.org/wiki/ELISA
 https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-elisa.html
 
 goals for this trip?
-- take over truckbux operations
-- grow stocks
+- (done) take over truckbux operations
+- (done) grow stocks
 - (done) have some skills in building simple products, like just laser cutting stuff, or metal injection molding parts, starship-related
 - (done) machine parts for complicated machine. Goal should be to machine dies or complicated parts for precision instruments
 - (done) get a good feeling of how things work in AI, especially how to debug stuff, and really analyze stuff from the inside. Pretty much what I'm doing right now, but just do it over and over again
-- actually do some genetics, and see if there's actually a real chance to do this or not
+- (done) actually do some genetics, and see if there's actually a real chance to do this or not
 - demonstrate plasmid cloning. Heard it's super simple and whatnot
 - demonstrate PCR, to get in touch with the querying tools
 - understand the compliment system designs, and see if I can come up with comparable systems
@@ -820,8 +741,6 @@ this company offers a virtual tour, so check it out: https://www.sageglass.com/e
 
 probably not needed, but calculate cost of hydrogen electrolysis as fuel, and compare that to just ordering methane
 
-https://www.youtube.com/c/Thesignalpath/videos
-
 hostile takeover?
 
 go over 23andme analysis
@@ -840,8 +759,6 @@ vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Res
 also, what's the diamond, graphene and carbon nanotubes making process? All 3 of them seems to be in very different configurations, so the heating solution doesn't seem to be that effective
 
 https://en.wikipedia.org/wiki/Quantum_dot
-
-dig again at clearinghouses
 
 do cifar 10 again, to get any insights possible, then my custom labels
 
@@ -910,9 +827,6 @@ https://caseyhandmer.wordpress.com/2020/02/15/dont-stage-off-starship/
 https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/
 https://caseyhandmer.wordpress.com/2021/05/21/new-opportunities-for-space-companies/
 
-https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+1T2021/home
-https://riscv.org/community/learn/
-
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
@@ -969,13 +883,9 @@ https://mit6874.github.io/
 
 killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
 
-ksp man, do really badass navigation and control, while reading rocket propulsion elements
-
 actually, try space exploration mod again, this time with a proper train network
 
 https://www.kaggle.com/questions-and-answers/150725
-
-checkout pinned memory (cudaMallocHost(), or cudaHostAlloc()) data copying speeds. cudaMemcpy() speeds are sort of terrible though. On the order of 4.55GB/s??? Meanwhile it should be 16GB/s, or at least 12GB/s for reasonable performance. Also try out cudaDeviceSynchronize()
 
 create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
 
@@ -1006,8 +916,6 @@ so, after experimenting with skip blocks:
 
 gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
 
-20 days passed, no errors
-
 https://docs.python.org/3/c-api/buffer.html
 https://github.com/pytorch/vision/tree/master/torchvision/models
 https://github.com/pytorch/vision/blob/master/hubconf.py
@@ -1037,8 +945,39 @@ callback that reveals where the computational intensity is?
 
 one cycle log scale
 
-biopython: python setup.py test
-
-removing getters and setters? See if there're any problems
-
 create bioinfo package in k1lib, with advanced context and caching, and most importantly, a really nice UI, like ">" operation with string to save everything to a file. Cause like, my memory sucks, and doing stuff like this, with useful annotations will greatly improve the experience
+
+manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
+
+register_module_forward_pre_hook
+register_module_forward_hook
+register_module_backward_hook
+register_module_full_backward_hook
+
+register_forward_pre_hook
+register_forward_hook
+register_backward_hook
+register_full_backward_hook
+
+_is_full_backward_hook: bool
+
+bunch of OrderedDict:
+- _backward_hooks
+- _forward_hooks
+- _forward_pre_hooks
+- _state_dict_hooks
+- _load_state_dict_pre_hooks
+
+global OrderedDict:
+- _global_backward_hooks
+- _global_forward_hooks
+- _global_forward_pre_hooks
+
+full_backward_hooks, non_full_backward_hooks????
+
+"regular backward hooks", "full backward hooks"???
+
+so the regular variant I've always been using is the non_full version
+
+forward pre hooks: (module, input) -> modified input
+forward hooks: (module, input, output) -> modified output

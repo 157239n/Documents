@@ -972,3 +972,9 @@ forward hooks: (module, input, output) -> modified output
 
 add dir stuff to Learner, to tab complete the callbacks
 l.Profiler.memory(), .time()
+
+cbs.withs to display a list of with functions
+
+check over all cb.order numbers, and write up a guide for these numbers
+
+streptococcus vs staphylococcus?

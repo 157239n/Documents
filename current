@@ -970,11 +970,8 @@ so the regular variant I've always been using is the non_full version
 forward pre hooks: (module, input) -> modified input
 forward hooks: (module, input, output) -> modified output
 
-add dir stuff to Learner, to tab complete the callbacks
-l.Profiler.memory(), .time()
-
-cbs.withs to display a list of with functions
-
-check over all cb.order numbers, and write up a guide for these numbers
-
 streptococcus vs staphylococcus?
+
+suborbital demo thingy
+
+Callback.evaluationSuspendCls

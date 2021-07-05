@@ -975,3 +975,29 @@ streptococcus vs staphylococcus?
 suborbital demo thingy
 
 Callback.evaluationSuspendCls
+
+increase and decrease bs, and measure theoretical flops and actual execution time, to see how optimized is each config
+
+also adam used F, but that F is actually defined in python, so read over the actual impl
+
+with l.cbs.context():
+	l.cbs.append(...)
+# then on exiting, it's automatically removed. Also make append() return the actual cb?
+
+check if F.relu actually registers on the selector
+
+hook leakage issue in the profilers
+
+how do mitochrondria duplicate themselves again? Heard they have their own genes and whatnot, and they're not attached to the main cell's chromosome
+
+https://en.wikipedia.org/wiki/Danger_model
+
+so, mRNAs apparently has a poly A tail, but for intrinsic termination, it's supposed to be a series of U instead. So I guess it's a really long A tail (70), then a bit of U (10) at the end?
+
+preHandle, option to bypass firebase with specific token
+
+so, to protect against underlying stuff changing in DAOs, then just test to make sure things work
+
+fix delayed fetch of activated time in garden
+
+https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB

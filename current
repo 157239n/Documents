@@ -1,7 +1,6 @@
 
 so, priorities now:
 - read rocket propulsion elements
-- Switch major to mechanical engineering, and get into a machine/hardware shop. Ask for contacts for students that are actually building hardware products for customers, from scratch. I remember Khue's friend used to do that.
 - file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 - book: "pmi-pmbok", "pmbok guide"
@@ -172,7 +171,6 @@ short term goal is to:
 - do all brilliant stuff (by this week)
 - do all jeremy howard stuff
 - do a few kaggle stuff
-- redo scales on the brain capacity thingy, and create a gpu and performance guide for ppl who're into training stuff (actually measure my GPU performance)
 - warn teachers of GPT-3, create an interface to automatically generate scripts to amaze them
 
 https://medium.com/dataseries/google-deepminds-dreamer-is-a-reinforcement-learning-agent-that-can-solve-long-horizon-tasks-5faa6f6b63b
@@ -610,7 +608,6 @@ temp discarded:
 - https://www.kaggle.com/nxrprime/fibrosis-eda-fast-ai
 - https://www.kaggle.com/dipam7/intel-scene-progressive-image-resizing
 
-interactome
 https://en.wikipedia.org/wiki/Structural_alignment
 
 2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
@@ -680,7 +677,6 @@ goals for this trip?
 - figure out all reactions in seablock
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
-https://en.wikipedia.org/wiki/Process_manufacturing
 https://en.wikipedia.org/wiki/Aspen_Technology
 
 https://en.wikipedia.org/wiki/Contig
@@ -701,25 +697,23 @@ https://fungi.com/
 
 YP_009724389.1
 
-https://en.wikipedia.org/wiki/Proteolysis
 https://en.wikipedia.org/wiki/Signal_peptide
 https://en.wikipedia.org/wiki/Secretion
 https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
 https://en.wikipedia.org/wiki/Post-translational_modification
-https://en.wikipedia.org/wiki/Cytosol
-https://en.wikipedia.org/wiki/Macromolecular_crowding
 https://en.wikipedia.org/wiki/Glycosylation
 https://en.wikipedia.org/wiki/Psilocybe
 refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
 https://en.wikipedia.org/wiki/Baltimore_classification
 https://en.wikipedia.org/wiki/Molecular_machine
 https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
-https://en.wikipedia.org/wiki/Ribosomal_frameshift
-https://en.wikipedia.org/wiki/Beta_sheet
 https://en.wikipedia.org/wiki/TIM_barrel
 https://en.wikipedia.org/wiki/Physarum_polycephalum
 https://en.wikipedia.org/wiki/RNA-binding_protein
 https://en.wikipedia.org/wiki/Origin_of_replication
+sample complexity: https://en.wikipedia.org/wiki/Dihydrofolate_reductase
+https://en.wikipedia.org/wiki/Chaperone_(protein)
+https://en.wikipedia.org/wiki/GroEL
 
 okay, so producing insulin using bacteria seems possible, but how do you actually filter out the insulin only, and not other things?
 
@@ -835,8 +829,6 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 orf3a, tiny gene encoded within the other gene
 ridiculous evolution: s1, orf8, orf6
 
-https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell
-https://en.wikipedia.org/wiki/Reprogramming
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
 how the hell can heme be a protein?
@@ -916,19 +908,11 @@ manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
 
 streptococcus vs staphylococcus?
 
-increase and decrease bs, and measure theoretical flops and actual execution time, to see how optimized is each config
-
 also adam used F, but that F is actually defined in python, so read over the actual impl
 
 how do mitochrondria duplicate themselves again? Heard they have their own genes and whatnot, and they're not attached to the main cell's chromosome
 
 https://en.wikipedia.org/wiki/Danger_model
-
-preHandle, option to bypass firebase with specific token
-
-so, to protect against underlying stuff changing in DAOs, then just test to make sure things work
-
-fix delayed fetch of activated time in garden
 
 https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB
 
@@ -958,6 +942,7 @@ talking about fingerprints, there are a few ideas:
 
 cb for stuff like confusion matrixes. This has to assume that it's a classical labeling stuff. Not as elegant as I'd like, but oh well, a lot of these are well tailored for specific use cases only anyway, so why not
 
-l.Profiler.io, to measure input and output dimensions
+why tae buffers?
+retroviral vs lentiviral?
 
-selector semicolon
+l.cbs.withFrozen(css)

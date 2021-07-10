@@ -452,16 +452,6 @@ dog whisperer
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 
-"chemistry file formats", "rxn format", "chemdraw file format", "reddit molecular exchange format":
-- https://en.wikipedia.org/wiki/Category:Chemical_file_formats
-- https://chem.libretexts.org/Courses/Intercollegiate_Courses/Cheminformatics_OLCC_(2019)/2._Representing_Small_Molecules_on_Computers/2.5%3A_Structural_Data_Files
-- https://pubs.acs.org/doi/10.1021/ci00007a012
-- https://en.wikipedia.org/wiki/Chemical_table_file
-- https://en.wikipedia.org/wiki/CDXML
-- https://en.wikipedia.org/wiki/CDX_Format
-- https://en.wikipedia.org/wiki/ChemDraw
-- https://www.reddit.com/r/askscience/comments/accnx4/what_is_the_difference_between_timedependent/
-
 organic chem, "steric hindrance":
 - https://www.masterorganicchemistry.com/2012/06/05/nucleophiles-and-electrophiles/
 - https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
@@ -641,8 +631,6 @@ gene therapy again
 
 reddit thread about ACE2 receptors
 
-update story of energy
-
 https://en.wikipedia.org/wiki/DNA_nanotechnology
 https://en.wikipedia.org/wiki/Molecular_self-assembly
 https://en.wikipedia.org/wiki/Non-contact_atomic_force_microscopy
@@ -717,8 +705,6 @@ https://en.wikipedia.org/wiki/GroEL
 
 okay, so producing insulin using bacteria seems possible, but how do you actually filter out the insulin only, and not other things?
 
-question: can everything be built using proteins alone? Like, can stuff like cell membrane (lipid bilayer) be produced just by using proteins? If they can, then what's the exact mechanism
-
 https://codexdna.com/products/bioxp-system/
 
 comprehensive source: https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/
@@ -732,8 +718,6 @@ https://fold.it/portal/node/2007798
 https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2_explained_ai_breakthrough/
 
 this company offers a virtual tour, so check it out: https://www.sageglass.com/en/article/what-electrochromic-glass
-
-probably not needed, but calculate cost of hydrogen electrolysis as fuel, and compare that to just ordering methane
 
 hostile takeover?
 
@@ -831,8 +815,6 @@ ridiculous evolution: s1, orf8, orf6
 
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
-how the hell can heme be a protein?
-
 so, all the stuff in biology has to sort of be resilient to tiny changes in the DNA. Like, at least something like 70-90% of mutations (SNV) won't affect how it works at all (<0.001% for engineered systems. Like, if you change 1 bit about code, the program won't compile at all). But there has to also be a massively parallel compute engine to actually make it work. Luckily there are literally trillions and more quantum computers just doing all the data crunching called organisms/viruses. So analyze the compute scale we're talking about here?
 
 why pfizer needs to be really cold? I mean, I've heard that normally, specific proteins within the cells break mrna down. Dna is ridiculously strong (single strand can survive in boiling water just fine), so they don't break at all. So may be just don't include in the proteins that break them down? May be it's hard to separate proteins? But like seriously, that problem seems really lame that we should be able to do it by now
@@ -885,7 +867,6 @@ actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
 docs rename moduleSelector to selector
 
 so, after experimenting with skip blocks:
-- mnist again, try doing the same things, measure really foundational vars
 - then cifar
 - then custom regular image dataset
 - then do some insane gate stuff, like progressive deepening
@@ -909,8 +890,6 @@ manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
 streptococcus vs staphylococcus?
 
 also adam used F, but that F is actually defined in python, so read over the actual impl
-
-how do mitochrondria duplicate themselves again? Heard they have their own genes and whatnot, and they're not attached to the main cell's chromosome
 
 https://en.wikipedia.org/wiki/Danger_model
 
@@ -945,4 +924,4 @@ cb for stuff like confusion matrixes. This has to assume that it's a classical l
 why tae buffers?
 retroviral vs lentiviral?
 
-l.cbs.withFrozen(css)
+jupyter lab debugger? new feature?

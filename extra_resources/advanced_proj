@@ -404,3 +404,5 @@ also benchmark pypy, as it's also a JIT
 what's inside torch.save()?
 
 suborbital demo thingy
+
+actually, try space exploration mod again, this time with a proper train network

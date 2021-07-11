@@ -290,10 +290,6 @@ again with the nas & automl thingy:
 
 meta learning through hebbian plasticity: https://www.youtube.com/watch?v=v2GRWzIhaqQ
 
-"positive strand rna": https://en.wikipedia.org/wiki/Positive-sense_single-stranded_RNA_virus
-s1 protein sars-cov-2
-"rna based transcriptase": https://en.wikipedia.org/wiki/Reverse_transcriptase
-
 david silver has the idea that goals are distinct on the scale level. On the human level, the goal is to survive, while on the universe level, the goal is to find the fastest way to increase entropy. This interpretation is sort of unique, cause it shows the same idea as the collapse of the quantum function, and that the collapse has to be thought of in the universe playground
 
 https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
@@ -311,8 +307,6 @@ ask about RL training stability to that redditor
 jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/watch?v=bHVqO5YyNbU
 
 cashapp
-
-again with blockchain stuff???? actually implement 1?
 
 "Google Learning Certificates", https://soha.vn/google-gay-soc-khi-tuyen-bo-ban-khong-can-phai-hoc-dai-hoc-nua-neu-thay-vua-ton-tien-vua-ton-thoi-gian-20200831143938153.htm
 
@@ -341,8 +335,6 @@ does catastrophic forgetting occur in RL systems?
 pick up an epidemiology book
 
 https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion
-
-try out wolfram and new kind of science book
 
 https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model
 
@@ -385,10 +377,6 @@ https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so 
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
 reconstruction (think MRIs) seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
-
-rocket propulsion elements and ignition again
-
-https://www.reddit.com/r/spacex/comments/d9tkqj/on_regenerative_cooling_raptor_uses_milled_copper/
 
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
@@ -586,8 +574,6 @@ metabolic control enzyme known as AMPK
 extrachromosomal ribosomal dna circles, or ERCs
 tamoxifen activates I-PpoI gene? How does that work?
 also apparently, that protein in milk, casein, does not break down fast while in the body. This is kinda strange, so look into it, https://en.wikipedia.org/wiki/Protease
-https://en.wikipedia.org/wiki/Archaea
-also look up how insulin is made, to understand how recombinant dna works
 
 https://www.ncbi.nlm.nih.gov/nuccore/NR_034146.1
 https://www.ncbi.nlm.nih.gov/genome/gdv/browser/gene/?id=22933
@@ -738,8 +724,6 @@ also, what's the diamond, graphene and carbon nanotubes making process? All 3 of
 
 https://en.wikipedia.org/wiki/Quantum_dot
 
-do cifar 10 again, to get any insights possible, then my custom labels
-
 also try again the style transfer, to see how my architecture can deal with such a dynamic environment
 
 how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
@@ -823,14 +807,10 @@ also how does the intelligence cells (macrophage) actually determines who's us a
 
 also check claim that coding regions have more GC-content, and longer ones have even more
 
-so, let's say I have a gene file, then a transcription of that, and a translation of that as separate files. How to I merge them together? SOD1_datasets file seems like it will be impossible, cause like, there are no spacing information inside of the mrna and protein files
-
 https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
 
 vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those should be interesting. gbench's: https://www.ncbi.nlm.nih.gov/tools/gbench/releasenotes/
-
-ncbi also has some kind of selection language, so see over that: 21[Chr] AND "Homo sapiens"[Organism] AND ("has ccds"[Properties] AND alive[prop]) 
 
 while doing pyanodons, try to pay attention to a few fundamental questions:
 - how to balance figuring out the rules of the game, the time taken, and throughput/effectiveness produced? Right now, the general way is to at least have a grasp of what things are like, and see their natural language description, and match that with reality, to see whether it's actually an important process in a lot of things. Hard start situations in AI systems seems a lot harder tho. Once basic mechanism is worked out, see if I can get rid of side effects, as much as possible (multiple elements in, 1 element out). If side effects (multiple elements out possible), then figure out at least 2 mechanism with those 2 side effects, but one is more and the other is less, so as to have a speed dial on everything. And try to figure out loops for the side effect
@@ -844,8 +824,6 @@ https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science
 https://mit6874.github.io/
 
 killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
-
-actually, try space exploration mod again, this time with a proper train network
 
 https://www.kaggle.com/questions-and-answers/150725
 
@@ -880,8 +858,6 @@ gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
 https://docs.python.org/3/c-api/buffer.html
 https://github.com/pytorch/vision/tree/master/torchvision/models
 https://github.com/pytorch/vision/blob/master/hubconf.py
-
-even specialize the core training loop so that it becomes a callback? that way, different ecosystems of callbacks are possible, and this can be adapted to the RL environment just fine. Tread very carefully along this line, as rigorous schemes are required to make the entire thing work seemlessly
 
 one cycle log scale
 

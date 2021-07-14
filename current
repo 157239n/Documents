@@ -688,8 +688,8 @@ https://en.wikipedia.org/wiki/Origin_of_replication
 sample complexity: https://en.wikipedia.org/wiki/Dihydrofolate_reductase
 https://en.wikipedia.org/wiki/Chaperone_(protein)
 https://en.wikipedia.org/wiki/GroEL
-
-okay, so producing insulin using bacteria seems possible, but how do you actually filter out the insulin only, and not other things?
+https://en.wikipedia.org/wiki/High_throughput_biology
+https://en.wikipedia.org/wiki/Proteome
 
 https://codexdna.com/products/bioxp-system/
 
@@ -888,6 +888,7 @@ also, several ideas for representing chemical structures:
 some lackluster papers:
 - https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2523-5
 - file:///home/kelvin/Downloads/computers-10-00074.pdf
+- DRL, also seems golden: https://pubs.acs.org/doi/full/10.1021/acscentsci.7b00492
 
 talking about fingerprints, there are a few ideas:
 - https://www.rdkit.org/UGM/2012/Landrum_RDKit_UGM.Fingerprints.Final.pptx.pdf
@@ -909,3 +910,6 @@ microfluidics:
 - https://www.youtube.com/watch?v=WxpQyqoukpc
 - https://www.reddit.com/r/labonachip/
 - http://diyhpl.us/~bryan/papers2/microfluidics/
+- https://www.elveflow.com/microfluidic-products/microfluidics-application-packs/starter-pack/
+
+im = Image.open(requests.get(url, stream=True).raw)

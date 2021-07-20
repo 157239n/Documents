@@ -914,6 +914,4 @@ microfluidics:
 
 im = Image.open(requests.get(url, stream=True).raw)
 
-uneven hexagon extrusions on the back side
-
-blender text: https://www.cdschools.org/cms/lib/PA09000075/Centricity/Domain/81/4th_Chapter10.pdf
+http://pantherdb.org/services/openAPISpec.jsp

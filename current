@@ -901,8 +901,6 @@ cb for stuff like confusion matrixes. This has to assume that it's a classical l
 why tae buffers?
 retroviral vs lentiviral?
 
-jupyter lab debugger? new feature?
-
 so H2 prices on the market? to compare steam reforming vs electrolysis
 
 microfluidics:
@@ -915,3 +913,5 @@ microfluidics:
 im = Image.open(requests.get(url, stream=True).raw)
 
 http://pantherdb.org/services/openAPISpec.jsp
+
+derive heart from arccos again

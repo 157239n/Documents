@@ -926,3 +926,17 @@ modify wm to place window in the middle?
 
 https://support.illumina.com/help/BS_App_RNASeq_Alignment_OLH_1000000006112/Content/Source/Informatics/Apps/Intro_appRNASEQ.htm
 https://github.com/PacificBiosciences/Bioinformatics-Training/wiki
+
+efetch abstract?
+
+"Harvard Chan Bioinformatics core training modules": https://bioinformatics.sph.harvard.edu/training
+https://diytranscriptomics.com/
+https://vincebuffalo.com/book/
+
+make k1lib only depend on simple dependencies, meaning stuff like torchvision are optional
+
+analyze SGD_features.tab
+
+grep().till(lambda)
+
+blenderguru again, for that normal maps and stuff, to really understand the workflow and options

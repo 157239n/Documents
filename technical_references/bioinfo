@@ -1,4 +1,6 @@
 
+btw, to limit results, usually -X option
+
 cat chr22.fa | grep -o N | wc -l
 seqkit stat chr22.fa
 infoseq chr22.fa
@@ -51,3 +53,16 @@ https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
 
 sam specs: https://samtools.github.io/hts-specs/SAMv1.pdf
 pacbio: https://www.pacb.com/wp-content/uploads/2015/09/Pacific-Biosciences-Glossary-of-Terms.pdf
+
+adapter list:
+Illumina Universal Adapter					AGATCGGAAGAG
+Illumina Small RNA 3' Adapter				TGGAATTCTCGG
+Illumina Small RNA 5' Adapter				GATCGTCGGACT
+Nextera Transposase Sequence				CTGTCTCTTATA
+SOLID Small RNA Adapter						CGCCTTGGCCGT
+
+full list of adapters: http://data.biostarhandbook.com/data/sequencing-adapters.fa
+
+adapter trimming software:
+- trimmomatic
+- bbduk.sh

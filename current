@@ -920,10 +920,6 @@ python create html docs automatically
 
 also just realized something important. Evolution is slow. Like, really, really slow. Takes literally billions of years to transition from RNA world to normal protein-DNA world. And that's not a lot of different exotic mechanisms. Moreover, life in general doesn't have that many mechanism in total. Like, I sort of vastly overestimate how complicate life science is. Sure, things are weird, like content-based indexing, some simple chains, like pentose phosphate, urea, nitrogen/carbon fixation, and whatnot. I was like, that's it? And that e coli experiment on veritasium. Like, millions of years of equivalent mammalian evolution, and they can only eat another substance? This is painfully slow if you ever want to get this in production. So figuring out protein structures from scratch that does things seems more plausible than trying to do directed evolution, cause it sort of won't get there.
 
-more productive wood
-
-modify wm to place window in the middle?
-
 https://support.illumina.com/help/BS_App_RNASeq_Alignment_OLH_1000000006112/Content/Source/Informatics/Apps/Intro_appRNASEQ.htm
 https://github.com/PacificBiosciences/Bioinformatics-Training/wiki
 
@@ -940,3 +936,13 @@ analyze SGD_features.tab
 grep().till(lambda)
 
 blenderguru again, for that normal maps and stuff, to really understand the workflow and options
+
+update AppConstants.testing docs, saying that it may be desirable for env to be local, and still use outside services at the same time
+
+NMN, reduction in CD38, resides in immune cells
+
+rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
+
+nice package, with good stuff inside: https://docs.python.org/3/library/itertools.html#itertools.tee
+
+okay I've advanced bioinfo stuff quite a lot this past month. I think I need to recoup now, finish reading overviews of what's going on, then just stop bioinfo stuff for a while, it's overloading my brain. Then work on AI stuff again

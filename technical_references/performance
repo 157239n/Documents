@@ -52,3 +52,5 @@ so die size of 3080 @ 8nm process:
 - single core: 0.04 mm^2 (0.2mm x 0.2mm)
 
 flip flop high resistor value: 1/(1.4*C*f), capacitor consumption: CV^2 joules/cycle
+
+die size vs performance calculations? https://www.alternatewars.com/BBOW/Computing/Computing_Power.htm, https://www.techpowerup.com/forums/threads/processor-gflops-compilation.94721/

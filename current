@@ -86,7 +86,6 @@ read over his papers to know which areas is he working in: http://www.pages.drex
 - apparently, he worked on the loihi chip too, and ask about the nitty gritty details on SNNs
 - is it easy now to get started on spiking NNs? doesn't seem so
 - is there research left for small labs with may be 4 V100
-- ask ynes about the actual hardware umass used. Are they using it off-the-shelf?
 - funding source???
 
 read over russell's papers: https://people.eecs.berkeley.edu/~russell/research/future/
@@ -256,8 +255,6 @@ scikit-learn is mentioned a whole lot, so what does it actually offer?
 
 again with the automl stuff
 
-https://forums.fast.ai/
-
 agi stuff:
 - http://www.hutter1.net/ai/introref.htm
 - https://www.youtube.com/channel/UCCwJ8AV1zMM4j9FTicGimqA
@@ -290,8 +287,6 @@ again with the nas & automl thingy:
 
 meta learning through hebbian plasticity: https://www.youtube.com/watch?v=v2GRWzIhaqQ
 
-david silver has the idea that goals are distinct on the scale level. On the human level, the goal is to survive, while on the universe level, the goal is to find the fastest way to increase entropy. This interpretation is sort of unique, cause it shows the same idea as the collapse of the quantum function, and that the collapse has to be thought of in the universe playground
-
 https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
 
 rewatch jeremy again
@@ -320,8 +315,6 @@ on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
 
 https://towardsdatascience.com/td-in-reinforcement-learning-the-easy-way-f92ecfa9f3ce
 https://towardsdatascience.com/summary-of-tabular-methods-in-reinforcement-learning-39d653e904af
-
-so apparently, carrying 1GW power over 10M volt lines is feasible. So 100 amps, not 10k amps. So that guy may not know about this in depth. So dig more into the numbers and grasp at the fundamentals of these high power systems
 
 also something seems wrong. Why is the hippocampus so small and the cortex so large? Also why the cerebelum is so dense and the cortex so sparse? And what's the energy efficiency (Landauer's limit) of different parts of the brain?
 
@@ -541,42 +534,19 @@ simulate a simple pid, with initial state at 0 and new state at 1. Still worse t
 
 https://en.wikipedia.org/wiki/Schlenk_line
 
-genome enrichment, epigenomic enrichment, gene set enrichment analysis
-omics
 neuronal energetics: https://www.sciencedirect.com/science/article/pii/S0960982214002723
 rs1421085
 
 tesla's quarterly reports?
 
-also figure out what is the current staining capability? Cause that's what I expect how engineering proteins can be useful
-
-https://decatopus.com/project/thouless-pump-simulation/
-https://decatopus.com/wp-content/uploads/application/pdf/Thesis.pdf
-
-full genome sequencing price, https://www.cnbc.com/2019/07/01/for-600-veritas-genetics-sequences-6point4-billion-letters-of-your-dna.html
-
 mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrepreneurship_i_took_an_idea_to_mass/
-
-https://en.wikipedia.org/wiki/Stainless_steel
-https://en.wikipedia.org/wiki/Carbon_nanotube
 
 also do a youtube series on the RL stuff so far
 
 oncogenes: braf, her2, bcr-abl
 
-difference between senescent cells and cancer cells?
 https://en.wikipedia.org/wiki/Proteostasis
-https://en.wikipedia.org/wiki/Cloning
-https://en.wikipedia.org/wiki/List_of_animals_that_have_been_cloned
 melanoma brain metastases
-target of rapamycin, TOR and mTOR
-metabolic control enzyme known as AMPK
-extrachromosomal ribosomal dna circles, or ERCs
-tamoxifen activates I-PpoI gene? How does that work?
-also apparently, that protein in milk, casein, does not break down fast while in the body. This is kinda strange, so look into it, https://en.wikipedia.org/wiki/Protease
-
-https://www.ncbi.nlm.nih.gov/nuccore/NR_034146.1
-https://www.ncbi.nlm.nih.gov/genome/gdv/browser/gene/?id=22933
 
 temp discarded:
 - https://www.kaggle.com/jhoward/don-t-see-like-a-radiologist-fastai
@@ -602,11 +572,6 @@ and how to do the packaging stuff and sending stuff to usps???
 
 etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
 
-https://en.wikipedia.org/wiki/Gas_laser
-seems like high power lasers can be done using: https://en.wikipedia.org/wiki/Q-switching
-
-also how are diamonds made industrially? Is it just like growing carbon nanotubes?? And find some pictures of its molecular structure and compare that to the natural diamonds. May be helpful: https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/diamond/diamon01.pdf, https://www.diamonds.pro/education/lab-created-diamonds-prices-value/
-
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
 
 https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipedia.org/wiki/Digital_signal_controller, "stepper driver controllers", https://www.orientalmotor.com/stepper-motors/index.html
@@ -614,8 +579,6 @@ https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipe
 also, what's the curing process involving an autoclave looks like for carbon fiber?
 
 gene therapy again
-
-reddit thread about ACE2 receptors
 
 https://en.wikipedia.org/wiki/DNA_nanotechnology
 https://en.wikipedia.org/wiki/Molecular_self-assembly
@@ -646,21 +609,15 @@ goals for this trip?
 - try to infect cells with modified virus with a specific payload
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
 - try to build robot arms that can do things quickly, and have a good internal model of reality
-- another posibility for sequencing techniques is to have a sort of ribosome that enlarges the base pairs, so we can see them exactly with a regular microscope
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
 - figure out all reactions in seablock
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
-https://en.wikipedia.org/wiki/Aspen_Technology
 
 https://en.wikipedia.org/wiki/Contig
 https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)
 
-recalculate fundamental energy costs again, this time with a focus of training RL agents for molecular bio's degrees of freedom. Figure out if Tesla's 10TWh/yr throughput is enough
-
 Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/
-
-biowin
 
 covid genome: https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
 covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
@@ -690,12 +647,13 @@ https://en.wikipedia.org/wiki/Chaperone_(protein)
 https://en.wikipedia.org/wiki/GroEL
 https://en.wikipedia.org/wiki/High_throughput_biology
 https://en.wikipedia.org/wiki/Proteome
+https://en.wikipedia.org/wiki/Luciferase
+https://en.wikipedia.org/wiki/Pattern_recognition_receptor
+https://en.wikipedia.org/wiki/Cambrian
 
 https://codexdna.com/products/bioxp-system/
 
 comprehensive source: https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/
-
-also, the recording stuff is really, really crude. Like, simple pink colors for acid/bases??? That's it? That's like 1 bit of information dude. So how about, bind rare atoms to specific complexes, and have those attaches to any structure you want. Then we can excite those rare atoms, and record their EM spectrum, for a lot of data bits. Also apparently florescent systems don't have rare atoms, so figure out how the hell can they do that??? Edit: specific proteins to find: luciferase
 
 also, what's up with the polyprotein nature of covid? Actually you know what, I heard many proteins are like that too, like histones, or hemoglobin, or atp synthase, so figure out the general dynamics of these systems
 
@@ -704,8 +662,6 @@ https://fold.it/portal/node/2007798
 https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2_explained_ai_breakthrough/
 
 this company offers a virtual tour, so check it out: https://www.sageglass.com/en/article/what-electrochromic-glass
-
-hostile takeover?
 
 go over 23andme analysis
 
@@ -718,48 +674,27 @@ old aging stuff:
 - https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 - https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
 
-vmd atom selection language ("vmd not all protein"): https://www.ks.uiuc.edu/Research/vmd/vmd-1.3/ug/node132.html
-
-also, what's the diamond, graphene and carbon nanotubes making process? All 3 of them seems to be in very different configurations, so the heating solution doesn't seem to be that effective
-
 https://en.wikipedia.org/wiki/Quantum_dot
 
 also try again the style transfer, to see how my architecture can deal with such a dynamic environment
 
 how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
 
-I don't understand the locking mechanism and chirality that much. Thought experiment seems to invalidate that. So look up for cis and trans 1-4 polyisoprene (natural rubber)
-
 actually try to implement the attention idea that creates consciousness
-
-silicon nitride's ceramic properties?
-titanium production process? Heard from elon that it's quite complicated
 
 rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who are actually working on that
 
-also what's the cost of galvanized steel vs stainless steel? Like, stainless steel seems much more straightforward, and lasts a long time, so why does galvanized steel even exists?
-
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
-
-alternative steel making process, for a glimpse of what's the direction now: https://www.sciencedirect.com/science/article/pii/S0959652618326301
 
 invest in rocket lab
 
 https://www.mt.com/vn/vi/home/products/Laboratory_Analytics_Browse/pH-meter/sensor/ion-selective-electrode.html
 
-uniprot
-
-https://8020.net/
-
 novozyme, research lab that produces industrial enzymes, microorganisms & biopharmaceutical ingredients. Not billion dollars yet, just on the million dollar scale
-
-https://en.wikipedia.org/wiki/Pattern_recognition_receptor
 
 epimap
 
 those microarrays? episomal reporter assay? massively parallel reporter assays? also just common plasmid tech used to make a bunch of proteins?
-
-chaperonin, huge protein complex where the folding takes place in. Sort of like a shield from interactions from the outside world
 
 how the hell do biotinylation works??? Like, where does the protein-specific selection happen? streptavidin too, cause this is the labelling mechanism
 
@@ -772,14 +707,6 @@ discovery path for proteins? Where are the entropy leaks?
 https://en.wikipedia.org/wiki/Transcription_factor
 https://en.wikipedia.org/wiki/Transfection
 zinc finger vs crispr
-
-titanium: $4.5k/tonne
-aluminium: $1.5k/tonne, 2.7kg/L, 10000W/kg?
-iron: $85/tonne, 8kg/L
-
-why energy from carbon is cheaper than from electrolysis? Considering renewables are dowxn by quite a lot? And is aluminum carbide really a lot more stable than CO2? Cause CO2 seems hella stable
-
-kroll process
 
 try to create an agent that has some sense of higher dimensions
 
@@ -801,8 +728,6 @@ https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
 so, all the stuff in biology has to sort of be resilient to tiny changes in the DNA. Like, at least something like 70-90% of mutations (SNV) won't affect how it works at all (<0.001% for engineered systems. Like, if you change 1 bit about code, the program won't compile at all). But there has to also be a massively parallel compute engine to actually make it work. Luckily there are literally trillions and more quantum computers just doing all the data crunching called organisms/viruses. So analyze the compute scale we're talking about here?
 
-why pfizer needs to be really cold? I mean, I've heard that normally, specific proteins within the cells break mrna down. Dna is ridiculously strong (single strand can survive in boiling water just fine), so they don't break at all. So may be just don't include in the proteins that break them down? May be it's hard to separate proteins? But like seriously, that problem seems really lame that we should be able to do it by now
-
 also how does the intelligence cells (macrophage) actually determines who's us and who's the enemy? Like, how does that association even happen? Cause like, this is already a challenge in RL systems
 
 also check claim that coding regions have more GC-content, and longer ones have even more
@@ -810,15 +735,7 @@ also check claim that coding regions have more GC-content, and longer ones have 
 https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
 
-vmd-1.9.4a51/proteins folder, also see over older versions changelogs. Those should be interesting. gbench's: https://www.ncbi.nlm.nih.gov/tools/gbench/releasenotes/
-
-while doing pyanodons, try to pay attention to a few fundamental questions:
-- how to balance figuring out the rules of the game, the time taken, and throughput/effectiveness produced? Right now, the general way is to at least have a grasp of what things are like, and see their natural language description, and match that with reality, to see whether it's actually an important process in a lot of things. Hard start situations in AI systems seems a lot harder tho. Once basic mechanism is worked out, see if I can get rid of side effects, as much as possible (multiple elements in, 1 element out). If side effects (multiple elements out possible), then figure out at least 2 mechanism with those 2 side effects, but one is more and the other is less, so as to have a speed dial on everything. And try to figure out loops for the side effect
-- Update: I actually have a pretty strong prior, and that is energy content in substance. Like, I really try to save both coal gas and tar, because I know they're oil products, meaning they have energy, meaning it sort of fundamentally matters for an advanced civilization. For things like tailings, ash, flue gas, and whatnot, I know there are chemistry chains (mostly bio-based where they can take energy from sun) that actually utilizes that, but if there are too much of them for too long, I just get rid of them. On a more meta aspect, each grid block sort of represents a company on earth. There's a company for producing paper and dealing with the kraft process, there's a company producing crazy titanium alloys and have to deal with the oil chain that supplies it with drilling fluid. Here, downsides of companies sort of emerges, and that is they can't adapt quickly enough, and they can't get too big. I mean, it takes a while for surplus/demand to really shows itself as that. Stuff like seaweed initially looks like it's in low demand, but I overbuilt them (some stupid high number of factories like 20 or sth like that). And some things looks like it's over-supplied like iron plate (lol haha, jokes are on me), actually are very much in demand. So as a company, you really are at the mercy of what the supply chain is feeling on that day. Vertical integration is useful in that you turn a specialized company into multiple specialized divisions within a company, but still pursuing some goals. And when that singular goal on the top changes, you can calculate in advanced how much the internal supply chain will have to adapt, and just adapt right away, giving you a lot of time to beat the competitors.
-
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
-
-die size vs performance calculations? https://www.alternatewars.com/BBOW/Computing/Computing_Power.htm, https://www.techpowerup.com/forums/threads/processor-gflops-compilation.94721/
 
 https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science_and_ml_resources/
 https://mit6874.github.io/
@@ -826,8 +743,6 @@ https://mit6874.github.io/
 killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
 
 https://www.kaggle.com/questions-and-answers/150725
-
-create a program to quickly analyze and predict gibbs free energy of a lot of reactions. Then get the feel for how much can 1 ATP actually do? (nitrogen fixation costs 16 ATPs)
 
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
@@ -838,14 +753,9 @@ try out high accuracy loss function (applying an exp, and make sure it's in the 
 
 also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
-cooking bones to make bone meal sounds really energy intensive, just as much as steel production process, so what the hell?
-
-actually read over this comprehensively: https://en.wikipedia.org/wiki/Cambrian
-
 docs rename moduleSelector to selector
 
 so, after experimenting with skip blocks:
-- then cifar
 - then custom regular image dataset
 - then do some insane gate stuff, like progressive deepening
 - then do some tougher stuff that I don't fully understand yet, like rcnn
@@ -862,8 +772,6 @@ https://github.com/pytorch/vision/blob/master/hubconf.py
 one cycle log scale
 
 manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
-
-streptococcus vs staphylococcus?
 
 also adam used F, but that F is actually defined in python, so read over the actual impl
 
@@ -890,6 +798,12 @@ some lackluster papers:
 - file:///home/kelvin/Downloads/computers-10-00074.pdf
 - DRL, also seems golden: https://pubs.acs.org/doi/full/10.1021/acscentsci.7b00492
 
+remaining model stuff:
+- modelling kerosene combustion: https://arxiv.org/pdf/2003.00428.pdf
+- nn in chemistry: http://web.uni-plovdiv.bg/plamenpenchev/mag/files/ang_chem2.pdf
+- alphafold2 paper: https://www.nature.com/articles/s41586-021-03828-1
+- dimensionality reduction in neural data analysis: https://xcorr.net/2021/07/26/dimensionality-reduction-in-neural-data-analysis/
+
 talking about fingerprints, there are a few ideas:
 - https://www.rdkit.org/UGM/2012/Landrum_RDKit_UGM.Fingerprints.Final.pptx.pdf
 - https://towardsdatascience.com/random-matrix-theory-the-best-classifier-for-prediction-of-drug-binding-f82613fb48ed
@@ -898,10 +812,7 @@ talking about fingerprints, there are a few ideas:
 
 cb for stuff like confusion matrixes. This has to assume that it's a classical labeling stuff. Not as elegant as I'd like, but oh well, a lot of these are well tailored for specific use cases only anyway, so why not
 
-why tae buffers?
 retroviral vs lentiviral?
-
-so H2 prices on the market? to compare steam reforming vs electrolysis
 
 microfluidics:
 - https://arxiv.org/pdf/1705.04996.pdf
@@ -912,30 +823,17 @@ microfluidics:
 
 im = Image.open(requests.get(url, stream=True).raw)
 
-http://pantherdb.org/services/openAPISpec.jsp
-
 derive heart from arccos again
 
 python create html docs automatically
 
 also just realized something important. Evolution is slow. Like, really, really slow. Takes literally billions of years to transition from RNA world to normal protein-DNA world. And that's not a lot of different exotic mechanisms. Moreover, life in general doesn't have that many mechanism in total. Like, I sort of vastly overestimate how complicate life science is. Sure, things are weird, like content-based indexing, some simple chains, like pentose phosphate, urea, nitrogen/carbon fixation, and whatnot. I was like, that's it? And that e coli experiment on veritasium. Like, millions of years of equivalent mammalian evolution, and they can only eat another substance? This is painfully slow if you ever want to get this in production. So figuring out protein structures from scratch that does things seems more plausible than trying to do directed evolution, cause it sort of won't get there.
 
-https://support.illumina.com/help/BS_App_RNASeq_Alignment_OLH_1000000006112/Content/Source/Informatics/Apps/Intro_appRNASEQ.htm
-https://github.com/PacificBiosciences/Bioinformatics-Training/wiki
-
-efetch abstract?
-
-"Harvard Chan Bioinformatics core training modules": https://bioinformatics.sph.harvard.edu/training
-https://diytranscriptomics.com/
-https://vincebuffalo.com/book/
-
 make k1lib only depend on simple dependencies, meaning stuff like torchvision are optional
 
 analyze SGD_features.tab
 
 grep().till(lambda)
-
-blenderguru again, for that normal maps and stuff, to really understand the workflow and options
 
 update AppConstants.testing docs, saying that it may be desirable for env to be local, and still use outside services at the same time
 
@@ -945,4 +843,11 @@ rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
 nice package, with good stuff inside: https://docs.python.org/3/library/itertools.html#itertools.tee
 
-okay I've advanced bioinfo stuff quite a lot this past month. I think I need to recoup now, finish reading overviews of what's going on, then just stop bioinfo stuff for a while, it's overloading my brain. Then work on AI stuff again
+shelly plug
+
+bite the bullet again, and try to develop a proper Python library using the C interface
+
+k1lib: main python-only lib
+k2lib: C++ only lib
+k3lib: cython lib, can utilize k2lib
+k4lib: real deal, with C stuff built from bottom up

@@ -847,7 +847,15 @@ shelly plug
 
 bite the bullet again, and try to develop a proper Python library using the C interface
 
-k1lib: main python-only lib
-k2lib: C++ only lib
-k3lib: cython lib, can utilize k2lib
-k4lib: real deal, with C stuff built from bottom up
+see how Dataset works, to see if I can build my own, for the active learning thing
+see how transforms work
+
+Dataset
+IterableDataset
+TensorDataset(Dataset)
+ChainDataset(IterableDataset)
+ConcatDataset
+Subset
+
+_DataPipeType
+_DataPipeMeta

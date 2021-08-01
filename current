@@ -859,3 +859,7 @@ Subset
 
 _DataPipeType
 _DataPipeMeta
+
+check discrepancies between python3-config and sysconfig.get_config_vars()
+
+python3 -m sysconfig

@@ -64,3 +64,5 @@ relative imports:
 ./setup.py sdist
 twine upload dist/*
 
+
+im = Image.open(requests.get(url, stream=True).raw)

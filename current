@@ -247,8 +247,6 @@ https://www.reddit.com/r/MachineLearning/
 
 so temporal-difference is basically just making sure the internal model of reality is good?
 
-AI community's thought on practical ppl like Jeremy?
-
 https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 
 scikit-learn is mentioned a whole lot, so what does it actually offer?
@@ -449,8 +447,6 @@ https://github.com/gordicaleksa/pytorch-original-transformer
 
 https://syncedreview.com/2020/11/06/deepmind-proposes-graph-theoretic-investigation-of-the-multiplayer-games-landscape
 
-simulate if smell gradients can actually be detected to know if the complement system actually works
-
 cortical columns: https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00186/full
 
 reticular activating system
@@ -530,8 +526,6 @@ https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1
 
 https://en.wikipedia.org/wiki/Homeobox
 
-simulate a simple pid, with initial state at 0 and new state at 1. Still worse than the intended thing, but just to get this out quickly
-
 https://en.wikipedia.org/wiki/Schlenk_line
 
 neuronal energetics: https://www.sciencedirect.com/science/article/pii/S0960982214002723
@@ -610,7 +604,7 @@ goals for this trip?
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
 - try to build robot arms that can do things quickly, and have a good internal model of reality
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
-- figure out all reactions in seablock
+- (done) figure out all reactions in seablock
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 
@@ -726,8 +720,6 @@ ridiculous evolution: s1, orf8, orf6
 
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
-so, all the stuff in biology has to sort of be resilient to tiny changes in the DNA. Like, at least something like 70-90% of mutations (SNV) won't affect how it works at all (<0.001% for engineered systems. Like, if you change 1 bit about code, the program won't compile at all). But there has to also be a massively parallel compute engine to actually make it work. Luckily there are literally trillions and more quantum computers just doing all the data crunching called organisms/viruses. So analyze the compute scale we're talking about here?
-
 also how does the intelligence cells (macrophage) actually determines who's us and who's the enemy? Like, how does that association even happen? Cause like, this is already a challenge in RL systems
 
 also check claim that coding regions have more GC-content, and longer ones have even more
@@ -736,9 +728,6 @@ https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
-
-https://www.reddit.com/r/bioinformatics/comments/mxk00m/request_for_data_science_and_ml_resources/
-https://mit6874.github.io/
 
 killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
 
@@ -765,15 +754,12 @@ so, after experimenting with skip blocks:
 
 gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
 
-https://docs.python.org/3/c-api/buffer.html
 https://github.com/pytorch/vision/tree/master/torchvision/models
 https://github.com/pytorch/vision/blob/master/hubconf.py
 
 one cycle log scale
 
 manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
-
-also adam used F, but that F is actually defined in python, so read over the actual impl
 
 https://en.wikipedia.org/wiki/Danger_model
 
@@ -814,20 +800,9 @@ cb for stuff like confusion matrixes. This has to assume that it's a classical l
 
 retroviral vs lentiviral?
 
-microfluidics:
-- https://arxiv.org/pdf/1705.04996.pdf
-- https://www.youtube.com/watch?v=WxpQyqoukpc
-- https://www.reddit.com/r/labonachip/
-- http://diyhpl.us/~bryan/papers2/microfluidics/
-- https://www.elveflow.com/microfluidic-products/microfluidics-application-packs/starter-pack/
-
-im = Image.open(requests.get(url, stream=True).raw)
-
 derive heart from arccos again
 
 python create html docs automatically
-
-also just realized something important. Evolution is slow. Like, really, really slow. Takes literally billions of years to transition from RNA world to normal protein-DNA world. And that's not a lot of different exotic mechanisms. Moreover, life in general doesn't have that many mechanism in total. Like, I sort of vastly overestimate how complicate life science is. Sure, things are weird, like content-based indexing, some simple chains, like pentose phosphate, urea, nitrogen/carbon fixation, and whatnot. I was like, that's it? And that e coli experiment on veritasium. Like, millions of years of equivalent mammalian evolution, and they can only eat another substance? This is painfully slow if you ever want to get this in production. So figuring out protein structures from scratch that does things seems more plausible than trying to do directed evolution, cause it sort of won't get there.
 
 make k1lib only depend on simple dependencies, meaning stuff like torchvision are optional
 
@@ -841,25 +816,28 @@ NMN, reduction in CD38, resides in immune cells
 
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
+instant beer?
+util for saving matplotlib plot to base64, and have a carousel:
+- https://stackoverflow.com/questions/38061267/matplotlib-graphic-image-to-base64
+- https://github.com/matplotlib/matplotlib/issues/14699
+
+optimize _handleCbCall
+
+also, manipulate pytorch tensors from my own custom pytorch module?
+
 nice package, with good stuff inside: https://docs.python.org/3/library/itertools.html#itertools.tee
 
 shelly plug
 
-bite the bullet again, and try to develop a proper Python library using the C interface
-
-see how Dataset works, to see if I can build my own, for the active learning thing
 see how transforms work
 
-Dataset
-IterableDataset
-TensorDataset(Dataset)
-ChainDataset(IterableDataset)
-ConcatDataset
-Subset
+employment sponsorship
 
 _DataPipeType
 _DataPipeMeta
 
-check discrepancies between python3-config and sysconfig.get_config_vars()
+_BaseDataLoaderIter
+_SingleProcessDataLoaderIter
+_MultiProcessingDataLoaderIter
 
-python3 -m sysconfig
+torch.autograd.profiler.record_function

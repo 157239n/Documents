@@ -767,7 +767,7 @@ https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-
 
 actually understand affine transforms in pytorch
 
-super interesting that torch.nn.MultiheadAttention nn.Module is actually in nn.modules.activation. So it gets lumped with ReLU and whatnot? Like what???
+super interesting that torch.nn.MultiheadAttention nn.Module is actually in nn.modules.activation. So it gets lumped with ReLU and whatnot? Like what??? Also check out RNN impl
 
 also preliminary scouting seems to show that pytorch implements lstm, rnns pretty chill, and don't use fancy underlying C++ implementation. So again, calculate true effectiveness of this
 
@@ -798,8 +798,6 @@ talking about fingerprints, there are a few ideas:
 
 cb for stuff like confusion matrixes. This has to assume that it's a classical labeling stuff. Not as elegant as I'd like, but oh well, a lot of these are well tailored for specific use cases only anyway, so why not
 
-retroviral vs lentiviral?
-
 derive heart from arccos again
 
 python create html docs automatically
@@ -817,27 +815,9 @@ NMN, reduction in CD38, resides in immune cells
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
 instant beer?
-util for saving matplotlib plot to base64, and have a carousel:
-- https://stackoverflow.com/questions/38061267/matplotlib-graphic-image-to-base64
-- https://github.com/matplotlib/matplotlib/issues/14699
-
-optimize _handleCbCall
-
-also, manipulate pytorch tensors from my own custom pytorch module?
-
-nice package, with good stuff inside: https://docs.python.org/3/library/itertools.html#itertools.tee
 
 shelly plug
 
-see how transforms work
-
 employment sponsorship
-
-_DataPipeType
-_DataPipeMeta
-
-_BaseDataLoaderIter
-_SingleProcessDataLoaderIter
-_MultiProcessingDataLoaderIter
 
 torch.autograd.profiler.record_function

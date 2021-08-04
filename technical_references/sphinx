@@ -1,0 +1,25 @@
+
+:param ratios:
+:meta private:
+
+.. note::
+.. warning::
+.. code-block:: python
+.. code-block:: text
+
+:ivar training: sth
+:vartype training: bool
+
+.. function:: to(device=None, dtype=None, non_blocking=False)
+
+.. |Substitution Name| image:: path/filename.png
+	:width: 400
+	:alt: Alternative text
+
+.. _tag:
+:ref:`tag`
+
+.. attribute::
+.. autofunction::
+.. automodule::
+.. autoclass::

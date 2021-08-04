@@ -800,8 +800,6 @@ cb for stuff like confusion matrixes. This has to assume that it's a classical l
 
 derive heart from arccos again
 
-python create html docs automatically
-
 make k1lib only depend on simple dependencies, meaning stuff like torchvision are optional
 
 analyze SGD_features.tab

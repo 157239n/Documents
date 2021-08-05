@@ -731,8 +731,6 @@ attention mechanism. Great that the basic system is working, but what is the fun
 
 killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
 
-https://www.kaggle.com/questions-and-answers/150725
-
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
 limited memory: https://arxiv.org/abs/2002.05645v5

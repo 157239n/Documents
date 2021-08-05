@@ -23,3 +23,9 @@
 .. autofunction::
 .. automodule::
 .. autoclass::
+
+
+.. toctree::
+	:maxdepth: 4
+
+	profilers # this is actually a path instead

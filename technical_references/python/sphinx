@@ -29,3 +29,13 @@
 	:maxdepth: 4
 
 	profilers # this is actually a path instead
+
+:code:`a = b + c`
+.. role:: bash(code)
+	:language: bash
+:bash:`a = b + c`
+
+.. math::
+	\frac{a}{b}
+:math:`x^3`
+

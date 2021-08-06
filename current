@@ -798,15 +798,9 @@ cb for stuff like confusion matrixes. This has to assume that it's a classical l
 
 derive heart from arccos again
 
-make k1lib only depend on simple dependencies, meaning stuff like torchvision are optional
-
 analyze SGD_features.tab
 
 grep().till(lambda)
-
-update AppConstants.testing docs, saying that it may be desirable for env to be local, and still use outside services at the same time
-
-NMN, reduction in CD38, resides in immune cells
 
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
@@ -817,3 +811,6 @@ shelly plug
 employment sponsorship
 
 torch.autograd.profiler.record_function
+
+k1lib.eqn overall idea
+k1lib.bioinfo.cli.init.BaseCli stream composing idea

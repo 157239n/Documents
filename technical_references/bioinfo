@@ -1,6 +1,8 @@
 
 btw, to limit results, usually -X option
 
+also btw, this file also has random interesting specifics. Removed from `current`, cause I've read over it, but placed here cause I'll unlikely encounter those specific terms again
+
 cat chr22.fa | grep -o N | wc -l
 seqkit stat chr22.fa
 infoseq chr22.fa
@@ -85,3 +87,5 @@ microfluidics:
 - https://www.reddit.com/r/labonachip/
 - http://diyhpl.us/~bryan/papers2/microfluidics/
 - https://www.elveflow.com/microfluidic-products/microfluidics-application-packs/starter-pack/
+
+oncogenes: braf, her2, bcr-abl

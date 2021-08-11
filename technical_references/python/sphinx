@@ -39,3 +39,18 @@
 	\frac{a}{b}
 :math:`x^3`
 
+
+.. deprecated:: version
+.. collapse:: Output
+
+_`inline target def`
+`inline ref`_
+
+Header order of preference:
+- # overline parts
+- * overline chapters
+- = section
+- - subsection
+- ^ subsubsections
+- " paragraphs
+

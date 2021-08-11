@@ -1,0 +1,12 @@
+
+TODOs for k1lib. Some archival, as there's not much need for it
+
+(too lazy) cli tool flow analysis:
+- Also, may be flow analysis of cli tools might be great. Can just deduce from the init points. Stuff like graphviz seems good
+- Even if dependent on incoming stream, can suggest topologies and ask for type info from user. And of course, can check for inconsistencies like iterator used in 2 places
+- https://ipython.org/ipython-doc/stable/parallel/dag_dependencies.html
+- https://mungingdata.com/python/dag-directed-acyclic-graph-networkx/
+
+
+one cycle log scale
+

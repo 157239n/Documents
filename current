@@ -580,7 +580,6 @@ https://en.wikipedia.org/wiki/ELISA
 https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-elisa.html
 
 goals for this trip?
-- (done) take over truckbux operations
 - (done) grow stocks
 - (done) have some skills in building simple products, like just laser cutting stuff, or metal injection molding parts, starship-related
 - (done) machine parts for complicated machine. Goal should be to machine dies or complicated parts for precision instruments
@@ -753,8 +752,6 @@ gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
 https://github.com/pytorch/vision/tree/master/torchvision/models
 https://github.com/pytorch/vision/blob/master/hubconf.py
 
-one cycle log scale
-
 manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
 
 https://en.wikipedia.org/wiki/Danger_model
@@ -808,10 +805,6 @@ shelly plug
 
 torch.autograd.profiler.record_function
 
-k1lib.eqn overall idea
-k1lib.bioinfo.cli.init.BaseCli stream composing idea
-
-https://www.reddit.com/r/explainlikeimfive/comments/1abygr/eli5_how_are_the_currency_exchange_rates/
 https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html
 
 aav:
@@ -830,3 +823,5 @@ left on mess:
 - https://www.nature.com/articles/s41467-021-24525-7
 - https://theaisummer.com/deep-learning-biology-alphafold/
 - https://www.wired.com/story/what-alphago-teach-how-people-learn/
+
+fix up losslandscape, implement cores

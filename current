@@ -737,8 +737,6 @@ try out high accuracy loss function (applying an exp, and make sure it's in the 
 
 also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
-docs rename moduleSelector to selector
-
 so, after experimenting with skip blocks:
 - then custom regular image dataset
 - then do some insane gate stuff, like progressive deepening

@@ -7,6 +7,7 @@ TODOs for k1lib. Some archival, as there's not much need for it
 - https://ipython.org/ipython-doc/stable/parallel/dag_dependencies.html
 - https://mungingdata.com/python/dag-directed-acyclic-graph-networkx/
 
+rows() operation is kinda heavy when used with slice that looks like [:-10], so optimize that
 
 one cycle log scale
 

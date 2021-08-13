@@ -54,3 +54,5 @@ Header order of preference:
 - ^ subsubsections
 - " paragraphs
 
+.. currentmodule:: torch.nn
+

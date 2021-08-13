@@ -823,3 +823,7 @@ left on mess:
 - https://www.wired.com/story/what-alphago-teach-how-people-learn/
 
 fix up losslandscape, implement cores
+
+also make sure excepts pops slowly, and not too immediate
+
+typing intersphinx stuff https://bugs.python.org/issue31024

@@ -56,3 +56,11 @@ Header order of preference:
 
 .. currentmodule:: torch.nn
 
+
+Set |Product| configuration properties by . . .
+.. |Product| replace:: SoftTech Analyzer
+
+
+.. include:: ../shared/folder/filename.rst
+
+sphinx-apidoc -f -o . ../k1lib

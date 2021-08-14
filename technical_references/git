@@ -15,4 +15,5 @@ git reflog show
 
 
 git config credential.helper store
+git config credential.helper "", do this to revert above
 git clean -d -f -x: remove everything not kept in source control

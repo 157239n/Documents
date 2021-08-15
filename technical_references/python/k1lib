@@ -11,3 +11,6 @@ rows() operation is kinda heavy when used with slice that looks like [:-10], so 
 
 one cycle log scale
 
+grep().till(lambda)
+
+MemoryProfiler, run for multiple batches, to see the ups and down, and to detect memory leaks.

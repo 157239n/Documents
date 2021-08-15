@@ -793,8 +793,6 @@ derive heart from arccos again
 
 analyze SGD_features.tab
 
-grep().till(lambda)
-
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
 instant beer?
@@ -825,3 +823,23 @@ left on mess:
 typing intersphinx stuff https://bugs.python.org/issue31024
 
 also calculate how many repeated words are in the files, cause that might make things pretty confusing
+
+SliceablePlot still can't initialize from decorate alone, so see how to do it
+
+mode "sep", where I don't use delim mechanism, to gradually phase out the old way of doing things?
+
+insert column?
+
+also do a tour around the lib?
+
+confusion matrices
+
+also, try to create Accuracy() cb that eliminate confusing categories, and see the true accuracy of the model
+
+also run the docs to check for errors?
+
+also check if this is indeed compatible with windows
+
+right, let's do regression on all bioinfo stuff frist, before actually switch to new schema
+
+so, display() doesn't work with numbers and whatnot, because that signifies that there's only 1 row, and that's kinda a singularity

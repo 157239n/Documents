@@ -560,24 +560,15 @@ anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars
 
 https://joininteract.com/fellowship/
 
-and how to do the packaging stuff and sending stuff to usps???
-
 etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
 
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
 
-https://www.omc-stepperonline.com/nema-17-stepper-motor/, with https://en.wikipedia.org/wiki/Digital_signal_controller, "stepper driver controllers", https://www.orientalmotor.com/stepper-motors/index.html
-
 also, what's the curing process involving an autoclave looks like for carbon fiber?
-
-gene therapy again
 
 https://en.wikipedia.org/wiki/DNA_nanotechnology
 https://en.wikipedia.org/wiki/Molecular_self-assembly
 https://en.wikipedia.org/wiki/Non-contact_atomic_force_microscopy
-
-https://en.wikipedia.org/wiki/ELISA
-https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-elisa.html
 
 goals for this trip?
 - (done) grow stocks
@@ -626,7 +617,6 @@ https://en.wikipedia.org/wiki/Post-translational_modification
 https://en.wikipedia.org/wiki/Glycosylation
 https://en.wikipedia.org/wiki/Psilocybe
 refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
-https://en.wikipedia.org/wiki/Baltimore_classification
 https://en.wikipedia.org/wiki/Molecular_machine
 https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
 https://en.wikipedia.org/wiki/TIM_barrel
@@ -652,8 +642,6 @@ https://fold.it/portal/node/2010076
 https://fold.it/portal/node/2007798
 https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2_explained_ai_breakthrough/
 
-this company offers a virtual tour, so check it out: https://www.sageglass.com/en/article/what-electrochromic-glass
-
 go over 23andme analysis
 
 https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
@@ -667,13 +655,9 @@ old aging stuff:
 
 https://en.wikipedia.org/wiki/Quantum_dot
 
-also try again the style transfer, to see how my architecture can deal with such a dynamic environment
-
 how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
 
 actually try to implement the attention idea that creates consciousness
-
-rapidly iterating on alloy composition sounds pretty hard tho, so find ppl who are actually working on that
 
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
 
@@ -717,8 +701,6 @@ ridiculous evolution: s1, orf8, orf6
 
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
-also how does the intelligence cells (macrophage) actually determines who's us and who's the enemy? Like, how does that association even happen? Cause like, this is already a challenge in RL systems
-
 also check claim that coding regions have more GC-content, and longer ones have even more
 
 https://en.wikipedia.org/wiki/Structural_genomics
@@ -746,9 +728,6 @@ so, after experimenting with skip blocks:
 - then graph nns, then try to tackle some chemistry problems
 
 gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
-
-https://github.com/pytorch/vision/tree/master/torchvision/models
-https://github.com/pytorch/vision/blob/master/hubconf.py
 
 manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
 
@@ -822,24 +801,10 @@ left on mess:
 
 typing intersphinx stuff https://bugs.python.org/issue31024
 
-also calculate how many repeated words are in the files, cause that might make things pretty confusing
-
 SliceablePlot still can't initialize from decorate alone, so see how to do it
-
-mode "sep", where I don't use delim mechanism, to gradually phase out the old way of doing things?
-
-insert column?
 
 also do a tour around the lib?
 
 confusion matrices
 
 also, try to create Accuracy() cb that eliminate confusing categories, and see the true accuracy of the model
-
-also run the docs to check for errors?
-
-also check if this is indeed compatible with windows
-
-right, let's do regression on all bioinfo stuff frist, before actually switch to new schema
-
-so, display() doesn't work with numbers and whatnot, because that signifies that there's only 1 row, and that's kinda a singularity

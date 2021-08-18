@@ -468,22 +468,11 @@ prdm9: https://en.wikipedia.org/wiki/PRDM9
 cortex layer 5
 5ht 2a/2c receptors: https://en.wikipedia.org/wiki/5-HT2A_receptor
 
-nmn, cd38 protein, mtor pathway, foxo3 gene, ccr5 gene, doxycycline, exosome injection, prp injection, yamanaka reprogramming factors, aav virus
-
-https://github.blog/2020-11-20-nbdev-a-literate-programming-environment-that-democratizes-software-engineering-best-practices/
-
 https://www.researchgate.net/publication/317841703_The_oldest_fossil_mushroom
 https://www.researchgate.net/publication/343188979_Fungi_in_the_rear_mirror_A_brief_history_of_the_fungi_during_the_last_two_billion_years
-https://en.wikipedia.org/wiki/Pseudomonas_aeruginosa
 
 pfizer vaccine paper: https://www.medrxiv.org/content/10.1101/2020.06.30.20142570v1
 
-https://news.ycombinator.com/item?id=17392461
-https://www.reddit.com/r/RISCV/comments/gme72d/hifive1_revb_blinking_led_on_a_breadboard_using/
-https://www.reddit.com/r/RISCV/hot/
-
-how drug design is done
-astrazeneca
 transcranial magnetic stimulation
 fusiform face area
 middle temporal visual area (V5)
@@ -549,8 +538,6 @@ temp discarded:
 https://en.wikipedia.org/wiki/Structural_alignment
 
 2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
-
-yeah so I've heard that antiviral drugs sort of uses small molecules to change the shape of some proteins, like S1. Have anyone sort of design proteins so that they can directly bind to them?
 
 buy those bio hacking kits?
 
@@ -632,10 +619,6 @@ https://en.wikipedia.org/wiki/Luciferase
 https://en.wikipedia.org/wiki/Pattern_recognition_receptor
 https://en.wikipedia.org/wiki/Cambrian
 
-https://codexdna.com/products/bioxp-system/
-
-comprehensive source: https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/
-
 also, what's up with the polyprotein nature of covid? Actually you know what, I heard many proteins are like that too, like histones, or hemoglobin, or atp synthase, so figure out the general dynamics of these systems
 
 https://fold.it/portal/node/2010076
@@ -696,9 +679,6 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
 - file:///home/kelvin/Downloads/David%20A%20Sinclair%20-%20David%20A%20Sinclair%20Lifespan%20Why%20We%20Age%20and%20Why%20We%20Dont%20Have%20To%20with%20Matthew%20D%20LaPlante%202019%20ISBN%20978-1501191978%20(2019).pdf
 
-orf3a, tiny gene encoded within the other gene
-ridiculous evolution: s1, orf8, orf6
-
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
 also check claim that coding regions have more GC-content, and longer ones have even more
@@ -720,7 +700,6 @@ try out high accuracy loss function (applying an exp, and make sure it's in the 
 also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
 
 so, after experimenting with skip blocks:
-- then custom regular image dataset
 - then do some insane gate stuff, like progressive deepening
 - then do some tougher stuff that I don't fully understand yet, like rcnn
 - then do that bottle label dataset thingy from long ago
@@ -808,3 +787,5 @@ also do a tour around the lib?
 confusion matrices
 
 also, try to create Accuracy() cb that eliminate confusing categories, and see the true accuracy of the model
+
+AccuracyLandscape? lmao. Actually, think about Loss.Landscape, and Accuracy.Landscape, for orgs sake

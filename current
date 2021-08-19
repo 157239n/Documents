@@ -415,8 +415,6 @@ https://www.fast.ai/2018/04/30/dawnbench-fastai/
 https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html
 http://jalammar.github.io/illustrated-bert/
 
-create alternate endpoints that make sense, then present it to them
-
 how about creating a lab system to automatically play with chemicals somewhere
 
 https://en.wikipedia.org/wiki/Mechanotransduction
@@ -516,9 +514,6 @@ https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1
 https://en.wikipedia.org/wiki/Homeobox
 
 https://en.wikipedia.org/wiki/Schlenk_line
-
-neuronal energetics: https://www.sciencedirect.com/science/article/pii/S0960982214002723
-rs1421085
 
 tesla's quarterly reports?
 
@@ -652,13 +647,9 @@ novozyme, research lab that produces industrial enzymes, microorganisms & biopha
 
 epimap
 
-those microarrays? episomal reporter assay? massively parallel reporter assays? also just common plasmid tech used to make a bunch of proteins?
-
 how the hell do biotinylation works??? Like, where does the protein-specific selection happen? streptavidin too, cause this is the labelling mechanism
 
 https://en.wikipedia.org/wiki/Genome-wide_association_study
-
-okay I get how zinc fingers can sort of be used to replace dna segments. So is it that hard to design them? Look for stories from ppl who actually designed them
 
 discovery path for proteins? Where are the entropy leaks?
 
@@ -789,3 +780,7 @@ confusion matrices
 also, try to create Accuracy() cb that eliminate confusing categories, and see the true accuracy of the model
 
 AccuracyLandscape? lmao. Actually, think about Loss.Landscape, and Accuracy.Landscape, for orgs sake
+
+do the __dir__ suggestion thing again, this time do it right, to update 2 dict at the same time
+
+create k1lib.meta module? I also want to control __dir__ of static stuff as well

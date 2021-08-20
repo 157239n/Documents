@@ -553,11 +553,6 @@ https://en.wikipedia.org/wiki/Molecular_self-assembly
 https://en.wikipedia.org/wiki/Non-contact_atomic_force_microscopy
 
 goals for this trip?
-- (done) grow stocks
-- (done) have some skills in building simple products, like just laser cutting stuff, or metal injection molding parts, starship-related
-- (done) machine parts for complicated machine. Goal should be to machine dies or complicated parts for precision instruments
-- (done) get a good feeling of how things work in AI, especially how to debug stuff, and really analyze stuff from the inside. Pretty much what I'm doing right now, but just do it over and over again
-- (done) actually do some genetics, and see if there's actually a real chance to do this or not
 - demonstrate plasmid cloning. Heard it's super simple and whatnot
 - demonstrate PCR, to get in touch with the querying tools
 - understand the compliment system designs, and see if I can come up with comparable systems
@@ -574,7 +569,6 @@ goals for this trip?
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
 - try to build robot arms that can do things quickly, and have a good internal model of reality
 - apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
-- (done) figure out all reactions in seablock
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 
@@ -779,8 +773,6 @@ confusion matrices
 
 also, try to create Accuracy() cb that eliminate confusing categories, and see the true accuracy of the model
 
-AccuracyLandscape? lmao. Actually, think about Loss.Landscape, and Accuracy.Landscape, for orgs sake
+another example tutorial, this time for the covid stuff
 
-do the __dir__ suggestion thing again, this time do it right, to update 2 dict at the same time
-
-create k1lib.meta module? I also want to control __dir__ of static stuff as well
+create a test notebook, that goes around to all the notebooks scattered everywhere. This serves as regression tests, to make sure nothing is broken

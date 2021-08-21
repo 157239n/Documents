@@ -534,8 +534,6 @@ https://en.wikipedia.org/wiki/Structural_alignment
 
 2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
 
-buy those bio hacking kits?
-
 ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
 mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
 anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
@@ -680,10 +678,6 @@ https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 limited memory: https://arxiv.org/abs/2002.05645v5
 dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
 
-try out high accuracy loss function (applying an exp, and make sure it's in the right range), to see if that really improves anything at all
-
-also do a schedule where lossF tightens up over time, to see if everything is still numerically stable. Introduce a custom exception inside cancelonlowloss thingy, so that a new loss function can be assigned
-
 so, after experimenting with skip blocks:
 - then do some insane gate stuff, like progressive deepening
 - then do some tougher stuff that I don't fully understand yet, like rcnn
@@ -730,8 +724,6 @@ talking about fingerprints, there are a few ideas:
 - predefined features (human made), binary bit has it or not
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
-cb for stuff like confusion matrixes. This has to assume that it's a classical labeling stuff. Not as elegant as I'd like, but oh well, a lot of these are well tailored for specific use cases only anyway, so why not
-
 derive heart from arccos again
 
 analyze SGD_features.tab
@@ -741,10 +733,6 @@ rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 instant beer?
 
 shelly plug
-
-torch.autograd.profiler.record_function
-
-https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html
 
 aav:
 - https://ashpublications.org/blood/article/122/1/23/31570/Immune-responses-to-AAV-vectors-overcoming
@@ -762,17 +750,11 @@ left on mess:
 - https://www.nature.com/articles/s41467-021-24525-7
 - https://theaisummer.com/deep-learning-biology-alphafold/
 - https://www.wired.com/story/what-alphago-teach-how-people-learn/
-
-typing intersphinx stuff https://bugs.python.org/issue31024
+- https://t.co/MLwa8O8zNt?amp=1
+- https://twitter.com/Thom_astro/status/1427635722542927872?s=07
+- https://data-science-blog.com/blog/2021/07/31/my-elaborate-study-notes-on-reinforcement-learning/
+- ML pitfalls: https://arxiv.org/abs/2108.02497
 
 SliceablePlot still can't initialize from decorate alone, so see how to do it
 
-also do a tour around the lib?
-
-confusion matrices
-
-also, try to create Accuracy() cb that eliminate confusing categories, and see the true accuracy of the model
-
 another example tutorial, this time for the covid stuff
-
-create a test notebook, that goes around to all the notebooks scattered everywhere. This serves as regression tests, to make sure nothing is broken

@@ -10,3 +10,7 @@ TODOs for k1lib. Some archival, as there's not much need for it
 one cycle log scale
 
 MemoryProfiler, run for multiple batches, to see the ups and down, and to detect memory leaks.
+
+Cmd that actually takes in input line by line, and outputs also line by line, and the cmd itself executes in another thread, to optimize for performance
+
+typing intersphinx stuff https://bugs.python.org/issue31024

@@ -99,3 +99,7 @@ ls () {
 }
 
 # tput, see ~/repos/bash/test/center
+
+
+# change working dir to script location:
+cd "$(dirname "$0")"

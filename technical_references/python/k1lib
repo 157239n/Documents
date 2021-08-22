@@ -14,3 +14,6 @@ MemoryProfiler, run for multiple batches, to see the ups and down, and to detect
 Cmd that actually takes in input line by line, and outputs also line by line, and the cmd itself executes in another thread, to optimize for performance
 
 typing intersphinx stuff https://bugs.python.org/issue31024
+
+Explain cancel signals
+Write in detail what loss landscape actually means

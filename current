@@ -754,5 +754,3 @@ left on mess:
 - ML pitfalls: https://arxiv.org/abs/2108.02497
 - https://www.ncbi.nlm.nih.gov/books/NBK9839/
 - https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
-
-SliceablePlot still can't initialize from decorate alone, so see how to do it

@@ -17,3 +17,4 @@ typing intersphinx stuff https://bugs.python.org/issue31024
 
 Explain cancel signals
 Write in detail what loss landscape actually means
+write tutorial about cli.ctx

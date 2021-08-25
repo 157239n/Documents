@@ -662,14 +662,10 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
-also check claim that coding regions have more GC-content, and longer ones have even more
-
 https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
 
 attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
-
-killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
 
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
@@ -694,8 +690,6 @@ https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-
 actually understand affine transforms in pytorch
 
 super interesting that torch.nn.MultiheadAttention nn.Module is actually in nn.modules.activation. So it gets lumped with ReLU and whatnot? Like what??? Also check out RNN impl
-
-also preliminary scouting seems to show that pytorch implements lstm, rnns pretty chill, and don't use fancy underlying C++ implementation. So again, calculate true effectiveness of this
 
 also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work
 

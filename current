@@ -190,11 +190,7 @@ breaking the quadratic attention bottleneck in transformers: https://www.reddit.
 
 ready player one
 
-https://www.reddit.com/r/MachineLearning/comments/b179cs/d_the_bitter_lesson/
-
 reddit carreer in researching AGI
-
-again, how to do attention stuff for simple workloads just to test the idea out?
 
 again, think about how to structure an active learning problem to create a fast feedback system. Basic principles should be fairly simple and easy to see, although there need not be actual implementable code to extend from. And yeah, I feel like there is a fear of generating new samples on the go and so ppl are turned away by that and don't necessarily embrace the nonlinearity of the real world
 
@@ -209,10 +205,6 @@ sparse coding:
 - http://users.ics.aalto.fi/harri/dityo/node3.html
 - https://stats.stackexchange.com/questions/118199/what-are-the-differences-between-sparse-coding-and-autoencoder
 - https://www.youtube.com/watch?v=7a0_iEruGoM
-
-https://waitbutwhy.com/2018/04/picking-career.html
-
-how to actually do outreach programs
 
 how can RL deal with a cold start
 
@@ -241,10 +233,6 @@ crafting papers on ML: https://pdfs.semanticscholar.org/3efc/b97c1de1c87832a7a1d
 http://joschu.net/blog/opinionated-guide-ml-research.html
 ask reddit how to approach the conversation to ppl about AI, "reddit how to discuss impact of machine learning"
 
-https://www.reddit.com/r/learnmachinelearning/
-https://www.reddit.com/r/deeplearning/
-https://www.reddit.com/r/MachineLearning/
-
 so temporal-difference is basically just making sure the internal model of reality is good?
 
 https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
@@ -262,8 +250,6 @@ agi stuff:
 - https://www.reddit.com/r/artificial/comments/6cnlr6/monthly_how_to_get_started_with_ai_thread/
 - http://www.agi-society.org/membership/
 - https://content.sciendo.com/view/journals/jagi/jagi-overview.xml
-
-https://rodneybrooks.com/a-better-lesson/
 
 https://placements.openmined.org/
 
@@ -435,12 +421,6 @@ organic chem, "steric hindrance":
 
 https://read.amazon.com/?asin=B014TMUFX6
 https://en.wikipedia.org/wiki/Epigenetics
-https://github.com/fastai/course-v3/blob/master/nbs/swift/01_matmul.ipynb
-https://github.com/fastai/course-v3/tree/master/nbs/dl2
-https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md
-https://www.fast.ai/2019/01/10/swift-numerics/
-https://en.wikipedia.org/wiki/Value_type_and_reference_type
-
 https://github.com/gordicaleksa/pytorch-original-transformer
 
 https://syncedreview.com/2020/11/06/deepmind-proposes-graph-theoretic-investigation-of-the-multiplayer-games-landscape
@@ -450,11 +430,6 @@ cortical columns: https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00186/
 reticular activating system
 galanin
 arcuate fasciculus
-
-dealing with smiles:
-- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6764162/
-- smiles self attention: https://pubs.acs.org/doi/10.1021/acs.jcim.8b00803
-- CNN for detecting chemical motifs
 
 - integrative analysis of 111 reference human epigenomics: https://www.nature.com/articles/nature14248
 - FTO obesity: https://www.nejm.org/doi/full/10.1056/NEJMoa1502214
@@ -532,8 +507,6 @@ temp discarded:
 
 https://en.wikipedia.org/wiki/Structural_alignment
 
-2005 paper on AC2 receptor: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1287568/
-
 ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
 mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
 anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
@@ -543,8 +516,6 @@ https://joininteract.com/fellowship/
 etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
 
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
-
-also, what's the curing process involving an autoclave looks like for carbon fiber?
 
 https://en.wikipedia.org/wiki/DNA_nanotechnology
 https://en.wikipedia.org/wiki/Molecular_self-assembly
@@ -565,8 +536,6 @@ goals for this trip?
 	- amylase, alcohol dehydrogenase, hemoglobin, fibrin, collagen, actin, insulin, potassium channels, luciferase, hemagglutinin, HIV-1 protease, p53 tumor suppressor, cellulases
 - try to infect cells with modified virus with a specific payload
 - actually try to run alphafold: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
-- try to build robot arms that can do things quickly, and have a good internal model of reality
-- apparently, psilocybe cubensis exists in vn, so go look for them in actual forests, or 
 
 https://www.chems.msu.edu/resources/tutorials/ASPEN
 
@@ -578,9 +547,6 @@ Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/re
 covid genome: https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
 covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
 aryl: https://www.ncbi.nlm.nih.gov/protein/NP_001612.1
-
-https://hostdefense.com/
-https://fungi.com/
 
 YP_009724389.1
 
@@ -619,7 +585,6 @@ https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
 subgenual cingulate cortex
 
 old aging stuff:
-- https://sites.google.com/view/sources-aging-part-ii/startseite
 - https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 - https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
 
@@ -636,8 +601,6 @@ invest in rocket lab
 novozyme, research lab that produces industrial enzymes, microorganisms & biopharmaceutical ingredients. Not billion dollars yet, just on the million dollar scale
 
 epimap
-
-how the hell do biotinylation works??? Like, where does the protein-specific selection happen? streptavidin too, cause this is the labelling mechanism
 
 https://en.wikipedia.org/wiki/Genome-wide_association_study
 
@@ -672,24 +635,15 @@ https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 limited memory: https://arxiv.org/abs/2002.05645v5
 dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
 
-so, after experimenting with skip blocks:
-- then do some insane gate stuff, like progressive deepening
-- then do some tougher stuff that I don't fully understand yet, like rcnn
-- then do that bottle label dataset thingy from long ago
-- then gans, and stuff like cycle gan too
-- then graph nns, then try to tackle some chemistry problems
-
-gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
-
 manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
+
+graph nns, then try to tackle some chemistry problems
 
 https://en.wikipedia.org/wiki/Danger_model
 
 https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB
 
 actually understand affine transforms in pytorch
-
-super interesting that torch.nn.MultiheadAttention nn.Module is actually in nn.modules.activation. So it gets lumped with ReLU and whatnot? Like what??? Also check out RNN impl
 
 also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work
 
@@ -717,8 +671,6 @@ talking about fingerprints, there are a few ideas:
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
 derive heart from arccos again
-
-analyze SGD_features.tab
 
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
@@ -748,3 +700,15 @@ left on mess:
 - ML pitfalls: https://arxiv.org/abs/2108.02497
 - https://www.ncbi.nlm.nih.gov/books/NBK9839/
 - https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
+
+tesla multiscale features uses bifpn, so what's that about?
+
+also, it's superrrr nice that pytorch integrates cuda, all within setuptools, so that can be a really vital dependency. So, k1a for generic acceleration, and k1c for gpu-accelerated. Python-side detects what's available, and use that
+
+man, I really want something like processing, where animations can be created in a flash
+
+implement core rnn loop inside c again, this time do it right, and see if there are actually improvements
+
+try to do some cli tool operations inside k1a
+
+cache tensors first, to see if that helps

@@ -18,3 +18,5 @@ typing intersphinx stuff https://bugs.python.org/issue31024
 Explain cancel signals
 Write in detail what loss landscape actually means
 write tutorial about cli.ctx
+
+split stream functionality, but both are feeding from the same internal list

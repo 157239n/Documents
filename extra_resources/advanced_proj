@@ -420,3 +420,14 @@ https://www.reddit.com/r/RISCV/comments/gme72d/hifive1_revb_blinking_led_on_a_br
 https://www.reddit.com/r/RISCV/hot/
 
 killer app for cython+cudnn: sparse CNN, https://towardsdatascience.com/how-does-sparse-convolution-work-3257a0a8fd1
+
+https://hostdefense.com/
+https://fungi.com/
+
+gitcoin from scratch: https://karpathy.github.io/2021/06/21/blockchain/
+
+so, after experimenting with skip blocks:
+- then do some insane gate stuff, like progressive deepening
+- then do some tougher stuff that I don't fully understand yet, like rcnn
+- then do that bottle label dataset thingy from long ago
+- then gans, and stuff like cycle gan too

@@ -89,3 +89,5 @@ microfluidics:
 - https://www.elveflow.com/microfluidic-products/microfluidics-application-packs/starter-pack/
 
 oncogenes: braf, her2, bcr-abl
+
+analyze SGD_features.tab

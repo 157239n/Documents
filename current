@@ -707,8 +707,6 @@ also, it's superrrr nice that pytorch integrates cuda, all within setuptools, so
 
 man, I really want something like processing, where animations can be created in a flash
 
-implement core rnn loop inside c again, this time do it right, and see if there are actually improvements
-
-try to do some cli tool operations inside k1a
-
-cache tensors first, to see if that helps
+rewrite covid tutorial oneToMany using context
+website module automate pull text from sites
+viz doc image outdated

@@ -20,3 +20,9 @@ Write in detail what loss landscape actually means
 write tutorial about cli.ctx
 
 split stream functionality, but both are feeding from the same internal list
+
+implement core rnn loop inside c again, this time do it right, and see if there are actually improvements
+
+try to do some cli tool operations inside k1a
+
+if no Promise detected at all, then patch over old __ror__

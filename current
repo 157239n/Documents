@@ -705,8 +705,4 @@ tesla multiscale features uses bifpn, so what's that about?
 
 also, it's superrrr nice that pytorch integrates cuda, all within setuptools, so that can be a really vital dependency. So, k1a for generic acceleration, and k1c for gpu-accelerated. Python-side detects what's available, and use that
 
-man, I really want something like processing, where animations can be created in a flash
-
-rewrite covid tutorial oneToMany using context
 website module automate pull text from sites
-viz doc image outdated

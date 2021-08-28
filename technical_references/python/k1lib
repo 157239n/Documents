@@ -25,4 +25,4 @@ implement core rnn loop inside c again, this time do it right, and see if there 
 
 try to do some cli tool operations inside k1a
 
-if no Promise detected at all, then patch over old __ror__
+man, I really want something like processing, where animations can be created in a flash

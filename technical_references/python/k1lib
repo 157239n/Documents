@@ -23,6 +23,8 @@ split stream functionality, but both are feeding from the same internal list
 
 implement core rnn loop inside c again, this time do it right, and see if there are actually improvements
 
+helper modules proposals: k1a for accelerated operations in plain C++, and k1c for cuda C++
+
 try to do some cli tool operations inside k1a
 
 man, I really want something like processing, where animations can be created in a flash

@@ -5,8 +5,6 @@ so, priorities now:
 - file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 - book: "pmi-pmbok", "pmbok guide"
 
-read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good
-
 masterclass.comds
 
 chapter 11 of the bankruptcy code
@@ -287,10 +285,6 @@ jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/wa
 
 cashapp
 
-"Google Learning Certificates", https://soha.vn/google-gay-soc-khi-tuyen-bo-ban-khong-can-phai-hoc-dai-hoc-nua-neu-thay-vua-ton-tien-vua-ton-thoi-gian-20200831143938153.htm
-
-again with the venus project? and resource based economy
-
 may be deep RL introspection in our current systems help us reason about this take off scenario better
 
 https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
@@ -370,28 +364,13 @@ dcm rescale slope and intercept
 https://blog.kitware.com/dicom-rescale-intercept-rescale-slope-and-itk/
 https://stackoverflow.com/questions/10193971/rescale-slope-and-rescale-intercept
 
-matplotlib 3d
-https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html
-https://matplotlib.org/3.1.0/gallery/mplot3d/surface3d.html
-https://matplotlib.org/3.1.1/gallery/mplot3d/scatter3d.html
-https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html
-https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725
-
 PixelRepresentation
 
 https://www.technologyreview.com/2020/10/16/1010566/ai-machine-learning-with-tiny-data/
 
-"python jupyter gui"
-https://stackoverflow.com/questions/53502742/gui-tools-for-jupyter-notebook
-https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20Events.html
-https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interactive-widgets-bc12e03f0916
-
 another leslie paper: https://arxiv.org/pdf/1506.01186.pdf
 
-https://en.wikipedia.org/wiki/Debiasing
-
 ablation studies in NNs: https://arxiv.org/pdf/1901.08644.pdf
-https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it
 
 https://www.fast.ai/2018/04/30/dawnbench-fastai/
 
@@ -407,11 +386,7 @@ https://en.wikipedia.org/wiki/Mechanotransduction
 
 nanoparticle fabrication: https://www.researchgate.net/publication/226347418_Nanoparticle_Fabrication
 
-so do ppl do gene mapping by hand or individual experiments??? Cause that doesn't seem feasible though
-
 alertness, arousal, attention, awareness
-
-dog whisperer
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 
@@ -702,7 +677,5 @@ left on mess:
 - https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
 
 tesla multiscale features uses bifpn, so what's that about?
-
-also, it's superrrr nice that pytorch integrates cuda, all within setuptools, so that can be a really vital dependency. So, k1a for generic acceleration, and k1c for gpu-accelerated. Python-side detects what's available, and use that
 
 website module automate pull text from sites

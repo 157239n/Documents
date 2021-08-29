@@ -59,3 +59,9 @@ diagram G {
 
 
 IPython rich display: _repr_html_(), _ipython_display_()
+
+
+
+nice viz stuff:
+- https://github.com/AaronWatters/jp_doodle
+- https://github.com/AaronWatters/jp_proxy_widget

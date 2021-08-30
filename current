@@ -134,8 +134,6 @@ E^2-Train: training SOTA CNNs with over 80% energy savings: https://arxiv.org/pd
 ML: the high interest credit card of technical debt: https://research.google/pubs/pub43146/, https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43146.pdf
 "functional vigilance of drivers while using autopilot", lex's MIT research on autopilot
 
-again, why don't ppl include loss surface visualizations in their papers??? I think this is absolutely necessary to actually gain an intuition of what's going on
-
 attention and its relation to event-based systems?
 
 so the idea GPT-3 is pushing is that when the big network gets fed a prompt, it forms this little network on the go that's specialized to handle the task, which sort of explains why GPT-3 needs to be so big, and it also sort of explains the power-law relationship. So really reason about the relative sizes of these networks. How large is the actual specialized network and the full one? Then make comparisons to other animals
@@ -237,8 +235,6 @@ https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 
 scikit-learn is mentioned a whole lot, so what does it actually offer?
 
-again with the automl stuff
-
 agi stuff:
 - http://www.hutter1.net/ai/introref.htm
 - https://www.youtube.com/channel/UCCwJ8AV1zMM4j9FTicGimqA
@@ -251,8 +247,6 @@ agi stuff:
 
 https://placements.openmined.org/
 
-and yeah, check out all the gui stuff for active learning, cause again, that's hugely important that I can do this very quickly. But goddammit why aren't there a processing-like library for python that can display things directly to the notebook?
-
 http://worrydream.com/MagicInk/
 "how much computation the brain does"
 - https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
@@ -260,18 +254,9 @@ http://worrydream.com/MagicInk/
 - http://www.cs.utexas.edu/~dana/Book1.pdf
 - https://www.frontiersin.org/articles/10.3389/fnsys.2016.00095/full
 
-again with the nas & automl thingy:
-- https://www.youtube.com/watch?v=a6v92P0EbJc
-- https://www.youtube.com/watch?v=tfCA8X4jGjk
-- searching for activation functons: https://arxiv.org/pdf/1710.05941.pdf
-- https://en.wikipedia.org/wiki/Neural_architecture_search
-- an introduction to NAS for convnets: https://arxiv.org/pdf/2005.11074.pdf
-
 meta learning through hebbian plasticity: https://www.youtube.com/watch?v=v2GRWzIhaqQ
 
 https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
-
-rewatch jeremy again
 
 check over deepmind wiki
 
@@ -286,8 +271,6 @@ jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/wa
 cashapp
 
 may be deep RL introspection in our current systems help us reason about this take off scenario better
-
-https://towardsdatascience.com/bert-why-its-been-revolutionizing-nlp-5d1bcae76a13
 
 on the measure of intelligence: https://arxiv.org/pdf/1911.01547.pdf
 
@@ -309,14 +292,8 @@ https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-art
 
 https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model
 
-see options to hoard domains
-
-https://www.reddit.com/r/Entrepreneur/comments/7madgj/ive_been_hoarding_40_domains_its_time_to_sell/
-"reddit domain hoarding"
-
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
-https://medium.com/@nainaakash012/efficientnet-rethinking-model-scaling-for-convolutional-neural-networks-92941c5bfb95
 domain experts:
 - https://www.kaggle.com/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk
 - https://www.kaggle.com/anarthal/dicom-metadata-eda
@@ -369,8 +346,6 @@ PixelRepresentation
 https://www.technologyreview.com/2020/10/16/1010566/ai-machine-learning-with-tiny-data/
 
 another leslie paper: https://arxiv.org/pdf/1506.01186.pdf
-
-ablation studies in NNs: https://arxiv.org/pdf/1901.08644.pdf
 
 https://www.fast.ai/2018/04/30/dawnbench-fastai/
 
@@ -679,3 +654,5 @@ left on mess:
 tesla multiscale features uses bifpn, so what's that about?
 
 website module automate pull text from sites
+
+dive into python's multiprocessing, to know what's up? How are variables shared between processes and whatnot

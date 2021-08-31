@@ -142,3 +142,5 @@ sort of trash
 //@ContextConfiguration(com.truckbux.core.AppConfig.class)
 //@ContextConfiguration(classes = {AsyncConfiguration.class})
 
+
+https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/beans.html

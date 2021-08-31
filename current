@@ -288,10 +288,6 @@ does catastrophic forgetting occur in RL systems?
 
 pick up an epidemiology book
 
-https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion
-
-https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model
-
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
 domain experts:
@@ -321,6 +317,8 @@ fields that don't seem to change at all:
 
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
+
+https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
@@ -408,7 +406,6 @@ https://www.sciencemag.org/news/2020/11/game-has-changed-ai-triumphs-solving-pro
 https://www.nih.gov/coronavirus
 https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
 https://www.nature.com/scitable/topicpage/the-role-of-methylation-in-gene-expression-1070/
-https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/beans.html
 do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html, https://en.wikipedia.org/wiki/PID_controller
 architecture of sars-cov-2 transcriptome: https://www.sciencedirect.com/science/article/pii/S0092867420304062
 d614g mutation: https://www.nature.com/articles/s41586-020-2895-3
@@ -578,8 +575,6 @@ https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 https://en.wikipedia.org/wiki/Structural_genomics
 https://en.wikipedia.org/wiki/Structural_biology
 
-attention mechanism. Great that the basic system is working, but what is the fundamental principles? What interfaces are available, what RL mindset would be sufficient? How to link different attention concepts?
-
 https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
 
 limited memory: https://arxiv.org/abs/2002.05645v5
@@ -623,8 +618,6 @@ talking about fingerprints, there are a few ideas:
 derive heart from arccos again
 
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
-
-instant beer?
 
 shelly plug
 

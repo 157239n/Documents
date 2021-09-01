@@ -291,7 +291,6 @@ pick up an epidemiology book
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
 domain experts:
-- https://www.kaggle.com/wrrosa/advanced-dicom-ct-3d-visualizations-with-vtk
 - https://www.kaggle.com/anarthal/dicom-metadata-eda
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165727
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166123
@@ -299,21 +298,7 @@ domain experts:
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169658
 top:
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169121
-
-https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/164870
-dicom image position & reference frames:
-- https://stackoverflow.com/questions/14930222/how-to-calculate-space-between-dicom-slices-for-mpr
-- https://dicom.innolitics.com/ciods/digital-x-ray-image/x-ray-generation/00180060
-- https://www.dicomlibrary.com/dicom/dicom-tags/
-- http://dicomlookup.com/
-- https://stackoverflow.com/questions/30814720/dicom-and-the-image-position-patient
-- http://dicom.nema.org/MEDICAL/DICOM/2014c/output/chtml/part03/sect_C.7.6.2.html#sect_C.7.6.2.1.1
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/174433
-
-fields that don't seem to change at all:
-- PixelSpacing - neither (nearly lv 1, outlier in patient ID00099637202206203080121 which changes a heck lot)
-- WindowCenter - lv 1. This throws the ragging error. More analysis to follow
-- WindowWidth - lv 1. Also throws the ragging error
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/164870
 
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
@@ -322,26 +307,16 @@ https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
-reconstruction (think MRIs) seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
-
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
 
-https://www.kaggle.com/eladwar/20-seconds-or-less
-https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166957
-
 https://www.youtube.com/c/Brainbook/videos
+
+dicom think about unit tests for data coming in, so that I won't be surprised?
+dicom also verify ImageOrientationPatient with 3d viz
 
 https://distill.pub/2017/aia/
 http://lernapparat.de/
-
-dcm rescale slope and intercept
-https://blog.kitware.com/dicom-rescale-intercept-rescale-slope-and-itk/
-https://stackoverflow.com/questions/10193971/rescale-slope-and-rescale-intercept
-
-PixelRepresentation
-
-https://www.technologyreview.com/2020/10/16/1010566/ai-machine-learning-with-tiny-data/
 
 another leslie paper: https://arxiv.org/pdf/1506.01186.pdf
 
@@ -352,8 +327,6 @@ https://www.fast.ai/2018/04/30/dawnbench-fastai/
 "ulmfit vs bert"
 https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html
 http://jalammar.github.io/illustrated-bert/
-
-how about creating a lab system to automatically play with chemicals somewhere
 
 https://en.wikipedia.org/wiki/Mechanotransduction
 

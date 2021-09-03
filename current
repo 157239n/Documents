@@ -541,7 +541,6 @@ https://caseyhandmer.wordpress.com/2021/05/21/new-opportunities-for-space-compan
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
-- file:///home/kelvin/Downloads/David%20A%20Sinclair%20-%20David%20A%20Sinclair%20Lifespan%20Why%20We%20Age%20and%20Why%20We%20Dont%20Have%20To%20with%20Matthew%20D%20LaPlante%202019%20ISBN%20978-1501191978%20(2019).pdf
 
 https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
 
@@ -633,3 +632,7 @@ https://www.science.org/content/article/new-sars-cov-2-variants-have-changed-pan
 https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
 https://arxiv.org/pdf/1812.08434.pdf
+
+from skimage import measure, morphology
+measure.marching_cubes
+skimage.morphology

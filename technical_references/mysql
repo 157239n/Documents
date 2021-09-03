@@ -105,3 +105,13 @@ http://157239n.com/files/shortcuts.zip
 
 
 mysqldump --column-statistics=0, that option is to fix an error
+
+for time stuff:
+- https://dev.mysql.com/doc/refman/5.6/en/date-and-time-functions.html
+- https://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
+- unix_timestamp(now()): absolute reference point
+- now() returns a unix timestamp (but displayed as local time in nice formats)
+- date(now()) returns the start of the day in local time. So unix_timestamp(date(now())) doesn't divide cleanly by 86400 in most timezones
+- time(now()) returns time of today only, but unix_timestamp(time(now())) is actually equal to unix_timestamp(now()), as it assumes the current date in local time
+
+DATETIME is timezone agnostic, TIMESTAMP is unix time

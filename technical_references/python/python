@@ -70,3 +70,9 @@ im = Image.open(requests.get(url, stream=True).raw)
 for distributing c extensions: https://stackoverflow.com/questions/63804883/including-and-distributing-third-party-libraries-with-a-python-c-extension
 
 
+
+low level of how things work:
+- https://devguide.python.org/
+- https://devguide.python.org/compiler/
+- https://tech.blog.aknin.name/category/my-projects/pythons-innards/
+- https://stackoverflow.com/questions/19916729/how-exactly-is-python-bytecode-run-in-cpython

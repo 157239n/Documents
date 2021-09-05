@@ -620,8 +620,6 @@ tesla multiscale features uses bifpn, so what's that about?
 
 website module automate pull text from sites
 
-dive into python's multiprocessing, to know what's up? How are variables shared between processes and whatnot
-
 cli that can rescale datasets coming in. Essentially maps stuff
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/

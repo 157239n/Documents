@@ -28,3 +28,7 @@ helper modules proposals: k1a for accelerated operations in plain C++, and k1c f
 try to do some cli tool operations inside k1a
 
 man, I really want something like processing, where animations can be created in a flash
+
+Could also do stuff like making the entire module dependent on some other package, then use try except when including them at startup scripts. Can also add "module status" variable, to see which modules are lacking dependencies and whatnot
+
+really kick off k1a, to translate protein sequence to a single mass number. May be for now, do the counter thingy, and add up stuff

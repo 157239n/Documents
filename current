@@ -630,6 +630,7 @@ https://www.science.org/content/article/new-sars-cov-2-variants-have-changed-pan
 https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
 https://arxiv.org/pdf/1812.08434.pdf
+https://www.whatisbiotechnology.org/index.php/science/summary/nanopore/nanopore-sequencing-makes-it-possible-to-decode-the
 
 from skimage import measure, morphology
 measure.marching_cubes

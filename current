@@ -534,10 +534,6 @@ try to create an agent that has some sense of higher dimensions
 
 http://www.aosabook.org/en/index.html
 
-https://caseyhandmer.wordpress.com/2020/02/15/dont-stage-off-starship/
-https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/
-https://caseyhandmer.wordpress.com/2021/05/21/new-opportunities-for-space-companies/
-
 stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
@@ -601,17 +597,13 @@ aav:
 left on mess:
 - https://rupress.org/jem/article/216/5/1005/121029/Microbial-therapeutics-New-opportunities-for-drug
 - https://blogs.imf.org/2021/04/29/achieving-the-sustainable-development-goals-will-require-extraordinary-effort-by-all/
-- http://interactive.satellitetoday.com/via/may-2021/a-conversation-with-gwynne-shotwell-2020-satellite-executive-of-the-year/
 - https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853
-- https://deepmind.com/blog/article/using-jax-to-accelerate-our-research
 - https://www.thermofisher.com/sg/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning.html
 - https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
 - https://www.nature.com/articles/s41467-021-24525-7
 - https://theaisummer.com/deep-learning-biology-alphafold/
-- https://www.wired.com/story/what-alphago-teach-how-people-learn/
 - https://t.co/MLwa8O8zNt?amp=1
 - https://twitter.com/Thom_astro/status/1427635722542927872?s=07
-- https://data-science-blog.com/blog/2021/07/31/my-elaborate-study-notes-on-reinforcement-learning/
 - ML pitfalls: https://arxiv.org/abs/2108.02497
 - https://www.ncbi.nlm.nih.gov/books/NBK9839/
 - https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
@@ -630,7 +622,6 @@ https://www.science.org/content/article/new-sars-cov-2-variants-have-changed-pan
 https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
 https://arxiv.org/pdf/1812.08434.pdf
-https://www.whatisbiotechnology.org/index.php/science/summary/nanopore/nanopore-sequencing-makes-it-possible-to-decode-the
 
 from skimage import measure, morphology
 measure.marching_cubes

@@ -379,7 +379,6 @@ https://www.sciencemag.org/news/2020/11/game-has-changed-ai-triumphs-solving-pro
 https://www.nih.gov/coronavirus
 https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
 https://www.nature.com/scitable/topicpage/the-role-of-methylation-in-gene-expression-1070/
-do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html, https://en.wikipedia.org/wiki/PID_controller
 architecture of sars-cov-2 transcriptome: https://www.sciencedirect.com/science/article/pii/S0092867420304062
 d614g mutation: https://www.nature.com/articles/s41586-020-2895-3
 entire covid 19's genome: https://www.ncbi.nlm.nih.gov/gene/43740568
@@ -420,7 +419,6 @@ https://en.wikipedia.org/wiki/Proteostasis
 melanoma brain metastases
 
 temp discarded:
-- https://www.kaggle.com/jhoward/don-t-see-like-a-radiologist-fastai
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165727
 - https://www.kaggle.com/nxrprime/fibrosis-eda-fast-ai
 - https://www.kaggle.com/dipam7/intel-scene-progressive-image-resizing
@@ -611,8 +609,6 @@ left on mess:
 tesla multiscale features uses bifpn, so what's that about?
 
 website module automate pull text from sites
-
-cli that can rescale datasets coming in. Essentially maps stuff
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/
 https://en.wikipedia.org/wiki/RNA-dependent_RNA_polymerase

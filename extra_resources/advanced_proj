@@ -441,3 +441,5 @@ read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas 
 instant beer?
 
 reconstruction (think MRIs) seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
+
+do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html, https://en.wikipedia.org/wiki/PID_controller

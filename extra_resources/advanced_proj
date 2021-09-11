@@ -443,3 +443,8 @@ instant beer?
 reconstruction (think MRIs) seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
 
 do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html, https://en.wikipedia.org/wiki/PID_controller
+
+verify double descent & super convergence with cifar 10
+verify the attention stuff in resnet. Try and grab 2 classes from imagenet
+
+https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/

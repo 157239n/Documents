@@ -33,6 +33,15 @@ INSDC (tools):
 - UniProt: universal protein resource
 - PDB: protein data bank
 
+nice companies:
+- dna genotek
+- addgene, for oligonucleotide synthesis
+
+nice solution names:
+- exosap-it: clean up nucleotides after PCR
+- prepit, dna extraction and purification: https://www.dnagenotek.com/row/products/reagents-preparation/prepIT/PT-L2P.html
+- dna collection kits: https://www.dnagenotek.com/row/products/collection-human/oragene-dna/500-series/OG-500.html
+
 model orgs:
 - UCSC genome browser: viz, comparative genomics
 - FlyBase: Drosophilia genes

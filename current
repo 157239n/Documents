@@ -184,8 +184,6 @@ https://www.lesswrong.com/posts/Mzrs4MSi58ujBLbBG/you-can-probably-amplify-gpt3-
 
 breaking the quadratic attention bottleneck in transformers: https://www.reddit.com/r/MachineLearning/comments/hxvts0/d_breaking_the_quadratic_attention_bottleneck_in/
 
-ready player one
-
 reddit carreer in researching AGI
 
 again, think about how to structure an active learning problem to create a fast feedback system. Basic principles should be fairly simple and easy to see, although there need not be actual implementable code to extend from. And yeah, I feel like there is a fear of generating new samples on the go and so ppl are turned away by that and don't necessarily embrace the nonlinearity of the real world
@@ -210,9 +208,7 @@ world models: https://arxiv.org/pdf/1803.10122.pdf
 
 https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion
 https://www.kaggle.com/twinkle0705/your-starter-notebook-for-osic#Reading-the-data
-https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/data
 
-https://blog.gregbrockman.com/how-i-became-a-machine-learning-practitioner
 https://www.reddit.com/r/MachineLearning/comments/g16s40/r_metalearning_in_neural_networks_a_survey/
 
 https://towardsdatascience.com/visual-attention-model-in-deep-learning-708813c2912c
@@ -220,8 +216,6 @@ https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
 
 https://dailynous.com/2020/07/30/philosophers-gpt-3/
 
-verify double descent & super convergence with cifar 10
-verify the attention stuff in resnet. Try and grab 2 classes from imagenet
 https://mml-book.github.io/book/mml-book.pdf
 http://www.arxiv-sanity.com/
 
@@ -257,8 +251,6 @@ http://worrydream.com/MagicInk/
 meta learning through hebbian plasticity: https://www.youtube.com/watch?v=v2GRWzIhaqQ
 
 https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_underappreciated_resources/
-
-check over deepmind wiki
 
 http://www.argmin.net/2018/06/25/outsider-rl/
 http://karpathy.github.io/2016/05/31/rl/
@@ -302,8 +294,6 @@ top:
 
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
-
-https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
 seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
@@ -441,7 +431,6 @@ https://en.wikipedia.org/wiki/Non-contact_atomic_force_microscopy
 
 goals for this trip?
 - demonstrate plasmid cloning. Heard it's super simple and whatnot
-- demonstrate PCR, to get in touch with the querying tools
 - understand the compliment system designs, and see if I can come up with comparable systems
 - create a system that accurately maps out distances of a camera feed when also given the coordinate system
 - do a bunch of comparative genomics. Basically figure out the story of every life on earth. Also try to run AlphaFold2. Also try to figure out the energy landscape in all of this. Targets:
@@ -473,7 +462,6 @@ https://en.wikipedia.org/wiki/Secretion
 https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
 https://en.wikipedia.org/wiki/Post-translational_modification
 https://en.wikipedia.org/wiki/Glycosylation
-https://en.wikipedia.org/wiki/Psilocybe
 refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
 https://en.wikipedia.org/wiki/Molecular_machine
 https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
@@ -526,7 +514,6 @@ discovery path for proteins? Where are the entropy leaks?
 
 https://en.wikipedia.org/wiki/Transcription_factor
 https://en.wikipedia.org/wiki/Transfection
-zinc finger vs crispr
 
 try to create an agent that has some sense of higher dimensions
 
@@ -618,7 +605,15 @@ https://www.science.org/content/article/new-sars-cov-2-variants-have-changed-pan
 https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
 https://arxiv.org/pdf/1812.08434.pdf
+https://blog.addgene.org/plasmids-101-restriction-cloning
 
 from skimage import measure, morphology
 measure.marching_cubes
 skimage.morphology
+
+nice: https://www.youtube.com/c/jacksonlaboratory/videos
+
+see python's bytecode for nested yields. Also measure actual speed between .all() and looped yields, to compare between function calls and jumping back and forth with yield
+
+https://blog.gregbrockman.com/define-cto-openai
+https://openai.com/blog/more-on-dota-2/#infrastructure

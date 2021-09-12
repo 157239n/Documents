@@ -291,6 +291,7 @@ domain experts:
 top:
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169121
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/164870
+- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/data
 
 python pil 3d projections
 https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
@@ -409,7 +410,6 @@ https://en.wikipedia.org/wiki/Proteostasis
 melanoma brain metastases
 
 temp discarded:
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165727
 - https://www.kaggle.com/nxrprime/fibrosis-eda-fast-ai
 - https://www.kaggle.com/dipam7/intel-scene-progressive-image-resizing
 
@@ -606,6 +606,7 @@ https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
 https://arxiv.org/pdf/1812.08434.pdf
 https://blog.addgene.org/plasmids-101-restriction-cloning
+https://en.wikipedia.org/wiki/Spirometry
 
 from skimage import measure, morphology
 measure.marching_cubes

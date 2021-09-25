@@ -614,8 +614,6 @@ skimage.morphology
 
 nice: https://www.youtube.com/c/jacksonlaboratory/videos
 
-see python's bytecode for nested yields. Also measure actual speed between .all() and looped yields, to compare between function calls and jumping back and forth with yield
-
 https://blog.gregbrockman.com/define-cto-openai
 https://openai.com/blog/more-on-dota-2/#infrastructure
 
@@ -624,3 +622,5 @@ https://www.faa.gov/space/stakeholder_engagement/spacex_starship/media/Summary_D
 printing services:
 - https://www.fastradius.com/capabilities/additive-manufacturing
 - https://en.wikipedia.org/wiki/3D_printing_processes
+
+applyMp 10000 processes each doing 1 task, or 100 processes, each doing 100 tasks?

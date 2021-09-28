@@ -624,3 +624,5 @@ printing services:
 - https://en.wikipedia.org/wiki/3D_printing_processes
 
 applyMp 10000 processes each doing 1 task, or 100 processes, each doing 100 tasks?
+
+document graphEqn, and show examples where it's useful

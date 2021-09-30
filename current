@@ -628,3 +628,5 @@ applyMp 10000 processes each doing 1 task, or 100 processes, each doing 100 task
 document graphEqn, and show examples where it's useful
 
 rename to gE again, and have something like gE(a = gE.Var()), so that variable names can be captured. Also do the multiple expression thingy, may be .also(). The vision is to just multiply stuff at will, then check a visualization graph to see how many source variables are left. Then we can manually set those, and every value will just pop into life!
+
+https://twitter.com/DeepMind/status/1440710585964916741

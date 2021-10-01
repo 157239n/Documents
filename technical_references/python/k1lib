@@ -34,3 +34,5 @@ Could also do stuff like making the entire module dependent on some other packag
 really kick off k1a, to translate protein sequence to a single mass number. May be for now, do the counter thingy, and add up stuff
 
 applyMp, but with a preload option. Also when do new processes gets executed?
+
+tail(file)

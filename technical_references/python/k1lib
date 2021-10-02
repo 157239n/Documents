@@ -36,3 +36,5 @@ really kick off k1a, to translate protein sequence to a single mass number. May 
 applyMp, but with a preload option. Also when do new processes gets executed?
 
 tail(file)
+
+blocks(), to get streams of indented blocks

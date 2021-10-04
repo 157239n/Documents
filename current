@@ -461,7 +461,6 @@ https://en.wikipedia.org/wiki/Signal_peptide
 https://en.wikipedia.org/wiki/Secretion
 https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
 https://en.wikipedia.org/wiki/Post-translational_modification
-https://en.wikipedia.org/wiki/Glycosylation
 refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
 https://en.wikipedia.org/wiki/Molecular_machine
 https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
@@ -470,8 +469,6 @@ https://en.wikipedia.org/wiki/Physarum_polycephalum
 https://en.wikipedia.org/wiki/RNA-binding_protein
 https://en.wikipedia.org/wiki/Origin_of_replication
 sample complexity: https://en.wikipedia.org/wiki/Dihydrofolate_reductase
-https://en.wikipedia.org/wiki/Chaperone_(protein)
-https://en.wikipedia.org/wiki/GroEL
 https://en.wikipedia.org/wiki/High_throughput_biology
 https://en.wikipedia.org/wiki/Proteome
 https://en.wikipedia.org/wiki/Luciferase
@@ -632,3 +629,5 @@ rename to gE again, and have something like gE(a = gE.Var()), so that variable n
 https://twitter.com/DeepMind/status/1440710585964916741
 
 figure out what lnav does
+
+talk about accuracy of derivative and inverse functions

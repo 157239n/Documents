@@ -448,3 +448,7 @@ verify double descent & super convergence with cifar 10
 verify the attention stuff in resnet. Try and grab 2 classes from imagenet
 
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
+
+multiple ssh and VPNs:
+- https://serverfault.com/questions/606680/multiple-reverse-ssh-tunnels-using-single-port
+- https://stackoverflow.com/questions/29945925/managing-multiple-reverse-ssh-tunnels

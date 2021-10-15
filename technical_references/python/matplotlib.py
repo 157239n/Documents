@@ -24,5 +24,9 @@ fig, (ax0, ax1, ax2) = plt.subplots(ncols=3, subplot_kw={"projection":"3d"}, fig
 ax0.plot_surface(x, y, z)
 ax1.plot_wireframe(x, y, z)
 ax2.contour(x, y, z)
+ax2.view_init(azim=30) # 3d view rotated a little bit
 
 
+%matplotlib widget # for showing widgets in notebooks
+plt.ion() # interactive mode on
+plt.ioff() # interactive mode off

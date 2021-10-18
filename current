@@ -638,4 +638,11 @@ upload graphEqn lol
 
 actually do resume stuff
 
-Range add fromRange or sth like that
+schedule stuff to increase distance decay again
+
+also increasing network's params until function prediction thingy is smooth, cause if I give it 4 or sth, it does terribly. Also check again if the predict 2 numbers thingy actually work when you increase the param count
+
+from System, constructs the molecule. This is so that I can save the system to disk and whatnot.
+
+tert-butanol
+di-tert-butyl ether

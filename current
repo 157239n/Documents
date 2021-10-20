@@ -645,4 +645,9 @@ di-tert-butyl ether
 
 .reorient(), to turn the molecule so that it has nice properties so that we can compare the both of them
 
-add support for ketone, carboxylic acid, and aldehydes
+add parsing support for ketone, carboxylic acid, and aldehydes
+.show(), but have option to not include hydrogens
+clean up .simulate()
+Module.paramsContext() more docs
+schedule.Fn decorator
+last kernel update: 5.4.0

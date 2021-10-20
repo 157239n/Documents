@@ -1,6 +1,13 @@
 
 TODOs for k1lib. Some archival, as there's not much need for it
 
+tasklist before uploading:
+- run mo tutorial, so html generates beautifully
+- generate docs
+- change setup.py version number
+- push main
+- push github pages
+
 (too lazy) cli tool flow analysis:
 - Also, may be flow analysis of cli tools might be great. Can just deduce from the init points. Stuff like graphviz seems good
 - Even if dependent on incoming stream, can suggest topologies and ask for type info from user. And of course, can check for inconsistencies like iterator used in 2 places

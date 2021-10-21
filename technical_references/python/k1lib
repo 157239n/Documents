@@ -45,3 +45,10 @@ applyMp, but with a preload option. Also when do new processes gets executed?
 tail(file)
 
 blocks(), to get streams of indented blocks
+
+mo:
+- tert-butanol
+- di-tert-butyl ether
+- add parsing support for ketone, carboxylic acid, and aldehydes
+- .reorient(), to turn the molecule so that it has nice properties so that we can compare the both of them
+- from System, constructs the molecule. This is so that I can save the system to disk and whatnot.

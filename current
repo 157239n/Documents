@@ -615,6 +615,7 @@ https://blog.gregbrockman.com/define-cto-openai
 https://openai.com/blog/more-on-dota-2/#infrastructure
 
 https://www.faa.gov/space/stakeholder_engagement/spacex_starship/media/Summary_Draft_PEA_for_SpaceX_Starship_Super_Heavy_at_Boca_Chica.pdf
+https://www.faa.gov/space/stakeholder_engagement/spacex_starship/
 
 printing services:
 - https://www.fastradius.com/capabilities/additive-manufacturing
@@ -628,26 +629,13 @@ https://twitter.com/DeepMind/status/1440710585964916741
 
 figure out what lnav does
 
-talk about accuracy of derivative and inverse functions
-
 upload graphEqn lol
 
 actually do resume stuff
 
-schedule stuff to increase distance decay again
-
 also increasing network's params until function prediction thingy is smooth, cause if I give it 4 or sth, it does terribly. Also check again if the predict 2 numbers thingy actually work when you increase the param count
 
-from System, constructs the molecule. This is so that I can save the system to disk and whatnot.
-
-tert-butanol
-di-tert-butyl ether
-
-.reorient(), to turn the molecule so that it has nice properties so that we can compare the both of them
-
-add parsing support for ketone, carboxylic acid, and aldehydes
-.show(), but have option to not include hydrogens
-clean up .simulate()
 Module.paramsContext() more docs
 schedule.Fn decorator
 last kernel update: 5.4.0
+talk about cyclohexane case in mo tut

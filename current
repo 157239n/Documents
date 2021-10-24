@@ -635,7 +635,7 @@ actually do resume stuff
 
 also increasing network's params until function prediction thingy is smooth, cause if I give it 4 or sth, it does terribly. Also check again if the predict 2 numbers thingy actually work when you increase the param count
 
-Module.paramsContext() more docs
-schedule.Fn decorator
 last kernel update: 5.4.0
-talk about cyclohexane case in mo tut
+declare torchvision and PIL optional deps
+checkout how many transforms actually derive from nn.Module
+recorder only record when there's a signal

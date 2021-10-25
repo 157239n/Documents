@@ -1,12 +1,13 @@
 
-TODOs for k1lib. Some archival, as there's not much need for it
+TODOs for k1lib
 
-tasklist before uploading:
+tasklist for uploading:
 - run mo tutorial, so html generates beautifully
 - generate docs
-- change setup.py version number
 - push main
 - push github pages
+- upload
+- change setup.py version number
 
 (too lazy) cli tool flow analysis:
 - Also, may be flow analysis of cli tools might be great. Can just deduce from the init points. Stuff like graphviz seems good
@@ -14,31 +15,12 @@ tasklist before uploading:
 - https://ipython.org/ipython-doc/stable/parallel/dag_dependencies.html
 - https://mungingdata.com/python/dag-directed-acyclic-graph-networkx/
 
-one cycle log scale
-
-MemoryProfiler, run for multiple batches, to see the ups and down, and to detect memory leaks.
-
 Cmd that actually takes in input line by line, and outputs also line by line, and the cmd itself executes in another thread, to optimize for performance
-
-typing intersphinx stuff https://bugs.python.org/issue31024
 
 Explain cancel signals
 Write in detail what loss landscape actually means
-write tutorial about cli.ctx
 
 split stream functionality, but both are feeding from the same internal list
-
-implement core rnn loop inside c again, this time do it right, and see if there are actually improvements
-
-helper modules proposals: k1a for accelerated operations in plain C++, and k1c for cuda C++
-
-try to do some cli tool operations inside k1a
-
-man, I really want something like processing, where animations can be created in a flash
-
-really kick off k1a, to translate protein sequence to a single mass number. May be for now, do the counter thingy, and add up stuff
-
-applyMp, but with a preload option. Also when do new processes gets executed?
 
 tail(file)
 
@@ -50,3 +32,7 @@ mo:
 - add parsing support for ketone (2,4-pentadione), carboxylic acid, and aldehydes
 - .reorient(), to turn the molecule so that it has nice properties so that we can compare the both of them
 - from System, constructs the molecule. This is so that I can save the system to disk and whatnot.
+
+reconsider: split, stitch
+
+website module automate pull text from sites

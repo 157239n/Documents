@@ -1,0 +1,12 @@
+
+MemoryProfiler, run for multiple batches, to see the ups and down, and to detect memory leaks.
+
+write tutorial about cli.ctx
+
+document graphEqn, and show examples where it's useful
+
+rename to gE again, and have something like gE(a = gE.Var()), so that variable names can be captured. Also do the multiple expression thingy, may be .also(). The vision is to just multiply stuff at will, then check a visualization graph to see how many source variables are left. Then we can manually set those, and every value will just pop into life!
+
+upload graphEqn lol
+
+https://matplotlib.org/stable/users/event_handling.html

@@ -163,10 +163,8 @@ long term goal is to be able to:
 
 short term goal is to:
 - read over all papers currently, which is quite a lot
-- do all brilliant stuff (by this week)
 - do all jeremy howard stuff
 - do a few kaggle stuff
-- warn teachers of GPT-3, create an interface to automatically generate scripts to amaze them
 
 https://medium.com/dataseries/google-deepminds-dreamer-is-a-reinforcement-learning-agent-that-can-solve-long-horizon-tasks-5faa6f6b63b
 https://singularityhub.com/2020/07/26/deepminds-newest-ai-programs-itself-to-make-all-the-right-decisions
@@ -292,11 +290,6 @@ top:
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169121
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/164870
 - https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/data
-
-python pil 3d projections
-https://stackoverflow.com/questions/39945068/python-pil-3d-projection, lmao, so no one even cares about this???
-
-seems like no one is talking about the neocortex, aka ppl have no idea how it actually works
 
 with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
 more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
@@ -592,8 +585,6 @@ left on mess:
 
 tesla multiscale features uses bifpn, so what's that about?
 
-website module automate pull text from sites
-
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/
 https://en.wikipedia.org/wiki/RNA-dependent_RNA_polymerase
 https://www.stateof.ai/
@@ -611,9 +602,6 @@ skimage.morphology
 
 nice: https://www.youtube.com/c/jacksonlaboratory/videos
 
-https://blog.gregbrockman.com/define-cto-openai
-https://openai.com/blog/more-on-dota-2/#infrastructure
-
 https://www.faa.gov/space/stakeholder_engagement/spacex_starship/media/Summary_Draft_PEA_for_SpaceX_Starship_Super_Heavy_at_Boca_Chica.pdf
 https://www.faa.gov/space/stakeholder_engagement/spacex_starship/
 
@@ -621,21 +609,13 @@ printing services:
 - https://www.fastradius.com/capabilities/additive-manufacturing
 - https://en.wikipedia.org/wiki/3D_printing_processes
 
-document graphEqn, and show examples where it's useful
-
-rename to gE again, and have something like gE(a = gE.Var()), so that variable names can be captured. Also do the multiple expression thingy, may be .also(). The vision is to just multiply stuff at will, then check a visualization graph to see how many source variables are left. Then we can manually set those, and every value will just pop into life!
-
 https://twitter.com/DeepMind/status/1440710585964916741
 
 figure out what lnav does
-
-upload graphEqn lol
 
 actually do resume stuff
 
 also increasing network's params until function prediction thingy is smooth, cause if I give it 4 or sth, it does terribly. Also check again if the predict 2 numbers thingy actually work when you increase the param count
 
 last kernel update: 5.4.0
-declare torchvision and PIL optional deps
-checkout how many transforms actually derive from nn.Module
-recorder only record when there's a signal
+just regular imgs from internet, and name pred using attention

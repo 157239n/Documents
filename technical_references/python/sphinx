@@ -64,3 +64,11 @@ Set |Product| configuration properties by . . .
 .. include:: ../shared/folder/filename.rst
 
 sphinx-apidoc -f -o . ../k1lib
+
+
+
+
+
+.. contents::
+   :local:
+   :depth: 1

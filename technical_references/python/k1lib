@@ -33,6 +33,6 @@ mo:
 - .reorient(), to turn the molecule so that it has nice properties so that we can compare the both of them
 - from System, constructs the molecule. This is so that I can save the system to disk and whatnot.
 
-reconsider: split, stitch
+reconsider: split
 
 website module automate pull text from sites

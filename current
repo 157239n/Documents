@@ -619,3 +619,10 @@ also increasing network's params until function prediction thingy is smooth, cau
 
 last kernel update: 5.4.0
 just regular imgs from internet, and name pred using attention
+
+do active learning, and view mistakes
+
+"op" cli, to absorb all operations done on it and return a cli
+
+with model.intercept(f):
+	l.model(...)

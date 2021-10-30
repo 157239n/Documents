@@ -622,7 +622,7 @@ just regular imgs from internet, and name pred using attention
 
 do active learning, and view mistakes
 
-"op" cli, to absorb all operations done on it and return a cli
-
-with model.intercept(f):
-	l.model(...)
+LossLambda to LossF
+frozen context manager
+__setattr__ and __setitem__ in absorber
+deviceContext for all stuff inside? buffers and whatnot

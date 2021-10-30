@@ -72,3 +72,6 @@ sphinx-apidoc -f -o . ../k1lib
 .. contents::
    :local:
    :depth: 1
+
+Change default module in the docs
+.. module:: argparse_actions

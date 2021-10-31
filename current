@@ -615,14 +615,11 @@ figure out what lnav does
 
 actually do resume stuff
 
-also increasing network's params until function prediction thingy is smooth, cause if I give it 4 or sth, it does terribly. Also check again if the predict 2 numbers thingy actually work when you increase the param count
-
 last kernel update: 5.4.0
 just regular imgs from internet, and name pred using attention
 
 do active learning, and view mistakes
 
-LossLambda to LossF
-frozen context manager
-__setattr__ and __setitem__ in absorber
-deviceContext for all stuff inside? buffers and whatnot
+do progressive deepening, create blocks in knn and whatnot
+also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
+also viz.mask(), to place a mask over an existing image, to see where it pays attention to

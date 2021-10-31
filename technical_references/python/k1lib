@@ -33,6 +33,8 @@ mo:
 - .reorient(), to turn the molecule so that it has nice properties so that we can compare the both of them
 - from System, constructs the molecule. This is so that I can save the system to disk and whatnot.
 
-reconsider: split
-
 website module automate pull text from sites
+
+io profiler backward shapes
+
+clearPools don't have to push so aggresively anymore. Nah, atexit doesn't seem to work!

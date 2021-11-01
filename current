@@ -450,7 +450,7 @@ aryl: https://www.ncbi.nlm.nih.gov/protein/NP_001612.1
 
 YP_009724389.1
 
-https://en.wikipedia.org/wiki/Signal_peptide
+tehttps://en.wikipedia.org/wiki/Signal_peptide
 https://en.wikipedia.org/wiki/Secretion
 https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
 https://en.wikipedia.org/wiki/Post-translational_modification
@@ -618,8 +618,12 @@ actually do resume stuff
 last kernel update: 5.4.0
 just regular imgs from internet, and name pred using attention
 
-do active learning, and view mistakes
-
 do progressive deepening, create blocks in knn and whatnot
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
-also viz.mask(), to place a mask over an existing image, to see where it pays attention to
+trigger class, to monitor when the progress flips over to the desired amount
+consider turning split() into split().all()
+
+AccF, CrossEntropyLoss and whatnot are sort of conflicting
+mpl white bg again
+do autoencoders again
+document ws in readme

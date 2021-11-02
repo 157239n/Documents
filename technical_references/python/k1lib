@@ -37,14 +37,21 @@ website module automate pull text from sites
 
 io profiler backward shapes
 
-clearPools don't have to push so aggresively anymore. Nah, atexit doesn't seem to work!
 withBasics some error
 selector tutorial old style
 css classes make .Class style
-remove cats, as cat().all() seems to be good enough
-not found import msg?
 tutorial on language label thingy?
 document about _op_solidify
 confusion matrix scales again?
 confusion matrix clear nans, and warns that
 MS.modules("*") should select any modules that has any prop, not the ones with all props
+discuss op()'s illegal methods and whatnot
+if op is good enough, then nuke stuff like upper(), lower()
+CaptureStdout example not include "k1lib."
+dontWrap more descriptive
+k1lib.optimize docs "sqrt" to real actual float
+schedule.Fn docs add __call__ examples
+
+a module that's pretty advanced built upon graphEqn, so that I can explore chem processes easily
+
+backprop for solving all equations?

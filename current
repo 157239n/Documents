@@ -621,7 +621,7 @@ just regular imgs from internet, and name pred using attention
 do progressive deepening, create blocks in knn and whatnot
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
 trigger class, to monitor when the progress flips over to the desired amount
-consider turning split() into split().all()
+consider turning split() into split().all(). Compare with op().split().all()
 
 AccF, CrossEntropyLoss and whatnot are sort of conflicting
 mpl white bg again

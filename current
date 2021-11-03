@@ -583,8 +583,6 @@ left on mess:
 - https://www.ncbi.nlm.nih.gov/books/NBK9839/
 - https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
 
-tesla multiscale features uses bifpn, so what's that about?
-
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/
 https://en.wikipedia.org/wiki/RNA-dependent_RNA_polymerase
 https://www.stateof.ai/
@@ -616,12 +614,10 @@ figure out what lnav does
 actually do resume stuff
 
 last kernel update: 5.4.0
-just regular imgs from internet, and name pred using attention
+name pred using attention
 
 do progressive deepening, create blocks in knn and whatnot
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
 trigger class, to monitor when the progress flips over to the desired amount
-
-AccF, CrossEntropyLoss and whatnot are sort of conflicting
 mpl white bg again
 do autoencoders again

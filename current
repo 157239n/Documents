@@ -383,21 +383,13 @@ other interesting notes:
 - a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
 - can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
 
-https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
-
 that combined knowledge thing:
 https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1ckHD6&keytype=ref&siteid=sci
 
 https://en.wikipedia.org/wiki/Homeobox
 
-https://en.wikipedia.org/wiki/Schlenk_line
-
-tesla's quarterly reports?
-
 mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrepreneurship_i_took_an_idea_to_mass/
-
-also do a youtube series on the RL stuff so far
 
 https://en.wikipedia.org/wiki/Proteostasis
 melanoma brain metastases
@@ -413,8 +405,6 @@ mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(
 anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
 
 https://joininteract.com/fellowship/
-
-etsy and https://www.easyship.com/blog/ecommerce-sites-for-wholesalers
 
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
 
@@ -450,7 +440,7 @@ aryl: https://www.ncbi.nlm.nih.gov/protein/NP_001612.1
 
 YP_009724389.1
 
-tehttps://en.wikipedia.org/wiki/Signal_peptide
+https://en.wikipedia.org/wiki/Signal_peptide
 https://en.wikipedia.org/wiki/Secretion
 https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
 https://en.wikipedia.org/wiki/Post-translational_modification
@@ -531,8 +521,6 @@ https://en.wikipedia.org/wiki/Danger_model
 
 https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB
 
-actually understand affine transforms in pytorch
-
 also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work
 
 also, several ideas for representing chemical structures:
@@ -571,15 +559,11 @@ aav:
 
 left on mess:
 - https://rupress.org/jem/article/216/5/1005/121029/Microbial-therapeutics-New-opportunities-for-drug
-- https://blogs.imf.org/2021/04/29/achieving-the-sustainable-development-goals-will-require-extraordinary-effort-by-all/
-- https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853
 - https://www.thermofisher.com/sg/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning.html
 - https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
 - https://www.nature.com/articles/s41467-021-24525-7
 - https://theaisummer.com/deep-learning-biology-alphafold/
 - https://t.co/MLwa8O8zNt?amp=1
-- https://twitter.com/Thom_astro/status/1427635722542927872?s=07
-- ML pitfalls: https://arxiv.org/abs/2108.02497
 - https://www.ncbi.nlm.nih.gov/books/NBK9839/
 - https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
 
@@ -600,15 +584,6 @@ skimage.morphology
 
 nice: https://www.youtube.com/c/jacksonlaboratory/videos
 
-https://www.faa.gov/space/stakeholder_engagement/spacex_starship/media/Summary_Draft_PEA_for_SpaceX_Starship_Super_Heavy_at_Boca_Chica.pdf
-https://www.faa.gov/space/stakeholder_engagement/spacex_starship/
-
-printing services:
-- https://www.fastradius.com/capabilities/additive-manufacturing
-- https://en.wikipedia.org/wiki/3D_printing_processes
-
-https://twitter.com/DeepMind/status/1440710585964916741
-
 figure out what lnav does
 
 actually do resume stuff
@@ -621,3 +596,6 @@ also can just do a normal scheduler, that sets stuff inside Learner itself, caus
 trigger class, to monitor when the progress flips over to the desired amount
 mpl white bg again
 do autoencoders again
+torch.Tensor.loglinspace
+filt remove lots of redundant clis as op() is fast enough
+bring back table()

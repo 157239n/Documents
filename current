@@ -1,8 +1,6 @@
 
 so, priorities now:
 - read rocket propulsion elements
-- file:///C:/Users/Lenovo-1/Downloads/Ebook/Warehouse%20Management_%20A%20Complete%20Guide%20to%20Improving%20Efficiency%20and%20Minimizing%20Costs%20in%20the%20Modern%20Warehouse-Kogan%20Page%20(2014).pdf
-- file:///C:/Users/Lenovo-1/Downloads/Christoph%20Roser%20-%20_Faster,%20Better,%20Cheaper_%20in%20the%20History%20of%20Manufacturing_%20From%20the%20Stone%20Age%20to%20Lean%20Manufacturing%20and%20Beyond-Productivity%20Press%20(2016).pdf
 - book: "pmi-pmbok", "pmbok guide"
 
 masterclass.comds
@@ -38,8 +36,6 @@ how do ppl actually build chatbots from language models? In other words, how to 
 "neural turing machine" sounds very, very impressive, so look into that
 
 https://arxiv.org/pdf/1709.08568.pdf
-
-what does it mean for bert to be bidirectional? I mean, aren't attention mechanism don't have a direction?
 
 superglue: a stickier benchmark for general-purpose language understanding systems: https://w4ngatang.github.io/static/papers/superglue.pdf
 original glue benchmark: https://openreview.net/pdf?id=rJ4km2R5t7
@@ -117,26 +113,14 @@ covid stuff:
 - a survey on applications of AI in fighting against covid-19: https://arxiv.org/pdf/2007.02202.pdf
 - IoT for current covid-19 and future pandemics: an exploratory study: https://arxiv.org/pdf/2007.11147.pdf
 
-again with the image segmentation but different color for different objects of same class, "instance image segmentation"
-
-deepmind's DNC (differential neural computer), mentioned by goertzel
-
 one weird trick for parallelizing CNNs: https://arxiv.org/pdf/1404.5997v2.pdf
 http://course18.fast.ai/part2.html
-dawn bench: an end-to-end DL benchmark and competition: https://dawn.cs.stanford.edu/benchmark/papers/nips17-dawnbench.pdf
 why train what you can code? Rekall: a compositional approach to video analysis: https://dawn.cs.stanford.edu/2019/10/09/rekall/
 infrastructure for usable ML: the stanford dawn project: https://arxiv.org/pdf/1705.07538.pdf
-http://image-net.org/update-sep-17-2019
 "resnet inference energy cost"
 noscope: optimizing NN queries over video at scale: https://arxiv.org/pdf/1703.02529.pdf
-hidden technical debt in ML systems: https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf
 E^2-Train: training SOTA CNNs with over 80% energy savings: https://arxiv.org/pdf/1910.13349.pdf
 ML: the high interest credit card of technical debt: https://research.google/pubs/pub43146/, https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43146.pdf
-"functional vigilance of drivers while using autopilot", lex's MIT research on autopilot
-
-attention and its relation to event-based systems?
-
-so the idea GPT-3 is pushing is that when the big network gets fed a prompt, it forms this little network on the go that's specialized to handle the task, which sort of explains why GPT-3 needs to be so big, and it also sort of explains the power-law relationship. So really reason about the relative sizes of these networks. How large is the actual specialized network and the full one? Then make comparisons to other animals
 
 deepmind, deep RL and its neuroscientific implications: https://deepmind.com/research/publications/Deep-Reinforcement-Learning-and-its-Neuroscientific-Implications
 yoshua bengio: from system 1 DL to system 2 DL: https://www.youtube.com/watch?v=T3sxeTgT4qc
@@ -146,66 +130,32 @@ obama interview: https://www.youtube.com/watch?v=Tjl8ka3F6QU
 
 spectral normalization, seems to fix problems with the discriminator
 
-https://www.fast.ai/2018/07/02/adam-weight-decay/
-
-path from now? Short and long term goals?
-
 long term goal is to be able to:
-- show others where is this technology at, what can be done with it, how to think about our future and how to be prepared for it
-- understand more about how the brain actually works
-- apply image supervised learning in all other domains
 - do research on my own with language models
-- apply collaborative filtering and dealing with tabular data at scale, and active learning too
 - paragraph recognition
-- object recognition
 - do research on RL
 - accurately model physics
 
 short term goal is to:
 - read over all papers currently, which is quite a lot
-- do all jeremy howard stuff
-- do a few kaggle stuff
 
 https://medium.com/dataseries/google-deepminds-dreamer-is-a-reinforcement-learning-agent-that-can-solve-long-horizon-tasks-5faa6f6b63b
 https://singularityhub.com/2020/07/26/deepminds-newest-ai-programs-itself-to-make-all-the-right-decisions
-
-really do the image label from minh thingy, to prove out everything I've picked up
 
 also wait, inference energy cost on GPT-3 seems to be quite low (4kWh/100 pages of output). Still 2-3 orders of magnitude away from human brains, but it's actually low enough to be beneficial. So, the bulk energy cost is in the training, where we're essentially doing the evolution thingy again
 
 proximal policy optimization, another popular RL method
 
-intelligence explosion microeconomics: https://intelligence.org/files/IEM.pdf
-
 https://www.lesswrong.com/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai
 https://www.lesswrong.com/posts/Mzrs4MSi58ujBLbBG/you-can-probably-amplify-gpt3-directly
-
 breaking the quadratic attention bottleneck in transformers: https://www.reddit.com/r/MachineLearning/comments/hxvts0/d_breaking_the_quadratic_attention_bottleneck_in/
-
-reddit carreer in researching AGI
-
-again, think about how to structure an active learning problem to create a fast feedback system. Basic principles should be fairly simple and easy to see, although there need not be actual implementable code to extend from. And yeah, I feel like there is a fear of generating new samples on the go and so ppl are turned away by that and don't necessarily embrace the nonlinearity of the real world
-
 https://mailchi.mp/2485e6b42012/an-102-meta-learning-by-gpt-3-and-a-list-of-full-proposals-for-ai-alignment?e=e50845312e
-
-sparse coding:
-- http://www.scholarpedia.org/article/Sparse_coding
-- https://blog.metaflow.fr/sparse-coding-a-simple-exploration-152a3c900a7c
-- http://ufldl.stanford.edu/tutorial/unsupervised/SparseCoding/
-- https://www.cs.ubc.ca/~schmidtm/MLRG/sparseCoding.pdf
-- https://www.sciencedirect.com/topics/engineering/sparse-coding
-- http://users.ics.aalto.fi/harri/dityo/node3.html
-- https://stats.stackexchange.com/questions/118199/what-are-the-differences-between-sparse-coding-and-autoencoder
-- https://www.youtube.com/watch?v=7a0_iEruGoM
 
 how can RL deal with a cold start
 
 ddpg algorithm
 
 world models: https://arxiv.org/pdf/1803.10122.pdf
-
-https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion
-https://www.kaggle.com/twinkle0705/your-starter-notebook-for-osic#Reading-the-data
 
 https://www.reddit.com/r/MachineLearning/comments/g16s40/r_metalearning_in_neural_networks_a_survey/
 
@@ -218,24 +168,12 @@ https://mml-book.github.io/book/mml-book.pdf
 http://www.arxiv-sanity.com/
 
 crafting papers on ML: https://pdfs.semanticscholar.org/3efc/b97c1de1c87832a7a1d99e91801992a938ec.pdf
-http://joschu.net/blog/opinionated-guide-ml-research.html
-ask reddit how to approach the conversation to ppl about AI, "reddit how to discuss impact of machine learning"
 
 so temporal-difference is basically just making sure the internal model of reality is good?
 
 https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 
 scikit-learn is mentioned a whole lot, so what does it actually offer?
-
-agi stuff:
-- http://www.hutter1.net/ai/introref.htm
-- https://www.youtube.com/channel/UCCwJ8AV1zMM4j9FTicGimqA
-- https://goertzel.org/agi-curriculum/
-- https://cis.temple.edu/~pwang/AGI-Intro.html
-- https://en.wikipedia.org/wiki/Artificial_intelligence
-- https://www.reddit.com/r/artificial/comments/6cnlr6/monthly_how_to_get_started_with_ai_thread/
-- http://www.agi-society.org/membership/
-- https://content.sciendo.com/view/journals/jagi/jagi-overview.xml
 
 https://placements.openmined.org/
 
@@ -254,11 +192,7 @@ http://www.argmin.net/2018/06/25/outsider-rl/
 http://karpathy.github.io/2016/05/31/rl/
 lex francois round 2
 
-ask about RL training stability to that redditor
-
 jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/watch?v=bHVqO5YyNbU
-
-cashapp
 
 may be deep RL introspection in our current systems help us reason about this take off scenario better
 
@@ -280,37 +214,8 @@ pick up an epidemiology book
 
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
-domain experts:
-- https://www.kaggle.com/anarthal/dicom-metadata-eda
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165727
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/166123
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/165253
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169658
-top:
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/169121
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/discussion/164870
-- https://www.kaggle.com/c/osic-pulmonary-fibrosis-progression/data
-
-with 3d stuff: https://www.kaggle.com/gzuidhof/full-preprocessing-tutorial
-more brain 3d stuff: https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw/featured
-
-https://www.youtube.com/c/Brainbook/videos
-
-dicom think about unit tests for data coming in, so that I won't be surprised?
-dicom also verify ImageOrientationPatient with 3d viz
-
 https://distill.pub/2017/aia/
 http://lernapparat.de/
-
-another leslie paper: https://arxiv.org/pdf/1506.01186.pdf
-
-https://www.fast.ai/2018/04/30/dawnbench-fastai/
-
-"wasserstein distance": GAN: https://arxiv.org/pdf/1701.07875.pdf
-
-"ulmfit vs bert"
-https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html
-http://jalammar.github.io/illustrated-bert/
 
 https://en.wikipedia.org/wiki/Mechanotransduction
 
@@ -320,8 +225,6 @@ alertness, arousal, attention, awareness
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 
-organic chem, "steric hindrance":
-- https://www.masterorganicchemistry.com/2012/06/05/nucleophiles-and-electrophiles/
 - https://www.chemistrysteps.com/sn1-sn2-e1-e2-choose-which-mechanism/
 
 https://read.amazon.com/?asin=B014TMUFX6
@@ -394,10 +297,6 @@ mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrep
 https://en.wikipedia.org/wiki/Proteostasis
 melanoma brain metastases
 
-temp discarded:
-- https://www.kaggle.com/nxrprime/fibrosis-eda-fast-ai
-- https://www.kaggle.com/dipam7/intel-scene-progressive-image-resizing
-
 https://en.wikipedia.org/wiki/Structural_alignment
 
 ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
@@ -415,7 +314,6 @@ https://en.wikipedia.org/wiki/Non-contact_atomic_force_microscopy
 goals for this trip?
 - demonstrate plasmid cloning. Heard it's super simple and whatnot
 - understand the compliment system designs, and see if I can come up with comparable systems
-- create a system that accurately maps out distances of a camera feed when also given the coordinate system
 - do a bunch of comparative genomics. Basically figure out the story of every life on earth. Also try to run AlphaFold2. Also try to figure out the energy landscape in all of this. Targets:
 	- DNA polymerase
 	- cap binding complexes
@@ -546,8 +444,6 @@ talking about fingerprints, there are a few ideas:
 - predefined features (human made), binary bit has it or not
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
-derive heart from arccos again
-
 rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
 
 shelly plug
@@ -562,10 +458,7 @@ left on mess:
 - https://www.thermofisher.com/sg/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning.html
 - https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
 - https://www.nature.com/articles/s41467-021-24525-7
-- https://theaisummer.com/deep-learning-biology-alphafold/
-- https://t.co/MLwa8O8zNt?amp=1
 - https://www.ncbi.nlm.nih.gov/books/NBK9839/
-- https://www.eetimes.com/micro-magic-risc-v-core-claims-to-beat-apple-m1-and-arm-cortex-a9/
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/
 https://en.wikipedia.org/wiki/RNA-dependent_RNA_polymerase
@@ -578,13 +471,7 @@ https://arxiv.org/pdf/1812.08434.pdf
 https://blog.addgene.org/plasmids-101-restriction-cloning
 https://en.wikipedia.org/wiki/Spirometry
 
-from skimage import measure, morphology
-measure.marching_cubes
-skimage.morphology
-
 nice: https://www.youtube.com/c/jacksonlaboratory/videos
-
-figure out what lnav does
 
 actually do resume stuff
 
@@ -592,10 +479,5 @@ last kernel update: 5.4.0
 name pred using attention
 
 do progressive deepening, create blocks in knn and whatnot
-also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
-trigger class, to monitor when the progress flips over to the desired amount
-mpl white bg again
-do autoencoders again
-torch.Tensor.loglinspace
-filt remove lots of redundant clis as op() is fast enough
-bring back table()
+
+https://www.isomorphiclabs.com/join

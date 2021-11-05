@@ -47,3 +47,6 @@ a module that's pretty advanced built upon graphEqn, so that I can explore chem 
 
 backprop for solving all equations?
 shape multidimensional
+
+also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
+trigger class, to monitor when the progress flips over to the desired amount

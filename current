@@ -1,11 +1,5 @@
 
-so, priorities now:
-- read rocket propulsion elements
-- book: "pmi-pmbok", "pmbok guide"
-
-masterclass.comds
-
-chapter 11 of the bankruptcy code
+rocket propulsion elements
 
 effective altruism global:
 - https://www.eaglobal.org/events/ea-global-2017-uk/
@@ -50,15 +44,11 @@ original glue benchmark: https://openreview.net/pdf?id=rJ4km2R5t7
 
 "robustify black-box controllers from neural nets"
 
-the early phase of NN training: https://arxiv.org/pdf/2002.10365.pdf
 deep RL from human preferences: https://arxiv.org/pdf/1706.03741.pdf, sounds familiar
-the lottery ticket hypothesis: finding sparse, trainable NNs: https://arxiv.org/pdf/1803.03635.pdf
 planning chemical syntheses with deep NNs and symbolic AI: https://www.nature.com/articles/nature25978, alphago-inspired architecture
 scaling laws for neural language models: https://arxiv.org/pdf/2001.08361.pdf
 learning the difference that makes a difference with counterfactually-augmented data: https://arxiv.org/pdf/1909.12434.pdf
 linformer: self-attention with linear complexity: https://arxiv.org/pdf/2006.04768.pdf
-
-https://venturebeat.com/2020/07/15/mit-researchers-find-systematic-shortcomings-in-imagenet-data-set/
 
 distillation & amplification:
 - alphago zero and the foom debate: https://intelligence.org/2017/10/20/alphago/
@@ -71,21 +61,7 @@ distillation & amplification:
 
 read more into inverse RL, seems like a very promising way to go about this
 
-https://intelligence.org/all-publications/
-
-ways to meaningfully contribute to ai safety? Doesn't seem there's a way besides actually building the system
-
-read over his papers to know which areas is he working in: http://www.pages.drexel.edu/~ek826/, http://www.pages.drexel.edu/~ad3639/
-- https://openaccess.thecvf.com/content_CVPR_2020/papers/Kim_Modeling_Biological_Immunity_to_Adversarial_Examples_CVPR_2020_paper.pdf
-- apparently, he worked on the loihi chip too, and ask about the nitty gritty details on SNNs
-- is it easy now to get started on spiking NNs? doesn't seem so
-- is there research left for small labs with may be 4 V100
-- funding source???
-
 read over russell's papers: https://people.eecs.berkeley.edu/~russell/research/future/
-
-https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/
-https://towardsdatascience.com/language-models-and-fake-news-the-democratization-of-propaganda-11b1267b3054
 
 "expert iteration", thinking fast and slow with DL and tree search: https://arxiv.org/pdf/1705.08439.pdf
 neural architecture search with RL: https://arxiv.org/pdf/1611.01578.pdf
@@ -126,7 +102,6 @@ deepmind, deep RL and its neuroscientific implications: https://deepmind.com/res
 yoshua bengio: from system 1 DL to system 2 DL: https://www.youtube.com/watch?v=T3sxeTgT4qc
 seems interesting: https://www.wandb.com/papers
 don guy seems interesting: https://www.youtube.com/playlist?list=PLpP2qGSxCw-e0nMetkx41JVrdcivVxUPm, https://www.pugetsystems.com/all_hpc.php
-obama interview: https://www.youtube.com/watch?v=Tjl8ka3F6QU
 
 spectral normalization, seems to fix problems with the discriminator
 
@@ -136,13 +111,8 @@ long term goal is to be able to:
 - do research on RL
 - accurately model physics
 
-short term goal is to:
-- read over all papers currently, which is quite a lot
-
 https://medium.com/dataseries/google-deepminds-dreamer-is-a-reinforcement-learning-agent-that-can-solve-long-horizon-tasks-5faa6f6b63b
 https://singularityhub.com/2020/07/26/deepminds-newest-ai-programs-itself-to-make-all-the-right-decisions
-
-also wait, inference energy cost on GPT-3 seems to be quite low (4kWh/100 pages of output). Still 2-3 orders of magnitude away from human brains, but it's actually low enough to be beneficial. So, the bulk energy cost is in the training, where we're essentially doing the evolution thingy again
 
 proximal policy optimization, another popular RL method
 
@@ -163,9 +133,6 @@ https://towardsdatascience.com/visual-attention-model-in-deep-learning-708813c29
 https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
 
 https://dailynous.com/2020/07/30/philosophers-gpt-3/
-
-https://mml-book.github.io/book/mml-book.pdf
-http://www.arxiv-sanity.com/
 
 crafting papers on ML: https://pdfs.semanticscholar.org/3efc/b97c1de1c87832a7a1d99e91801992a938ec.pdf
 
@@ -191,8 +158,6 @@ https://www.reddit.com/r/MachineLearning/comments/i9kztq/d_hidden_gems_and_under
 http://www.argmin.net/2018/06/25/outsider-rl/
 http://karpathy.github.io/2016/05/31/rl/
 lex francois round 2
-
-jeremy has a new DL course in 2020 so check that out: https://www.youtube.com/watch?v=bHVqO5YyNbU
 
 may be deep RL introspection in our current systems help us reason about this take off scenario better
 
@@ -234,7 +199,6 @@ https://github.com/gordicaleksa/pytorch-original-transformer
 https://syncedreview.com/2020/11/06/deepmind-proposes-graph-theoretic-investigation-of-the-multiplayer-games-landscape
 
 cortical columns: https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00186/full
-
 reticular activating system
 galanin
 arcuate fasciculus
@@ -245,9 +209,6 @@ arcuate fasciculus
 https://www.reddit.com/r/science/comments/4pmivr/science_ama_series_im_manolis_kellis_a_professor/
 irx3 and irx5 genes: https://en.wikipedia.org/wiki/IRX3, https://en.wikipedia.org/wiki/FTO_gene
 prdm9: https://en.wikipedia.org/wiki/PRDM9
-
-cortex layer 5
-5ht 2a/2c receptors: https://en.wikipedia.org/wiki/5-HT2A_receptor
 
 https://www.researchgate.net/publication/317841703_The_oldest_fossil_mushroom
 https://www.researchgate.net/publication/343188979_Fungi_in_the_rear_mirror_A_brief_history_of_the_fungi_during_the_last_two_billion_years
@@ -302,8 +263,6 @@ https://en.wikipedia.org/wiki/Structural_alignment
 ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
 mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
 anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
-
-https://joininteract.com/fellowship/
 
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
 
@@ -469,9 +428,6 @@ https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
 https://arxiv.org/pdf/1812.08434.pdf
 https://blog.addgene.org/plasmids-101-restriction-cloning
-https://en.wikipedia.org/wiki/Spirometry
-
-nice: https://www.youtube.com/c/jacksonlaboratory/videos
 
 actually do resume stuff
 
@@ -481,5 +437,3 @@ name pred using attention
 do progressive deepening, create blocks in knn and whatnot
 
 https://www.isomorphiclabs.com/join
-
-marching cubes, with random black points in 3d voxels

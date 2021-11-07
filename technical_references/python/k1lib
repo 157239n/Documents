@@ -50,3 +50,9 @@ shape multidimensional
 
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
 trigger class, to monitor when the progress flips over to the desired amount
+
+#notest tag on notebook cells
+#export,notest can be like this too
+
+Cbs.TrainOnly(cbsName)
+Cbs.ValidOnly(cbsName)

@@ -38,15 +38,10 @@ website module automate pull text from sites
 io profiler backward shapes
 
 withBasics some error
-selector tutorial old style
 css classes make .Class style
 tutorial on language label thingy?
-MS.modules("*") should select any modules that has any prop, not the ones with all props
 
 a module that's pretty advanced built upon graphEqn, so that I can explore chem processes easily
-
-backprop for solving all equations?
-shape multidimensional
 
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
 trigger class, to monitor when the progress flips over to the desired amount
@@ -56,3 +51,15 @@ trigger class, to monitor when the progress flips over to the desired amount
 
 Cbs.TrainOnly(cbsName)
 Cbs.ValidOnly(cbsName)
+
+repeatFrom don't form a list, for performance reasons
+transpose warn about infinite streams
+remove shape's tensor special case
+lengths say some words about shape
+invert deref say "not sure when is this useful, but it's there"
+HookModule better docs
+tfImg wrong docs
+streams tutorial relies on cats
+explain in .all() how it's kinda like apply()
+cli.output examples
+reread language names notebook, see if it still makes sense for me

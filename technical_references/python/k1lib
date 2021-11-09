@@ -53,13 +53,15 @@ Cbs.TrainOnly(cbsName)
 Cbs.ValidOnly(cbsName)
 
 repeatFrom don't form a list, for performance reasons
-transpose warn about infinite streams
 remove shape's tensor special case
 lengths say some words about shape
-invert deref say "not sure when is this useful, but it's there"
 HookModule better docs
-tfImg wrong docs
 streams tutorial relies on cats
 explain in .all() how it's kinda like apply()
 cli.output examples
 reread language names notebook, see if it still makes sense for me
+cli applySerial, so that I can specify f(), and it will return f(x), f(f(x)), f(f(f(x))) and so on
+cli accumulate write docs
+cli consume to "side"
+cli trace, get shapes of everything when passed in a sample input
+cli mention everything is available under "cli" namespace, if there's a name conflict anywhere

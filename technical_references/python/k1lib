@@ -65,3 +65,6 @@ cli accumulate write docs
 cli consume to "side"
 cli trace, get shapes of everything when passed in a sample input
 cli mention everything is available under "cli" namespace, if there's a name conflict anywhere
+add short circuit path to manyToMany from apply
+k1lib.RunOnce(), with revert() and __call__()
+k1lib.MaxDepth(), enter(), __call__() or just simply __bool__()

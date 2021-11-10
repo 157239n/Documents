@@ -1,20 +1,4 @@
 
-TODOs for k1lib
-
-tasklist for uploading:
-- run mo tutorial, so html generates beautifully
-- generate docs
-- push main
-- push github pages
-- upload
-- change setup.py version number
-
-(too lazy) cli tool flow analysis:
-- Also, may be flow analysis of cli tools might be great. Can just deduce from the init points. Stuff like graphviz seems good
-- Even if dependent on incoming stream, can suggest topologies and ask for type info from user. And of course, can check for inconsistencies like iterator used in 2 places
-- https://ipython.org/ipython-doc/stable/parallel/dag_dependencies.html
-- https://mungingdata.com/python/dag-directed-acyclic-graph-networkx/
-
 Cmd that actually takes in input line by line, and outputs also line by line, and the cmd itself executes in another thread, to optimize for performance
 
 Explain cancel signals
@@ -53,18 +37,14 @@ Cbs.TrainOnly(cbsName)
 Cbs.ValidOnly(cbsName)
 
 repeatFrom don't form a list, for performance reasons
-remove shape's tensor special case
 lengths say some words about shape
 HookModule better docs
-streams tutorial relies on cats
-explain in .all() how it's kinda like apply()
-cli.output examples
 reread language names notebook, see if it still makes sense for me
-cli applySerial, so that I can specify f(), and it will return f(x), f(f(x)), f(f(f(x))) and so on
 cli accumulate write docs
-cli consume to "side"
-cli trace, get shapes of everything when passed in a sample input
-cli mention everything is available under "cli" namespace, if there's a name conflict anywhere
-add short circuit path to manyToMany from apply
-k1lib.RunOnce(), with revert() and __call__()
-k1lib.MaxDepth(), enter(), __call__() or just simply __bool__()
+trace error handling capabilities (catch errors midway, and slowly aborts, while still leaving a trace object behind)
+add support for filt in trace, apply with columns too
+trace warn infinities and large datasets in general
+trace test PIL and whatnot
+nested .all()
+manytomany docs wrong (copy)
+rename all settings to cliSettings

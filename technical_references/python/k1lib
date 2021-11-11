@@ -37,14 +37,7 @@ Cbs.TrainOnly(cbsName)
 Cbs.ValidOnly(cbsName)
 
 repeatFrom don't form a list, for performance reasons
-lengths say some words about shape
 HookModule better docs
 reread language names notebook, see if it still makes sense for me
 cli accumulate write docs
-trace error handling capabilities (catch errors midway, and slowly aborts, while still leaving a trace object behind)
 add support for filt in trace, apply with columns too
-trace warn infinities and large datasets in general
-trace test PIL and whatnot
-nested .all()
-manytomany docs wrong (copy)
-rename all settings to cliSettings

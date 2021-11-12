@@ -41,3 +41,5 @@ HookModule better docs
 reread language names notebook, see if it still makes sense for me
 cli accumulate write docs
 add support for filt in trace, apply with columns too
+
+talk about when you should dump variables to learner and when to just keep it to yrself. Also see Progressbar.progress to see where it is

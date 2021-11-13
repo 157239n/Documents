@@ -36,10 +36,16 @@ trigger class, to monitor when the progress flips over to the desired amount
 Cbs.TrainOnly(cbsName)
 Cbs.ValidOnly(cbsName)
 
-repeatFrom don't form a list, for performance reasons
 HookModule better docs
 reread language names notebook, see if it still makes sense for me
 cli accumulate write docs
 add support for filt in trace, apply with columns too
 
 talk about when you should dump variables to learner and when to just keep it to yrself. Also see Progressbar.progress to see where it is
+
+do yt tutorial
+class Settings, to be consistent with the style
+
+catNb
+kxml use css to select out stuff
+factor out css selectors?

@@ -46,6 +46,7 @@ talk about when you should dump variables to learner and when to just keep it to
 do yt tutorial
 class Settings, to be consistent with the style
 
-catNb
+catNb, for regression tests for blog posts
 kxml use css to select out stuff
 factor out css selectors?
+expose fastF

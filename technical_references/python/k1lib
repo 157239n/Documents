@@ -43,10 +43,12 @@ add support for filt in trace, apply with columns too
 
 talk about when you should dump variables to learner and when to just keep it to yrself. Also see Progressbar.progress to see where it is
 
-do yt tutorial
 class Settings, to be consistent with the style
 
 catNb, for regression tests for blog posts
 kxml use css to select out stuff
 factor out css selectors?
 expose fastF
+sort None column allowed
+warn op can do simple stuff only. Use regular lambdas for complex stuff
+applyMp allow max cores

@@ -38,4 +38,3 @@ yt cli description
 
 is torch.stack the time-limiting step?
 another vid, cause loadBatch comment is wrong, and compare between mp and normal, and say that applyMp.clearPools() have improved much now, so you probably don't have to manually do it
-lru_cache inside apply? param `cacheLimit`, and nuke applyCached

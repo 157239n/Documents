@@ -1,5 +1,4 @@
 
-Explain cancel signals
 Write in detail what loss landscape actually means
 
 split stream functionality, but both are feeding from the same internal list
@@ -17,11 +16,8 @@ website module automate pull text from sites
 
 io profiler backward shapes
 
-withBasics some error
 css classes make .Class style
 tutorial on language label thingy?
-
-a module that's pretty advanced built upon graphEqn, so that I can explore chem processes easily
 
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
 trigger class, to monitor when the progress flips over to the desired amount
@@ -29,12 +25,9 @@ trigger class, to monitor when the progress flips over to the desired amount
 reread language names notebook, see if it still makes sense for me
 cli accumulate write docs
 
-class Settings, to be consistent with the style
-
 kxml use css to select out stuff
 factor out css selectors?
 sort None column allowed
-yt cli description
 
-is torch.stack the time-limiting step?
-another vid, cause loadBatch comment is wrong, and compare between mp and normal, and say that applyMp.clearPools() have improved much now, so you probably don't have to manually do it
+is torch.stack the time-limiting step? Apparently no, 1000x faster than normal image transforms
+reorg skin, clarify steps, shoot it

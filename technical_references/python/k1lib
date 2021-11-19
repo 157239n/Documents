@@ -22,12 +22,10 @@ tutorial on language label thingy?
 also can just do a normal scheduler, that sets stuff inside Learner itself, cause paramscheduler currently sets param groups' hyperparam.
 trigger class, to monitor when the progress flips over to the desired amount
 
-reread language names notebook, see if it still makes sense for me
 cli accumulate write docs
 
 kxml use css to select out stuff
 factor out css selectors?
 sort None column allowed
 
-is torch.stack the time-limiting step? Apparently no, 1000x faster than normal image transforms
 reorg skin, clarify steps, shoot it

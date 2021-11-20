@@ -29,3 +29,5 @@ factor out css selectors?
 sort None column allowed
 
 reorg skin, clarify steps, shoot it
+document CoreRNN more, specify expected shapes
+document what Learner will deposit into itself when run

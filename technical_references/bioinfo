@@ -100,3 +100,9 @@ microfluidics:
 oncogenes: braf, her2, bcr-abl
 
 analyze SGD_features.tab
+
+blast:
+- -dust no: don't get rid of low quality stuff
+
+needle/water:
+- -filter: no idea why it's needed, but it's needed

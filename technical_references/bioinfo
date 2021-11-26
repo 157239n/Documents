@@ -24,6 +24,7 @@ cat AF086833.gb | seqret -filter -feature -osformat fasta
 
 INSDC (orgs, International Nucleotide Sequence Database Collaboration):
 - NCBI: national center for biotechnology information
+	- traces: finding out whether fastq is paired-end or not
 - EMBL: european molecular biology laboratory
 - DDBJ: dna data bank of japan
 
@@ -106,3 +107,6 @@ blast:
 
 needle/water:
 - -filter: no idea why it's needed, but it's needed
+
+dwgsim: simulate reads (fastq) from ground truth genome (fasta)
+mafft: align multiples

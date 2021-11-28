@@ -240,3 +240,5 @@ watches file accesses: inotifywait -m /tmp
 
 systemd-analyze time
 systemd-analyze blame
+
+monitor disk stuff: dstat -tdD nvme0n1 60

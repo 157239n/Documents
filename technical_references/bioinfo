@@ -64,6 +64,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531099/
 https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
 
 sam specs: https://samtools.github.io/hts-specs/SAMv1.pdf
+- optional fields: https://samtools.github.io/hts-specs/SAMtags.pdf
 pacbio: https://www.pacb.com/wp-content/uploads/2015/09/Pacific-Biosciences-Glossary-of-Terms.pdf
 
 adapter list:
@@ -102,11 +103,38 @@ oncogenes: braf, her2, bcr-abl
 
 analyze SGD_features.tab
 
-blast:
+blast (produces random format text file. Lots of formats to pick tho):
 - -dust no: don't get rid of low quality stuff
+- making db: makeblastdb -dbtype nucl -in db/KM.fa -out db/KM
+- blasting: blastn -db db/KM -query query.fa > output.txt
+	- query.fa should include 1 sequence only (?)
+	- db/KM.fa can have multiple sequences
+	- raw: blastn -subject db/KM.fa -query query.fa
 
-needle/water:
-- -filter: no idea why it's needed, but it's needed
+needle/water: needle ref.fa read.fa -filter
+
+short reads (produces sam file):
+- bwa index ref.fa
+- bwa mem ref.fa read1.fq read2.fq > output.sam
+	- this is for paired end readings only. "read2.fq" thus not strictly necessary
+- bowtie2 -x ref.fa -1 read1.fq -2 read2.fq > output.sam
+	- --very-sensitive-local
+
+sam:
+- sam to bam: samtools sort file.sam > file.bam
+- alignments at base range: samtools view file.bam AF08:1000-1010
+- indexes into file.bam.bai: samtools index file.bam
+- filter flags, binary: samtools view -F 20 -b file.bam
+- flag stats: samtools flagstat file.bam
+- #alignments at each base: samtools depth file.bam
+- fastq to bam (unaligned): picard FastqToSam -F1 read1.fq -F2 read2.fq -O file.bam -SM "FOO"
 
 dwgsim: simulate reads (fastq) from ground truth genome (fasta)
+- ex: dwgsim -N 100000 -e 0.01 -E 0.01 ref.fa data
+	- this will produce data.bwa.read1.fastq files and whatnot
+
 mafft: align multiples
+- mafft genes.fa > alignment.maf
+
+msbar:
+- cat query.fa | msbar -filter -point 3 > file.fa

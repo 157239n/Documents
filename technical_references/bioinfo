@@ -63,8 +63,6 @@ https://www.ncbi.nlm.nih.gov/books/NBK50679/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531099/
 https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
 
-sam specs: https://samtools.github.io/hts-specs/SAMv1.pdf
-- optional fields: https://samtools.github.io/hts-specs/SAMtags.pdf
 pacbio: https://www.pacb.com/wp-content/uploads/2015/09/Pacific-Biosciences-Glossary-of-Terms.pdf
 
 adapter list:
@@ -128,6 +126,8 @@ sam:
 - flag stats: samtools flagstat file.bam
 - #alignments at each base: samtools depth file.bam
 - fastq to bam (unaligned): picard FastqToSam -F1 read1.fq -F2 read2.fq -O file.bam -SM "FOO"
+- specs: https://samtools.github.io/hts-specs/SAMv1.pdf
+- optional fields: https://samtools.github.io/hts-specs/SAMtags.pdf
 
 dwgsim: simulate reads (fastq) from ground truth genome (fasta)
 - ex: dwgsim -N 100000 -e 0.01 -E 0.01 ref.fa data

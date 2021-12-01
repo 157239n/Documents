@@ -138,3 +138,12 @@ mafft: align multiples
 
 msbar:
 - cat query.fa | msbar -filter -point 3 > file.fa
+
+bcftools:
+- bcftools mpileup -Ou -f ref.fa bam/*.bam > genotypes.vcf
+- bcftools call --poidy 1 -vm -Ou
+- bcftools norm -Ov -f ref.fa -d all
+- bcftools norm -f ref.fa samples.vcf
+- opts:
+	- -Ou just means output uncompressed
+	- -v types? Has snps, indels, mnps, other

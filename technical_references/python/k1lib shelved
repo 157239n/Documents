@@ -10,3 +10,10 @@ upload graphEqn lol
 https://matplotlib.org/stable/users/event_handling.html
 
 a module that's pretty advanced built upon graphEqn, so that I can explore chem processes easily
+
+Use ByteTensor as dna, rna and protein sequences
+Dna and rna, each 30 cats, proteins 70 cats
+
+Create a test file that tests scope claims, meaning "cli" alone can be reached from the global namespace
+
+build a JIT compiler that can merge multiple clis together seemlessly in the background. This is such a massive undertaking that I don't want to do it right now

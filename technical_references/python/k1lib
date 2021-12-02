@@ -37,4 +37,8 @@ do progressive deepening, create blocks in knn and whatnot
 
 make plot names of HookParam and HookModule better. It's not optimal at the moment because the interface for selector is strange and whacky, so fix that first
 
-activeSamples deque limit. Also search for all deque uses and check limits of theirs too
+document basecli's methods with examples. Change __lt__ "join" symbol
+fastF add JIT trace param, with docs
+
+JIT:
+- merges multiple mtmS back to back

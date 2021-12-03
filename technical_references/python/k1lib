@@ -42,3 +42,5 @@ fastF add JIT trace param, with docs
 
 JIT:
 - merges multiple mtmS back to back
+
+"a" in op() return magic ints so that filt can interpret it

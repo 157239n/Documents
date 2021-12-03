@@ -101,6 +101,9 @@ oncogenes: braf, her2, bcr-abl
 
 analyze SGD_features.tab
 
+products:
+- ERCC ExFold RNA Spike-In Mixes: https://www.thermofisher.com/order/catalog/product/4456739
+
 blast (produces random format text file. Lots of formats to pick tho):
 - -dust no: don't get rid of low quality stuff
 - making db: makeblastdb -dbtype nucl -in db/KM.fa -out db/KM
@@ -147,3 +150,5 @@ bcftools:
 - opts:
 	- -Ou just means output uncompressed
 	- -v types? Has snps, indels, mnps, other
+
+kallisto, cuffdiff

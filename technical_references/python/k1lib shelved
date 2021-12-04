@@ -16,4 +16,9 @@ Dna and rna, each 30 cats, proteins 70 cats
 
 Create a test file that tests scope claims, meaning "cli" alone can be reached from the global namespace
 
-build a JIT compiler that can merge multiple clis together seemlessly in the background. This is such a massive undertaking that I don't want to do it right now
+build a JIT compiler that can merge multiple clis together seemlessly in the background. This is such a massive undertaking that I don't want to do it right now:
+- merges multiple mtmS back to back
+
+split stream functionality, but both are feeding from the same internal list
+
+blocks(), to get streams of indented blocks

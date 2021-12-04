@@ -152,3 +152,7 @@ bcftools:
 	- -v types? Has snps, indels, mnps, other
 
 kallisto, cuffdiff
+
+nice under the hood explanation of stuff like TMM: https://www.reneshbedre.com/blog/expression_units.html
+https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html
+https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf

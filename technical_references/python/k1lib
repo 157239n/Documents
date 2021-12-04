@@ -1,10 +1,6 @@
 
 Write in detail what loss landscape actually means
 
-split stream functionality, but both are feeding from the same internal list
-
-blocks(), to get streams of indented blocks
-
 mo:
 - tert-butanol
 - di-tert-butyl ether
@@ -36,11 +32,3 @@ ComputationProfiler make the actual computation calc dependent on a monkey-patch
 do progressive deepening, create blocks in knn and whatnot
 
 make plot names of HookParam and HookModule better. It's not optimal at the moment because the interface for selector is strange and whacky, so fix that first
-
-document basecli's methods with examples. Change __lt__ "join" symbol
-fastF add JIT trace param, with docs
-
-JIT:
-- merges multiple mtmS back to back
-
-"a" in op() return magic ints so that filt can interpret it

@@ -433,6 +433,7 @@ https://aisafety.camp/
 
 genome reorganization
 
-"samtools faidx" vs "bwa index"?
 minion perf: https://www.sciencedirect.com/science/article/pii/S2214753515000224
 decision tree from scratch again
+
+download deseq2.r and edger.r to tools path

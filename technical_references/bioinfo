@@ -156,3 +156,10 @@ kallisto, cuffdiff
 nice under the hood explanation of stuff like TMM: https://www.reneshbedre.com/blog/expression_units.html
 https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html
 https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf
+
+https://nebula.org/whole-genome-sequencing-dna-test-2/
+30x depth, 100GB, $300. Perfect world this would be 30GB, but 3x for redundancy and overhead
+dante labs: 30x depth, $550
+veritas genetics: 30x depth, hiseq x10, novaseq 6000, no price
+minion claims 882kb single read, and 19Gb max yield
+https://community.nanoporetech.com/nanopore_learning/courses

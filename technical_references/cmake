@@ -1,4 +1,6 @@
 
+gem, for best practices and pitfalls: https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1
+
 sets up build environment, do once only:
 cmake ../Step1
 
@@ -12,3 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 configure_file(TutorialConfig.h.in TutorialConfig.h)
 add_executable(Tutorial tutorial.cxx)
 target_include_directories(Tutorial PUBLIC "${PROJECT_BINARY_DIR}")
+set_target_properties(pybindTest PROPERTIES PREFIX "" OUTPUT_NAME "pybindTest" SUFFIX ".cpython-38-x86_64-linux-gnu.so")
+add_library(pybindTest SHARED main.cpp)
+
+

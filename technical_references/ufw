@@ -8,3 +8,4 @@
 - ufw delete deny 53 (deletes rule in rule list somewhere)
 - ufw allow ssh
 - ufw allow from 207.46.232.182
+- ufw default deny incoming

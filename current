@@ -345,8 +345,6 @@ epimap
 
 https://en.wikipedia.org/wiki/Genome-wide_association_study
 
-discovery path for proteins? Where are the entropy leaks?
-
 https://en.wikipedia.org/wiki/Transcription_factor
 https://en.wikipedia.org/wiki/Transfection
 
@@ -440,3 +438,11 @@ minion perf: https://www.sciencedirect.com/science/article/pii/S2214753515000224
 decision tree from scratch again
 
 download deseq2.r and edger.r to tools path
+
+detailed protein mechanisms:
+- https://en.wikipedia.org/wiki/N-acetyltransferase
+- https://en.wikipedia.org/wiki/Catalytic_triad
+
+also, overlapping orfs still don't make sense to me. Isn't that like, super unstable?
+
+also, genome duplication dynamics? Cause like, isn't the new off spring infertile?

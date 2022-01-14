@@ -23,3 +23,23 @@ import logo from './logo.svg';
           Learn React
         </a>
       </header>
+
+--------------- native ---------------
+
+https://nodejs.org/en/docs/
+https://reactnative.dev/docs/appregistry
+https://reactnative.dev/docs/environment-setup
+
+
+react-navigation
+Reanimated v2
+enabling hermes
+Platform.OS
+
+justifyContent: flex-end
+alignItems: center
+flexBasis: width or height, dpi
+flexGrow/flex: percentage to grow
+flexShrink: this element can shrink to allow other elements to fill in
+
+

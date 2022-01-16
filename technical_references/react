@@ -42,4 +42,7 @@ flexBasis: width or height, dpi
 flexGrow/flex: percentage to grow
 flexShrink: this element can shrink to allow other elements to fill in
 
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 

@@ -264,7 +264,7 @@ ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.h
 goals for this trip?
 - demonstrate plasmid cloning. Heard it's super simple and whatnot
 - understand the compliment system designs, and see if I can come up with comparable systems
-- do a bunch of comparative genomics. Basically figure out the story of every life on earth. Also try to run AlphaFold2. Also try to figure out the energy landscape in all of this. Targets:
+- try to run AlphaFold2. Also try to figure out the energy landscape in all of this. Targets:
 	- DNA polymerase
 	- cap binding complexes
 	- ribosome subunits
@@ -284,26 +284,6 @@ Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/re
 
 covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
 aryl: https://www.ncbi.nlm.nih.gov/protein/NP_001612.1
-
-YP_009724389.1
-
-https://en.wikipedia.org/wiki/Signal_peptide
-https://en.wikipedia.org/wiki/Secretion
-https://en.wikipedia.org/wiki/Protein_targeting#Protein_translocation
-https://en.wikipedia.org/wiki/Post-translational_modification
-refseq: https://www.ncbi.nlm.nih.gov/books/NBK21091/
-https://en.wikipedia.org/wiki/Molecular_machine
-https://en.wikipedia.org/wiki/Human_mitochondrial_genetics
-https://en.wikipedia.org/wiki/TIM_barrel
-https://en.wikipedia.org/wiki/Physarum_polycephalum
-https://en.wikipedia.org/wiki/RNA-binding_protein
-https://en.wikipedia.org/wiki/Origin_of_replication
-sample complexity: https://en.wikipedia.org/wiki/Dihydrofolate_reductase
-https://en.wikipedia.org/wiki/High_throughput_biology
-https://en.wikipedia.org/wiki/Proteome
-https://en.wikipedia.org/wiki/Luciferase
-https://en.wikipedia.org/wiki/Pattern_recognition_receptor
-https://en.wikipedia.org/wiki/Cambrian
 
 https://fold.it/portal/node/2010076
 https://fold.it/portal/node/2007798
@@ -429,3 +409,5 @@ download deseq2.r and edger.r to tools path
 detailed protein mechanisms:
 - https://en.wikipedia.org/wiki/N-acetyltransferase
 - https://en.wikipedia.org/wiki/Catalytic_triad
+
+how do ppl manufacture long dna strands again? More than what standard oligo techniques can provide

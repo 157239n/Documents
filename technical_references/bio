@@ -15,8 +15,28 @@ https://en.wikipedia.org/wiki/Origin_of_replication
 sample complexity: https://en.wikipedia.org/wiki/Dihydrofolate_reductase
 https://en.wikipedia.org/wiki/High_throughput_biology
 https://en.wikipedia.org/wiki/Proteome
-https://en.wikipedia.org/wiki/Luciferase
 https://en.wikipedia.org/wiki/Pattern_recognition_receptor
 https://en.wikipedia.org/wiki/Cambrian
 https://en.wikipedia.org/wiki/Patch_clamp
 
+old aging stuff:
+- https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
+- https://sci-hub.scihubtw.tw/10.1007/s10522-006-9043-9
+
+list of proteins I wrote down earlier that sounds remotely interesting:
+- DNA polymerase
+- cap binding complexes
+- ribosome subunits
+- pseudouridine synthase: Z71568, YNL292w, https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=18158779
+- mitochondria, atp synthase: NC_012920, 251831106
+- methane monooxygenase: CH4 + O2 + NAD(P)H + H+ -> CH3OH + NAD(P)+ + H2O, single bond replacements
+- amylase, alcohol dehydrogenase, hemoglobin, fibrin, collagen, actin, insulin, potassium channels, luciferase, hemagglutinin, HIV-1 protease, p53 tumor suppressor, cellulases
+
+pick up an epidemiology book
+
+RoadMap Epigenomics Project
+
+making sense of pharmacology: inverse agonism and functional selectivity, https://academic.oup.com/ijnp/article/21/10/962/5066769
+drug design and discovery: principles and applications: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155886/
+
+https://en.wikipedia.org/wiki/MNase-seq

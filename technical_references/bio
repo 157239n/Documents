@@ -40,3 +40,20 @@ making sense of pharmacology: inverse agonism and functional selectivity, https:
 drug design and discovery: principles and applications: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155886/
 
 https://en.wikipedia.org/wiki/MNase-seq
+https://en.wikipedia.org/wiki/STARR-seq
+Massively Parallel Reporter Assays: https://www.twistbioscience.com/blog/science/massively-parallel-reporter-assay-oligo-synthesis
+episomal reporter assay
+
+manolis papers to dissect later:
+- alzheimer immune basis: https://www.nature.com/articles/nature14252
+- chromatin states characterization: https://www.nature.com/articles/nbt.1662
+- comparative genomics:
+	- yeast: https://www.nature.com/articles/nature01644
+	- droso: https://www.nature.com/articles/nature06340
+	- humans:
+		- https://www.nature.com/articles/nature10530
+		- https://www.nature.com/articles/nature03441
+
+already read, has nice dataset on overlapping genes: https://doi.org/10.1371/journal.pone.0202513
+
+download deseq2.r and edger.r to tools path

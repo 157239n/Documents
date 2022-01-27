@@ -1,0 +1,35 @@
+
+grignard: R-MgBr
+cuprate: acid chloride only
+LiAlH4: everything
+NaBH4: ald, ket, acid chloride only
+mercapto
+
+mild oxidation (alcohol to carbonyl):
+- NaOCl/tempo (has R2NO- group)
+- NaOCl/HOAc
+- DMP (lost of OAC groups)
+- PCC (pyridinium chloro chromate)
+- collins (basically the same as PCC)
+- DMSO, (COCl)2, Et3N, "swern oxidation"
+strong oxidants:
+- NaOCl/tempo (excess)
+- H2CrO4 or Na2Cr2O7/H2SO4
+
+reverse reactivity:
+- acid
+- tosylate
+- phosphorous halide, PBr3
+- SOCl2
+
+obtain:
+200MJ/kg H2
+30000kWh/tonne CH4
+200kWh/tonne O2
+
+release:
+TNT: 4.2MJ/kg
+H2: 10MJ/kg
+
+gibbs of this?
+CH4 + H2O + heat -> CO + 3H2

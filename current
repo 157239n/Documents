@@ -140,8 +140,6 @@ https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 
 scikit-learn is mentioned a whole lot, so what does it actually offer?
 
-https://placements.openmined.org/
-
 http://worrydream.com/MagicInk/
 "how much computation the brain does"
 - https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
@@ -176,14 +174,9 @@ this as reference for the NMRI model: https://deepmind.com/blog/article/neural-s
 https://distill.pub/2017/aia/
 http://lernapparat.de/
 
-nanoparticle fabrication: https://www.researchgate.net/publication/226347418_Nanoparticle_Fabrication
-
-https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216789
 https://github.com/gordicaleksa/pytorch-original-transformer
 
 https://syncedreview.com/2020/11/06/deepmind-proposes-graph-theoretic-investigation-of-the-multiplayer-games-landscape
-
-- integrative analysis of 111 reference human epigenomics: https://www.nature.com/articles/nature14248
 
 https://www.researchgate.net/publication/343188979_Fungi_in_the_rear_mirror_A_brief_history_of_the_fungi_during_the_last_two_billion_years
 
@@ -216,42 +209,15 @@ https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1
 
 mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrepreneurship_i_took_an_idea_to_mass/
 
-melanoma brain metastases
-https://en.wikipedia.org/wiki/Structural_alignment
-https://en.wikipedia.org/wiki/Homeobox
-
-ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
-mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
-anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
-
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
-
-goals for this trip?
-- demonstrate plasmid cloning. Heard it's super simple and whatnot
-- understand the compliment system designs, and see if I can come up with comparable systems
-- try to run AlphaFold2. Also try to figure out the energy landscape in a few structures: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
-- try to infect cells with modified virus with a specific payload
-
-Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/
-
-covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
 
 https://fold.it/portal/node/2010076
 https://fold.it/portal/node/2007798
 https://www.reddit.com/r/MachineLearning/comments/k4n3m2/d_deepminds_alphafold_2_explained_ai_breakthrough/
 
-https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
-https://en.wikipedia.org/wiki/Quantum_dot
-
-how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
-
 actually try to implement the attention idea that creates consciousness
 
 also see how advanced stuff-pickup programs are, and can they do stuff really freeflow?
-
-novozyme, research lab that produces industrial enzymes, microorganisms & biopharmaceutical ingredients. Not billion dollars yet, just on the million dollar scale
-
-https://en.wikipedia.org/wiki/Genome-wide_association_study
 
 try to create an agent that has some sense of higher dimensions
 
@@ -261,21 +227,10 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 - https://people.cs.umass.edu/~pthomas/courses/CMPSCI_687_Fall2020/687_F20.pdf
 - https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html
 
-https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
-
-https://en.wikipedia.org/wiki/Structural_genomics
-https://en.wikipedia.org/wiki/Structural_biology
-
-https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
-
 limited memory: https://arxiv.org/abs/2002.05645v5
 dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
 
-manolis stuff: https://twitter.com/manoliskellis/status/1408396053741674497
-
 graph nns, then try to tackle some chemistry problems
-
-https://en.wikipedia.org/wiki/Danger_model
 
 https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB
 
@@ -304,47 +259,15 @@ talking about fingerprints, there are a few ideas:
 - predefined features (human made), binary bit has it or not
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
-rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
-
-aav:
-- https://ashpublications.org/blood/article/122/1/23/31570/Immune-responses-to-AAV-vectors-overcoming
-- https://www.frontiersin.org/articles/10.3389/fimmu.2020.00670/full
-- https://www.vectorbiolabs.com/
-
-left on mess:
-- https://rupress.org/jem/article/216/5/1005/121029/Microbial-therapeutics-New-opportunities-for-drug
-- https://www.thermofisher.com/sg/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning.html
-- https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
-- https://www.nature.com/articles/s41467-021-24525-7
-- https://www.ncbi.nlm.nih.gov/books/NBK9839/
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/
-https://www.stateof.ai/
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5718548/
-https://www.science.org/content/article/new-sars-cov-2-variants-have-changed-pandemic-what-will-virus-do-next
-https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
-https://arxiv.org/pdf/1812.08434.pdf
-https://blog.addgene.org/plasmids-101-restriction-cloning
-
 actually do resume stuff
 - fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen
 
-https://www.isomorphiclabs.com/join
-solugen
-https://aisafety.camp/
-
-genome reorganization
-https://en.wikipedia.org/wiki/Action_potential
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
-minion perf: https://www.sciencedirect.com/science/article/pii/S2214753515000224
 decision tree from scratch again
-
-detailed protein mechanisms:
-- https://en.wikipedia.org/wiki/N-acetyltransferase
-- https://en.wikipedia.org/wiki/Catalytic_triad
 
 how do ppl manufacture long dna strands again? More than what standard oligo techniques can provide
 
 nullius mod
+
+cuda stuff real quick again, to understand the binary's structure

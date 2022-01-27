@@ -53,7 +53,79 @@ manolis papers to dissect later:
 	- humans:
 		- https://www.nature.com/articles/nature10530
 		- https://www.nature.com/articles/nature03441
+- integrative analysis of 111 reference human epigenomics: https://www.nature.com/articles/nature14248
 
 already read, has nice dataset on overlapping genes: https://doi.org/10.1371/journal.pone.0202513
 
 download deseq2.r and edger.r to tools path
+
+https://en.wikipedia.org/wiki/Structural_genomics
+https://en.wikipedia.org/wiki/Structural_biology
+https://en.wikipedia.org/wiki/Danger_model
+https://en.wikipedia.org/wiki/Structural_alignment
+https://en.wikipedia.org/wiki/Action_potential
+https://en.wikipedia.org/wiki/Genome-wide_association_study
+https://en.wikipedia.org/wiki/Mitochondrial_replacement_therapy
+
+genome reorganization: https://www.nature.com/articles/s41467-019-09483-5
+manolis gwas heart stuff: https://twitter.com/manoliskellis/status/1408396053741674497
+covid neutralizing antibodies, escape mutations: https://www.biorxiv.org/content/10.1101/2020.10.31.362848v2
+how the spike protein works: https://www.nature.com/articles/s41594-020-0479-4
+rna therapeutics overview: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743652/
+
+ACE2, much more than just a receptor for sars-cov-2: https://www.frontiersin.org/articles/10.3389/fcimb.2020.00317/full
+mRNA closed loop model: https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30941-9
+anti-ACE2 antibodies??? https://www.rndsystems.com/resources/articles/ace-2-sars-receptor-identified
+nanoparticle fabrication: https://www.researchgate.net/publication/226347418_Nanoparticle_Fabrication
+covid characteristics: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402395/
+
+detailed protein mechanisms:
+- https://en.wikipedia.org/wiki/N-acetyltransferase
+- https://en.wikipedia.org/wiki/Catalytic_triad
+
+novozyme, research lab that produces industrial enzymes, microorganisms & biopharmaceutical ingredients. Not billion dollars yet, just on the million dollar scale
+https://www.isomorphiclabs.com/join
+solugen
+https://aisafety.camp/
+
+aav:
+- https://ashpublications.org/blood/article/122/1/23/31570/Immune-responses-to-AAV-vectors-overcoming
+- https://www.frontiersin.org/articles/10.3389/fimmu.2020.00670/full
+- https://www.vectorbiolabs.com/
+
+left on mess:
+- https://rupress.org/jem/article/216/5/1005/121029/Microbial-therapeutics-New-opportunities-for-drug
+- https://www.thermofisher.com/sg/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning.html
+- https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
+- https://www.nature.com/articles/s41467-021-24525-7
+- https://www.ncbi.nlm.nih.gov/books/NBK9839/
+
+goals for this trip?
+- demonstrate plasmid cloning. Heard it's super simple and whatnot
+- understand the compliment system designs, and see if I can come up with comparable systems
+- try to run AlphaFold2. Also try to figure out the energy landscape in a few structures: https://github.com/deepmind/deepmind-research/tree/master/alphafold_casp13
+- try to infect cells with modified virus with a specific payload
+
+Transcriptome Shotgun Assembly, context: https://www.ncbi.nlm.nih.gov/genbank/release/240/
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1463026/
+https://www.stateof.ai/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5718548/
+https://www.science.org/content/article/new-sars-cov-2-variants-have-changed-pandemic-what-will-virus-do-next
+https://journals.physiology.org/doi/full/10.1152/ajpheart.00287.2018?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217285/
+https://arxiv.org/pdf/1812.08434.pdf
+https://blog.addgene.org/plasmids-101-restriction-cloning
+
+minion perf: https://www.sciencedirect.com/science/article/pii/S2214753515000224
+http://lab.loman.net/2017/03/09/ultrareads-for-nanopore/
+https://peerj.com/pathogenomenick/
+nanopore sequencing: https://www.medrxiv.org/content/10.1101/2021.05.12.21256693v1.full
+
+https://ocw.mit.edu/courses/chemistry/5-08j-biological-chemistry-ii-spring-2016/
+
+https://en.wikipedia.org/wiki/Gene_prediction
+structural basis for antibody evasion of covid's RBD: https://www.science.org/doi/10.1126/science.abl6251
+same: https://www.science.org/doi/10.1126/science.abn8652
+https://github.com/griffithlab/rnaseq_tutorial/wiki
+assembly of a pan-genome from deep seq of 1k humans: https://www.nature.com/articles/s41588-018-0273-y

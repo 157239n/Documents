@@ -18,3 +18,8 @@ anaconda-navigator
 
 conda config --show channels
 conda config --add channels bioconda
+
+setting envs when activate an environment: https://stackoverflow.com/questions/46826497/conda-set-ld-library-path-for-env-only
+
+building c libraries: https://docs.conda.io/projects/conda-build/en/latest/
+for a more popular example, see cython-feedstock

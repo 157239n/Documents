@@ -96,7 +96,6 @@ infrastructure for usable ML: the stanford dawn project: https://arxiv.org/pdf/1
 "resnet inference energy cost"
 noscope: optimizing NN queries over video at scale: https://arxiv.org/pdf/1703.02529.pdf
 E^2-Train: training SOTA CNNs with over 80% energy savings: https://arxiv.org/pdf/1910.13349.pdf
-ML: the high interest credit card of technical debt: https://research.google/pubs/pub43146/, https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43146.pdf
 
 deepmind, deep RL and its neuroscientific implications: https://deepmind.com/research/publications/Deep-Reinforcement-Learning-and-its-Neuroscientific-Implications
 yoshua bengio: from system 1 DL to system 2 DL: https://www.youtube.com/watch?v=T3sxeTgT4qc
@@ -267,7 +266,3 @@ https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 decision tree from scratch again
 
 how do ppl manufacture long dna strands again? More than what standard oligo techniques can provide
-
-nullius mod
-
-cuda stuff real quick again, to understand the binary's structure

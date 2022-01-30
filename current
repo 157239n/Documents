@@ -266,3 +266,11 @@ https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 decision tree from scratch again
 
 how do ppl manufacture long dna strands again? More than what standard oligo techniques can provide
+
+mlexps create a nice home page and status bar. Also greps for "General lessons", to create a quick index of things I learned so I can utilize it quick
+
+goals for ML systems going forward?
+- quick hyperparam search, to know how to do stuff
+- document everything as deliverable posts
+- recognizes general trends from hyperparam search
+- 1 experiment/day seems proper. This will help me to plan for the future as well, and create pressure to make the entire pipeline fast

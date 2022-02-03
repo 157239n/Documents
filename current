@@ -263,14 +263,28 @@ actually do resume stuff
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
-decision tree from scratch again
-
 how do ppl manufacture long dna strands again? More than what standard oligo techniques can provide
 
 mlexps create a nice home page and status bar. Also greps for "General lessons", to create a quick index of things I learned so I can utilize it quick
 
 goals for ML systems going forward?
-- quick hyperparam search, to know how to do stuff
 - document everything as deliverable posts
 - recognizes general trends from hyperparam search
 - 1 experiment/day seems proper. This will help me to plan for the future as well, and create pressure to make the entire pipeline fast
+
+task: function
+- width-depth random search
+task: image-classification/
+- cifar10:
+	- persistent depth, squeeze in width of single layers from 30 and see results
+	- batch norm, conv, activation order
+- same thing with random dataset from imagenet, but higher resolution, and far/near examples
+task: style transfer
+- see if modifying images over time have different internal dynamics than normal training
+task: char name classification
+- attention approach (already did that), same old scale experimentation
+- bigru approach, understand underlying C++ codebase
+task: progressive deepening
+- high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
+
+eterna again

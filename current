@@ -186,6 +186,8 @@ https://www.nature.com/scitable/topicpage/the-role-of-methylation-in-gene-expres
 architecture of sars-cov-2 transcriptome: https://www.sciencedirect.com/science/article/pii/S0092867420304062
 d614g mutation: https://www.nature.com/articles/s41586-020-2895-3
 
+hopfield networks is all you need: https://arxiv.org/pdf/2008.02217.pdf
+
 https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5641975/
 https://pubmed.ncbi.nlm.nih.gov/25561484/
@@ -288,3 +290,5 @@ task: progressive deepening
 - high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
 
 eterna again
+
+dope animation vids: https://www.youtube.com/c/ThomasSchwenke-knowledge/videos

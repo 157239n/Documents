@@ -289,6 +289,6 @@ task: progressive deepening
 
 eterna again
 
-dope animation vids: https://www.youtube.com/c/ThomasSchwenke-knowledge/videos
-
 have something like local.mlexps.com/local that will redirect traffic to server:8888 or sth like that
+
+HookModule, but actually stores forward and backward passes vanilla. Does not store history

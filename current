@@ -261,7 +261,7 @@ talking about fingerprints, there are a few ideas:
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
 actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen
+- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
@@ -278,7 +278,7 @@ task: image-classification/
 - cifar10:
 	- persistent depth, squeeze in width of single layers from 30 and see results
 	- batch norm, conv, activation order
-- same thing with random dataset from imagenet, but higher resolution, and far/near examples
+- same thing with random dataset from imagenet, but higher resolution, and far/near (dog vs squid, and species of dog) examples
 task: style transfer
 - see if modifying images over time have different internal dynamics than normal training
 task: char name classification

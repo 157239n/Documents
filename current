@@ -286,6 +286,7 @@ task: char name classification
 - bigru approach, understand underlying C++ codebase
 task: progressive deepening
 - high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
+- grok again, because I didn't use adamw
 
 eterna again
 
@@ -296,3 +297,4 @@ HookModule, but actually stores forward and backward passes vanilla. Does not st
 https://sk.ru/
 
 https://observablehq.com/@mbostock/imagenet-hierarchy
+https://github.com/dair-ai/Transformers-Recipe/blob/main/README.md

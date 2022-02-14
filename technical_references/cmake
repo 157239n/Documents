@@ -1,5 +1,6 @@
 
 gem, for best practices and pitfalls: https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1
+another gem: http://www.aosabook.org/en/cmake.html
 
 master (in build folder): rm -r * && cmake .. && cmake --build .
 

@@ -31,5 +31,8 @@ release:
 TNT: 4.2MJ/kg
 H2: 10MJ/kg
 
+aluminum smelting: 1500kJ/mol
+gibbs CO2 creating: 400kJ/mol
+
 gibbs of this?
 CH4 + H2O + heat -> CO + 3H2

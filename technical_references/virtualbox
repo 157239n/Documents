@@ -8,3 +8,5 @@ VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/GetKeyFromR
 
 https://github.com/myspaghetti/macos-virtualbox
 https://www.youtube.com/watch?v=7RKqwRhw-y8
+
+VBoxManage setextradata macos VBoxInternal2/EfiGraphicsResolution "1920x1080"

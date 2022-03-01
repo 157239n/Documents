@@ -23,3 +23,6 @@ setting envs when activate an environment: https://stackoverflow.com/questions/4
 
 building c libraries: https://docs.conda.io/projects/conda-build/en/latest/
 for a more popular example, see cython-feedstock
+
+https://github.com/conda-forge/cython-feedstock
+conda build recipe

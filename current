@@ -259,7 +259,7 @@ talking about fingerprints, there are a few ideas:
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
 actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm
+- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
@@ -302,8 +302,6 @@ https://bounded-regret.ghost.io/measurement-and-optimization/
 https://en.wikipedia.org/wiki/Zeolite
 https://en.wikipedia.org/wiki/Metal%E2%80%93organic_framework
 Reprogramming to recover youthful epigenetic information and restore vision
-
-synthetic aperture radar again
 
 vnc, to access desktop anywhere in the world: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04
 

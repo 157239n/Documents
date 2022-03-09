@@ -1,4 +1,7 @@
 
+https://material.io/design
+https://m3.material.io/
+
 lower case - calm
 blue - tech
 - playful
@@ -13,7 +16,52 @@ slanted - movement
 balance - positive elements & negative space. Basically reduce padding for elements in a group. Increase padding in between groups
 rhythm - repeating stuff, like in music. Make things consistent
 harmony - same color/font/size for same stuff
+dominance - set eye scanning starting point. Use stark contrast
+alignment - just align everything nicely
+proximity - sounds like balance
+
+colors:
+- black - authority, power, cool
+- white - innocence, purity, cleanliness, peace
+- red - alarm, urgency, speed, love
+- pink - romance, grace
+- blue - peaceful, sky, tech, business, mature
+- green - nature, organic, relaxing, success
+- yellow - optimism, happiness, warmth
+- purple - wealth, luxury, sophistication
+- brown - like green, tree association
+
+color variations:
+- shadows
+- midtones
+- highlights: from bg
+- accents: anomaly
 
 brain attention order is important too
-
 sometimes add small subtle arrows
+red-black-white most contrast
+not necessary to include hr, space can do that on its own
+slight bg change to signify difference/border
+same color between screens to make connection
+reduce saturation to avoid eye fatigue, also to reduce attention
+
+fonts:
+- roboto
+- bebas
+- proxima novita, nice standard
+- avenir book
+- georgia
+
+max 2 fonts
+60 characters/line, 30-40/line on mobile
+bold header, italics sub-header, regular for normal text
+
+stock photos:
+- https://stocksnap.io/
+- https://unsplash.com/
+
+types of icons (seems arbitrary tho):
+- similar, looks obvious
+- symbolic, menu icon, printer icon
+- example, image of a thing that relates to the concept
+- arbitrary, like usb symbol, or biohazard

@@ -306,8 +306,6 @@ read all of bmw i3 reports and watch munro's vids about them
 
 use the 2nd gpu
 
-ufw on ny server
-
 control light automatically:
 - https://stackoverflow.com/questions/64990689/control-the-power-of-a-usb-port-in-python
 - https://forums.raspberrypi.com/viewtopic.php?t=241384

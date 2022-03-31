@@ -1,0 +1,12 @@
+
+from: https://medium.com/nerd-for-tech/creating-reproducible-development-environments-fac8d6471f35
+and: https://github.com/rofrano/lab-vagrant
+vagrant init ubuntu/bionic64
+vagrant up
+vagrant ssh
+vagrant reload --provision
+vagrant halt # opposite of up
+vagrant destroy
+vagrant suspend
+vagrant resume
+

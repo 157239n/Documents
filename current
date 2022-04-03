@@ -256,7 +256,7 @@ talking about fingerprints, there are a few ideas:
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
 actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot, garden, injection molding
+- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot, garden, injection molding, zfs
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 

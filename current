@@ -256,7 +256,7 @@ talking about fingerprints, there are a few ideas:
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
 actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot, garden, injection molding, zfs
+- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot, garden, injection molding, zfs/truenas, slurm
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
@@ -302,16 +302,8 @@ comps in DL: https://twitter.com/samscub/status/1491556055796510722
 
 anon doc again, https://en.wikipedia.org/wiki/2011_Egyptian_revolution
 
-read all of bmw i3 reports and watch munro's vids about them
-
 use the 2nd gpu
 
-control light automatically:
-- https://stackoverflow.com/questions/64990689/control-the-power-of-a-usb-port-in-python
-- https://forums.raspberrypi.com/viewtopic.php?t=241384
-- https://unix.stackexchange.com/questions/165447/turning-off-power-to-usb-port-or-turn-off-power-to-entire-usb-subsystem
-
 create ai tool to recognize tables, crop them out correctly and perform ocr on them, to help me analyze bmw i3
-https://github.com/bigscience-workshop/bigscience/blob/master/train/tr8b-104B/chronicles.md
 
 optics simulation?

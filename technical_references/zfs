@@ -16,3 +16,7 @@ or, creating a logical volume (no idea how this is different from the above) lik
 	zfs create -V 20G mypool/myzvol
 	mkfs.ext4 /dev/zvol/mypool/myzvol
 zvols are sort of like a dataset, but it's just a block device and you have to install a file system on it
+
+zfs set atime=off <pool>
+zfs set primarycache=metadata <pool>
+zfs set compression=lz4 <pool>

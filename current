@@ -256,11 +256,9 @@ talking about fingerprints, there are a few ideas:
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
 actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot, garden, injection molding, zfs/truenas, slurm
+- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, das uboot, garden, injection molding, zfs/truenas, slurm
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
-
-mlexps create a nice home page and status bar. Also greps for "General lessons", to create a quick index of things I learned so I can utilize it quick
 
 goals for ML systems going forward?
 - document everything as deliverable posts
@@ -301,8 +299,6 @@ ginkgo: https://www.youtube.com/watch?v=OViMxELBYew
 comps in DL: https://twitter.com/samscub/status/1491556055796510722
 
 anon doc again, https://en.wikipedia.org/wiki/2011_Egyptian_revolution
-
-use the 2nd gpu
 
 create ai tool to recognize tables, crop them out correctly and perform ocr on them, to help me analyze bmw i3
 

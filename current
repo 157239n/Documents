@@ -255,29 +255,12 @@ talking about fingerprints, there are a few ideas:
 - predefined features (human made), binary bit has it or not
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
-actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, das uboot, garden, injection molding, zfs/truenas, slurm
-
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
 goals for ML systems going forward?
 - document everything as deliverable posts
 - recognizes general trends from hyperparam search
 - 1 experiment/day seems proper. This will help me to plan for the future as well, and create pressure to make the entire pipeline fast
-
-task: image-classification/
-- cifar10:
-	- persistent depth, squeeze in width of single layers from 30 and see results
-	- batch norm, conv, activation order
-- same thing with random dataset from imagenet, but higher resolution, and far/near (dog vs squid, and species of dog) examples
-task: style transfer
-- see if modifying images over time have different internal dynamics than normal training
-task: char name classification
-- attention approach (already did that), same old scale experimentation
-- bigru approach, understand underlying C++ codebase
-task: progressive deepening
-- high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
-- grok again, because I didn't use adamw
 
 eterna again
 

@@ -35,5 +35,3 @@ make plot names of HookParam and HookModule better. It's not optimal at the mome
 
 polyfit more resilient
 new function that smoothly fit to data points. "Spline" or sth like that
-
-splitList to splitW

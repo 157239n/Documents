@@ -9,13 +9,9 @@ can RL agents always be reasonable when framerate switches to 30fps to 60 or hig
 
 also, pay very, very close attention to human's failure modes as well, as I don't think this has been developed in the community yet
 
-again x3, I think I can implement this whole thing without the formulation of action-state values or state values. So try out that kind of simple tree search. Also I think by creating all of the infrastructure on my own, I can really provide a new perspective in the game
-
 tiny bit of math and workable code: https://towardsdatascience.com/reinforcement-learning-with-openai-d445c2c687d2
 env: https://github.com/openai/gym/blob/master/gym/envs/classic_control/cartpole.py
 more complex running code: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
-
-look up q learning on youtube or something
 
 also see how humans actually do RL too. How can they correlate long distance reward signals? Are they even good at such a task? It seems like I can somehow use attention as this mechanism that spans multiple time frames, so as to make the RL capabilities more pronounced, as that acts kinda like a skip connection
 
@@ -133,8 +129,6 @@ https://dailynous.com/2020/07/30/philosophers-gpt-3/
 
 crafting papers on ML: https://pdfs.semanticscholar.org/3efc/b97c1de1c87832a7a1d99e91801992a938ec.pdf
 
-so temporal-difference is basically just making sure the internal model of reality is good?
-
 https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 
 scikit-learn is mentioned a whole lot, so what does it actually offer?
@@ -165,8 +159,6 @@ DJ SEO's neural dust: https://arxiv.org/pdf/1307.2196.pdf
 neosensory throughput: http://ww-w.eagleman.com/papers/novich_eagleman_2015.pdf
 
 https://www.acrobiosystems.com/P3103-SARS-CoV-2-%28COVID-19%29-S1-protein-His-Tag.html
-
-does catastrophic forgetting occur in RL systems?
 
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
@@ -284,5 +276,3 @@ comps in DL: https://twitter.com/samscub/status/1491556055796510722
 anon doc again, https://en.wikipedia.org/wiki/2011_Egyptian_revolution
 
 create ai tool to recognize tables, crop them out correctly and perform ocr on them, to help me analyze bmw i3
-
-optics simulation?

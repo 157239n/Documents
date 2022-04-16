@@ -18,3 +18,5 @@ task: progressive deepening
 some metas tag, to be more SEO friendly and have a nice preview
 
 optics simulation?
+
+cripple function network early (zeros out all forward gradients after a specific middle layer), see if it becomes steady state or not. My prediction would be it'd drive changes to zero

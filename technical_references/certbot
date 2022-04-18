@@ -19,3 +19,5 @@ certbot delete
 certificates installed at /etc/letsencrypt/live. But to preserve states across container instances, use /etc/letsencrypt
 
 Non-interactively renew all certificates: certbot renew
+
+wildcard certs: https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7

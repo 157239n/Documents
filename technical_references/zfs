@@ -1,0 +1,22 @@
+
+https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/
+
+zpool create -o ashift=12 test raidz2 /tmp/*.raw
+	"/tmp/*.raw" can be a list of devices "/dev/sda /dev/sdb"
+zpool destroy <pool>
+zpool status [<pool>]
+zfs list [<pool>]
+
+
+after creating a pool, can create a volume in it like this:
+	zfs create mypool/mydataset
+	zfs set quota=1T mypool/mydataset
+
+or, creating a logical volume (no idea how this is different from the above) like this:
+	zfs create -V 20G mypool/myzvol
+	mkfs.ext4 /dev/zvol/mypool/myzvol
+zvols are sort of like a dataset, but it's just a block device and you have to install a file system on it
+
+zfs set atime=off <pool>
+zfs set primarycache=metadata <pool>
+zfs set compression=lz4 <pool>

@@ -9,13 +9,9 @@ can RL agents always be reasonable when framerate switches to 30fps to 60 or hig
 
 also, pay very, very close attention to human's failure modes as well, as I don't think this has been developed in the community yet
 
-again x3, I think I can implement this whole thing without the formulation of action-state values or state values. So try out that kind of simple tree search. Also I think by creating all of the infrastructure on my own, I can really provide a new perspective in the game
-
 tiny bit of math and workable code: https://towardsdatascience.com/reinforcement-learning-with-openai-d445c2c687d2
 env: https://github.com/openai/gym/blob/master/gym/envs/classic_control/cartpole.py
 more complex running code: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
-
-look up q learning on youtube or something
 
 also see how humans actually do RL too. How can they correlate long distance reward signals? Are they even good at such a task? It seems like I can somehow use attention as this mechanism that spans multiple time frames, so as to make the RL capabilities more pronounced, as that acts kinda like a skip connection
 
@@ -133,8 +129,6 @@ https://dailynous.com/2020/07/30/philosophers-gpt-3/
 
 crafting papers on ML: https://pdfs.semanticscholar.org/3efc/b97c1de1c87832a7a1d99e91801992a938ec.pdf
 
-so temporal-difference is basically just making sure the internal model of reality is good?
-
 https://www.cs.cmu.edu/afs/cs/academic/class/15883-f15/slides/
 
 scikit-learn is mentioned a whole lot, so what does it actually offer?
@@ -165,8 +159,6 @@ DJ SEO's neural dust: https://arxiv.org/pdf/1307.2196.pdf
 neosensory throughput: http://ww-w.eagleman.com/papers/novich_eagleman_2015.pdf
 
 https://www.acrobiosystems.com/P3103-SARS-CoV-2-%28COVID-19%29-S1-protein-His-Tag.html
-
-does catastrophic forgetting occur in RL systems?
 
 this as reference for the NMRI model: https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 
@@ -255,31 +247,12 @@ talking about fingerprints, there are a few ideas:
 - predefined features (human made), binary bit has it or not
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
-actually do resume stuff
-- fusion 360, blender, cmake, pybind11, h-nmr, bind9, aspen, llvm, uboot, garden, injection molding
-
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
-
-mlexps create a nice home page and status bar. Also greps for "General lessons", to create a quick index of things I learned so I can utilize it quick
 
 goals for ML systems going forward?
 - document everything as deliverable posts
 - recognizes general trends from hyperparam search
 - 1 experiment/day seems proper. This will help me to plan for the future as well, and create pressure to make the entire pipeline fast
-
-task: image-classification/
-- cifar10:
-	- persistent depth, squeeze in width of single layers from 30 and see results
-	- batch norm, conv, activation order
-- same thing with random dataset from imagenet, but higher resolution, and far/near (dog vs squid, and species of dog) examples
-task: style transfer
-- see if modifying images over time have different internal dynamics than normal training
-task: char name classification
-- attention approach (already did that), same old scale experimentation
-- bigru approach, understand underlying C++ codebase
-task: progressive deepening
-- high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
-- grok again, because I didn't use adamw
 
 eterna again
 
@@ -302,17 +275,4 @@ comps in DL: https://twitter.com/samscub/status/1491556055796510722
 
 anon doc again, https://en.wikipedia.org/wiki/2011_Egyptian_revolution
 
-read all of bmw i3 reports and watch munro's vids about them
-
-use the 2nd gpu
-
-control light automatically:
-- https://stackoverflow.com/questions/64990689/control-the-power-of-a-usb-port-in-python
-- https://forums.raspberrypi.com/viewtopic.php?t=241384
-- https://unix.stackexchange.com/questions/165447/turning-off-power-to-usb-port-or-turn-off-power-to-entire-usb-subsystem
-
 create ai tool to recognize tables, crop them out correctly and perform ocr on them, to help me analyze bmw i3
-https://github.com/bigscience-workshop/bigscience/blob/master/train/tr8b-104B/chronicles.md
-
-https://www.youtube.com/c/thethoughtemporium/videos
-https://www.youtube.com/c/Se3dedu/videos

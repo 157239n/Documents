@@ -10,3 +10,5 @@ https://github.com/myspaghetti/macos-virtualbox
 https://www.youtube.com/watch?v=7RKqwRhw-y8
 
 VBoxManage setextradata macos VBoxInternal2/EfiGraphicsResolution "1920x1080"
+
+https://stackoverflow.com/questions/61842446/ios-simulator-stuck-on-apple-logo-on-virtual-box

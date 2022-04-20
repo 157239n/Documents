@@ -247,3 +247,4 @@ energy saving commands:
 - powertop --calibrate
 - powertop --auto-tune
 - tlp start (manual: tlp bat, tlp ac)
+- powercap-set (?)

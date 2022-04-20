@@ -38,3 +38,5 @@ new function that smoothly fit to data points. "Spline" or sth like that
 
 dl tutorial
 callback graph docs generator
+
+HookModule, but actually stores forward and backward passes vanilla. Does not store history

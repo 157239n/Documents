@@ -256,8 +256,6 @@ goals for ML systems going forward?
 
 eterna again
 
-HookModule, but actually stores forward and backward passes vanilla. Does not store history
-
 https://sk.ru/
 
 https://github.com/dair-ai/Transformers-Recipe/blob/main/README.md

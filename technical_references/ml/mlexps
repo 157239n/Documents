@@ -18,10 +18,6 @@ random:
 - grok again, because I didn't use adamw
 - graph nn
 
-some metas tag, to be more SEO friendly and have a nice preview
-- for index.html
-- for post's index.html, grab the thumbnail and inject into it
-
 optics simulation?
 
 cripple function network early (zeros out all forward gradients after a specific middle layer), see if it becomes steady state or not. My prediction would be it'd drive changes to zero

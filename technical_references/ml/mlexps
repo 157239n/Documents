@@ -2,9 +2,7 @@
 like 18-dataset-size, but this time sort of randomizes y values a lot, so that there're many samples on the right and a few on the left, to be more consistent
 
 task: image-classification/
-- cifar10:
-	- persistent depth, squeeze in width of single layers from 30 and see results
-	- batch norm, conv, activation order
+- batch norm, conv, activation order
 - same thing with random dataset from imagenet, but higher resolution, and far/near (dog vs squid, and species of dog) examples
 task: style transfer
 - see if modifying images over time have different internal dynamics than normal training

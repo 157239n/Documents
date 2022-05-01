@@ -22,3 +22,10 @@ build a JIT compiler that can merge multiple clis together seemlessly in the bac
 split stream functionality, but both are feeding from the same internal list
 
 blocks(), to get streams of indented blocks
+
+--------- mlexps ---------
+
+--------- others ---------
+
+chroot jail: https://fedingo.com/how-to-restrict-ssh-users-to-specific-folder/
+virus screenshot not working for some reason

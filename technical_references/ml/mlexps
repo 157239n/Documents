@@ -3,10 +3,8 @@ like 18-dataset-size, but this time sort of randomizes y values a lot, so that t
 
 task: image-classification/
 - batch norm, conv, activation order
-- same thing with random dataset from imagenet, but higher resolution, and far/near (dog vs squid, and species of dog) examples
 task: style transfer
 - see if modifying images over time have different internal dynamics than normal training
-- blind cat at early age
 task: char name classification
 - attention approach (already did that), same old scale experimentation
 - bigru approach, understand underlying C++ codebase

@@ -6,7 +6,7 @@ task: image-classification/
 task: style transfer
 - see if modifying images over time have different internal dynamics than normal training
 task: char name classification
-- attention approach (already did that), same old scale experimentation
+- same old scale experimentation, but also why 1/sqrt(F)?
 - bigru approach, understand underlying C++ codebase
 task: progressive deepening
 - high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)

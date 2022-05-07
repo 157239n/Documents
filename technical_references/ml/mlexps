@@ -6,7 +6,7 @@ task: image-classification/
 task: style transfer
 - see if modifying images over time have different internal dynamics than normal training
 task: char name classification
-- same old scale experimentation, but also why 1/sqrt(F)?
+- same old scale experimentation?
 - bigru approach, understand underlying C++ codebase
 task: progressive deepening
 - high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
@@ -18,4 +18,4 @@ optics simulation?
 
 cripple function network early (zeros out all forward gradients after a specific middle layer), see if it becomes steady state or not. My prediction would be it'd drive changes to zero
 
-also, train a really long network, then throw out middle layers, to see if everything still works as intended
+also, train a really long network, then throw out middle layers, to see if everything still works as intended. How about if I do this fast. Will the middle layers then want to pass signals through as much as possible?

@@ -29,3 +29,5 @@ blocks(), to get streams of indented blocks
 
 chroot jail: https://fedingo.com/how-to-restrict-ssh-users-to-specific-folder/
 virus screenshot not working for some reason
+
+env to auto test install k1lib under multiple python versions

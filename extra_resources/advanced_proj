@@ -60,9 +60,6 @@ amazon web services certified
 
 dr strangelove
 
-Manufacturing:
-- Making an injection mold: https://www.youtube.com/watch?v=YrbQIN2TBhM
-
 laser cutting stuff, and also integration between spaceclaim and keyshot:
 - https://www.instructables.com/id/Turn-Images-Into-DXF-Files-for-Laser-Cutting/
 - https://www.youtube.com/watch?v=LAakSolos1E
@@ -73,9 +70,6 @@ sysadmin security best practices:
 Pretty good privacy: https://www.openpgp.org/
 
 legal: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)
-
-HVAC systems:
-- https://en.m.wikipedia.org/wiki/Cooling_tower
 
 Documentaries:
 - bang goes the theory
@@ -191,11 +185,6 @@ seems like only difference between linux and windows programs are that the syste
 - https://www.loggly.com/ultimate-guide/linux-logging-with-systemd/
 - https://www.digitalocean.com/community/tutorials/systemd-essentials-working-with-services-units-and-the-journal
 
-okay copy the images over again, but this time eject it properly and try to boot them up again
-
-harden server using iptables
-if i block every port using a firewall, does that mean I can't browse the internet? Because that uses a random ephemeral port
-
 compiled vs interpreted when doing web?
 https://www.appdynamics.com/blog/engineering/comparing-php-7-vs-hhvm/
 
@@ -211,8 +200,6 @@ serious article to go through: https://www.theguardian.com/world/2020/feb/13/ant
 - try out the organic stuff at autodesk, "Autodesk Inventor"
 
 get into the current resolution capability of earth, and see over that project to image the black hole shit. Like, I know that they are using that regenerative algorithm shit in order to reconstruct the full image, like the technique used in MRI. So, dig into all of physics, up to what I've known about particle physics so far, then a bunch of simulations to carry out. Then simulate this regenerative algorithm shit. Kinda getting into the high tech for a moment. After that, surely I will have a bigger picture on global warming shits.
-
-See nasa's data on climate shit. They have satellites and shit
 
 Look into singularity uni again, to see whether it's worth it and whether I should apply
 
@@ -234,10 +221,6 @@ Look into singularity uni again, to see whether it's worth it and whether I shou
 
 add option to not display the nodes/description for ludvik
 
-see over chi's new lab reports and understand the chemistry she's currently involved in.
-
-right, so I have to migrate luan's copies
-
 elon tour spacex: https://www.youtube.com/watch?v=TQ6tZtGrShg
 
 try out ynes's setup, to understand the things ynes wants to do, and to see the general workflow when trying to come up with these ML models. Currently, these models still seem so much less powerful and important than other existing models, like that employee with a super rare skillset. At https://www.fast.ai/2018/09/26/ml-launch/, https://course.fast.ai/index.html
@@ -252,7 +235,6 @@ looks interesting: https://www.linuxlinks.com/physics/
 
 - game dev: https://www.youtube.com/user/TheHappieCat/videos
 - games, unity: https://www.youtube.com/user/Cercopithecan/videos
-- elec engr stuff, eevblog
 - international law: https://www.youtube.com/watch?v=46qM0lpxxSo&list=PLj3bSusRimZNEIPYNl_7nk2cdoqa48WmY&index=17
 
 question to ask chi:
@@ -338,8 +320,6 @@ time is an emergent phenomenon:
 
 make a prettier universal paperclip? "universal paperclip extended"??
 
-buy mom a vr set as a nice gift
-
 how about I get into the business of mass producing telescopes?
 
 gradient checkpointing: https://qywu.github.io/2019/05/22/explore-gradient-checkpointing.html
@@ -355,8 +335,6 @@ dissecting covid 19? https://www.youtube.com/watch?v=8vWaawiUteM
 https://www.youtube.com/watch?v=V7NkS6j-XWg
 
 https://waitbutwhy.com/2020/03/my-morning.html
-
-join melody's groupme
 
 nuclear construction and operation: https://www.youtube.com/watch?v=qHPp458m1cs
 
@@ -376,8 +354,6 @@ collisions:
 - https://gamedev.stackexchange.com/questions/10911/a-ball-hits-the-corner-where-will-it-deflect
 
 try to setup and use woocommerce, because that may really speed things up a lot for me now that I've understood roughly how wordpress works
-
-help hideboar sell his posters?
 
 try gravity with sigmoid
 try gravity where the iterator is actually dynamically generating new states? Right within python
@@ -401,15 +377,11 @@ https://root.cern/
 
 also benchmark pypy, as it's also a JIT
 
-what's inside torch.save()?
-
 suborbital demo thingy
 
 actually, try space exploration mod again, this time with a proper train network
 
 simulate a simple pid, with initial state at 0 and new state at 1. Still worse than the intended thing, but just to get this out quickly
-
-simulate if smell gradients can actually be detected to know if the complement system actually works
 
 https://csvoss.com/a-mechanists-guide-to-the-coronavirus-genome
 https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/
@@ -438,8 +410,6 @@ again with the venus project? and resource based economy
 
 read Homo Deus: A Brief History of Tomorrow, just to take in the concrete ideas of UBI? Reviews said that the latter half is good
 
-instant beer?
-
 reconstruction (think MRIs) seems like a potential ML problem, so really dig into that and try a mock up. If it's possible, then handheld devices that can scan brains can actually work
 
 do the pid loop simulation: https://ksp-kos.github.io/KOS/tutorials/pidloops.html, https://en.wikipedia.org/wiki/PID_controller
@@ -452,8 +422,6 @@ https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 multiple ssh and VPNs:
 - https://serverfault.com/questions/606680/multiple-reverse-ssh-tunnels-using-single-port
 - https://stackoverflow.com/questions/29945925/managing-multiple-reverse-ssh-tunnels
-
-HP Stream 11
 
 https://us.reuzeit.com/product/3363035-fisher-scientific-mini-centrifuge/#/
 https://acmerevival.com/product/thermo-scientific-hybaid-px2-thermal-cycler
@@ -480,3 +448,6 @@ sparse coding:
 - https://www.youtube.com/watch?v=7a0_iEruGoM
 
 intelligence explosion microeconomics: https://intelligence.org/files/IEM.pdf
+
+optics simulation?
+thoroughly go through aspen again

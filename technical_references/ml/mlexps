@@ -1,20 +1,12 @@
 
-like 18-dataset-size, but this time sort of randomizes y values a lot, so that there're many samples on the right and a few on the left, to be more consistent
-
-task: image-classification/
-- batch norm, conv, activation order
 task: style transfer
 - see if modifying images over time have different internal dynamics than normal training
-task: char name classification
+task: char name classification (50% acc, 0.8 loss is possible)
 - bigru approach, understand underlying C++ codebase
 task: progressive deepening
 - high-res gan stuff. This should verify learning dynamics at later times (think: blind cat)
 random:
 - grok again, because I didn't use adamw
 - graph nn
-
-optics simulation?
-
-cripple function network early (zeros out all forward gradients after a specific middle layer), see if it becomes steady state or not. My prediction would be it'd drive changes to zero
 
 also, train a really long network, then throw out middle layers, to see if everything still works as intended. How about if I do this fast. Will the middle layers then want to pass signals through as much as possible?

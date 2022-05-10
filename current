@@ -249,11 +249,6 @@ talking about fingerprints, there are a few ideas:
 
 https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 
-goals for ML systems going forward?
-- document everything as deliverable posts
-- recognizes general trends from hyperparam search
-- 1 experiment/day seems proper. This will help me to plan for the future as well, and create pressure to make the entire pipeline fast
-
 eterna again
 
 https://sk.ru/

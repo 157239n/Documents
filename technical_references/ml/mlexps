@@ -15,3 +15,5 @@ random:
 - graph nn
 
 also, train a really long network, then throw out middle layers, to see if everything still works as intended. How about if I do this fast. Will the middle layers then want to pass signals through as much as possible?
+
+latex load after, why doesn't it work?

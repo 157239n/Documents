@@ -16,4 +16,6 @@ random:
 
 also, train a really long network, then throw out middle layers, to see if everything still works as intended. How about if I do this fast. Will the middle layers then want to pass signals through as much as possible?
 
-latex load after, why doesn't it work?
+try to cripple network early, then train it again, to see if it actually get stuck, and then find ways to sort of keep the network functional, but can adapt to the new environment
+
+also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work

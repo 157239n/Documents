@@ -222,8 +222,6 @@ graph nns, then try to tackle some chemistry problems
 
 https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB
 
-also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work
-
 also, several ideas for representing chemical structures:
 - smiles (are you kidding me?)
 - plain 2d image, and use convs

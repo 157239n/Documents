@@ -13,8 +13,4 @@ task: progressive deepening
 random:
 - graph nn
 
-also, train a really long network (with skip blocks), then throw out middle layers, to see if everything still works as intended. How about if I do this fast and switch it back and forth. Will the middle layers then want to pass signals through as much as possible?
-
 also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work
-
-17 add thumbnail with scatter colorbar

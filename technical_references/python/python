@@ -80,3 +80,12 @@ low level of how things work:
 - https://leanpub.com/insidethepythonvirtualmachine/read
 
 
+Could be a useful pattern:
+
+def f():
+    a = 4
+    return eval(compile("lambda x: x+a", "", "eval"), {"a": a})
+f()(6) == 10
+
+
+

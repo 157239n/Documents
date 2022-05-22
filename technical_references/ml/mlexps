@@ -15,3 +15,8 @@ random:
 - graph nn
 
 also, try to apply attention stuff to that gravity prediction problem earlier. Have a great feeling this will work
+
+----------- for later
+
+- migrate blackbox posts to mlexps
+- try to do conv5 in blackbox series, so that all linear operations are effectively merged together

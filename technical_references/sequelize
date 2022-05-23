@@ -1,0 +1,91 @@
+
+const { Sequelize, Model, DataTypes } = require("sequelize");
+
+class Foo extends Model {
+	getTitle() {
+		return this.title;
+	}
+}
+Foo.init({
+	title: {
+		type: DataTypes.DATE,
+		defaultValue: DataTypes.NOW,
+		allowNull: false,
+		unique: true,
+		validate: {
+			isEmail: true,
+		}
+	},
+	money: {
+		type: DataTypes.STRING,
+		validate: {
+			isEven(v) {
+				if (v % 2 !== 0) throw new Error("Only even values allowed");
+			}
+		}
+	}
+}, {
+	sequelize,
+	validate: {
+		userLegit() {
+			if (this.name !== "Dan") throw new Error("Lol");
+		}
+	}
+});
+
+User.build({ name: "Jane" }); // only create object, don't save to database
+User.create({ name: "Jane" }); // create and save user to database
+jane.update({ name: "Ada" }); // update single fields, faster
+jane.save(); // saves everything, slower (may be?)
+jane.destroy();
+jane.reload();
+
+Post.findAll({
+	attributes: ['foo', 'bar'],
+	where: {
+		authorId: 2
+	},
+  offset: 5,
+  limit: 10,
+  order: [
+  	['title', 'DESC'],
+  ]
+});
+
+Post.findAll({
+  where: {
+    authorId: {
+      [Op.eq]: 2
+    }
+  },
+});
+
+await User.update({ lastName: "Doe" }, {
+  where: {
+    lastName: null
+  }
+});
+
+await User.destroy({
+  where: {
+    firstName: "Jane"
+  }
+});
+
+await User.max('age', { where: { age: { [Op.lt]: 20 } } }); // 10
+
+Can override getter and setters, just use `this.getDataValue('username')` and `this.setDataValue('password', hash(value));` to manipulate internal data structure
+
+--------------- Associations ---------------
+
+const A = sequelize.define('A', /* ... */);
+const B = sequelize.define('B', /* ... */);
+
+A.hasOne(B); // A HasOne B
+A.belongsTo(B); // A BelongsTo B
+A.hasMany(B); // A HasMany B
+A.belongsToMany(B, { through: 'C' }); // A BelongsToMany B through the junction table C
+
+
+
+

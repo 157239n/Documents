@@ -49,7 +49,8 @@ Post.findAll({
   limit: 10,
   order: [
   	['title', 'DESC'],
-  ]
+  ],
+  include: { all: true }
 });
 
 Post.findAll({
@@ -86,6 +87,16 @@ A.belongsTo(B); // A BelongsTo B
 A.hasMany(B); // A HasMany B
 A.belongsToMany(B, { through: 'C' }); // A BelongsToMany B through the junction table C
 
+To create a One-To-One relationship, the hasOne and belongsTo associations are used together;
+To create a One-To-Many relationship, the hasMany and belongsTo associations are used together;
+To create a Many-To-Many relationship, two belongsToMany calls are used together.
 
 
+Foo.hasOne(Bar, {
+  onDelete: "SET NULL",
+  onUpdate: "RESTRICT",
+});
+Bar.belongsTo(Foo);
 
+here, if Foo is deleted ("onDelete"), then set Bar's foreign key to null
+if it's restrict instead, then it will throw an error instead

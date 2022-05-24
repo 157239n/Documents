@@ -115,3 +115,5 @@ for time stuff:
 - time(now()) returns time of today only, but unix_timestamp(time(now())) is actually equal to unix_timestamp(now()), as it assumes the current date in local time
 
 DATETIME is timezone agnostic, TIMESTAMP is unix time
+
+https://dba.stackexchange.com/questions/74627/difference-between-on-delete-cascade-on-update-cascade-in-mysql

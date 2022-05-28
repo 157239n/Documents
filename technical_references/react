@@ -47,3 +47,9 @@ import { View, StyleSheet } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 View, Text, Image, Touchable..., SafeAreaView, Switch
+
+
+import logo from './logo.svg';
+<img src={logo} className="App-logo" alt="logo" />
+
+if want a stylesheet, just do: import './App.css'; and can use all class and id styles

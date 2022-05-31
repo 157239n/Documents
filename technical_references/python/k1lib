@@ -41,3 +41,5 @@ callback graph docs generator
 HookModule, but actually stores forward and backward passes vanilla. Does not store history
 
 k1lib/tests/moparse.ipynb self-consistency checks failed
+
+graphEqn tackle the full problem

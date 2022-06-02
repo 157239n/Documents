@@ -1,0 +1,8 @@
+
+- Install the latest version of macOS compatible with your computer: Option-Command-R.
+- Reinstall your computer’s original version of macOS (including available updates): Option-Shift-Command-R.
+- Reinstall your current version of macOS: Command-R.
+
+fdesetup disable
+fdesetup status
+diskutil ap list

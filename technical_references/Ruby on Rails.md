@@ -11,3 +11,10 @@
 
 - Logging in: `heroku login`
 - Creating a remote: `heroku create`. At this point it will show you the remote git address and you have to connect to heroku manually
+
+
+
+
+
+
+https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md

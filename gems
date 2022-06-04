@@ -64,6 +64,7 @@ Computing:
 - Transformer typical hyperparameters: https://github.com/bigscience-workshop/bigscience/blob/master/train/tr8b-104B/tr8b-104B-bnb.slurm
 - https://github.com/bigscience-workshop/bigscience
 - Python internals: https://stackoverflow.com/questions/29591349/make-int-iterable-with-forbiddenfruit
+- https://stackoverflow.com/questions/35291573/csrf-protection-with-json-web-tokens
 
 Paths:
 - Buy a domain name. Please please please BUY one. Do not use a domain name for free. There are no such thing. If your uni gives out domain names for free, DO NOT TAKE THEM. There is value in doing these things yourself, to learn how these things are actually done in the real world and be autonomous from the uni. It also gives you a better mindset too.

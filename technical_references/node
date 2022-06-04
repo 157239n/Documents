@@ -1,3 +1,8 @@
 
 import fs from "fs";
 fs.mkdirSync(dir, { recursive: true });
+
+https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities
+https://ruleoftech.com/2020/tracking-vulnerabilities-and-keeping-node-js-packages-up-to-date
+npm audit
+npm outdated

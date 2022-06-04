@@ -1,0 +1,4 @@
+
+sql injection - make sure to sanitize user inputs
+cross site scripting - make sure to never display raw user-provided html
+cross site request forgery - make sure that authToken is required on every request

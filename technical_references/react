@@ -53,3 +53,36 @@ import logo from './logo.svg';
 <img src={logo} className="App-logo" alt="logo" />
 
 if want a stylesheet, just do: import './App.css'; and can use all class and id styles
+
+
+
+
+
+
+npx react-native start
+npx react-native run-ios
+
+goals:
+- run with android studio, run with ios simulator after a reboot
+- add android native permissions, test those permissions out
+- test get request, print out using js
+- test get request, print out using native code
+
+https://github.com/alinz/react-native-share-extension
+https://github.com/ajith-ab/react-native-receive-sharing-intent
+https://docs.expo.dev/versions/latest/sdk/sharing/
+https://docs.expo.dev/versions/latest/sdk/filesystem/
+https://www.npmjs.com/package/react-native-fs
+
+so things to rigorously test out without expo:
+- share with other applications
+- other applications share with us
+- local storage, key-value pairs
+- file storage
+- notifications
+- random draw on screen, like p5
+- audio
+- video
+- clipboard
+- sms
+- over the air update

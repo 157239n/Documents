@@ -1,4 +1,9 @@
 
+under the hood:
+- https://eliav2.github.io/how-react-hooks-work/
+- https://stackoverflow.com/questions/53974865/how-do-react-hooks-determine-the-component-that-they-are-for/53980190#53980190
+- https://overreacted.io/a-complete-guide-to-useeffect/
+
 https://reactnative.dev/docs/environment-setup/
 https://reactnative.dev/docs/running-on-device/
 https://reactnative.dev/docs/debugging/#accessing-the-in-app-developer-menu

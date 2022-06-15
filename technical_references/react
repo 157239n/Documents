@@ -91,3 +91,6 @@ so things to rigorously test out without expo:
 - clipboard
 - sms
 - over the air update
+
+adb shell input keyevent 82
+

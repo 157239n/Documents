@@ -608,3 +608,7 @@ also plan is to manage everything I do on this comp using k8s, and not the live 
 
 https://github.com/kelseyhightower/kubernetes-the-hard-way
 https://github.com/kubernetes/kubeadm
+
+----------------------
+
+kubectl exec $POD_NAME -- env

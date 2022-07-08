@@ -49,3 +49,5 @@ also for input clis, turn all of them into classes so that `cat("a.txt") | shape
 
 proposal: make it so that (...).all(2) done on a multi-dimensional tensor will automatically resolve to doing the fastest way
 
+rethink tee? every feature too. And there's the consume thing from earlier?
+split more docs

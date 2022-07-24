@@ -73,4 +73,8 @@ Also the analysis passes can form a representation of each input and output type
 Also means I can have separate optimizations if I have k1a installed or not
 Of course, focus on other stuff first, before really over optimizing this, b/c my time is limited
 
+optimizations for after this is implemented:
+
+- joinstreams for array just reshapes it
+
 ---------------------- cli llvm end ----------------------

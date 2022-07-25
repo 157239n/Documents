@@ -58,6 +58,9 @@ Add practice probs for cli
 
 ---------------------- cli llvm ----------------------
 
+reminders:
+- need to consider trace(), as that sort of interacts a lot with apply, aS and friends internally
+
 initially, just a submodule inside main python lib to auto-generate shared library and attach it to the main running process
 https://stackoverflow.com/questions/1815812/how-to-create-a-generator-iterator-with-the-python-c-api
 Make cat a class (text mode only), so that I can start optimizing it away

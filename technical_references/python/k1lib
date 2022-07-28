@@ -63,10 +63,7 @@ reminders:
 
 initially, just a submodule inside main python lib to auto-generate shared library and attach it to the main running process
 https://stackoverflow.com/questions/1815812/how-to-create-a-generator-iterator-with-the-python-c-api
-Make cat a class (text mode only), so that I can start optimizing it away
-So, it's expected that the optimizations are all in a separate folder, containing multiple clis at once
 Also extract fastF out into one of these optimization units
-May be just before feeding the input iterator in, run some of these optimization passes, and then pass it through
 Also think about whether I can sort of inline the funcs by compiling a whole block of code
 So, lay the ground work first, then do fastF to refine the interface, then add in optimization units as necessary
 You know, if this works then the whole fucking horizontal ai chip future can be leverage much harder and can really pack a punch

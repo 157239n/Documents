@@ -298,5 +298,12 @@ security: https://www.fireeye.com/products/helix/what-is-siem-and-how-does-it-wo
 make genome lookup fast, so that whenever I have a new gene, I can quickly find it against my own genome.
 pid controllers and tuning process in several systems
 may be the old t-sne didn't work well because it's not deep enough?
-forbiddenfruit discussion
 k1ui add interface as k1ui in k1lib. Also add token, to make it secure
+
+llvm docs gameplan:
+- typehint module
+- how to create new clis
+
+- remove addPass
+- add window 1, and single pass opportunity to top cli
+- yieldT, may be just yieldSentinel, but renamed. Works for joinStreamsRandom, tCheck, tOpt

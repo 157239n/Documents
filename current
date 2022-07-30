@@ -303,7 +303,3 @@ k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 llvm docs gameplan:
 - typehint module
 - how to create new clis
-
-- remove addPass
-- add window 1, and single pass opportunity to top cli
-- yieldT, may be just yieldSentinel, but renamed. Works for joinStreamsRandom, tCheck, tOpt

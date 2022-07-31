@@ -291,7 +291,6 @@ stem cells reversal easy and reliable? That's new
 what cloudflare really offers again? and how does their cdn work?
 https://meta.serverfault.com/questions/1986/what-are-the-canonical-answers-weve-discovered-over-the-years
 intelligence explosion kinetics
-search tee usage
 redis pool
 https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 security: https://www.fireeye.com/products/helix/what-is-siem-and-how-does-it-work.html
@@ -300,6 +299,4 @@ pid controllers and tuning process in several systems
 may be the old t-sne didn't work well because it's not deep enough?
 k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 
-llvm docs gameplan:
-- typehint module
-- how to create new clis
+"c++ unicode encoding library": https://unicodebook.readthedocs.io/libraries.html

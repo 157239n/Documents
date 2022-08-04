@@ -66,6 +66,13 @@ Really do the windows build thing, because have to anyway
 Concrete goal: read fasta files faster
 Also means I can have separate optimizations if I have k1a installed or not
 
+- add C iterators
+- read java JIT
+- see how cython did it
+- read pandas source code
+- test looping time of real lists and c-yield lists. If roughly the same then can just replace one with the other
+- check over ceval a bit this time, to see how control flows typically happen
+
 litmus tests:
 - tokenizer
 

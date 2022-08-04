@@ -56,6 +56,8 @@ k1lib.com points to k1lib.github.io, and migrate every link to the private domai
 
 Add practice probs for cli
 
+callbacks just have an analysis mode that does not keep records
+
 ---------------------- cli llvm ----------------------
 
 initially, just a submodule inside main python lib to auto-generate shared library and attach it to the main running process

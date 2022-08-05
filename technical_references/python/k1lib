@@ -47,8 +47,6 @@ graphEqn tackle the full problem
 optimization cycles for cli, like in llvm. Learn about llvm again to be sure that it's legit
 also for input clis, turn all of them into classes so that `cat("a.txt") | shape(0)` will be rewritten as `None | cmd("wc -l a.txt")`
 
-proposal: make it so that (...).all(2) done on a multi-dimensional tensor will automatically resolve to doing the fastest way
-
 rethink tee? every feature too. And there's the consume thing from earlier?
 split more docs
 
@@ -81,5 +79,6 @@ litmus tests:
 optimizations for after this is implemented:
 
 - joinstreams for array just reshapes it
+- make it so that (...).all(2) done on a multi-dimensional tensor will automatically resolve to doing the fastest way
 
 ---------------------- cli llvm end ----------------------

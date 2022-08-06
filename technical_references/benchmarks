@@ -1,0 +1,17 @@
+
+Common benchmark data. I'm a noob at this, so these results might be kinda bogus
+
+C++, -O3:
+- For loop accumulate:
+	- identity: 1173 MOPS
+	- +0.2: 334 MOPS
+	- *0.2: 338 MOPS
+	- /0.2: 336 MOPS
+	- **0.2: 75.9 MOPS
+- File:
+	- read, ssd, 1k buffer: 5500 MOPS, 5.5 GB/s, although nvme caps at 3.5GB/s
+	- read, hdd, 1k buffer: 212 MOPS, 212 MB/s
+
+Python:
+- For loop accumulate:
+	- **0.2: 8.77 MOPS

@@ -59,14 +59,12 @@ callbacks just have an analysis mode that does not keep records
 ---------------------- cli llvm ----------------------
 
 initially, just a submodule inside main python lib to auto-generate shared library and attach it to the main running process
-https://stackoverflow.com/questions/1815812/how-to-create-a-generator-iterator-with-the-python-c-api
 Also think about whether I can sort of inline the funcs by compiling a whole block of code
 You know, if this works then the whole fucking horizontal ai chip future can be leverage much harder and can really pack a punch
 Really do the windows build thing, because have to anyway
 Concrete goal: read fasta files faster
 Also means I can have separate optimizations if I have k1a installed or not
 
-- add C iterators
 - read java JIT
 - see how cython did it
 - read pandas source code
@@ -76,7 +74,7 @@ Also means I can have separate optimizations if I have k1a installed or not
 litmus tests:
 - tokenizer
 
-optimizations for after this is implemented:
+optimizations:
 
 - joinstreams for array just reshapes it
 - make it so that (...).all(2) done on a multi-dimensional tensor will automatically resolve to doing the fastest way

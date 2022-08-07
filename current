@@ -302,3 +302,7 @@ k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 "c++ unicode encoding library": https://unicodebook.readthedocs.io/libraries.html
 
 face id on screens, then continue on k1ui
+
+wheels again:
+- https://www.activestate.com/resources/quick-reads/python-install-wheel/
+- https://realpython.com/python-wheels/

@@ -1,2 +1,13 @@
 
 PyDoc_STRVAR(complex_conjugate__doc__, "conjugate docs");
+
+eggs, wheels and manylinux:
+- https://setuptools.pypa.io/en/latest/deprecated/python_eggs.html
+- https://github.com/pypa/manylinux
+- https://peps.python.org/pep-0513
+- https://github.com/pypa/auditwheel
+- https://www.scivision.dev/easy-upload-to-pypi/
+- https://www.activestate.com/resources/quick-reads/python-install-wheel/
+- https://realpython.com/python-wheels/
+
+Pythreadstate internals?

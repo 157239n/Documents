@@ -149,6 +149,12 @@ from source: https://research.beenfrog.com/code/2018/07/14/build-pytorch-from-so
 
 
 
+https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html
+https://towardsdatascience.com/faster-and-memory-efficient-pytorch-models-using-amp-50fd3c8dd7fe
+https://pytorch.org/docs/stable/amp.html
+https://pytorch.org/docs/stable/notes/amp_examples.html
+https://effectivemachinelearning.com/PyTorch/8._Faster_training_with_mixed_precision
+
 
 
 

@@ -17,8 +17,6 @@ also see how humans actually do RL too. How can they correlate long distance rew
 
 so the model-based RL agents seems interesting, because it can do fundamental experiments in the world to build an accurate model, then use that model as a proxy for the real world, then do experiments on them, instead of on the real world
 
-do the predicting distances by being consistent thingy, because it's a real possibility that may reveal more what's really going on
-
 https://www.techrepublic.com/article/natural-language-processing-a-cheat-sheet/
 
 how do ppl actually build chatbots from language models? In other words, how to use language models flexibly and in 1 domain. "how chatbots are made"
@@ -217,10 +215,6 @@ stuff I really shouldn't put in nodes cause I want to do them so bad:
 limited memory: https://arxiv.org/abs/2002.05645v5
 dyson sphere calculations: https://arxiv.org/pdf/2006.16734.pdf
 
-graph nns, then try to tackle some chemistry problems
-
-https://viblo.asia/p/deep-learning-graph-neural-network-a-literature-review-and-applications-6J3ZgP0qlmB
-
 also, several ideas for representing chemical structures:
 - smiles (are you kidding me?)
 - plain 2d image, and use convs
@@ -299,6 +293,6 @@ pid controllers and tuning process in several systems
 may be the old t-sne didn't work well because it's not deep enough?
 k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 
-"c++ unicode encoding library": https://unicodebook.readthedocs.io/libraries.html
-
 face id on screens, then continue on k1ui
+
+test k1a on multiple python versions on windows and make sure it can support 3.7 and beyond

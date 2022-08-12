@@ -296,3 +296,6 @@ k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 face id on screens, then continue on k1ui
 
 test k1a on multiple python versions on windows and make sure it can support 3.7 and beyond
+
+https://github.com/pyscf/pyscf
+new server enable firewall

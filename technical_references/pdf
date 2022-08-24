@@ -1,0 +1,9 @@
+
+for embedding js inside pdf docs
+
+- https://answers.acrobatusers.com/NotAllowedError-Security-settings-prevent-access-property-method-q33221.aspx
+- https://stackoverflow.com/questions/12900174/javascript-working-in-acrobat-but-not-reader
+- https://community.adobe.com/t5/acrobat-discussions/notallowederror-security-settings-prevent-access-to-this-property-or-method/m-p/4637906
+- https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/pdfs/acrobatsdk_jsapiref.pdf
+- https://security.stackexchange.com/questions/231667/can-a-pdf-embed-a-tracking-image
+- https://stackoverflow.com/questions/9219807/documentation-for-using-javascript-code-inside-a-pdf-file

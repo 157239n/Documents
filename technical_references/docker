@@ -568,3 +568,6 @@ docker permissions:
 - https://vsupalov.com/docker-shared-permissions/
 - https://blog.ippon.tech/docker-and-permission-management/
 - https://medium.com/@nielssj/docker-volumes-and-file-system-permissions-772c1aee23ca
+
+https://stackoverflow.com/questions/68155641/should-i-run-things-inside-a-docker-container-as-non-root-for-safety
+https://stackoverflow.com/questions/29245216/write-in-shared-volumes-docker

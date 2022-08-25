@@ -299,3 +299,18 @@ test k1a on multiple python versions on windows and make sure it can support 3.7
 
 https://github.com/pyscf/pyscf
 new server enable firewall
+
+ongoing:
+- decompose uv-vis
+- gan
+- predict alpha helix locations
+- deconvolve x-ray crystal, mri, telescope array data
+- k1ui, truly automating btd6
+- k1ui thingy, create program to automatically cutout images similar to given factorio examples during playthrough
+- predict energy of docking
+- predict chemical properties given only smiles
+- predict the probability fields directly given structure
+- predict molecule evolution, basically time-consistent RL
+
+really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
+

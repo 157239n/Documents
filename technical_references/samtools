@@ -1,0 +1,3 @@
+
+samtools view -b  -T <refgenome.fa> -o <file.bam> <file.cram>
+samtools view -h -o out.sam in.bam

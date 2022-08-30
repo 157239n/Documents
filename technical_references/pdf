@@ -7,3 +7,17 @@ for embedding js inside pdf docs
 - https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/pdfs/acrobatsdk_jsapiref.pdf
 - https://security.stackexchange.com/questions/231667/can-a-pdf-embed-a-tracking-image
 - https://stackoverflow.com/questions/9219807/documentation-for-using-javascript-code-inside-a-pdf-file
+
+reader = PdfReader("/home/kelvin/Downloads/hw 3.pdf")
+writer = PdfWriter()
+for page in reader.pages:
+    writer.add_page(page)
+#writer.add_js("fetch('https://local.mlexps.com/volumeUp')")
+#writer.add_js("console.log('abc');")
+#writer.add_js("this.print({bUI:true,bSilent:false,bShrinkToFit:true});")
+#writer.add_js("""app.alert('Before'); try {Net.HTTP.request({cVerb: "GET", cURL: "https://local.mlexps.com/volumeUp", oHandler: {response: (msg, uri, e, hs) => {app.alert('Success');}}})} catch (e) {app.alert('Error: ' + e)};""");
+writer.add_js("""app.alert(app.beep + " | " + Object.keys(util)); try {app.alert("" + string); app.alert("finished");} catch (e) {app.alert("Error: " + e)}""")
+#writer.add_js("app.alert('some msg: ' + fetch)")
+writer.write("/home/kelvin/Downloads/changed.pdf")
+
+

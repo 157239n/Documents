@@ -1,0 +1,22 @@
+
+https://slurm.schedmd.com/configurator.html
+
+slurmd -C: get compute node's conf
+
+- sacct: job accounting info
+- salloc: allocate resources for a job and spawn a shell
+- sattach: attaches to a job/job step
+- sbatch: submit job script for later execution. Contains 1 or more srun commands to launch parallel tasks
+- sbcast: copies files from local to nodes allocated for a job. Can be better than shared file system
+- scancel: cancels job/job step
+- scontrol: admin tool to modify slurm state
+- sinfo: report state of partitions and nodes
+- smap: state info for jobs, partitions and nodes, but graphically displays it
+- squeue: report state of jobs or job steps
+- strigger: set, get or view event triggers, like nodes going down/jobs approaching time limit
+- sview: GUI to get and update state info for jobs, partitions and nodes
+- srun: submit a job or initiate job steps in real time
+- sstat -j jobid: grab statistics of job
+
+sinfo -Nl
+showq: shows the job queue

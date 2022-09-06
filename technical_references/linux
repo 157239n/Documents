@@ -248,3 +248,5 @@ energy saving commands:
 - powertop --auto-tune
 - tlp start (manual: tlp bat, tlp ac)
 - powercap-set (?)
+
+sudo cat /sys/class/dmi/id/product_uuid

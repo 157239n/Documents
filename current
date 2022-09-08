@@ -302,7 +302,6 @@ new server enable firewall
 
 ongoing:
 - decompose uv-vis
-- gan
 - predict alpha helix locations
 - deconvolve x-ray crystal, mri, telescope array data
 - k1ui, truly automating btd6
@@ -311,6 +310,7 @@ ongoing:
 - predict chemical properties given only smiles
 - predict the probability fields directly given structure
 - predict molecule evolution, basically time-consistent RL
+- predict where genes, introns, exons, motifs are
 
 really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
 

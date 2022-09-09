@@ -298,6 +298,9 @@ face id on screens, then continue on k1ui
 test k1a on multiple python versions on windows and make sure it can support 3.7 and beyond
 
 https://github.com/pyscf/pyscf
+uniquac python:
+- https://github.com/gustavochm/phasepy
+- https://thermo.readthedocs.io/
 new server enable firewall
 
 ongoing:
@@ -311,6 +314,7 @@ ongoing:
 - predict the probability fields directly given structure
 - predict molecule evolution, basically time-consistent RL
 - predict where genes, introns, exons, motifs are
+- paragraph, in case I can't come up with the solution on my own: https://arxiv.org/pdf/2012.03868.pdf
 
 really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
 

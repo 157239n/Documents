@@ -315,6 +315,12 @@ ongoing:
 - predict molecule evolution, basically time-consistent RL
 - predict where genes, introns, exons, motifs are
 - paragraph, in case I can't come up with the solution on my own: https://arxiv.org/pdf/2012.03868.pdf
+- split 2 audio apart, say me and twin
 
 really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
+fractional scaling make permanent: https://forums.linuxmint.com/viewtopic.php?p=2218483
+hadoop distributed file system
+also understand deeply how db transactions work and how they're implemented
+apache spark again
+b trees again, for disk perf
 

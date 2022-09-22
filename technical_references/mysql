@@ -26,6 +26,7 @@ create index field_name ON table_name (field_name);
 explain statement
 show columns from table_name
 show index from table_name;
+CREATE UNIQUE INDEX idx_contacts_email ON contacts (email);
 
 size of tables: SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 AS "Size (MB)" FROM information_schema.TABLES GROUP BY table_schema
 

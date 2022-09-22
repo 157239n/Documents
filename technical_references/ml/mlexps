@@ -4,8 +4,6 @@ goals for ML systems going forward?
 - recognizes general trends from hyperparam search
 - 1 experiment/day seems proper. This will help me to plan for the future as well, and create pressure to make the entire pipeline fast
 
-task: style transfer
-- see if modifying images over time have different internal dynamics than normal training
 task: char name classification (50% acc, 0.8 loss is possible)
 - bigru approach, understand underlying C++ codebase
 task: progressive deepening

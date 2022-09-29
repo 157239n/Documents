@@ -15,3 +15,10 @@ also, try to apply attention stuff to that gravity prediction problem earlier. H
 
 - migrate blackbox posts to mlexps
 - try to do conv5 in blackbox series, so that all linear operations are effectively merged together
+
+rerun char-rnn/5-attn-sizing, so that the graph looks better
+rerun imagenet/5-blind-cat, but this time make the image smaller, then bigger, instead of using gaussian blur. Scale factor can be 8x or even 16x
+
+figure out choke limits to vae again, this time for multiple datasets, just to see trends
+
+investigate adversarial attacks again

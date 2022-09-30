@@ -186,10 +186,6 @@ curious stuff:
 - https://www.youtube.com/watch?v=0yI2wJ6F8r0
 - rainbow: https://arxiv.org/pdf/1710.02298v1.pdf
 
-other interesting notes:
-- a lot of times the network is stuck because oscillation frequency is too high. What is observed is the actions' oscillations seem to coincide with the locations' oscillations, but somehow the phase is just off and leave the system oscillating forever
-- can it be that the fourier thingy sort of hides a prior behind it to make it oscillate a lot. To test this out, try this with other environments
-
 that combined knowledge thing:
 https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1ckHD6&keytype=ref&siteid=sci
@@ -315,6 +311,7 @@ ongoing:
 - predict where genes, introns, exons, motifs are
 - paragraph, in case I can't come up with the solution on my own: https://arxiv.org/pdf/2012.03868.pdf
 - split 2 audio apart, say me and twin
+- clip
 
 really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
 hadoop distributed file system

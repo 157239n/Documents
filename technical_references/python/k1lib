@@ -61,6 +61,8 @@ progress callback estimated time remaining
 nuke toList()
 serve protected by api key option
 
+callbacks create dependency graph
+
 ---------------------- cli llvm ----------------------
 
 initially, just a submodule inside main python lib to auto-generate shared library and attach it to the main running process

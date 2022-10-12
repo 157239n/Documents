@@ -135,3 +135,10 @@ opencog:
 this and see over pytorch's c interface and nvidia's interface as well: https://docs.python.org/3/extending/extending.html, https://developer.nvidia.com/how-to-cuda-c-cpp. The goal here is to basically know how the connection works, and to be able to anticipate whether OpenAI can really do stuff like GPT-4, and how can I have control over basically everything in my stack, but still have the flexibility of the python interface. Also see whether I can create a nn.Conv2d closer to what they are actually using. Also I kinda want to create my own stuff in CPU really fast, without going through prebuilt stuff like counter
 
 tensorboard for pytorch? https://pytorch.org/docs/stable/tensorboard.html
+
+more vae:
+- https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73
+- https://stats.stackexchange.com/questions/394296/how-should-i-intuitively-understand-the-kl-divergence-loss-in-variational-autoen
+- https://github.com/ethanluoyc/pytorch-vae/blob/master/vae.py
+
+https://jonathan-hui.medium.com/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b

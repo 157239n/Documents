@@ -262,7 +262,6 @@ https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw/videos
 https://arxiv.org/pdf/2103.00020.pdf
 
 https://en.wikipedia.org/wiki/MXenes
-
 https://cloud.google.com/blog/products/ai-machine-learning/running-alphafold-on-vertexai
 
 for when I'm fluent in russian: https://www.youtube.com/watch?v=ZtBrQb-qP5M
@@ -285,13 +284,10 @@ redis pool
 https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 security: https://www.fireeye.com/products/helix/what-is-siem-and-how-does-it-work.html
 make genome lookup fast, so that whenever I have a new gene, I can quickly find it against my own genome.
-pid controllers and tuning process in several systems
 may be the old t-sne didn't work well because it's not deep enough?
 k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 
 face id on screens, then continue on k1ui
-
-test k1a on multiple python versions on windows and make sure it can support 3.7 and beyond
 
 https://github.com/pyscf/pyscf
 uniquac python:

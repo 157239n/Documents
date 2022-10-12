@@ -63,6 +63,13 @@ serve protected by api key option
 
 callbacks create dependency graph
 
+Make it so that serve can handle sessions, so that image data doesn't have to be resent every time
+
+cli.patchOr(klass)
+Cli make intro snippets
+
+test k1a on multiple python versions on windows and make sure it can support 3.7 and beyond
+
 ---------------------- cli llvm ----------------------
 
 initially, just a submodule inside main python lib to auto-generate shared library and attach it to the main running process

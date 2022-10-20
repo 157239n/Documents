@@ -191,7 +191,6 @@ https://deepmind.com/blog/article/neural-scene-representation-and-rendering
 https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf?ijkey=kpkRRXA1ckHD6&keytype=ref&siteid=sci
 
 mass production: https://www.reddit.com/r/Entrepreneur/comments/9n8xyj/inventrepreneurship_i_took_an_idea_to_mass/
-
 ttt diagrams: https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3a.html
 
 https://fold.it/portal/node/2010076
@@ -262,7 +261,6 @@ https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw/videos
 https://arxiv.org/pdf/2103.00020.pdf
 
 https://en.wikipedia.org/wiki/MXenes
-https://cloud.google.com/blog/products/ai-machine-learning/running-alphafold-on-vertexai
 
 for when I'm fluent in russian: https://www.youtube.com/watch?v=ZtBrQb-qP5M
 
@@ -315,3 +313,63 @@ also understand deeply how db transactions work and how they're implemented
 apache spark again
 b trees again, for disk perf
 
+honestly alphafold's architecture is not that amazing, and is pretty straightforward actually, so try to do it directly
+pymol
+
+try to reconstruct the 3d structure from 2d distance maps directly instead of running SGD on the 3d points themselves, so that it's end-to-end differentiable
+quarternions again
+
+really do amber fields correctly this time
+
+also see what attention layers attend to in a self-supervised environment
+
+mlexps send session token over
+mlexps says where dataset exploration happens, because there're so many datasets I'm working with lately
+mlexps most impressive, then hrt tonight
+mlexps most impressive notebooks section. Most insights, good summary statistics
+mlexps scans says okay, but not okay
+
+automate survivors in sas 4. First record 2 playthroughs, and make sure I can really aim stuff, move around and whatnot. Do btd6 first, because it's simpler and faster, so that I have a clear plan of what to do
+after k1ui and tested out on btd6, do paperclip
+
+so my problem right now is text takes too much time on a single node. So really read over those data books to see what's up and how to scale my infrastructure. I think I can make rapid progress
+
+https://www.youtube.com/c/comsol/videos
+https://future.com/the-rise-of-domain-experts-in-deep-learning
+https://www.youtube.com/watch?v=OEUT0RoU5hs&ab_channel=COMSOL
+https://cdn.comsol.com/doc/5.5/IntroductionToCOMSOLMultiphysics.pdf
+https://www.comsol.com/models
+
+grok and deep double descent again, verify when do they actually work
+understand all of kiwami's chemistry
+
+do a network that can skip time effectively, but using a well, pre-defined domain. Then try to apply it to the gravity prediction problem and eventually molecular evolution
+
+compact open frame computer case itx
+may be download all cif files from here? https://www.wwpdb.org/ftp/pdb-ftp-sites
+create a system that searches for proteins with roughly the same shape?
+
+also create a system that integrates searches to ncbi's tools?
+text databases, complete language model, to really prove out attention, then do mo/9-alpha
+see if nas system can deliver the performance I need (1 file multi-line access > 1GB/s)
+tries to spread data over multiple hdds, then try to read from all of them for multiple processes, just to see what the perf improvements are
+do bunch of testing on zfs and applyMp: https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/
+
+starting out as a vae, then do a gan. Transition smoothly
+freezing subnetworks after vae pretraining, so that they don't go nuts and sort of have to stick with the current implementation
+try style transfer, but on a much bigger image
+test out diffusion component alone. May be have to do another network where I can feed in random varibles to direct it, for the specific time step component
+recognize protein shapes and return similar structures that look kinda the same
+
+think about time scales on different spatial scales. Why do things move so fast? Do momentum balance works as usual?
+
+tests out contrastive learning, supervised, so pulling same class together, diff classes out, with active learning
+
+all local connections use vpn. Verify vpn works after reboot first
+also really track uptime data
+
+celeb-a do interactive, also the splitting tables thingy
+yolo, when free: https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
+
+train lm to do counting
+setup rsync with phone to backup everything

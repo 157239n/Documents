@@ -233,8 +233,6 @@ talking about fingerprints, there are a few ideas:
 - predefined features (human made), binary bit has it or not
 - https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00445-4
 
-https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
-
 eterna again
 
 https://sk.ru/
@@ -321,18 +319,10 @@ quarternions again
 
 really do amber fields correctly this time
 
-also see what attention layers attend to in a self-supervised environment
-
 mlexps send session token over
-mlexps says where dataset exploration happens, because there're so many datasets I'm working with lately
-mlexps most impressive, then hrt tonight
-mlexps most impressive notebooks section. Most insights, good summary statistics
-mlexps scans says okay, but not okay
 
 automate survivors in sas 4. First record 2 playthroughs, and make sure I can really aim stuff, move around and whatnot. Do btd6 first, because it's simpler and faster, so that I have a clear plan of what to do
 after k1ui and tested out on btd6, do paperclip
-
-so my problem right now is text takes too much time on a single node. So really read over those data books to see what's up and how to scale my infrastructure. I think I can make rapid progress
 
 https://www.youtube.com/c/comsol/videos
 https://future.com/the-rise-of-domain-experts-in-deep-learning
@@ -340,7 +330,6 @@ https://www.youtube.com/watch?v=OEUT0RoU5hs&ab_channel=COMSOL
 https://cdn.comsol.com/doc/5.5/IntroductionToCOMSOLMultiphysics.pdf
 https://www.comsol.com/models
 
-grok and deep double descent again, verify when do they actually work
 understand all of kiwami's chemistry
 
 do a network that can skip time effectively, but using a well, pre-defined domain. Then try to apply it to the gravity prediction problem and eventually molecular evolution
@@ -351,9 +340,6 @@ create a system that searches for proteins with roughly the same shape?
 
 also create a system that integrates searches to ncbi's tools?
 text databases, complete language model, to really prove out attention, then do mo/9-alpha
-see if nas system can deliver the performance I need (1 file multi-line access > 1GB/s)
-tries to spread data over multiple hdds, then try to read from all of them for multiple processes, just to see what the perf improvements are
-do bunch of testing on zfs and applyMp: https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/
 
 starting out as a vae, then do a gan. Transition smoothly
 freezing subnetworks after vae pretraining, so that they don't go nuts and sort of have to stick with the current implementation

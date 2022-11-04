@@ -22,3 +22,34 @@ rerun imagenet/5-blind-cat, but this time make the image smaller, then bigger, i
 figure out choke limits to vae again, this time for multiple datasets, just to see trends
 
 investigate adversarial attacks again
+
+----------- multinode/disks setups
+
+see if nas system can deliver the performance I need (1 file multi-line access > 1GB/s)
+tries to spread data over multiple hdds, then try to read from all of them for multiple processes, just to see what the perf improvements are
+do bunch of testing on zfs and applyMp: https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/
+
+so my problem right now is text takes too much time on a single node. So really read over those data books to see what's up and how to scale my infrastructure. I think I can make rapid progress
+
+hadoop distributed file system wiki
+https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
+https://en.wikipedia.org/wiki/Distributed_computing
+https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS
+https://www.youtube.com/watch?v=m9v9lky3zcE&list=PL9ooVrP1hQOEmUPq5vhWfLYJH_b9jFBbR
+pytorch distributed data parallel
+https://en.m.wikipedia.org/wiki/Comparison_of_distributed_file_systems
+https://www.geeksforgeeks.org/what-is-dfsdistributed-file-system/amp/
+https://en.m.wikipedia.org/wiki/Distributed_File_System_(Microsoft)
+distributed file system
+http://ipython.org/ipython-doc/stable/parallel/index.html
+https://wiki.python.org/moin/ParallelProcessing
+https://docs.ray.io/en/latest/index.html
+https://medium.com/distributed-computing-with-ray/how-to-scale-python-multiprocessing-to-a-cluster-with-one-line-of-code-d19f242f60ff
+https://stackoverflow.com/questions/5181949/using-the-multiprocessing-module-for-cluster-computing
+python multiprocessing multiple nodes
+
+setup k8s to experiment on ray
+- https://medium.com/distributed-computing-with-ray/how-to-scale-python-multiprocessing-to-a-cluster-with-one-line-of-code-d19f242f60ff
+- https://gist.github.com/edoakes/0f7f62b7d9aa5481482bca23be5f622a
+- https://www.anyscale.com/
+- https://pages.cs.wisc.edu/~adityav/Evaluation_of_Inter_Process_Communication_Mechanisms.pdf

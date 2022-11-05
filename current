@@ -365,3 +365,9 @@ aspen:
 - co2 + koh, then ca(oh)2 transfer
 - cao + h2o, pretty simple, and the reverse
 - same with cao + co2
+
+vae vit patch generator
+
+try to run through stable diffusion, not train it, cause I might need to start integrating existing systems
+
+contrastive learning, really figure out how much information can I extract out of the latent variable. Can I easily filter out blurred images after giving it only 10 supervised examples and 10M unsupervised examples? If it's possible, then I can potentially just use that network everywhere, to quickly train up whatever I want. Kinda like classic pretraining, but more powerful and generalizable.

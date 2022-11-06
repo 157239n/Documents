@@ -53,3 +53,5 @@ setup k8s to experiment on ray
 - https://gist.github.com/edoakes/0f7f62b7d9aa5481482bca23be5f622a
 - https://www.anyscale.com/
 - https://pages.cs.wisc.edu/~adityav/Evaluation_of_Inter_Process_Communication_Mechanisms.pdf
+
+mlexps make private notebooks

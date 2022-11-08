@@ -55,3 +55,5 @@ setup k8s to experiment on ray
 - https://pages.cs.wisc.edu/~adityav/Evaluation_of_Inter_Process_Communication_Mechanisms.pdf
 
 mlexps make private notebooks
+
+imagenet/video depth: do the predicting distances by being consistent thingy, because it's a real possibility that may reveal more what's really going on

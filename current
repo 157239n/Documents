@@ -330,8 +330,6 @@ https://www.youtube.com/watch?v=OEUT0RoU5hs&ab_channel=COMSOL
 https://cdn.comsol.com/doc/5.5/IntroductionToCOMSOLMultiphysics.pdf
 https://www.comsol.com/models
 
-understand all of kiwami's chemistry
-
 do a network that can skip time effectively, but using a well, pre-defined domain. Then try to apply it to the gravity prediction problem and eventually molecular evolution
 
 compact open frame computer case itx
@@ -371,3 +369,5 @@ vae vit patch generator
 try to run through stable diffusion, not train it, cause I might need to start integrating existing systems
 
 contrastive learning, really figure out how much information can I extract out of the latent variable. Can I easily filter out blurred images after giving it only 10 supervised examples and 10M unsupervised examples? If it's possible, then I can potentially just use that network everywhere, to quickly train up whatever I want. Kinda like classic pretraining, but more powerful and generalizable.
+
+generate a bunch of comsol time-dependent simulations, then try to predict that using a network

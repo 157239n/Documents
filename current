@@ -359,10 +359,14 @@ train lm to do counting
 setup rsync with phone to backup everything
 
 aspen:
-- co2 + calcium oxide = calcite
+- co2 + cao = caco3
+- h2co3 <-> h2o + co2, just to see if aspen can cope with this relatively strange system
 - co2 + koh, then ca(oh)2 transfer
 - cao + h2o, pretty simple, and the reverse
-- same with cao + co2
+- caco3 <-> ca(oh)2 + h2co3
+- mgcl2 + ca(oh)2
+- caco3 + ca(oh)2, which is preferred?
+- fe3o4 + al
 
 vae vit patch generator
 

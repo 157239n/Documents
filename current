@@ -348,8 +348,6 @@ recognize protein shapes and return similar structures that look kinda the same
 think about time scales on different spatial scales. Why do things move so fast? Do momentum balance works as usual?
 
 tests out contrastive learning, supervised, so pulling same class together, diff classes out, with active learning
-
-all local connections use vpn. Verify vpn works after reboot first
 also really track uptime data
 
 celeb-a do interactive, also the splitting tables thingy
@@ -367,10 +365,17 @@ aspen:
 - caco3 + ca(oh)2, which is preferred?
 - fe3o4 + al
 
-vae vit patch generator
-
 try to run through stable diffusion, not train it, cause I might need to start integrating existing systems
 
 contrastive learning, really figure out how much information can I extract out of the latent variable. Can I easily filter out blurred images after giving it only 10 supervised examples and 10M unsupervised examples? If it's possible, then I can potentially just use that network everywhere, to quickly train up whatever I want. Kinda like classic pretraining, but more powerful and generalizable.
 
 generate a bunch of comsol time-dependent simulations, then try to predict that using a network
+
+blender pixel depth data:
+- "blender python z depth"
+- https://blender.stackexchange.com/questions/180391/how-to-get-z-distance-not-depth-from-camera-to-object-for-every-pixel-in-the-f
+- https://developer.blender.org/T100417
+- https://blenderartists.org/t/getting-the-depth-of-every-pixel-to-the-center-of-projection-of-the-camera-in-blender/1328065
+- https://www.cityscapes-dataset.com/
+
+quickly do unet

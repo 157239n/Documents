@@ -57,3 +57,8 @@ setup k8s to experiment on ray
 mlexps make private notebooks
 
 imagenet/video depth: do the predicting distances by being consistent thingy, because it's a real possibility that may reveal more what's really going on
+
+vae vit patch generator
+
+https://huggingface.co/datasets/gigaword
+hierarchical softmax: https://towardsdatascience.com/hierarchical-softmax-and-negative-sampling-short-notes-worth-telling-2672010dbe08

@@ -62,3 +62,7 @@ vae vit patch generator
 
 https://huggingface.co/datasets/gigaword
 hierarchical softmax: https://towardsdatascience.com/hierarchical-softmax-and-negative-sampling-short-notes-worth-telling-2672010dbe08
+
+that RL course: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=4&ab_channel=DeepMind
+
+neuflow, dataflow processor: http://yann.lecun.com/exdb/publis/pdf/farabet-ecvw-11.pdf

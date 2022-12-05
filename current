@@ -389,3 +389,11 @@ sim/chem:
 model capacity/data points in function/
 
 kaparthy llm: https://www.youtube.com/watch?v=PaCmpygFfXo
+
+push pyscf into really weird configs, like moving hydrogen atoms dangerously close together, moving extra hydrogens to benzene, to hopefully disrupt the ring
+
+also just create a network that predicts water molecule's behavior really accurately, to see if it can do it at all
+also check at how I can visualize the electron cloud again
+also slowly transform benzene into regular hexane. Idk, al chemistries related to benzene is kinda interesting, so just do that
+also move H in acetic acid slowly away. Also, try to remove or add charges to molecules, pyscf seems to have those, to see the effects of that
+also, normal H atom, then no e, then 2e, to see what happens

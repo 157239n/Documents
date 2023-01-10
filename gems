@@ -650,3 +650,4 @@ Services/tools:
 - mosis: fab
 - packing machine: https://www.chlbpack.com/
 - https://github.com/huggingface/transformers
+- chem suppliers: chemglass, grainger, aceglass

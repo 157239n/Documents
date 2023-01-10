@@ -392,6 +392,8 @@ kaparthy llm: https://www.youtube.com/watch?v=PaCmpygFfXo
 
 push pyscf into really weird configs, like moving hydrogen atoms dangerously close together, moving extra hydrogens to benzene, to hopefully disrupt the ring
 
+or can just move a hydrogen willy nilly in 3d space, scanning out voxels, and creating a 3d transparent heatmap of that
+
 also just create a network that predicts water molecule's behavior really accurately, to see if it can do it at all
 also check at how I can visualize the electron cloud again
 also slowly transform benzene into regular hexane. Idk, al chemistries related to benzene is kinda interesting, so just do that

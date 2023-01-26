@@ -94,3 +94,18 @@ optimizations:
 - make it so that (...).all(2) done on a multi-dimensional tensor will automatically resolve to doing the fastest way
 
 ---------------------- cli llvm end ----------------------
+
+serve allow no docs
+serve fix case when sample inputs have new line characters
+
+
+
+
+
+
+
+
+
+
+
+

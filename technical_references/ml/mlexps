@@ -66,3 +66,11 @@ hierarchical softmax: https://towardsdatascience.com/hierarchical-softmax-and-ne
 that RL course: https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=4&ab_channel=DeepMind
 
 neuflow, dataflow processor: http://yann.lecun.com/exdb/publis/pdf/farabet-ecvw-11.pdf
+
+mlexps send session token over
+
+starting out as a vae, then do a gan. Transition smoothly
+freezing subnetworks after vae pretraining, so that they don't go nuts and sort of have to stick with the current implementation
+try style transfer, but on a much bigger image
+test out diffusion component alone. May be have to do another network where I can feed in random varibles to direct it, for the specific time step component
+recognize protein shapes and return similar structures that look kinda the same

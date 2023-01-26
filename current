@@ -283,8 +283,6 @@ make genome lookup fast, so that whenever I have a new gene, I can quickly find 
 may be the old t-sne didn't work well because it's not deep enough?
 k1ui add interface as k1ui in k1lib. Also add token, to make it secure
 
-face id on screens, then continue on k1ui
-
 https://github.com/pyscf/pyscf
 uniquac python:
 - https://github.com/gustavochm/phasepy
@@ -294,8 +292,6 @@ ongoing:
 - decompose uv-vis
 - predict alpha helix locations
 - deconvolve x-ray crystal, mri, telescope array data
-- k1ui, truly automating btd6
-- k1ui thingy, create program to automatically cutout images similar to given factorio examples during playthrough
 - predict energy of docking
 - predict chemical properties given only smiles
 - predict the probability fields directly given structure
@@ -303,7 +299,6 @@ ongoing:
 - predict where genes, introns, exons, motifs are
 - paragraph, in case I can't come up with the solution on my own: https://arxiv.org/pdf/2012.03868.pdf
 - split 2 audio apart, say me and twin
-- clip
 
 really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
 hadoop distributed file system
@@ -318,8 +313,6 @@ try to reconstruct the 3d structure from 2d distance maps directly instead of ru
 quarternions again
 
 really do amber fields correctly this time
-
-mlexps send session token over
 
 automate survivors in sas 4. First record 2 playthroughs, and make sure I can really aim stuff, move around and whatnot. Do btd6 first, because it's simpler and faster, so that I have a clear plan of what to do
 after k1ui and tested out on btd6, do paperclip
@@ -339,18 +332,10 @@ create a system that searches for proteins with roughly the same shape?
 also create a system that integrates searches to ncbi's tools?
 text databases, complete language model, to really prove out attention, then do mo/9-alpha
 
-starting out as a vae, then do a gan. Transition smoothly
-freezing subnetworks after vae pretraining, so that they don't go nuts and sort of have to stick with the current implementation
-try style transfer, but on a much bigger image
-test out diffusion component alone. May be have to do another network where I can feed in random varibles to direct it, for the specific time step component
-recognize protein shapes and return similar structures that look kinda the same
-
 think about time scales on different spatial scales. Why do things move so fast? Do momentum balance works as usual?
 
-tests out contrastive learning, supervised, so pulling same class together, diff classes out, with active learning
 also really track uptime data
 
-celeb-a do interactive, also the splitting tables thingy
 yolo, when free: https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
 
 setup rsync with phone to backup everything
@@ -399,3 +384,11 @@ also check at how I can visualize the electron cloud again
 also slowly transform benzene into regular hexane. Idk, al chemistries related to benzene is kinda interesting, so just do that
 also move H in acetic acid slowly away. Also, try to remove or add charges to molecules, pyscf seems to have those, to see the effects of that
 also, normal H atom, then no e, then 2e, to see what happens
+
+need a very clean domain to test transformers in. Text alone is a little too noisy and too dependent on 3rd party
+
+superpositions
+
+k1ui is done. Yay! Test on windows/linux VM and have some things run there permanantly, to utilize every bit of juice possible out of this comp, and to verify that windows could work
+
+https://chemistry.stackexchange.com/questions/27421/where-to-find-data-for-gibbs-energy-enthalpy-and-entropy

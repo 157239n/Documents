@@ -281,17 +281,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 security: https://www.fireeye.com/products/helix/what-is-siem-and-how-does-it-work.html
 make genome lookup fast, so that whenever I have a new gene, I can quickly find it against my own genome.
 may be the old t-sne didn't work well because it's not deep enough?
-k1ui add interface as k1ui in k1lib. Also add token, to make it secure
-
-https://github.com/pyscf/pyscf
-uniquac python:
-- https://github.com/gustavochm/phasepy
-- https://thermo.readthedocs.io/
 
 ongoing:
 - decompose uv-vis
 - predict alpha helix locations
-- deconvolve x-ray crystal, mri, telescope array data
 - predict energy of docking
 - predict chemical properties given only smiles
 - predict the probability fields directly given structure
@@ -300,7 +293,6 @@ ongoing:
 - paragraph, in case I can't come up with the solution on my own: https://arxiv.org/pdf/2012.03868.pdf
 - split 2 audio apart, say me and twin
 
-really perfect rdp for desktop, with legit auth and whatnot, cause I might want to access it directly
 hadoop distributed file system
 also understand deeply how db transactions work and how they're implemented
 apache spark again
@@ -314,7 +306,7 @@ quarternions again
 
 really do amber fields correctly this time
 
-automate survivors in sas 4. First record 2 playthroughs, and make sure I can really aim stuff, move around and whatnot. Do btd6 first, because it's simpler and faster, so that I have a clear plan of what to do
+automate survivors in sas 4. First record 2 playthroughs, and make sure I can really aim stuff, move around and whatnot
 after k1ui and tested out on btd6, do paperclip
 
 https://www.youtube.com/c/comsol/videos
@@ -387,8 +379,8 @@ also, normal H atom, then no e, then 2e, to see what happens
 
 need a very clean domain to test transformers in. Text alone is a little too noisy and too dependent on 3rd party
 
-superpositions
+feature superpositions, olah
 
-k1ui is done. Yay! Test on windows/linux VM and have some things run there permanantly, to utilize every bit of juice possible out of this comp, and to verify that windows could work
-
-https://chemistry.stackexchange.com/questions/27421/where-to-find-data-for-gibbs-energy-enthalpy-and-entropy
+kinesin internal mechanism:
+- https://bib-pubdb1.desy.de/record/89509/files/ez_Marx_CMC09_Review_Kinesin_NIHPublicAccess.pdf
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2668149/

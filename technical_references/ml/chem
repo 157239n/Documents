@@ -3,3 +3,10 @@ https://rdkit.org/UGM/2012/Landrum_RDKit_UGM.Fingerprints.Final.pptx.pdf
 https://docs.chemaxon.com/display/docs/chemical-fingerprints.md
 https://www.rdkit.org/docs/GettingStartedInPython.html
 
+data:
+- lots of thermo data: https://link.springer.com/content/pdf/bbm:978-1-4471-2372-9/1.pdf
+- https://chemistry.stackexchange.com/questions/27421/where-to-find-data-for-gibbs-energy-enthalpy-and-entropy
+
+uniquac python:
+- https://github.com/gustavochm/phasepy
+- https://thermo.readthedocs.io/

@@ -1,0 +1,8 @@
+
+head start command: ray start --head
+join command: ray start --address='192.168.1.35:6379'
+
+comms port: 6379
+dashboard port: 8265
+
+https://docs.ray.io/en/master/cluster/cli.html

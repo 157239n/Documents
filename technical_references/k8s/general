@@ -1,4 +1,8 @@
 
+allowing swap:
+sudo sed -i '9s/^/Environment="KUBELET_EXTRA_ARGS=--fail-swap-on=false"\n/' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+joining: https://stackoverflow.com/questions/51126164/how-do-i-find-the-join-command-for-kubeadm-on-the-master
+
 https://www.youtube.com/c/TechWorldwithNana
 
 kubectl: 

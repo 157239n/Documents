@@ -411,3 +411,8 @@ make a collision simulation, but on different scales, to see how much effort do 
 predict nmr spectrums from molecules, now that I have a bunch of reaction data
 tool to seach over the human genome (after searching on 3-human-genes and 4-human-mrna)
 see if I can predict delta gibbs/enthalpy of a reaction or not. If I can, that'd be pretty nice. Also, generating all kinds of fields for the molecules is kinda important, because that's a whole lot more data than just 1 energy value
+
+custon images:
+- https://docs.digitalocean.com/products/images/custom-images/
+- https://itsfoss.com/create-custom-linux-mint-iso/
+- https://community.linuxmint.com/tutorial/view/1784

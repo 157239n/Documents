@@ -250,3 +250,13 @@ energy saving commands:
 - powercap-set (?)
 
 sudo cat /sys/class/dmi/id/product_uuid
+
+Rebooting to uefi: systemctl reboot --firmware-setup
+
+---------- cluster management ----------
+dell remote monitoring tool: iDRAC9
+
+- cssh: https://www.linuxjournal.com/magazine/hack-and-manage-multiple-servers-efficiently
+- https://wiki.debian.org/LTSP
+- https://serverfault.com/questions/17931/what-is-a-good-modern-parallel-ssh-tool
+- https://en.wikipedia.org/wiki/Configuration_management

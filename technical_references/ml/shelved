@@ -150,3 +150,24 @@ alphafold:
 - https://cloud.google.com/blog/products/ai-machine-learning/running-alphafold-on-vertexai
 
 function that automatically fit a curve. Also detects if there're inputs that's outside of range, and automatically fit more equations. Can also have multiple fit eqns for multiple input ranges
+
+https://arxiv.org/pdf/2205.01917.pdf
+https://arxiv.org/pdf/2202.07247.pdf
+https://arxiv.org/pdf/2210.10760.pdf
+https://cdn.openai.com/papers/dall-e-2.pdf
+https://twitter.com/karpathy/status/1651999209149857793
+https://twitter.com/realSharonZhou/status/1651989507615645696
+https://distill.pub/2020/circuits/curve-detectors/
+https://openai.com/research/microscope
+https://transformer-circuits.pub/2022/solu/index.html
+https://aisafety.info/
+NN and chomsky hierarchy: https://arxiv.org/pdf/2207.02098.pdf
+https://twitter.com/LouisKirschAI/status/1601028591218982913
+https://cdn.openai.com/papers/gpt-4.pdf
+https://www.jimruttshow.com/currents-joscha-bach/
+alberta plan for ai research: https://arxiv.org/pdf/2208.11173.pdf
+https://openai.com/blog/chatgpt-plugins
+https://platform.openai.com/docs/guides/embeddings/limitations-risks
+https://twitter.com/hardmaru/status/1657221505724588032
+https://datascience.stackexchange.com/questions/37673/rl-advantage-function-why-a-q-v-instead-of-a-v-q
+https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/

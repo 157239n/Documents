@@ -664,3 +664,4 @@ Services/tools:
 - chem suppliers: chemglass, grainger, aceglass
 - thermo data: https://atct.anl.gov/Thermochemical%20Data/version%201.124/index.php
 - refurbished servers: savemyserver, servermonkey
+- chem e heuristics: https://web.fe.up.pt/~sereno/heuristics.pdf

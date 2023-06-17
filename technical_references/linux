@@ -260,3 +260,7 @@ dell remote monitoring tool: iDRAC9
 - https://wiki.debian.org/LTSP
 - https://serverfault.com/questions/17931/what-is-a-good-modern-parallel-ssh-tool
 - https://en.wikipedia.org/wiki/Configuration_management
+
+nfc:
+- https://stackoverflow.com/questions/31131569/unable-to-claim-usb-interface-device-or-resource-busy
+- https://stackoverflow.com/questions/55144458/unable-to-claim-usb-interface-device-or-resource-busy-stuck

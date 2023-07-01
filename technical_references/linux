@@ -264,3 +264,5 @@ dell remote monitoring tool: iDRAC9
 nfc:
 - https://stackoverflow.com/questions/31131569/unable-to-claim-usb-interface-device-or-resource-busy
 - https://stackoverflow.com/questions/55144458/unable-to-claim-usb-interface-device-or-resource-busy-stuck
+
+remove sudo prompt: `sudo visudo`, then add `USERNAME ALL=(ALL:ALL) NOPASSWD:ALL` before includedir

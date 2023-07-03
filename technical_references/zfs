@@ -20,3 +20,26 @@ zvols are sort of like a dataset, but it's just a block device and you have to i
 zfs set atime=off <pool>
 zfs set primarycache=metadata <pool>
 zfs set compression=lz4 <pool>
+
+rolling snapshot:
+
+# zfs destroy -r pool/users@7daysago
+# zfs rename -r pool/users@6daysago @7daysago
+# zfs rename -r pool/users@5daysago @6daysago
+# zfs rename -r pool/users@4daysago @5daysago
+# zfs rename -r pool/users@3daysago @4daysago
+# zfs rename -r pool/users@2daysago @3daysago
+# zfs rename -r pool/users@yesterday @2daysago
+# zfs rename -r pool/users@today @yesterday
+# zfs snapshot -r pool/users@today
+
+zpool create -m /mount/point -o ashift=12 mypool raidz1 /dev/sda /dev/sdb raidz2 /dev/sdc /dev/sdd /dev/sde
+zpool add mypool -o ashift=12 special mirror /dev/sda /dev/sdb
+
+considerations:
+- ashift=12
+- turn on compression
+- scrubs periodically
+- do rolling snapshots
+
+

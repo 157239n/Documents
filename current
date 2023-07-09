@@ -342,8 +342,6 @@ aspen:
 - caco3 + ca(oh)2, which is preferred?
 - fe3o4 + al
 
-try to run through stable diffusion, not train it, cause I might need to start integrating existing systems
-
 contrastive learning, really figure out how much information can I extract out of the latent variable. Can I easily filter out blurred images after giving it only 10 supervised examples and 10M unsupervised examples? If it's possible, then I can potentially just use that network everywhere, to quickly train up whatever I want. Kinda like classic pretraining, but more powerful and generalizable.
 
 generate a bunch of comsol time-dependent simulations, then try to predict that using a network
@@ -386,11 +384,6 @@ https://physics.stackexchange.com/questions/149493/gibbs-free-energy-intuition
 
 make entire mlexps folder a library
 
-15-thermo problems:
-- Al migration
-
-make it so that can specify duty cycle is 0
-
 really want accurate simulation of a bunch of water molecules, to see how fast they're moving and gain an intuition out of it
 try to see/detect if there are any holes in ion channels, to see where molecules can pass through
 analyze e-coli transcription networks to see if I can at least group them into different categories, to sort of know the entire picture from scratch
@@ -427,3 +420,5 @@ manolis lectures:
 - https://www.youtube.com/playlist?list=PLypiXJdtIca5ElZMWHl4HMeyle2AzUgVB
 
 grab topography maps of the world, so that I can play with them. So, mola again
+
+https://www.vevor.com/reptile-incubator-c_11049/digital-reptile-egg-incubator-25l-scientific-poultry-duck-egg-incubator-5-60-c-p_010564986179

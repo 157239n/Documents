@@ -389,7 +389,6 @@ try to see/detect if there are any holes in ion channels, to see where molecules
 analyze e-coli transcription networks to see if I can at least group them into different categories, to sort of know the entire picture from scratch
 can nature declare a variable (create a new transcription factor) as it pleases? Or do they 
 
-mlexps graph and history of the notebooks, to quickly visualize it. Doesn't have to be the track system of k1ui, although that was nice
 mlexps last 5 updated notebooks up top
 
 network that can suggest similar reactions when given a particular structure
@@ -412,7 +411,6 @@ custon images:
 
 example gpt4 pipeline: https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
 
-sell antibodies
 https://github.com/geohot/corona#dna-synthesis
 
 manolis lectures:

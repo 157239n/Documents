@@ -326,8 +326,6 @@ text databases, complete language model, to really prove out attention, then do 
 
 think about time scales on different spatial scales. Why do things move so fast? Do momentum balance works as usual?
 
-also really track uptime data
-
 yolo, when free: https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
 
 setup rsync with phone to backup everything

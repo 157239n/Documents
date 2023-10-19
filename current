@@ -426,3 +426,10 @@ RL for that roboforming thing
 bulk analyze https://aleph.occrp.org/datasets/1061
 
 tryhackme, hackthebox
+
+ocr table parser again
+auto ocr, grab all tables from all pdfs that I come across, and build a system where I can easily search text/concepts over all of them
+
+also, do the capture main content thingy for all sites, not just for wiki. Add analysis date to metadata of all captured articles
+
+build a system so that it legitly uses chrome extensions as a selenium alternative cause that's pretty dope. It's a large project tho

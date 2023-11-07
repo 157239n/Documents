@@ -1,0 +1,39 @@
+
+roscd geometry_msgs
+rosls
+rosversion -d
+
+
+rosnode list
+
+rostopic listA -v # verbose
+rostopic echo /turtle1/pose
+rostopic info /turtle1/pose
+rostopic type /turtle1/cmd_vel # grab all message types accepted by this topic
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2, 0, 0]' '[0, 0, 1.8]'
+
+rosmsg list
+rosmsg show geometry_msgs/Twist
+
+rosservice list
+rosservice type /clear # grab message type(s?) accepted by this service
+rosservice type /spawn | rossrv show
+rosservice call /spawn 2 2 0.2 ""
+
+rosparam set /turtlesim/background_r 150
+rosservice call /clear # have to call this for the new params to be in effect
+rosparam get /turtlesim/background_r
+rosparam get /turtlesim # kinda recursive like logs.mlexps.com, pretty neat
+
+rosparam list
+
+Specialized programs
+- rosrun rqt_graph rqt_graph # shows dependency graph
+- rosrun rqt_plot rqt_plot # shows quick graph over time, pretty nice
+- rosrun rqt_console rqt_console
+- rosrun rqt_logger_level rqt_logger_level # generic logger
+- rosrun turtlesim turtlesim_node
+- rosrun turtlesim turtle_teleop_key
+
+
+

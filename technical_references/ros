@@ -15,6 +15,9 @@ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2, 0, 0]' '[0, 0, 1.8]
 rosmsg list
 rosmsg show geometry_msgs/Twist
 
+rossrv list
+rossrv show AddTwoInts
+
 rosservice list
 rosservice type /clear # grab message type(s?) accepted by this service
 rosservice type /spawn | rossrv show
@@ -26,6 +29,12 @@ rosparam get /turtlesim/background_r
 rosparam get /turtlesim # kinda recursive like logs.mlexps.com, pretty neat
 
 rosparam list
+
+roslaunch beginner_tutorials turtlemimic.launch
+
+rosbag record -a
+rosbag record -O outfile /turtle1/cmd_vel /turtle1/pose
+rosbag info <bagfile>
 
 Specialized programs
 - rosrun rqt_graph rqt_graph # shows dependency graph

@@ -74,3 +74,11 @@ freezing subnetworks after vae pretraining, so that they don't go nuts and sort 
 try style transfer, but on a much bigger image
 test out diffusion component alone. May be have to do another network where I can feed in random varibles to direct it, for the specific time step component
 recognize protein shapes and return similar structures that look kinda the same
+
+new tasks:
+- add kapi twillio service
+- package mlexps into bauxite, an environment that's rerunnable and reproducible, and have api keys too!
+- deploy bauxite on ny server, and run light services like twillio there. Heavy services are still run on my comp ofc
+
+
+

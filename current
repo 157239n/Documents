@@ -446,3 +446,22 @@ figure out pdf's format and whether I can pull out the paragraphs without using 
 make jarvis
 
 make system to track youtube channels periodically, then grab all transcripts from all their videos, so that I can search up stuff. Like, I tried to search for meme moments in OLF or xterminator arrow but couldn't
+
+cosmic rays test again
+
+VNC and streaming on mint-2 again, really understand VNC this time
+
+logs.mlexps.com:
+- try spawning 1M concurrent connections, but with relatively low throughput, to see if it can handle it
+- post mode, allows for bigger json object
+- diff color mode for info, warn, things like that
+
+create service to auto detect that a link is defunct
+
+netplan?
+
+netlist in semi?
+
+dig more into fluentd, and benchmark their service
+
+

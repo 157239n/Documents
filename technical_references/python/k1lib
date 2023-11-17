@@ -112,4 +112,13 @@ grepI(), for grep and then item immediately
 
 viz tool that converts yaml/json into html tree that I can expand out however I want
 
+ws.send() expand more than just strings/bytes, cause I hate calling json.dumps() over and over again
+
+kjs and kast:
+- kjs.v() can absorb things, and transpile easily. Also allows to use js functions as if they're python's. I guess a more encompassing way is to just go through the AST stuff, but AST stuff can be prone to ._getframe()
+- instead of jsF.search() only, do a general .interface(), with options on what UIs will be displayed and whatnot
+- kast lite const resolving functionality. Right now "no magic constants" rule is ruining me
+
+
+
 

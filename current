@@ -464,4 +464,19 @@ netlist in semi?
 
 dig more into fluentd, and benchmark their service
 
+for today:
+- js transpiler docs
+- toLinks() on touhou, recursively, to get all BGM. Parse the xml lightly too
+- make the chrome extension where it can communicate with a Python backend with a unique name
+- JS transpiler solve hanging problem in 2weeks notebook
+- setup ROS, demonstrate redundancy to cosmic rays
+- try to utilize ROS 1 and 2, see their differences and whatnot
+- measure cosmic rays again
+- read KKHTA and other touhou stuff
+- finish all youtube watch laters
+- redo website tracking on macbook and everywhere else, see if I can make a system that's robust enough to everything websocket-related
+- kws allow transfering objects directly, instead of serializing and deserializing and whatnot
+- k8s again, try to really push it
+- designing anything related to EM and optic systems too
 
+deskmeet x300 for mini pc

@@ -112,4 +112,6 @@ grepI(), for grep and then item immediately
 
 viz tool that converts yaml/json into html tree that I can expand out however I want
 
-
+jsf:
+- list creation in lambda functions
+- filt invert included?

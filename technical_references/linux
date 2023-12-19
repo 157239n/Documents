@@ -266,3 +266,15 @@ nfc:
 - https://stackoverflow.com/questions/55144458/unable-to-claim-usb-interface-device-or-resource-busy-stuck
 
 remove sudo prompt: `sudo visudo`, then add `USERNAME ALL=(ALL:ALL) NOPASSWD:ALL` before includedir
+
+---------- Linux mint specific -----------
+
+apt install xrdp xorgxrdp
+echo env -u SESSION_MANAGER -u DBUS_SESSION_BUS_ADDRESS cinnamon-session>~/.xsession
+systemctl enable xrdp
+
+
+
+
+
+

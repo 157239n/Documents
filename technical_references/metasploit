@@ -1,0 +1,14 @@
+
+search type:auxiliary http html title tag
+use auxiliary/scanner/http/title
+show options
+show targets
+show evasion
+show advanced
+set, shows absolutely every variables
+set RHOSTS google.com
+run rhosts=google.com httptrace=true
+set payload cmd/unix/reverse, btw, cmd/unix/reverse_bash is the default, but that doesn't work!
+check - checks whether the target is actually vulnerable or not without executing the payload
+
+

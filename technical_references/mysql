@@ -29,6 +29,16 @@ show index from table_name;
 CREATE UNIQUE INDEX idx_contacts_email ON contacts (email);
 db size: SELECT SUM("pgsize") FROM "dbstat" WHERE name='TABLENAME';
 
+CREATE TABLE Persons (
+    id int NOT NULL AUTO_INCREMENT,
+    lastname VARCHAR(255) NOT NULL,
+    firstname VARCHAR(255),
+	dob BIGINT,
+	age INT,
+	donkeys FLOAT,
+    PRIMARY KEY (id)
+);
+
 sqlite_master table
 
 size of tables: SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 AS "Size (MB)" FROM information_schema.TABLES GROUP BY table_schema

@@ -134,3 +134,18 @@ for time stuff:
 DATETIME is timezone agnostic, TIMESTAMP is unix time
 
 https://dba.stackexchange.com/questions/74627/difference-between-on-delete-cascade-on-update-cascade-in-mysql
+
+----------------------- replication stuff -----------------------
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql
+CREATE USER 'replica_user'@'replica_server_ip' IDENTIFIED WITH mysql_native_password BY 'password';
+GRANT REPLICATION SLAVE ON *.* TO 'replica_user'@'replica_server_ip';
+FLUSH PRIVILEGES;
+
+
+
+
+
+
+
+

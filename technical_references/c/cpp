@@ -242,3 +242,23 @@ if (errno == EDOM) // EDOM for error in the domain, ERANGE for error in the rang
 
 auto glambda = [](auto a, auto&& b) { return a < b; };
 
+
+
+// std convenience logging
+
+template<typename T> std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec) {
+  os << "[ "; for (const T& e : vec) os << e << " "; os << "]"; return os; }
+template<typename T, typename V> std::ostream& operator<<(std::ostream& os, const std::tuple<T, V>& vec) {
+  os << "tuple(" << std::get<0>(vec) << ", " << std::get<1>(vec) << ")"; return os; }
+template<typename T> std::ostream& operator<<(std::ostream& os, const std::array<T, 10>& vec) {
+  os << "[ "; for (auto i = 0; i < 10; i++) os << vec[i] << " "; os << "]"; return os; }
+template<typename T, typename V> std::ostream& operator<<(std::ostream& os, const std::map<T, V>& map) {
+  os << "{ "; for (const auto& pair : map) os << pair.first << ": " << pair.second << ", "; os << "}"; return os; }
+
+
+
+
+
+
+
+
